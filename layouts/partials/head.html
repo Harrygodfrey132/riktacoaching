@@ -1,0 +1,13 @@
+{{- $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint -}}
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="Psykiatrisk vård med personcentrerat fokus.">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  <link rel="icon" href="{{ .Site.Params.logo }}">
+</head>
+<body>
+<a id="top"></a>

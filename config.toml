@@ -1,0 +1,25 @@
+baseURL = "https://riktapsykiatri.se"
+languageCode = "sv"
+title = "Rikta Psykiatri"
+defaultContentLanguage = "sv"
+enableRobotsTXT = true
+
+[params]
+  primary = "#000000"
+  background = "#FFFFFF"
+  secondary = "#4773A6"
+  accent = "#DA5B5F"
+  stickyHeaderOffset = 72
+  logo = "/img/logo.png"
+  hero = "/img/hero.jpg"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true  # allow HTML in Markdown
+
+[outputs]
+  home = ["HTML","RSS","JSON"]
+
+[services]
+  [services.googleAnalytics]
+    id = ""
