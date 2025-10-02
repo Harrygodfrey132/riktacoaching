@@ -1,4 +1,4 @@
-baseURL = "https://riktapsykiatri.se"
+baseURL = "https://riktapsykiatri.se/"
 languageCode = "sv"
 title = "Rikta Psykiatri"
 defaultContentLanguage = "sv"
@@ -23,3 +23,9 @@ disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
 
 # Optional: silence the "raw HTML omitted" warning
 ignoreLogs = ['warning-goldmark-raw-html']
+
+# Optional: if you want GA later:
+#[services]
+#  [services.googleAnalytics]
+#    id = ""
+
