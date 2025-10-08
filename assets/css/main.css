@@ -136,6 +136,91 @@ nav a.active {
   background: rgba(71, 115, 166, 0.12);
 }
 
+.has-submenu {
+  position: relative;
+}
+
+.submenu-trigger {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.submenu-trigger a {
+  flex: 1;
+}
+
+.submenu-toggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.submenu-toggle span {
+  font-size: 12px;
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.has-submenu.open > .submenu-trigger .submenu-toggle span {
+  transform: rotate(180deg);
+}
+
+.submenu {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 12px 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.submenu li {
+  margin: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 18px;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.has-submenu.open > .submenu {
+  display: block;
+}
+
+.desktop-nav .has-submenu {
+  position: relative;
+}
+
+.desktop-nav .submenu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  min-width: 220px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.desktop-nav .has-submenu:hover > .submenu,
+.desktop-nav .has-submenu.open > .submenu {
+  display: block;
+}
+
+.desktop-nav .has-submenu:hover > .submenu-trigger .submenu-toggle span {
+  transform: rotate(180deg);
+}
+
 /* ===== Hero Section (Two Columns) ===== */
 .hero {
   padding: 64px 0;
@@ -550,6 +635,10 @@ footer {
   display: block;
 }
 
+.mobile-nav.open {
+  display: block;
+}
+
 .mobile-nav ul {
   flex-direction: column;
   gap: 0;
@@ -573,6 +662,31 @@ footer {
   margin-top: 16px;
   text-align: center;
   padding: 12px 18px;
+}
+
+.mobile-nav .submenu-trigger {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobile-nav .submenu {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  padding: 0 0 12px 16px;
+}
+
+.mobile-nav .submenu a {
+  padding: 10px 0;
+}
+
+.mobile-nav .submenu-toggle {
+  padding: 4px;
+}
+
+.mobile-nav .has-submenu.open > .submenu {
+  display: block;
 }
 
 /* ===== Responsive Layout ===== */
@@ -2324,73 +2438,239 @@ nav a.cta:active{
   gap: 14px;
 }
 
-.adhd-page--adult .adhd-hero--compact {
+.adhd-page--adult .adhd-hero--compact,
+.adhd-page--youth .adhd-hero--compact,
+.adhd-page--women .adhd-hero--compact,
+.adhd-page--coaching .adhd-hero--compact,
+.adhd-page--medication .adhd-hero--compact {
   background: #ffffff;
   padding-top: clamp(72px, 9vw, 96px);
   padding-bottom: clamp(48px, 7vw, 72px);
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-grid {
+.adhd-page--adult .adhd-hero--compact .hero-grid,
+.adhd-page--youth .adhd-hero--compact .hero-grid,
+.adhd-page--women .adhd-hero--compact .hero-grid,
+.adhd-page--coaching .adhd-hero--compact .hero-grid,
+.adhd-page--medication .adhd-hero--compact .hero-grid {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: clamp(24px, 5vw, 40px);
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-copy {
-  grid-column: 2 / span 5;
+.adhd-page--adult .adhd-hero--compact .hero-copy,
+.adhd-page--youth .adhd-hero--compact .hero-copy,
+.adhd-page--women .adhd-hero--compact .hero-copy,
+.adhd-page--coaching .adhd-hero--compact .hero-copy,
+.adhd-page--medication .adhd-hero--compact .hero-copy {
+  grid-column: 1 / span 5;
   align-self: center;
   text-align: left;
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-media {
-  grid-column: 7 / span 5;
+.adhd-page--adult .adhd-hero--compact .hero-media,
+.adhd-page--youth .adhd-hero--compact .hero-media,
+.adhd-page--women .adhd-hero--compact .hero-media,
+.adhd-page--coaching .adhd-hero--compact .hero-media,
+.adhd-page--medication .adhd-hero--compact .hero-media {
+  grid-column: 7 / span 6;
   justify-self: center;
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-actions {
+.adhd-page--adult .adhd-hero--compact .hero-actions,
+.adhd-page--youth .adhd-hero--compact .hero-actions,
+.adhd-page--women .adhd-hero--compact .hero-actions,
+.adhd-page--coaching .adhd-hero--compact .hero-actions,
+.adhd-page--medication .adhd-hero--compact .hero-actions {
   justify-content: flex-start;
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-actions .btn {
+.adhd-page--adult .adhd-hero--compact .hero-actions .btn,
+.adhd-page--youth .adhd-hero--compact .hero-actions .btn,
+.adhd-page--women .adhd-hero--compact .hero-actions .btn,
+.adhd-page--coaching .adhd-hero--compact .hero-actions .btn,
+.adhd-page--medication .adhd-hero--compact .hero-actions .btn {
   min-width: 0;
 }
 
-.adhd-page--adult .adhd-hero--compact h1 {
-  font-size: clamp(32px, 6vw, 40px);
+.adhd-page--adult .adhd-hero--compact h1,
+.adhd-page--youth .adhd-hero--compact h1,
+.adhd-page--women .adhd-hero--compact h1,
+.adhd-page--coaching .adhd-hero--compact h1,
+.adhd-page--medication .adhd-hero--compact h1 {
+  font-size: clamp(36px, 6.5vw, 44px);
   line-height: 1.15;
 }
 
-.adhd-page--adult .adhd-hero--compact .lead {
-  font-size: 17px;
+.adhd-page--adult .adhd-hero--compact .lead,
+.adhd-page--youth .adhd-hero--compact .lead,
+.adhd-page--women .adhd-hero--compact .lead,
+.adhd-page--coaching .adhd-hero--compact .lead,
+.adhd-page--medication .adhd-hero--compact .lead {
+  font-size: 18px;
   line-height: 1.55;
 }
 
-.adhd-page--adult .adhd-hero--compact .hero-image {
+.adhd-page--adult .adhd-hero--compact .hero-image,
+.adhd-page--youth .adhd-hero--compact .hero-image,
+.adhd-page--women .adhd-hero--compact .hero-image,
+.adhd-page--coaching .adhd-hero--compact .hero-image,
+.adhd-page--medication .adhd-hero--compact .hero-image {
   max-width: 480px;
   margin: 0 auto;
 }
 
+@media (max-width: 960px) {
+  .adhd-page--adult .adhd-hero--compact .hero-grid,
+  .adhd-page--youth .adhd-hero--compact .hero-grid,
+  .adhd-page--women .adhd-hero--compact .hero-grid,
+  .adhd-page--coaching .adhd-hero--compact .hero-grid,
+  .adhd-page--medication .adhd-hero--compact .hero-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-copy,
+  .adhd-page--youth .adhd-hero--compact .hero-copy,
+  .adhd-page--women .adhd-hero--compact .hero-copy,
+  .adhd-page--coaching .adhd-hero--compact .hero-copy,
+  .adhd-page--medication .adhd-hero--compact .hero-copy {
+    grid-column: 1 / span 6;
+    text-align: left;
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-media,
+  .adhd-page--youth .adhd-hero--compact .hero-media,
+  .adhd-page--women .adhd-hero--compact .hero-media,
+  .adhd-page--coaching .adhd-hero--compact .hero-media,
+  .adhd-page--medication .adhd-hero--compact .hero-media {
+    grid-column: 1 / span 6;
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-image,
+  .adhd-page--youth .adhd-hero--compact .hero-image,
+  .adhd-page--women .adhd-hero--compact .hero-image,
+  .adhd-page--coaching .adhd-hero--compact .hero-image,
+  .adhd-page--medication .adhd-hero--compact .hero-image {
+    max-width: 100%;
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-actions,
+  .adhd-page--youth .adhd-hero--compact .hero-actions,
+  .adhd-page--women .adhd-hero--compact .hero-actions,
+  .adhd-page--coaching .adhd-hero--compact .hero-actions,
+  .adhd-page--medication .adhd-hero--compact .hero-actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .adhd-page--adult .adhd-hero--compact,
+  .adhd-page--youth .adhd-hero--compact,
+  .adhd-page--women .adhd-hero--compact,
+  .adhd-page--coaching .adhd-hero--compact,
+  .adhd-page--medication .adhd-hero--compact {
+    padding-top: clamp(56px, 12vw, 72px);
+    padding-bottom: clamp(40px, 12vw, 60px);
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-actions,
+  .adhd-page--youth .adhd-hero--compact .hero-actions,
+  .adhd-page--women .adhd-hero--compact .hero-actions,
+  .adhd-page--coaching .adhd-hero--compact .hero-actions,
+  .adhd-page--medication .adhd-hero--compact .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adhd-page--adult .adhd-hero--compact .hero-actions .btn,
+  .adhd-page--youth .adhd-hero--compact .hero-actions .btn,
+  .adhd-page--women .adhd-hero--compact .hero-actions .btn,
+  .adhd-page--coaching .adhd-hero--compact .hero-actions .btn,
+  .adhd-page--medication .adhd-hero--compact .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .adhd-page--adult .adhd-definition,
+.adhd-page--youth .adhd-definition,
+.adhd-page--women .adhd-definition,
+.adhd-page--coaching .adhd-definition,
+.adhd-page--medication .adhd-definition,
 .adhd-page--adult .adhd-symptoms,
+.adhd-page--youth .adhd-symptoms,
+.adhd-page--women .adhd-symptoms,
+.adhd-page--coaching .adhd-symptoms,
+.adhd-page--medication .adhd-symptoms,
 .adhd-page--adult .adhd-benefits,
+.adhd-page--youth .adhd-benefits,
+.adhd-page--women .adhd-benefits,
+.adhd-page--coaching .adhd-benefits,
+.adhd-page--medication .adhd-benefits,
 .adhd-page--adult .adhd-process,
+.adhd-page--youth .adhd-process,
+.adhd-page--women .adhd-process,
+.adhd-page--coaching .adhd-process,
+.adhd-page--medication .adhd-process,
 .adhd-page--adult .adhd-outcomes,
+.adhd-page--youth .adhd-outcomes,
+.adhd-page--women .adhd-outcomes,
+.adhd-page--coaching .adhd-outcomes,
+.adhd-page--medication .adhd-outcomes,
 .adhd-page--adult .adhd-fees,
+.adhd-page--youth .adhd-fees,
+.adhd-page--women .adhd-fees,
+.adhd-page--coaching .adhd-fees,
+.adhd-page--medication .adhd-fees,
 .adhd-page--adult .adhd-next,
-.adhd-page--adult .adhd-faq {
+.adhd-page--youth .adhd-next,
+.adhd-page--women .adhd-next,
+.adhd-page--coaching .adhd-next,
+.adhd-page--medication .adhd-next,
+.adhd-page--adult .adhd-faq,
+.adhd-page--youth .adhd-faq,
+.adhd-page--women .adhd-faq,
+.adhd-page--coaching .adhd-faq,
+.adhd-page--medication .adhd-faq {
   background: #ffffff;
   border-top: 1px solid rgba(29, 44, 59, 0.06);
   padding: clamp(56px, 8vw, 96px) 0;
 }
 
 .adhd-page--adult .adhd-process,
-.adhd-page--adult .adhd-fees {
+.adhd-page--youth .adhd-process,
+.adhd-page--women .adhd-process,
+.adhd-page--coaching .adhd-process,
+.adhd-page--medication .adhd-process,
+.adhd-page--adult .adhd-fees,
+.adhd-page--youth .adhd-fees,
+.adhd-page--women .adhd-fees,
+.adhd-page--coaching .adhd-fees,
+.adhd-page--medication .adhd-fees {
   padding-bottom: clamp(64px, 9vw, 104px);
 }
 
 .adhd-page--adult .adhd-symptom-card,
+.adhd-page--youth .adhd-symptom-card,
+.adhd-page--women .adhd-symptom-card,
+.adhd-page--coaching .adhd-symptom-card,
+.adhd-page--medication .adhd-symptom-card,
 .adhd-page--adult .adhd-card-grid article,
+.adhd-page--youth .adhd-card-grid article,
+.adhd-page--women .adhd-card-grid article,
+.adhd-page--coaching .adhd-card-grid article,
+.adhd-page--medication .adhd-card-grid article,
 .adhd-page--adult .adhd-process-card,
-.adhd-page--adult .adhd-fees-card {
+.adhd-page--youth .adhd-process-card,
+.adhd-page--women .adhd-process-card,
+.adhd-page--coaching .adhd-process-card,
+.adhd-page--medication .adhd-process-card,
+.adhd-page--adult .adhd-fees-card,
+.adhd-page--youth .adhd-fees-card,
+.adhd-page--women .adhd-fees-card,
+.adhd-page--coaching .adhd-fees-card,
+.adhd-page--medication .adhd-fees-card {
   box-shadow: 0 10px 24px rgba(29, 44, 59, 0.08);
 }
 
@@ -2926,6 +3206,393 @@ nav a.cta:active{
 
 .adhd-final-cta .btn.primary {
   box-shadow: 0 10px 24px rgba(236, 78, 91, 0.25);
+}
+
+/* ===== Team Directory ===== */
+.team-directory {
+  background: var(--adhd-sand);
+}
+
+.team-hero {
+  padding: clamp(72px, 10vw, 96px) 0 clamp(48px, 8vw, 72px);
+  text-align: center;
+  color: #222;
+}
+
+.team-hero__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 clamp(24px, 6vw, 48px);
+}
+
+.team-hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 600;
+  color: #222;
+}
+
+.team-hero__lead {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.team-hero__note {
+  margin: 16px 0 0;
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(34, 34, 34, 0.82);
+}
+
+.team-hero__extra {
+  margin-top: clamp(28px, 5vw, 40px);
+  color: #555;
+}
+
+.team-grid-section {
+  background: var(--adhd-sand);
+  padding: 0 0 clamp(80px, 12vw, 120px);
+}
+
+.clinician-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.clinician-card {
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 38px rgba(34, 34, 34, 0.08);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.clinician-card:hover {
+  box-shadow: 0 26px 48px rgba(34, 34, 34, 0.14);
+  transform: translateY(-4px);
+}
+
+.clinician-card__photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+.clinician-card__placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--adhd-blue), #5c93c7);
+}
+
+.clinician-card__body {
+  padding: clamp(24px, 4vw, 32px);
+  display: grid;
+  gap: 12px;
+}
+
+.clinician-card__body h3 {
+  margin: 0;
+  color: var(--adhd-blue);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.clinician-card__role {
+  margin: 0;
+  font-weight: 600;
+  color: #222;
+}
+
+.clinician-card__focus {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.clinician-card__link {
+  align-self: flex-start;
+  margin-top: 12px;
+  color: var(--adhd-rose);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.clinician-card__link:hover {
+  text-decoration: underline;
+}
+
+.team-empty {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin: clamp(48px, 8vw, 80px) 0;
+}
+
+@media (max-width: 1180px) {
+  .clinician-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .team-hero {
+    text-align: left;
+    padding: clamp(56px, 12vw, 80px) 0 clamp(48px, 12vw, 72px);
+  }
+
+  .team-hero__inner {
+    padding: 0 clamp(20px, 6vw, 32px);
+  }
+
+  .clinician-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clinician-card {
+    margin: 0 clamp(18px, 7vw, 28px);
+  }
+
+  .clinician-card__body {
+    padding: clamp(22px, 6vw, 28px);
+  }
+}
+
+@media (max-width: 480px) {
+  .team-hero h1 {
+    font-size: 30px;
+  }
+
+  .team-hero__lead {
+    font-size: 17px;
+  }
+
+  .clinician-card__body h3 {
+    font-size: 20px;
+  }
+}
+
+/* ===== Clinician Profile ===== */
+.clinician-profile {
+  background: var(--adhd-sand);
+}
+
+.clinician-profile__wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: clamp(60px, 9vw, 100px) clamp(20px, 6vw, 48px) clamp(80px, 10vw, 120px);
+}
+
+.clinician-profile__header {
+  background: #fff;
+  border-radius: 28px;
+  padding: clamp(36px, 6vw, 60px);
+  box-shadow: 0 28px 48px rgba(34, 34, 34, 0.08);
+  border: 1px solid rgba(34, 34, 34, 0.04);
+}
+
+.clinician-profile__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 56px);
+  align-items: center;
+}
+
+.clinician-profile__eyebrow {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(55, 116, 171, 0.72);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.clinician-profile__details h1 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 42px);
+  color: #222;
+}
+
+.clinician-profile__role {
+  margin: 0 0 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--adhd-blue);
+}
+
+.clinician-profile__meta {
+  display: grid;
+  gap: 14px;
+  margin: 0 0 28px;
+}
+
+.clinician-profile__meta-item {
+  display: grid;
+  gap: 4px;
+}
+
+.clinician-profile__meta-item .label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(34, 34, 34, 0.52);
+}
+
+.clinician-profile__meta-item .value {
+  font-size: 17px;
+  color: #2c3744;
+  line-height: 1.6;
+}
+
+.clinician-profile__credentials {
+  margin: 0;
+  padding: 24px;
+  border-radius: 20px;
+  background: rgba(55, 116, 171, 0.06);
+  border: 1px solid rgba(55, 116, 171, 0.14);
+  display: grid;
+  gap: 16px;
+}
+
+.clinician-profile__credentials-title {
+  margin: 0;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(34, 34, 34, 0.58);
+}
+
+.clinician-profile__credentials ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.clinician-profile__credentials li {
+  position: relative;
+  padding-left: 26px;
+  color: #233142;
+}
+
+.clinician-profile__credentials li::before {
+  content: "\2022";
+  position: absolute;
+  left: 8px;
+  top: 0;
+  color: var(--adhd-blue);
+  font-size: 18px;
+  line-height: 1;
+}
+
+.clinician-profile__portrait {
+  justify-self: center;
+}
+
+.clinician-profile__portrait img {
+  width: clamp(260px, 28vw, 320px);
+  border-radius: 24px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(34, 34, 34, 0.14);
+}
+
+.clinician-profile__placeholder {
+  width: clamp(240px, 28vw, 300px);
+  aspect-ratio: 1;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(42px, 6vw, 56px);
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--adhd-blue), #5c93c7);
+  box-shadow: 0 18px 40px rgba(34, 34, 34, 0.12);
+}
+
+.clinician-profile__content {
+  margin-top: clamp(40px, 6vw, 60px);
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 16px 32px rgba(34, 34, 34, 0.05);
+  padding: clamp(32px, 6vw, 48px);
+}
+
+.clinician-profile__body {
+  max-width: 720px;
+  margin: 0;
+  color: #444;
+}
+
+.clinician-profile__body p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.clinician-profile__body p + p {
+  margin-top: 20px;
+}
+
+.clinician-profile__body h2,
+.clinician-profile__body h3 {
+  color: #1f2b38;
+}
+
+@media (max-width: 980px) {
+  .clinician-profile__grid {
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: clamp(24px, 8vw, 40px);
+  }
+
+  .clinician-profile__portrait {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .clinician-profile__wrap {
+    padding: clamp(48px, 12vw, 72px) clamp(16px, 8vw, 32px) clamp(72px, 14vw, 96px);
+  }
+
+  .clinician-profile__header {
+    padding: clamp(28px, 8vw, 40px);
+  }
+
+  .clinician-profile__details h1 {
+    font-size: 32px;
+  }
+
+  .clinician-profile__role {
+    font-size: 20px;
+  }
+
+  .clinician-profile__portrait img,
+  .clinician-profile__placeholder {
+    width: min(240px, 70vw);
+  }
+
+  .clinician-profile__content {
+    padding: clamp(26px, 10vw, 36px);
+  }
+
+  .clinician-profile__credentials {
+    padding: clamp(18px, 7vw, 24px);
+  }
 }
 
 @media (max-width: 1024px) {

@@ -48,4 +48,44 @@
     });
   }, { rootMargin: "-60% 0px -35% 0px", threshold: 0.01 });
   sections.forEach(el=>observer.observe(el));
+
+  // ----- Mobile Menu Toggle -----
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileNav = document.querySelector('.mobile-nav');
+  
+  if (mobileMenuToggle && mobileNav) {
+    mobileMenuToggle.addEventListener('click', function() {
+      const isOpen = mobileNav.classList.contains('show');
+      
+      if (isOpen) {
+        // Close menu
+        mobileNav.classList.remove('show');
+        // Reset hamburger icon
+        const spans = this.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      } else {
+        // Open menu
+        mobileNav.classList.add('show');
+        // Animate hamburger to X
+        const spans = this.querySelectorAll('span');
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+      }
+    });
+    
+    // Close mobile menu when clicking on links
+    const mobileLinks = mobileNav.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mobileNav.classList.remove('show');
+        const spans = mobileMenuToggle.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      });
+    });
+  }
 })();
