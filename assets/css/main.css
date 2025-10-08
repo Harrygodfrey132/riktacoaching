@@ -73,6 +73,8 @@ header.site-header .nav {
   align-items: center;
   justify-content: space-between;
   height: var(--sticky);
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 /* Ensure the first content block clears the fixed header without adding extra global whitespace */
 main#content > :first-child {
@@ -86,7 +88,7 @@ main#content > :first-child {
 }
 
 .brand img {
-  height: 36px;
+  height: 32px;
 }
 
 /* Mobile/Desktop logo switching */
@@ -108,6 +110,10 @@ nav ul {
   justify-content: flex-end;
 }
 
+.desktop-nav ul {
+  gap: 12px;
+}
+
 nav a {
   display: inline-block;
   padding: 10px 12px;
@@ -115,6 +121,11 @@ nav a {
   font-weight: 500;
   white-space: nowrap;
   opacity: 0.9;
+}
+
+.desktop-nav a {
+  font-size: 14px;
+  padding: 10px 12px;
 }
 
 nav a:hover {
@@ -126,6 +137,11 @@ nav a.cta {
   background: var(--accent);
   color: #fff;
   font-weight: 600;
+}
+
+.desktop-nav a.cta {
+  padding: 12px 22px;
+  font-size: 15px;
 }
 
 nav a.cta:hover {
@@ -146,6 +162,10 @@ nav a.active {
   gap: 6px;
 }
 
+.desktop-nav .submenu-trigger {
+  gap: 4px;
+}
+
 .submenu-trigger a {
   flex: 1;
 }
@@ -159,6 +179,20 @@ nav a.active {
   display: flex;
   align-items: center;
   padding: 0;
+}
+
+.desktop-nav .submenu-toggle {
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+}
+
+.desktop-nav .submenu-toggle span {
+  font-size: 10px;
+}
+
+.desktop-nav .submenu-trigger a {
+  padding-right: 0;
 }
 
 .submenu-toggle span {
@@ -202,11 +236,13 @@ nav a.active {
 
 .desktop-nav .has-submenu {
   position: relative;
+  padding-bottom: 12px;
+  margin-bottom: -12px;
 }
 
 .desktop-nav .submenu {
   position: absolute;
-  top: calc(100% + 8px);
+  top: 100%;
   left: 0;
   min-width: 220px;
   border: 1px solid rgba(0, 0, 0, 0.06);
