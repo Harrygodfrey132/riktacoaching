@@ -1,6 +1,6 @@
 ---
 title: "ADHD-coaching"
-description: "Specialiserad ADHD-coaching som stärker exekutiva förmågor, skapar struktur och ger hållbara strategier i vardagen."
+description: "Specialiserad ADHD-coaching som hjälper dig hitta hållbara strategier i vardagen."
 draft: false
 weight: 25
 page_class: "adhd-page--coaching"
@@ -11,10 +11,10 @@ page_class: "adhd-page--coaching"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>ADHD-coaching – gör plats för fokus och flow</h1>
+        <h1>ADHD-coaching – gör plats för fokus</h1>
         <p class="lead">
-          ADHD-coaching är ett målinriktat samarbete där vi översätter kunskap om ADHD till fungerande rutiner, tydliga mål
-          och ett vänligare inre samtal. Tillsammans bygger vi strategier som håller i vardagen och gör det lättare att lyckas.
+          Med ADHD-coaching översätter vi den nuvarande kunskapen som finns om ADHD till fungerande rutiner och tydliga mål
+          i din vardag baserat på* dina* styrkor och förutsättningar. Tillsammans bygger vi strategier som håller i vardagen och gör det lättare att lyckas.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka ett introduktionssamtal</a>
@@ -25,7 +25,7 @@ page_class: "adhd-page--coaching"
         <figure class="hero-image adhd-hero-media">
           <img src="/img/hero.jpg" alt="Klient och coach som planerar nästa steg på ett block">
           <figcaption>
-            Vi coachar med värme och precision – fokus ligger på dina styrkor, din vardag och de mål du vill uppnå.
+            Vi coachar med ett fokus som ligger på dina styrkor, din vardag och de mål du vill uppnå.
           </figcaption>
         </figure>
       </div>
@@ -39,18 +39,18 @@ page_class: "adhd-page--coaching"
       <div class="intro-copy">
         <h2>Vad innebär ADHD-coaching?</h2>
         <p>
-          Coaching är en strukturerad och evidensbaserad metod som riktar sig till kärnutmaningarna vid ADHD: planering,
-          prioritering, tidsuppfattning, emotionell reglering och självförtroende. Vi sätter upp mål som är viktiga för dig
+          Coaching är en strukturerad och evidensbaserad metod som riktar sig till kärnutmaningarna vid ADHD: det vill säga planering,
+          prioritering, emotionell reglering och uppmärksamhet. Vi sätter upp mål som är viktiga för dig
           och bryter ner dem i hanterbara steg.
         </p>
         <p>
           Sessionerna är praktiska och framåtblickande. Du får konkreta verktyg och återkommande stöd för att omsätta insikter
-          till handling. Skillnaden mot terapi är att fokus ligger på struktur och beteendeförändring här och nu, snarare än
-          bearbetning av det förflutna.
+          till handling. Skillnaden mot terapi är att fokus ligger på struktur och beteendeförändring här och nu kopplat till ADHD, snarare än
+          ett mer generellt terapeutiskt arbete.
         </p>
         <blockquote>
           ”Coaching handlar om att skapa en vardag där dina styrkor får plats och där det blir möjligt att fullfölja det du
-          påbörjar – utan att tömma energin.”
+          påbörjar – utan att du för den sakens skull blir helt utmattad.”
         </blockquote>
       </div>
       <div class="intro-stats adhd-definition-card">
@@ -62,7 +62,7 @@ page_class: "adhd-page--coaching"
           <li>Vilket stöd, vilka hjälpmedel och rutiner som gör störst skillnad.</li>
         </ul>
         <p class="small">
-          Vi använder verktyg som tidsblockering, värdebaserad målplanering, kroppsnära strategier och korta check-ins mellan
+          Vi använder verktyg såsom till exempel tidsblockering, värdebaserad målplanering, kroppsnära strategier och korta check-ins mellan
           sessionerna när det hjälper.
         </p>
       </div>
@@ -76,25 +76,25 @@ page_class: "adhd-page--coaching"
       <span class="eyebrow">Mål vi ofta arbetar med</span>
       <h2>Vanliga fokusområden i ADHD-coaching</h2>
       <p class="muted">
-        Innehållet anpassas efter dig, men många klienter känner igen några av dessa behov när vi startar.
+        Innehållet anpassas efter dig men många klienter känner igen några av dessa behov när vi startar.
       </p>
     </div>
     <div class="adhd-symptom-grid">
       <article class="adhd-symptom-card">
         <h3>Tidsstruktur</h3>
-        <p>Skapa fungerande kalenderrutiner, håll koll på deadlines och bygg buffertar för spontana energitoppar.</p>
+        <p>Skapa fungerande kalenderrutiner, hålla koll på deadlines och bygga buffertar för spontana energitoppar.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Uppgiftsstart</h3>
         <p>Hitta metoder för att sänka startmotståndet och komma vidare även när uppgiften känns övermäktig.</p>
       </article>
       <article class="adhd-symptom-card">
-        <h3>Fokusbalans</h3>
-        <p>Växla mellan hyperfokus och paus utan att krascha – vi planerar för återhämtning och energistyrning.</p>
+        <h3>Balans i fokus</h3>
+        <p>Växla mellan hyperfokus och paus utan att krascha – vi planerar för återhämtning och vart du vill rikta din energi.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Relation till dig själv</h3>
-        <p>Bygg upp ett mer konstruktivt självprat och fira framsteg så att motivationen håller över tid.</p>
+        <p>Bygg upp ett mer konstruktivt självprat och fira framsteg så att din motivation håller över tid.</p>
       </article>
     </div>
   </div>
@@ -106,7 +106,7 @@ page_class: "adhd-page--coaching"
       <span class="eyebrow">Varför coaching gör skillnad</span>
       <h2>Fördelar med ett riktat coachingprogram</h2>
       <p class="muted">
-        När du får ett tydligt ramverk och kontinuerligt stöd blir det enklare att omsätta intentioner till handling.
+        När du får ett tydligt ramverk och kontinuerligt stöd blir det enklare att omsätta avsikter till handling.
       </p>
     </div>
     <div class="adhd-card-grid">
@@ -116,7 +116,7 @@ page_class: "adhd-page--coaching"
       </article>
       <article>
         <h3>Stärkt självledarskap</h3>
-        <p>Du lär dig reglera känslor och energi, vilket ger större frihet att välja vad du lägger din tid på.</p>
+        <p>Du lär dig reglera känslor och energi vilket i sin tur ger större frihet att välja vad du lägger din tid på.</p>
       </article>
       <article>
         <h3>Ökad trygghet</h3>
@@ -141,7 +141,7 @@ page_class: "adhd-page--coaching"
           <span class="adhd-step-number">1</span>
           <div>
             <h3>Startkartläggning</h3>
-            <p>Vi ringar in dina mål, hinder och styrkor genom formulär och ett introduktionssamtal.</p>
+            <p>Vi ringar in dina mål, utmaningar och styrkor genom formulär och ett introduktionssamtal.</p>
           </div>
         </div>
         <ul>
@@ -172,7 +172,7 @@ page_class: "adhd-page--coaching"
         </div>
         <ul>
           <li>Korta check-ins via meddelande eller video vid behov.</li>
-          <li>Reflektion kring vad som fungerar och vad som behöver tweakas.</li>
+          <li>Reflektion kring vad som fungerar och vad som kan behöva justeras.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -231,7 +231,7 @@ page_class: "adhd-page--coaching"
       <article class="adhd-fees-card">
         <h3>Så används tiden</h3>
         <p>
-          Varje session är 55 minuter. Mellan mötena kan du få korta avstämningar via meddelande vid behov. Inför start går vi
+          Varje session är 45 minuter. Mellan mötena kan du få korta avstämningar via meddelande vid behov. Inför start går vi
           igenom förväntningar, mål och hur vi mäter framsteg.
         </p>
         <p>
@@ -245,25 +245,25 @@ page_class: "adhd-page--coaching"
               <strong>Startpaket</strong>
               <span class="adhd-pricing-meta">Tre sessioner + handlingsplan</span>
             </div>
-            <span class="adhd-pricing-value">4&nbsp;800 kr</span>
+            <span class="adhd-pricing-value">4&nbsp;1800 kr</span>
           </div>
           <div class="adhd-pricing-row">
             <div>
               <strong>Fokusspår</strong>
               <span class="adhd-pricing-meta">Sex sessioner + avstämningar mellan möten</span>
             </div>
-            <span class="adhd-pricing-value">8&nbsp;700 kr</span>
+            <span class="adhd-pricing-value">8&nbsp;3500 kr</span>
           </div>
           <div class="adhd-pricing-row">
             <div>
-              <strong>Intensivmånad</strong>
+              <strong>Intensivkurs</strong>
               <span class="adhd-pricing-meta">Fyra veckor med veckovisa sessioner &amp; korta check-ins</span>
             </div>
-            <span class="adhd-pricing-value">6&nbsp;900 kr</span>
+            <span class="adhd-pricing-value">6&nbsp;2400 kr</span>
           </div>
         </div>
         <p class="adhd-fees-note">
-          Du kan alltid köpa enstaka uppföljningar (1&nbsp;800 kr) efter avslutat paket. Avbokning senast 24 timmar innan utan kostnad.
+          Du kan alltid köpa enstaka uppföljningar (1&nbsp;600 kr) efter avslutat paket. Avbokning senast 24 timmar innan utan kostnad.
         </p>
       </article>
     </div>
@@ -277,25 +277,16 @@ page_class: "adhd-page--coaching"
         <span class="eyebrow">Next steps</span>
         <h2>Efter coachingen</h2>
         <p>
-          Vi erbjuder fortsatt stöd när du vill. Vissa klienter bokar uppföljning varje kvartal, andra tar kontakt inför nya
+          Vi erbjuder fortsatt stöd när du vill. Vissa klienter bokar uppföljning varannan månad medan andra tar kontakt inför nya
           livsfaser eller större projekt.
         </p>
         <p class="muted">
-          Vi kan även samverka med behandlande läkare, terapeut eller arbetsgivare för att säkerställa att planerna hänger ihop.
         </p>
       </div>
       <div class="intro-stats">
         <article>
           <h3>Booster-samtal</h3>
-          <p>Snabba avstämningar som återaktiverar verktygen när strukturen halkat efter.</p>
-        </article>
-        <article>
-          <h3>Gruppcoaching</h3>
-          <p>Temabaserade program där du får stöd av både coach och andra med liknande mål.</p>
-        </article>
-        <article>
-          <h3>Arbetsplatsdialog</h3>
-          <p>Samordning kring anpassningar, hjälpmedel och realistiska mål tillsammans med chef eller HR.</p>
+          <p>Snabba avstämningar som där vi går tillbaka till de grundläggande verktygen när strukturen halkat efter.</p>
         </article>
       </div>
     </div>
@@ -313,28 +304,28 @@ page_class: "adhd-page--coaching"
       <details>
         <summary>Hur skiljer sig coaching från terapi?</summary>
         <p>
-          Coaching fokuserar på mål, strategier och vardagsrutiner. Vi arbetar inte med djup bearbetning av trauman utan med
+          Coaching fokuserar på mål, strategier och vardagsrutiner. Vi arbetar inte behandlande utan med
           konkreta beteendeförändringar här och nu. Många kombinerar coaching med terapi för ett heltäckande stöd.
         </p>
       </details>
       <details>
-        <summary>Måste jag ha en ADHD-diagnos?</summary>
+        <summary>Måste jag ha en ADHD-diagnos för att få coaching?</summary>
         <p>
           Nej. Coaching kan vara hjälpsam även om du utreder dig just nu eller känner igen ADHD-drag. Vi anpassar upplägget
-          efter dina behov – diagnos eller ej.
+          efter dina behov vare sig du har en diagnos eller inte.
         </p>
       </details>
       <details>
         <summary>Kan vi ses digitalt?</summary>
         <p>
-          Ja, de flesta sessioner sker via säker video eller telefon. Om du föredrar fysiska möten bokar vi plats i Stockholm.
+          Ja, vi ta alla våra coachingsessioner digitalt via videolänk. 
         </p>
       </details>
       <details>
         <summary>Hur länge behöver jag gå?</summary>
         <p>
-          Ett första paket på tre till sex sessioner brukar ge god effekt. Därefter väljer många att boka uppföljningar vid
-          behov eller inför större förändringar.
+          Ett första paket på tre till sex sessioner brukar ge många verktyg och insikter för en hållbar förändring. Därefter väljer många att boka uppföljningar vid
+          behov eller inför större förändringar i ditt liv. 
         </p>
       </details>
     </div>
