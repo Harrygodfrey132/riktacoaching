@@ -1,6 +1,6 @@
 ---
 title: "ADHD-utredning för barn och ungdomar"
-description: "En trygg ADHD-utredning för barn och ungdomar – vi guidar hela familjen från första samtalet till tydlig plan."
+description: "En smidig ADHD-utredning för barn och ungdomar - vi guidar er från första samtalet till en tydlig plan."
 draft: false
 weight: 10
 page_class: "adhd-page--youth"
@@ -13,8 +13,8 @@ page_class: "adhd-page--youth"
         <span class="eyebrow">Rikta Psykiatri</span>
         <h1>ADHD hos barn – förstå barnet och stötta familjen</h1>
         <p class="lead">
-          ADHD kan påverka hur ett barn lär sig, leker och orkar med vardagen. Med en trygg och tydlig utredning får ni
-          förståelse för vad som ligger bakom beteenden, och en plan som hjälper både barnet och er som föräldrar.
+          ADHD kan påverka hur ett barn lär sig, leker och orkar med vardagen. Med en noggrann utredning får ni
+          förståelse för vad som ligger bakom beteenden och en plan som hjälper både ditt barn och dig som vårdnadshavare.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
@@ -25,7 +25,7 @@ page_class: "adhd-page--youth"
         <figure class="hero-image adhd-hero-media">
           <img src="/img/hero.jpg" alt="Förälder och barn i samtal med psykolog i lugnt rum">
           <figcaption>
-            Vi möter varje familj med nyfikenhet och respekt för att lyfta barnets styrkor och behov av stöd.
+            Vi möter varje familj med nyfikenhet och med målet att lyfta ditt barns styrkor och behov av stöd.
           </figcaption>
         </figure>
       </div>
@@ -45,11 +45,11 @@ page_class: "adhd-page--youth"
         </p>
         <p>
           I utredningen undersöker vi hur symtomen visar sig i olika miljöer – hemma, i skolan och med kompisar – och hur
-          styrkor och svårigheter har utvecklats över tid. Fokus ligger på helheten: barnets upplevelse, familjens vardag och
+          styrkor och svårigheter har utvecklats över tid. Fokus ligger på helheten; det vill säga barnets upplevelse, familjens vardag och
           vilka anpassningar som redan finns på plats.
         </p>
         <blockquote>
-          ”En utredning handlar om att se hela barnet. Vi vill ge språket och verktygen som gör att både barnet och er som
+          ”En utredning handlar om att se hela barnet. Vi vill ge språket och verktygen som gör att både ert barn och dig som
           vårdnadshavare kan känna trygghet framåt.”
         </blockquote>
       </div>
@@ -63,7 +63,7 @@ page_class: "adhd-page--youth"
         </ul>
         <p class="small">
           Vi använder exempelvis K-SADS, 5-15, Conners och lärarformulär. Bedömningen kan kompletteras med observationer eller
-          samtal med pedagog efter överenskommelse.
+          samtal med dina barns lärare efter överenskommelse.
         </p>
       </div>
     </div>
@@ -76,14 +76,14 @@ page_class: "adhd-page--youth"
       <span class="eyebrow">Känner du igen ditt barn?</span>
       <h2>Vanliga tecken hos barn och ungdomar</h2>
       <p class="muted">
-        Varje barn är unikt, men många familjer beskriver återkommande mönster som blir tydligare när kraven ökar i skola och
+        Många familjer beskriver återkommande mönster som blir tydligare när kraven ökar i skola och
         fritid.
       </p>
     </div>
     <div class="adhd-symptom-grid">
       <article class="adhd-symptom-card">
         <h3>Ojämn skolork</h3>
-        <p>Stora skillnader i fokus och resultat från dag till dag, trots att barnet kan ämnet eller vill göra sitt bästa.</p>
+        <p>Stora skillnader i fokus och resultat från dag till dag, trots att ditt barn kan ämnet eller vill göra sitt bästa.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Snabba känsloskiften</h3>
@@ -105,7 +105,7 @@ page_class: "adhd-page--youth"
   <div class="container">
     <div class="section-intro">
       <span class="eyebrow">Varför en utredning hjälper</span>
-      <h2>Fördelar för barnet och familjen</h2>
+      <h2>Fördelar för ditt barn och er familj</h2>
       <p class="muted">
         En strukturerad utredning skapar klarhet, minskar konflikter och öppnar dörren till rätt stöd i skola och vardag.
       </p>
@@ -113,7 +113,7 @@ page_class: "adhd-page--youth"
     <div class="adhd-card-grid">
       <article>
         <h3>Gemensamt språk</h3>
-        <p>Ni får en professionell förklaring som gör det lättare för familj, skola och nätverk att förstå barnets behov.</p>
+        <p>Ni får en professionell kartläggning som gör det lättare för familj, skola och nätverk att förstå barnets behov.</p>
       </article>
       <article>
         <h3>Anpassningar som fungerar</h3>
@@ -121,7 +121,7 @@ page_class: "adhd-page--youth"
       </article>
       <article>
         <h3>Plan för behandling</h3>
-        <p>Konkreta förslag på medicin, terapi eller coachning – alltid i dialog med er och med barnets bästa i fokus.</p>
+        <p>Konkreta förslag på medicin, terapi eller coaching. Detta sker alltid i dialog med er och med barnets bästa i åtanke</p>
       </article>
     </div>
   </div>
@@ -133,7 +133,7 @@ page_class: "adhd-page--youth"
       <span class="eyebrow">Så går det till</span>
       <h2>Steg för steg genom utredningen</h2>
       <p class="muted">
-        Processen är tydlig och lugn, vanligtvis tre till fyra veckor från första samtal till återkoppling.
+        Processen vid jobbar med är strukturerad och stegvis och innebär vanligtvis tre till fyra veckor från första samtal till återkoppling.
       </p>
     </div>
     <div class="adhd-process-grid">
@@ -142,12 +142,12 @@ page_class: "adhd-page--youth"
           <span class="adhd-step-number">1</span>
           <div>
             <h3>Familjesamtal &amp; förberedelser</h3>
-            <p>Vi går igenom barnets historia, insamlar skolunderlag och skickar formulär till vårdnadshavare och lärare.</p>
+            <p>Vi går igenom barnets historia, samlar in underlag från skolan och skickar formulär att fylla i till dig som vårdnadshavare och senare till lärare.</p>
           </div>
         </div>
         <ul>
           <li>Digitala skattningar för hem och skola (20–30 minuter).</li>
-          <li>Introduktionssamtal där ni kan ställa frågor och landa i processen.</li>
+          <li>Introduktionssamtal där ni kan ställa frågor om utredningsprocessen.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -155,12 +155,12 @@ page_class: "adhd-page--youth"
           <span class="adhd-step-number">2</span>
           <div>
             <h3>Barnintervju &amp; observation</h3>
-            <p>Strukturerad samtalsserie med psykolog samt lek- eller testmoment som anpassas efter barnets ålder.</p>
+            <p>Flera samtal med psykolog samt lek- eller testmoment som anpassas efter barnets ålder.</p>
           </div>
         </div>
         <ul>
-          <li>1–2 möten på plats eller via säker video utifrån barnets behov.</li>
-          <li>Vid behov observation eller kompletterande samtal med pedagog.</li>
+          <li>1–2 möten på plats eller via högkvalitativ och säker video, allt utifrån barnets behov.</li>
+          <li>Vid behov kan vi behöva ha kompletterande samtal med ditt barns lärare.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -168,7 +168,7 @@ page_class: "adhd-page--youth"
           <span class="adhd-step-number">3</span>
           <div>
             <h3>Teamets analys</h3>
-            <p>Specialistläkare och psykolog går igenom intervjuer, formulär och skoldata innan slutsats dras.</p>
+            <p>Specialistläkare och psykolog går igenom intervjuer, formulär och skoldata innan någon slutsats dras.</p>
           </div>
         </div>
         <ul>
@@ -181,11 +181,11 @@ page_class: "adhd-page--youth"
           <span class="adhd-step-number">4</span>
           <div>
             <h3>Återkoppling &amp; fortsättningsplan</h3>
-            <p>Vi går igenom resultatet tillsammans, ger rapporten och skapar en hållbar plan för nästa steg.</p>
+            <p>Vi går igenom resultatet tillsammans och skapar en hållbar plan för nästa steg.</p>
           </div>
         </div>
         <ul>
-          <li>Tid för frågor och förklaringar riktade både till vuxna och barnet.</li>
+          <li>Tid för frågor vad gäller allt som berör utredningen och nästa steg.</li>
           <li>Plan för uppföljning och samordning med vård eller skola.</li>
         </ul>
       </article>
@@ -212,7 +212,7 @@ page_class: "adhd-page--youth"
         <p>Detaljerad dokumentation för skola, vård och eventuella ansökningar om stöd eller anpassningar.</p>
       </article>
       <article>
-        <h3>Guidning för nästa steg</h3>
+        <h3>Guidning till nästa steg</h3>
         <p>Rekommendationer kring behandlingsalternativ, strategier hemma och hur ni kan följa upp utvecklingen.</p>
       </article>
     </div>
@@ -225,19 +225,18 @@ page_class: "adhd-page--youth"
       <span class="eyebrow">Transparent prissättning</span>
       <h2>Vad kostar en barnutredning?</h2>
       <p class="muted">
-        Priset inkluderar hela processen – formulär, intervjuer, analys, återkoppling och samordning med skola vid behov.
+        Priset inkluderar hela processen, det vill säga allt från intervjuer, analys, återkoppling och samordning med skola vid behov.
       </p>
     </div>
     <div class="adhd-fees-grid">
       <article class="adhd-fees-card">
         <h3>Så används tiden</h3>
         <p>
-          Vanligt upplägg är två till tre möten à 60 minuter med familj och barn samt tid avsatt för analys och rapport.
+          Vanligt upplägg är två till tre möten à 60 minuter med familj och barn samt avsatt tid för analys och rapport.
           Extra samtal med pedagog eller observation planeras i dialog med er.
         </p>
         <p>
-          Inför start går vi igenom upplägget, eventuella tillval och vilket underlag som kan behövas från skolan eller andra
-          kontakter.
+          Inför start går vi igenom upplägget, eventuella tillval och vilket underlag som kan behövas från skolan eller andra personer i barnets omgivning. 
         </p>
       </article>
       <article class="adhd-fees-card">
@@ -265,8 +264,8 @@ page_class: "adhd-page--youth"
           </div>
         </div>
         <p class="adhd-fees-note">
-          Avgiften inkluderar komplett rapport och återkopplingsmöte. Vi informerar alltid om kostnader för tillägg innan de
-          bokas in, så att ni kan fatta beslut i lugn och ro.
+          Avgiften inkluderar en komplett rapport och återkopplingsmöte. Vi informerar alltid om kostnader för tillägg innan de
+          bokas in så att ni kan fatta beslut i lugn och ro.
         </p>
       </article>
     </div>
@@ -280,7 +279,7 @@ page_class: "adhd-page--youth"
         <span class="eyebrow">Next steps</span>
         <h2>Fortsatt stöd efter diagnos</h2>
         <p>
-          Utredningen är starten på en långsiktig plan. Vi fortsätter gärna att arbeta med er familj och i samverkan med
+          Vi ser utredningen som starten på en långsiktig plan. Vi fortsätter gärna att arbeta med er familj och i samverkan med
           skola, vårdcentral eller annan vårdgivare.
         </p>
         <p class="muted">
@@ -330,14 +329,13 @@ page_class: "adhd-page--youth"
       <details>
         <summary>Går det att genomföra utredningen digitalt?</summary>
         <p>
-          Vissa moment kan ske digitalt, men vi planerar ofta för minst ett fysiskt möte. För yngre barn rekommenderar vi
-          besök på mottagningen för att skapa trygghet.
+          Vi ser gärna att hela utredningen sker digitalt, men vi kan också planera in fysiska möten vid behov. 
         </p>
       </details>
       <details>
         <summary>Vad händer om bedömningen visar något annat än ADHD?</summary>
         <p>
-          Vi beskriver våra fynd tydligt och guidar er till rätt fortsatta insatser, oavsett om det handlar om annan NPF,
+          Vi beskriver våra fynd tydligt och guidar er till rätt fortsatta insatser, oavsett om det handlar om en annan NPF,
           inlärningssvårigheter eller psykologiskt stöd.
         </p>
       </details>
