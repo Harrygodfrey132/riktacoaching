@@ -1029,11 +1029,6 @@ main.hero.screen, section.screen {
   }
 }
 
-/* ===== Footer ===== */
-footer {
-  padding: 40px 0;
-}
-
 .small {
   font-size: 14px;
 }
@@ -4181,6 +4176,137 @@ nav a.cta:active{
   .adhd-symptom-grid,
   .adhd-card-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: var(--adhd-sand);
+  color: #1f2b38;
+  margin-top: clamp(72px, 12vw, 120px);
+}
+
+.site-footer a {
+  color: rgba(31, 43, 56, 0.82);
+  transition: color 0.2s ease;
+}
+
+.site-footer a:hover {
+  color: #1f2b38;
+}
+
+.site-footer .footer-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: clamp(32px, 6vw, 72px);
+  padding: clamp(48px, 10vw, 96px) clamp(20px, 6vw, 72px);
+}
+
+.footer-brand {
+  display: grid;
+  gap: 20px;
+  align-content: start;
+}
+
+.footer-logo img {
+  width: clamp(160px, 28vw, 220px);
+  height: auto;
+  display: block;
+}
+
+.footer-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.footer-hours h4,
+.footer-columns h4 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(31, 43, 56, 0.8);
+}
+
+.footer-hours ul,
+.footer-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.footer-hours ul li {
+  color: rgba(31, 43, 56, 0.75);
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: clamp(24px, 5vw, 48px);
+}
+
+.footer-column ul li a {
+  display: inline-flex;
+  color: rgba(31, 43, 56, 0.82);
+}
+
+.footer-column ul li a:hover {
+  color: #1f2b38;
+}
+
+.footer-disclaimer {
+  margin: 12px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(31, 43, 56, 0.7);
+  max-width: 420px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(31, 43, 56, 0.15);
+  padding: 18px 0;
+  font-size: 14px;
+  color: rgba(31, 43, 56, 0.6);
+}
+
+.footer-bottom .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 940px) {
+  .site-footer .footer-main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .site-footer {
+    margin-top: clamp(48px, 18vw, 72px);
+  }
+
+  .footer-logo img {
+    width: min(180px, 60vw);
+  }
+
+  .footer-email {
+    font-size: 15px;
+  }
+
+  .footer-hours ul,
+  .footer-columns ul {
+    gap: 8px;
+  }
+
+  .footer-disclaimer {
+    font-size: 13px;
   }
 }
 
