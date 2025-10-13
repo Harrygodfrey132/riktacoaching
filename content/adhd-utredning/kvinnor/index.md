@@ -1,6 +1,6 @@
 ---
 title: "ADHD-utredning för kvinnor"
-description: "En empatisk ADHD-utredning för kvinnor – vi utforskar symtom, hormonella mönster och strategier som håller i längden."
+description: "ADHD-utredning för kvinnor – vi utforskar symtom, hormonella mönster och strategier som håller i längden."
 draft: false
 weight: 15
 page_class: "adhd-page--women"
@@ -14,7 +14,7 @@ page_class: "adhd-page--women"
         <h1>ADHD hos kvinnor – förstå mönstren och återta orken</h1>
         <p class="lead">
           ADHD kan se annorlunda ut hos kvinnor. Maskering, hormonella svängningar och höga förväntningar gör att många
-          missas eller får hjälp sent. Vi erbjuder en trygg utredning som belyser hela din vardag och ger verktyg som håller.
+          missas eller får hjälp sent. Vi erbjuder en noggrann utredning med fokus på hela din vardag.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
@@ -25,7 +25,7 @@ page_class: "adhd-page--women"
         <figure class="hero-image adhd-hero-media">
           <img src="/img/hero.jpg" alt="Kvinna i samtal med psykolog i lugn mottagning">
           <figcaption>
-            Vi möter dig med nyfikenhet och ser till att både vardagsstrategier och hormonella faktorer vägs in i bedömningen.
+            Vi möter dig med nyfikenhet och ser till din individuella förutsättningar i våra samtal med dig. 
           </figcaption>
         </figure>
       </div>
@@ -45,10 +45,10 @@ page_class: "adhd-page--women"
         </p>
         <p>
           Vi utforskar hur livsfaser, hormoner och maskeringsstrategier påverkar din vardag. Tillsammans skiljer vi ADHD från
-          stress, ångest eller PMDS och landar i en förklaring som känns igen i både kroppen och kalendern.
+          stress, ångest eller PMDS och landar i en förklaring som känns igen hos dig.
         </p>
         <blockquote>
-          ”När du får ett språk för dina mönster blir det lättare att välja vad du vill behålla, vad du vill förändra och
+          ”När du får ett språk för dina mönster blir det lättare att välja vad du vill förändra och
           vilket stöd du behöver.”
         </blockquote>
       </div>
@@ -61,7 +61,7 @@ page_class: "adhd-page--women"
           <li>Skyddsfaktorer, relationer och praktiskt stöd i vardagen.</li>
         </ul>
         <p class="small">
-          Vi använder DIVA-5, hormonrelaterade skattningar och kompletterar vid behov med medicinsk provtagning eller journalsamverkan.
+          Vi använder DIVA-5, hormonrelaterade skattningar och kompletterar vid behov med medicinsk provtagning.
         </p>
       </div>
     </div>
@@ -84,15 +84,15 @@ page_class: "adhd-page--women"
       </article>
       <article class="adhd-symptom-card">
         <h3>Hormonella svängningar</h3>
-        <p>Symtomen förstärks inför mens, efter graviditet eller i perimenopaus – fokus och humör blir oförutsägbara.</p>
+        <p>Symtomen förstärks inför mens, efter graviditet eller i perimenopaus. Här blir fokus och humör oförutsägbara.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Överladdad kalender</h3>
-        <p>Du säger ja till mycket, får saker gjorda i sista stund och betalar priset i form av utmattning eller skuld.</p>
+        <p>Du säger ja till mycket, får saker gjorda i sista stund och betalar priset i form av utmattning eller skuldkänslor.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Relationell överansvarighet</h3>
-        <p>Du kompenserar genom att vara den som håller ordning, minns allt och fixar – men glömmer dina egna behov.</p>
+        <p>Du kompenserar genom att vara den som håller ordning och fixar – men glömmer dina egna behov.</p>
       </article>
     </div>
   </div>
@@ -130,7 +130,7 @@ page_class: "adhd-page--women"
       <span class="eyebrow">Så går det till</span>
       <h2>Steg för steg genom utredningen</h2>
       <p class="muted">
-        Processen är strukturerad och empatisk, vanligtvis två till tre veckor från start till återkoppling.
+        Utredningsprocessen är noggrann och strukturerad. Vanligtvis tar det upp till fyra veckor från start till återkoppling.
       </p>
     </div>
     <div class="adhd-process-grid">
@@ -139,7 +139,7 @@ page_class: "adhd-page--women"
           <span class="adhd-step-number">1</span>
           <div>
             <h3>Förberedelse &amp; livskarta</h3>
-            <p>Du fyller i formulär om vardag, hormoner och hälsa. Vi bokar ett kort introduktionssamtal för dina frågor.</p>
+            <p>Du fyller i formulär om vardag, hormoner och hälsa. Vi bokar in ett kort introduktionssamtal för dina frågor.</p>
           </div>
         </div>
         <ul>
@@ -152,12 +152,12 @@ page_class: "adhd-page--women"
           <span class="adhd-step-number">2</span>
           <div>
             <h3>Klinisk intervju</h3>
-            <p>DIVA-5-intervju och fördjupning kring hormoner, sömn och mental hälsa – digitalt eller på mottagningen.</p>
+            <p>Digital intervju och med fokus på hormoner, sömn och mental hälsa.</p>
           </div>
         </div>
         <ul>
           <li>60–90 minuter med specialistläkare eller psykolog.</li>
-          <li>Vi utforskar både styrkor och hinder i vardagen.</li>
+          <li>Vi utforskar både styrkor och svårigheter i din vardag.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -169,7 +169,7 @@ page_class: "adhd-page--women"
           </div>
         </div>
         <ul>
-          <li>Vid behov kompletterande provtagning eller gynkontakt.</li>
+          <li>Vid behov kompletterande provtagning.</li>
           <li>Rekommendationer kring behandling och stödinsatser.</li>
         </ul>
       </article>
@@ -178,7 +178,7 @@ page_class: "adhd-page--women"
           <span class="adhd-step-number">4</span>
           <div>
             <h3>Återkoppling &amp; handlingsplan</h3>
-            <p>Vi går igenom resultatet i lugn takt och tar fram en plan för medicin, cykelanpassning och vidare stöd.</p>
+            <p>Vi går igenom resultatet i lugn och ro och tar fram en plan för medicin, cykelanpassning och vidare stöd.</p>
           </div>
         </div>
         <ul>
@@ -206,7 +206,7 @@ page_class: "adhd-page--women"
       </article>
       <article>
         <h3>Skriftlig rapport</h3>
-        <p>Detaljerad sammanställning med hormon- och livsstilsaspekter samt intygsunderlag.</p>
+        <p>Detaljerad sammanställning med hormon- och livsstilsaspekter samt intyg.</p>
       </article>
       <article>
         <h3>Konkreta verktyg</h3>
@@ -234,7 +234,7 @@ page_class: "adhd-page--women"
         </p>
         <p>
           Inför start går vi igenom upplägget, eventuella önskemål och vilket underlag som är hjälpsamt att ta med, exempelvis
-          tidigare utredningar eller gynekologiska rapporter.
+          tidigare utredningar.
         </p>
       </article>
       <article class="adhd-fees-card">
@@ -249,7 +249,7 @@ page_class: "adhd-page--women"
           <div class="adhd-pricing-row">
             <div>
               <strong>Mottagningspaket</strong>
-              <span class="adhd-pricing-meta">Besök i Stockholm + intyg för arbete eller studier</span>
+              <span class="adhd-pricing-meta">Besök på vår digital mottagning + intyg för arbete eller studier</span>
             </div>
             <span class="adhd-pricing-value">Från 16&nbsp;500 kr</span>
           </div>
@@ -262,7 +262,7 @@ page_class: "adhd-page--women"
           </div>
         </div>
         <p class="adhd-fees-note">
-          Tillägg för läkemedelsstart eller fördjupade intyg kommuniceras alltid i förväg så att du kan planera lugnt.
+          Tillägg för läkemedelsstart eller fördjupade intyg kommuniceras alltid i förväg så att du kan planera i lugn och ro.
         </p>
       </article>
     </div>
@@ -280,13 +280,13 @@ page_class: "adhd-page--women"
           stödet behöver vara.
         </p>
         <p class="muted">
-          Målet är långsiktig balans. Vissa vill ha tät coachning, andra önskar punktinsatser inför cykelfaser eller övergångar.
+          Målet är långsiktig balans. Vissa vill ha regelbunden coachning medan andra önskar sporadisk hjälp.
         </p>
       </div>
       <div class="intro-stats">
         <article>
           <h3>Medicinsk uppföljning</h3>
-          <p>Titrering, läkemedelsjustering och samordning med gynekolog eller vårdcentral.</p>
+          <p>Titrering, läkemedelsjustering och samordning med andra vårdgivare.</p>
         </article>
         <article>
           <h3>Coaching &amp; terapi</h3>
@@ -313,7 +313,7 @@ page_class: "adhd-page--women"
         <summary>Hur påverkar hormoner utredningen?</summary>
         <p>
           Vi kartlägger symtom över cykeln och väger in graviditet, amning eller klimakterium. Vid behov samarbetar vi med
-          gynekolog eller endokrinolog.
+          andra professioner eller vårdgivare. 
         </p>
       </details>
       <details>

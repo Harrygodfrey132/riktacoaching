@@ -1,7 +1,7 @@
 ---
 title: "ADHD-utredning för vuxna"
 draft: false
-description: "En varm och strukturerad ADHD-utredning för vuxna – från första samtal till tydlig plan."
+description: "En utförlig och nogrann ADHD-utredning för dig som vuxen"
 weight: 20
 page_class: "adhd-page--adult"
 ---
@@ -11,9 +11,9 @@ page_class: "adhd-page--adult"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>Adult ADHD – förstå, utreda och stötta dig</h1>
+        <h1>ADHD för vuxna</h1>
         <p class="lead">
-          ADHD kan finnas kvar i vuxenlivet och påverka fokus, relationer och självkänsla. En tydlig och empatisk utredning
+          ADHD kan finnas kvar i vuxenlivet och påverka fokus, relationer och självkänsla. En genomgående utredning
           hjälper dig att se mönster, hitta fungerande strategier och få tillgång till rätt behandling.
         </p>
         <div class="hero-actions">
@@ -25,7 +25,7 @@ page_class: "adhd-page--adult"
         <figure class="hero-image adhd-hero-media">
           <img src="/img/hero.jpg" alt="Vuxen patient i samtal med psykiater i en lugn miljö">
           <figcaption>
-            Vi kombinerar klinisk precision med mänsklig nyfikenhet för att kartlägga både styrkor och hinder i din vardag.
+            Vi kombinerar klinisk expertis med nyfikenhet för att kartlägga både styrkor och utmaningar i din vardag.
           </figcaption>
         </figure>
       </div>
@@ -44,24 +44,24 @@ page_class: "adhd-page--adult"
           igång samtidigt.
         </p>
         <p>
-          Under utredningen fokuserar vi på hur symtomen påverkar arbete, relationer och självbild och skiljer ADHD från stress
-          eller andra tillstånd som kan likna bilden. Målet är en förklaring som håller över tid.
+          Under utredningenen fokuserar vi på hur symtomen påverkar ditt arbete, dina relationer och din självbild. Vi skiljer även ADHD från
+          andra tillstånd som kan likna ADHD. 
         </p>
         <blockquote>
-          ”En korrekt diagnos handlar lika mycket om att bekräfta din vardag som att identifiera svårigheter. Den ger språk,
-          strategi och möjlighet att bygga vidare på dina styrkor.”
+          ”En korrekt diagnos handlar om att den ska vara meningsfull för dig och hjälper dig att de svårighet du stöter på. Diagnosen ger på så 
+          sätt dig ett språk och möjlighet att bygga vidare på dina styrkor.”
         </blockquote>
       </div>
       <div class="intro-stats adhd-definition-card">
         <h3>Under utredningen tittar vi på:</h3>
         <ul>
-          <li>Exekutiva funktioner – planering, tidsuppfattning och prioritering.</li>
+          <li>Exekutiva funktioner – din förmåga till planering och prioritering.</li>
           <li>Emotionell reglering, impulsivitet och stressnivåer över tid.</li>
           <li>Utvecklingshistoria, maskerande strategier och nuvarande stöd.</li>
           <li>Medicinsk bakgrund och samsjuklighet som påverkar helhetsbilden.</li>
         </ul>
         <p class="small">
-          Vi använder bland annat DIVA-5, validerade formulär och välkomnar input från partner eller anhörig när du önskar.
+          Vi använder bland annat DIVA-5, validerade formulär och välkomnar input från partner eller anhörig vid önskemål.
         </p>
       </div>
     </div>
@@ -74,7 +74,7 @@ page_class: "adhd-page--adult"
       <span class="eyebrow">Känner du igen dig?</span>
       <h2>Vanliga symtom hos vuxna</h2>
       <p class="muted">
-        Många beskriver en blandning av hög kapacitet och hinder som blir tydliga när kraven ökar i arbete, studier eller
+        Många beskriver en blandning av både kapacitet och svårigheter som blir allt tydliga när kraven ökar i arbete, studier eller
         relationer.
       </p>
     </div>
@@ -85,7 +85,7 @@ page_class: "adhd-page--adult"
       </article>
       <article class="adhd-symptom-card">
         <h3>Pendlande fokus</h3>
-        <p>Hyperfokus ibland och svårt att komma igång andra dagar, trots att uppgifterna är viktiga.</p>
+        <p>Hyperfokus ibland och svårt att komma igång andra dagar. Detta, trots att uppgifterna är viktiga.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Överväldigade känslor</h3>
@@ -102,24 +102,24 @@ page_class: "adhd-page--adult"
 <section class="who-section adhd-benefits" id="varfor-utredning">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Varför det gör skillnad</span>
+      <span class="eyebrow">Varför en utredning kan göra skillnad</span>
       <h2>Fördelar med att göra en utredning</h2>
       <p class="muted">
-        En utredning ger mer än en diagnos – den ger förståelse, språk och tillgång till rätt stöd.
+        En utredning är  mer än en diagnos – den ger förståelse och tillgång till rätt stöd.
       </p>
     </div>
     <div class="adhd-card-grid">
       <article>
         <h3>Bekräftelse &amp; tydlighet</h3>
-        <p>Du får en professionell förklaring till mönster du kanske kämpat med länge, vilket minskar självkritik.</p>
+        <p>Du får en professionell förklaring till mönster du kanske kämpat med länge, vilket ofta minskar den självkritik många riktar mot sig själva.</p>
       </article>
       <article>
         <h3>Väg till behandling</h3>
-        <p>En formell bedömning öppnar dörren till medicinering, stödprogram och anpassningar i arbete eller studier.</p>
+        <p>En formell bedömning öppnar dörren till bland annat medicinering och anpassningar i arbete eller studier.</p>
       </article>
       <article>
         <h3>Personlig handlingsplan</h3>
-        <p>Rekommendationer och strategier utformas för just din vardag – från energihantering till strukturstöd.</p>
+        <p>Rekommendationer och strategier utformas för just din vardag - allt från hur du kan hantera din energi till hur du kan skapa struktur i vardagen.</p>
       </article>
     </div>
   </div>
@@ -131,7 +131,7 @@ page_class: "adhd-page--adult"
       <span class="eyebrow">Så går det till</span>
       <h2>Steg för steg genom utredningen</h2>
       <p class="muted">
-        Processen är tydlig och empatisk, vanligtvis två till tre veckor från start till återkoppling.
+        Processen är strukturerad och stegvis. Vanligtvis tar det upp till fyra veckor från start till återkoppling.
       </p>
     </div>
     <div class="adhd-process-grid">
@@ -140,12 +140,12 @@ page_class: "adhd-page--adult"
           <span class="adhd-step-number">1</span>
           <div>
             <h3>Förberedelse &amp; formulär</h3>
-            <p>Du får digitala skattningar, tidslinje och tips på underlag som stärker bilden, till exempel skoldata.</p>
+            <p>Du får digitala skattningar att fylla i</p>
           </div>
         </div>
         <ul>
           <li>Webbaserade formulär (20–30 minuter).</li>
-          <li>Frivilligt kort introduktionssamtal för frågor.</li>
+          <li>Frivilligt introduktionssamtal för frågor.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -153,7 +153,7 @@ page_class: "adhd-page--adult"
           <span class="adhd-step-number">2</span>
           <div>
             <h3>Klinisk intervju</h3>
-            <p>Strukturerad DIVA-5-intervju via säker video eller på mottagningen – du väljer formatet.</p>
+            <p>Strukturerad DIVA-5-intervju via videolänk; vid behov kan du träffa hos på vår mottagning i Stockholm.</p>
           </div>
         </div>
         <ul>
@@ -179,7 +179,7 @@ page_class: "adhd-page--adult"
           <span class="adhd-step-number">4</span>
           <div>
             <h3>Återkoppling &amp; plan</h3>
-            <p>Vi går igenom resultatet i lugn takt och ger en konkret plan för medicinering, stöd och intyg.</p>
+            <p>Vi går igenom resultatet i lugn och ro och ger en konkret plan för medicinering och stöd.</p>
           </div>
         </div>
         <ul>
@@ -207,11 +207,11 @@ page_class: "adhd-page--adult"
       </article>
       <article>
         <h3>Skriftlig rapport</h3>
-        <p>Detaljerad sammanställning med testresultat, intygsunderlag och konkreta anpassningsförslag.</p>
+        <p>Detaljerad sammanställning med testresultat, intyg och konkreta anpassningsförslag.</p>
       </article>
       <article>
         <h3>Återkopplingssamtal</h3>
-        <p>Genomgång av rapporten, tid för frågor och plan för fortsatt stöd tillsammans med vårt team.</p>
+        <p>Genomgång av rapporten, tid för frågor och plan för eventuellt fortsatt stöd tillsammans med vårt team.</p>
       </article>
     </div>
   </div>
@@ -223,7 +223,7 @@ page_class: "adhd-page--adult"
       <span class="eyebrow">Transparent prissättning</span>
       <h2>Vad kostar en vuxenutredning?</h2>
       <p class="muted">
-        Priset inkluderar hela processen – från formulär och intervjuer till rapport, återkoppling och rekommendationer.
+        Priset inkluderar hela processen: formulär, intervjuer, rapport, återkoppling och rekommendationer.
       </p>
     </div>
     <div class="adhd-fees-grid">
@@ -231,7 +231,7 @@ page_class: "adhd-page--adult"
         <h3>Så används tiden</h3>
         <p>
           Vanligt upplägg är två möten à 60–90 minuter plus analys- och rapporttid. Vid behov lägger vi till samtal med
-          anhörig eller arbetsgivare efter överenskommelse.
+          anhörig efter överenskommelse.
         </p>
         <p>
           Inför start går vi igenom upplägget, eventuella tillval och vilket underlag du kan behöva för arbete eller studier.
@@ -277,12 +277,11 @@ page_class: "adhd-page--adult"
         <span class="eyebrow">Next steps</span>
         <h2>Fortsatt stöd efter diagnos</h2>
         <p>
-          Utredningen är startpunkten. Vi fortsätter gärna att arbeta tillsammans med dig, i samarbete med husläkare,
-          arbetsgivare eller studier.
+          Utredningen är startpunkten. Vi fortsätter gärna att arbeta tillsammans med dig genom coaching eller psykologsamtal.
         </p>
         <p class="muted">
-          Du väljer hur mycket stöd du behöver. Vissa vill ha tät coachning, andra nöjer sig med ett par uppföljningar per
-          år – vi skräddarsyr planen.
+          Du väljer hur mycket stöd du behöver. Vissa vill ha regelbunden coachning, andra nöjer sig med ett par uppföljningar per
+          år.
         </p>
       </div>
       <div class="intro-stats">
@@ -292,11 +291,11 @@ page_class: "adhd-page--adult"
         </article>
         <article>
           <h3>Terapi &amp; coaching</h3>
-          <p>KBT, ADHD-coaching och verktyg för organisation, stress och relationer.</p>
+          <p>KBT, ADHD-coaching och verktyg för stress och relationer.</p>
         </article>
         <article>
           <h3>Strukturstöd</h3>
-          <p>Plan för anpassningar, hjälpmedel och dialog med arbetsgivare eller lärosäte.</p>
+          <p>Plan för anpassningar och vilka hjälpmedel du kan få.</p>
         </article>
       </div>
     </div>
@@ -328,14 +327,13 @@ page_class: "adhd-page--adult"
       <details>
         <summary>Är medicinering den enda behandlingen?</summary>
         <p>
-          Nej. Vi arbetar med flera verktyg: medicin när det passar, coaching, terapi, hjälpmedel och livsstilsstrategier –
-          alltid i dialog med dig.
+          Nej. Vi arbetar med flera verktyg: medicin, eller coachin och terapi när det passar. 
         </p>
       </details>
       <details>
         <summary>Vad händer efter att jag fått min rapport?</summary>
         <p>
-          Vi erbjuder uppföljning för läkemedel, coaching eller terapi och kan hjälpa till med intyg, arbetsgivar­dialog och
+          Vi erbjuder uppföljning för läkemedel, coaching eller terapi och kan hjälpa till med intyg och
           samordning med din vårdcentral.
         </p>
       </details>
@@ -353,4 +351,3 @@ page_class: "adhd-page--adult"
     <a class="btn primary" href="/kontakta-oss">Boka ett introduktionssamtal</a>
     <p class="muted">Föredrar du att ringa? Mejla oss så ringer vi upp när det passar dig.</p>
   </div>
-</section>
