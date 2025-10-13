@@ -196,16 +196,30 @@ nav a.active {
   align-items: center;
 }
 
+.hero-home .hero-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 44px;
+}
+
 .hero-copy h1 {
   font-size: clamp(38px, 4.6vw, 56px);
   margin: 0 0 22px;
   line-height: 1.08;
 }
 
+.hero-home .hero-copy h1 {
+  font-size: clamp(34px, 4vw, 50px);
+}
+
 .hero-copy .lead {
   font-size: 18px;
   margin-bottom: 32px;
   max-width: 580px;
+}
+
+.hero-home .hero-copy .lead {
+  font-size: 17px;
+  max-width: 600px;
 }
 
 .hero-actions {
@@ -235,6 +249,15 @@ nav a.active {
   border-radius: 28px;
   padding: 22px;
   box-shadow: 0 28px 50px rgba(17, 32, 56, 0.14);
+}
+
+.hero-home .hero-figure {
+  justify-content: flex-end;
+}
+
+.hero-home .hero-image-frame {
+  max-width: 500px;
+  padding: 18px;
 }
 
 .hero-image-frame img {
