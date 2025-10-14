@@ -1,6 +1,6 @@
 ---
 title: "ADHD-medicinering"
-description: "Medicinsk behandling av ADHD med trygg titrering, uppföljning och samverkan – från första bedömning till hållbara rutiner."
+description: "Medicinsk behandling av ADHD med uppföljning."
 draft: false
 weight: 30
 page_class: "adhd-page--medication"
@@ -11,11 +11,11 @@ page_class: "adhd-page--medication"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>ADHD-medicinering – tydlig plan, trygg uppföljning</h1>
+        <h1>ADHD-medicinering</h1>
         <p class="lead">
-          För många med ADHD fungerar läkemedel som ett par glasögon för hjärnan: tankarna fokuserar, impulser lugnar sig och
+          För många med ADHD fungerar läkemedel som ett par glasögon för hjärnan då man kan börja fokusera, impulser lugnar sig och
           det blir lättare att göra det du vet fungerar. Vi hjälper dig att förstå alternativen, hitta rätt dos och följa upp
-          effekten på ett professionellt och säkert sätt.
+          medicineringen. 
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en medicinsk bedömning</a>
@@ -26,7 +26,7 @@ page_class: "adhd-page--medication"
         <figure class="hero-image adhd-hero-media">
           <img src="/img/hero.jpg" alt="Specialistläkare som går igenom läkemedelsplan med patient">
           <figcaption>
-            Vi följer nationella riktlinjer och internationell evidens, och skräddarsyr dosering och uppföljning efter dina mål.
+            Vi följer Socialstyrelsens riktlinjers som är baserat på nuvarande evidens, och skräddarsyr dosering och uppföljning efter dina förutsättningar..
           </figcaption>
         </figure>
       </div>
@@ -40,14 +40,9 @@ page_class: "adhd-page--medication"
       <div class="intro-copy">
         <h2>Vad är ADHD-medicinering?</h2>
         <p>
-          ADHD är ett neuropsykiatriskt funktionssätt där hjärnans reglering av uppmärksamhet, impulser och motivation fungerar
-          annorlunda. Symtomen börjar ofta i barndomen och finns ofta kvar i vuxenlivet som svårigheter att hålla fokus, följa
-          instruktioner eller organisera vardagen.
-        </p>
-        <p>
           Läkemedel för ADHD höjer nivåerna av neurotransmittorer som dopamin och noradrenalin. Resultatet kan bli längre
           uppmärksamhetsspann, minskad hyperaktivitet, bättre impulskontroll och mindre exekutiva svårigheter. Medicinen botar
-          inte ADHD, men kan skapa förutsättningar för fungerande rutiner, arbetsro och bättre egenvård medan du använder den.
+          inte ADHD, men kan skapa förutsättningar för fungerande rutiner, arbetsro och bättre egenvård undet det att du använder den.
         </p>
         <blockquote>
           ”Rätt medicin är inte ett quick fix – det är ett stöd för att kunna använda de strategier du redan vet hjälper, med
@@ -60,7 +55,6 @@ page_class: "adhd-page--medication"
           <li>Medicinsk historik, samsjuklighet och aktuella läkemedel eller kosttillskott.</li>
           <li>Dina mål: fokus i arbete, studier, familjeliv eller känsloreglering.</li>
           <li>Eventuella tidigare läkemedelserfarenheter och upplevda biverkningar.</li>
-          <li>Behov av samordning med vårdcentral, BUP eller arbetsgivare/skola.</li>
         </ul>
         <p class="small">
           Vi arbetar med både centralstimulerande läkemedel och icke-stimulerande alternativ. När det behövs kombinerar vi med
@@ -77,7 +71,7 @@ page_class: "adhd-page--medication"
       <span class="eyebrow">Vad medicin kan hjälpa med</span>
       <h2>Symtom som ofta förbättras</h2>
       <p class="muted">
-        Effekten är individuell, men många beskriver att följande områden blir lättare när dosen är rätt.
+        Effekten är individuell men många beskriver att följande områden blir lättare när dosen är rätt.
       </p>
     </div>
     <div class="adhd-symptom-grid">
@@ -87,15 +81,15 @@ page_class: "adhd-page--medication"
       </article>
       <article class="adhd-symptom-card">
         <h3>Mindre hyperaktivitet</h3>
-        <p>Minskad inre rastlöshet och möjlighet att vila eller varva ner när du vill.</p>
+        <p>Minskad rastlöshet och möjlighet att vila eller varva ner när du vill.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Bättre impulskontroll</h3>
-        <p>Lättare att bromsa snabba reaktioner, fatta genomtänkta beslut och hantera känslointensitet.</p>
+        <p>Lättare att bromsa snabba reaktioner, fatta mer genomtänkta beslut och hantera känslointensitet.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Stärkt exekutiv förmåga</h3>
-        <p>Ökad förmåga att planera, prioritera och komma igång – särskilt ihop med coaching eller terapi.</p>
+        <p>Ökad förmåga att planera, prioritera och komma igång – särskilt i kombination med coaching eller terapi.</p>
       </article>
     </div>
   </div>
@@ -107,13 +101,13 @@ page_class: "adhd-page--medication"
       <span class="eyebrow">Varför medicinsk uppföljning spelar roll</span>
       <h2>Fördelar med strukturerad medicinering</h2>
       <p class="muted">
-        Läkemedel är effektivast när de kombineras med tydliga mål, uppföljning och stöd för att hantera vardagen.
+        Läkemedel är som mest effektiv när de kombineras med tydliga mål, uppföljning och stöd för att hantera vardagen.
       </p>
     </div>
     <div class="adhd-card-grid">
       <article>
         <h3>Individuell optimering</h3>
-        <p>Vi testar doser och preparat stegvis för att hitta balansen mellan effekt och biverkningar.</p>
+        <p>Vi testar läkemedlet stegvis för att hitta balansen mellan effekt och biverkningar.</p>
       </article>
       <article>
         <h3>Trygg samverkan</h3>
@@ -121,7 +115,7 @@ page_class: "adhd-page--medication"
       </article>
       <article>
         <h3>Helhetsstöd</h3>
-        <p>Medicinen integreras med strategier för sömn, stress och struktur så att effekten håller över tid.</p>
+        <p>Medicinen integreras med strategier för sömn, stress och övriga rutiner så att effekten håller över tid.</p>
       </article>
     </div>
   </div>
@@ -131,7 +125,7 @@ page_class: "adhd-page--medication"
   <div class="container">
     <div class="section-intro">
       <span class="eyebrow">Så går det till</span>
-      <h2>Från bedömning till stabil dos</h2>
+      <h2>Från bedömning till stabil dosering</h2>
       <p class="muted">
         Vi följer en tydlig process med medicinsk säkerhet i fokus. Du är delaktig i varje steg.
       </p>
@@ -173,7 +167,6 @@ page_class: "adhd-page--medication"
         </div>
         <ul>
           <li>Justering av intagstider eller kombination med icke-stimulerande läkemedel vid behov.</li>
-          <li>Samverkan med andra behandlare om psykoterapi eller coaching pågår.</li>
         </ul>
       </article>
       <article class="adhd-process-card">
@@ -181,12 +174,12 @@ page_class: "adhd-page--medication"
           <span class="adhd-step-number">4</span>
           <div>
             <h3>Långsiktig uppföljning</h3>
-            <p>Vi planerar regelbundna kontroller och gör årliga genomgångar för att säkerställa fortsatt effekt.</p>
+            <p>Vi planerar regelbundna kontroller och gör årliga utvärderingar för att säkerställa fortsatt effekt.</p>
           </div>
         </div>
         <ul>
           <li>Utvärdering av mål, biverkningar och behov av intyg.</li>
-          <li>Plan för semesteruppehåll eller förändringar i livssituationen.</li>
+          <li>Plan för semesteruppehåll eller förändringar i din livssituation.</li>
         </ul>
       </article>
     </div>
@@ -199,7 +192,7 @@ page_class: "adhd-page--medication"
       <span class="eyebrow">Efter insatt medicinering</span>
       <h2>Det här får du med dig</h2>
       <p class="muted">
-        Målet är att du ska ha kontroll på din behandling och veta hur du fortsätter att må bra.
+        Målet är att du ska ha kontroll på din behandling och veta hur du kan fortsätta att må bra.
       </p>
     </div>
     <div class="adhd-card-grid">
@@ -232,7 +225,7 @@ page_class: "adhd-page--medication"
       <article class="adhd-fees-card">
         <h3>Så används tiden</h3>
         <p>
-          Varje möte är 30–45 minuter med specialistläkare. Mellan besöken har du tillgång till meddelandestöd för frågor om
+          Varje möte pågår under 30 minuter med en specialistläkare. Mellan besöken har du tillgång till meddelandestöd för frågor om
           dos, biverkningar eller intyg. Vi hjälper dig också att sammanställa underlag till vårdcentral eller försäkring.
         </p>
         <p>
@@ -323,7 +316,7 @@ page_class: "adhd-page--medication"
         <summary>Vad gör vi om första läkemedlet inte fungerar?</summary>
         <p>
           Vi justerar dosen stegvis och provar ofta flera preparat eller kombinationer. Målet är att hitta god effekt utan
-          besvärande biverkningar – ibland krävs tålamod för att hitta rätt.
+          besvärande biverkningar – ibland krävs då tålamod för att hitta rätt.
         </p>
       </details>
       <details>

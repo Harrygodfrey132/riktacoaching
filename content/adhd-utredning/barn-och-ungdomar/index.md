@@ -11,7 +11,6 @@ page_class: "adhd-page--youth"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>ADHD hos barn – förstå barnet och stötta familjen</h1>
         <p class="lead">
           ADHD kan påverka hur ett barn lär sig, leker och orkar med vardagen. Med en noggrann utredning får ni
           förståelse för vad som ligger bakom beteenden och en plan som hjälper både ditt barn och dig som vårdnadshavare.
