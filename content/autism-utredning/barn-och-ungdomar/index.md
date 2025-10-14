@@ -1,6 +1,11 @@
 ---
 title: "Autismutredning för barn och ungdomar"
 description: "En trygg autismutredning för barn och ungdomar – vi guidar familjen genom processen och skapar riktat stöd."
+meta_title: "Autismutredning för barn och ungdomar | Rikta"
+meta_keywords: "autism barn, ungdom autism utredning, skolstöd autism, familjestöd neuropsykiatri, Rikta barnutredning"
+meta_description: "Trygg autismutredning för barn och unga med observationer, intervjuer och stödplan som omfattar familj och skola."
+og_title: "Autismutredning för barn och unga - Rikta"
+og_description: "Vi kombinerar observationer, tester och anhörigintervjuer för att skapa tydliga rekommendationer till familj och skola."
 draft: false
 weight: 10
 page_class: "autism-page--youth"

@@ -2,6 +2,11 @@
 title: "ADHD-medicinering"
 description: "Medicinsk behandling av ADHD med uppföljning."
 draft: false
+meta_title: "ADHD-medicinering med trygg uppföljning | Rikta"
+meta_keywords: "ADHD medicinering, titrering ADHD, läkemedel ADHD vuxna, uppföljning psykiatri, Rikta medicinsk behandling"
+meta_description: "Specialistläkare guidar dig genom val av ADHD-läkemedel, titrering och uppföljning så att effekten blir hållbar och säker."
+og_title: "Trygg ADHD-medicinering via Rikta Psykiatri"
+og_description: "Vi anpassar dos, kombinationer och kontrollplaner och samordnar med andra vårdgivare för bästa resultat."
 weight: 30
 page_class: "adhd-page--medication"
 ---

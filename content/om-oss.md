@@ -1,6 +1,11 @@
 ---
 title: "About Us"
 layout: "about"
+meta_title: "Om Rikta Psykiatri | Vårt specialistteam"
+meta_keywords: "Rikta Psykiatri team, specialistpsykiatri, ADHD experter, neuropsykiatriskt team, privat psykiatri Sverige"
+meta_description: "Lär känna läkarna, psykologerna och koordinatorerna bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad neuropsykiatrisk vård."
+og_title: "Teamet bakom Rikta Psykiatri"
+og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledare och se hur vi kombinerar medicinsk precision med värme i varje patientresa."
 description: "Learn about the team behind Berkeley Psychiatrists and our commitment to mental health care."
 ---
 

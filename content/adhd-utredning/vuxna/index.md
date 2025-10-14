@@ -2,6 +2,11 @@
 title: "ADHD-utredning för vuxna"
 draft: false
 description: "En utförlig och nogrann ADHD-utredning för dig som vuxen"
+meta_title: "ADHD-utredning för vuxna | Rikta Psykiatri"
+meta_keywords: "ADHD vuxna, vuxenutredning ADHD, ADHD symtom vuxen, neuropsykiatri vuxen, Rikta ADHD plan"
+meta_description: "Så hjälper vi vuxna att förstå sin ADHD: strukturerade intervjuer, teamanalys, rapport och plan för behandling och stöd."
+og_title: "Vuxenutredning av ADHD hos Rikta"
+og_description: "Fördjupad kartläggning av exekutiva funktioner, känsloreglering och samsjuklighet med återkoppling och individanpassad plan."
 weight: 20
 page_class: "adhd-page--adult"
 ---

@@ -1,6 +1,11 @@
 ---
 title: "Dr Joanna Woodger"
 draft: false
+meta_title: "Dr Joanna Woodger | Psykiater för kvinnors ADHD"
+meta_keywords: "Joanna Woodger psykiater, kvinnors ADHD, neuropsykiatri expert, liaison psykiatri, Rikta doktor"
+meta_description: "Lär känna Dr Joanna Woodger, specialist på kvinnors neuropsykiatriska diagnoser, liaisonpsykiatri och systematiskt vårdflöde."
+og_title: "Dr Joanna Woodger på Rikta Psykiatri"
+og_description: "Med NHS-ledarskap och fokus på kvinnors neurodiversitet guidar Dr Woodger patienter genom diagnos, medicinering och stödinsatser."
 slug: "joanna-woodger"
 weight: 20
 role: "Consultant Psychiatrist"

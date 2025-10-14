@@ -2,10 +2,27 @@
 <!doctype html>
 <html lang="sv">
 <head>
+  {{- $site := .Site -}}
+  {{- $page := . -}}
+  {{- $pageTitle := or $page.Params.meta_title $page.Title $site.Title -}}
+  {{- $metaDescription := or $page.Params.meta_description $page.Params.description $site.Params.meta_description "Psykiatrisk vård med personcentrerat fokus." -}}
+  {{- $metaKeywords := $page.Params.meta_keywords -}}
+  {{- $ogTitle := or $page.Params.og_title $pageTitle -}}
+  {{- $ogDescription := or $page.Params.og_description $metaDescription -}}
+  {{- $ogType := cond .IsHome "website" "article" -}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Site.Title }}</title>
-  <meta name="description" content="Psykiatrisk vård med personcentrerat fokus.">
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $metaDescription }}">
+  {{- with $metaKeywords }}
+  <meta name="keywords" content="{{ . }}">
+  {{- end }}
+  <meta property="og:title" content="{{ $ogTitle }}">
+  <meta property="og:description" content="{{ $ogDescription }}">
+  <meta property="og:type" content="{{ $ogType }}">
+  <meta property="og:url" content="{{ $page.Permalink }}">
+  <meta property="og:site_name" content="{{ $site.Title }}">
+  <meta property="og:locale" content="sv_SE">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" href="/favicon.ico">

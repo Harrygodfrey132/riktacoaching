@@ -1,6 +1,11 @@
 ---
 title: "Dr Sourabh Singh"
 draft: false
+meta_title: "Dr Sourabh Singh | Konsultpsykiater Rikta"
+meta_keywords: "Sourabh Singh psykiater, ADHD specialist, Oxleas NHS psykiater, traumapsykiatri, Rikta psykiater"
+meta_description: "Möt Dr Sourabh Singh, konsultpsykiater med 15 års erfarenhet av ADHD-utredningar, traumavård och multidisciplinära team."
+og_title: "Dr Sourabh Singh - ADHD och traumafokus"
+og_description: "Dr Singh leder vuxenutredningar och traumainformerad behandling på Rikta Psykiatri med erfarenhet från Oxleas NHS och multiprofessionella team."
 slug: "sourabh-singh"
 weight: 10
 role: "Consultant Psychiatrist"

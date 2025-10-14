@@ -2,6 +2,11 @@
 title: "Autismutredning för kvinnor"
 description: "Autism hos kvinnor syns ofta mellan raderna. Vi erbjuder en neuroaffirmativ utredning som tar fasta på maskering, energi och hela livsresan."
 draft: false
+meta_title: "Autismutredning för kvinnor | Rikta Psykiatri"
+meta_keywords: "autism kvinnor, maskering autism, kvinnors neurodiversitet, sensorisk balans, Rikta autism kvinnor"
+meta_description: "Vi synliggör maskering, energibalans och hormonella mönster för kvinnor som misstänker autism och vill ha riktat stöd."
+og_title: "Autism hos kvinnor - utredning via Rikta"
+og_description: "Vårt team hjälper dig förstå hur autism påverkar relationer, arbete och hälsa och utformar strategier som håller över tid."
 weight: 15
 page_class: "autism-page--women"
 ---

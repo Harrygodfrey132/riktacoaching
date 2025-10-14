@@ -2,6 +2,11 @@
 title: "ADHD-coaching"
 description: "Specialiserad ADHD-coaching som hjälper dig hitta hållbara strategier i vardagen."
 draft: false
+meta_title: "ADHD-coaching med specialiststöd | Rikta Psykiatri"
+meta_keywords: "ADHD coaching, struktur ADHD, fokusstrategier, neuropsykiatrisk coaching, Rikta coachprogram"
+meta_description: "Bygg hållbara rutiner, fokus och energihantering med coaching som anpassas efter dina ADHD-styrkor och mål."
+og_title: "ADHD-coaching från Rikta Psykiatri"
+og_description: "Praktiska sessioner som förvandlar mål till konkreta steg med uppföljning, accountability och neuropsykiatrisk expertis."
 weight: 25
 page_class: "adhd-page--coaching"
 ---

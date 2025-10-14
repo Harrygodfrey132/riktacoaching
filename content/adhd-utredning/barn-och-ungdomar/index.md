@@ -2,6 +2,11 @@
 title: "ADHD-utredning för barn och ungdomar"
 description: "En smidig ADHD-utredning för barn och ungdomar - vi guidar er från första samtalet till en tydlig plan."
 draft: false
+meta_title: "ADHD-utredning för barn och ungdomar | Rikta"
+meta_keywords: "ADHD barn, ungdoms utredning, skolunderlag ADHD, familjestöd ADHD, Rikta barnpsykiatri"
+meta_description: "Familjefokuserad ADHD-utredning med intervjuer, skolunderlag och rekommendationer som stärker barnets vardag och lärande."
+og_title: "ADHD-utredning för barn och ungdomar"
+og_description: "Vi kartlägger styrkor och utmaningar i hem, skola och fritid och ger tydliga strategier och intyg för nästa steg."
 weight: 10
 page_class: "adhd-page--youth"
 ---
@@ -353,4 +358,3 @@ page_class: "adhd-page--youth"
     <p class="muted">Vill ni bli uppringda? Mejla oss så återkommer vi när det passar er bäst.</p>
   </div>
 </section>
-

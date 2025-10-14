@@ -2,6 +2,11 @@
 title: "Autismutredning för vuxna"
 draft: false
 description: "En neuroaffirmativ autismutredning för vuxna – från första kontakt till hållbar plan."
+meta_title: "Autismutredning för vuxna | Rikta Psykiatri"
+meta_keywords: "autism vuxna, autism maskering, sensorisk överbelastning, neuroaffirmativ utredning, Rikta autism vuxen"
+meta_description: "Fördjupad autismutredning för vuxna med fokus på maskering, sensorik och samsjuklighet samt praktiska rekommendationer."
+og_title: "Autism i vuxenlivet - Rikta Psykiatri"
+og_description: "Vi kartlägger livshistoria, sensoriska behov och samsjuklighet och levererar en plan som stödjer arbetet, relationer och återhämtning."
 weight: 20
 page_class: "autism-page--adult"
 ---

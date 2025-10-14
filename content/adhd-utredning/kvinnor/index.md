@@ -2,6 +2,11 @@
 title: "ADHD-utredning för kvinnor"
 description: "ADHD-utredning för kvinnor – vi utforskar symtom, hormonella mönster och strategier som håller i längden."
 draft: false
+meta_title: "ADHD-utredning för kvinnor | Rikta Psykiatri"
+meta_keywords: "ADHD kvinnor, maskerad ADHD, hormonell ADHD, kvinnors neuropsykiatri, Rikta kvinnoteam"
+meta_description: "Utredning med fokus på maskering, hormonella mönster och vardagsstrategier som stärker kvinnor med misstänkt ADHD."
+og_title: "ADHD hos kvinnor - utredning via Rikta"
+og_description: "Vi kombinerar medicinsk expertis med kunskap om hormoncykler, stress och relationer för att skapa en hållbar plan."
 weight: 15
 page_class: "adhd-page--women"
 ---

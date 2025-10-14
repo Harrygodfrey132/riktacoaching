@@ -2,6 +2,11 @@
 title: "Priser"
 layout: "priser"
 draft: false
+meta_title: "Priser för ADHD- och autismutredning | Rikta Psykiatri"
+meta_keywords: "ADHD utredning pris, autism prislista, privat psykiatri kostnad, Rikta priser, neuropsykiatri avgifter"
+meta_description: "Se fasta priser för ADHD- och autismutredningar, medicinska nybesök, uppföljningar och tilläggstjänster hos Rikta Psykiatri."
+og_title: "Prislista för Rikta Psykiatri"
+og_description: "Jämför paket för utredningar, medicinska besök och uppföljningar och se vad som ingår innan du bokar."
 ---
 
 <section class="pricing-intro">
