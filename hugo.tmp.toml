@@ -1,0 +1,30 @@
+baseURL = "https://riktapsykiatri.se/"
+languageCode = "sv"
+title = "Rikta Psykiatri"
+defaultContentLanguage = "sv"
+enableRobotsTXT = true
+disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
+
+[params]
+  primary = "#000000"
+  background = "#FFFFFF"
+  secondary = "#4773A6"
+  accent = "#DA5B5F"
+  stickyHeaderOffset = 72
+  logo = "/img/logo.png"
+  hero = "/img/hero.jpg"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true                    # allow HTML in Markdown (sections/forms)
+
+[outputs]
+  home = ["HTML","RSS","JSON"]
+
+# Optional: silence the "raw HTML omitted" warning
+
+# Optional: if you want GA later:
+#[services]
+#  [services.googleAnalytics]
+#    id = ""
+
