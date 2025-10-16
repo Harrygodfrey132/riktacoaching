@@ -16,10 +16,10 @@ page_class: "autism-page--women"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>Autism hos kvinnor – synliggör mönstren och återta energin</h1>
+        <h1>Autism hos kvinnor</h1>
         <p class="lead">
-          Många kvinnor lever länge med autism utan diagnos. Maskering, dubbla krav och samsjuklighet gör bilden komplex.
-          Vi erbjuder en varm och strukturerad utredning som lyfter fram både styrkor och stödbehov.
+          Många kvinnor lever länge med autism utan diagnos. Maskande och samsjuklighet kan dessutom göra bilden komplex.
+          Vi erbjuder tydlig och strukturerad utredning som lyfter fram både dina styrkor och stödbehov.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
@@ -28,10 +28,7 @@ page_class: "autism-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Kvinna i samtal med psykolog i en lugn mottagningsmiljö">
-          <figcaption>
-            Vi arbetar neuroaffirmativt och väger in livshistoria, hormonella variationer och den maskering många kvinnor beskriver.
-          </figcaption>
+          <img src="/img/hero.jpg">
         </figure>
       </div>
     </div>
@@ -44,27 +41,27 @@ page_class: "autism-page--women"
       <div class="intro-copy">
         <h2>Hur kan autism visa sig hos kvinnor?</h2>
         <p>
-          Autism handlar om hur hjärnan bearbetar sociala sammanhang, sinnesintryck och intressen. Hos kvinnor tar det ofta
-          formen av maskering, perfektionism eller ett ständigt energibudgeterande för att klara vardagen.
+          Autism handlar om hur hjärnan bearbetar sociala sammanhang, sinnesintryck och ibland vilka typer av intressen man har. Hos kvinnor tar det ofta
+          formen av maskande, perfektionism eller ett ständigt energibudgeterande för att klara vardagen.
         </p>
         <p>
-          I utredningen tittar vi på hela din livsresa – från skoltid och relationer till arbetsliv och återhämtning. Vi särskiljer
+          I utredningen gör vi en kartläggning över hur du har fungerat i relationer, skolan och i arbetslivet under ditt liv. Vi särskiljer
           autism från ADHD, utmattning, PTSD eller hormonella svängningar för att ge en träffsäker slutsats.
         </p>
         <blockquote>
-          ”En träffsäker autismutredning ser bakom maskeringen och bekräftar både din kompetens och dina behov av anpassningar.”
+          ”En träffsäker autismutredning ser bortom maskandet och ger riktning i ditt liv baserat på dina styrkor och förutsättningar.”
         </blockquote>
       </div>
       <div class="intro-stats adhd-definition-card">
         <h3>Under utredningen tittar vi på:</h3>
         <ul>
-          <li>Maskeringsstrategier, socialt manus och hur energin påverkas efter interaktioner.</li>
+          <li>Maskandesstrategier, social ångest och hur energin påverkas efter socialt umgänge.</li>
           <li>Sensorisk känslighet, sömn, hormonella variationer och kroppsliga signaler.</li>
           <li>Specialintressen, styrkor och hur du organiserar vardag, relationer och familjeliv.</li>
-          <li>Samsjuklighet såsom ADHD, ångest, depression, EDS eller autistisk burnout.</li>
+          <li>Samsjuklighet såsom ADHD, ångest, depression, eller utmattningssyndrom.</li>
         </ul>
         <p class="small">
-          Vi kombinerar verktyg som RAADS-14, AQ och 3Di med kliniska intervjuer och valda anhörig- eller partnersamtal när du önskar.
+          Vi använder oss av verktyg som RAADS-14, AQ och 3Di med kliniska intervjuer och anhörig- eller partnersamtal när du tror att det skulle tillföra till utrednining.
         </p>
       </div>
     </div>
@@ -77,26 +74,26 @@ page_class: "autism-page--women"
       <span class="eyebrow">Känner du igen dig?</span>
       <h2>Vanliga tecken hos kvinnor</h2>
       <p class="muted">
-        Autism hos kvinnor kan vara subtil. Många lever med hög kapacitet utåt men ett högt pris i form av utmattning, oro
+        Autism hos kvinnor kan vara subtil. Många lever med hög kapacitet utåt vilket kan få ett högt pris i form av utmattning, oro
         eller känslan av att aldrig räcka till.
       </p>
     </div>
     <div class="adhd-symptom-grid">
       <article class="adhd-symptom-card">
-        <h3>Maskering &amp; social trötthet</h3>
-        <p>Att läsa av, spegla andra och passa in gör dig slutkörd efter arbetsdagar eller sociala evenemang.</p>
+        <h3>Maskande &amp; social trötthet</h3>
+        <p>Att läsa av, spegla andra och passa in gör dig utmattad efter arbetsdagar eller sociala evenemang.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Sensorisk överbelastning</h3>
-        <p>Ljud, ljus eller beröring blir överväldigande, särskilt i öppna kontor, familjeliv eller kollektivtrafik.</p>
+        <p>Ljud, ljus eller beröring blir överväldigande, t.ex., i öppna kontorlandskap, i familjelivet eller i kollektivtrafiken.</p>
       </article>
       <article class="adhd-symptom-card">
         <h3>Perfektionism &amp; ansvar</h3>
-        <p>Stark känsla för detaljer och ordning – men svårt att säga nej och risk för energikrascher när kraven hopar sig.</p>
+        <p>Detaljstyrd och starkt behov för ordning.</p>
       </article>
       <article class="adhd-symptom-card">
-        <h3>Djupa intressen</h3>
-        <p>Fördjupade intressen som ger energi och struktur, men som andra ibland missförstår eller tolkar som ”för mycket”.</p>
+        <h3>Specialintressen</h3>
+        <p>Intressen som ger energi och mening men som andra ibland missförstår eller tolkar som ”för mycket”.</p>
       </article>
     </div>
   </div>
@@ -105,20 +102,20 @@ page_class: "autism-page--women"
 <section class="who-section adhd-benefits" id="varfor-utredning">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Varför det gör skillnad</span>
+      <span class="eyebrow">Hur gör en utredning skillnad?</span>
       <h2>Fördelar med att utreda</h2>
       <p class="muted">
-        En diagnos är inte målet i sig, men den kan ge språk, rättigheter och strategier som minskar självkritik och energislitage.
+        En diagnos är inte målet i sig men den kan ge ett vokabulär som är meningsfullt, ge rätt till stöd och vägleda hur man kan organisera sitt liv på ett mindre utmattande sätt.
       </p>
     </div>
     <div class="adhd-card-grid">
       <article>
         <h3>Bekräftelse &amp; självförtroende</h3>
-        <p>En professionell bedömning validerar din upplevelse och gör det lättare att sätta gränser för energikrävande situationer.</p>
+        <p>En professionell bedömning kan validera mycket av det som känts svårt i ditt liv och ge utrymme för att återfå ditt självförtroende.</p>
       </article>
       <article>
         <h3>Underlag för stöd</h3>
-        <p>Rapporten kan användas för LSS, arbetsanpassningar, högskolestöd eller kontakt med Försäkringskassan.</p>
+        <p>Rapporten som utredningen mynnar ut till kan användas för LSS, arbetsanpassningar, högskolestöd eller i kontakt med Försäkringskassan.</p>
       </article>
       <article>
         <h3>Personliga strategier</h3>
@@ -134,7 +131,7 @@ page_class: "autism-page--women"
       <span class="eyebrow">Så går det till</span>
       <h2>Steg för steg genom utredningen</h2>
       <p class="muted">
-        Processen är tydlig, neuroaffirmativ och anpassad efter dig. Normalt tar det tre till fyra veckor från första samtal
+        Utredningen är strukturerad och individanpassad. Normalt tar det tre till fyra veckor från första samtal
         till återkoppling.
       </p>
     </div>
@@ -144,7 +141,7 @@ page_class: "autism-page--women"
           <span class="adhd-step-number">1</span>
           <div>
             <h3>Förberedelser &amp; formulär</h3>
-            <p>Digitala skattningar, livslinje och frågor inför utredningen. Vi kan inkludera cykel- eller stressdagbok vid behov.</p>
+            <p>Vi ber dig fylla i skattningar och svara på frågor inför utredningen.</p>
           </div>
         </div>
         <ul>
@@ -157,11 +154,11 @@ page_class: "autism-page--women"
           <span class="adhd-step-number">2</span>
           <div>
             <h3>Kliniska intervjuer</h3>
-            <p>Strukturerade samtal med specialistläkare eller psykolog, digitalt eller på mottagning – du väljer.</p>
+            <p>Strukturerade samtal med specialistläkare och psykolog.</p>
           </div>
         </div>
         <ul>
-          <li>2 x 60 minuter med fokus på relationer, sensorik och maskering.</li>
+          <li>2 x 60 minuters-samtal.</li>
           <li>Möjlighet till kompletterande samtal med partner eller anhörig.</li>
         </ul>
       </article>
@@ -170,11 +167,11 @@ page_class: "autism-page--women"
           <span class="adhd-step-number">3</span>
           <div>
             <h3>Analys &amp; bedömning</h3>
-            <p>Teamet sammanställer resultat, väger in samsjuklighet och formulerar rekommendationer utifrån dina mål.</p>
+            <p>Vårt team sammanställer vad utredningen kommit fram till, väger in möjlig samsjuklighet och formulerar rekommendationer utifrån dina mål.</p>
           </div>
         </div>
         <ul>
-          <li>Multidisciplinär genomgång vid komplex bild.</li>
+          <li>Multidisciplinär genomgång av komplexa fall.</li>
           <li>Förslag på stödinsatser och eventuell vidare utredning.</li>
         </ul>
       </article>
@@ -183,11 +180,11 @@ page_class: "autism-page--women"
           <span class="adhd-step-number">4</span>
           <div>
             <h3>Återkoppling &amp; plan</h3>
-            <p>Vi går igenom rapporten i lugn takt och skapar en hållbar plan för vardag, relationer och framtida mål.</p>
+            <p>Vi går igenom rapporten i lugn och ro och skapar en övergripande plan för vardag, relationer och framtida mål.</p>
           </div>
         </div>
         <ul>
-          <li>Detaljerad rapport med sammanfattning och nästa steg.</li>
+          <li>Rapport med sammanfattning och nästa steg.</li>
           <li>Tydlig plan för anpassningar, stöd och uppföljning.</li>
         </ul>
       </article>
@@ -207,68 +204,15 @@ page_class: "autism-page--women"
     <div class="adhd-card-grid">
       <article>
         <h3>Diagnostiskt utlåtande</h3>
-        <p>Tydlig respons kring autismkriterierna, samsjuklighet och rekommenderade kontakter inom vård eller stöd.</p>
+        <p>Tydligt svar kring om du uppfyller autismkriterierna, samsjuklighet och rekommenderade kontakter inom vård eller stöd.</p>
       </article>
       <article>
         <h3>Skriftlig rapport</h3>
-        <p>Detaljerad rapport med styrkor, behov, sensoriska profiler och förslag för arbete, studier och familjeliv.</p>
+        <p>Detaljerad rapport med styrkor, behov, och förslag för arbetet, studierna eller familjelivet.</p>
       </article>
       <article>
         <h3>Återkopplingssamtal</h3>
-        <p>Plats för frågor, känslomässig bearbetning och planering av fortsatt stöd med vårt team.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar en utredning?</h2>
-      <p class="muted">
-        Priset inkluderar hela processen – från formulär, intervjuer och analys till rapport, återkoppling och rekommendationer.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så använder vi tiden</h3>
-        <p>
-          Vi planerar två kliniska möten, kompletterande observation vid behov samt tid för analys och rapportskrivning. Vill
-          du involvera partner eller anhörig lägger vi in extra samtal.
-        </p>
-        <p>
-          Innan start går vi igenom upplägg, eventuella tillval och vilket underlag som stärker ansökningar om stöd eller intyg.
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Digitalt paket</strong>
-              <span class="adhd-pricing-meta">Två videobesök + rapport &amp; återkoppling</span>
-            </div>
-            <span class="adhd-pricing-value">14&nbsp;900 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Mottagningspaket</strong>
-              <span class="adhd-pricing-meta">Besök i Stockholm + intyg för anpassningar</span>
-            </div>
-            <span class="adhd-pricing-value">16&nbsp;500 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Uppföljningspaket</strong>
-              <span class="adhd-pricing-meta">Tre coach- eller terapibesök efter diagnos</span>
-            </div>
-            <span class="adhd-pricing-value">5&nbsp;400 kr</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Avgiften inkluderar komplett rapport och återkoppling. Tillägg kan tillkomma för arbetsplatsbesök eller fördjupade
-          intyg – vi informerar alltid i förväg.
-        </p>
+        <p>Tid för frågor och planering av fortsatt stöd med vårt team.</p>
       </article>
     </div>
   </div>
@@ -285,8 +229,7 @@ page_class: "autism-page--women"
           dig i takt med att nya situationer uppstår.
         </p>
         <p class="muted">
-          Stödet utformas efter dig – från regelbunden coaching till punktinsatser vid livsförändringar, graviditet eller byte
-          av arbete.
+          Stödet utformas efter dig – från regelbunden coaching till punktinsatser vid olika livsskeden. 
         </p>
       </div>
       <div class="intro-stats">
@@ -296,7 +239,7 @@ page_class: "autism-page--women"
         </article>
         <article>
           <h3>Terapi &amp; coaching</h3>
-          <p>Neuroaffirmativ terapi, autismcoachning och verktyg för energi, relationer och sensoriska behov.</p>
+          <p>Autismcoachning där du ges kunskaper och verktyg för att optimera din vardag.</p>
         </article>
         <article>
           <h3>Struktur &amp; anpassningar</h3>
@@ -318,14 +261,14 @@ page_class: "autism-page--women"
       <details>
         <summary>Jag känner igen mig men fungerar ”för bra” – kan jag ändå få diagnos?</summary>
         <p>
-          Ja. Många kvinnor har hög funktionell förmåga men betalar ett stort pris i form av stress eller återkommande burnout.
+          Ja. Många kvinnor har hög funktionell förmåga men betalar ett stort pris i form av stress eller utmattning.
           Utredningen fokuserar på din inre upplevelse, inte bara hur det ser ut utåt.
         </p>
       </details>
       <details>
         <summary>Hur tar ni hänsyn till hormoner och cykler?</summary>
         <p>
-          Vi kartlägger hur symtomen påverkas av menscykel, graviditet eller perimenopaus och inkluderar det i bedömningen och
+          Vi kartlägger hur symtomen påverkas av menscykel, graviditet eller klimakterie och inkluderar det i bedömningen och
           rekommendationerna.
         </p>
       </details>
@@ -333,13 +276,13 @@ page_class: "autism-page--women"
         <summary>Kan jag få stöd på jobbet eller i studier efter utredningen?</summary>
         <p>
           Ja. Rapporten innehåller tydliga rekommendationer och kan användas för att ansöka om anpassningar eller särskilt
-          pedagogiskt stöd. Vi hjälper dig att formulera vad du behöver.
+          pedagogiskt stöd. Vi hjälper dig till det du behöver.
         </p>
       </details>
       <details>
         <summary>Vad händer efter att jag fått min rapport?</summary>
         <p>
-          Du kan boka uppföljningar när du vill. Vi hjälper med intyg, terapi, coachning eller samordning med annan vård –
+          Du kan boka uppföljningar när du vill. Vi hjälper med intyg, terapi, coachning eller samordning med annan vård -
           utifrån det stöd du behöver över tid.
         </p>
       </details>

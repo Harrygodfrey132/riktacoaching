@@ -217,58 +217,6 @@ page_class: "adhd-page--medication"
   </div>
 </section>
 
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar medicinsk uppföljning?</h2>
-      <p class="muted">
-        Paketen anpassas efter om du är nyinsatt eller redan stabil på behandling. Vi informerar alltid innan extra kostnader uppstår.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så används tiden</h3>
-        <p>
-          Varje möte pågår under 30 minuter med en specialistläkare. Mellan besöken har du tillgång till meddelandestöd för frågor om
-          dos, biverkningar eller intyg. Vi hjälper dig också att sammanställa underlag till vårdcentral eller försäkring.
-        </p>
-        <p>
-          Vid uppstart kan provtagning eller EKG behövas – vi rekommenderar och samordnar det via partnerkliniker eller din vårdcentral.
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Startpaket titrering</strong>
-              <span class="adhd-pricing-meta">Tre läkarbesök + löpande rådgivning</span>
-            </div>
-            <span class="adhd-pricing-value">6&nbsp;900 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Stabil uppföljning</strong>
-              <span class="adhd-pricing-meta">Två kontroller per år + sammanfattande rapport</span>
-            </div>
-            <span class="adhd-pricing-value">4&nbsp;200 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Kompletterande bedömning</strong>
-              <span class="adhd-pricing-meta">Enstaka konsultation eller intygsunderlag</span>
-            </div>
-            <span class="adhd-pricing-value">2&nbsp;000 kr</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Avbokning senast 24 timmar före bokad tid. Kostnad för provtagning eller recept från apotek tillkommer inte från vår sida.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
     <div class="who-grid intro-grid">

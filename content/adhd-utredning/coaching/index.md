@@ -223,58 +223,6 @@ page_class: "adhd-page--coaching"
   </div>
 </section>
 
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar ADHD-coaching?</h2>
-      <p class="muted">
-        Vi erbjuder paket som gör det enkelt att komma igång och att fortsätta när du ser resultat.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så används tiden</h3>
-        <p>
-          Varje session är 45 minuter. Mellan mötena kan du få korta avstämningar via meddelande vid behov. Inför start går vi
-          igenom förväntningar, mål och hur vi mäter framsteg.
-        </p>
-        <p>
-          Vi rekommenderar ett startpaket på tre sessioner för att kunna planera, testa och utvärdera nya strategier.
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Startpaket</strong>
-              <span class="adhd-pricing-meta">Tre sessioner + handlingsplan</span>
-            </div>
-            <span class="adhd-pricing-value">4&nbsp;1800 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Fokusspår</strong>
-              <span class="adhd-pricing-meta">Sex sessioner + avstämningar mellan möten</span>
-            </div>
-            <span class="adhd-pricing-value">8&nbsp;3500 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Intensivkurs</strong>
-              <span class="adhd-pricing-meta">Fyra veckor med veckovisa sessioner &amp; korta check-ins</span>
-            </div>
-            <span class="adhd-pricing-value">6&nbsp;2400 kr</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Du kan alltid köpa enstaka uppföljningar (1&nbsp;600 kr) efter avslutat paket. Avbokning senast 24 timmar innan utan kostnad.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
     <div class="who-grid intro-grid">

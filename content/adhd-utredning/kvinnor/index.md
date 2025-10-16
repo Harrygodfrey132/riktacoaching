@@ -221,59 +221,6 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar en kvinnoutredning?</h2>
-      <p class="muted">
-        Priset täcker hela processen – formulär, intervjuer, analys, rapport och återkoppling. Extra insatser planeras alltid i dialog.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så används tiden</h3>
-        <p>
-          Två möten à 60–90 minuter samt analys- och rapporttid. Vid behov lägger vi till hormonuppföljning eller samordning
-          med annan vårdgivare.
-        </p>
-        <p>
-          Inför start går vi igenom upplägget, eventuella önskemål och vilket underlag som är hjälpsamt att ta med, exempelvis
-          tidigare utredningar.
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Digitalt paket</strong>
-              <span class="adhd-pricing-meta">Två videobesök + rapport &amp; återkoppling</span>
-            </div>
-            <span class="adhd-pricing-value">Från 14&nbsp;900 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Mottagningspaket</strong>
-              <span class="adhd-pricing-meta">Besök på vår digital mottagning + intyg för arbete eller studier</span>
-            </div>
-            <span class="adhd-pricing-value">Från 16&nbsp;500 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Hormonsamordning</strong>
-              <span class="adhd-pricing-meta">Extra konsultation kring cykel, graviditet eller klimakterium</span>
-            </div>
-            <span class="adhd-pricing-value">Efter offert</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Tillägg för läkemedelsstart eller fördjupade intyg kommuniceras alltid i förväg så att du kan planera i lugn och ro.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
     <div class="who-grid intro-grid">

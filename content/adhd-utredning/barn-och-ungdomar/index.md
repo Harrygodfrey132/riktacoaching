@@ -223,59 +223,6 @@ page_class: "adhd-page--youth"
   </div>
 </section>
 
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar en barnutredning?</h2>
-      <p class="muted">
-        Priset inkluderar hela processen, det vill säga allt från intervjuer, analys, återkoppling och samordning med skola vid behov.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så används tiden</h3>
-        <p>
-          Vanligt upplägg är två till tre möten à 60 minuter med familj och barn samt avsatt tid för analys och rapport.
-          Extra samtal med pedagog eller observation planeras i dialog med er.
-        </p>
-        <p>
-          Inför start går vi igenom upplägget, eventuella tillval och vilket underlag som kan behövas från skolan eller andra personer i barnets omgivning. 
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Standardpaket</strong>
-              <span class="adhd-pricing-meta">Tre möten + rapport &amp; återkoppling</span>
-            </div>
-            <span class="adhd-pricing-value">Från 16&nbsp;900 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Utökad kartläggning</strong>
-              <span class="adhd-pricing-meta">Pedagogsamtal, observation och extra underlag</span>
-            </div>
-            <span class="adhd-pricing-value">Efter offert</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Uppföljningsprogram</strong>
-              <span class="adhd-pricing-meta">Tre uppföljande samtal för familj eller skola</span>
-            </div>
-            <span class="adhd-pricing-value">Från 5&nbsp;400 kr</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Avgiften inkluderar en komplett rapport och återkopplingsmöte. Vi informerar alltid om kostnader för tillägg innan de
-          bokas in så att ni kan fatta beslut i lugn och ro.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
     <div class="who-grid intro-grid">

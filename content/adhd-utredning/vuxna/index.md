@@ -222,59 +222,6 @@ page_class: "adhd-page--adult"
   </div>
 </section>
 
-<section class="who-section adhd-fees" id="avgifter">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Transparent prissättning</span>
-      <h2>Vad kostar en vuxenutredning?</h2>
-      <p class="muted">
-        Priset inkluderar hela processen: formulär, intervjuer, rapport, återkoppling och rekommendationer.
-      </p>
-    </div>
-    <div class="adhd-fees-grid">
-      <article class="adhd-fees-card">
-        <h3>Så används tiden</h3>
-        <p>
-          Vanligt upplägg är två möten à 60–90 minuter plus analys- och rapporttid. Vid behov lägger vi till samtal med
-          anhörig efter överenskommelse.
-        </p>
-        <p>
-          Inför start går vi igenom upplägget, eventuella tillval och vilket underlag du kan behöva för arbete eller studier.
-        </p>
-      </article>
-      <article class="adhd-fees-card">
-        <div class="adhd-pricing">
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Digitalt paket</strong>
-              <span class="adhd-pricing-meta">Två videobesök + rapport &amp; återkoppling</span>
-            </div>
-            <span class="adhd-pricing-value">14&nbsp;900 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Mottagningspaket</strong>
-              <span class="adhd-pricing-meta">Besök i Stockholm + sammanfattande intyg</span>
-            </div>
-            <span class="adhd-pricing-value">16&nbsp;500 kr</span>
-          </div>
-          <div class="adhd-pricing-row">
-            <div>
-              <strong>Uppföljningspaket</strong>
-              <span class="adhd-pricing-meta">Tre coach- eller läkarbesök efter diagnos</span>
-            </div>
-            <span class="adhd-pricing-value">5&nbsp;400 kr</span>
-          </div>
-        </div>
-        <p class="adhd-fees-note">
-          Avgiften inkluderar komplett rapport och återkoppling. Tillägg kan tillkomma för läkemedelsstart eller fördjupade
-          intyg – vi informerar alltid i förväg.
-        </p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
     <div class="who-grid intro-grid">
