@@ -1,0 +1,7 @@
+/public/
+/resources/
+/node_modules/
+*.log
+.DS_Store
+/public/
+/public/

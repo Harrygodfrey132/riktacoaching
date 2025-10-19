@@ -1,0 +1,159 @@
+{{ define "main" }}
+<div class="join-page" id="bli-en-del-av-teamet">
+  <!-- 1. Header Section -->
+  <section class="join-hero">
+    <div class="container join-hero__inner">
+      <p class="join-hero__eyebrow">Rikta Psykiatri</p>
+      <h1 class="join-hero__title">Join the Team</h1>
+      <p class="join-hero__subtitle">Collaborate with experienced clinicians delivering person-centred psychiatry across Sweden.</p>
+    </div>
+  </section>
+
+  <!-- 2. Trust / Accreditation Row -->
+  <section class="trust-strip">
+    <div class="container trust-strip__logos">
+      <span class="trust-logo" aria-label="Member of the Swedish Psychiatric Association">Svenska Psykiatriska Föreningen</span>
+      <span class="trust-logo" aria-label="Certified Healthcare Partner">Vårdföretagarna</span>
+      <span class="trust-logo" aria-label="GDPR compliant provider">GDPR Säker</span>
+      <span class="trust-logo" aria-label="Patient safety accredited">Patient First Alliance</span>
+    </div>
+  </section>
+
+  <!-- 3. Introduction Section -->
+  <section class="join-intro" id="introduktion">
+    <div class="container join-intro__grid">
+      <div class="join-intro__text">
+        <span class="section-label">Varför Rikta Psykiatri</span>
+        <h2>Care built on evidence and empathy</h2>
+        <p>Rikta Psykiatri hjälper regioner, vårdgivare och företag att erbjuda snabb, kvalificerad psykiatrisk vård. Vi är ett team av psykiatriker, psykologer och sjuksköterskor som förenar klinisk skicklighet med varmt bemötande.</p>
+        <p>Hos oss hittar du en kultur där kunskapsdelning och tvärprofessionellt samarbete är vardag. Vi tror på långsiktiga relationer, tydlig kommunikation och att alltid sätta patientens behov i fokus.</p>
+        <a class="cta-button" href="#register-interest">Skicka ansökan</a>
+      </div>
+      <div class="join-intro__media">
+        <figure>
+          <img src="/img/om-oss.jpg" alt="Kliniker från Rikta Psykiatri som samarbetar runt ett bord">
+          <figcaption>Vi bygger starka team med tryggt ledarskap och nära stöd.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Application Form Section -->
+  <section class="join-form" id="register-interest" aria-labelledby="register-interest-title">
+    <div class="container">
+      <div class="join-form__card">
+        <h2 id="register-interest-title">Register Your Interest</h2>
+        <p class="join-form__lead">Berätta kort om dig själv så kontaktar vi dig för ett första samtal.</p>
+
+        <form name="register-interest" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="register-interest">
+          <p class="hidden">
+            <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-status form-status--success" role="status" aria-live="polite">
+            Tack! Vi har tagit emot din intresseanmälan och återkommer inom kort.
+          </div>
+          <div class="form-status form-status--error" role="status" aria-live="polite">
+            Något gick fel. Kontrollera fälten eller försök igen om en stund.
+          </div>
+
+          <div class="form-grid">
+            <label>
+              Full Name
+              <input type="text" name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" autocomplete="tel">
+            </label>
+            <label>
+              Role / Profession
+              <input type="text" name="role" autocomplete="organization-title">
+            </label>
+            <label class="form-grid__full">
+              Message
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+          </div>
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Available Roles Section -->
+  <section class="join-roles" aria-labelledby="join-roles-title">
+    <div class="container">
+      <h2 id="join-roles-title">Current Opportunities</h2>
+      <p class="join-roles__intro">Vi söker både erfarna och nyfikna kliniker som vill bidra till en modern psykiatrisk vårdkedja.</p>
+      <div class="join-roles__list">
+        <article class="role-card">
+          <h3>Psykiater / Konsult</h3>
+          <p>Driv utredningar och behandlingsplaner för komplexa patientflöden, med stöd av ett erfaret konsultteam och regelbunden handledning.</p>
+          <ul>
+            <li>Specialistkompetens inom psykiatri</li>
+            <li>Erfarenhet av neuropsykiatriska utredningar</li>
+            <li>Möjlighet till flexibla uppdrag i hela Sverige</li>
+          </ul>
+          <a class="role-card__link" href="#register-interest">Ansök nu</a>
+        </article>
+        <article class="role-card">
+          <h3>Sjuksköterska / Terapeut</h3>
+          <p>Stötta patienter genom bedömningar, uppföljningar och samordning. Vi värdesätter strukturerad dokumentation och trygg patientkontakt.</p>
+          <ul>
+            <li>Legitimerad sjuksköterska eller terapeut</li>
+            <li>Erfarenhet av psykiatri eller primärvårdspsykiatri</li>
+            <li>Teamorienterat arbetssätt och tydlig kommunikation</li>
+          </ul>
+          <a class="role-card__link" href="#register-interest">Ansök nu</a>
+        </article>
+        <article class="role-card">
+          <h3>Stöd- och projektroller</h3>
+          <p>Vi växer med roller inom projektledning, administration och kvalitetsarbete. Hör av dig om du vill bidra till en mer tillgänglig psykiatri.</p>
+          <ul>
+            <li>Erfarenhet av koordination eller projektledning</li>
+            <li>Förmåga att skapa struktur i komplexa flöden</li>
+            <li>Intresse för kvalitetssäkring och förbättring</li>
+          </ul>
+          <a class="role-card__link" href="#register-interest">Ansök nu</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Testimonials Section -->
+  <section class="join-testimonials" aria-labelledby="join-testimonials-title">
+    <div class="container">
+      <h2 id="join-testimonials-title">What Our Team Says</h2>
+      <div class="join-testimonials__grid">
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">“På Rikta får jag kombinera kliniskt arbete med möjlighet att påverka hur vården utvecklas.”</div>
+          <p class="testimonial-card__meta">— Sofia Lind, Psykiater</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">“Vi arbetar i små team där alla röster hörs. Det ger både trygghet och energi i vardagen.”</div>
+          <p class="testimonial-card__meta">— Johan Berg, Specialistsjuksköterska</p>
+        </article>
+        <article class="testimonial-card">
+          <div class="testimonial-card__quote">“Flexibiliteten gör att jag kan kombinera forskning med patientarbete utan att kompromissa med kvaliteten.”</div>
+          <p class="testimonial-card__meta">— Tilda Ek, Psykolog</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Final Call to Action -->
+  <section class="join-final-cta" aria-labelledby="join-final-cta-title">
+    <div class="container join-final-cta__inner">
+      <h2 id="join-final-cta-title">Want to learn more?</h2>
+      <p>Har du frågor om uppdrag, samarbeten eller hur vi arbetar i team? Vi berättar gärna mer.</p>
+      <a class="cta-button cta-button--contrast" href="/kontakta-oss/">Kontakta oss</a>
+    </div>
+  </section>
+</div>
+{{ end }}
