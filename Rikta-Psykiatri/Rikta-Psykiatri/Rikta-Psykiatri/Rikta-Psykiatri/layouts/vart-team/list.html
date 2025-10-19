@@ -1,0 +1,70 @@
+{{ define "main" }}
+<main class="team-directory" id="vart-team">
+  <section class="team-hero">
+    <div class="team-hero__inner">
+      {{ $heroTitle := default .Title .Params.hero_title }}
+      <h1>{{ $heroTitle }}</h1>
+      {{ with .Params.hero_description }}
+        <p class="team-hero__lead">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.hero_note }}
+        <p class="team-hero__note">{{ . }}</p>
+      {{ end }}
+      {{ if .Content }}
+        <div class="team-hero__extra">
+          {{ .Content }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="team-grid-section">
+    <div class="container">
+      {{ $pages := sort .Pages "Weight" }}
+      {{ if gt (len $pages) 0 }}
+      <div class="clinician-grid">
+        {{ range $pages }}
+          {{ $initials := "" }}
+          {{ range $index, $part := split .Title " " }}
+            {{ if and (lt $index 2) (gt (len $part) 0) }}
+              {{ $initials = printf "%s%s" $initials (upper (substr $part 0 1)) }}
+            {{ end }}
+          {{ end }}
+          {{ $page := . }}
+          {{ $image := $page.Params.image }}
+          <article class="clinician-card">
+            {{ if $image }}
+              <img src="{{ $image }}" alt="{{ $page.Title }}" class="clinician-card__photo">
+            {{ else }}
+              <div class="clinician-card__placeholder" aria-hidden="true">{{ $initials }}</div>
+            {{ end }}
+            <div class="clinician-card__body">
+              <h3>{{ $page.Title }}</h3>
+              {{ with $page.Params.role }}
+                <p class="clinician-card__role">{{ . }}</p>
+              {{ end }}
+              {{ with $page.Params.focus }}
+                <p class="clinician-card__focus">{{ . }}</p>
+              {{ end }}
+              <a class="clinician-card__link" href="{{ $page.RelPermalink }}">View bio<span aria-hidden="true"> →</span></a>
+            </div>
+          </article>
+        {{ end }}
+      </div>
+      {{ else }}
+        <p class="team-empty">Team profiles are being updated. Please check back shortly.</p>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="adhd-final-cta" id="book-assessment">
+    <div class="container">
+      <h2>Ready to begin your assessment?</h2>
+      <p>
+        Connect with our consultants to clarify your diagnosis, explore tailored pathways, and plan the support that fits your life.
+      </p>
+      <a class="btn primary" href="/kontakta-oss">Book your assessment</a>
+    </div>
+  </section>
+</main>
+{{ end }}
