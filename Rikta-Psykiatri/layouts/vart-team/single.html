@@ -1,0 +1,75 @@
+{{ define "main" }}
+{{ $page := . }}
+{{ $initials := "" }}
+{{ range $index, $part := split $page.Title " " }}
+  {{ if and (lt $index 2) (gt (len $part) 0) }}
+    {{ $initials = printf "%s%s" $initials (upper (substr $part 0 1)) }}
+  {{ end }}
+{{ end }}
+<main class="clinician-profile" id="clinician">
+  <article class="clinician-profile__wrap">
+    <section class="clinician-profile__header">
+      <div class="clinician-profile__grid">
+        <div class="clinician-profile__details">
+          <div class="clinician-profile__eyebrow">Rikta Psychiatry</div>
+          <h1>{{ $page.Title }}</h1>
+          {{ with $page.Params.role }}
+            <p class="clinician-profile__role">{{ . }}</p>
+          {{ end }}
+
+          <div class="clinician-profile__meta">
+            {{ with $page.Params.focus }}
+              <div class="clinician-profile__meta-item">
+                <span class="label">Focus areas</span>
+                <span class="value">{{ . }}</span>
+              </div>
+            {{ end }}
+            {{ with $page.Params.availability }}
+              <div class="clinician-profile__meta-item">
+                <span class="label">Availability</span>
+                <span class="value">{{ . }}</span>
+              </div>
+            {{ end }}
+          </div>
+
+          {{ with $page.Params.credentials }}
+            <div class="clinician-profile__credentials">
+              <h2 class="clinician-profile__credentials-title">Professional highlights</h2>
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            </div>
+          {{ end }}
+        </div>
+        <div class="clinician-profile__portrait">
+          {{ with $page.Params.image }}
+            <img src="{{ . }}" alt="{{ $page.Title }}">
+          {{ else }}
+            <div class="clinician-profile__placeholder" aria-hidden="true">{{ $initials }}</div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    {{ if $page.Content }}
+    <section class="clinician-profile__content">
+      <div class="clinician-profile__body content">
+        {{ $page.Content }}
+      </div>
+    </section>
+    {{ end }}
+  </article>
+
+  <section class="adhd-final-cta" id="book-assessment">
+    <div class="container">
+      <h2>Ready to begin your assessment?</h2>
+      <p>
+        Connect with our consultants to clarify your diagnosis, explore tailored pathways, and plan the support that fits your life.
+      </p>
+      <a class="btn primary" href="/kontakta-oss">Book your assessment</a>
+    </div>
+  </section>
+</main>
+{{ end }}
