@@ -36,32 +36,8 @@ page_class: "adhd-page--youth"
                   </div>
                 </div>
               </div>
-            </section><section class="who-hero who-section adhd-hero adhd-hero--compact" id="start">
-              <div class="container">
-                <div class="who-grid hero-grid">
-                  <div class="hero-copy">
-                    <span class="eyebrow">Rikta Psykiatri</span>
-                    <p class="lead">
-                      ADHD kan påverka hur ett barn lär sig, leker och orkar med vardagen. Med en noggrann utredning får ni
-                      förståelse för vad som ligger bakom beteenden och en plan som hjälper både ditt barn och dig som vårdnadshavare.
-                    </p>
-                    <div class="hero-actions">
-                      <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
-                      <a class="btn link" href="#faq">Läs vanliga frågor</a>
-                    </div>
-                  </div>
-                  <div class="hero-media">
-                    <figure class="hero-image adhd-hero-media">
-                      <img src="/img/hero.jpg" alt="Förälder och barn i samtal med psykolog i lugnt rum">
-                                <figcaption>
-                                  Vi möter varje familj med nyfikenhet och med målet att lyfta ditt barns styrkor och behov av stöd.
-                                </figcaption>
-                              </figure>
-                            </div>
-                          </div>
-                        </div>
-                      </section>
-                    
+            </section>
+
 <section class="who-section adhd-definition" id="vad-ar-adhd">
   <div class="container">
     <div class="who-grid intro-grid">
