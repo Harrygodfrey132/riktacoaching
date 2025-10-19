@@ -1,5 +1,7 @@
 {{ define "main" }}
   <!-- Hero Section: Full-screen with two columns (text left, image right) -->
+  {{ if not .Params.hide_template_hero }}
+    <!-- TEMPLATE HERO (will be hidden when flag is true) -->
   <main id="hem" class="hero screen">
     <div class="container">
       <div class="grid">
