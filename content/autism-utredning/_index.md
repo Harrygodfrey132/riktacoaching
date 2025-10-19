@@ -1,7 +1,7 @@
 ---
-title: "Autism Assessment"
+title: "Autismutredning"
 draft: false
-meta_title: "Autismutredning för alla åldrar | Rikta Psykiatri"
+meta_title: "Autismutredningar för alla åldrar | Rikta Psykiatri"
 meta_keywords: "autismutredning privat, neuroaffirmativ vård, autism specialist, Rikta autism team, utredning autism vuxna barn"
 meta_description: "Neuroaffirmativa autismutredningar med specialistläkare, psykolog och tydlig återkoppling för barn, unga och vuxna."
 og_title: "Autismutredning via Rikta Psykiatri"

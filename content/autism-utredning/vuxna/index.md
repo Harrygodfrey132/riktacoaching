@@ -16,21 +16,21 @@ page_class: "autism-page--adult"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>Autism i vuxenlivet – förståelse, utredning och riktat stöd</h1>
+        <h1>Autism i vuxenlivet</h1>
         <p class="lead">
-          Autism syns ofta annorlunda i vuxen ålder. En trygg och respektfull utredning hjälper dig att förstå dina mönster,
-          minska energiläckage och hitta strategier som fungerar för just din vardag.
+          Autism syns ofta annorlunda i vuxen ålder. En utredning kan hjälpa dig att förstå dina mönster
+          och hitta strategier som fungerar för just din vardag.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
-          <a class="btn link" href="#faq">Läs vanliga frågor</a>
+          <a class="btn link" href="#faq">Vanliga frågor</a>
         </div>
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Vuxen person i samtal med psykiater i en lugn miljö">
+          <img src="/img/hero.jpg">
           <figcaption>
-            Vi kombinerar klinisk kunskap med neuroaffirmativt förhållningssätt för att synliggöra både styrkor och behov.
+            Vi kombinerar klinisk kunskap med emptatiskt förhållningssätt för att synliggöra dina styrkor och behov.
           </figcaption>
         </figure>
       </div>
