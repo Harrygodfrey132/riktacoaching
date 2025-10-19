@@ -1,6 +1,6 @@
 ---
 title: "Vårt team"
-draft: false
+draft: true
 meta_title: "Möt vårt specialistteam | Rikta Psykiatri"
 meta_keywords: "Rikta Psykiatri team, ADHD specialister, psykiater Sverige, neuropsykiatri team, vårdteam autism"
 meta_description: "Se vilka konsultpsykiatrer, psykologer och sjuksköterskor som leder Rikta Psykiatris neuropsykiatriska vård."

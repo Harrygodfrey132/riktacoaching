@@ -1,6 +1,6 @@
 ---
 title: "Dr Simon Hill"
-draft: false
+draft: true
 meta_title: "Dr Simon Hill | Konsultpsykiater inom neuropsykiatri"
 meta_keywords: "Simon Hill psykiater, neuropsykiatri expert, minnesmottagning, ADHD och kognition, Rikta specialist"
 meta_description: "Dr Simon Hill kombinerar neuropsykiatri och minnesmedicin för vuxna med ADHD, kognitiva frågor och behov av sammanhållen uppföljning."
