@@ -1,0 +1,29 @@
+{{ define "main" }}
+  <!-- Hero Section: Full-screen with two columns (text left, image right) -->
+  <main id="hem" class="hero screen">
+    <div class="container">
+      <div class="grid">
+        <div>
+          <span class="badge">Konsultpsykiatri</span>
+          <h1>Erfarna psykiatriker<br>med personcentrerad vård</h1>
+          <p class="lead">
+            Skräddarsydd hjälp för ADHD, autism, ångest, depression, PTSD, minnesproblematik och andra utmaningar.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#kontakt">Boka ett bedömningssamtal</a>
+            <a class="btn link" href="#var-process">Vår process</a>
+          </div>
+        </div>
+        <div>
+<img
+  src="{{ with .Site.Params.hero }}{{ . }}{{ else }}/img/hero.jpg{{ end }}"
+  alt="Mottagningens entré">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Inject sections from content/_index.md -->
+  {{ .Content }}
+{{ end }}
+

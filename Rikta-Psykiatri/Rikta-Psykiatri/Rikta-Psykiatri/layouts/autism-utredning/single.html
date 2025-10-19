@@ -1,0 +1,5 @@
+{{ define "main" }}
+<article class="adhd-page autism-page{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{ .Content }}
+</article>
+{{ end }}
