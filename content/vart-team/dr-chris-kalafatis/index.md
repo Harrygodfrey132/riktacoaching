@@ -1,6 +1,6 @@
 ---
 title: "Dr Chris Kalafatis"
-draft: false
+draft: true
 meta_title: "Dr Chris Kalafatis | Specialist på komplex psykiatri"
 meta_keywords: "Chris Kalafatis psykiater, komplexa mood disorders, neuropsykiatri expert, second opinion psykiatri, Rikta läkarteam"
 meta_description: "Möt Dr Chris Kalafatis, konsultpsykiater med fokus på komplexa stämningslägen, neuropsykiatri och fördjupade second opinions."
