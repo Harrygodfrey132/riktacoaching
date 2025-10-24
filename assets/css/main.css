@@ -468,14 +468,15 @@ nav a.active {
 }
 
 .btn.lime {
-  background: #8fe27c;
-  border-color: #8fe27c;
-  color: #0a3532;
-  transition: filter 0.2s ease, transform 0.2s ease;
+  background: transparent;
+  border-color: var(--secondary);
+  color: var(--secondary);
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .btn.lime:hover {
-  filter: brightness(0.95);
+  background: rgba(71, 115, 166, 0.08);
+  color: var(--adhd-blue);
   transform: translateY(-1px);
 }
 
