@@ -3,7 +3,7 @@
   --bg: #FFFFFF;
   --text: #000000;
   --secondary: #4773A6;
-  --accent: #DA5B5F;
+  --accent: #ec4e5b;
   --container: 1200px;
   --pad: 24px;
   --radius: 16px;
@@ -137,6 +137,7 @@ nav a.cta {
   background: var(--accent);
   color: #fff;
   font-weight: 600;
+  opacity: 1;
 }
 
 .desktop-nav a.cta {
