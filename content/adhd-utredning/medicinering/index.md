@@ -94,7 +94,7 @@ page_class: "adhd-page--medication"
       </article>
       <article class="adhd-symptom-card">
         <h3>Stärkt exekutiv förmåga</h3>
-        <p>Ökad förmåga att planera, prioritera och komma igång – särskilt i kombination med coaching eller terapi.</p>
+        <p>Ökad förmåga att planera, prioritera och komma igång – särskilt i kombination med coachning eller terapi.</p>
       </article>
     </div>
   </div>
@@ -211,7 +211,7 @@ page_class: "adhd-page--medication"
       </article>
       <article>
         <h3>Rekommendationer framåt</h3>
-        <p>Förslag på livsstilsstöd, coaching eller terapi som stärker effekten av medicinen.</p>
+        <p>Förslag på livsstilsstöd, coachning eller terapi som stärker effekten av medicinen.</p>
       </article>
     </div>
   </div>
@@ -238,7 +238,7 @@ page_class: "adhd-page--medication"
         </article>
         <article>
           <h3>Kombinationsstöd</h3>
-          <p>Koordinering med coaching, terapi eller arbetsterapi så att insatserna drar åt samma håll.</p>
+          <p>Koordinering med coachning, terapi eller arbetsterapi så att insatserna drar åt samma håll.</p>
         </article>
         <article>
           <h3>Årlig check-in</h3>

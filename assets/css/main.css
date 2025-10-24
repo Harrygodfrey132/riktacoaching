@@ -165,7 +165,7 @@ nav a.active {
 
 .hero-home {
   padding: 120px 0 80px;
-  background: linear-gradient(180deg, #f5efeb 0%, #f5efeb 44%, rgba(245, 239, 235, 0) 44%);
+  background: linear-gradient(180deg, var(--adhd-sand) 0%, var(--adhd-sand) 44%, rgba(241, 235, 230, 0) 44%);
 }
 
 .hero-surface {
@@ -275,7 +275,7 @@ nav a.active {
 
 .team-preview {
   padding: 96px 0;
-  background: #f5efeb;
+  background: var(--adhd-sand);
 }
 
 .section-head {
@@ -360,7 +360,7 @@ nav a.active {
 
 .help-section {
   padding: 96px 0;
-  background: #f2e6d6;
+  background: var(--adhd-sand);
 }
 
 .help-heading {
@@ -479,6 +479,151 @@ nav a.active {
   transform: translateY(-1px);
 }
 
+.news-section {
+  padding: 96px 0;
+  background: var(--bg);
+}
+
+.news-heading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 48px;
+}
+
+.news-heading h2 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 40px);
+  color: var(--adhd-ink);
+}
+
+.news-heading p {
+  margin: 0;
+  color: rgba(29, 44, 59, 0.7);
+  font-size: 18px;
+}
+
+.news-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin-bottom: 40px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 28px;
+  box-shadow: 0 18px 40px rgba(29, 44, 59, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(29, 44, 59, 0.05);
+}
+
+.news-hero {
+  padding: 36px 32px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.news-hero--twilight {
+  background: linear-gradient(140deg, rgba(71, 115, 166, 0.92), rgba(29, 44, 59, 0.92));
+}
+
+.news-hero--rose {
+  background: linear-gradient(140deg, rgba(236, 78, 91, 0.9), rgba(71, 115, 166, 0.75));
+}
+
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
+
+.news-hero h3 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.news-hero p {
+  margin: 0;
+  font-size: 17px;
+  opacity: 0.92;
+}
+
+.news-body {
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.news-body .news-tag {
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  color: rgba(29, 44, 59, 0.6);
+}
+
+.news-body h4 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--adhd-ink);
+}
+
+.news-body p {
+  margin: 0;
+  color: rgba(29, 44, 59, 0.68);
+  line-height: 1.6;
+}
+
+.news-link {
+  color: var(--secondary);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.news-cta {
+  text-align: center;
+}
+
+.btn.plum {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #fff;
+  transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.btn.plum:hover {
+  filter: brightness(0.94);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .news-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .news-section {
+    padding: 72px 0;
+  }
+
+  .news-hero {
+    padding: 28px 24px;
+  }
+
+  .news-body {
+    padding: 24px;
+  }
+}
+
 @media (max-width: 1024px) {
   .help-cards--top {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -516,7 +661,7 @@ nav a.active {
 
 .pricing-preview {
   padding: 96px 0;
-  background: #f5efeb;
+  background: var(--adhd-sand);
 }
 
 .pricing-grid {
@@ -1183,7 +1328,7 @@ main.hero.screen, section.screen {
 
   .hero-home {
     padding: 96px 0 60px;
-    background: linear-gradient(180deg, #f5efeb 0%, #f5efeb 52%, rgba(245, 239, 235, 0) 52%);
+    background: linear-gradient(180deg, var(--adhd-sand) 0%, var(--adhd-sand) 52%, rgba(241, 235, 230, 0) 52%);
   }
 
   .hero-grid {
@@ -2981,7 +3126,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact,
 .adhd-page--youth .adhd-hero--compact,
 .adhd-page--women .adhd-hero--compact,
-.adhd-page--coaching .adhd-hero--compact,
+.adhd-page--coachning .adhd-hero--compact,
 .adhd-page--medication .adhd-hero--compact {
   background: #ffffff;
   padding-top: clamp(72px, 9vw, 96px);
@@ -2991,7 +3136,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-grid,
 .adhd-page--youth .adhd-hero--compact .hero-grid,
 .adhd-page--women .adhd-hero--compact .hero-grid,
-.adhd-page--coaching .adhd-hero--compact .hero-grid,
+.adhd-page--coachning .adhd-hero--compact .hero-grid,
 .adhd-page--medication .adhd-hero--compact .hero-grid {
   grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: clamp(24px, 5vw, 40px);
@@ -3002,7 +3147,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-copy,
 .adhd-page--youth .adhd-hero--compact .hero-copy,
 .adhd-page--women .adhd-hero--compact .hero-copy,
-.adhd-page--coaching .adhd-hero--compact .hero-copy,
+.adhd-page--coachning .adhd-hero--compact .hero-copy,
 .adhd-page--medication .adhd-hero--compact .hero-copy {
   grid-column: 1 / span 5;
   align-self: center;
@@ -3012,7 +3157,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-media,
 .adhd-page--youth .adhd-hero--compact .hero-media,
 .adhd-page--women .adhd-hero--compact .hero-media,
-.adhd-page--coaching .adhd-hero--compact .hero-media,
+.adhd-page--coachning .adhd-hero--compact .hero-media,
 .adhd-page--medication .adhd-hero--compact .hero-media {
   grid-column: 7 / span 6;
   justify-self: center;
@@ -3021,7 +3166,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-actions,
 .adhd-page--youth .adhd-hero--compact .hero-actions,
 .adhd-page--women .adhd-hero--compact .hero-actions,
-.adhd-page--coaching .adhd-hero--compact .hero-actions,
+.adhd-page--coachning .adhd-hero--compact .hero-actions,
 .adhd-page--medication .adhd-hero--compact .hero-actions {
   justify-content: flex-start;
 }
@@ -3029,7 +3174,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-actions .btn,
 .adhd-page--youth .adhd-hero--compact .hero-actions .btn,
 .adhd-page--women .adhd-hero--compact .hero-actions .btn,
-.adhd-page--coaching .adhd-hero--compact .hero-actions .btn,
+.adhd-page--coachning .adhd-hero--compact .hero-actions .btn,
 .adhd-page--medication .adhd-hero--compact .hero-actions .btn {
   min-width: 0;
 }
@@ -3037,7 +3182,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact h1,
 .adhd-page--youth .adhd-hero--compact h1,
 .adhd-page--women .adhd-hero--compact h1,
-.adhd-page--coaching .adhd-hero--compact h1,
+.adhd-page--coachning .adhd-hero--compact h1,
 .adhd-page--medication .adhd-hero--compact h1 {
   font-size: clamp(36px, 6.5vw, 44px);
   line-height: 1.15;
@@ -3046,7 +3191,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .lead,
 .adhd-page--youth .adhd-hero--compact .lead,
 .adhd-page--women .adhd-hero--compact .lead,
-.adhd-page--coaching .adhd-hero--compact .lead,
+.adhd-page--coachning .adhd-hero--compact .lead,
 .adhd-page--medication .adhd-hero--compact .lead {
   font-size: 18px;
   line-height: 1.55;
@@ -3055,7 +3200,7 @@ nav a.cta:active{
 .adhd-page--adult .adhd-hero--compact .hero-image,
 .adhd-page--youth .adhd-hero--compact .hero-image,
 .adhd-page--women .adhd-hero--compact .hero-image,
-.adhd-page--coaching .adhd-hero--compact .hero-image,
+.adhd-page--coachning .adhd-hero--compact .hero-image,
 .adhd-page--medication .adhd-hero--compact .hero-image {
   max-width: 480px;
   margin: 0 auto;
@@ -3065,7 +3210,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-grid,
   .adhd-page--youth .adhd-hero--compact .hero-grid,
   .adhd-page--women .adhd-hero--compact .hero-grid,
-  .adhd-page--coaching .adhd-hero--compact .hero-grid,
+  .adhd-page--coachning .adhd-hero--compact .hero-grid,
   .adhd-page--medication .adhd-hero--compact .hero-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
@@ -3073,7 +3218,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-copy,
   .adhd-page--youth .adhd-hero--compact .hero-copy,
   .adhd-page--women .adhd-hero--compact .hero-copy,
-  .adhd-page--coaching .adhd-hero--compact .hero-copy,
+  .adhd-page--coachning .adhd-hero--compact .hero-copy,
   .adhd-page--medication .adhd-hero--compact .hero-copy {
     grid-column: 1 / span 6;
     text-align: left;
@@ -3082,7 +3227,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-media,
   .adhd-page--youth .adhd-hero--compact .hero-media,
   .adhd-page--women .adhd-hero--compact .hero-media,
-  .adhd-page--coaching .adhd-hero--compact .hero-media,
+  .adhd-page--coachning .adhd-hero--compact .hero-media,
   .adhd-page--medication .adhd-hero--compact .hero-media {
     grid-column: 1 / span 6;
   }
@@ -3090,7 +3235,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-image,
   .adhd-page--youth .adhd-hero--compact .hero-image,
   .adhd-page--women .adhd-hero--compact .hero-image,
-  .adhd-page--coaching .adhd-hero--compact .hero-image,
+  .adhd-page--coachning .adhd-hero--compact .hero-image,
   .adhd-page--medication .adhd-hero--compact .hero-image {
     max-width: 100%;
   }
@@ -3098,7 +3243,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-actions,
   .adhd-page--youth .adhd-hero--compact .hero-actions,
   .adhd-page--women .adhd-hero--compact .hero-actions,
-  .adhd-page--coaching .adhd-hero--compact .hero-actions,
+  .adhd-page--coachning .adhd-hero--compact .hero-actions,
   .adhd-page--medication .adhd-hero--compact .hero-actions {
     justify-content: flex-start;
   }
@@ -3108,7 +3253,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact,
   .adhd-page--youth .adhd-hero--compact,
   .adhd-page--women .adhd-hero--compact,
-  .adhd-page--coaching .adhd-hero--compact,
+  .adhd-page--coachning .adhd-hero--compact,
   .adhd-page--medication .adhd-hero--compact {
     padding-top: clamp(56px, 12vw, 72px);
     padding-bottom: clamp(40px, 12vw, 60px);
@@ -3117,7 +3262,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-actions,
   .adhd-page--youth .adhd-hero--compact .hero-actions,
   .adhd-page--women .adhd-hero--compact .hero-actions,
-  .adhd-page--coaching .adhd-hero--compact .hero-actions,
+  .adhd-page--coachning .adhd-hero--compact .hero-actions,
   .adhd-page--medication .adhd-hero--compact .hero-actions {
     flex-direction: column;
     align-items: stretch;
@@ -3126,7 +3271,7 @@ nav a.cta:active{
   .adhd-page--adult .adhd-hero--compact .hero-actions .btn,
   .adhd-page--youth .adhd-hero--compact .hero-actions .btn,
   .adhd-page--women .adhd-hero--compact .hero-actions .btn,
-  .adhd-page--coaching .adhd-hero--compact .hero-actions .btn,
+  .adhd-page--coachning .adhd-hero--compact .hero-actions .btn,
   .adhd-page--medication .adhd-hero--compact .hero-actions .btn {
     width: 100%;
     text-align: center;
@@ -3136,42 +3281,42 @@ nav a.cta:active{
 .adhd-page--adult .adhd-definition,
 .adhd-page--youth .adhd-definition,
 .adhd-page--women .adhd-definition,
-.adhd-page--coaching .adhd-definition,
+.adhd-page--coachning .adhd-definition,
 .adhd-page--medication .adhd-definition,
 .adhd-page--adult .adhd-symptoms,
 .adhd-page--youth .adhd-symptoms,
 .adhd-page--women .adhd-symptoms,
-.adhd-page--coaching .adhd-symptoms,
+.adhd-page--coachning .adhd-symptoms,
 .adhd-page--medication .adhd-symptoms,
 .adhd-page--adult .adhd-benefits,
 .adhd-page--youth .adhd-benefits,
 .adhd-page--women .adhd-benefits,
-.adhd-page--coaching .adhd-benefits,
+.adhd-page--coachning .adhd-benefits,
 .adhd-page--medication .adhd-benefits,
 .adhd-page--adult .adhd-process,
 .adhd-page--youth .adhd-process,
 .adhd-page--women .adhd-process,
-.adhd-page--coaching .adhd-process,
+.adhd-page--coachning .adhd-process,
 .adhd-page--medication .adhd-process,
 .adhd-page--adult .adhd-outcomes,
 .adhd-page--youth .adhd-outcomes,
 .adhd-page--women .adhd-outcomes,
-.adhd-page--coaching .adhd-outcomes,
+.adhd-page--coachning .adhd-outcomes,
 .adhd-page--medication .adhd-outcomes,
 .adhd-page--adult .adhd-fees,
 .adhd-page--youth .adhd-fees,
 .adhd-page--women .adhd-fees,
-.adhd-page--coaching .adhd-fees,
+.adhd-page--coachning .adhd-fees,
 .adhd-page--medication .adhd-fees,
 .adhd-page--adult .adhd-next,
 .adhd-page--youth .adhd-next,
 .adhd-page--women .adhd-next,
-.adhd-page--coaching .adhd-next,
+.adhd-page--coachning .adhd-next,
 .adhd-page--medication .adhd-next,
 .adhd-page--adult .adhd-faq,
 .adhd-page--youth .adhd-faq,
 .adhd-page--women .adhd-faq,
-.adhd-page--coaching .adhd-faq,
+.adhd-page--coachning .adhd-faq,
 .adhd-page--medication .adhd-faq {
   background: #ffffff;
   border-top: 1px solid rgba(29, 44, 59, 0.06);
@@ -3181,12 +3326,12 @@ nav a.cta:active{
 .adhd-page--adult .adhd-process,
 .adhd-page--youth .adhd-process,
 .adhd-page--women .adhd-process,
-.adhd-page--coaching .adhd-process,
+.adhd-page--coachning .adhd-process,
 .adhd-page--medication .adhd-process,
 .adhd-page--adult .adhd-fees,
 .adhd-page--youth .adhd-fees,
 .adhd-page--women .adhd-fees,
-.adhd-page--coaching .adhd-fees,
+.adhd-page--coachning .adhd-fees,
 .adhd-page--medication .adhd-fees {
   padding-bottom: clamp(64px, 9vw, 104px);
 }
@@ -3194,22 +3339,22 @@ nav a.cta:active{
 .adhd-page--adult .adhd-symptom-card,
 .adhd-page--youth .adhd-symptom-card,
 .adhd-page--women .adhd-symptom-card,
-.adhd-page--coaching .adhd-symptom-card,
+.adhd-page--coachning .adhd-symptom-card,
 .adhd-page--medication .adhd-symptom-card,
 .adhd-page--adult .adhd-card-grid article,
 .adhd-page--youth .adhd-card-grid article,
 .adhd-page--women .adhd-card-grid article,
-.adhd-page--coaching .adhd-card-grid article,
+.adhd-page--coachning .adhd-card-grid article,
 .adhd-page--medication .adhd-card-grid article,
 .adhd-page--adult .adhd-process-card,
 .adhd-page--youth .adhd-process-card,
 .adhd-page--women .adhd-process-card,
-.adhd-page--coaching .adhd-process-card,
+.adhd-page--coachning .adhd-process-card,
 .adhd-page--medication .adhd-process-card,
 .adhd-page--adult .adhd-fees-card,
 .adhd-page--youth .adhd-fees-card,
 .adhd-page--women .adhd-fees-card,
-.adhd-page--coaching .adhd-fees-card,
+.adhd-page--coachning .adhd-fees-card,
 .adhd-page--medication .adhd-fees-card {
   box-shadow: 0 10px 24px rgba(29, 44, 59, 0.08);
 }

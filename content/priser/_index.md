@@ -79,10 +79,10 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
       </div>
     </div>
     <div class="pricing-group">
-      <h3>ADHD &amp; autism coaching</h3>
+      <h3>ADHD &amp; autism coachning</h3>
       <div class="pricing">
         <article class="card">
-          <h3>ADHD-coaching</h3>
+          <h3>ADHD-coachning</h3>
           <p class="meta">Digitalt • 45 min</p>
           <p class="price">700 kr</p>
           <ul class="details">
@@ -92,7 +92,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Autism-coaching</h3>
+          <h3>Autism-coachning</h3>
           <p class="meta">Digitalt • 45 min</p>
           <p class="price">700 kr</p>
           <ul class="details">

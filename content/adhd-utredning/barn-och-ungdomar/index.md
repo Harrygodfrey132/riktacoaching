@@ -126,7 +126,7 @@ page_class: "adhd-page--youth"
       </article>
       <article>
         <h3>Plan för behandling</h3>
-        <p>Konkreta förslag på medicin, terapi eller coaching. Detta sker alltid i dialog med er och med barnets bästa i åtanke</p>
+        <p>Konkreta förslag på medicin, terapi eller coachning. Detta sker alltid i dialog med er och med barnets bästa i åtanke</p>
       </article>
     </div>
   </div>
@@ -244,7 +244,7 @@ page_class: "adhd-page--youth"
           <p>Läkemedelsbedömning, titrering och samordning med barnets ordinarie vårdkontakter.</p>
         </article>
         <article>
-          <h3>Föräldrautbildning &amp; coaching</h3>
+          <h3>Föräldrautbildning &amp; coachning</h3>
           <p>Praktiska verktyg för struktur, känsloreglering och att förebygga konflikter hemma.</p>
         </article>
         <article>

@@ -229,7 +229,7 @@ page_class: "autism-page--women"
           dig i takt med att nya situationer uppstår.
         </p>
         <p class="muted">
-          Stödet utformas efter dig – från regelbunden coaching till punktinsatser vid olika livsskeden. 
+          Stödet utformas efter dig – från regelbunden coachning till punktinsatser vid olika livsskeden. 
         </p>
       </div>
       <div class="intro-stats">
@@ -238,7 +238,7 @@ page_class: "autism-page--women"
           <p>Hjälp med remisser, intyg och kontakt med regionvård, habilitering eller företagshälsa.</p>
         </article>
         <article>
-          <h3>Terapi &amp; coaching</h3>
+          <h3>Terapi &amp; coachning</h3>
           <p>Autismcoachning där du ges kunskaper och verktyg för att optimera din vardag.</p>
         </article>
         <article>

@@ -36,7 +36,7 @@ layout: "utredning"
 
     <h2>Efter utredningen</h2>
     <p>
-      Oavsett utfall får du en konkret plan. Det kan handla om behandling, stödinsatser, coaching eller remittering.
+      Oavsett utfall får du en konkret plan. Det kan handla om behandling, stödinsatser, coachning eller remittering.
     </p>
 
     <p>

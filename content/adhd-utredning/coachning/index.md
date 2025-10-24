@@ -1,14 +1,14 @@
 ---
-title: "ADHD-coaching"
-description: "Specialiserad ADHD-coaching som hjälper dig hitta hållbara strategier i vardagen."
+title: "ADHD-coachning"
+description: "Specialiserad ADHD-coachning som hjälper dig hitta hållbara strategier i vardagen."
 draft: false
-meta_title: "ADHD-coaching med specialiststöd | Rikta Psykiatri"
-meta_keywords: "ADHD coaching, struktur ADHD, fokusstrategier, neuropsykiatrisk coaching, Rikta coachprogram"
-meta_description: "Bygg hållbara rutiner, fokus och energihantering med coaching som anpassas efter dina ADHD-styrkor och mål."
-og_title: "ADHD-coaching från Rikta Psykiatri"
+meta_title: "ADHD-coachning med specialiststöd | Rikta Psykiatri"
+meta_keywords: "ADHD coachning, struktur ADHD, fokusstrategier, neuropsykiatrisk coachning, Rikta coachprogram"
+meta_description: "Bygg hållbara rutiner, fokus och energihantering med coachning som anpassas efter dina ADHD-styrkor och mål."
+og_title: "ADHD-coachning från Rikta Psykiatri"
 og_description: "Praktiska sessioner som förvandlar mål till konkreta steg med uppföljning, accountability och neuropsykiatrisk expertis."
 weight: 25
-page_class: "adhd-page--coaching"
+page_class: "adhd-page--coachning"
 ---
 
 <section class="who-hero who-section adhd-hero adhd-hero--compact" id="start">
@@ -16,9 +16,9 @@ page_class: "adhd-page--coaching"
     <div class="who-grid hero-grid">
       <div class="hero-copy">
         <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>ADHD-coaching – gör plats för fokus</h1>
+        <h1>ADHD-coachning – gör plats för fokus</h1>
         <p class="lead">
-          Med ADHD-coaching översätter vi den nuvarande kunskapen som finns om ADHD till fungerande rutiner och tydliga mål
+          Med ADHD-coachning översätter vi den nuvarande kunskapen som finns om ADHD till fungerande rutiner och tydliga mål
           i din vardag baserat på* dina* styrkor och förutsättningar. Tillsammans bygger vi strategier som håller i vardagen och gör det lättare att lyckas.
         </p>
         <div class="hero-actions">
@@ -42,9 +42,9 @@ page_class: "adhd-page--coaching"
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy">
-        <h2>Vad innebär ADHD-coaching?</h2>
+        <h2>Vad innebär ADHD-coachning?</h2>
         <p>
-          Coaching är en strukturerad och evidensbaserad metod som riktar sig till kärnutmaningarna vid ADHD: det vill säga planering,
+          Coachning är en strukturerad och evidensbaserad metod som riktar sig till kärnutmaningarna vid ADHD: det vill säga planering,
           prioritering, emotionell reglering och uppmärksamhet. Vi sätter upp mål som är viktiga för dig
           och bryter ner dem i hanterbara steg.
         </p>
@@ -54,12 +54,12 @@ page_class: "adhd-page--coaching"
           ett mer generellt terapeutiskt arbete.
         </p>
         <blockquote>
-          ”Coaching handlar om att skapa en vardag där dina styrkor får plats och där det blir möjligt att fullfölja det du
+          ”Coachning handlar om att skapa en vardag där dina styrkor får plats och där det blir möjligt att fullfölja det du
           påbörjar – utan att du för den sakens skull blir helt utmattad.”
         </blockquote>
       </div>
       <div class="intro-stats adhd-definition-card">
-        <h3>I coachingprogrammet utforskar vi:</h3>
+        <h3>I coachningprogrammet utforskar vi:</h3>
         <ul>
           <li>Mål som betyder något för dig – i arbete, studier eller privatliv.</li>
           <li>Hur du planerar, prioriterar och följer upp på ett sätt som passar ditt tempo.</li>
@@ -79,7 +79,7 @@ page_class: "adhd-page--coaching"
   <div class="container">
     <div class="section-intro">
       <span class="eyebrow">Mål vi ofta arbetar med</span>
-      <h2>Vanliga fokusområden i ADHD-coaching</h2>
+      <h2>Vanliga fokusområden i ADHD-coachning</h2>
       <p class="muted">
         Innehållet anpassas efter dig men många klienter känner igen några av dessa behov när vi startar.
       </p>
@@ -108,8 +108,8 @@ page_class: "adhd-page--coaching"
 <section class="who-section adhd-benefits" id="varfor-utredning">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Varför coaching gör skillnad</span>
-      <h2>Fördelar med ett riktat coachingprogram</h2>
+      <span class="eyebrow">Varför coachning gör skillnad</span>
+      <h2>Fördelar med ett riktat coachningprogram</h2>
       <p class="muted">
         När du får ett tydligt ramverk och kontinuerligt stöd blir det enklare att omsätta avsikter till handling.
       </p>
@@ -135,7 +135,7 @@ page_class: "adhd-page--coaching"
   <div class="container">
     <div class="section-intro">
       <span class="eyebrow">Så går det till</span>
-      <h2>Coachingprocessen steg för steg</h2>
+      <h2>Coachningprocessen steg för steg</h2>
       <p class="muted">
         Vi arbetar i tydliga cykler. Varje fas har fokus på att omsätta insikt till handling och bygga momentum.
       </p>
@@ -189,7 +189,7 @@ page_class: "adhd-page--coaching"
           </div>
         </div>
         <ul>
-          <li>Plan för hur du fortsätter på egen hand eller med fortsatt coaching.</li>
+          <li>Plan för hur du fortsätter på egen hand eller med fortsatt coachning.</li>
           <li>Rekommendationer kring andra stödinsatser om det behövs.</li>
         </ul>
       </article>
@@ -200,10 +200,10 @@ page_class: "adhd-page--coaching"
 <section class="who-section adhd-outcomes" id="vad-du-far">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Efter varje coachingcykel</span>
+      <span class="eyebrow">Efter varje coachningcykel</span>
       <h2>Det här tar du med dig</h2>
       <p class="muted">
-        Coaching ger bestående verktyg när vi dokumenterar, repeterar och tränar i din egen vardag.
+        Coachning ger bestående verktyg när vi dokumenterar, repeterar och tränar i din egen vardag.
       </p>
     </div>
     <div class="adhd-card-grid">
@@ -228,7 +228,7 @@ page_class: "adhd-page--coaching"
     <div class="who-grid intro-grid">
       <div class="intro-copy">
         <span class="eyebrow">Next steps</span>
-        <h2>Efter coachingen</h2>
+        <h2>Efter coachningen</h2>
         <p>
           Vi erbjuder fortsatt stöd när du vill. Vissa klienter bokar uppföljning varannan månad medan andra tar kontakt inför nya
           livsfaser eller större projekt.
@@ -255,23 +255,23 @@ page_class: "adhd-page--coaching"
     </div>
     <div class="adhd-faq-accordion">
       <details>
-        <summary>Hur skiljer sig coaching från terapi?</summary>
+        <summary>Hur skiljer sig coachning från terapi?</summary>
         <p>
-          Coaching fokuserar på mål, strategier och vardagsrutiner. Vi arbetar inte behandlande utan med
-          konkreta beteendeförändringar här och nu. Många kombinerar coaching med terapi för ett heltäckande stöd.
+          Coachning fokuserar på mål, strategier och vardagsrutiner. Vi arbetar inte behandlande utan med
+          konkreta beteendeförändringar här och nu. Många kombinerar coachning med terapi för ett heltäckande stöd.
         </p>
       </details>
       <details>
-        <summary>Måste jag ha en ADHD-diagnos för att få coaching?</summary>
+        <summary>Måste jag ha en ADHD-diagnos för att få coachning?</summary>
         <p>
-          Nej. Coaching kan vara hjälpsam även om du utreder dig just nu eller känner igen ADHD-drag. Vi anpassar upplägget
+          Nej. Coachning kan vara hjälpsam även om du utreder dig just nu eller känner igen ADHD-drag. Vi anpassar upplägget
           efter dina behov vare sig du har en diagnos eller inte.
         </p>
       </details>
       <details>
         <summary>Kan vi ses digitalt?</summary>
         <p>
-          Ja, vi ta alla våra coachingsessioner digitalt via videolänk. 
+          Ja, vi ta alla våra coachningsessioner digitalt via videolänk. 
         </p>
       </details>
       <details>
@@ -287,7 +287,7 @@ page_class: "adhd-page--coaching"
 
 <section class="adhd-final-cta" id="boka">
   <div class="container">
-    <h2>Redo att påbörja din coaching?</h2>
+    <h2>Redo att påbörja din coachning?</h2>
     <p>
       Boka ett introduktionssamtal så utforskar vi tillsammans vilka mål du vill nå och hur vi tar dig dit med minsta möjliga
       friktion.

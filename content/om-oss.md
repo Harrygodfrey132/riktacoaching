@@ -39,7 +39,7 @@ description: "Learn about the team behind Berkeley Psychiatrists and our commitm
         <h2>Vi vill erbjuda trygg psykiatrisk vård med helheten i fokus</h2>
         <p>
           Rikta föddes ur en frustration över årslånga köer och att många inte får den långsiktiga hjälp som de kanske skulle behöva . Vi erbjuder strukturerade och tillgängliga utredningar
-          som kan kompletteras med  behandling och coaching så att du får bästa möjliga stöd på sikt. 
+          som kan kompletteras med  behandling och coachning så att du får bästa möjliga stöd på sikt. 
         </p>
       </div>
 </section>

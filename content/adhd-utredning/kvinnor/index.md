@@ -241,8 +241,8 @@ page_class: "adhd-page--women"
           <p>Titrering, läkemedelsjustering och samordning med andra vårdgivare.</p>
         </article>
         <article>
-          <h3>Coaching &amp; terapi</h3>
-          <p>KBT, ADHD-coaching och verktyg för att hantera stress, relationer och självkänsla.</p>
+          <h3>Coachning &amp; terapi</h3>
+          <p>KBT, ADHD-coachning och verktyg för att hantera stress, relationer och självkänsla.</p>
         </article>
         <article>
           <h3>Livsfasstöd</h3>

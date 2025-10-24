@@ -297,7 +297,7 @@ page_class: "autism-page--adult"
           <p>Stöd i kontakt med regionvård, husläkare och intyg för LSS, habilitering eller försäkringsärenden.</p>
         </article>
         <article>
-          <h3>Terapi &amp; coaching</h3>
+          <h3>Terapi &amp; coachning</h3>
           <p>Neuroaffirmativ terapi, autismcoachning och verktyg för energi, social balans och relationer.</p>
         </article>
         <article>

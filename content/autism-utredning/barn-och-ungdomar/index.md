@@ -228,7 +228,7 @@ page_class: "autism-page--youth"
         <span class="eyebrow">Next steps</span>
         <h2>Fortsatt stöd efter utredningen</h2>
         <p>
-         Vi ser utredningen som  början på resan. Vi hjälper ditt barn att omsätta de rekommendationer som utredningen kommer fram till i våra coaching eller terapi-samtal. 
+         Vi ser utredningen som  början på resan. Vi hjälper ditt barn att omsätta de rekommendationer som utredningen kommer fram till i våra coachning eller terapi-samtal. 
         </p>
         <p class="muted">
           Stödet utformas efter ditt eller ditt barns behov och vad som känns viktigast här och nu. 
@@ -241,7 +241,7 @@ page_class: "autism-page--youth"
         </article>
         <article>
           <h3>Stöd till ditt barn</h3>
-          <p>Coaching, känslohantering och verktyg för att hitta strategier i vardagen.</p>
+          <p>Coachning, känslohantering och verktyg för att hitta strategier i vardagen.</p>
         </article>
       </div>
     </div>

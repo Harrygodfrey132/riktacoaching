@@ -229,7 +229,7 @@ page_class: "adhd-page--adult"
         <span class="eyebrow">Next steps</span>
         <h2>Fortsatt stöd efter diagnos</h2>
         <p>
-          Utredningen är startpunkten. Vi fortsätter gärna att arbeta tillsammans med dig genom coaching eller psykologsamtal.
+          Utredningen är startpunkten. Vi fortsätter gärna att arbeta tillsammans med dig genom coachning eller psykologsamtal.
         </p>
         <p class="muted">
           Du väljer hur mycket stöd du behöver. Vissa vill ha regelbunden coachning, andra nöjer sig med ett par uppföljningar per
@@ -242,8 +242,8 @@ page_class: "adhd-page--adult"
           <p>Titrering, läkemedelsuppföljning och samordning med vårdcentralen vid delad vård.</p>
         </article>
         <article>
-          <h3>Terapi &amp; coaching</h3>
-          <p>KBT, ADHD-coaching och verktyg för stress och relationer.</p>
+          <h3>Terapi &amp; coachning</h3>
+          <p>KBT, ADHD-coachning och verktyg för stress och relationer.</p>
         </article>
         <article>
           <h3>Strukturstöd</h3>
@@ -285,7 +285,7 @@ page_class: "adhd-page--adult"
       <details>
         <summary>Vad händer efter att jag fått min rapport?</summary>
         <p>
-          Vi erbjuder uppföljning för läkemedel, coaching eller terapi och kan hjälpa till med intyg och
+          Vi erbjuder uppföljning för läkemedel, coachning eller terapi och kan hjälpa till med intyg och
           samordning med din vårdcentral.
         </p>
       </details>
