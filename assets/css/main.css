@@ -137,6 +137,7 @@ nav a.cta {
   background: var(--accent);
   color: #fff;
   font-weight: 600;
+  opacity: 1;
 }
 
 .desktop-nav a.cta {
