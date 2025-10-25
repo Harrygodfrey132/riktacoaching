@@ -9,39 +9,34 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
   <div class="container">
     <div class="news-heading">
       <h2>Kunskap som gör skillnad</h2>
-      <p>Här lyfter vi de senaste artiklarna från Rikta Psykiatris team – samlat stöd för dig som vill förstå mer om ADHD och autism.</p>
+      <p>Här lyfter vi de senaste artiklarna från Rikta Psykiatris team - ett samlat stöd för dig som vill förstå mer om ADHD och autism.</p>
     </div>
     <div class="news-cards">
       <article class="news-card">
         <div class="news-hero news-hero--twilight">
           <div class="news-meta">
-            <span>Blogg</span>
-            <span>27 sep 2024</span>
+            <span>Guide</span>
           </div>
-          <h3>ADHD dygnet runt</h3>
-          <p>Om hur sömn, struktur och stöd gör vardagen mer hållbar för hela familjen.</p>
+          <h3>ADHD-guiden</h3>
         </div>
         <div class="news-body">
-          <span class="news-tag">Blogg</span>
-          <h4>ADHD dygnet runt</h4>
-          <p>Vi delar konkreta strategier för energi, återhämtning och prioriteringar genom hela dygnet.</p>
-          <a class="news-link" href="/blogg/">Läs mer</a>
+          <span class="news-tag"></span>
+          <h4>Din kompletta guide till ADHD</h4>
+          <a class="news-link" href="/blogg/adhd-dygnet-runt/">Läs mer</a>
         </div>
       </article>
       <article class="news-card">
         <div class="news-hero news-hero--rose">
           <div class="news-meta">
-            <span>Insikt</span>
-            <span>11 apr 2025</span>
+            <span>Guide</span>
+            <span></span>
           </div>
-          <h3>ADHD hos flickor och kvinnor</h3>
-          <p>Den perfekta stormen av känslor, hormoner och omvärldens förväntningar – och hur vi möter den.</p>
+          <h3>Autism-guiden</h3>
         </div>
         <div class="news-body">
-          <span class="news-tag">Insikt</span>
-          <h4>ADHD hos flickor och kvinnor</h4>
-          <p>Lär dig känna igen maskingstrategier, tidiga signaler och hur stödet kan anpassas efter olika livsfaser.</p>
-          <a class="news-link" href="/resurser/">Läs mer</a>
+          <span class="news-tag"></span>
+          <h4>Din kompletta guide till autism</h4>
+          <a class="news-link" href="/blogg/autism-guide/">Läs mer</a>
         </div>
       </article>
     </div>
