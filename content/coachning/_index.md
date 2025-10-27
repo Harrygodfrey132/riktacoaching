@@ -5,6 +5,12 @@ meta_description: "Coachning som kompletterar din ADHD- eller autismutredning. F
 summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter till vardagliga strategier."
 ---
 
+<section class="coachning-hero">
+  <div class="coachning-hero__media">
+    <img src="/img/coachning-hero.jpg" alt="Person som känner sig stärkt efter coachning">
+  </div>
+</section>
+
 ## Coachning som bygger vidare på din utredning
 
 När diagnosen är på plats börjar det verkliga arbetet: att skapa ett fungerande vardagsliv. Våra coacher tar vid där utredningen slutar och hjälper dig att hitta strategier som håller över tid.

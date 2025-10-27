@@ -661,6 +661,25 @@ nav a.active {
   align-self: flex-start;
 }
 
+.coachning-hero {
+  margin-bottom: 64px;
+}
+
+.coachning-hero__media {
+  max-width: var(--container);
+  margin: 0 auto;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 28px 50px rgba(17, 32, 56, 0.14);
+}
+
+.coachning-hero__media img {
+  display: block;
+  width: 100%;
+  height: clamp(240px, 45vh, 420px);
+  object-fit: cover;
+}
+
 @media (max-width: 1024px) {
   .news-cards {
     grid-template-columns: 1fr;
