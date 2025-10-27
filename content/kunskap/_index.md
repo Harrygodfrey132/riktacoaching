@@ -47,23 +47,13 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
   <div class="container">
     <div class="knowledge-heading">
       <h2>Fördjupande artiklar</h2>
-      <p>Utforska guider och checklistor som hjälper dig, din familj eller ditt team att navigera vardagen.</p>
+      <p>Fördjupa dig i teman som ofta dyker upp i vardagen för personer med ADHD och autism.</p>
     </div>
     <div class="knowledge-cards">
       <article class="knowledge-card">
-        <h3>Guide: Förberedelser inför ADHD-utredning</h3>
-        <p>Allt du behöver veta innan första mötet – dokument, frågor och vad du kan förvänta dig.</p>
-        <a class="news-link" href="/resurser/">Till guiden</a>
-      </article>
-      <article class="knowledge-card">
-        <h3>Checklista: Stöd i skolan</h3>
-        <p>Konkreta anpassningar och arbetsformer för att skapa trygghet i klassrummet.</p>
-        <a class="news-link" href="/resurser/">Läs checklistan</a>
-      </article>
-      <article class="knowledge-card">
-        <h3>Nyhetsrummet</h3>
-        <p>Prenumerera på våra utskick och få de senaste uppdateringarna direkt i inkorgen.</p>
-        <a class="news-link" href="/resurser/">Prenumerera</a>
+        <h3>Prokrastinering och ADHD</h3>
+        <p>Varför vi skjuter upp, hur ADHD påverkar processen – och konkreta sätt att komma vidare.</p>
+        <a class="news-link" href="/blogg/prokrastinering-och-adhd/">Läs mer</a>
       </article>
     </div>
   </div>

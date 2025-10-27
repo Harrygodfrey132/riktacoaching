@@ -6,5 +6,5 @@ meta_keywords: "autismutredning privat, neuroaffirmativ vård, autism specialist
 meta_description: "Neuroaffirmativa autismutredningar med specialistläkare, psykolog och tydlig återkoppling för barn, unga och vuxna."
 og_title: "Autismutredning via Rikta Psykiatri"
 og_description: "Vi kombinerar klinisk expertis med neuroaffirmativt bemötande och skapar planer som stödjer styrkor och behov."
-description: "Comprehensive autism assessments that unite clinical expertise with neuroaffirming understanding for every stage of life."
+description: "Helhetsinriktade autismutredningar med specialistkompetens och neuroaffirmativt bemötande i alla livsfaser."
 ---
