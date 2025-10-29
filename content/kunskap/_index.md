@@ -55,6 +55,11 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <p>Varför vi skjuter upp, hur ADHD påverkar processen – och konkreta sätt att komma vidare.</p>
         <a class="news-link" href="/blogg/prokrastinering-och-adhd/">Läs mer</a>
       </article>
+      <article class="knowledge-card">
+        <h3>Så fungerar en ADHD-utredning</h3>
+        <p>Steg-för-steg genom utredningen – från förberedelser till återkoppling och nästa steg.</p>
+        <a class="news-link" href="/blogg/sa-fungerar-en-adhd-utredning/">Läs mer</a>
+      </article>
     </div>
   </div>
 </section>
