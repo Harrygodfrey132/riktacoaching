@@ -1,0 +1,59 @@
+{{ define "main" }}
+<main class="screen" id="top">
+  <div class="container contact-page">
+    <header class="contact-header">
+      <div class="contact-header__content">
+        <span class="contact-header__eyebrow">Kostnadsfri konsultation</span>
+        <h1>Vi hjälper dig vidare</h1>
+        <p>
+          Välj hur du vill starta samtalet med oss. Vi svarar inom 1–2 arbetsdagar och matchar dig med rätt specialist.
+        </p>
+        <div class="contact-header__actions">
+          <a class="btn primary" href="#kontaktformular">Boka samtal</a>
+          <a class="btn secondary" href="mailto:info@riktapsykiatri.se">Mejla oss</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="kontaktformular" class="contact-form">
+      <h2>Kontakta oss</h2>
+      <p>
+        Fyll i formuläret så återkommer våra koordinatorer med förslag på tider och upplägg.
+      </p>
+      <form action="https://formspree.io/f/xzzkvygl" method="POST" class="contact-form__body">
+        <div class="form-row">
+          <label for="namn">Ditt namn</label>
+          <input id="namn" name="namn" type="text" required placeholder="Ange ditt namn">
+        </div>
+        <div class="form-row">
+          <label for="email">Din e-post</label>
+          <input id="email" name="email" type="email" required placeholder="namn@example.se">
+        </div>
+        <div class="form-row">
+          <label for="telefon">Ditt telefonnummer</label>
+          <input id="telefon" name="telefon" type="tel" placeholder="070-123 45 67">
+        </div>
+        <div class="form-row">
+          <label for="amne">Vad behöver du hjälp med?</label>
+          <select id="amne" name="amne" required>
+            <option value="" disabled selected>Välj ett alternativ</option>
+            <option value="adhd-utredning">ADHD-utredning</option>
+            <option value="autism-utredning">Autism-utredning</option>
+            <option value="medicinering">Medicinsk uppföljning</option>
+            <option value="coachning">Coachning</option>
+            <option value="annat">Annat</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="meddelande">Berätta kort hur vi kan hjälpa dig</label>
+          <textarea id="meddelande" name="message" rows="5" placeholder="Beskriv din situation eller ställ din fråga"></textarea>
+        </div>
+        <div class="form-row form-row--actions">
+          <button type="submit" class="btn primary">Skicka</button>
+        </div>
+        <p class="contact-form__note">Vi svarar vanligtvis inom 1–2 arbetsdagar.</p>
+      </form>
+    </section>
+  </div>
+</main>
+{{ end }}
