@@ -60,6 +60,11 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <p>Steg-för-steg genom utredningen – från förberedelser till återkoppling och nästa steg.</p>
         <a class="news-link" href="/blogg/sa-fungerar-en-adhd-utredning/">Läs mer</a>
       </article>
+      <article class="knowledge-card">
+        <h3>ADHD och ADD – likheter och skillnader</h3>
+        <p>Vad skiljer ouppmärksam form från kombinerad presentation – och hur påverkar det vardagen?</p>
+        <a class="news-link" href="/blogg/adhd-och-add-likheter-och-skillnader/">Läs mer</a>
+      </article>
     </div>
   </div>
 </section>
