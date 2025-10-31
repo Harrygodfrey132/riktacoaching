@@ -27,7 +27,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
       </ul>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/coachning-hero.jpg" alt="Person som känner sig stärkt efter coachning">
+      <img src="/img/coachning-hero-park.jpg" alt="Person som känner sig stärkt efter coachning">
     </div>
   </div>
 </section>
