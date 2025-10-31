@@ -1,5 +1,6 @@
 ---
 title: "Förändra hur din diagnos formar ditt liv"
+layout: coachning
 meta_title: "Coachning | Rikta Psykiatri"
 meta_description: "Coachning som kompletterar din ADHD- eller autismutredning. Få stöd av legitimerade coacher för struktur, återhämtning och hållbara rutiner."
 summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter till vardagliga strategier."
