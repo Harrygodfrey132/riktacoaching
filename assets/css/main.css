@@ -5024,21 +5024,30 @@ nav a.cta:active{
 }
 
 .adhd-section {
+  position: relative;
   border: none;
-  padding: 0;
+  padding: clamp(56px, 8vw, 72px) clamp(28px, 5vw, 40px) clamp(32px, 6vw, 44px);
   margin: 0 0 clamp(44px, 7vw, 60px);
+  background: #ffffff;
+  border-radius: 28px;
+  border: 1px solid rgba(226, 232, 240, 0.7);
 }
 
 .adhd-section legend {
+  position: absolute;
+  top: clamp(22px, 4vw, 32px);
+  left: clamp(24px, 5vw, 36px);
   font-size: 21px;
   font-weight: 650;
   color: #111827;
-  margin-bottom: 24px;
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 
 .adhd-question-list {
   list-style: none;
-  margin: 0;
+  margin: clamp(16px, 3vw, 32px) 0 0;
   padding: 0;
   display: grid;
   gap: clamp(20px, 3.8vw, 32px);
