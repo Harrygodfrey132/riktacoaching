@@ -1,31 +1,56 @@
 ---
-title: "About Us"
+title: "Om Rikta Psykiatri"
 layout: "about"
 meta_title: "Om Rikta Psykiatri | Vårt specialistteam"
 meta_keywords: "Rikta Psykiatri team, specialistpsykiatri, ADHD experter, neuropsykiatriskt team, privat psykiatri Sverige"
 meta_description: "Lär känna läkarna, psykologerna och koordinatorerna bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad neuropsykiatrisk vård."
 og_title: "Teamet bakom Rikta Psykiatri"
 og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledare och se hur vi kombinerar medicinsk precision med värme i varje patientresa."
-description: "Learn about the team behind Berkeley Psychiatrists and our commitment to mental health care."
+description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad vård med värme."
 ---
 
 <section class="who-hero who-section">
   <div class="container">
     <div class="who-grid hero-grid">
       <div class="hero-copy animate-up">
-        <span class="eyebrow">Rikta Psykiatri</span>
-        <h1>Om oss</h1>
+        <nav class="hero-breadcrumb" aria-label="Navigering">
+          <ol>
+            <li><a href="/">Hem</a></li>
+            <li>Om Rikta</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Teamet bakom Rikta</span>
+        <h1>Specialistpsykiatri med hjärta och struktur</h1>
         <p class="lead">
-          Vi är ett lag av kliniker som brinner för att hjälpa människor i rätt riktning. 
+          Vi är ett sammansvetsat team av psykiatriker, psykologer och koordinatorer som kombinerar medicinsk precision med genuint engagemang.
         </p>
         <div class="hero-actions">
           <a class="btn primary coral" href="#team">Möt vårt team</a>
           <a class="btn link" href="/kontakt">Kontakta oss</a>
         </div>
+        <div class="hero-trust">
+          <div class="hero-trust__item">
+            <strong>20+</strong>
+            <span>specialister i teamet</span>
+          </div>
+          <div class="hero-trust__item">
+            <strong>4,9 / 5</strong>
+            <span>i patientnöjdhet</span>
+          </div>
+          <div class="hero-trust__item">
+            <strong>3 000+</strong>
+            <span>genomförda möten</span>
+          </div>
+        </div>
       </div>
       <div class="hero-media animate-up">
         <div class="hero-image">
-          <img src="/img/om-oss.jpg">
+          <img src="/img/om-oss.jpg" alt="Specialistteamet på Rikta Psykiatri i samtal">
+          <div class="hero-media__card">
+            <p>Patientstöd</p>
+            <strong>Personlig kontakt</strong>
+            <span>Mellan varje besök</span>
+          </div>
         </div>
       </div>
     </div>
@@ -36,12 +61,46 @@ description: "Learn about the team behind Berkeley Psychiatrists and our commitm
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy animate-up">
-        <h2>Vi vill erbjuda trygg psykiatrisk vård med helheten i fokus</h2>
+        <h2>Trygg psykiatrisk vård där varje steg hänger ihop</h2>
         <p>
-          Rikta föddes ur en frustration över årslånga köer och att många inte får den långsiktiga hjälp som de kanske skulle behöva . Vi erbjuder strukturerade och tillgängliga utredningar
-          som kan kompletteras med  behandling och coachning så att du får bästa möjliga stöd på sikt. 
+          Rikta föddes ur frustrationen över årslånga köer och otydliga vårdresor. Därför har vi byggt team och arbetssätt som håller ihop hela processen – från första bedömningssamtal och utredning till behandling och coachning.
         </p>
+        <ul class="intro-list">
+          <li>Tvärprofessionella team som följer dig genom hela resan.</li>
+          <li>Digitala och fysiska besök kombinerade efter dina behov.</li>
+          <li>Tydliga planer, uppföljning och stöd även mellan möten.</li>
+        </ul>
       </div>
+      <div class="intro-stats animate-up">
+        <div class="intro-stats__media">
+          <figure class="intro-photo primary">
+            <img src="/img/om-oss.jpg" alt="Kliniker i planeringsmöte">
+          </figure>
+          <figure class="intro-photo secondary">
+            <img src="/img/coachning-hero-park.jpg" alt="Digitalt samtal mellan patient och psykolog">
+          </figure>
+        </div>
+        <dl class="stat-grid">
+          <div>
+            <dt>Utredningspatienter årligen</dt>
+            <dd>450+</dd>
+          </div>
+          <div>
+            <dt>Tid till första kontakt</dt>
+            <dd>&lt; 5 dagar</dd>
+          </div>
+          <div>
+            <dt>Specialister i teamet</dt>
+            <dd>20+</dd>
+          </div>
+          <div>
+            <dt>Mellanbesök via mejl</dt>
+            <dd>100%</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="who-values who-section">
