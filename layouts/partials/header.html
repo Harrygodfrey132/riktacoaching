@@ -5,7 +5,22 @@
     </a>
     <nav aria-label="Huvudmeny" class="desktop-nav">
       <ul>
-        <li><a href="/coachning/">Coachning</a></li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/coachning/">Coachning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="coachningSubmenu"
+                    aria-label="Visa undersidor för Coachning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="coachningSubmenu">
+            <li><a href="/coachning/adhd/">ADHD-coachning</a></li>
+            <li><a href="/coachning/autism/">Autism-coachning</a></li>
+          </ul>
+        </li>
         <li><a href="/kunskap/">Kunskap</a></li>
         <li class="has-submenu">
           <div class="submenu-trigger">
@@ -56,7 +71,22 @@
     </button>
     <nav class="mobile-nav" id="mobileNav" aria-label="Mobilmeny">
       <ul>
-        <li><a href="/coachning/" onclick="closeMobileMenu()">Coachning</a></li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/coachning/" onclick="closeMobileMenu()">Coachning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="mobileCoachningSubmenu"
+                    aria-label="Visa undersidor för Coachning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="mobileCoachningSubmenu">
+            <li><a href="/coachning/adhd/" onclick="closeMobileMenu()">ADHD-coachning</a></li>
+            <li><a href="/coachning/autism/" onclick="closeMobileMenu()">Autism-coachning</a></li>
+          </ul>
+        </li>
         <li><a href="/kunskap/" onclick="closeMobileMenu()">Kunskap</a></li>
         <li class="has-submenu">
           <div class="submenu-trigger">
