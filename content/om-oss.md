@@ -28,20 +28,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
           <a class="btn primary coral" href="#team">Möt vårt team</a>
           <a class="btn link" href="/kontakt">Kontakta oss</a>
         </div>
-        <div class="hero-trust">
-          <div class="hero-trust__item">
-            <strong>20+</strong>
-            <span>specialister i teamet</span>
-          </div>
-          <div class="hero-trust__item">
-            <strong>4,9 / 5</strong>
-            <span>i patientnöjdhet</span>
-          </div>
-          <div class="hero-trust__item">
-            <strong>3 000+</strong>
-            <span>genomförda möten</span>
-          </div>
-        </div>
       </div>
       <div class="hero-media animate-up">
         <div class="hero-image">
@@ -80,24 +66,9 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
             <img src="/img/coachning-hero-park.jpg" alt="Digitalt samtal mellan patient och psykolog">
           </figure>
         </div>
-        <dl class="stat-grid">
-          <div>
-            <dt>Utredningspatienter årligen</dt>
-            <dd>450+</dd>
-          </div>
-          <div>
-            <dt>Tid till första kontakt</dt>
-            <dd>&lt; 5 dagar</dd>
-          </div>
-          <div>
-            <dt>Specialister i teamet</dt>
-            <dd>20+</dd>
-          </div>
-          <div>
-            <dt>Mellanbesök via mejl</dt>
-            <dd>100%</dd>
-          </div>
-        </dl>
+        <p class="intro-media-caption">
+          Våra tvärprofessionella team träffas varje vecka för att gå igenom patientresor och säkerställa en trygg och sammanhållen vårdprocess.
+        </p>
       </div>
     </div>
   </div>
