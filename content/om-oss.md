@@ -32,11 +32,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       <div class="hero-media animate-up">
         <div class="hero-image">
           <img src="/img/om-oss.jpg" alt="Specialistteamet på Rikta Psykiatri i samtal">
-          <div class="hero-media__card">
-            <p>Patientstöd</p>
-            <strong>Personlig kontakt</strong>
-            <span>Mellan varje besök</span>
-          </div>
         </div>
       </div>
     </div>
@@ -58,17 +53,9 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         </ul>
       </div>
       <div class="intro-stats animate-up">
-        <div class="intro-stats__media">
-          <figure class="intro-photo primary">
-            <img src="/img/om-oss.jpg" alt="Kliniker i planeringsmöte">
-          </figure>
-          <figure class="intro-photo secondary">
-            <img src="/img/coachning-hero-park.jpg" alt="Digitalt samtal mellan patient och psykolog">
-          </figure>
-        </div>
-        <p class="intro-media-caption">
-          Våra tvärprofessionella team träffas varje vecka för att gå igenom patientresor och säkerställa en trygg och sammanhållen vårdprocess.
-        </p>
+        <figure class="intro-photo primary">
+          <img src="/img/coachning-hero-park.jpg" alt="Digitalt samtal mellan patient och psykolog">
+        </figure>
       </div>
     </div>
   </div>
