@@ -7,3 +7,149 @@ meta_description: "Specialistteam som erbjuder ADHD- och autismutredningar samt 
 og_title: "Neuropsykiatri i Göteborg med Rikta"
 og_description: "Träffa våra specialistläkare under månatliga klinikdagar eller fortsätt digitalt stöd mellan besöken."
 ---
+
+<section class="location-hero location-hero--goteborg">
+  <div class="container">
+    <div class="location-hero__grid">
+      <div class="location-hero__copy">
+        <span class="eyebrow">Göteborg • Digital klinikvecka</span>
+        <h1>ADHD- och autismutredning i Göteborg</h1>
+        <p class="lead">
+          Vårt västsvenska team hjälper dig oavsett om du pendlar längs E6, jobbar offshore eller pluggar i Borås.
+          Kartläggning, tester, läkarbesök och uppföljning sker online; bara om ett visst moment kräver fysisk närvaro bjuder vi in till ett kort klinikpass under våra månatliga Göteborgsdagar.
+        </p>
+        <ul class="location-hero__highlights">
+          <li>Digital onboarding inom 48 timmar, även kvällar och helger.</li>
+          <li>Komprimerade testpass (1,5–2 dagar) endast om det digitala upplägget behöver kompletteras.</li>
+          <li>Efter utredningen fortsätter medicin, coachning och intyg online utan väntetid.</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn primary" href="/kontakta-oss/">Reservera klinikdag</a>
+          <a class="btn secondary" href="/platser/">Se fler platser</a>
+        </div>
+      </div>
+      <div class="location-hero__card">
+        <h3>Vad du får</h3>
+        <dl class="location-hero__facts">
+          <div>
+            <dt>Team</dt>
+            <dd>Psykiater, psykolog, koordinator, ADHD-sjuksköterska</dd>
+          </div>
+          <div>
+            <dt>Upplägg</dt>
+            <dd>Digital kartläggning + valfria testblock på video eller korta Göteborgsbesök</dd>
+          </div>
+          <div>
+            <dt>Täckning</dt>
+            <dd>Göteborg, Mölndal, Borås, Kungälv, Uddevalla, Varberg</dd>
+          </div>
+          <div>
+            <dt>Eftervård</dt>
+            <dd>Digital medicin, coachning, intyg och arbetslivsstöd</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location-journey">
+  <div class="container">
+    <header class="location-section__header">
+      <span class="eyebrow">Upplägg</span>
+      <h2>Så fungerar våra klinikdagar</h2>
+      <p>Vi gör hela förarbetet digitalt, sammanför valfria tester när teamet är i Göteborg och fortsätter online. Resultatet är en komplett utredning med minimal frånvaro från jobb och studier.</p>
+    </header>
+    <div class="location-journey__steps">
+      <article class="location-step">
+        <span class="location-step__number">1</span>
+        <h3>Förberedelser online</h3>
+        <p>Efter ett kostnadsfritt kartläggningssamtal får du schemalagda videomöten för DIVA-5, anamnes och anhörigintervju. Du kan boka tid på kvällar och helger.</p>
+        <ul class="location-step__list">
+          <li>Digital portal med formulär och tydliga instruktioner.</li>
+          <li>Koordinator stämmer av resplan, boende och arbetstider vid behov.</li>
+        </ul>
+      </article>
+      <article class="location-step">
+        <span class="location-step__number">2</span>
+        <h3>Klinikdagar på plats</h3>
+        <p>Du genomför neuropsykologiska tester, kliniska observationer och läkarbesök via våra digitala verktyg. Endast de moment som absolut kräver fysisk närvaro samlas i ett kompakt besök när vi är i Göteborg.</p>
+        <ul class="location-step__list">
+          <li>Pausvänliga pass, ledsagare och tysta rum erbjuds när du väljer ett fysiskt komplement.</li>
+          <li>Somatiska kontroller och labbremisser löses via närmaste labb eller hemtagning.</li>
+        </ul>
+      </article>
+      <article class="location-step">
+        <span class="location-step__number">3</span>
+        <h3>Uppföljning där du är</h3>
+        <p>Återkoppling, rapport och behandlingsplan sker digitalt veckan efter. Vi fortsätter med medicin, coachning och intyg online eller, om du önskar, under våra Stockholmsdagar.</p>
+        <ul class="location-step__list">
+          <li>Snabb tillgång till rapport i patientportalen.</li>
+          <li>Möjlighet till arbetsplatsmöte via video tillsammans med vår psykolog.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="location-details">
+  <div class="container">
+    <div class="location-details__grid">
+      <article class="location-info">
+        <h3>Inför resan</h3>
+        <p>Om ett fysiskt moment behövs skickar vår koordinator packlista, dagsprogram och tips på hur du får klinikdagen att fungera med jobb, familj och boende utanför Göteborg.</p>
+        <ul class="location-info__list">
+          <li>Möjlighet att lägga tester i två kortare dagar, en lång dag eller delvis digitalt.</li>
+          <li>Checklista för arbetsgivare/skola och mallar för ledighetsansökan.</li>
+          <li>Stöd för logi, parkering, reseersättning och neurodivergent-friendly platser i city.</li>
+        </ul>
+      </article>
+      <article class="location-info">
+        <h3>Efter klinikdagen</h3>
+        <ul class="location-info__list">
+          <li>Sammanfattande rapport och diagnosbeslut inom fem arbetsdagar.</li>
+          <li>Digital medicinuppföljning, receptförnyelse och coachning utan resor.</li>
+          <li>Intyg för Arbetsförmedlingen, CSN, körkort, högre studier och Försäkringskassan ingår.</li>
+          <li>Vid behov bokar vi uppföljande fysiska besök på våra Stockholmsdagar eller nästa Göteborgsblock.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="location-extras location-extras--goteborg">
+  <div class="container">
+    <header class="location-section__header">
+      <span class="eyebrow">Regionalt fokus</span>
+      <h2>Vad patienter i Västra Götaland brukar behöva</h2>
+      <p>Vi utgår från din vardag – oavsett om den präglas av skiftarbete, pendling eller studier.</p>
+    </header>
+    <div class="location-details__grid">
+      <article class="location-info">
+        <h3>Industrin &amp; logistik</h3>
+        <p>Vi tar fram intyg och stödplaner som följer rutiner för GKN, Volvo, hamnen och stora logistikcenter. Fokus ligger på skiftgång, säkerhetsrutiner och tydliga överlämningar.</p>
+      </article>
+      <article class="location-info">
+        <h3>Studier i regionen</h3>
+        <p>Underlag och rekommendationer anpassas för GU, Chalmers, Högskolan i Borås och yrkeshögskolor – inklusive praktikintyg och examinerande upplägg.</p>
+      </article>
+      <article class="location-info">
+        <h3>Familjeliv i pendlarstaden</h3>
+        <p>Vi hjälper föräldrar att koordinera skola, habilitering och arbete genom att ta fram gemensamma planeringsverktyg och rutiner för vardagslogistik.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="location-cta location-cta--goteborg">
+  <div class="container">
+    <div class="location-cta__content">
+      <h2>Reservera din plats på nästa klinikvecka</h2>
+      <p>Beskriv kort din situation och var du befinner dig i regionen. Vi återkommer samma arbetsdag med lediga klinikdagar, digitala förbesök och hur vi löser logistiken.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="/kontakta-oss/">Skicka intresseanmälan</a>
+        <a class="btn link" href="tel:+46858097970">08-580 97 970</a>
+      </div>
+    </div>
+  </div>
+</section>
