@@ -549,14 +549,35 @@ nav a.active {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  --news-overlay: linear-gradient(140deg, rgba(29, 44, 59, 0.85), rgba(29, 44, 59, 0.6));
+}
+
+.news-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--news-overlay);
+  z-index: 0;
+}
+
+.news-hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .news-hero--twilight {
-  background: linear-gradient(140deg, rgba(71, 115, 166, 0.92), rgba(29, 44, 59, 0.92));
+  background-image: url('/img/psychologist-computer.jpg');
+  --news-overlay: linear-gradient(150deg, rgba(17, 32, 56, 0.88), rgba(17, 32, 56, 0.45));
 }
 
 .news-hero--rose {
-  background: linear-gradient(140deg, rgba(236, 78, 91, 0.9), rgba(71, 115, 166, 0.75));
+  background-image: url('/img/smiling-therapist.jpg');
+  --news-overlay: linear-gradient(150deg, rgba(121, 29, 59, 0.85), rgba(17, 32, 56, 0.45));
 }
 
 .news-meta {
@@ -1074,6 +1095,13 @@ nav a.active {
   grid-template-columns: 1fr;
 }
 
+@media (min-width: 768px) {
+  .coachning-program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+}
+
 .coachning-program {
   background: #fff;
   border-radius: 32px;
@@ -1132,9 +1160,18 @@ nav a.active {
 .module-list {
   list-style: none;
   margin: 0;
-  padding: 0;
-  display: grid;
+  padding: 0 0 12px;
+  display: flex;
   gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+.module-list::-webkit-scrollbar {
+  height: 6px;
+}
+.module-list::-webkit-scrollbar-thumb {
+  background: rgba(55, 116, 171, 0.3);
+  border-radius: 999px;
 }
 .module-list li {
   background: #fff;
@@ -1142,10 +1179,26 @@ nav a.active {
   border: 1px solid rgba(55, 116, 171, 0.12);
   box-shadow: 0 16px 32px rgba(17, 32, 56, 0.08);
   padding: 18px 20px;
-  display: grid;
-  grid-template-columns: 52px 1fr;
-  gap: 16px;
+  display: flex;
+  gap: 14px;
   align-items: flex-start;
+  min-width: min(280px, 45vw);
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  position: relative;
+}
+.module-list li::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 2px;
+  background: rgba(55, 116, 171, 0.35);
+}
+.module-list li:last-child::after {
+  display: none;
 }
 .module-number {
   width: 48px;
@@ -1158,6 +1211,7 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 .module-list h5 {
   margin: 0 0 6px;
