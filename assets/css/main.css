@@ -1965,6 +1965,10 @@ main#content > .location-page:first-child {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.location-cta__content .hero-actions {
+  justify-content: center;
+}
+
 @media (max-width: 1024px) {
   .location-hero__grid {
     grid-template-columns: 1fr;
