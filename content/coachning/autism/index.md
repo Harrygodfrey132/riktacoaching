@@ -1,5 +1,5 @@
 ---
-title: "Autism-coachning"
+title: ""
 layout: "coachning"
 meta_title: "Autism-coachning | Rikta Psykiatri"
 meta_description: "Coachning för dig med autismdiagnos. Få stöd i att skapa struktur, hantera sensoriska intryck och stärka socialt självförtroende."
@@ -10,7 +10,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
       <span class="coachning-hero__eyebrow">Coachning för autism</span>
-      <h1>Skapa vardagar som känns hanterbara</h1>
+      <h1>Förändra hur din autism formar ditt liv</h1>
       <p>
         Autism-coachning hos Rikta fokuserar på att anpassa omvärlden efter dina behov. Välj mellan fristående individuella
         sessioner eller ett 6-veckorsprogram för ungdomar eller vuxna – alltid lett av legitimerad psykolog eller autism-coach.

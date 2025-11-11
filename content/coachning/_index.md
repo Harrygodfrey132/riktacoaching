@@ -76,17 +76,6 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
   </div>
 </section>
 
-<section class="coachning-section">
-  <div class="coachning-panel">
-    <h3>Vad som är gemensamt</h3>
-    <ul class="coachning-list">
-      <li>Vi jobbar alltid utifrån evidensbaserade metoder och delar sessioner i tydliga block med konkreta uppgifter.</li>
-      <li>Du har kontakt via mejl mellan möten för frågor, material och pepp.</li>
-      <li>Coacherna samarbetar med våra psykiatriker vid behov av medicinska justeringar.</li>
-    </ul>
-  </div>
-</section>
-
 <section class="coachning-cta-band" id="coachning-cta">
   <div class="coachning-cta-band__content">
     <h3>Behöver du hjälp att välja?</h3>
