@@ -18,7 +18,6 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
-        <a class="btn secondary" href="#varfor">Utforska programmet</a>
       </div>
       <ul class="coachning-hero__signals">
         <li>Legitimerade coacher och psykologer</li>
@@ -63,7 +62,8 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
   </div>
 </section>
 
-<section class="coachning-program coachning-section" id="ungdom">
+<div class="coachning-program-grid">
+  <section class="coachning-program coachning-section" id="ungdom">
   <div class="coachning-program__media">
     <figure>
       <img src="/img/coachning-hero-park.jpg" alt="Ung person som deltar i digital ADHD-coachning">
@@ -144,9 +144,8 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
     </div>
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
-</section>
-
-<section class="coachning-program coachning-section" id="vuxna">
+  </section>
+  <section class="coachning-program coachning-section" id="vuxna">
   <div class="coachning-program__media">
     <figure>
       <img src="/img/adhd-coachning.jpg" alt="Vuxen som arbetar med ADHD-coachning">
@@ -227,7 +226,8 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
     </div>
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
-</section>
+  </section>
+</div>
 
 <section class="coachning-cta-band" id="coachning-cta">
   <div class="coachning-cta-band__content">

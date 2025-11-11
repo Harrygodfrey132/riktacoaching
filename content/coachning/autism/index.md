@@ -17,7 +17,6 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
-        <a class="btn secondary" href="#tema">Läs om upplägg</a>
       </div>
       <ul class="coachning-hero__signals">
         <li>Coachning av psykolog eller specialiserad terapeut</li>
@@ -78,7 +77,8 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
   </div>
 </section>
 
-<section class="coachning-program coachning-section" id="ungdom-autism">
+<div class="coachning-program-grid">
+  <section class="coachning-program coachning-section" id="ungdom-autism">
   <div class="coachning-program__media">
     <figure>
       <img src="/img/autism-coachning.jpg" alt="Ungdom som deltar i autism-coachning">
@@ -159,9 +159,8 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
     </div>
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
-</section>
-
-<section class="coachning-program coachning-section" id="vuxna-autism">
+  </section>
+  <section class="coachning-program coachning-section" id="vuxna-autism">
   <div class="coachning-program__media">
     <figure>
       <img src="/img/coachning-hero-park.jpg" alt="Vuxen som arbetar med autism-coachning">
@@ -242,7 +241,8 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
     </div>
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
-</section>
+  </section>
+</div>
 
 <section class="coachning-cta-band">
   <div class="coachning-cta-band__content">
