@@ -28,10 +28,7 @@ page_class: "autism-page--adult"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg">
-          <figcaption>
-            Vi kombinerar klinisk kunskap med emptatiskt förhållningssätt för att synliggöra dina styrkor och behov.
-          </figcaption>
+          <img src="/img/scenic-background-picture.jpg" alt="Lugn miljö som symboliserar återhämtning för vuxna med autism">
         </figure>
       </div>
     </div>

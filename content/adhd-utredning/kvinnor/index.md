@@ -28,10 +28,7 @@ page_class: "adhd-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Kvinna i samtal med psykolog i lugn mottagning">
-          <figcaption>
-            Vi möter dig med nyfikenhet och ser till din individuella förutsättningar i våra samtal med dig. 
-          </figcaption>
+          <img src="/img/woman-smiling-picture.jpg" alt="Kvinna som känner sig förstådd under ett professionellt möte">
         </figure>
       </div>
     </div>

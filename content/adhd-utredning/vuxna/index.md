@@ -28,10 +28,7 @@ page_class: "adhd-page--adult"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Vuxen patient i samtal med psykiater i en lugn miljö">
-          <figcaption>
-            Vi kombinerar klinisk expertis med nyfikenhet för att kartlägga både styrkor och utmaningar i din vardag.
-          </figcaption>
+          <img src="/img/psychologist-smiling.jpg" alt="Specialist som möter vuxen klient med fokus och lugn">
         </figure>
       </div>
     </div>

@@ -28,15 +28,12 @@ page_class: "adhd-page--youth"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Förälder och barn i samtal med psykolog i lugnt rum">
-          <figcaption>
-            Vi möter varje familj med nyfikenhet och med målet att lyfta ditt barns styrkor och behov av stöd.
-                      </figcaption>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </section>
+          <img src="/img/teenager-worried.jpg" alt="Tonåring som får stöd av förälder och psykolog">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="who-section adhd-definition" id="vad-ar-adhd">
   <div class="container">

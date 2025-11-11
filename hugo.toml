@@ -12,7 +12,7 @@ disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
   accent = "#DA5B5F"
   stickyHeaderOffset = 72
   logo = "/img/logo.png"
-  hero = "/img/hero.jpg"
+  hero = "/img/psychologist-picture.jpg"
 
 [markup]
   [markup.goldmark.renderer]
@@ -28,4 +28,3 @@ ignoreLogs = ['warning-goldmark-raw-html']
 #[services]
 #  [services.googleAnalytics]
 #    id = ""
-

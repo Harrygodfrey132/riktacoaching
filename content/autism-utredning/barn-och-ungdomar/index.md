@@ -28,7 +28,7 @@ page_class: "autism-page--youth"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg">
+          <img src="/img/family-bonding-picture.jpg" alt="Familj som samtalar tillsammans i lugn miljö">
         </figure>
       </div>
     </div>

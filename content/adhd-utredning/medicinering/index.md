@@ -29,10 +29,7 @@ page_class: "adhd-page--medication"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Specialistläkare som går igenom läkemedelsplan med patient">
-          <figcaption>
-            Vi följer Socialstyrelsens riktlinjers som är baserat på nuvarande evidens, och skräddarsyr dosering och uppföljning efter dina förutsättningar..
-          </figcaption>
+          <img src="/img/psychologist-computer.jpg" alt="Specialistläkare som går igenom läkemedelsplan digitalt">
         </figure>
       </div>
     </div>

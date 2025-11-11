@@ -28,10 +28,7 @@ page_class: "adhd-page--coachning"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/hero.jpg" alt="Klient och coach som planerar nästa steg på ett block">
-          <figcaption>
-            Vi coachar med ett fokus som ligger på dina styrkor, din vardag och de mål du vill uppnå.
-          </figcaption>
+          <img src="/img/smiling-therapist.jpg" alt="Coach som guidar klient under ett ADHD-samtal">
         </figure>
       </div>
     </div>
