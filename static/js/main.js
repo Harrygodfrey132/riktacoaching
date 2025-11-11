@@ -89,24 +89,28 @@
     });
   }
 
-  // ----- ADHD Screening Test Logic -----
-  const screeningForm = document.getElementById('adhd-screening-form');
-  if (screeningForm) {
-    const TOTAL_QUESTIONS = 18;
-    const scoreBox = document.getElementById('adhd-score');
-    const scoreValue = document.getElementById('adhd-score-value');
-    const interpretationEl = document.getElementById('adhd-score-interpretation');
-    const resetButton = screeningForm.querySelector('.adhd-screening__reset');
-    const interpretationClasses = ['is-amber', 'is-orange', 'is-red'];
-    const ranges = [
-      { max: 17, text: 'Symptom levels land below the clinical risk threshold on this screener. Keep observing and reach out if everyday functioning shifts.' },
-      { max: 26, text: 'Responses reflect clinically relevant ADHD indicators. A structured consultation with our neuropsychiatry team is recommended.', className: 'is-amber' },
-      { max: 35, text: 'Symptom burden is pronounced and likely to interfere with school, work, or home life. Schedule a full specialist-led assessment.', className: 'is-orange' },
-      { max: Infinity, text: 'The screening signals substantial impairment consistent with ADHD. Please contact Rikta Psykiatri promptly to arrange a comprehensive diagnostic evaluation.', className: 'is-red' }
-    ];
+  // ----- Screening Test Logic (ADHD + Autism) -----
+  function initScreeningForm({
+    formId,
+    totalQuestions,
+    scoreBoxId,
+    scoreValueId,
+    interpretationId,
+    ranges,
+    defaultInterpretation
+  }) {
+    const form = document.getElementById(formId);
+    if (!form) return;
+
+    const scoreBox = document.getElementById(scoreBoxId);
+    const scoreValue = document.getElementById(scoreValueId);
+    const interpretationEl = document.getElementById(interpretationId);
+    const resetButton = form.querySelector('.adhd-screening__reset');
+    const interpretationClasses = Array.from(new Set(ranges.map(range => range.className).filter(Boolean)));
     let hideTimeout = null;
 
     function removeInterpretationClasses() {
+      if (!interpretationEl) return;
       interpretationClasses.forEach(cls => interpretationEl.classList.remove(cls));
     }
 
@@ -146,23 +150,26 @@
       }
     }
 
-    screeningForm.addEventListener('submit', event => {
-      event.preventDefault();
-      if (!screeningForm.reportValidity()) return;
-
-      const formData = new FormData(screeningForm);
+    function calculateScore() {
+      const formData = new FormData(form);
       let total = 0;
       let answered = 0;
-
-      for (let i = 1; i <= TOTAL_QUESTIONS; i += 1) {
+      for (let i = 1; i <= totalQuestions; i += 1) {
         const value = formData.get(`q${i}`);
         if (value !== null) {
           total += Number(value);
           answered += 1;
         }
       }
+      return { total, answered };
+    }
 
-      if (answered === TOTAL_QUESTIONS) {
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const { total, answered } = calculateScore();
+      if (answered === totalQuestions) {
         updateScoreDisplay(total);
         showScoreBox();
       }
@@ -170,34 +177,54 @@
 
     if (resetButton) {
       resetButton.addEventListener('click', () => {
-        screeningForm.reset();
-        if (scoreBox) {
+        form.reset();
+        if (scoreBox && interpretationEl) {
           scoreValue.textContent = '0';
-          interpretationEl.textContent = 'Answer every question to reveal your score and interpretation.';
+          interpretationEl.textContent = defaultInterpretation;
           removeInterpretationClasses();
           hideScoreBox();
         }
       });
     }
 
-    screeningForm.addEventListener('change', () => {
-      // Recalculate instantly if the result card is already visible.
+    form.addEventListener('change', () => {
       if (!scoreBox || scoreBox.hasAttribute('hidden')) return;
-      const formData = new FormData(screeningForm);
-      let total = 0;
-      let answered = 0;
-      for (let i = 1; i <= TOTAL_QUESTIONS; i += 1) {
-        const value = formData.get(`q${i}`);
-        if (value !== null) {
-          total += Number(value);
-          answered += 1;
-        }
-      }
-      if (answered === TOTAL_QUESTIONS) {
+      const { total, answered } = calculateScore();
+      if (answered === totalQuestions) {
         updateScoreDisplay(total);
       }
     });
   }
+
+  initScreeningForm({
+    formId: 'adhd-screening-form',
+    totalQuestions: 18,
+    scoreBoxId: 'adhd-score',
+    scoreValueId: 'adhd-score-value',
+    interpretationId: 'adhd-score-interpretation',
+    defaultInterpretation: 'Besvara varje fråga för att visa din poäng och tolkning.',
+    ranges: [
+      { max: 17, text: 'Symtomnivån ligger under den kliniska riskgränsen. Fortsätt observera vardagen och sök hjälp om läget förändras.' },
+      { max: 26, text: 'Svarsmönstret visar flera ADHD-indikatorer. Vi rekommenderar ett strukturerat bedömningssamtal med vårt neuropsykiatriska team.', className: 'is-amber' },
+      { max: 35, text: 'Symtombördan är uttalad och påverkar sannolikt skola, arbete eller hem. Boka en fullständig specialistledd utredning.', className: 'is-orange' },
+      { max: Infinity, text: 'Screeningen signalerar omfattande svårigheter förenliga med ADHD. Kontakta Rikta Psykiatri för en diagnostisk utredning.', className: 'is-red' }
+    ]
+  });
+
+  initScreeningForm({
+    formId: 'autism-screening-form',
+    totalQuestions: 14,
+    scoreBoxId: 'autism-score',
+    scoreValueId: 'autism-score-value',
+    interpretationId: 'autism-score-interpretation',
+    defaultInterpretation: 'Besvara alla frågor för att se din RAADS-14 poäng.',
+    ranges: [
+      { max: 13, text: 'Poängen ligger under den rekommenderade cut-off på 14 och talar för låg sannolikhet för autism i detta test.' },
+      { max: 20, text: 'Resultatet närmar sig cut-off. Ökad vaksamhet och eventuellt rådgivande samtal kan vara hjälpsamt.', className: 'is-amber' },
+      { max: 27, text: 'Autistiska drag framträder tydligt. En klinisk autismutredning rekommenderas för att få säkra svar.', className: 'is-orange' },
+      { max: Infinity, text: 'Poängen ligger klart över cut-off och talar starkt för att boka en komplett autismutredning hos Rikta Psykiatri.', className: 'is-red' }
+    ]
+  });
 
   // ----- Newsletter Popup -----
   (function initNewsletterPopup(){

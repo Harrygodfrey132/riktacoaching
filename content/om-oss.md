@@ -99,34 +99,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
   </div>
 </section>
 
-
-<section class="who-trust who-section" id="trust">
-  <div class="container">
-    <header class="section-header center animate-up">
-      <h2>Trygghet &amp; kvalitet</h2>
-      <p class="muted">Våra läkare och psykologer utformar din vård efter det som har störst evidens just nu.</p>
-    </header>
-    <div class="trust-grid">
-      <div class="trust-card animate-up">
-        <h3>Vårdgivare</h3>
-        <p>Här fyller vi på information när den finns tillgänlig</p>
-      </div>
-      <div class="trust-card animate-up">
-        <h3>Regionpartner</h3>
-        <p>Samarbetar med regionala vårdgivare för kvalitetssäkrade remisser.</p>
-      </div>
-      <div class="trust-card animate-up">
-        <h3>Patientnöjdhet</h3>
-        <p>Våra patienter upplever tydligare struktur i sin vardag efter bara tre månader.</p>
-      </div>
-    </div>
-    <blockquote class="trust-quote animate-up">
-      “Den första mottagningen som faktiskt hjälpt vårt barn att få vardagen att fungera — vi känner att vi fått hjälp hela vägen.”
-      <cite>Förälder till patient, Stockholm</cite>
-    </blockquote>
-  </div>
-</section>
-
 <section class="who-cta who-section" id="connect">
   <div class="container">
     <div class="cta-content animate-up">
