@@ -20,39 +20,421 @@
       <p>
         Fyll i formuläret så återkommer våra koordinatorer med förslag på tider och upplägg.
       </p>
-      <form action="https://formspree.io/f/xzzkvygl" method="POST" class="contact-form__body">
-        <div class="form-row">
-          <label for="namn">Ditt namn</label>
-          <input id="namn" name="namn" type="text" required placeholder="Ange ditt namn">
-        </div>
-        <div class="form-row">
-          <label for="email">Din e-post</label>
-          <input id="email" name="email" type="email" required placeholder="namn@example.se">
-        </div>
-        <div class="form-row">
-          <label for="telefon">Ditt telefonnummer</label>
-          <input id="telefon" name="telefon" type="tel" placeholder="070-123 45 67">
-        </div>
-        <div class="form-row">
-          <label for="amne">Vad behöver du hjälp med?</label>
-          <select id="amne" name="amne" required>
-            <option value="" disabled selected>Välj ett alternativ</option>
-            <option value="adhd-utredning">ADHD-utredning</option>
-            <option value="autism-utredning">Autism-utredning</option>
-            <option value="medicinering">Medicinsk uppföljning</option>
-            <option value="coachning">Coachning</option>
-            <option value="annat">Annat</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label for="meddelande">Berätta kort hur vi kan hjälpa dig</label>
-          <textarea id="meddelande" name="message" rows="5" placeholder="Beskriv din situation eller ställ din fråga"></textarea>
-        </div>
-        <div class="form-row form-row--actions">
-          <button type="submit" class="btn primary">Skicka</button>
-        </div>
-        <p class="contact-form__note">Vi svarar vanligtvis inom 1–2 arbetsdagar.</p>
-      </form>
+      <!-- Do not remove this code. -->
+      <style>
+        html,body{
+          margin: 0px;
+        }
+        .formsubmit.zcwf_button{
+          color: white !important;
+          background: transparent linear-gradient(0deg, #0279FF 0%, #00A3F3 100%);
+        }
+        #crmWebToEntityForm.zcwf_lblLeft{
+          width: 100%;
+          padding: 25px;
+          margin: 0 auto;
+          box-sizing: border-box;
+        }
+        #crmWebToEntityForm.zcwf_lblLeft *{
+          box-sizing: border-box;
+        }
+        #crmWebToEntityForm {text-align: left;
+        }
+        #crmWebToEntityForm *{
+        direction: ltr;
+        }
+        .zcwf_lblLeft .zcwf_title{
+        word-wrap: break-word;
+        padding: 0px 6px 10px;
+        font-weight: bold }
+        .zcwf_lblLeft.cpT_primaryBtn:hover{
+        background: linear-gradient(#02acff 0,#006be4 100%)no-repeat padding-box !important;
+        box-shadow: 0 -2px 0 0  #0159b9 inset !important;
+        border: 0 !important;
+        color:  #fff !important;
+        outline: 0 !important;
+        }
+        .zcwf_lblLeft .zcwf_col_fld input[ type  = text], input[ type  = password], .zcwf_lblLeft .zcwf_col_fld textarea{
+        width: 60%;
+        border: 1px solid  #c0c6cc !important;
+        resize: vertical;
+        border-radius: 2px;
+        float: left;
+        }
+        .zcwf_lblLeft .zcwf_col_lab{
+        width: 30%;
+        word-break: break-word;
+        padding: 0px 6px 0px;
+        margin-right: 10px;
+        margin-top: 5px;
+        float: left;
+        min-height: 1px;
+        }
+        .zcwf_lblLeft .zcwf_col_fld{
+        float: left;
+        width: 68%;
+        padding: 0px 6px 0px;
+        position: relative;
+        margin-top: 5px;
+        }
+        .zcwf_lblLeft .zcwf_privacy {padding: 6px;
+        }
+        .zcwf_lblLeft .wfrm_fld_dpNn {display: none;
+        }
+        .dIB {display: inline-block;
+        }
+        .zcwf_lblLeft .zcwf_col_fld_slt{
+        width: 60%;
+        border: 1px solid  #ccc;
+        background:  #fff;
+        border-radius: 4px;
+        font-size: 12px;
+        float: left;
+        resize: vertical;
+        padding: 2px 5px;
+        }
+        .zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after{
+        content: '';
+        display: table;
+        clear: both;
+        }
+        .zcwf_lblLeft .zcwf_col_help{
+        float: left;
+        margin-left: 7px;
+        font-size: 12px;
+        max-width: 35%;
+        word-break: break-word;
+        }
+        .zcwf_lblLeft .zcwf_help_icon{
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background:  #fff;
+        border: 1px solid  #c0c6cc;
+        color:  #c1c1c1;
+        text-align: center;
+        font-size: 11px;
+        line-height: 16px;
+        font-weight: bold;
+        border-radius: 50%;
+        }
+        .zcwf_lblLeft .zcwf_row {margin: 15px 0px;
+        }
+        .zcwf_lblLeft .formsubmit{
+        margin-right: 5px;
+        cursor: pointer;
+        color:  #313949;
+        font-size: 12px;
+        }
+        .zcwf_lblLeft .zcwf_privacy_txt{
+        width: 90%;
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        font-family: Arial;
+        display: inline-block;
+        vertical-align: top;
+        color:  #313949;
+        padding-top: 2px;
+        margin-left: 6px;
+        }
+        .zcwf_lblLeft .zcwf_button{
+        font-size: 12px;
+        color:  #313949;
+        border: 1px solid  #c0c6cc;
+        padding: 3px 9px;
+        border-radius: 4px;
+        cursor: pointer;
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        }
+        .zcwf_lblLeft .zcwf_tooltip_over{
+        position: relative;
+        }
+        .zcwf_lblLeft .zcwf_tooltip_ctn{
+        position: absolute;
+        background:  #dedede;
+        padding: 3px 6px;
+        top: 3px;
+        border-radius: 4px;
+        word-break: break-word;
+        min-width: 100px;
+        max-width: 150px;
+        color:  #313949;
+        z-index: 100;
+        }
+        .zcwf_lblLeft .zcwf_ckbox{
+        float: left;
+        }
+        .zcwf_lblLeft .zcwf_file{
+        width: 55%;
+        box-sizing: border-box;
+        float: left;
+        }
+        .cBoth:after{
+        content: '';
+        display: block;
+        clear: both;
+        }
+        @media all and  (max-width: 600px){
+        .zcwf_lblLeft .zcwf_col_lab, .zcwf_lblLeft .zcwf_col_fld{
+        width: auto;
+        float: none !important;
+        }
+        .zcwf_lblLeft .zcwf_col_help {width: 40%;
+        }
+        }
+      </style>
+      <style>
+        #crmWebToEntityForm {
+          padding: 0;
+        }
+        #crmWebToEntityForm .zcwf_row {
+          margin: 0;
+        }
+        #crmWebToEntityForm .zcwf_col_lab,
+        #crmWebToEntityForm .zcwf_col_fld {
+          width: 100%;
+          float: none;
+          padding: 0;
+          margin: 0;
+        }
+        #crmWebToEntityForm label {
+          font-weight: 600;
+          color: rgba(29, 44, 59, 0.85);
+        }
+        #crmWebToEntityForm input,
+        #crmWebToEntityForm select,
+        #crmWebToEntityForm textarea {
+          width: 100%;
+          padding: 14px 16px;
+          border-radius: 16px;
+          border: 1px solid rgba(29, 44, 59, 0.16);
+          font-size: 16px;
+          transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+        #crmWebToEntityForm input:focus,
+        #crmWebToEntityForm select:focus,
+        #crmWebToEntityForm textarea:focus {
+          border-color: var(--secondary);
+          box-shadow: 0 0 0 3px rgba(71, 115, 166, 0.15);
+          outline: none;
+        }
+        #crmWebToEntityForm textarea {
+          min-height: 140px;
+          resize: vertical;
+        }
+        #crmWebToEntityForm .formsubmit {
+          background: var(--accent);
+          color: #fff !important;
+          border: none;
+          border-radius: 999px;
+          padding: 14px 28px;
+          font-size: 16px;
+          font-weight: 600;
+          transition: opacity 0.2s ease;
+        }
+        #crmWebToEntityForm .formsubmit:hover {
+          opacity: 0.9;
+        }
+        #crmWebToEntityForm .formsubmit:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+        #crmWebToEntityForm .form-thank-you {
+          display: none;
+          margin-top: 12px;
+          font-size: 14px;
+          color: rgba(29, 44, 59, 0.8);
+        }
+      </style>
+      <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+        <form id='webform896517000000571075' action='https://crm.zoho.eu/crm/WebToLeadForm' name='WebToLeads896517000000571075' method='POST' class="contact-form__body" onsubmit='javascript:document.charset="UTF-8"; return checkMandatory896517000000571075()' accept-charset='UTF-8'>
+          <input type='hidden' name='xnQsjsdp' value='fcdc1184100d50c01c7f8f280838d9c86d9040a609e3aee5082b5e75bfe719c1'>
+          </input>
+          <input type='hidden' name='zc_gad' id='zc_gad' value=''>
+          </input>
+          <input type='hidden' name='xmIwtLD' value='4ce9fb372d520ed37c7c6568f605a343c5d04da1e7111b74b6bf0733c792b137d970ed3aed70188bd5ecef9c6ab7da11'>
+          </input>
+          <input type='hidden' name='actionType' value='TGVhZHM='>
+          </input>
+          <input type='hidden' name='returnURL' value='https&#x3a;&#x2f;&#x2f;riktapsykiatri.se'>
+          </input>
+          <div class='zcwf_row form-row'>
+            <div class='zcwf_col_lab'>
+              <label for='First_Name'>Förnamn</label>
+            </div>
+            <div class='zcwf_col_fld'>
+              <input type='text' id='First_Name' aria-required='false' aria-label='First Name' name='First Name' aria-valuemax='40' maxlength='40' placeholder="Ange ditt förnamn">
+              </input>
+            </div>
+          </div>
+          <div class='zcwf_row form-row'>
+            <div class='zcwf_col_lab'>
+              <label for='Last_Name'>Efternamn <span style='color:red;'>*</span></label>
+            </div>
+            <div class='zcwf_col_fld'>
+              <input type='text' id='Last_Name' aria-required='true' aria-label='Last Name' name='Last Name' aria-valuemax='80' maxlength='80' required placeholder="Ange ditt efternamn">
+              </input>
+            </div>
+          </div>
+          <div class='zcwf_row form-row'>
+            <div class='zcwf_col_lab'>
+              <label for='Email'>E-postadress</label>
+            </div>
+            <div class='zcwf_col_fld'>
+              <input type='text' ftype='email' autocomplete='false' id='Email' aria-required='false' aria-label='Email' name='Email' aria-valuemax='100' maxlength='100' placeholder="namn@example.se">
+              </input>
+            </div>
+          </div>
+          <div class='zcwf_row form-row'>
+            <div class='zcwf_col_lab'>
+              <label for='Lead_Source'>Hur hörde du om oss? (Lead Source)</label>
+            </div>
+            <div class='zcwf_col_fld'>
+              <select class='zcwf_col_fld_slt' role='combobox' aria-expanded='false' aria-haspopup='listbox' id='Lead_Source' onchange='addAriaSelected896517000000571075()' aria-required='false' aria-label='Lead Source' name='Lead Source' required>
+                <option value='-None-' disabled selected>Välj ett alternativ</option>
+                <option value='ADHD Investigation'>ADHD Investigation</option>
+                <option value='Autism Investigation'>Autism Investigation</option>
+                <option value='Medical Follow Up'>Medical Follow Up</option>
+                <option value='Coaching'>Coaching</option>
+                <option value='Other'>Other</option>
+                <option value='Public Relations'>Public Relations</option>
+                <option value='Trade Show'>Trade Show</option>
+                <option value='Sales Mail Alias'>Sales Mail Alias</option>
+                <option value='Seminar Partner'>Seminar Partner</option>
+                <option value='Facebook'>Facebook</option>
+                <option value='Seminar-Internal'>Seminar-Internal</option>
+                <option value='X (Twitter)'>X (Twitter)</option>
+                <option value='Web Download'>Web Download</option>
+                <option value='Web Research'>Web Research</option>
+                <option value='Chat'>Chat</option>
+              </select>
+            </div>
+          </div>
+          <div class='zcwf_row form-row'>
+            <div class='zcwf_col_lab'>
+              <label for='Description'>Berätta kort hur vi kan hjälpa dig</label>
+            </div>
+            <div class='zcwf_col_fld'>
+              <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='Description' aria-required='false' aria-label='Description' name='Description' placeholder="Beskriv din situation eller ställ din fråga"></textarea>
+            </div>
+          </div>
+          <input type='hidden' style='display: none;' name='aG9uZXlwb3Q' value=''/>
+          <div class='zcwf_row form-row form-row--actions'>
+            <div class='zcwf_col_lab'>
+            </div>
+            <div class='zcwf_col_fld'>
+              <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button btn primary' value='Skicka' aria-label='Submit' title='Submit'>
+              </div>
+          </div>
+          <p id='formThankYouMessage' class='contact-form__note form-thank-you'>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
+          <script>
+            function addAriaSelected896517000000571075(){
+              var optionElem = event.target;
+              var previousSelectedOption = optionElem.querySelector('[aria-selected=true]');
+              if( previousSelectedOption ){
+                previousSelectedOption.removeAttribute('aria-selected');
+              }
+              optionElem.querySelectorAll('option')[ optionElem.selectedIndex ].ariaSelected = 'true';
+            }
+            function validateEmail896517000000571075(){
+              var form = document.forms[ 'WebToLeads896517000000571075' ];
+              var emailFld = form.querySelectorAll('[ftype=email]');
+              var i;
+              for( i = 0; i < emailFld.length; i++ ){
+                var emailVal = emailFld[ i ].value;
+                if((emailVal.replace( /^\s+|\s+$/g,'' )).length != 0 ){
+                  var atpos = emailVal.indexOf('@');
+                  var dotpos = emailVal.lastIndexOf('.');
+                  if( atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length ){
+                    alert('Please enter a valid email address. ');
+                    emailFld[ i ].focus();
+                    return false;
+                  }
+                }
+              }
+              return true;
+            }
+            function checkMandatory896517000000571075(){
+              var mndFileds = new Array('Last Name');
+              var fldLangVal = new Array('Last\x20Name');
+              for( i = 0; i < mndFileds.length; i++ ){
+                var fieldObj = document.forms[ 'WebToLeads896517000000571075' ][ mndFileds[ i ]];
+                if( fieldObj ){
+                  if(((fieldObj.value ).replace( /^\s+|\s+$/g,'' )).length == 0 ){
+                    if( fieldObj.type == 'file' ){
+                      alert('Please select a file to upload.');
+                      fieldObj.focus();
+                      return false;
+                    }
+                    alert(fldLangVal[ i ] + ' cannot be empty.');
+                    fieldObj.focus();
+                    return false;
+                  }
+                  else if( fieldObj.nodeName == 'SELECT' ){
+                    if( fieldObj.options[fieldObj.selectedIndex].value == '-None-' ){
+                      alert(fldLangVal[ i ] + ' cannot be none.');
+                      fieldObj.focus();
+                      return false;
+                    }
+                  }
+                  else if( fieldObj.type == 'checkbox' ){
+                    if( fieldObj.checked == false ){
+                      alert('Please accept  ' + fldLangVal[ i ]);
+                      fieldObj.focus();
+                      return false;
+                    }
+                  }
+                  try{
+                    if( fieldObj.name == 'Last Name' ){
+                      name = fieldObj.value;
+                    }
+                  }
+                  catch(e){}
+                }
+              }
+              if( !validateEmail896517000000571075()){
+                return false;
+              }
+              var urlparams = new URLSearchParams(window.location.search);
+              if( urlparams.has( 'service' ) && ( urlparams.get( 'service' ) === 'smarturl' )){
+                var webform = document.getElementById('webform896517000000571075');
+                var service = urlparams.get('service');
+                var smarturlfield = document.createElement('input');
+                smarturlfield.setAttribute('type', 'hidden');
+                smarturlfield.setAttribute('value', service);
+                smarturlfield.setAttribute('name', 'service');
+                webform.appendChild(smarturlfield);
+              }
+              document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+              var thankYouMessage = document.getElementById('formThankYouMessage');
+              if( thankYouMessage ){
+                thankYouMessage.style.display = 'block';
+              }
+            }
+            function tooltipShow896517000000571075(el){
+              var tooltip = el.nextElementSibling;
+              var tooltipDisplay = tooltip.style.display;
+              if( tooltipDisplay == 'none' ){
+                var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+                for( i = 0; i < allTooltip.length; i++ ){
+                  allTooltip[ i ].style.display = 'none';
+                }
+                tooltip.style.display = 'block';
+              }
+              else{
+                tooltip.style.display = 'none';
+              }
+            }
+          </script>
+        </form>
+      </div>
+      <p class="contact-form__note">Vi svarar vanligtvis inom 1–2 arbetsdagar.</p>
     </section>
   </div>
 </main>
