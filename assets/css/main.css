@@ -1935,15 +1935,6 @@ main#content > .location-page:first-child {
   color: rgba(0, 0, 0, 0.75);
 }
 
-.location-extras {
-  padding: 80px 0;
-  background: #ffffff;
-}
-
-.location-extras--goteborg {
-  background: #fef8f6;
-}
-
 .location-cta {
   padding: 80px 0;
   border-top: none;

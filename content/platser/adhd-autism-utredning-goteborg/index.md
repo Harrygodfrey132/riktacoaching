@@ -117,30 +117,6 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
   </div>
 </section>
 
-<section class="location-extras location-extras--goteborg">
-  <div class="container">
-    <header class="location-section__header">
-      <span class="eyebrow">Regionalt fokus</span>
-      <h2>Vad patienter i Västra Götaland brukar behöva</h2>
-      <p>Vi utgår från din vardag – oavsett om den präglas av skiftarbete, pendling eller studier.</p>
-    </header>
-    <div class="location-details__grid">
-      <article class="location-info">
-        <h3>Industrin &amp; logistik</h3>
-        <p>Vi tar fram intyg och stödplaner som följer rutiner för GKN, Volvo, hamnen och stora logistikcenter. Fokus ligger på skiftgång, säkerhetsrutiner och tydliga överlämningar.</p>
-      </article>
-      <article class="location-info">
-        <h3>Studier i regionen</h3>
-        <p>Underlag och rekommendationer anpassas för GU, Chalmers, Högskolan i Borås och yrkeshögskolor – inklusive praktikintyg och examinerande upplägg.</p>
-      </article>
-      <article class="location-info">
-        <h3>Familjeliv i pendlarstaden</h3>
-        <p>Vi hjälper föräldrar att koordinera skola, habilitering och arbete genom att ta fram gemensamma planeringsverktyg och rutiner för vardagslogistik.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="location-cta location-cta--goteborg">
   <div class="container">
     <div class="location-cta__content">

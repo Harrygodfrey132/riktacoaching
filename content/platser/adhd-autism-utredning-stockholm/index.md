@@ -118,30 +118,6 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
   </div>
 </section>
 
-<section class="location-extras">
-  <div class="container">
-    <header class="location-section__header">
-      <span class="eyebrow">Vanliga scenarier</span>
-      <h2>Hur stockholmare använder vår utredning</h2>
-      <p>Vi ser återkommande behov och har färdiga handlingsplaner för varje situation.</p>
-    </header>
-    <div class="location-details__grid">
-      <article class="location-info">
-        <h3>Karriärbyte eller befordran</h3>
-        <p>Du får en styrkeprofil och rekommendationer som kan presenteras för HR, inklusive konkreta arbetsmiljöanpassningar för exempelvis advokatbyråer, konsultbolag eller tech-team.</p>
-      </article>
-      <article class="location-info">
-        <h3>Studier och forskning</h3>
-        <p>Vi tar fram underlag för KTH, SU, KI, Konstfack och folkhögskolor samt hjälper till med rutiner för uppsatser, labb och praktikplaceringar.</p>
-      </article>
-      <article class="location-info">
-        <h3>Entreprenörer &amp; frilansare</h3>
-        <p>Få en digital verktygslåda med kassaflödesrutiner, planeringsmallar och medicinsk uppföljning som funkar med rörliga arbetstider.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="location-cta location-cta--stockholm">
   <div class="container">
     <div class="location-cta__content">
