@@ -480,6 +480,29 @@ nav a.active {
   transform: translateY(-1px);
 }
 
+.knowledge-page {
+  background: var(--bg);
+  padding-top: calc(var(--sticky) + 40px);
+}
+
+@media (max-width: 720px) {
+  .knowledge-page {
+    padding-top: calc(var(--sticky) + 20px);
+  }
+}
+
+.knowledge-page .news-section,
+.knowledge-page .knowledge-grid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.knowledge-page .news-section > .container,
+.knowledge-page .knowledge-grid > .container {
+  max-width: var(--container);
+  margin: 0 auto;
+}
+
 .news-section {
   padding: 96px 0;
   background: var(--bg);
