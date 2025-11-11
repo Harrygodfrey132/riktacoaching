@@ -2438,6 +2438,21 @@ body {
   margin: 0;
 }
 
+.pricing-hero-figure{
+  margin: clamp(24px, 4vw, 40px) 0 0;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(17, 32, 56, 0.18);
+  border: 1px solid rgba(55, 116, 171, 0.12);
+}
+
+.pricing-hero-figure img{
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 420px;
+}
+
 .intro-checklist{
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
