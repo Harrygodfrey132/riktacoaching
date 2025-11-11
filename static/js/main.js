@@ -198,4 +198,125 @@
       }
     });
   }
+
+  // ----- Newsletter Popup -----
+  (function initNewsletterPopup(){
+    const popup = document.getElementById('newsletter-popup');
+    if (!popup) return;
+
+    const SHOW_DELAY_MS = 5000;
+    const STORAGE_KEY = 'rk_newsletter_popup';
+    const COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000;
+    let openTimeout = null;
+    let isOpen = false;
+    let lastFocused = null;
+
+    function now(){ return Date.now(); }
+
+    function readState(){
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : null;
+      } catch (err) {
+        return null;
+      }
+    }
+
+    function writeState(reason){
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify({ reason, timestamp: now() }));
+      } catch (err) {
+        // ignore write errors (e.g. private mode)
+      }
+    }
+
+    function shouldShow(){
+      const record = readState();
+      if (!record || !record.timestamp) return true;
+      return now() - record.timestamp > COOLDOWN_MS;
+    }
+
+    function focusables(){
+      return Array.from(popup.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !el.hasAttribute('disabled') && isVisible(el));
+    }
+
+    function isVisible(el){
+      return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    function openPopup(){
+      if (isOpen) return;
+      isOpen = true;
+      lastFocused = document.activeElement;
+      popup.dataset.popupState = 'visible';
+      popup.removeAttribute('aria-hidden');
+      document.body.classList.add('newsletter-popup--locked');
+      const focusTarget = popup.querySelector('[data-popup-focus]') || focusables()[0];
+      if (focusTarget && typeof focusTarget.focus === 'function') {
+        focusTarget.focus({ preventScroll: true });
+      }
+      document.addEventListener('keydown', handleKeydown, true);
+    }
+
+    function closePopup(reason){
+      if (!isOpen) return;
+      popup.dataset.popupState = 'hidden';
+      popup.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('newsletter-popup--locked');
+      document.removeEventListener('keydown', handleKeydown, true);
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus({ preventScroll: true });
+      }
+      isOpen = false;
+      if (reason) {
+        writeState(reason);
+      }
+    }
+
+    function handleKeydown(event){
+      if (!isOpen) return;
+      if (event.key === 'Escape'){
+        event.preventDefault();
+        closePopup('dismissed');
+        return;
+      }
+      if (event.key === 'Tab'){
+        const items = focusables();
+        if (!items.length) return;
+        const first = items[0];
+        const last = items[items.length - 1];
+        if (event.shiftKey){
+          if (document.activeElement === first){
+            event.preventDefault();
+            last.focus();
+          }
+        } else if (document.activeElement === last){
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    }
+
+    function scheduleOpen(){
+      if (!shouldShow()) return;
+      openTimeout = window.setTimeout(openPopup, SHOW_DELAY_MS);
+    }
+
+    const closeTriggers = popup.querySelectorAll('[data-popup-close]');
+    closeTriggers.forEach(btn => btn.addEventListener('click', () => closePopup('dismissed')));
+
+    const form = popup.querySelector('form');
+    if (form) {
+      form.addEventListener('submit', () => {
+        if (openTimeout) {
+          clearTimeout(openTimeout);
+          openTimeout = null;
+        }
+        closePopup('submitted');
+      });
+    }
+
+    scheduleOpen();
+  })();
 })();
