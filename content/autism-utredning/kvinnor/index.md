@@ -68,68 +68,86 @@ page_class: "autism-page--women"
   </div>
 </section>
 
-<section class="who-section adhd-process" id="process">
+<section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Så går det till</span>
-      <h2>Steg för steg genom utredningen</h2>
+      <span class="eyebrow">Autismutredning för vuxna</span>
+      <h2>En noggrann process som ger tydlighet</h2>
       <p class="muted">
-        Utredningen är strukturerad och individanpassad. Normalt tar det tre till fyra veckor från första samtal
-        till återkoppling.
+        Vår autismutredning för vuxna är en strukturerad, evidensbaserad process där vi bedömer om du befinner dig inom
+        autismspektrat och vilket stöd du behöver. Teamet består av erfarna psykologer och psykiatrer som följer nationella
+        riktlinjer och ser till att du känner dig trygg och förstådd genom varje steg.
+      </p>
+      <p class="muted">
+        Många söker oss efter långvariga svårigheter i sociala situationer eller i vardagen, ibland efter att en närstående
+        fått diagnos eller att man i efterhand känner igen tidigare utmaningar. Oavsett livssituation är målet att du ska
+        förstå dina styrkor och svårigheter bättre och få rätt hjälp framåt.
       </p>
     </div>
-    <div class="adhd-process-grid">
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">1</span>
-          <div>
-            <h3>Förberedelser &amp; formulär</h3>
-            <p>Vi ber dig fylla i skattningar och svara på frågor inför utredningen.</p>
-          </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>1</span>
         </div>
-        <ul>
-          <li>Webbaserade formulär (30–40 minuter).</li>
-          <li>Introduktionssamtal om mål, förväntningar och ev. anhörigas roll.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Bedömningssamtal</h3>
+          <p>
+            Vi börjar med ett inledande bedömningssamtal på 30 minuter där du berättar om dina funderingar och varför du söker
+            utredning. Vi går igenom aktuella svårigheter, vad du hoppas få ut av processen och avgör om en full
+            neuropsykiatrisk utredning är motiverad. Om ja planeras nästa steg direkt – annars får du råd och hänvisningar.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">2</span>
-          <div>
-            <h3>Kliniska intervjuer</h3>
-            <p>Strukturerade samtal med specialistläkare och psykolog.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>2</span>
         </div>
-        <ul>
-          <li>2 x 60 minuters-samtal.</li>
-          <li>Möjlighet till kompletterande samtal med partner eller anhörig.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Fördjupade intervjuer och formulär</h3>
+          <p>
+            En legitimerad psykolog genomför en detaljerad anamnes från barndom till nutid med fokus på socialt samspel,
+            kommunikation, rutiner och sensorisk känslighet. Om möjligt intervjuas även en anhörig som känt dig sedan
+            barndomen. Du fyller i standardiserade självskattningar som kartlägger autistiska drag och närliggande symtom.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">3</span>
-          <div>
-            <h3>Analys &amp; bedömning</h3>
-            <p>Vårt team sammanställer vad utredningen kommit fram till, väger in möjlig samsjuklighet och formulerar rekommendationer utifrån dina mål.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>3</span>
         </div>
-        <ul>
-          <li>Multidisciplinär genomgång av komplexa fall.</li>
-          <li>Förslag på stödinsatser och eventuell vidare utredning.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Psykologisk testning och medicinsk bedömning</h3>
+          <p>
+            Du genomför psykologiska tester av kognitiva och sociala funktioner. Parallellt gör en specialistläkare eller
+            psykiater en medicinsk och psykiatrisk genomgång för att utesluta andra orsaker och identifiera samsjuklighet som
+            ADHD, depression eller ångest.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">4</span>
-          <div>
-            <h3>Återkoppling &amp; plan</h3>
-            <p>Vi går igenom rapporten i lugn och ro och skapar en övergripande plan för vardag, relationer och framtida mål.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>4</span>
         </div>
-        <ul>
-          <li>Rapport med sammanfattning och nästa steg.</li>
-          <li>Tydlig plan för anpassningar, stöd och uppföljning.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Multidisciplinär genomgång</h3>
+          <p>
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för autism är uppfyllda
+            och om andra diagnoser föreligger. Syftet är att ge en korrekt, evidensbaserad diagnos och förstå helhetsbilden.
+          </p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>5</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Återgivning och uppföljning</h3>
+          <p>
+            Vi bokar ett återgivningssamtal där vi går igenom resultat och slutsats muntligt, och du får ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer kring vardag, arbete, psykoedukation, behandling eller vidare
+            remisser. Även om diagnos inte ställs får du tydlig återkoppling och vägledning om nästa steg.
+          </p>
+        </div>
       </article>
     </div>
   </div>

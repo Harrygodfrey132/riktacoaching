@@ -70,67 +70,83 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-<section class="who-section adhd-process" id="process">
+<section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Så går det till</span>
-      <h2>Steg för steg genom utredningen</h2>
+      <span class="eyebrow">ADHD-utredning för vuxna</span>
+      <h2>En process som ger klarhet och rätt stöd</h2>
       <p class="muted">
-        Utredningsprocessen är noggrann och strukturerad. Vanligtvis tar det upp till fyra veckor från start till återkoppling.
+        Vår ADHD-utredning för vuxna är utformad för att identifiera ADHD eller närliggande tillstånd hos personer som är 18
+        år eller äldre. Många söker efter långvariga svårigheter med uppmärksamhet, organisering, rastlöshet eller
+        impulsivitet som påverkar arbete, studier och relationer. Målet är klarhet och rätt behandling – för många innebär det
+        en stor lättnad att förstå bakgrunden till svårigheterna.
       </p>
     </div>
-    <div class="adhd-process-grid">
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">1</span>
-          <div>
-            <h3>Förberedelse &amp; livskarta</h3>
-            <p>Du fyller i formulär om vardag, hormoner och hälsa. Vi bokar in ett kort introduktionssamtal för dina frågor.</p>
-          </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>1</span>
         </div>
-        <ul>
-          <li>Digitala skattningar och tidslinje (20–30 minuter).</li>
-          <li>Möjlighet att inkludera partner eller vän som ger sin bild.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Bedömningssamtal</h3>
+          <p>
+            Vi börjar med ett inledande bedömningssamtal på 30 minuter. Här berättar du om dina funderingar och varför du söker
+            utredning. Vi går igenom aktuella svårigheter och vad du hoppas få ut av processen. Samtalet avgör om en full
+            neuropsykiatrisk utredning är motiverad. Om ja planerar vi nästa steg direkt – om nej ger vi råd och hänvisningar.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">2</span>
-          <div>
-            <h3>Klinisk intervju</h3>
-            <p>Digital intervju och med fokus på hormoner, sömn och mental hälsa.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>2</span>
         </div>
-        <ul>
-          <li>60–90 minuter med specialistläkare eller psykolog.</li>
-          <li>Vi utforskar både styrkor och svårigheter i din vardag.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Fördjupade intervjuer och formulär</h3>
+          <p>
+            En legitimerad psykolog genomför en detaljerad anamnes från barndom till nutid – uppväxt, skola, arbete, relationer
+            och vardagsfungerande – med fokus på socialt samspel, uppmärksamhet och hyperaktivitet. Om möjligt intervjuas även
+            en anhörig som känt dig sedan barndomen. Du fyller i standardiserade självskattningar som kartlägger ADHD-drag och
+            närliggande symtom.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">3</span>
-          <div>
-            <h3>Analys &amp; bedömning</h3>
-            <p>Teamet väger samman intervjuer, formulär och medicinsk historik innan diagnos ställs.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>3</span>
         </div>
-        <ul>
-          <li>Vid behov kompletterande provtagning.</li>
-          <li>Rekommendationer kring behandling och stödinsatser.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Psykologisk testning och medicinsk bedömning</h3>
+          <p>
+            Du genomför psykologiska tester av kognitiva och sociala funktioner. Parallellt gör en specialistläkare eller
+            psykiater en medicinsk och psykiatrisk genomgång för att utesluta andra orsaker och identifiera samsjuklighet som
+            exempelvis autism, depression eller ångest.
+          </p>
+        </div>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">4</span>
-          <div>
-            <h3>Återkoppling &amp; handlingsplan</h3>
-            <p>Vi går igenom resultatet i lugn och ro och tar fram en plan för medicin, cykelanpassning och vidare stöd.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>4</span>
         </div>
-        <ul>
-          <li>Detaljerad rapport med sammanfattning och nästa steg.</li>
-          <li>Plan för uppföljning och samarbete med vården vid behov.</li>
-        </ul>
+        <div class="timeline-content">
+          <h3>Multidisciplinär genomgång</h3>
+          <p>
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för ADHD är uppfyllda samt
+            om andra diagnoser föreligger. Syftet är en korrekt, evidensbaserad diagnos.
+          </p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>5</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Återgivning och uppföljning</h3>
+          <p>
+            Vi bokar ett återgivningssamtal där vi går igenom resultat och slutsats muntligt och du får ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer såsom anpassningar i vardag och arbete, psykoedukation,
+            behandling eller vidare remisser. Även utan diagnos får du tydlig återkoppling och vägledning om nästa steg.
+          </p>
+        </div>
       </article>
     </div>
   </div>
