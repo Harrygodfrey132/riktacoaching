@@ -1113,6 +1113,9 @@ nav a.active {
   gap: clamp(24px, 4vw, 48px);
   align-items: center;
 }
+.coachning-program--text-only {
+  grid-template-columns: 1fr;
+}
 .coachning-program__media figure {
   margin: 0;
 }

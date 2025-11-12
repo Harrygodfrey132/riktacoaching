@@ -78,12 +78,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
 </section>
 
 <div class="coachning-program-grid">
-  <section class="coachning-program coachning-section" id="ungdom-autism">
-  <div class="coachning-program__media">
-    <figure>
-      <img src="/img/autism-coachning.jpg" alt="Ungdom som deltar i autism-coachning">
-    </figure>
-  </div>
+  <section class="coachning-program coachning-section coachning-program--text-only" id="ungdom-autism">
   <div class="coachning-program__content">
     <span class="coachning-program__eyebrow">Coaching för ungdomar (13–18 år)</span>
     <h3>6 veckor för struktur, sensorik och tryggare relationer</h3>
@@ -160,12 +155,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
   </section>
-  <section class="coachning-program coachning-section" id="vuxna-autism">
-  <div class="coachning-program__media">
-    <figure>
-      <img src="/img/coachning-hero-park.jpg" alt="Vuxen som arbetar med autism-coachning">
-    </figure>
-  </div>
+  <section class="coachning-program coachning-section coachning-program--text-only" id="vuxna-autism">
   <div class="coachning-program__content">
     <span class="coachning-program__eyebrow">Coaching för vuxna (18+)</span>
     <h3>6 veckor för vardagsplanering, socialt samspel och stresshantering</h3>

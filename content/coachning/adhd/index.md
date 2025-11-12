@@ -63,12 +63,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
 </section>
 
 <div class="coachning-program-grid">
-  <section class="coachning-program coachning-section" id="ungdom">
-  <div class="coachning-program__media">
-    <figure>
-      <img src="/img/coachning-hero-park.jpg" alt="Ung person som deltar i digital ADHD-coachning">
-    </figure>
-  </div>
+  <section class="coachning-program coachning-section coachning-program--text-only" id="ungdom">
   <div class="coachning-program__content">
     <span class="coachning-program__eyebrow">Coaching för ungdomar (13–18 år)</span>
     <h3>6 veckor för bättre struktur i skola, känslor och relationer</h3>
@@ -145,12 +140,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
     <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
   </div>
   </section>
-  <section class="coachning-program coachning-section" id="vuxna">
-  <div class="coachning-program__media">
-    <figure>
-      <img src="/img/adhd-coachning.jpg" alt="Vuxen som arbetar med ADHD-coachning">
-    </figure>
-  </div>
+  <section class="coachning-program coachning-section coachning-program--text-only" id="vuxna">
   <div class="coachning-program__content">
     <span class="coachning-program__eyebrow">Coaching för vuxna (18+)</span>
     <h3>6 veckor för fokus, prioritering och mindre uppskjutande</h3>
