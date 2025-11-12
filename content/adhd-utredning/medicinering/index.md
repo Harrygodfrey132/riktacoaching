@@ -67,62 +67,6 @@ page_class: "adhd-page--medication"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Vad medicin kan hjälpa med</span>
-      <h2>Symtom som ofta förbättras</h2>
-      <p class="muted">
-        Effekten är individuell men många beskriver att följande områden blir lättare när dosen är rätt.
-      </p>
-    </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Längre fokus</h3>
-        <p>Lättare att hålla kvar uppmärksamheten och slutföra uppgifter utan att tappa tråden.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Mindre hyperaktivitet</h3>
-        <p>Minskad rastlöshet och möjlighet att vila eller varva ner när du vill.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Bättre impulskontroll</h3>
-        <p>Lättare att bromsa snabba reaktioner, fatta mer genomtänkta beslut och hantera känslointensitet.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Stärkt exekutiv förmåga</h3>
-        <p>Ökad förmåga att planera, prioritera och komma igång – särskilt i kombination med coachning eller terapi.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför medicinsk uppföljning spelar roll</span>
-      <h2>Fördelar med strukturerad medicinering</h2>
-      <p class="muted">
-        Läkemedel är som mest effektiv när de kombineras med tydliga mål, uppföljning och stöd för att hantera vardagen.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Individuell optimering</h3>
-        <p>Vi testar läkemedlet stegvis för att hitta balansen mellan effekt och biverkningar.</p>
-      </article>
-      <article>
-        <h3>Trygg samverkan</h3>
-        <p>Vi koordinerar med andra vårdgivare och säkerställer att läkemedel kombineras på ett säkert sätt.</p>
-      </article>
-      <article>
-        <h3>Helhetsstöd</h3>
-        <p>Medicinen integreras med strategier för sömn, stress och övriga rutiner så att effekten håller över tid.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-process" id="process">
   <div class="container">
     <div class="section-intro">
@@ -183,32 +127,6 @@ page_class: "adhd-page--medication"
           <li>Utvärdering av mål, biverkningar och behov av intyg.</li>
           <li>Plan för semesteruppehåll eller förändringar i din livssituation.</li>
         </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter insatt medicinering</span>
-      <h2>Det här får du med dig</h2>
-      <p class="muted">
-        Målet är att du ska ha kontroll på din behandling och veta hur du kan fortsätta att må bra.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Individuell läkemedelsplan</h3>
-        <p>Dokumenterad dosering, uppföljningsintervall och handlingsplan vid förändring.</p>
-      </article>
-      <article>
-        <h3>Symtom- och biverkningsöversikt</h3>
-        <p>Sammanställning som kan delas med arbetsgivare, skola eller andra vårdgivare.</p>
-      </article>
-      <article>
-        <h3>Rekommendationer framåt</h3>
-        <p>Förslag på livsstilsstöd, coachning eller terapi som stärker effekten av medicinen.</p>
       </article>
     </div>
   </div>

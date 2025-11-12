@@ -70,150 +70,86 @@ page_class: "autism-page--adult"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
+<section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Känner du igen dig?</span>
-      <h2>Vanliga tecken hos vuxna</h2>
+      <span class="eyebrow">Autismutredning för vuxna</span>
+      <h2>En noggrann process som ger tydlighet</h2>
       <p class="muted">
-        Autism kan vara både en styrka och en utmaning. Många beskriver en tydlig kompetens inom sina intressen men högt pris
-        i sociala eller sensoriskt intensiva miljöer.
+        Vår autismutredning för vuxna är en strukturerad, evidensbaserad process där vi bedömer om du befinner dig inom
+        autismspektrat och vilket stöd du behöver. Teamet består av erfarna psykologer och psykiatrer som följer nationella
+        riktlinjer och ser till att du känner dig trygg och förstådd genom varje steg.
+      </p>
+      <p class="muted">
+        Många söker oss efter långvariga svårigheter i sociala situationer eller i vardagen, ibland efter att en närstående
+        fått diagnos eller att man i efterhand känner igen tidigare utmaningar. Oavsett livssituation är målet att du ska
+        förstå dina styrkor och svårigheter bättre och få rätt hjälp framåt.
       </p>
     </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Maskering &amp; social trötthet</h3>
-        <p>Att spela socialt ”rätt” tar energi, vilket leder till återhämtningsbehov eller shutdown efter arbetsdagar.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Sensorisk känslighet</h3>
-        <p>Ljud, ljus, beröring eller smak kan upplevas starkt, vilket skapar stress i öppna kontor eller offentliga miljöer.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Behov av tydlig struktur</h3>
-        <p>Rutiner, planering och kontroll över detaljer skapar trygghet. Oförutsedda ändringar blir överväldigande.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Specialiserad fokus</h3>
-        <p>Djup kunskap inom intressen och styrkor i logiskt tänkande, men svårt med uppgifter utan mening eller tydligt syfte.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför det gör skillnad</span>
-      <h2>Fördelar med att göra en utredning</h2>
-      <p class="muted">
-        En utredning ger mer än en diagnos – den ger förståelse, språk och tillgång till rätt stöd och anpassningar.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Ökad självförståelse</h3>
-        <p>Få en professionell förklaring som minskar självkritik och gör det lättare att kommunicera dina behov.</p>
-      </article>
-      <article>
-        <h3>Rättigheter &amp; stöd</h3>
-        <p>Underlag för arbetsanpassningar, högskolestöd, LSS-insatser eller kontakt med Försäkringskassan.</p>
-      </article>
-      <article>
-        <h3>Konkreta strategier</h3>
-        <p>Personliga rekommendationer kring sensorisk miljö, energi, kommunikation och stresshantering.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-process" id="process">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Så går det till</span>
-      <h2>Steg för steg genom utredningen</h2>
-      <p class="muted">
-        Processen är tydlig och empatisk, ofta tre till fyra veckor från start till återkoppling beroende på önskad omfattning.
-      </p>
-    </div>
-    <div class="adhd-process-grid">
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">1</span>
-          <div>
-            <h3>Förberedelser &amp; formulär</h3>
-            <p>Du får digitala skattningar, tidslinje och möjlighet att bjuda in partner eller anhörig till processen.</p>
-          </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>1</span>
         </div>
-        <ul>
-          <li>Webbaserade formulär (30–40 minuter).</li>
-          <li>Genomgång av vad du vill få ut av utredningen.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">2</span>
-          <div>
-            <h3>Klinisk intervju</h3>
-            <p>Strukturerad neuropsykiatrisk intervju via säker video eller på mottagningen – du väljer formatet.</p>
-          </div>
+        <div class="timeline-content">
+          <h3>Bedömningssamtal</h3>
+          <p>
+            Vi börjar med ett inledande bedömningssamtal på 30 minuter där du berättar om dina funderingar och varför du söker
+            utredning. Vi går igenom aktuella svårigheter, vad du hoppas få ut av processen och avgör om en full
+            neuropsykiatrisk utredning är motiverad. Om ja planeras nästa steg direkt – annars får du råd och hänvisningar.
+          </p>
         </div>
-        <ul>
-          <li>2 x 60 minuter med specialistläkare eller psykolog.</li>
-          <li>Fokus på livshistoria, sensorik, kommunikation och vardagsstrategier.</li>
-        </ul>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">3</span>
-          <div>
-            <h3>Analys &amp; bedömning</h3>
-            <p>Teamet väger samman intervjuer, formulär och kompletterande underlag innan slutsats skrivs.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>2</span>
         </div>
-        <ul>
-          <li>Multidisciplinär genomgång vid samsjuklighet.</li>
-          <li>Rekommendation kring stödinsatser och eventuella kompletterande tester.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">4</span>
-          <div>
-            <h3>Återkoppling &amp; plan</h3>
-            <p>Vi går igenom resultatet i lugn takt och tar fram nästa steg utifrån dina mål och energiförutsättningar.</p>
-          </div>
+        <div class="timeline-content">
+          <h3>Fördjupade intervjuer och formulär</h3>
+          <p>
+            En legitimerad psykolog genomför en detaljerad anamnes från barndom till nutid med fokus på socialt samspel,
+            kommunikation, rutiner och sensorisk känslighet. Om möjligt intervjuas även en anhörig som känt dig sedan
+            barndomen. Du fyller i standardiserade självskattningar som kartlägger autistiska drag och närliggande symtom.
+          </p>
         </div>
-        <ul>
-          <li>Detaljerad rapport med tydlig sammanfattning.</li>
-          <li>Plan för uppföljning, intyg och stödinsatser.</li>
-        </ul>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får du med dig</h2>
-      <p class="muted">
-        Oavsett om kriterierna uppfylls eller inte lämnar du med ökad förståelse och konkreta rekommendationer.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostiskt utlåtande</h3>
-        <p>Klargörande besked kring autismkriterierna och eventuell samsjuklighet eller differentialdiagnostik.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>3</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Psykologisk testning och medicinsk bedömning</h3>
+          <p>
+            Du genomför psykologiska tester av kognitiva och sociala funktioner. Parallellt gör en specialistläkare eller
+            psykiater en medicinsk och psykiatrisk genomgång för att utesluta andra orsaker och identifiera samsjuklighet som
+            ADHD, depression eller ångest.
+          </p>
+        </div>
       </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Detaljerad sammanställning med testresultat, styrkor, behov och förslag till anpassningar.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>4</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Multidisciplinär genomgång</h3>
+          <p>
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för autism är uppfyllda
+            och om andra diagnoser föreligger. Syftet är att ge en korrekt, evidensbaserad diagnos och förstå helhetsbilden.
+          </p>
+        </div>
       </article>
-      <article>
-        <h3>Återkopplingssamtal</h3>
-        <p>Genomgång av rapporten, tid för frågor och planering av fortsatt stöd tillsammans med vårt team.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>5</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Återgivning och uppföljning</h3>
+          <p>
+            Vi bokar ett återgivningssamtal där vi går igenom resultat och slutsats muntligt, och du får ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer kring vardag, arbete, psykoedukation, behandling eller vidare
+            remisser. Även om diagnos inte ställs får du tydlig återkoppling och vägledning om nästa steg.
+          </p>
+        </div>
       </article>
     </div>
   </div>

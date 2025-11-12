@@ -68,63 +68,6 @@ page_class: "autism-page--women"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Känner du igen dig?</span>
-      <h2>Vanliga tecken hos kvinnor</h2>
-      <p class="muted">
-        Autism hos kvinnor kan vara subtil. Många lever med hög kapacitet utåt vilket kan få ett högt pris i form av utmattning, oro
-        eller känslan av att aldrig räcka till.
-      </p>
-    </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Maskande &amp; social trötthet</h3>
-        <p>Att läsa av, spegla andra och passa in gör dig utmattad efter arbetsdagar eller sociala evenemang.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Sensorisk överbelastning</h3>
-        <p>Ljud, ljus eller beröring blir överväldigande, t.ex., i öppna kontorlandskap, i familjelivet eller i kollektivtrafiken.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Perfektionism &amp; ansvar</h3>
-        <p>Detaljstyrd och starkt behov för ordning.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Specialintressen</h3>
-        <p>Intressen som ger energi och mening men som andra ibland missförstår eller tolkar som ”för mycket”.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Hur gör en utredning skillnad?</span>
-      <h2>Fördelar med att utreda</h2>
-      <p class="muted">
-        En diagnos är inte målet i sig men den kan ge ett vokabulär som är meningsfullt, ge rätt till stöd och vägleda hur man kan organisera sitt liv på ett mindre utmattande sätt.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Bekräftelse &amp; självförtroende</h3>
-        <p>En professionell bedömning kan validera mycket av det som känts svårt i ditt liv och ge utrymme för att återfå ditt självförtroende.</p>
-      </article>
-      <article>
-        <h3>Underlag för stöd</h3>
-        <p>Rapporten som utredningen mynnar ut till kan användas för LSS, arbetsanpassningar, högskolestöd eller i kontakt med Försäkringskassan.</p>
-      </article>
-      <article>
-        <h3>Personliga strategier</h3>
-        <p>Konkreta råd kring sensorik, relationer, återhämtning och hormonella cykler som påverkar välmående.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-process" id="process">
   <div class="container">
     <div class="section-intro">
@@ -187,32 +130,6 @@ page_class: "autism-page--women"
           <li>Rapport med sammanfattning och nästa steg.</li>
           <li>Tydlig plan för anpassningar, stöd och uppföljning.</li>
         </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får du med dig</h2>
-      <p class="muted">
-        Oavsett slutsats lämnar du med konkret vägledning och rekommendationer för anpassningar som passar din vardag.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostiskt utlåtande</h3>
-        <p>Tydligt svar kring om du uppfyller autismkriterierna, samsjuklighet och rekommenderade kontakter inom vård eller stöd.</p>
-      </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Detaljerad rapport med styrkor, behov, och förslag för arbetet, studierna eller familjelivet.</p>
-      </article>
-      <article>
-        <h3>Återkopplingssamtal</h3>
-        <p>Tid för frågor och planering av fortsatt stöd med vårt team.</p>
       </article>
     </div>
   </div>

@@ -68,158 +68,98 @@ page_class: "autism-page--youth"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
+<section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Känns detta igen?</span>
-      <h2>Vanliga tecken på autism hos barn och ungdomar</h2>
+      <span class="eyebrow">Autismutredning för barn</span>
+      <h2>En trygg process med tydlighet i varje steg</h2>
       <p class="muted">
-        Barn med autism har ofta tydliga styrkor men kan behöva anpassningar för att orka i skola och sociala miljöer. Här
-        är några exempel på tecken som våra läkare och psykologer ofta ser:
+        Målet med en barnutredning är att förstå ditt barns behov och säkerställa rätt stöd så tidigt som möjligt. Om ditt
+        barn har varaktiga svårigheter i socialt samspel, kommunikation eller vardagsrutiner, och det påverkar mående eller
+        utveckling, kan en utredning klargöra om autism är orsaken. Vi vet att tidig identifiering gör stor skillnad i skola,
+        hem och fritid, därför strävar vi efter en trygg process med tydlighet i varje steg.
       </p>
     </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Specialintressen</h3>
-        <p>Specialintressen som ger lugn och glädje men som ibland kan konkurrera med läxor eller socialt umgänge.</p>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>1</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Inledande konsultation med föräldrar</h3>
+          <p>
+            Vi startar med ett 30-minuters bedömningssamtal där vi går igenom utvecklingshistoria och aktuella funderingar.
+            Efter samtalet avgör vi om full utredning är motiverad och förklarar då nästa steg. Om inte, ger vi
+            rekommendationer för annat stöd. Beroende på ålder kan barnet delta i delar av samtalet.
+          </p>
+        </div>
       </article>
-      <article class="adhd-symptom-card">
-        <h3>Sensorisk känslighet</h3>
-        <p>Ljud, ljus eller kläder kan ge överväldigande intryck vilket skapar trötthet eller utmynna i utbrott.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>2</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Föräldraintervjuer och skolunderlag</h3>
+          <p>
+            Djupintervjuer med dig som förälder om barnets utveckling, styrkor och svårigheter. Du fyller i strukturerade
+            formulär. Vi samlar även in skol- eller förskoleunderlag via lärarformulär och vid behov samtal för att förstå
+            hur vardagen fungerar i grupp och lärmiljö.
+          </p>
+        </div>
       </article>
-      <article class="adhd-symptom-card">
-        <h3>Begränsad flexibilitet</h3>
-        <p>Rutiner ger trygghet. Samtidigt kan snabba förändringar leda till oro, rigiditet eller utbrott.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>3</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Barnobservation och testning</h3>
+          <p>
+            En psykolog träffar ditt barn för lekbaserad observation och åldersanpassad testning av kommunikation, socialt
+            samspel och kognition. Vi skapar lugna, barnvänliga ramar och pausar vid behov så att barnet känner sig tryggt.
+          </p>
+        </div>
       </article>
-      <article class="adhd-symptom-card">
-        <h3>Annorlunda socialt samspel</h3>
-        <p>Svårigheter att förstå sociala regler, föredra vuxnas sällskap eller behöva pauser från gruppaktiviteter.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>4</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Medicinsk bedömning</h3>
+          <p>
+            Barn- och ungdomspsykiater eller barnläkare gör en medicinsk bedömning för att utesluta andra orsaker och
+            kartlägga samsjuklighet.
+          </p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>5</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Multidisciplinär genomgång</h3>
+          <p>
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för autism är uppfyllda
+            och om andra diagnoser föreligger. Syftet är en korrekt, evidensbaserad diagnos.
+          </p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>6</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Uppföljning och stöd</h3>
+          <p>
+            Vi håller ett återgivningssamtal där vi går igenom resultat och slutsats muntligt och lämnar ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer kring skolstöd och anpassningar, råd för hemmet (rutiner,
+            visuellt stöd, sensorik) samt vid behov remiss till habilitering, logoped, arbetsterapeut, psykologisk behandling
+            med mera.
+          </p>
+        </div>
       </article>
     </div>
   </div>
 </section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför utreda?</span>
-      <h2>Fördelar med en autismutredning</h2>
-      <p class="muted">
-        En utredning ger mer än en diagnos – den ger förståelse, rättigheter och verktyg som kan hjälpa hela familjen. Målet är
-        att skapa en vardag där ditt barn kan utvecklas och må bra.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Tydlig riktning</h3>
-        <p>Ni får en professionell bedömning av ditt barns behov vilket minskar osäkerhet och hjälper er att få rätt stöd.</p>
-      </article>
-      <article>
-        <h3>Stöd i skola och vardag</h3>
-        <p>I rapporten du får vid utredningen får du rekommendationer för extra anpassningar, särskilt stöd, LSS eller habilitering.</p>
-      </article>
-      <article>
-        <h3>Familjestöd</h3>
-        <p>Ni får verktyg för kommunikation, struktur och sensorisk anpassning som avlastar både ditt barn och dig som förälder.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-process" id="process">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Så går det till</span>
-      <h2>Steg för steg</h2>
-      <p class="muted">
-         Utredningen anpassas efter diit barns ålder och behov, och vi håller en nära dialog
-        med dig som förälder.
-      </p>
-    </div>
-    <div class="adhd-process-grid">
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">1</span>
-          <div>
-            <h3>Förberedelser &amp; formulär</h3>
-            <p>Ni fyller i bakgrundsformulär, skattningar och beskriver vardagen. Efter det går vi tillsammsans med er igenom målen med utredningen.</p>
-          </div>
-        </div>
-        <ul>
-          <li>Skattningar från dig som förälder, från pedagoger och ditt barn (om tillräckligt gammal).</li>
-          <li>Planering av observation och praktiska detaljer.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">2</span>
-          <div>
-            <h3>Intervjuer &amp; observation</h3>
-            <p>Strukturerade intervjuer med dig som förälder samt samtal och lekbaserade observationer tillsammans med barnet.</p>
-          </div>
-        </div>
-        <ul>
-          <li>ADOS-2, leksessioner och kliniska intervjuer.</li>
-          <li>Skol- eller förskolekontakt för kompletterande information.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">3</span>
-          <div>
-            <h3>Analys &amp; slutsats</h3>
-            <p>Vårt team väger samman intervjuer, observationer och testresultat samt klarlägger eventuell samsjuklighet.</p>
-          </div>
-        </div>
-        <ul>
-          <li>Multidisciplinär samråd vid komplexa fall.</li>
-          <li>Rekommendationer kring stödinsatser, skola och fortsatt utredning.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">4</span>
-          <div>
-            <h3>Återkoppling &amp; plan</h3>
-            <p>Vi går igenom resultatet tillsammans med dig och beskriver konkreta nästa steg ditt barn, skolan och er som familj.</p>
-          </div>
-        </div>
-        <ul>
-          <li>Detaljerad rapport med handlingsplan.</li>
-          <li>Stöd för ansökningar till habilitering, LSS eller andra insatser.</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får ni med er</h2>
-      <p class="muted">
-        Oavsett diagnos får ni en konkret riktning och rekommendationer. Målet är att du ska känna dig trygg i hur du stöttar
-        ditt barn framåt.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostiskt utlåtande</h3>
-        <p>Tydligt besked kring autismkriterierna och eventuell samsjuklighet eller vidare frågeställningar.</p>
-      </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Ni får en rapport med styrkor, behov och rekommendationer för anpassningar i skola och hemma.</p>
-      </article>
-      <article>
-        <h3>Återkopplingssamtal</h3>
-        <p>Gemensam genomgång med tid för frågor och planering av nästa steg.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">

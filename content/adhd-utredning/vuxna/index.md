@@ -70,77 +70,16 @@ page_class: "adhd-page--adult"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Känner du igen dig?</span>
-      <h2>Vanliga symtom hos vuxna</h2>
-      <p class="muted">
-        Många beskriver en blandning av både kapacitet och svårigheter som blir allt tydliga när kraven ökar i arbete, studier eller
-        relationer.
-      </p>
-    </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Tidsblindhet</h3>
-        <p>Svårt att uppskatta hur lång tid uppgifter tar, vilket leder till förseningar eller sista-minuten-lösningar.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Pendlande fokus</h3>
-        <p>Hyperfokus ibland och svårt att komma igång andra dagar. Detta, trots att uppgifterna är viktiga.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Överväldigade känslor</h3>
-        <p>Snabba humörsvängningar eller stark stress när strukturen brister eller planering faller.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Glömska i vardagen</h3>
-        <p>Missade möten, mejl eller vardagsdetaljer även med listor och påminnelser på plats.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför en utredning kan göra skillnad</span>
-      <h2>Fördelar med att göra en utredning</h2>
-      <p class="muted">
-        En utredning är  mer än en diagnos – den ger förståelse och tillgång till rätt stöd.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Bekräftelse &amp; tydlighet</h3>
-        <p>Du får en professionell förklaring till mönster du kanske kämpat med länge, vilket ofta minskar den självkritik många riktar mot sig själva.</p>
-      </article>
-      <article>
-        <h3>Väg till behandling</h3>
-        <p>En formell bedömning öppnar dörren till bland annat medicinering och anpassningar i arbete eller studier.</p>
-      </article>
-      <article>
-        <h3>Personlig handlingsplan</h3>
-        <p>Rekommendationer och strategier utformas för just din vardag - allt från hur du kan hantera din energi till hur du kan skapa struktur i vardagen.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Autismutredning för vuxna</span>
-      <h2>En noggrann process som ger tydlighet</h2>
+      <span class="eyebrow">ADHD-utredning för vuxna</span>
+      <h2>En process som ger klarhet och rätt stöd</h2>
       <p class="muted">
-        Vår autismutredning för vuxna är en strukturerad, evidensbaserad process där vi bedömer om du befinner dig inom
-        autismspektrat och vilket stöd du behöver. Teamet består av erfarna psykologer och psykiatrer som följer nationella
-        riktlinjer och ser till att du känner dig trygg och förstådd genom varje steg.
-      </p>
-      <p class="muted">
-        Många söker oss efter långvariga svårigheter i sociala situationer eller i vardagen, ibland efter att en närstående
-        fått diagnos eller att man i efterhand känner igen tidigare utmaningar. Oavsett livssituation är målet att du ska
-        förstå dina styrkor och svårigheter bättre och få rätt hjälp framåt.
+        Vår ADHD-utredning för vuxna är utformad för att identifiera ADHD eller närliggande tillstånd hos personer som är 18
+        år eller äldre. Många söker efter långvariga svårigheter med uppmärksamhet, organisering, rastlöshet eller
+        impulsivitet som påverkar arbete, studier och relationer. Målet är klarhet och rätt behandling – för många innebär det
+        en stor lättnad att förstå bakgrunden till svårigheterna.
       </p>
     </div>
     <div class="timeline">
@@ -151,9 +90,9 @@ page_class: "adhd-page--adult"
         <div class="timeline-content">
           <h3>Bedömningssamtal</h3>
           <p>
-            Vi börjar med ett inledande bedömningssamtal på 30 minuter där du berättar om dina funderingar och varför du söker
-            utredning. Vi går igenom aktuella svårigheter, vad du hoppas få ut av processen och avgör om en full
-            neuropsykiatrisk utredning är motiverad. Om ja planeras nästa steg direkt – annars får du råd och hänvisningar.
+            Vi börjar med ett inledande bedömningssamtal på 30 minuter. Här berättar du om dina funderingar och varför du söker
+            utredning. Vi går igenom aktuella svårigheter och vad du hoppas få ut av processen. Samtalet avgör om en full
+            neuropsykiatrisk utredning är motiverad. Om ja planerar vi nästa steg direkt – om nej ger vi råd och hänvisningar.
           </p>
         </div>
       </article>
@@ -164,9 +103,10 @@ page_class: "adhd-page--adult"
         <div class="timeline-content">
           <h3>Fördjupade intervjuer och formulär</h3>
           <p>
-            En legitimerad psykolog genomför en detaljerad anamnes från barndom till nutid med fokus på socialt samspel,
-            kommunikation, rutiner och sensorisk känslighet. Om möjligt intervjuas även en anhörig som känt dig sedan
-            barndomen. Du fyller i standardiserade självskattningar som kartlägger autistiska drag och närliggande symtom.
+            En legitimerad psykolog genomför en detaljerad anamnes från barndom till nutid – uppväxt, skola, arbete, relationer
+            och vardagsfungerande – med fokus på socialt samspel, uppmärksamhet och hyperaktivitet. Om möjligt intervjuas även
+            en anhörig som känt dig sedan barndomen. Du fyller i standardiserade självskattningar som kartlägger ADHD-drag och
+            närliggande symtom.
           </p>
         </div>
       </article>
@@ -179,7 +119,7 @@ page_class: "adhd-page--adult"
           <p>
             Du genomför psykologiska tester av kognitiva och sociala funktioner. Parallellt gör en specialistläkare eller
             psykiater en medicinsk och psykiatrisk genomgång för att utesluta andra orsaker och identifiera samsjuklighet som
-            ADHD, depression eller ångest.
+            exempelvis autism, depression eller ångest.
           </p>
         </div>
       </article>
@@ -190,8 +130,8 @@ page_class: "adhd-page--adult"
         <div class="timeline-content">
           <h3>Multidisciplinär genomgång</h3>
           <p>
-            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för autism är uppfyllda
-            och om andra diagnoser föreligger. Syftet är att ge en korrekt, evidensbaserad diagnos och förstå helhetsbilden.
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för ADHD är uppfyllda samt
+            om andra diagnoser föreligger. Syftet är en korrekt, evidensbaserad diagnos.
           </p>
         </div>
       </article>
@@ -202,37 +142,11 @@ page_class: "adhd-page--adult"
         <div class="timeline-content">
           <h3>Återgivning och uppföljning</h3>
           <p>
-            Vi bokar ett återgivningssamtal där vi går igenom resultat och slutsats muntligt, och du får ett skriftligt
-            utlåtande. Du får individanpassade rekommendationer kring vardag, arbete, psykoedukation, behandling eller vidare
-            remisser. Även om diagnos inte ställs får du tydlig återkoppling och vägledning om nästa steg.
+            Vi bokar ett återgivningssamtal där vi går igenom resultat och slutsats muntligt och du får ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer såsom anpassningar i vardag och arbete, psykoedukation,
+            behandling eller vidare remisser. Även utan diagnos får du tydlig återkoppling och vägledning om nästa steg.
           </p>
         </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får du med dig</h2>
-      <p class="muted">
-        Oavsett diagnos lämnar du med tydliga rekommendationer och nästa steg som passar din vardag.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostisk slutsats</h3>
-        <p>Klargörande besked om ADHD-kriterierna uppfylls – eller rekommendationer om annan utredning.</p>
-      </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Detaljerad sammanställning med testresultat, intyg och konkreta anpassningsförslag.</p>
-      </article>
-      <article>
-        <h3>Återkopplingssamtal</h3>
-        <p>Genomgång av rapporten, tid för frågor och plan för eventuellt fortsatt stöd tillsammans med vårt team.</p>
       </article>
     </div>
   </div>

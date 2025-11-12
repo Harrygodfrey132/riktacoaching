@@ -70,62 +70,6 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Känner du igen dig?</span>
-      <h2>Vanliga symtom hos kvinnor</h2>
-      <p class="muted">
-        Många beskriver ett pendlande mellan hög kapacitet och total trötthet, ofta dolt bakom ett yttre lugn.
-      </p>
-    </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Maskerad stress</h3>
-        <p>Du håller ihop utåt men kraschar när du är ensam, med huvudvärk, grubblerier eller tårar.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Hormonella svängningar</h3>
-        <p>Symtomen förstärks inför mens, efter graviditet eller i perimenopaus. Här blir fokus och humör oförutsägbara.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Överladdad kalender</h3>
-        <p>Du säger ja till mycket, får saker gjorda i sista stund och betalar priset i form av utmattning eller skuldkänslor.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Relationell överansvarighet</h3>
-        <p>Du kompenserar genom att vara den som håller ordning och fixar – men glömmer dina egna behov.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför det hjälper</span>
-      <h2>Fördelar med en riktad utredning</h2>
-      <p class="muted">
-        Att förstå hur just din ADHD fungerar skapar tydlighet i relationer, arbete och självomsorg.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Bekräftelse av erfarenheter</h3>
-        <p>Du får en professionell förklaring till livslånga mönster och kan släppa självkritiken.</p>
-      </article>
-      <article>
-        <h3>Plan med hänsyn till hormoner</h3>
-        <p>Vi ger råd kring medicinering, livsstil och hjälpmedel utifrån cykel, graviditet eller klimakterium.</p>
-      </article>
-      <article>
-        <h3>Stöd i relationer</h3>
-        <p>Konkreta strategier för att kommunicera behov hemma, med vänner och i arbetslivet.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-process" id="process">
   <div class="container">
     <div class="section-intro">
@@ -187,32 +131,6 @@ page_class: "adhd-page--women"
           <li>Detaljerad rapport med sammanfattning och nästa steg.</li>
           <li>Plan för uppföljning och samarbete med vården vid behov.</li>
         </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får du med dig</h2>
-      <p class="muted">
-        Du lämnar med tydliga rekommendationer oavsett diagnos – för vardag, relationer och egenvård.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostisk slutsats</h3>
-        <p>Klargörande besked om ADHD-kriterierna uppfylls eller om annan utredning behövs.</p>
-      </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Detaljerad sammanställning med hormon- och livsstilsaspekter samt intyg.</p>
-      </article>
-      <article>
-        <h3>Konkreta verktyg</h3>
-        <p>Strategier för cykelbaserad planering, stressreglering och dialog med arbete eller studier.</p>
       </article>
     </div>
   </div>

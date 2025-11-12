@@ -72,150 +72,93 @@ page_class: "adhd-page--youth"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
+<section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Känner du igen ditt barn?</span>
-      <h2>Vanliga tecken hos barn och ungdomar</h2>
+      <span class="eyebrow">ADHD-utredning för barn</span>
+      <h2>En varsam process som skapar klarhet</h2>
       <p class="muted">
-        Många familjer beskriver återkommande mönster som blir tydligare när kraven ökar i skola och
-        fritid.
+        Att utreda ADHD hos barn innebär en strukturerad process som belyser beteenden i flera miljöer. Föräldrar söker ofta
+        på grund av svårigheter i skola, med kamrater eller hemma kring fokus, aktivitetsnivå och impulskontroll. Utredningen
+        ger klarhet och öppnar för rätt skolstöd och strategier i vardagen.
       </p>
     </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Ojämn skolork</h3>
-        <p>Stora skillnader i fokus och resultat från dag till dag, trots att ditt barn kan ämnet eller vill göra sitt bästa.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Snabba känsloskiften</h3>
-        <p>Impulsiva reaktioner, konflikter eller starka känsloutbrott när något förändras eller känns övermäktigt.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Svårt att komma igång</h3>
-        <p>Motstånd mot läxor eller vardagsrutiner, ofta följt av frustration hos både barnet och omgivningen.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Borttappade saker</h3>
-        <p>Glömda idrottskläder, busskort eller meddelanden från skolan trots påminnelser och hjälpmedel.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför en utredning hjälper</span>
-      <h2>Fördelar för ditt barn och er familj</h2>
-      <p class="muted">
-        En strukturerad utredning skapar klarhet, minskar konflikter och öppnar dörren till rätt stöd i skola och vardag.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Gemensamt språk</h3>
-        <p>Ni får en professionell kartläggning som gör det lättare för familj, skola och nätverk att förstå barnets behov.</p>
-      </article>
-      <article>
-        <h3>Anpassningar som fungerar</h3>
-        <p>Rekommendationer kring pedagogiska stödinsatser, hjälpmedel och rutiner som avlastar barnet i vardagen.</p>
-      </article>
-      <article>
-        <h3>Plan för behandling</h3>
-        <p>Konkreta förslag på medicin, terapi eller coachning. Detta sker alltid i dialog med er och med barnets bästa i åtanke</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-process" id="process">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Så går det till</span>
-      <h2>Steg för steg genom utredningen</h2>
-      <p class="muted">
-        Processen vid jobbar med är strukturerad och stegvis och innebär vanligtvis tre till fyra veckor från första samtal till återkoppling.
-      </p>
-    </div>
-    <div class="adhd-process-grid">
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">1</span>
-          <div>
-            <h3>Familjesamtal &amp; förberedelser</h3>
-            <p>Vi går igenom barnets historia, samlar in underlag från skolan och skickar formulär att fylla i till dig som vårdnadshavare och senare till lärare.</p>
-          </div>
+    <div class="timeline">
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>1</span>
         </div>
-        <ul>
-          <li>Digitala skattningar för hem och skola (20–30 minuter).</li>
-          <li>Introduktionssamtal där ni kan ställa frågor om utredningsprocessen.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">2</span>
-          <div>
-            <h3>Barnintervju &amp; observation</h3>
-            <p>Flera samtal med psykolog samt lek- eller testmoment som anpassas efter barnets ålder.</p>
-          </div>
+        <div class="timeline-content">
+          <h3>Inledande konsultation med föräldrar</h3>
+          <p>
+            Vi startar med ett 30-minuters bedömningssamtal där vi går igenom utvecklingshistoria och nuvarande funderingar.
+            Efter samtalet avgör vi om en full utredning är motiverad och beskriver nästa steg. Om inte ger vi
+            rekommendationer om annat stöd. Beroende på ålder kan barnet delta i delar av samtalet.
+          </p>
         </div>
-        <ul>
-          <li>1–2 möten på plats eller via högkvalitativ och säker video, allt utifrån barnets behov.</li>
-          <li>Vid behov kan vi behöva ha kompletterande samtal med ditt barns lärare.</li>
-        </ul>
       </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">3</span>
-          <div>
-            <h3>Teamets analys</h3>
-            <p>Specialistläkare och psykolog går igenom intervjuer, formulär och skoldata innan någon slutsats dras.</p>
-          </div>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>2</span>
         </div>
-        <ul>
-          <li>Multidisciplinär bedömning vid samsjuklighet eller komplexa frågor.</li>
-          <li>Rekommendationer kring medicinering, stödinsatser och intyg.</li>
-        </ul>
-      </article>
-      <article class="adhd-process-card">
-        <div class="adhd-step">
-          <span class="adhd-step-number">4</span>
-          <div>
-            <h3>Återkoppling &amp; fortsättningsplan</h3>
-            <p>Vi går igenom resultatet tillsammans och skapar en hållbar plan för nästa steg.</p>
-          </div>
+        <div class="timeline-content">
+          <h3>Föräldraintervjuer och skolunderlag</h3>
+          <p>
+            Djupintervju med dig som förälder om barnets utveckling, styrkor och svårigheter. Du fyller i strukturerade
+            formulär och vi samlar in underlag från skola eller förskola via lärarformulär och ibland samtal för att förstå
+            hur barnet fungerar i grupp och lärmiljö.
+          </p>
         </div>
-        <ul>
-          <li>Tid för frågor vad gäller allt som berör utredningen och nästa steg.</li>
-          <li>Plan för uppföljning och samordning med vård eller skola.</li>
-        </ul>
       </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter utredningen</span>
-      <h2>Det här får ni med er</h2>
-      <p class="muted">
-        Oavsett diagnos lämnar ni med en tydlig riktning och konkreta råd för att stötta barnet framåt.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Diagnostisk slutsats</h3>
-        <p>Klargörande besked om ADHD-kriterierna uppfylls eller om annan utredning behöver prioriteras.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>3</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Barnobservation och testning</h3>
+          <p>
+            En psykolog träffar barnet för lekbaserad observation och åldersanpassade tester av uppmärksamhet, socialt samspel
+            och kognition. Vi skapar lugna ramar och pausar vid behov så att barnet känner sig tryggt.
+          </p>
+        </div>
       </article>
-      <article>
-        <h3>Skriftlig rapport</h3>
-        <p>Detaljerad dokumentation för skola, vård och eventuella ansökningar om stöd eller anpassningar.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>4</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Medicinsk bedömning</h3>
+          <p>
+            Barn- och ungdomspsykiater eller barnläkare gör en medicinsk bedömning för att utesluta andra orsaker och kartlägga
+            samsjuklighet.
+          </p>
+        </div>
       </article>
-      <article>
-        <h3>Guidning till nästa steg</h3>
-        <p>Rekommendationer kring behandlingsalternativ, strategier hemma och hur ni kan följa upp utvecklingen.</p>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>5</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Multidisciplinär genomgång</h3>
+          <p>
+            Psykolog och psykiater går igenom all information tillsammans och bedömer om kriterierna för ADHD är uppfyllda samt
+            om andra diagnoser föreligger. Syftet är en korrekt, evidensbaserad diagnos.
+          </p>
+        </div>
+      </article>
+      <article class="timeline-item">
+        <div class="timeline-node">
+          <span>6</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Uppföljning och stöd</h3>
+          <p>
+            Vi håller ett återgivningssamtal där vi går igenom resultat och slutsats muntligt och lämnar ett skriftligt
+            utlåtande. Du får individanpassade rekommendationer kring skolstöd, eventuella medicinska insatser och konkreta
+            verktyg för hemmet. Vid behov skickar vi remiss till exempelvis habilitering, logoped, arbetsterapeut eller
+            psykologisk behandling.
+          </p>
+        </div>
       </article>
     </div>
   </div>

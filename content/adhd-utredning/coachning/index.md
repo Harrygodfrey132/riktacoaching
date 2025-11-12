@@ -72,62 +72,6 @@ page_class: "adhd-page--coachning"
   </div>
 </section>
 
-<section class="who-section adhd-symptoms" id="symtom">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Mål vi ofta arbetar med</span>
-      <h2>Vanliga fokusområden i ADHD-coachning</h2>
-      <p class="muted">
-        Innehållet anpassas efter dig men många klienter känner igen några av dessa behov när vi startar.
-      </p>
-    </div>
-    <div class="adhd-symptom-grid">
-      <article class="adhd-symptom-card">
-        <h3>Tidsstruktur</h3>
-        <p>Skapa fungerande kalenderrutiner, hålla koll på deadlines och bygga buffertar för spontana energitoppar.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Uppgiftsstart</h3>
-        <p>Hitta metoder för att sänka startmotståndet och komma vidare även när uppgiften känns övermäktig.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Balans i fokus</h3>
-        <p>Växla mellan hyperfokus och paus utan att krascha – vi planerar för återhämtning och vart du vill rikta din energi.</p>
-      </article>
-      <article class="adhd-symptom-card">
-        <h3>Relation till dig själv</h3>
-        <p>Bygg upp ett mer konstruktivt självprat och fira framsteg så att din motivation håller över tid.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-benefits" id="varfor-utredning">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Varför coachning gör skillnad</span>
-      <h2>Fördelar med ett riktat coachningprogram</h2>
-      <p class="muted">
-        När du får ett tydligt ramverk och kontinuerligt stöd blir det enklare att omsätta avsikter till handling.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Strukturerad vardag</h3>
-        <p>Du bygger system för planering, prioritering och uppföljning som håller även när livet ändras.</p>
-      </article>
-      <article>
-        <h3>Stärkt självledarskap</h3>
-        <p>Du lär dig reglera känslor och energi vilket i sin tur ger större frihet att välja vad du lägger din tid på.</p>
-      </article>
-      <article>
-        <h3>Ökad trygghet</h3>
-        <p>Regelbunden feedback och accountability gör att du vågar testa nytt utan att tappa riktning.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="who-section adhd-process" id="process">
   <div class="container">
     <div class="section-intro">
@@ -189,32 +133,6 @@ page_class: "adhd-page--coachning"
           <li>Plan för hur du fortsätter på egen hand eller med fortsatt coachning.</li>
           <li>Rekommendationer kring andra stödinsatser om det behövs.</li>
         </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="who-section adhd-outcomes" id="vad-du-far">
-  <div class="container">
-    <div class="section-intro">
-      <span class="eyebrow">Efter varje coachningcykel</span>
-      <h2>Det här tar du med dig</h2>
-      <p class="muted">
-        Coachning ger bestående verktyg när vi dokumenterar, repeterar och tränar i din egen vardag.
-      </p>
-    </div>
-    <div class="adhd-card-grid">
-      <article>
-        <h3>Personlig strategibank</h3>
-        <p>Checklistor, mallar och anpassade rutiner som du kan återvända till när livet förändras.</p>
-      </article>
-      <article>
-        <h3>Fördjupad självkännedom</h3>
-        <p>Konkreta insikter om vilka miljöer, tider och arbetssätt som får dig att trivas och prestera.</p>
-      </article>
-      <article>
-        <h3>Hållbar handlingsplan</h3>
-        <p>Tydliga nästa steg, mått på framgång och plan för hur du följer upp utan att bli överväldigad.</p>
       </article>
     </div>
   </div>
