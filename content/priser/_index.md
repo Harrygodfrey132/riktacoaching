@@ -46,7 +46,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Screening för ADHD och autism</h3>
           <p class="meta">Digitalt besök</p>
-          <p class="price">3000kr</p>
+          <p class="price">0 kr</p>
           <ul class="details">
             <li>Samtal med legitimerad psykolog</li>
           </ul>
