@@ -61,16 +61,26 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
     <p>Välj det spår som passar dina behov bäst – båda går att kombinera med medicinska uppföljningar eller familjestöd.</p>
     <div class="coachning-step-grid">
       <article class="coachning-step">
-        <span class="coachning-step__number">ADHD</span>
-        <h4>ADHD-coachning</h4>
-        <p>Fokus på exekutiva funktioner, motivation, planering och att bygga hållbara rutiner. Passar dig som vill få bättre grepp om tid, energi och känslor.</p>
-        <a class="btn secondary" href="/coachning/adhd/">Läs mer</a>
+        <figure class="coachning-step__media">
+          <img src="/img/adhd-coachning.jpg" alt="Person som får stöd i ADHD-coachning">
+        </figure>
+        <div class="coachning-step__body">
+          <span class="coachning-step__number">ADHD</span>
+          <h4>ADHD-coachning</h4>
+          <p>Fokus på exekutiva funktioner, motivation, planering och att bygga hållbara rutiner. Passar dig som vill få bättre grepp om tid, energi och känslor.</p>
+          <a class="btn secondary" href="/coachning/adhd/">Läs mer</a>
+        </div>
       </article>
       <article class="coachning-step">
-        <span class="coachning-step__number">Autism</span>
-        <h4>Autism-coachning</h4>
-        <p>Inriktad på sensorisk balans, kommunikation och att skapa trygg struktur i vardagen. Passar både vuxna och ungdomar samt anhöriga.</p>
-        <a class="btn secondary" href="/coachning/autism/">Läs mer</a>
+        <figure class="coachning-step__media">
+          <img src="/img/autism-coachning.jpg" alt="Person som får stöd i autism-coachning">
+        </figure>
+        <div class="coachning-step__body">
+          <span class="coachning-step__number">Autism</span>
+          <h4>Autism-coachning</h4>
+          <p>Inriktad på sensorisk balans, kommunikation och att skapa trygg struktur i vardagen. Passar både vuxna och ungdomar samt anhöriga.</p>
+          <a class="btn secondary" href="/coachning/autism/">Läs mer</a>
+        </div>
       </article>
     </div>
   </div>

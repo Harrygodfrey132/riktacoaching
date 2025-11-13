@@ -51,19 +51,34 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     </div>
     <div class="knowledge-cards">
       <article class="knowledge-card">
-        <h3>Prokrastinering och ADHD</h3>
-        <p>Varför vi skjuter upp, hur ADHD påverkar processen – och konkreta sätt att komma vidare.</p>
-        <a class="news-link" href="/blogg/prokrastinering-och-adhd/">Läs mer</a>
+        <figure class="knowledge-card__media">
+          <img src="/img/adhd-coachning.jpg" alt="Person som arbetar med ADHD-coachning">
+        </figure>
+        <div class="knowledge-card__body">
+          <h3>Prokrastinering och ADHD</h3>
+          <p>Varför vi skjuter upp, hur ADHD påverkar processen – och konkreta sätt att komma vidare.</p>
+          <a class="news-link" href="/blogg/prokrastinering-och-adhd/">Läs mer</a>
+        </div>
       </article>
       <article class="knowledge-card">
-        <h3>Så fungerar en ADHD-utredning</h3>
-        <p>Steg-för-steg genom utredningen – från förberedelser till återkoppling och nästa steg.</p>
-        <a class="news-link" href="/blogg/sa-fungerar-en-adhd-utredning/">Läs mer</a>
+        <figure class="knowledge-card__media">
+          <img src="/img/psychologist-smiling.jpg" alt="Specialist som förklarar ADHD-utredning">
+        </figure>
+        <div class="knowledge-card__body">
+          <h3>Så fungerar en ADHD-utredning</h3>
+          <p>Steg-för-steg genom utredningen – från förberedelser till återkoppling och nästa steg.</p>
+          <a class="news-link" href="/blogg/sa-fungerar-en-adhd-utredning/">Läs mer</a>
+        </div>
       </article>
       <article class="knowledge-card">
-        <h3>ADHD och ADD – likheter och skillnader</h3>
-        <p>Vad skiljer ouppmärksam form från kombinerad presentation – och hur påverkar det vardagen?</p>
-        <a class="news-link" href="/blogg/adhd-och-add-likheter-och-skillnader/">Läs mer</a>
+        <figure class="knowledge-card__media">
+          <img src="/img/adhd-medicinering.jpg" alt="Fokusarbete för att beskriva ADHD och ADD">
+        </figure>
+        <div class="knowledge-card__body">
+          <h3>ADHD och ADD – likheter och skillnader</h3>
+          <p>Vad skiljer ouppmärksam form från kombinerad presentation – och hur påverkar det vardagen?</p>
+          <a class="news-link" href="/blogg/adhd-och-add-likheter-och-skillnader/">Läs mer</a>
+        </div>
       </article>
     </div>
   </div>
