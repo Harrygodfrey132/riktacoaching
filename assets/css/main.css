@@ -628,6 +628,7 @@ nav a.active {
   color: var(--secondary);
   font-weight: 600;
   font-size: 15px;
+  margin-top: 8px;
 }
 
 .news-cta {
