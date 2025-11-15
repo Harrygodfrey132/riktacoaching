@@ -22,7 +22,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <div class="news-body">
           <span class="news-tag"></span>
           <h4>Din kompletta guide till ADHD</h4>
-          <a class="news-link" href="/blogg/adhd-dygnet-runt/">Läs mer</a>
+          <a class="news-link" href="/blogg/adhd-dygnet-runt/">Utforska hela ADHD-guiden</a>
         </div>
       </article>
       <article class="news-card">
@@ -36,7 +36,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <div class="news-body">
           <span class="news-tag"></span>
           <h4>Din kompletta guide till autism</h4>
-          <a class="news-link" href="/blogg/autism-guide/">Läs mer</a>
+          <a class="news-link" href="/blogg/autism-guide/">Utforska hela autism-guiden</a>
         </div>
       </article>
     </div>
