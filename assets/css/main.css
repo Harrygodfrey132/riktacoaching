@@ -1587,7 +1587,7 @@ nav a.active {
 }
 
 .hero.hero-home {
-  margin-top: clamp(32px, 6vw, 56px);
+  margin-top: 0;
 }
 
 .hero .grid {
