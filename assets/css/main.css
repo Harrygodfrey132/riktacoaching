@@ -6775,9 +6775,9 @@ body.newsletter-popup--locked {
   }
 
   .newsletter-popup__dialog {
-    width: min(360px, calc(100% - 48px));
+    width: min(360px, calc(100% - 64px));
     border-radius: 20px;
-    padding: 22px 16px 26px;
+    padding: 24px 20px 28px;
     text-align: left;
   }
 
