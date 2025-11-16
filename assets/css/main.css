@@ -6775,7 +6775,7 @@ body.newsletter-popup--locked {
   }
 
   .newsletter-popup__dialog {
-    width: min(360px, calc(100% - 64px));
+    width: min(380px, calc(100% - 40px));
     border-radius: 20px;
     padding: 24px 20px 28px;
     text-align: left;
