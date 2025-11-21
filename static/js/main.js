@@ -97,7 +97,9 @@
     scoreValueId,
     interpretationId,
     ranges,
-    defaultInterpretation
+    defaultInterpretation,
+    gateWithLeadForm = false,
+    onLeadRequired
   }) {
     const form = document.getElementById(formId);
     if (!form) return;
@@ -139,15 +141,19 @@
       }, 350);
     }
 
-    function updateScoreDisplay(score) {
+    function updateScoreDisplay(score, customInterpretation) {
       if (!scoreBox || !scoreValue || !interpretationEl) return;
       scoreValue.textContent = String(score);
       removeInterpretationClasses();
       const match = ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
-      interpretationEl.textContent = match.text;
+      interpretationEl.textContent = customInterpretation || match.text;
       if (match.className) {
         interpretationEl.classList.add(match.className);
       }
+    }
+
+    function getInterpretation(score) {
+      return ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
     }
 
     function calculateScore() {
@@ -164,14 +170,47 @@
       return { total, answered };
     }
 
+    function collectAnswerDetails() {
+      const answers = [];
+      const questions = form.querySelectorAll('.adhd-question');
+      questions.forEach((question, index) => {
+        const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
+        const selected = question.querySelector('input[type="radio"]:checked');
+        let answerText = '';
+        if (selected) {
+          const label = selected.closest('label');
+          const textEl = label ? label.querySelector('span') : null;
+          answerText = textEl ? textEl.textContent.trim() : selected.value;
+        }
+        answers.push({ number: index + 1, prompt, answer: answerText });
+      });
+      return answers;
+    }
+
     form.addEventListener('submit', event => {
       event.preventDefault();
       if (!form.reportValidity()) return;
 
       const { total, answered } = calculateScore();
       if (answered === totalQuestions) {
-        updateScoreDisplay(total);
-        showScoreBox();
+        const interpretation = getInterpretation(total);
+        const renderResult = () => {
+          updateScoreDisplay(total, interpretation?.text);
+          showScoreBox();
+        };
+        const payload = {
+          total,
+          answered,
+          interpretation: interpretation ? interpretation.text : '',
+          answers: collectAnswerDetails(),
+          renderResult
+        };
+
+        if (gateWithLeadForm && typeof onLeadRequired === 'function') {
+          onLeadRequired(payload);
+        } else {
+          renderResult();
+        }
       }
     });
 
@@ -196,6 +235,105 @@
     });
   }
 
+  // ----- Lead capture modal (Zoho) -----
+  const leadModal = document.getElementById('adhd-lead-modal');
+  const leadForm = document.getElementById('webform896517000000571075');
+  const leadDescription = document.getElementById('adhd-lead-description');
+  const leadSource = document.getElementById('adhd-lead-source');
+  const leadRating = document.getElementById('adhd-lead-rating');
+  const leadFrame = document.getElementById('adhd-lead-target');
+  const leadSubmitButton = document.getElementById('adhd-lead-submit');
+  const leadCloseTriggers = document.querySelectorAll('[data-close-lead]');
+  let leadResultPayload = null;
+  let leadIframeReady = false;
+  let leadSubmitted = false;
+
+  function buildLeadDescription(result) {
+    if (!result) return '';
+    const lines = [
+      'ADHD Screening (ASRS v1.1)',
+      `Totalpoäng: ${result.total}`,
+      `Tolkning: ${result.interpretation}`,
+      'Svar:'
+    ];
+    (result.answers || []).forEach(item => {
+      const prompt = item.prompt || '';
+      const answer = item.answer || 'Ej angivet';
+      lines.push(`${item.number}. ${prompt} — ${answer}`);
+    });
+    return lines.join('\n');
+  }
+
+  function openLeadModal(result) {
+    if (!leadModal || !leadForm) return;
+    leadResultPayload = result;
+    if (leadSource && !leadSource.value) {
+      leadSource.value = 'ADHD Investigation';
+    }
+    if (leadRating) {
+      const ratingValue = Math.min(result.total || 0, 50);
+      leadRating.value = ratingValue;
+    }
+    if (leadDescription) {
+      leadDescription.value = buildLeadDescription(result);
+    }
+    leadModal.removeAttribute('hidden');
+    document.body.classList.add('lead-modal-open');
+    const emailInput = leadForm.querySelector('#Email');
+    if (emailInput && typeof emailInput.focus === 'function') {
+      emailInput.focus({ preventScroll: true });
+    }
+  }
+
+  function closeLeadModal() {
+    if (!leadModal) return;
+    leadModal.setAttribute('hidden', true);
+    document.body.classList.remove('lead-modal-open');
+    if (leadSubmitButton) {
+      leadSubmitButton.removeAttribute('disabled');
+    }
+  }
+
+  function handleLeadSuccess() {
+    closeLeadModal();
+    if (leadResultPayload && typeof leadResultPayload.renderResult === 'function') {
+      leadResultPayload.renderResult();
+      const scoreBox = document.getElementById('adhd-score');
+      if (scoreBox) {
+        const targetY = scoreBox.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+        smoothScrollTo(targetY);
+      }
+      leadResultPayload = null;
+    }
+  }
+
+  leadCloseTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+      closeLeadModal();
+    });
+  });
+
+  if (leadFrame) {
+    leadFrame.addEventListener('load', () => {
+      if (!leadIframeReady) {
+        leadIframeReady = true;
+      }
+      if (leadSubmitted) {
+        leadSubmitted = false;
+        handleLeadSuccess();
+      }
+    });
+  }
+
+  if (leadForm) {
+    leadForm.addEventListener('submit', () => {
+      leadSubmitted = true;
+      if (leadSubmitButton) {
+        leadSubmitButton.setAttribute('disabled', 'true');
+      }
+    });
+  }
+
   initScreeningForm({
     formId: 'adhd-screening-form',
     totalQuestions: 18,
@@ -208,7 +346,9 @@
       { max: 26, text: 'Svarsmönstret visar flera ADHD-indikatorer. Vi rekommenderar ett strukturerat bedömningssamtal med vårt neuropsykiatriska team.', className: 'is-amber' },
       { max: 35, text: 'Symtombördan är uttalad och påverkar sannolikt skola, arbete eller hem. Boka en fullständig specialistledd utredning.', className: 'is-orange' },
       { max: Infinity, text: 'Screeningen signalerar omfattande svårigheter förenliga med ADHD. Kontakta Rikta Psykiatri för en diagnostisk utredning.', className: 'is-red' }
-    ]
+    ],
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal
   });
 
   initScreeningForm({

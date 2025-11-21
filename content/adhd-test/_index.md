@@ -344,3 +344,116 @@ og_description: "Besvara frågor om de senaste sex månaderna och få rekommenda
     </div>
   </div>
 </section>
+
+<div class="lead-modal" id="adhd-lead-modal" hidden>
+  <div class="lead-modal__overlay" data-close-lead></div>
+  <div class="lead-modal__dialog">
+    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
+    <div class="lead-modal__intro">
+      <p class="lead-modal__eyebrow">Visa resultat</p>
+      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
+      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
+      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
+    </div>
+    <iframe id="adhd-lead-target" name="adhd-lead-target" title="Leadformulär" src="about:blank" hidden></iframe>
+    <form id="webform896517000000571075"
+      class="lead-modal__form"
+      action="https://crm.zoho.eu/crm/WebToLeadForm"
+      name="WebToLeads896517000000571075"
+      method="POST"
+      target="adhd-lead-target"
+      accept-charset="UTF-8"
+      onsubmit='javascript:document.charset="UTF-8"; return checkMandatory896517000000571075()'>
+      <input type="hidden" name="xnQsjsdp" value="fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3">
+      <input type="hidden" name="xmIwtLD" value="fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5">
+      <input type="hidden" name="actionType" value="TGVhZHM=">
+      <input type="hidden" name="returnURL" value="https://riktapsykiatri.se/">
+      <input type="hidden" name="zc_gad" id="zc_gad" value="">
+      <input type="hidden" name="Lead Source" id="adhd-lead-source" value="ADHD Investigation">
+      <input type="hidden" name="Rating" id="adhd-lead-rating" value="">
+      <textarea id="adhd-lead-description" name="Description" style="display:none;"></textarea>
+      <div class="lead-modal__fields">
+        <label class="lead-modal__field">
+          <span>Förnamn <span class="lead-required">*</span></span>
+          <input type="text" id="First_Name" name="First Name" maxlength="40" autocomplete="given-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>Efternamn <span class="lead-required">*</span></span>
+          <input type="text" id="Last_Name" name="Last Name" maxlength="80" autocomplete="family-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>E-post <span class="lead-required">*</span></span>
+          <input type="email" id="Email" name="Email" maxlength="100" autocomplete="email" required>
+        </label>
+      </div>
+      <div class="lead-modal__actions">
+        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka & visa resultat</button>
+        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
+      </div>
+    </form>
+    <p class="lead-modal__privacy">Tack för din intresseanmälan. Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en mer detaljerad sammanställning om det behövs. Tack, Rikta Psykiatri-teamet.</p>
+  </div>
+</div>
+
+<script>
+  function validateEmail896517000000571075(){
+    var form = document.forms['WebToLeads896517000000571075'];
+    var emailFld = form.querySelectorAll('[type=email]');
+    var i;
+    for( i = 0; i < emailFld.length; i++ ){
+      var emailVal = emailFld[ i ].value;
+      if((emailVal.replace( /^\s+|\s+$/g,'' )).length != 0 ){
+        var atpos = emailVal.indexOf('@');
+        var dotpos = emailVal.lastIndexOf('.');
+        if( atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length ){
+          alert('Please enter a valid email address. ');
+          emailFld[ i ].focus();
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+  function checkMandatory896517000000571075(){
+    var mndFileds = new Array('First Name','Last Name','Email');
+    var fldLangVal = new Array('Förnamn','Efternamn','E-post');
+    for( i = 0; i < mndFileds.length; i++ ){
+      var fieldObj = document.forms['WebToLeads896517000000571075'][ mndFileds[ i ]];
+      if( fieldObj ){
+        if(((fieldObj.value ).replace( /^\s+|\s+$/g,'' )).length == 0 ){
+          alert(fldLangVal[ i ] + ' får inte vara tomt.');
+          fieldObj.focus();
+          return false;
+        }
+        else if( fieldObj.nodeName == 'SELECT' ){
+          if( fieldObj.options[fieldObj.selectedIndex].value == '-None-' ){
+            alert(fldLangVal[ i ] + ' cannot be none.');
+            fieldObj.focus();
+            return false;
+          }
+        }
+        else if( fieldObj.type == 'checkbox' ){
+          if( fieldObj.checked == false ){
+            alert('Please accept  ' + fldLangVal[ i ]);
+            fieldObj.focus();
+            return false;
+          }
+        }
+      }
+    }
+    if( !validateEmail896517000000571075()){
+      return false;
+    }
+    var urlparams = new URLSearchParams(window.location.search);
+    if( urlparams.has( 'service' ) && ( urlparams.get( 'service' ) === 'smarturl' )){
+      var webform = document.getElementById('webform896517000000571075');
+      var service = urlparams.get('service');
+      var smarturlfield = document.createElement('input');
+      smarturlfield.setAttribute('type', 'hidden');
+      smarturlfield.setAttribute('value', service);
+      smarturlfield.setAttribute('name', 'service');
+      webform.appendChild(smarturlfield);
+    }
+    document.querySelector('#webform896517000000571075 .btn.primary').setAttribute('disabled', true);
+  }
+</script>

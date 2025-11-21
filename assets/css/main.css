@@ -6159,6 +6159,154 @@ nav a.cta:active{
   margin: 0;
 }
 
+/* ===== ADHD Lead Modal ===== */
+.lead-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(18px, 4vw, 28px);
+}
+
+.lead-modal[hidden] {
+  display: none !important;
+}
+
+.lead-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.52);
+  backdrop-filter: blur(4px);
+}
+
+.lead-modal__dialog {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 100%);
+  background: #ffffff;
+  border-radius: 20px;
+  padding: clamp(22px, 4vw, 30px);
+  box-shadow: 0 32px 88px -44px rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.lead-modal__intro {
+  margin-bottom: 18px;
+}
+
+.lead-modal__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(15, 23, 42, 0.6);
+  margin: 0 0 6px;
+}
+
+.lead-modal__intro h3 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  color: #0f172a;
+}
+
+.lead-modal__intro p {
+  margin: 0 0 6px;
+  color: #4b5563;
+  line-height: 1.55;
+}
+
+.lead-modal__hint {
+  font-weight: 600;
+  color: #0f172a;
+  letter-spacing: 0;
+}
+
+.lead-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  color: #4b5563;
+}
+
+.lead-modal__fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin: 14px 0 6px;
+}
+
+.lead-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.lead-modal__field input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.9);
+  padding: 0 14px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.lead-modal__field input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 6px 24px -16px rgba(37, 99, 235, 0.6);
+}
+
+.lead-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.lead-modal__cancel {
+  background: transparent;
+  color: #374151;
+  border-color: rgba(55, 65, 81, 0.22);
+}
+
+.lead-modal__privacy {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.lead-required {
+  color: #e64e4e;
+}
+
+.lead-modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .lead-modal__dialog {
+    border-radius: 16px;
+  }
+
+  .lead-modal__intro h3 {
+    font-size: 22px;
+  }
+}
+
 /* ===== Guide Pages ===== */
 .guide-page {
   --guide-accent: var(--adhd-blue);
