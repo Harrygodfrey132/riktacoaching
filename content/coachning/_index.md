@@ -19,11 +19,6 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
         <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
         <a class="btn secondary" href="#program">Utforska programmen</a>
       </div>
-      <ul class="coachning-hero__signals">
-        <li>Legitimerade coacher och psykologer</li>
-        <li>Tvärprofessionella team med läkare och psykolog</li>
-        <li>Digitalt, hybrid eller på plats i Stockholm</li>
-      </ul>
     </div>
     <div class="coachning-hero__image">
       <img src="/img/coachning-hero-park.jpg" alt="Kliniker som stöttar patient i digitalt möte">
