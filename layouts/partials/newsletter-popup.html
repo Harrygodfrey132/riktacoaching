@@ -1,16 +1,8 @@
 <div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true">
   <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
-  <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-description">
-    <button type="button" class="newsletter-popup__close" aria-label="Close offer" data-popup-close>&times;</button>
-    <p class="newsletter-popup__eyebrow">New Patient Welcome</p>
-    <div class="newsletter-popup__badge">Free call + 2 checklists</div>
-    <h2 id="newsletter-popup-title">Book an eligibility call today and unlock two FREE clinician checklists.</h2>
-    <p id="newsletter-popup-description" class="newsletter-popup__lead">We'll guide you through a free 15-minute eligibility call, then send you the Concentration Checklist and ADHD Diagnosis Checklist so you can prepare with confidence.</p>
-    <ul class="newsletter-popup__benefits">
-      <li>✔️ Complimentary eligibility call with a Rikta clinician</li>
-      <li>✔️ Clinician-built Concentration Checklist</li>
-      <li>✔️ ADHD Diagnosis preparation checklist</li>
-    </ul>
+  <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
+    <button type="button" class="newsletter-popup__close" aria-label="Stäng erbjudandet" data-popup-close>&times;</button>
+    <h2 id="newsletter-popup-title">Boka ett bedömningssamtal redan idag.</h2>
     <div class="newsletter-popup__cta">
       <button
         type="button"
@@ -19,18 +11,13 @@
         data-cal-link="riktapsykiatri/15min"
         data-cal-namespace="15min"
         data-cal-config='{"layout":"month_view"}'
-      >Book an eligibility call today
+      >Boka ett bedömningssamtal
       </button>
-      <p class="newsletter-popup__booking-note">The calendar loads instantly inside this popup&mdash;no new tab, no waiting.</p>
     </div>
-    <div class="newsletter-popup__review" aria-label="Client review">
-      <p class="newsletter-popup__review-quote">"Rikta's clinicians made the process calm, focused, and easy to follow."</p>
-      <p class="newsletter-popup__review-author">Parent in Stockholm</p>
-    </div>
-    <p class="newsletter-popup__compliance">We adhere to Socialstyrelsen's clinical quality standards, evidence, and documentation requirements.</p>
+    <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">Vi följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.</p>
     <p class="newsletter-popup__privacy">
-      Free resources reserved for new eligibility call bookings.
-      <a href="/juridiskt/anvandarvillkor/">Terms & Conditions</a>
+      Gratismaterialet är reserverat för nya bokningar av bedömningssamtal.
+      <a href="/juridiskt/anvandarvillkor/">Villkor</a>
     </p>
   </div>
 </div>
