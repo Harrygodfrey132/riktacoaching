@@ -337,7 +337,7 @@ og_description: "Besvara frågor om de senaste sex månaderna och få rekommenda
             <span class="adhd-score__label">Totalpoäng</span>
             <span class="adhd-score__value" id="adhd-score-value">0</span>
           </div>
-          <p class="adhd-score__interpretation" id="adhd-score-interpretation">Besvara varje fråga för att visa din poäng och tolkning.</p>
+          <p class="adhd-score__interpretation" id="adhd-score-interpretation">Besvara alla frågor för att se din ASRS-baserade screeningtolkning.</p>
           <p class="adhd-score__note">Denna screening ställer ingen diagnos. Kontakta Rikta Psykiatri för klinisk bedömning, behandlingsplanering eller coachande stöd.</p>
         </div>
       </form>

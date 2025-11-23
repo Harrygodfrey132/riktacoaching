@@ -99,7 +99,11 @@
     ranges,
     defaultInterpretation,
     gateWithLeadForm = false,
-    onLeadRequired
+    onLeadRequired,
+    scoreCalculator,
+    buildInterpretation,
+    metaUpdater,
+    testName
   }) {
     const form = document.getElementById(formId);
     if (!form) return;
@@ -108,12 +112,15 @@
     const scoreValue = document.getElementById(scoreValueId);
     const interpretationEl = document.getElementById(interpretationId);
     const resetButton = form.querySelector('.adhd-screening__reset');
-    const interpretationClasses = Array.from(new Set(ranges.map(range => range.className).filter(Boolean)));
     let hideTimeout = null;
 
     function removeInterpretationClasses() {
       if (!interpretationEl) return;
-      interpretationClasses.forEach(cls => interpretationEl.classList.remove(cls));
+      const baseClass = 'adhd-score__interpretation';
+      interpretationEl.className = interpretationEl.className
+        .split(' ')
+        .filter(cls => cls === baseClass)
+        .join(' ') || baseClass;
     }
 
     function showScoreBox() {
@@ -141,23 +148,29 @@
       }, 350);
     }
 
-    function updateScoreDisplay(score, customInterpretation) {
+    function updateScoreDisplay(score, interpretationObj) {
       if (!scoreBox || !scoreValue || !interpretationEl) return;
       scoreValue.textContent = String(score);
       removeInterpretationClasses();
-      const match = ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
-      interpretationEl.textContent = customInterpretation || match.text;
-      if (match.className) {
+      const match = interpretationObj || ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
+      interpretationEl.textContent = (match && match.text) ? match.text : defaultInterpretation;
+      if (match && match.className) {
         interpretationEl.classList.add(match.className);
       }
     }
 
     function getInterpretation(score) {
+      if (typeof buildInterpretation === 'function') {
+        return buildInterpretation(score);
+      }
       return ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
     }
 
     function calculateScore() {
       const formData = new FormData(form);
+      if (typeof scoreCalculator === 'function') {
+        return scoreCalculator(formData, totalQuestions);
+      }
       let total = 0;
       let answered = 0;
       for (let i = 1; i <= totalQuestions; i += 1) {
@@ -191,16 +204,22 @@
       event.preventDefault();
       if (!form.reportValidity()) return;
 
-      const { total, answered } = calculateScore();
+      const scoreData = calculateScore();
+      const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        const interpretation = getInterpretation(total);
+        const interpretation = getInterpretation(scoreData);
         const renderResult = () => {
-          updateScoreDisplay(total, interpretation?.text);
+          updateScoreDisplay(total, interpretation);
+          if (typeof metaUpdater === 'function') {
+            metaUpdater(scoreData);
+          }
           showScoreBox();
         };
         const payload = {
-          total,
-          answered,
+          testName,
+          total: scoreData.total,
+          answered: scoreData.answered,
+          meta: scoreData.meta || {},
           interpretation: interpretation ? interpretation.text : '',
           answers: collectAnswerDetails(),
           renderResult
@@ -223,14 +242,22 @@
           removeInterpretationClasses();
           hideScoreBox();
         }
+        if (typeof metaUpdater === 'function') {
+          metaUpdater({ total: 0, answered: 0, meta: {} });
+        }
       });
     }
 
     form.addEventListener('change', () => {
       if (!scoreBox || scoreBox.hasAttribute('hidden')) return;
-      const { total, answered } = calculateScore();
+      const scoreData = calculateScore();
+      const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        updateScoreDisplay(total);
+        const interpretation = getInterpretation(scoreData);
+        updateScoreDisplay(total, interpretation);
+        if (typeof metaUpdater === 'function') {
+          metaUpdater(scoreData);
+        }
       }
     });
   }
@@ -251,7 +278,7 @@
   function buildLeadDescription(result) {
     if (!result) return '';
     const lines = [
-      'ADHD Screening (ASRS v1.1)',
+      result.testName || 'Screeningresultat',
       `Totalpoäng: ${result.total}`,
       `Tolkning: ${result.interpretation}`,
       'Svar:'
@@ -267,8 +294,13 @@
   function openLeadModal(result) {
     if (!leadModal || !leadForm) return;
     leadResultPayload = result;
-    if (leadSource && !leadSource.value) {
-      leadSource.value = 'ADHD Investigation';
+    if (leadSource) {
+      const derivedSource = (result?.testName || '').toLowerCase().includes('autism')
+        ? 'Autism Investigation'
+        : 'ADHD Investigation';
+      if (!leadSource.value || leadSource.value === 'ADHD Investigation') {
+        leadSource.value = derivedSource;
+      }
     }
     if (leadRating) {
       const ratingValue = Math.min(result.total || 0, 50);
@@ -334,21 +366,156 @@
     });
   }
 
+  const adhdPositiveThresholds = {
+    q1: value => value >= 2,
+    q2: value => value >= 3,
+    q3: value => value >= 2,
+    q4: value => value >= 3,
+    q5: value => value >= 2,
+    q6: value => value >= 3
+  };
+
+  function adhdScoreCalculator(formData, totalQuestions) {
+    let total = 0;
+    let answered = 0;
+    let partAPositives = 0;
+    let partBHighFrequency = 0;
+
+    for (let i = 1; i <= totalQuestions; i += 1) {
+      const value = formData.get(`q${i}`);
+      if (value !== null) {
+        const numeric = Number(value);
+        total += numeric;
+        answered += 1;
+        if (i <= 6) {
+          const key = `q${i}`;
+          const isPositive = adhdPositiveThresholds[key] ? adhdPositiveThresholds[key](numeric) : false;
+          if (isPositive) partAPositives += 1;
+        } else if (numeric >= 3) {
+          partBHighFrequency += 1;
+        }
+      }
+    }
+
+    return {
+      total,
+      answered,
+      meta: {
+        partAPositives,
+        partBHighFrequency
+      }
+    };
+  }
+
+  function adhdInterpretationBuilder(scoreData) {
+    const partAPositives = scoreData?.meta?.partAPositives || 0;
+    const hasStrongScreen = partAPositives >= 4;
+    const isBorderline = partAPositives === 3;
+
+    if (hasStrongScreen) {
+      return {
+        text: 'Svaren i Del A ligger över den etablerade ASRS-cutoffen. Vi rekommenderar en klinisk ADHD-bedömning.',
+        className: 'is-red'
+      };
+    }
+
+    if (isBorderline) {
+      return {
+        text: 'Svaren i Del A ligger nära ASRS-cutoffen. Om svårigheterna påverkar din vardag kan ett rådgivande samtal vara hjälpsamt.',
+        className: 'is-amber'
+      };
+    }
+
+    return {
+      text: 'Svaren i Del A ligger under ASRS-cutoffen. Följ upp om symtomen kvarstår eller förvärras över tid.',
+      className: ''
+    };
+  }
+
+  const adhdPartAElement = document.getElementById('adhd-part-a-positive');
+  const adhdPartBElement = document.getElementById('adhd-part-b-frequent');
+
+  function updateAdhdMeta(scoreData) {
+    if (!adhdPartAElement || !adhdPartBElement) return;
+    const partAPositives = scoreData?.meta?.partAPositives || 0;
+    const partBHighFrequency = scoreData?.meta?.partBHighFrequency || 0;
+    adhdPartAElement.textContent = `Del A-svarsmönster registrerat.`;
+    adhdPartBElement.textContent = `Del B-svarsmönster registrerat.`;
+  }
+
+  const autismSubscales = {
+    mentalising: [1, 4, 9, 11, 12, 13, 14],
+    sensory: [2, 7, 10],
+    social: [3, 5, 6, 8]
+  };
+
+  function autismScoreCalculator(formData, totalQuestions) {
+    let total = 0;
+    let answered = 0;
+    let mentalising = 0;
+    let sensory = 0;
+    let social = 0;
+
+    for (let i = 1; i <= totalQuestions; i += 1) {
+      const raw = formData.get(`q${i}`);
+      if (raw !== null) {
+        const value = Number(raw);
+        total += value;
+        answered += 1;
+        if (autismSubscales.mentalising.includes(i)) mentalising += value;
+        if (autismSubscales.sensory.includes(i)) sensory += value;
+        if (autismSubscales.social.includes(i)) social += value;
+      }
+    }
+
+    return {
+      total,
+      answered,
+      meta: {
+        mentalising,
+        sensory,
+        social
+      }
+    };
+  }
+
+  function autismInterpretationBuilder(scoreData) {
+    const total = scoreData?.total || 0;
+
+    if (total >= 14) {
+      return {
+        text: 'Resultatet ligger över screeningnivån och talar för vidare klinisk bedömning av autistiska drag.',
+        className: 'is-red'
+      };
+    }
+
+    if (total >= 10) {
+      return {
+        text: 'Resultatet visar flera autistiska drag. Ett rådgivande samtal kan hjälpa dig att avgöra nästa steg.',
+        className: 'is-amber'
+      };
+    }
+
+    return {
+      text: 'Resultatet ligger inom låg riskzon i denna screening. Följ upp om svårigheterna kvarstår eller ökar.',
+      className: ''
+    };
+  }
+
   initScreeningForm({
     formId: 'adhd-screening-form',
     totalQuestions: 18,
     scoreBoxId: 'adhd-score',
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
-    defaultInterpretation: 'Besvara varje fråga för att visa din poäng och tolkning.',
-    ranges: [
-      { max: 17, text: 'Symtomnivån ligger under den kliniska riskgränsen. Fortsätt observera vardagen och sök hjälp om läget förändras.' },
-      { max: 26, text: 'Svarsmönstret visar flera ADHD-indikatorer. Vi rekommenderar ett strukturerat bedömningssamtal med vårt neuropsykiatriska team.', className: 'is-amber' },
-      { max: 35, text: 'Symtombördan är uttalad och påverkar sannolikt skola, arbete eller hem. Boka en fullständig specialistledd utredning.', className: 'is-orange' },
-      { max: Infinity, text: 'Screeningen signalerar omfattande svårigheter förenliga med ADHD. Kontakta Rikta Psykiatri för en diagnostisk utredning.', className: 'is-red' }
-    ],
+    defaultInterpretation: 'Besvara alla frågor för att se din ASRS-baserade screeningtolkning.',
+    ranges: [],
+    scoreCalculator: adhdScoreCalculator,
+    buildInterpretation: adhdInterpretationBuilder,
+    metaUpdater: updateAdhdMeta,
     gateWithLeadForm: true,
-    onLeadRequired: openLeadModal
+    onLeadRequired: openLeadModal,
+    testName: 'ADHD Screening (ASRS v1.1)'
   });
 
   initScreeningForm({
@@ -357,13 +524,13 @@
     scoreBoxId: 'autism-score',
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din RAADS-14 poäng.',
-    ranges: [
-      { max: 13, text: 'Poängen ligger under den rekommenderade cut-off på 14 och talar för låg sannolikhet för autism i detta test.' },
-      { max: 20, text: 'Resultatet närmar sig cut-off. Ökad vaksamhet och eventuellt rådgivande samtal kan vara hjälpsamt.', className: 'is-amber' },
-      { max: 27, text: 'Autistiska drag framträder tydligt. En klinisk autismutredning rekommenderas för att få säkra svar.', className: 'is-orange' },
-      { max: Infinity, text: 'Poängen ligger klart över cut-off och talar starkt för att boka en komplett autismutredning hos Rikta Psykiatri.', className: 'is-red' }
-    ]
+    defaultInterpretation: 'Besvara alla frågor för att se din RAADS-14 screeningtolkning.',
+    ranges: [],
+    scoreCalculator: autismScoreCalculator,
+    buildInterpretation: autismInterpretationBuilder,
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'Autism Screening (RAADS-14)'
   });
 
   // ----- Newsletter Popup -----
