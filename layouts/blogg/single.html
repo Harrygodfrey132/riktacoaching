@@ -1,0 +1,25 @@
+{{ define "main" }}
+<main class="blog-simple" id="top">
+  <div class="container blog-simple__shell">
+    <div class="blog-simple__content">
+      <header class="blog-simple__header">
+        <div>
+          <p class="blog-simple__eyebrow">Blogg · Rikta Psykiatri</p>
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.description }}
+            <p class="blog-simple__lead">{{ . }}</p>
+          {{ end }}
+        </div>
+        <ul class="blog-simple__meta">
+          <li><span>Publicerad</span><strong>{{ .Date.Format "2006-01-02" }}</strong></li>
+          <li><span>Lästid</span><strong>{{ .ReadingTime }} min</strong></li>
+        </ul>
+      </header>
+      <div class="blog-simple__divider"></div>
+      <div class="blog-simple__body">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</main>
+{{ end }}
