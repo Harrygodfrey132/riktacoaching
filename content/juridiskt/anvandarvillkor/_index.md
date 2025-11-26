@@ -7,3 +7,5 @@ meta_description: "Villkor för användning av Rikta Psykiatris webbplats, tjän
 og_title: "Användarvillkor för Rikta Psykiatri"
 og_description: "Förstå regler för bokningar, digital kommunikation och ansvar när du använder våra tjänster."
 ---
+
+Observera: Allt innehåll i våra bloggposter och kunskapsartiklar speglar Rikta Psykiatris professionella perspektiv. Materialet är endast för information och ersätter inte individuell medicinsk bedömning eller behandling.

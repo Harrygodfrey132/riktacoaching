@@ -3,6 +3,11 @@ title: "Om ADHD – din guide till symtom, diagnos och stöd"
 date: 2024-09-27
 description: "En lättöverskådlig genomgång av vad ADHD är, hur diagnoser ställs och vilka behandlingar som hjälper."
 layout: "guide"
+meta_title: "Om ADHD – guide till symtom, diagnos och stöd | Rikta Psykiatri"
+meta_description: "En överskådlig guide om ADHD: symtom, diagnosprocess och vilka behandlingar och strategier som kan hjälpa i vardagen."
+meta_keywords: "ADHD guide, symtom, diagnos, behandling, stöd"
+hero: "/img/hero.jpg"
+hero_alt: "Stödjande samtal om ADHD"
 ---
 <div class="guide-page guide-page--adhd">
   <section class="guide-hero" id="intro">

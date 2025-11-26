@@ -2,6 +2,11 @@
 title: "Så fungerar en ADHD-utredning"
 date: 2025-04-24
 description: "Allt du behöver veta om hur en ADHD-utredning går till – från förberedelser till återkoppling och fortsatt stöd."
+meta_title: "Så fungerar en ADHD-utredning | Rikta Psykiatri"
+meta_description: "Steg-för-steg om hur en ADHD-utredning går till, vad du förbereder, vilka moment som ingår och vad som händer efteråt."
+meta_keywords: "ADHD-utredning, neuropsykiatrisk utredning, steg för steg, förberedelser, återkoppling"
+hero: "/img/adhd-utredning.jpg"
+hero_alt: "Professionell ADHD-utredning i samtalsrum"
 ---
 
 # Så fungerar en ADHD-utredning

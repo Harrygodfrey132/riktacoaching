@@ -2,6 +2,11 @@
 title: "Prokrastinering och ADHD"
 date: 2025-04-24
 description: "Varför vi skjuter upp saker vid ADHD och hur du bygger strategier som fungerar i vardagen."
+meta_title: "Prokrastinering och ADHD | Strategier som fungerar"
+meta_description: "Varför prokrastinering är vanligt vid ADHD och vilka konkreta strategier som hjälper dig att komma igång, hålla kurs och bli klar."
+meta_keywords: "prokrastinering, ADHD, komma igång, motivation, strategier"
+hero: "/img/iStock-1461189339.jpg"
+hero_alt: "Person som planerar för att minska prokrastinering"
 ---
 
 # Prokrastinering och ADHD

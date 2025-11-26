@@ -3,6 +3,11 @@ title: "Om autism – din guide till symtom, utredning och stöd"
 date: 2025-04-11
 description: "En tydlig genomgång av autism, diagnoskriterier, utredning och stödstrategier för vardagen."
 layout: "guide"
+meta_title: "Om autism – guide till symtom, utredning och stöd | Rikta Psykiatri"
+meta_description: "En klar guide om autism: vad diagnosen innebär, hur utredning går till och vilka stödstrategier som underlättar vardagen."
+meta_keywords: "autism guide, symtom, utredning, stöd, strategier"
+hero: "/img/autism-coachning.jpg"
+hero_alt: "Samtal om autismstöd"
 ---
 <div class="guide-page guide-page--autism">
   <section class="guide-hero" id="intro">
