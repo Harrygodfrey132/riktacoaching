@@ -103,7 +103,8 @@
     scoreCalculator,
     buildInterpretation,
     metaUpdater,
-    testName
+    testName,
+    transformValue
   }) {
     const form = document.getElementById(formId);
     if (!form) return;
@@ -176,7 +177,8 @@
       for (let i = 1; i <= totalQuestions; i += 1) {
         const value = formData.get(`q${i}`);
         if (value !== null) {
-          total += Number(value);
+          const numeric = transformValue ? transformValue(value, i) : Number(value);
+          total += numeric;
           answered += 1;
         }
       }
@@ -520,17 +522,40 @@
 
   initScreeningForm({
     formId: 'autism-screening-form',
-    totalQuestions: 14,
+    totalQuestions: 10,
     scoreBoxId: 'autism-score',
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din RAADS-14 screeningtolkning.',
-    ranges: [],
-    scoreCalculator: autismScoreCalculator,
-    buildInterpretation: autismInterpretationBuilder,
+    defaultInterpretation: 'Besvara alla frågor för att se din AQ-10 poäng.',
+    ranges: [
+      { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
+      { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
+    ],
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
-    testName: 'Autism Screening (RAADS-14)'
+    testName: 'Autism Screening (AQ-10)'
+  });
+
+  initScreeningForm({
+    formId: 'procrastination-screening-form',
+    totalQuestions: 15,
+    scoreBoxId: 'procrastination-score',
+    scoreValueId: 'procrastination-score-value',
+    interpretationId: 'procrastination-score-interpretation',
+    defaultInterpretation: 'Besvara alla frågor för att se din GPS-poäng.',
+    ranges: [
+      { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
+      { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
+      { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coaching.', className: 'is-red' }
+    ],
+    transformValue(value, questionNumber){
+      // Question 12 is reverse-scored (agreeing reduces procrastination score)
+      if(questionNumber === 12){
+        const num = Number(value);
+        return 6 - num; // invert 1-5 to 5-1
+      }
+      return Number(value);
+    }
   });
 
   // ----- Newsletter Popup -----

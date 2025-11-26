@@ -5832,6 +5832,31 @@ nav a.cta:active{
   color: #374151;
 }
 
+.adhd-screening__note {
+  position: relative;
+  z-index: 1;
+  margin: clamp(28px, 6vw, 48px) 0 0;
+  padding: clamp(24px, 4vw, 32px);
+  border-radius: 20px;
+  background: #f8fafc;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  color: #1f2937;
+  box-shadow: 0 24px 60px -36px rgba(15, 23, 42, 0.22);
+}
+.adhd-screening__note h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+.adhd-screening__note ul {
+  margin: 0 0 14px 20px;
+  color: #374151;
+}
+.adhd-screening__note p {
+  margin: 0 0 10px;
+  font-size: 15px;
+  color: #374151;
+}
+
 .adhd-section {
   position: relative;
   border: none;

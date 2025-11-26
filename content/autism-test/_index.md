@@ -1,172 +1,140 @@
 ---
 title: "Autism-test"
 draft: false
-meta_title: "Autism-test online | RAADS-14 screening"
-meta_keywords: "autism test online, RAADS-14, autism screening, självtest autism, Rikta Psykiatri"
-meta_description: "Gör RAADS-14 Screen – ett kort autism-självtest – och få vägledning kring nästa steg tillsammans med Rikta Psykiatri."
-og_title: "RAADS-14 Screen från Rikta Psykiatri"
-og_description: "Besvara frågorna för att identifiera mönster kopplade till autism och få rekommendationer om fortsatt stöd."
+meta_title: "Autism-test online | AQ-10 screening"
+meta_keywords: "autism test online, AQ-10, autism screening, självtest autism, Rikta Psykiatri"
+meta_description: "Gör AQ-10 – ett kort autism-självtest – och få vägledning kring nästa steg tillsammans med Rikta Psykiatri."
+og_title: "AQ-10 från Rikta Psykiatri"
+og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autism och få rekommendationer om fortsatt stöd."
 ---
 
 <section class="adhd-screening">
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
       <span class="adhd-screening__eyebrow">Självskattning</span>
-      <h1>RAADS-14 Screen</h1>
-      <p>Formuläret bygger på RAADS-14 Screen – ett evidensbaserat verktyg för att fånga autistiska drag hos ungdomar och vuxna. Besvara frågorna utifrån hur det faktiskt känns för dig.</p>
+      <h1>AQ-10 (kort autism-screening)</h1>
+      <p>Formuläret bygger på AQ-10 – ett kort, validerat screeningformulär för vuxna. Besvara frågorna utifrån hur du vanligtvis känner eller beter dig.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="autism-screening-form">
         <div class="adhd-screening__summary">
-          <p class="adhd-screening__lead">Använd svarsalternativet som bäst beskriver dig. RAADS-14 fokuserar på hur socialt samspel, sensorik och anpassning har fungerat både som barn och som vuxen.</p>
+          <p class="adhd-screening__lead">Välj det svar som bäst beskriver hur du vanligtvis känner eller beter dig. AQ-10 hjälper till att identifiera autistiska drag för att se om en vidare utredning kan vara relevant.</p>
           <dl class="adhd-meta">
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Källa</dt>
-              <dd class="adhd-meta__value">Ritvo Autism and Asperger Diagnostic Scale-14 (Eriksson, Andersen &amp; Bejerot, 2013).</dd>
+              <dd class="adhd-meta__value">Autism-Spectrum Quotient-10 (Baron-Cohen m.fl., 2001) – kortversion.</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Målgrupp</dt>
-              <dd class="adhd-meta__value">Ungdomar och vuxna som vill fånga autistiska drag.</dd>
+              <dd class="adhd-meta__value">Vuxna som vill screena för autistiska drag.</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Respondent</dt>
-              <dd class="adhd-meta__value">Du själv, eller en närstående som känner dig väl.</dd>
+              <dd class="adhd-meta__value">Du själv.</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Syfte</dt>
-              <dd class="adhd-meta__value">Tidigt stöd för att avgöra om en full autismutredning bör bokas.</dd>
+              <dd class="adhd-meta__value">Tidig vägledning om en diagnostisk autismutredning bör bokas.</dd>
+            </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Skala</dt>
+              <dd class="adhd-meta__value">Håller helt med / Håller delvis med = 1 poäng på raka påståenden. Fråga 4 &amp; 7 är omvända: oenighet ger 1 poäng.</dd>
             </div>
           </dl>
         </div>
-        <p class="adhd-screening__intro">Svara på varje fråga och använd samma definitioner som i blanketten ovan. Resultatet visar en screeningsammanfattning och ersätter inte en klinisk bedömning.</p>
+        <p class="adhd-screening__intro">Svara på varje fråga. Totalt 0–10 poäng. Ett resultat på 6 eller mer talar för förhöjd sannolikhet och vidare utredning.</p>
         <fieldset class="adhd-section">
-          <legend>RAADS-14 påståenden</legend>
+          <legend>AQ-10 – Svensk översättning</legend>
           <ol class="adhd-question-list">
             <li class="adhd-question">
-              <div class="adhd-question__prompt">När jag talar med andra har jag svårt att förstå hur de känner sig.</div>
+              <div class="adhd-question__prompt">Jag tycker det är svårt att gå in i en konversation.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q1" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Vissa vardagliga material känns mycket obehagliga när de rör huden.</div>
+              <div class="adhd-question__prompt">Jag märker ofta små detaljer som andra missar.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q2" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag har mycket svårt att klara grupparbeten och fungera i grupp.</div>
+              <div class="adhd-question__prompt">Jag har svårt att flöda naturligt i socialt umgänge.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q3" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Det är svårt att föreställa sig vad andra förväntar sig av mig.</div>
+              <div class="adhd-question__prompt">Jag tycker det är lätt att läsa av andra människors känslor. <span class="muted">(omvänd)</span></div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q4" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="0" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="0"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag vet ofta inte hur jag ska bete mig i sociala situationer.</div>
+              <div class="adhd-question__prompt">Jag fokuserar lätt på detaljer snarare än helheten.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q5" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag är bra på att småprata och kallprata med folk.</div>
+              <div class="adhd-question__prompt">Jag märker omedelbart små förändringar i en situation.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q6" value="0" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="1"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="2"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="3"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">När jag blir överväldigad av intryck behöver jag stänga ute omvärlden.</div>
+              <div class="adhd-question__prompt">Jag förstår andras avsikter även när de inte säger det rakt ut. <span class="muted">(omvänd)</span></div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q7" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="0" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="0"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Hur man skaffar vänner och umgås socialt känns obegripligt för mig.</div>
+              <div class="adhd-question__prompt">Människor tycker ofta att jag pratar på ett ovanligt sätt.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q8" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">I samtal har jag svårt att veta när det är min tur att tala eller lyssna.</div>
+              <div class="adhd-question__prompt">Jag föredrar att göra saker på samma sätt varje gång.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q9" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Ibland måste jag hålla för öronen för att stänga ute obehagliga ljud.</div>
+              <div class="adhd-question__prompt">Jag finner det svårt att förstå sociala regler.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q10" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Aldrig stämt</span></label>
-              </div>
-            </li>
-            <li class="adhd-question">
-              <div class="adhd-question__prompt">Det kan vara svårt att läsa av ansiktsuttryck och kroppsspråk när någon pratar.</div>
-              <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q11" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q11" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q11" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q11" value="0"><span>Aldrig stämt</span></label>
-              </div>
-            </li>
-            <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag fokuserar mer på detaljer än på helheten.</div>
-              <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q12" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q12" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q12" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q12" value="0"><span>Aldrig stämt</span></label>
-              </div>
-            </li>
-            <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag tar saker väldigt bokstavligt och missförstår därför ofta vad andra menar.</div>
-              <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q13" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q13" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q13" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q13" value="0"><span>Aldrig stämt</span></label>
-              </div>
-            </li>
-            <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag blir mycket upprörd när mitt sätt att göra saker plötsligt förändras.</div>
-              <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q14" value="3" required><span>Stämmer nu och när jag var ung</span></label>
-                <label class="adhd-response"><input type="radio" name="q14" value="2"><span>Stämmer bara nu</span></label>
-                <label class="adhd-response"><input type="radio" name="q14" value="1"><span>Stämmer bara före 16 års ålder</span></label>
-                <label class="adhd-response"><input type="radio" name="q14" value="0"><span>Aldrig stämt</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="1" required><span>Håller helt med</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="1"><span>Håller delvis med</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Håller delvis inte med</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Håller inte alls med</span></label>
               </div>
             </li>
           </ol>
@@ -180,10 +148,26 @@ og_description: "Besvara frågorna för att identifiera mönster kopplade till a
             <span class="adhd-score__label">Totalpoäng</span>
             <span class="adhd-score__value" id="autism-score-value">0</span>
           </div>
-          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din RAADS-14 poäng.</p>
+          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din AQ-10 poäng.</p>
           <p class="adhd-score__note">Självtestet ersätter inte en klinisk autismutredning. Kontakta Rikta Psykiatri för professionell bedömning, behandling eller coachning.</p>
         </div>
       </form>
+      <aside class="adhd-screening__note">
+        <h3>Hur poängen räknas</h3>
+        <ul>
+          <li>Varje fråga ger 1 poäng när du håller med (delvis eller helt) om ett autistiskt drag.</li>
+          <li>Fråga 4 och 7 är omvända: här ger oenighet 1 poäng.</li>
+          <li>Totalpoäng 0–10. Resultat ≥ 6 → positiv screening, rekommenderar fortsatt utredning.</li>
+        </ul>
+        <p><strong>Källor:</strong><br>
+        Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
+        National Institute for Health and Care Excellence (NICE). Autism spectrum disorder in adults: diagnosis and management. Klinisk riktlinje CG142, 2012.</p>
+        <p><strong>Svensk översättning:</strong><br>
+        Svensk översättning av Riktapsykiatri.se (2025), baserad på AQ-10.</p>
+        <p><strong>Viktigt:</strong><br>
+        Detta är ett screeningformulär, inte ett diagnostiskt test.<br>
+        Resultatet ger en indikation på om du kan ha nytta av en vidare utredning för autism, men kan inte användas för att fastställa diagnos. Om du får ett förhöjt resultat rekommenderar vi att du kontaktar vårdpersonal eller bokar en professionell neuropsykiatrisk bedömning.</p>
+      </aside>
     </div>
   </div>
 </section>
