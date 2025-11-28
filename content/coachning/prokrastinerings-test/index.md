@@ -10,6 +10,11 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
 
 <section class="adhd-screening">
   <div class="adhd-screening__container">
+    <header class="adhd-screening__header">
+      <span class="adhd-screening__eyebrow">Självskattning</span>
+      <h1>Prokrastinerings-test (GPS)</h1>
+      <p>General Procrastination Scale (GPS) av T.A. Lay (1986) är ett av de mest använda instrumenten för att mäta generell prokrastinering hos vuxna.</p>
+    </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="procrastination-screening-form">
