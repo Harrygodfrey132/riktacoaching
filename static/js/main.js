@@ -368,156 +368,21 @@
     });
   }
 
-  const adhdPositiveThresholds = {
-    q1: value => value >= 2,
-    q2: value => value >= 3,
-    q3: value => value >= 2,
-    q4: value => value >= 3,
-    q5: value => value >= 2,
-    q6: value => value >= 3
-  };
-
-  function adhdScoreCalculator(formData, totalQuestions) {
-    let total = 0;
-    let answered = 0;
-    let partAPositives = 0;
-    let partBHighFrequency = 0;
-
-    for (let i = 1; i <= totalQuestions; i += 1) {
-      const value = formData.get(`q${i}`);
-      if (value !== null) {
-        const numeric = Number(value);
-        total += numeric;
-        answered += 1;
-        if (i <= 6) {
-          const key = `q${i}`;
-          const isPositive = adhdPositiveThresholds[key] ? adhdPositiveThresholds[key](numeric) : false;
-          if (isPositive) partAPositives += 1;
-        } else if (numeric >= 3) {
-          partBHighFrequency += 1;
-        }
-      }
-    }
-
-    return {
-      total,
-      answered,
-      meta: {
-        partAPositives,
-        partBHighFrequency
-      }
-    };
-  }
-
-  function adhdInterpretationBuilder(scoreData) {
-    const partAPositives = scoreData?.meta?.partAPositives || 0;
-    const hasStrongScreen = partAPositives >= 4;
-    const isBorderline = partAPositives === 3;
-
-    if (hasStrongScreen) {
-      return {
-        text: 'Svaren i Del A ligger över den etablerade ASRS-cutoffen. Vi rekommenderar en klinisk ADHD-bedömning.',
-        className: 'is-red'
-      };
-    }
-
-    if (isBorderline) {
-      return {
-        text: 'Svaren i Del A ligger nära ASRS-cutoffen. Om svårigheterna påverkar din vardag kan ett rådgivande samtal vara hjälpsamt.',
-        className: 'is-amber'
-      };
-    }
-
-    return {
-      text: 'Svaren i Del A ligger under ASRS-cutoffen. Följ upp om symtomen kvarstår eller förvärras över tid.',
-      className: ''
-    };
-  }
-
-  const adhdPartAElement = document.getElementById('adhd-part-a-positive');
-  const adhdPartBElement = document.getElementById('adhd-part-b-frequent');
-
-  function updateAdhdMeta(scoreData) {
-    if (!adhdPartAElement || !adhdPartBElement) return;
-    const partAPositives = scoreData?.meta?.partAPositives || 0;
-    const partBHighFrequency = scoreData?.meta?.partBHighFrequency || 0;
-    adhdPartAElement.textContent = `Del A-svarsmönster registrerat.`;
-    adhdPartBElement.textContent = `Del B-svarsmönster registrerat.`;
-  }
-
-  const autismSubscales = {
-    mentalising: [1, 4, 9, 11, 12, 13, 14],
-    sensory: [2, 7, 10],
-    social: [3, 5, 6, 8]
-  };
-
-  function autismScoreCalculator(formData, totalQuestions) {
-    let total = 0;
-    let answered = 0;
-    let mentalising = 0;
-    let sensory = 0;
-    let social = 0;
-
-    for (let i = 1; i <= totalQuestions; i += 1) {
-      const raw = formData.get(`q${i}`);
-      if (raw !== null) {
-        const value = Number(raw);
-        total += value;
-        answered += 1;
-        if (autismSubscales.mentalising.includes(i)) mentalising += value;
-        if (autismSubscales.sensory.includes(i)) sensory += value;
-        if (autismSubscales.social.includes(i)) social += value;
-      }
-    }
-
-    return {
-      total,
-      answered,
-      meta: {
-        mentalising,
-        sensory,
-        social
-      }
-    };
-  }
-
-  function autismInterpretationBuilder(scoreData) {
-    const total = scoreData?.total || 0;
-
-    if (total >= 14) {
-      return {
-        text: 'Resultatet ligger över screeningnivån och talar för vidare klinisk bedömning av autistiska drag.',
-        className: 'is-red'
-      };
-    }
-
-    if (total >= 10) {
-      return {
-        text: 'Resultatet visar flera autistiska drag. Ett rådgivande samtal kan hjälpa dig att avgöra nästa steg.',
-        className: 'is-amber'
-      };
-    }
-
-    return {
-      text: 'Resultatet ligger inom låg riskzon i denna screening. Följ upp om svårigheterna kvarstår eller ökar.',
-      className: ''
-    };
-  }
-
   initScreeningForm({
     formId: 'adhd-screening-form',
-    totalQuestions: 18,
+    totalQuestions: 12,
     scoreBoxId: 'adhd-score',
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din ASRS-baserade screeningtolkning.',
-    ranges: [],
-    scoreCalculator: adhdScoreCalculator,
-    buildInterpretation: adhdInterpretationBuilder,
-    metaUpdater: updateAdhdMeta,
+    defaultInterpretation: 'Besvara alla frågor för att se din R-ARS-12 poäng.',
+    ranges: [
+      { max: 27, text: '12–27: låg grad av uppmärksamhets-/regleringssvårigheter.' },
+      { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
+      { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
+    ],
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
-    testName: 'ADHD Screening (ASRS v1.1)'
+    testName: 'Attention & Regulation Scale (R-ARS-12)'
   });
 
   initScreeningForm({
