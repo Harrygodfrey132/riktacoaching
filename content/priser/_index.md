@@ -106,5 +106,30 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         </article>
       </div>
     </div>
+    <div class="pricing-group">
+      <h3>ADHD &amp; autism terapi</h3>
+      <div class="pricing">
+        <article class="card">
+          <h3>ADHD-terapi</h3>
+          <p class="meta">Digitalt • 45 min</p>
+          <p class="price">1900 kr</p>
+          <ul class="details">
+            <li>Terapeutiska samtal med fokus på känsloreglering och beteendeförändring.</li>
+            <li>Genomförs av legitimerad psykolog med erfarenhet av ADHD.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Autism-terapi</h3>
+          <p class="meta">Digitalt • 45 min</p>
+          <p class="price">1900 kr</p>
+          <ul class="details">
+            <li>Stöd kring socialt samspel, kommunikation och sensoriska utmaningar.</li>
+            <li>Leds av legitimerad psykolog med specialistkunskap om autism.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
