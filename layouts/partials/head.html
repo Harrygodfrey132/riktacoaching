@@ -24,6 +24,8 @@
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="sv_SE">
   <link rel="canonical" href="{{ $page.Permalink }}">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBD3TNFENE"></script>
   <script>
@@ -33,7 +35,11 @@
 
     gtag('config', 'G-DBD3TNFENE');
   </script>
+  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- if .IsHome }}
+  <link rel="preload" as="image" href="/img/psychologist-picture.jpg" imagesrcset="/img/psychologist-picture.jpg 2121w" imagesizes="(max-width: 900px) 90vw, 640px">
+  {{- end }}
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" href="/favicon.ico">
 </head>
