@@ -1,6 +1,6 @@
 ---
 title: "Prokrastinerings-test"
-layout: coachning
+layout: screening
 meta_title: "Prokrastinerings-test online | GPS-screening"
 meta_description: "Gör General Procrastination Scale (GPS, 15 påståenden) och få en indikation på hur mycket prokrastinering påverkar din vardag."
 og_title: "Prokrastinerings-test (GPS)"
