@@ -6,8 +6,8 @@ layout: "guide"
 meta_title: "Om ADHD – guide till symtom, diagnos och stöd | Rikta Psykiatri"
 meta_description: "En överskådlig guide om ADHD: symtom, diagnosprocess och vilka behandlingar och strategier som kan hjälpa i vardagen."
 meta_keywords: "ADHD guide, symtom, diagnos, behandling, stöd"
-hero: "/img/hero.jpg"
-hero_alt: "Stödjande samtal om ADHD"
+hero: "/img/child-smiling-with-pillow.jpg"
+hero_alt: "Barn som ler och håller en kudde"
 ---
 <div class="guide-page guide-page--adhd">
   <section class="guide-hero" id="intro">
