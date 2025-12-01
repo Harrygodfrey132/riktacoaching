@@ -6,7 +6,8 @@ meta_title: "Varför en ADHD-diagnos kan vara viktig | Förståelse, stöd och f
 meta_description: "Så hjälper en ADHD-diagnos: tydligare självbild, mindre konflikt, bättre stöd i arbete och studier samt vägar till behandling och anpassningar."
 meta_keywords: "ADHD-diagnos, ADHD utredning, diagnos vuxen, varför ADHD-diagnos, ADHD stöd, Rikta Psykiatri"
 hero: "/img/adhd-utredning.jpg"
-hero_alt: "Person i samtal under en ADHD-utredning med anteckningar och dokument"
+hero: "/img/psychologist-smiling.jpg"
+hero_alt: "Psykolog som samtalar med klient under en utredning"
 ---
 
 # Varför en ADHD-diagnos kan vara viktig
