@@ -534,8 +534,8 @@ nav a.active {
   box-shadow: 0 18px 40px rgba(29, 44, 59, 0.12);
   overflow: hidden;
   display: grid;
-  grid-template-rows: auto 1fr;
-  min-height: clamp(300px, 32vw, 420px);
+  grid-template-rows: minmax(0, 0.65fr) minmax(0, 0.35fr);
+  min-height: clamp(320px, 34vw, 440px);
   border: 1px solid rgba(29, 44, 59, 0.05);
 }
 
@@ -6533,6 +6533,50 @@ nav a.cta:active{
   margin-top: 0;
   margin-bottom: 18px;
   color: rgba(15, 23, 42, 0.85);
+}
+
+.guide-accordion {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 20px;
+  padding: 0 0 18px;
+  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+}
+
+.guide-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  font-size: clamp(22px, 3.2vw, 32px);
+  font-weight: 700;
+  color: var(--guide-ink);
+  padding: 16px 0;
+  margin: 0 24px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.guide-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.guide-accordion summary::after {
+  content: "+";
+  font-size: 20px;
+  color: rgba(15, 23, 42, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.guide-accordion[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.guide-accordion__content {
+  padding: 18px 24px 0;
+}
+
+.guide-accordion__content .guide-section-grid {
+  gap: clamp(24px, 5vw, 60px);
 }
 
 .guide-card-grid {

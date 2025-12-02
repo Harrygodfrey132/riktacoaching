@@ -12,9 +12,9 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
 <section class="pricing-intro">
     <div class="container">
         <span class="badge">Specialistpsykiatri</span>
-        <h2>Våra bedömningsavgifter förklarade</h2>
+        <h2>Våra priser</h2>
         <p class="lead">
-            Hos Rikta Psykiatri träffar du legitimerade specialistläkare och psykologer som arbetar i fasta team. Vi erbjuder både digitala och fysiska besök och du har tillgång till ditt behandlingsteam via mejl mellan besöken. Nedan hittar du våra priser och vad som ingår.
+            Hos Rikta Psykiatri träffar du legitimerade specialistläkare och psykologer samt NPF-coacher. Vi erbjuder både digitala och fysiska besök och du har tillgång till ditt behandlingsteam via mejl mellan besöken. Nedan hittar du våra priser och vad som ingår.
         </p>
         <figure class="pricing-hero-figure">
             <img src="/img/scenic-background-picture.jpg" alt="Lugn miljö som speglar Rikta Psykiatris omsorgsfulla process">
