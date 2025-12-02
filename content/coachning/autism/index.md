@@ -25,7 +25,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
       </ul>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/autism-coachning.jpg" alt="Person som får autism-coachning digitalt">
+      <img src="/img/autism-coachning.jpg" alt="Person som får autism-coachning digitalt eller på mottagning">
     </div>
   </div>
 </section>

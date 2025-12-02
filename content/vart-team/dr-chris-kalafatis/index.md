@@ -13,7 +13,7 @@ focus: "Complex mood disorders, neuropsychiatry, second opinions"
 credentials:
   - "Member of the Royal College of Psychiatrists"
   - "Affiliate of King’s College London"
-availability: "Digital consultations across Sweden & UK"
+availability: "Digital consultations across Sweden & UK, in-person by arrangement"
 ---
 
 Dr Chris Kalafatis is a consultant psychiatrist recognised for his work on complex mood disorders and the neuropsychiatric interface. He supports patients who need nuanced medication plans, collaborative titration for ADHD, or second opinions following incomplete assessments.

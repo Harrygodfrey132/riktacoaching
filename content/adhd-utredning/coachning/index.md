@@ -186,7 +186,7 @@ page_class: "adhd-page--coachning"
       <details>
         <summary>Kan vi ses digitalt?</summary>
         <p>
-          Ja, vi ta alla våra coachningsessioner digitalt via videolänk. 
+          Ja, vi ta alla våra coachningsessioner digitalt via videolänk och kan även ordna fysiska möten om du föredrar det. 
         </p>
       </details>
       <details>

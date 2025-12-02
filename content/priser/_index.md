@@ -30,11 +30,52 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
   <div class="container">
     <h2>Priser</h2>
     <div class="pricing-group">
+      <h3>ADHD &amp; autism coachning</h3>
+      <div class="pricing">
+        <article class="card">
+          <h3>ADHD-coachning</h3>
+          <p class="meta">Digitalt eller på plats • 45 min</p>
+          <p class="price">1500 kr</p>
+          <ul class="details">
+            <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
+            <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Autism-coachning</h3>
+          <p class="meta">Digitalt eller på plats • 45 min</p>
+          <p class="price">1500 kr</p>
+          <ul class="details">
+            <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
+            <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
+      <h3>NPF-terapi</h3>
+      <div class="pricing">
+        <article class="card">
+          <h3>NPF-terapi</h3>
+          <p class="meta">Digitalt eller på plats • 45 min</p>
+          <p class="price">1900 kr</p>
+          <ul class="details">
+            <li>Stöd kring känsloreglering, socialt samspel och hantering av sensoriska intryck.</li>
+            <li>Praktiska strategier för vardagsstruktur och beteendeförändring.</li>
+            <li>Genomförs av legitimerad psykolog med erfarenhet av både ADHD och autism.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+    <div class="pricing-group">
       <h3>Neuropsykiatriska utredningar</h3>
       <div class="pricing">
         <article class="card">
           <h3>Utredning för ADHD & autism (neuropsykiatrisk utredning)</h3>
-          <p class="meta">Digitalt besök</p>
+          <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">35000kr</p>
           <ul class="details">
             <li>Bedömningssamtal med specialistpsykiater</li>
@@ -45,7 +86,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         </article>
         <article class="card">
           <h3>Screening för ADHD och autism</h3>
-          <p class="meta">Digitalt besök</p>
+          <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">0 kr</p>
           <ul class="details">
             <li>Samtal med legitimerad psykolog</li>
@@ -70,62 +111,12 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         </article>
         <article class="card">
           <h3>Insättning</h3>
-          <p class="meta">Digitalt</p>
+          <p class="meta">Digitalt eller på plats</p>
           <p class="price">7600 kr</p>
           <ul class="details">
             <li>Startkostnad 7 600 kr (6 mån), därefter 2 400 kr/halvår.</li>
             <li>Inkluderar all behandling + 2st remisser skickade till psykiatrin.</li>
             <li>Skriftlig sammanfattning inom 48 timmar</li>
-          </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-    </div>
-    <div class="pricing-group">
-      <h3>ADHD &amp; autism coachning</h3>
-      <div class="pricing">
-        <article class="card">
-          <h3>ADHD-coachning</h3>
-          <p class="meta">Digitalt • 45 min</p>
-          <p class="price">1500 kr</p>
-          <ul class="details">
-            <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
-            <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
-          </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card">
-          <h3>Autism-coachning</h3>
-          <p class="meta">Digitalt • 45 min</p>
-          <p class="price">1500 kr</p>
-          <ul class="details">
-            <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
-            <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
-          </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-    </div>
-    <div class="pricing-group">
-      <h3>ADHD &amp; autism terapi</h3>
-      <div class="pricing">
-        <article class="card">
-          <h3>ADHD-terapi</h3>
-          <p class="meta">Digitalt • 45 min</p>
-          <p class="price">1900 kr</p>
-          <ul class="details">
-            <li>Terapeutiska samtal med fokus på känsloreglering och beteendeförändring.</li>
-            <li>Genomförs av legitimerad psykolog med erfarenhet av ADHD.</li>
-          </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card">
-          <h3>Autism-terapi</h3>
-          <p class="meta">Digitalt • 45 min</p>
-          <p class="price">1900 kr</p>
-          <ul class="details">
-            <li>Stöd kring socialt samspel, kommunikation och sensoriska utmaningar.</li>
-            <li>Leds av legitimerad psykolog med specialistkunskap om autism.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>

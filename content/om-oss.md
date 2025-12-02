@@ -54,7 +54,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       </div>
       <div class="intro-stats animate-up">
         <figure class="intro-photo primary">
-          <img src="/img/coachning-hero-park.jpg" alt="Digitalt samtal mellan patient och psykolog">
+          <img src="/img/coachning-hero-park.jpg" alt="Samtal mellan patient och psykolog digitalt eller på mottagning">
         </figure>
       </div>
     </div>

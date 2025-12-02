@@ -29,7 +29,7 @@ page_class: "adhd-page--medication"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/psychologist-computer.jpg" alt="Specialistläkare som går igenom läkemedelsplan digitalt">
+          <img src="/img/psychologist-computer.jpg" alt="Specialistläkare som går igenom läkemedelsplan digitalt eller på mottagning">
         </figure>
       </div>
     </div>

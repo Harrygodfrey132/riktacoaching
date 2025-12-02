@@ -21,7 +21,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
       </div>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/coachning-hero-park.jpg" alt="Kliniker som stöttar patient i digitalt möte">
+      <img src="/img/coachning-hero-park.jpg" alt="Kliniker som stöttar patient i digitalt möte eller på mottagning">
     </div>
   </div>
 </section>
