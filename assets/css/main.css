@@ -6537,19 +6537,22 @@ nav a.cta:active{
 
 .guide-accordion {
   border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 20px;
-  padding: 0 0 18px;
-  box-shadow: 0 16px 32px rgba(15, 23, 42, 0.06);
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.05);
+  max-width: 980px;
+  margin: clamp(12px, 2vw, 18px) auto 0;
+  background: #fff;
 }
 
 .guide-accordion summary {
   list-style: none;
   cursor: pointer;
-  font-size: clamp(22px, 3.2vw, 32px);
+  font-size: clamp(18px, 3vw, 24px);
   font-weight: 700;
   color: var(--guide-ink);
-  padding: 16px 0;
-  margin: 0 24px;
+  padding: 14px 18px;
+  margin: 0;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
   display: flex;
   align-items: center;
@@ -6572,11 +6575,11 @@ nav a.cta:active{
 }
 
 .guide-accordion__content {
-  padding: 18px 24px 0;
+  padding: 14px 18px 18px;
 }
 
 .guide-accordion__content .guide-section-grid {
-  gap: clamp(24px, 5vw, 60px);
+  gap: clamp(20px, 4vw, 48px);
 }
 
 .guide-card-grid {

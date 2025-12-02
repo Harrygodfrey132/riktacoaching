@@ -53,20 +53,6 @@ hero_alt: "Samtal om autismstöd"
           biologiska och miljömässiga faktorer.
         </p>
       </div>
-      <div class="guide-card-grid">
-        <article class="guide-card guide-card--accent">
-          <h3>Autism är</h3>
-          <ul class="guide-card-list">
-            <li>Ett sätt att bearbeta information.</li>
-            <li>En kombination av styrkor och utmaningar.</li>
-            <li>Inte ett resultat av uppfostran.</li>
-          </ul>
-        </article>
-        <article class="guide-card">
-          <h3>Autism är inte</h3>
-          <p>En övergående fas eller ett tecken på bristande engagemang. Det handlar om hur hjärnan tolkar världen.</p>
-        </article>
-      </div>
     </div>
   </section>
 
