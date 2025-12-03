@@ -54,7 +54,8 @@
         "keywords" .Params.meta_keywords
       -}}
       <script type="application/ld+json">
-        {{- $schema | jsonify -}}
+        {{- /* Avoid html/template JS-context escaping (we need raw JSON-LD). */ -}}
+        {{- $schema | jsonify | safeJS -}}
       </script>
     </div>
   </div>
