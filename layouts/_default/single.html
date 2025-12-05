@@ -1,5 +1,10 @@
 {{ define "main" }}
-  <article class="adhd-page{{ with .Params.page_class }} {{ . }}{{ end }}">
-    {{ .Content }}
-  </article>
+  <main class="screen" id="top">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </main>
 {{ end }}
