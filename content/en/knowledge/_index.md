@@ -1,5 +1,8 @@
 ---
 title: "Knowledge and guides"
+layout: "kunskap/list"
+type: "kunskap"
+url: "/en/knowledge/"
 meta_title: "Knowledge | Rikta Psychiatry"
 meta_description: "Collected knowledge on ADHD, autism, and neurodiversity support. Tips, guides, and the latest insights from Rikta Psychiatry."
 summary: "Guides, articles, and tools to help you understand neurodivergent conditions."
