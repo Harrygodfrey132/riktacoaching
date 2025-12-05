@@ -1,5 +1,6 @@
 ---
 title: "Autismutredning"
+translationKey: "autism-assessment"
 draft: false
 meta_title: "Autismutredningar för alla åldrar | Rikta Psykiatri"
 meta_keywords: "autismutredning privat, neuroaffirmativ vård, autism specialist, Rikta autism team, utredning autism vuxna barn"

@@ -1,5 +1,6 @@
 ---
 title: "Why an ADHD diagnosis can matter"
+translationKey: "adhd-diagnosis-matters"
 date: 2025-12-01
 description: "How an ADHD diagnosis can change daily life, reduce self-criticism, and open access to the right support, treatment, and accommodations."
 meta_title: "Why an ADHD diagnosis can matter | Understanding, support, and change"

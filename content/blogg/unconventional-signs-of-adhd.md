@@ -1,5 +1,6 @@
 ---
 title: "Unconventional Signs of ADHD to Notice"
+translationKey: "unconventional-signs-of-adhd"
 date: 2025-05-26
 description: "Less-recognized patterns that can accompany ADHD—and guidance on when to seek a professional assessment."
 meta_title: "Unconventional Signs of ADHD to Notice | Rikta Psykiatri"

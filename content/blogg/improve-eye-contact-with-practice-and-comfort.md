@@ -1,5 +1,6 @@
 ---
 title: "Improve Eye Contact with Practice and Comfort"
+translationKey: "improve-eye-contact-with-practice-and-comfort"
 date: 2025-05-26
 description: "Practical, professional guidance to build natural eye contact—combining everyday experiments and a structured three-session coaching plan."
 meta_title: "Improve Eye Contact with Practice and Comfort | Rikta Psykiatri"

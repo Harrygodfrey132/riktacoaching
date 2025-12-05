@@ -1,5 +1,6 @@
 ---
 title: "10 ADHD-strategier som faktiskt gör skillnad"
+translationKey: "10-adhd-strategies-that-actually-help"
 date: 2025-11-25
 description: "Praktiska, evidensnära verktyg som matchar hur ADHD-hjärnan fungerar i vardagen."
 meta_title: "10 ADHD-strategier som faktiskt gör skillnad | Rikta Psykiatri"

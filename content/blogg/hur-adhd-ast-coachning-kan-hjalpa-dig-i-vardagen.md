@@ -1,5 +1,6 @@
 ---
 title: "Hur ADHD- och AST-coachning kan hjälpa dig i vardagen"
+translationKey: "adhd-asd-coaching-everyday-life"
 date: 2025-12-02
 description: "Hur coachning för ADHD och AST kan göra vardagen mer hanterbar genom praktiska strategier, struktur och stöd."
 meta_title: "Hur ADHD- och AST-coachning kan hjälpa dig i vardagen | Rikta Psykiatri"

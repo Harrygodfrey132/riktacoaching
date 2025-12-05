@@ -1,5 +1,6 @@
 ---
 title: "ADHD and executive functions"
+translationKey: "adhd-and-executive-functions"
 date: 2025-12-01
 description: "What executive functions are, how they relate to ADHD, and practical ways to support your brain in daily life."
 meta_title: "ADHD and executive functions | How to support the brain’s “manager”"

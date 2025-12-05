@@ -1,5 +1,6 @@
 ---
 title: "ADHD assessment"
+translationKey: "adhd-assessment"
 draft: false
 layout: "adhd-assessment/list"
 url: "/en/adhd-assessment/"

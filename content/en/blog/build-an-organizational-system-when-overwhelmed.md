@@ -1,5 +1,6 @@
 ---
 title: "Build an organizational system when everything feels overwhelming"
+translationKey: "build-an-organizational-system-when-overwhelmed"
 date: 2025-05-26
 description: "A structured, professional guide to capturing, prioritising, and delivering work when your mind feels overloaded."
 meta_title: "Build an organizational system when overwhelmed | Rikta Psychiatry"

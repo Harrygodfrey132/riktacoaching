@@ -1,5 +1,6 @@
 ---
 title: "Autism assessment"
+translationKey: "autism-assessment"
 draft: false
 layout: "autism-assessment"
 meta_title: "Autism assessments | Rikta Psychiatry"

@@ -1,5 +1,6 @@
 ---
 title: "About autism – your guide to symptoms, assessment, and support"
+translationKey: "autism-guide"
 date: 2025-04-11
 description: "A clear walkthrough of autism, diagnostic criteria, assessment, and everyday support strategies."
 layout: "guide"

@@ -1,5 +1,6 @@
 ---
 title: "Bli en del av teamet"
+translationKey: "join-our-team"
 draft: false
 meta_title: "Karriär på Rikta Psykiatri | Bli en del av teamet"
 meta_keywords: "psykolog jobb, psykiater karriär, neuropsykiatri jobb, Rikta rekryterar, specialistpsykiatri team"

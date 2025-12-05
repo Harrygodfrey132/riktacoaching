@@ -1,5 +1,6 @@
 ---
 title: "Early signs of ADHD in adults"
+translationKey: "early-signs-of-adhd-in-adults"
 date: 2025-12-02
 description: "Early signs of ADHD in adults and how they show up in everyday life."
 meta_title: "Early signs of ADHD in adults | Rikta Psychiatry"

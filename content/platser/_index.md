@@ -1,5 +1,6 @@
 ---
 title: "Platser"
+translationKey: "locations"
 draft: false
 meta_title: "Våra mottagningar och digitala besök | Rikta Psykiatri"
 meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Sverige"

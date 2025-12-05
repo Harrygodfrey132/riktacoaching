@@ -1,5 +1,6 @@
 ---
 title: "Locations"
+translationKey: "locations"
 draft: false
 meta_title: "Locations | Rikta Psychiatry"
 meta_description: "Visit us in Stockholm or meet online anywhere in Sweden."

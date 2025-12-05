@@ -1,5 +1,6 @@
 ---
 title: "Pricing"
+translationKey: "pricing"
 layout: "priser"
 draft: false
 meta_title: "Pricing for ADHD and autism assessments | Rikta Psychiatry"

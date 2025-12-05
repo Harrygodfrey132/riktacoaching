@@ -1,5 +1,6 @@
 ---
 title: "ADHD och exekutiva funktioner"
+translationKey: "adhd-and-executive-functions"
 date: 2025-12-01
 description: "Vad exekutiva funktioner är, hur de hänger ihop med ADHD och praktiska sätt att stötta hjärnan i vardagen."
 meta_title: "ADHD och exekutiva funktioner | Så stöttar du hjärnans \"chef\""

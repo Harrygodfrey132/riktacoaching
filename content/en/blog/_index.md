@@ -1,5 +1,6 @@
 ---
 title: "Blog"
+translationKey: "blog"
 draft: false
 url: "/en/blog/"
 type: "blogg"

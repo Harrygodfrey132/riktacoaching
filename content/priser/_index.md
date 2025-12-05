@@ -1,5 +1,6 @@
 ---
 title: "Priser"
+translationKey: "pricing"
 layout: "priser"
 draft: false
 meta_title: "Priser för ADHD- och autismutredning | Rikta Psykiatri"

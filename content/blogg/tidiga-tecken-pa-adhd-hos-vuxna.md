@@ -1,5 +1,6 @@
 ---
 title: "Tidiga tecken på ADHD hos vuxna"
+translationKey: "early-signs-of-adhd-in-adults"
 date: 2025-12-02
 description: "Tidiga tecken på ADHD hos vuxna och hur de kan märkas i vardagen."
 meta_title: "Tidiga tecken på ADHD hos vuxna | Rikta Psykiatri"

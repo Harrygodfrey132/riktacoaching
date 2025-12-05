@@ -1,5 +1,6 @@
 ---
 title: "How to Stop Procrastinating for Good"
+translationKey: "how-to-stop-procrastinating-for-good"
 date: 2025-05-26
 description: "A structured, professional guide to understanding why we delay and the practical steps that help you start, deliver, and finish."
 meta_title: "How to Stop Procrastinating for Good | Rikta Psykiatri"

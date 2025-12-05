@@ -1,5 +1,6 @@
 ---
 title: "ADHD och ADD – likheter och skillnader"
+translationKey: "adhd-and-add-similarities-and-differences"
 date: 2025-04-24
 description: "En genomgång av hur ADHD i ouppmärksam form (ADD) skiljer sig från den kombinerade presentationen – och vad det betyder i vardagen."
 meta_title: "ADHD och ADD – likheter och skillnader | Rikta Psykiatri"

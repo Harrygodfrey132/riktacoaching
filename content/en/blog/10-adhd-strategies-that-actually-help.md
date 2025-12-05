@@ -1,5 +1,6 @@
 ---
 title: "10 ADHD strategies that actually help"
+translationKey: "10-adhd-strategies-that-actually-help"
 date: 2025-11-25
 description: "Ten practical ADHD strategies that make a real difference for focus, organisation, and wellbeing."
 meta_title: "10 ADHD strategies that actually help | Practical tools that work"

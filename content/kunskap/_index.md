@@ -1,5 +1,6 @@
 ---
 title: "Kunskap och guider"
+translationKey: "knowledge"
 meta_title: "Kunskap | Rikta Psykiatri"
 meta_description: "Samlad kunskap om ADHD, autism och neuropsykiatriskt stöd. Tips, guider och senaste forskningen från Rikta Psykiatri."
 summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykiatriska diagnoser."

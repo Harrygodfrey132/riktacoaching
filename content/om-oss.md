@@ -1,5 +1,6 @@
 ---
 title: "Om Rikta Psykiatri"
+translationKey: "about-us"
 layout: "about"
 meta_title: "Om Rikta Psykiatri | Vårt specialistteam"
 meta_keywords: "Rikta Psykiatri team, specialistpsykiatri, ADHD experter, neuropsykiatriskt team, privat psykiatri Sverige"

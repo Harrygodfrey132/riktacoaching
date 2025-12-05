@@ -1,5 +1,6 @@
 ---
 title: "ADHD and ADD – similarities and differences"
+translationKey: "adhd-and-add-similarities-and-differences"
 date: 2025-04-24
 description: "A walkthrough of how inattentive ADHD (ADD) differs from the combined presentation — and what that means in daily life."
 meta_title: "ADHD and ADD – similarities and differences | Rikta Psychiatry"

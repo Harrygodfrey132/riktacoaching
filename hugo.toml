@@ -4,17 +4,21 @@ title = "Rikta Psykiatri"
 defaultContentLanguage = "sv"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
-disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
+disableKinds = ["taxonomy","term","sitemap"]   # no taxonomies and custom sitemap handling
 
 [languages]
   [languages.sv]
     languageName = "Svenska"
     weight = 1
+    [languages.sv.outputs]
+      home = ["HTML","RSS","JSON","SITEMAP_SV","SITEMAP_EN"]
   [languages.en]
     languageName = "English"
     languageCode = "en"
     title = "Rikta Psychiatry"
     weight = 2
+    [languages.en.outputs]
+      home = ["HTML","RSS","JSON","SITEMAP_EN"]
 
 [params]
   primary = "#000000"
@@ -31,6 +35,20 @@ disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
 
 [outputs]
   home = ["HTML","RSS","JSON"]
+
+[outputFormats.SITEMAP_SV]
+  mediaType = "application/xml"
+  baseName = "sitemap-sv"
+  isPlainText = true
+  notAlternative = true
+  rel = "sitemap"
+
+[outputFormats.SITEMAP_EN]
+  mediaType = "application/xml"
+  baseName = "sitemap-en"
+  isPlainText = true
+  notAlternative = true
+  rel = "sitemap"
 
 # Optional: silence the "raw HTML omitted" warning
 ignoreLogs = ['warning-goldmark-raw-html']

@@ -1,5 +1,6 @@
 ---
 title: "Maskering och autism"
+translationKey: "masking-and-autism"
 date: 2025-01-06
 description: "Maskering syftar på strategier autistiska personer använder för att dölja sina naturliga beteenden för att framstå som neurotypiska."
 meta_title: "Maskering och autism | Rikta Psykiatri"

@@ -1,5 +1,6 @@
 ---
 title: "Kontakta oss"
+translationKey: "contact"
 draft: false
 meta_title: "Kontakta Rikta Psykiatri | Boka konsultation"
 meta_keywords: "kontakta Rikta Psykiatri, boka ADHD utredning, psykiater kontakt, neuropsykiatri kontakt, privat psykiatri Stockholm"

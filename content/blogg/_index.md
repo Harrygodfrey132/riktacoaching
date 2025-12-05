@@ -1,5 +1,6 @@
 ---
 title: "Blogg"
+translationKey: "blog"
 draft: false
 meta_title: "Blogg om neuropsykiatri | Rikta Psykiatri"
 meta_keywords: "ADHD blogg, autism artiklar, neuropsykiatri tips, Rikta Psykiatri blogg, mental hälsa resurser"

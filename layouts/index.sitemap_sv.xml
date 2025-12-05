@@ -1,0 +1,29 @@
+{{- $site := .Site -}}
+{{- $pages := union (slice $site.Home) (union $site.RegularPages $site.Sections) -}}
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {{- range $pages }}
+  <url>
+    <loc>{{ .Permalink }}</loc>
+    {{- with .Lastmod }}
+    <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+    {{- end }}
+    {{- if .IsTranslated }}
+      {{- $alts := append .AllTranslations (slice .) -}}
+      {{- $altSeen := newScratch -}}
+      {{- range $alts }}
+        {{- $hreflang := "sv" -}}
+        {{- if in .Permalink "/en/" -}}
+          {{- $hreflang = "en" -}}
+        {{- end -}}
+        {{- $key := printf "%s|%s" $hreflang .Permalink -}}
+        {{- if not ($altSeen.Get $key) -}}
+          {{- $altSeen.Set $key true -}}
+    <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}" />
+        {{- end -}}
+      {{- end }}
+    {{- end }}
+  </url>
+  {{- end }}
+</urlset>

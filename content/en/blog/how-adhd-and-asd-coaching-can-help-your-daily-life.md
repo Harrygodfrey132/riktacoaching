@@ -1,5 +1,6 @@
 ---
 title: "How ADHD and ASD coaching can help your daily life"
+translationKey: "adhd-asd-coaching-everyday-life"
 date: 2025-12-02
 description: "How coaching for ADHD and ASD can make daily life more manageable through practical strategies, structure, and support."
 meta_title: "How ADHD and ASD coaching can help your daily life | Rikta Psychiatry"

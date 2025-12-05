@@ -1,5 +1,6 @@
 ---
 title: "Masking and autism"
+translationKey: "masking-and-autism"
 date: 2025-01-06
 description: "Masking refers to strategies autistic people use to hide natural behaviours in order to appear neurotypical."
 meta_title: "Masking and autism | Rikta Psychiatry"

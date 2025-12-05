@@ -1,5 +1,6 @@
 ---
 title: "Om autism – din guide till symtom, utredning och stöd"
+translationKey: "autism-guide"
 date: 2025-04-11
 description: "En tydlig genomgång av autism, diagnoskriterier, utredning och stödstrategier för vardagen."
 layout: "guide"

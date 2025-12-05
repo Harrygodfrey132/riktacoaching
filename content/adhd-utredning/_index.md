@@ -1,5 +1,6 @@
 ---
 title: "ADHD Assessment"
+translationKey: "adhd-assessment"
 draft: false
 meta_title: "ADHD-utredning för vuxna och ungdomar | Rikta"
 meta_keywords: "ADHD utredning, privat ADHD bedömning, neuropsykiatri ADHD, specialistpsykiater ADHD, ADHD klinik Stockholm"

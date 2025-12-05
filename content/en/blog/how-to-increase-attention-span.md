@@ -1,5 +1,6 @@
 ---
 title: "How to increase your attention span"
+translationKey: "how-to-increase-attention-span"
 date: 2025-05-26
 description: "Evidence-informed ways to rebuild focus in a distracted world—habits, environments, and pacing that actually work."
 meta_title: "How to increase your attention span | Rikta Psychiatry"

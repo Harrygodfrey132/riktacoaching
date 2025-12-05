@@ -1,5 +1,6 @@
 ---
 title: "Join our team"
+translationKey: "join-our-team"
 draft: false
 meta_title: "Careers at Rikta Psychiatry"
 meta_description: "Work with specialist psychiatrists, psychologists, and coaches to deliver clear, compassionate neuropsychiatric care."

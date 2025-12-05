@@ -1,5 +1,6 @@
 ---
 title: "How an ADHD assessment works"
+translationKey: "how-an-adhd-assessment-works"
 date: 2025-04-24
 description: "Everything you need to know about an ADHD assessment – from preparation to feedback and ongoing support."
 meta_title: "How an ADHD assessment works | Rikta Psychiatry"

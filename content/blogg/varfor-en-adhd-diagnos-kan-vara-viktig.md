@@ -1,5 +1,6 @@
 ---
 title: "Varför en ADHD-diagnos kan vara viktig"
+translationKey: "adhd-diagnosis-matters"
 date: 2025-12-01
 description: "Varför en ADHD-diagnos kan göra skillnad i vardagen, minska självkritik och öppna för rätt stöd, behandling och anpassningar."
 meta_title: "Varför en ADHD-diagnos kan vara viktig | Förståelse, stöd och förändring"

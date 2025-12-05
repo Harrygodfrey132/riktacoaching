@@ -1,5 +1,6 @@
 ---
 title: "Procrastination and ADHD"
+translationKey: "procrastination-and-adhd"
 date: 2025-04-24
 description: "Why procrastination happens with ADHD and how to build strategies that work in daily life."
 meta_title: "Procrastination and ADHD | Strategies that work"

@@ -1,5 +1,6 @@
 ---
 title: "ADHD-test"
+translationKey: "adhd-test"
 draft: false
 meta_title: "R-ARS-12 | Självskattning för uppmärksamhet och reglering"
 meta_keywords: "ADHD test online, uppmärksamhet test, självskattning fokus, R-ARS-12, Rikta Psykiatri"

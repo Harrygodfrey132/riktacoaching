@@ -1,5 +1,6 @@
 ---
 title: "Så fungerar en ADHD-utredning"
+translationKey: "how-an-adhd-assessment-works"
 date: 2025-04-24
 description: "Allt du behöver veta om hur en ADHD-utredning går till – från förberedelser till återkoppling och fortsatt stöd."
 meta_title: "Så fungerar en ADHD-utredning | Rikta Psykiatri"

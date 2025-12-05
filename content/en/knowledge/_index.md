@@ -1,5 +1,6 @@
 ---
 title: "Knowledge and guides"
+translationKey: "knowledge"
 layout: "kunskap/list"
 type: "kunskap"
 url: "/en/knowledge/"

@@ -1,5 +1,6 @@
 ---
 title: "Prokrastinering och ADHD"
+translationKey: "procrastination-and-adhd"
 date: 2025-04-24
 description: "Varför vi skjuter upp saker vid ADHD och hur du bygger strategier som fungerar i vardagen."
 meta_title: "Prokrastinering och ADHD | Strategier som fungerar"

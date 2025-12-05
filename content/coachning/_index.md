@@ -1,5 +1,6 @@
 ---
 title: "Coachning som kompletterar din diagnos"
+translationKey: "coaching"
 layout: coachning
 meta_title: "Coachning för ADHD & autism | Rikta Psykiatri"
 meta_description: "Överblicka våra coachningsprogram för ADHD och autism. Jämför fokusområden och hitta rätt stödteam hos Rikta Psykiatri."

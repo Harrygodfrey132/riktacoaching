@@ -1,5 +1,6 @@
 ---
 title: "ADHD test"
+translationKey: "adhd-test"
 draft: false
 meta_title: "R-ARS-12 | Attention & Regulation Self-Check"
 meta_keywords: "ADHD test online, attention test, self-assessment focus, R-ARS-12, Rikta Psychiatry"
