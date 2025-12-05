@@ -9,6 +9,7 @@ og_title: "Adult ADHD assessments at Rikta"
 og_description: "In-depth review of executive function, emotional regulation, and comorbidities with feedback and a personalized plan."
 weight: 20
 page_class: "adhd-page--adult"
+layout: "adhd-assessment/single"
 ---
 
 <section class="who-hero who-section adhd-hero adhd-hero--compact" id="start">
