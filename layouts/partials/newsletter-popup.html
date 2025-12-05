@@ -1,8 +1,11 @@
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
 <div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true">
   <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
   <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
-    <button type="button" class="newsletter-popup__close" aria-label="Stäng erbjudandet" data-popup-close>&times;</button>
-    <h2 id="newsletter-popup-title">Boka ett bedömningssamtal redan idag.</h2>
+    <button type="button" class="newsletter-popup__close" aria-label="{{ if $isEn }}Close offer{{ else }}Stäng erbjudandet{{ end }}" data-popup-close>&times;</button>
+    <h2 id="newsletter-popup-title">
+      {{ if $isEn }}Book an assessment call today.{{ else }}Boka ett bedömningssamtal redan idag.{{ end }}
+    </h2>
     <div class="newsletter-popup__cta">
       <button
         type="button"
@@ -11,10 +14,16 @@
         data-cal-link="riktapsykiatri/15min"
         data-cal-namespace="15min"
         data-cal-config='{"layout":"month_view"}'
-      >Boka ett bedömningssamtal
+      >{{ if $isEn }}Book an assessment call{{ else }}Boka ett bedömningssamtal{{ end }}
       </button>
     </div>
-    <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">Vi följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.</p>
+    <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
+      {{ if $isEn }}
+        We follow the National Board of Health and Welfare’s requirements for clinical quality, evidence, and documentation.
+      {{ else }}
+        Vi följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
+      {{ end }}
+    </p>
   </div>
 </div>
 

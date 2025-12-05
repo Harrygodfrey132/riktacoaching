@@ -23,7 +23,8 @@
     {{ $contactAnchor := cond $isEn "en/contact" "kontakt" }}
     {{ $contactLink := printf "%s#%s" ("/" | relLangURL) $contactAnchor }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
-    <a class="brand" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}">
+    {{ $homeLink := cond $isEn "/en/" "/" }}
+    <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
       <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logotyp">
     </a>
     <nav aria-label="{{ if $isEn }}Main navigation{{ else }}Huvudmeny{{ end }}" class="desktop-nav">
