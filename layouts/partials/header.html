@@ -12,12 +12,12 @@
     {{ $adhdYouth := cond $isEn "en/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
     {{ $adhdMedication := cond $isEn "en/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
     {{ $adhdCoaching := cond $isEn "en/adhd-assessment/coaching/" "/adhd-utredning/coachning/" }}
-    {{ $adhdTest := "en/adhd-test/" }}
+    {{ $adhdTest := cond $isEn "en/adhd-test/" "/adhd-test/" }}
     {{ $autismPath := cond $isEn "en/autism-assessment/" "/autism-utredning/" }}
     {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
     {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
     {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
-    {{ $autismTest := "en/autism-test/" }}
+    {{ $autismTest := cond $isEn "en/autism-test/" "/autism-test/" }}
     {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
     {{ $aboutPath := cond $isEn "en/about-us/" "/om-oss/" }}
     {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}

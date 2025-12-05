@@ -10,4 +10,6 @@ meta_description: "Professional ADHD assessments with specialist psychiatrist, p
 og_title: "ADHD assessments by Rikta Psychiatry"
 og_description: "Comprehensive mapping with structured interviews, psychometrics, and personal feedback from our team."
 description: "Professional ADHD assessments with medical expertise and warm support, digital or in person."
+cascade:
+  layout: "adhd-assessment/single"
 ---

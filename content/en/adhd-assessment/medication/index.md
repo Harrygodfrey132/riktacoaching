@@ -2,6 +2,7 @@
 title: "ADHD medication"
 description: "Medical treatment for ADHD with careful follow-up."
 draft: false
+layout: "adhd-assessment/single"
 meta_title: "ADHD medication with safe follow-up | Rikta"
 meta_keywords: "ADHD medication, ADHD titration, ADHD medication adults, psychiatric follow-up, Rikta medical treatment"
 meta_description: "Specialist doctors guide you through ADHD medication choice, titration, and follow-up so the effect is sustainable and safe."

@@ -2,6 +2,7 @@
 title: "ADHD assessment for children and teens"
 description: "A smooth ADHD assessment for children and teens – we guide you from the first call to a clear plan."
 draft: false
+layout: "adhd-assessment/single"
 meta_title: "ADHD assessment for children and teens | Rikta"
 meta_keywords: "ADHD children, youth assessment, school input ADHD, family support ADHD, Rikta child psychiatry"
 meta_description: "Family-focused ADHD assessment with interviews, school input, and recommendations that strengthen your child’s everyday life and learning."

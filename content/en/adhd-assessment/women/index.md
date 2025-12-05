@@ -2,6 +2,7 @@
 title: "ADHD assessment for women"
 description: "ADHD assessment for women – we explore symptoms, hormonal patterns, and strategies that last."
 draft: false
+layout: "adhd-assessment/single"
 meta_title: "ADHD assessment for women | Rikta Psychiatry"
 meta_keywords: "ADHD women, masked ADHD, hormonal ADHD, women neuropsychiatry, Rikta women team"
 meta_description: "Assessments focused on masking, hormonal patterns, and daily strategies to support women with suspected ADHD."

@@ -2,6 +2,7 @@
 title: "Coaching after your ADHD assessment"
 draft: false
 description: "Practical coaching that puts your assessment insights into action."
+layout: "adhd-assessment/single"
 meta_title: "Coaching after ADHD assessment | Rikta Psychiatry"
 meta_keywords: "ADHD coaching, ADHD follow-up, executive function coaching"
 meta_description: "Structured ADHD coaching focused on planning, prioritization, and sustainable habits after your assessment."
