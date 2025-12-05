@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
 <main class="blog-simple" id="top">
   <div class="container blog-simple__shell">
     <div class="blog-simple__content">
@@ -10,15 +11,17 @@
       {{ end }}
       <header class="blog-simple__header">
         <div>
-          <p class="blog-simple__eyebrow">Blogg · Rikta Psykiatri</p>
+          <p class="blog-simple__eyebrow">
+            {{ if $isEn }}Blog · Rikta Psychiatry{{ else }}Blogg · Rikta Psykiatri{{ end }}
+          </p>
           <h1>{{ .Title }}</h1>
           {{ with .Params.description }}
             <p class="blog-simple__lead">{{ . }}</p>
           {{ end }}
         </div>
         <ul class="blog-simple__meta">
-          <li><span>Publicerad</span><strong>{{ .Date.Format "2006-01-02" }}</strong></li>
-          <li><span>Lästid</span><strong>{{ .ReadingTime }} min</strong></li>
+          <li><span>{{ if $isEn }}Published{{ else }}Publicerad{{ end }}</span><strong>{{ .Date.Format "2006-01-02" }}</strong></li>
+          <li><span>{{ if $isEn }}Reading time{{ else }}Lästid{{ end }}</span><strong>{{ .ReadingTime }} min</strong></li>
         </ul>
       </header>
       <div class="blog-simple__divider"></div>
@@ -28,10 +31,16 @@
       <section class="blog-simple__cta">
         <div class="blog-simple__cta-grid">
           <div>
-            <p class="blog-simple__eyebrow">Sverige</p>
-            <h2>Coachning och bedömning i hela landet</h2>
-            <p>Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. Hör av dig så hittar vi upplägget som passar dig.</p>
-            <a class="btn primary" href="/kontakta-oss/">Boka samtal</a>
+            <p class="blog-simple__eyebrow">{{ if $isEn }}Sweden{{ else }}Sverige{{ end }}</p>
+            <h2>{{ if $isEn }}Coaching and assessments across the country{{ else }}Coachning och bedömning i hela landet{{ end }}</h2>
+            <p>
+              {{ if $isEn }}
+                Rikta Psychiatry offers digital coaching and assessments across Sweden plus in-person visits in Stockholm. Reach out and we’ll find the setup that fits you.
+              {{ else }}
+                Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. Hör av dig så hittar vi upplägget som passar dig.
+              {{ end }}
+            </p>
+            <a class="btn primary" href="{{ if $isEn }}/en/contact/{{ else }}/kontakta-oss/{{ end }}">{{ if $isEn }}Book a call{{ else }}Boka samtal{{ end }}</a>
           </div>
           <div class="blog-simple__map">
             <img src="{{ "/img/scenic-background-picture.jpg" | absURL }}" alt="Sverige, vi stöttar patienter i hela landet">

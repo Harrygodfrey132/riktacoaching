@@ -1,8 +1,11 @@
 {{ define "main" }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
 <main class="blog-archive" id="top">
   <div class="container">
     <header class="blog-archive__header">
-      <p class="blog-archive__eyebrow">Blogg · Rikta Psykiatri</p>
+      <p class="blog-archive__eyebrow">
+        {{ if $isEn }}Blog · Rikta Psychiatry{{ else }}Blogg · Rikta Psykiatri{{ end }}
+      </p>
       <h1>{{ .Title }}</h1>
       {{ with .Content }}
         <div class="blog-archive__intro">
@@ -29,7 +32,7 @@
                 <p>{{ . }}</p>
               {{ end }}
               <div class="blog-card__meta">
-                Läs mer
+                {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
               </div>
             </div>
           </a>

@@ -4,7 +4,7 @@
   {{ $joinPath := cond $isEn "en/join-our-team/" "/bli-en-del-av-teamet/" }}
   {{ $locationsPath := cond $isEn "en/locations/" "/platser/" }}
   {{ $pricingPath := cond $isEn  "en/pricing/" "/priser/" }}
-  {{ $blogPath := cond $isEn "en/knowledge/" "/blogg/" }}
+  {{ $blogPath := cond $isEn "en/blog/" "/blogg/" }}
   {{ $adhdPath := cond $isEn "en/adhd-assessment/" "/adhd-utredning/" }}
   {{ $adhdAdults := cond $isEn "en/adhd-assessment/adults/" "/adhd-utredning/vuxna/" }}
   {{ $adhdWomen := cond $isEn "en/adhd-assessment/women/" "/adhd-utredning/kvinnor/" }}
@@ -39,7 +39,7 @@
           <li><a href="{{ $joinPath | relLangURL }}">{{ if $isEn }}Join our team{{ else }}Bli en del av teamet{{ end }}</a></li>
           <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
-          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Knowledge{{ else }}Blogg{{ end }}</a></li>
+          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
         </ul>
       </div>
       <div class="footer-column">
