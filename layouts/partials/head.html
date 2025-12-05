@@ -1,6 +1,7 @@
 {{- $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint -}}
+{{- $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") -}}
 <!doctype html>
-<html lang="sv">
+<html lang="{{ cond $isEn "en" "sv" }}">
 <head>
   {{- $site := .Site -}}
   {{- $page := . -}}
@@ -22,7 +23,7 @@
   <meta property="og:type" content="{{ $ogType }}">
   <meta property="og:url" content="{{ $page.Permalink }}">
   <meta property="og:site_name" content="{{ $site.Title }}">
-  <meta property="og:locale" content="sv_SE">
+  <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
   <link rel="canonical" href="{{ $page.Permalink }}">
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">

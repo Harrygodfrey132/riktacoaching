@@ -1,137 +1,162 @@
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/" aria-label="{{ .Site.Title }}">
+    {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+    {{ $coachingPath := cond $isEn "en/coaching/" "/coachning/" }}
+    {{ $coachingAdhd := cond $isEn "en/coaching/adhd/" "/coachning/adhd/" }}
+    {{ $coachingAutism := cond $isEn "en/coaching/autism/" "/coachning/autism/" }}
+    {{ $coachingProcrastination := cond $isEn "en/coaching/procrastination-test/" "/coachning/prokrastinerings-test/" }}
+    {{ $knowledgePath := cond $isEn "en/knowledge/" "/kunskap/" }}
+    {{ $adhdPath := cond $isEn "en/adhd-assessment/" "/adhd-utredning/" }}
+    {{ $adhdAdults := cond $isEn "en/adhd-assessment/adults/" "/adhd-utredning/vuxna/" }}
+    {{ $adhdWomen := cond $isEn "en/adhd-assessment/women/" "/adhd-utredning/kvinnor/" }}
+    {{ $adhdYouth := cond $isEn "en/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
+    {{ $adhdMedication := cond $isEn "en/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
+    {{ $adhdCoaching := cond $isEn "en/adhd-assessment/coaching/" "/adhd-utredning/coachning/" }}
+    {{ $adhdTest := "en/adhd-test/" }}
+    {{ $autismPath := cond $isEn "en/autism-assessment/" "/autism-utredning/" }}
+    {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
+    {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
+    {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
+    {{ $autismTest := "en/autism-test/" }}
+    {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
+    {{ $aboutPath := cond $isEn "en/about-us/" "/om-oss/" }}
+    {{ $contactAnchor := cond $isEn "en/contact" "kontakt" }}
+    {{ $contactLink := printf "%s#%s" ("/" | relLangURL) $contactAnchor }}
+    {{ $languageSwitch := cond $isEn "/" "/en/" }}
+    <a class="brand" href="{{ "/" | relLangURL }}" aria-label="{{ .Site.Title }}">
       <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logotyp">
     </a>
-    <nav aria-label="Huvudmeny" class="desktop-nav">
+    <nav aria-label="{{ if $isEn }}Main navigation{{ else }}Huvudmeny{{ end }}" class="desktop-nav">
       <ul>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/coachning/">Coachning</a>
+            <a href="{{ $coachingPath | relLangURL }}">{{ if $isEn }}Coaching{{ else }}Coachning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="coachningSubmenu"
-                    aria-label="Visa undersidor för Coachning">
+                    aria-label="{{ if $isEn }}Show subpages for Coaching{{ else }}Visa undersidor för Coachning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="coachningSubmenu">
-            <li><a href="/coachning/adhd/">ADHD-coachning</a></li>
-            <li><a href="/coachning/autism/">Autism-coachning</a></li>
-            <li><a href="/coachning/prokrastinerings-test/">Prokrastinerings-test</a></li>
+            <li><a href="{{ $coachingAdhd | relLangURL }}">{{ if $isEn }}ADHD coaching{{ else }}ADHD-coachning{{ end }}</a></li>
+            <li><a href="{{ $coachingAutism | relLangURL }}">{{ if $isEn }}Autism coaching{{ else }}Autism-coachning{{ end }}</a></li>
+            <li><a href="{{ $coachingProcrastination | relLangURL }}">{{ if $isEn }}Procrastination test{{ else }}Prokrastinerings-test{{ end }}</a></li>
           </ul>
         </li>
-        <li><a href="/kunskap/">Kunskap</a></li>
+        <li><a href="{{ $knowledgePath | relLangURL }}">{{ if $isEn }}Guides{{ else }}Kunskap{{ end }}</a></li>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/adhd-utredning/">ADHD-utredning</a>
+            <a href="{{ $adhdPath | relLangURL }}">{{ if $isEn }}ADHD assessment{{ else }}ADHD-utredning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="adhdSubmenu"
-                    aria-label="Visa undersidor för ADHD-utredning">
+                    aria-label="{{ if $isEn }}Show subpages for ADHD assessment{{ else }}Visa undersidor för ADHD-utredning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="adhdSubmenu">
-            <li><a href="/adhd-utredning/vuxna/">Vuxna</a></li>
-            <li><a href="/adhd-utredning/kvinnor/">Kvinnor</a></li>
-            <li><a href="/adhd-utredning/barn-och-ungdomar/">Barn och ungdomar</a></li>
-            <li><a href="/adhd-utredning/medicinering/">Medicinering</a></li>
-            <li><a href="/adhd-test/">ADHD-test</a></li>
+            <li><a href="{{ $adhdAdults | relLangURL }}">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
+            <li><a href="{{ $adhdWomen | relLangURL }}">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
+            <li><a href="{{ $adhdYouth | relLangURL }}">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
+            <li><a href="{{ $adhdMedication | relLangURL }}">{{ if $isEn }}Medication{{ else }}Medicinering{{ end }}</a></li>
+            <li><a href="{{ $adhdTest | relLangURL }}">ADHD-test</a></li>
           </ul>
         </li>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/autism-utredning/">Autism-utredning</a>
+            <a href="{{ $autismPath | relLangURL }}">{{ if $isEn }}Autism assessment{{ else }}Autism-utredning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="autismSubmenu"
-                    aria-label="Visa undersidor för Autism-utredning">
+                    aria-label="{{ if $isEn }}Show subpages for Autism assessment{{ else }}Visa undersidor för Autism-utredning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="autismSubmenu">
-            <li><a href="/autism-utredning/vuxna/">Vuxna</a></li>
-            <li><a href="/autism-utredning/kvinnor/">Kvinnor</a></li>
-            <li><a href="/autism-utredning/barn-och-ungdomar/">Barn och ungdomar</a></li>
-            <li><a href="/autism-test/">Autism-test</a></li>
+            <li><a href="{{ $autismAdults | relLangURL }}">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
+            <li><a href="{{ $autismWomen | relLangURL }}">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
+            <li><a href="{{ $autismYouth | relLangURL }}">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
+            <li><a href="{{ $autismTest | relLangURL }}">Autism-test</a></li>
           </ul>
         </li>
         <!-- Temporarily hidden: <li><a href="/vart-team/">Vårt team</a></li> -->
-        <li><a href="/priser/">Priser</a></li>
-        <li><a href="/om-oss/">Om oss</a></li>
-        <li><a class="cta" href="#kontakt">Kontakta oss</a></li>
+        <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
+        <li><a href="{{ $aboutPath | relLangURL }}">{{ if $isEn }}About us{{ else }}Om oss{{ end }}</a></li>
+        <li><a class="cta" href="{{ $contactLink }}">{{ if $isEn }}Contact us{{ else }}Kontakta oss{{ end }}</a></li>
+        <li class="language-switch"><a href="{{ $languageSwitch }}">{{ if $isEn }}Svenska{{ else }}English{{ end }}</a></li>
       </ul>
     </nav>
-    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Öppna meny">
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="{{ if $isEn }}Open menu{{ else }}Öppna meny{{ end }}">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <nav class="mobile-nav" id="mobileNav" aria-label="Mobilmeny">
+    <nav class="mobile-nav" id="mobileNav" aria-label="{{ if $isEn }}Mobile navigation{{ else }}Mobilmeny{{ end }}">
       <ul>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/coachning/" onclick="closeMobileMenu()">Coachning</a>
+            <a href="{{ $coachingPath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Coaching{{ else }}Coachning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="mobileCoachningSubmenu"
-                    aria-label="Visa undersidor för Coachning">
+                    aria-label="{{ if $isEn }}Show subpages for Coaching{{ else }}Visa undersidor för Coachning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="mobileCoachningSubmenu">
-            <li><a href="/coachning/adhd/" onclick="closeMobileMenu()">ADHD-coachning</a></li>
-            <li><a href="/coachning/autism/" onclick="closeMobileMenu()">Autism-coachning</a></li>
-            <li><a href="/coachning/prokrastinerings-test/" onclick="closeMobileMenu()">Prokrastinerings-test</a></li>
+            <li><a href="{{ $coachingAdhd | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}ADHD coaching{{ else }}ADHD-coachning{{ end }}</a></li>
+            <li><a href="{{ $coachingAutism | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Autism coaching{{ else }}Autism-coachning{{ end }}</a></li>
+            <li><a href="{{ $coachingProcrastination | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Procrastination test{{ else }}Prokrastinerings-test{{ end }}</a></li>
           </ul>
         </li>
-        <li><a href="/kunskap/" onclick="closeMobileMenu()">Kunskap</a></li>
+        <li><a href="{{ $knowledgePath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Guides{{ else }}Kunskap{{ end }}</a></li>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/adhd-utredning/" onclick="closeMobileMenu()">ADHD-utredning</a>
+            <a href="{{ $adhdPath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}ADHD assessment{{ else }}ADHD-utredning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="mobileAdhdSubmenu"
-                    aria-label="Visa undersidor för ADHD-utredning">
+                    aria-label="{{ if $isEn }}Show subpages for ADHD assessment{{ else }}Visa undersidor för ADHD-utredning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="mobileAdhdSubmenu">
-            <li><a href="/adhd-utredning/vuxna/" onclick="closeMobileMenu()">Vuxna</a></li>
-            <li><a href="/adhd-utredning/kvinnor/" onclick="closeMobileMenu()">Kvinnor</a></li>
-            <li><a href="/adhd-utredning/barn-och-ungdomar/" onclick="closeMobileMenu()">Barn och ungdomar</a></li>
-            <li><a href="/adhd-utredning/medicinering/" onclick="closeMobileMenu()">Medicinering</a></li>
-            <li><a href="/adhd-test/" onclick="closeMobileMenu()">ADHD-test</a></li>
+            <li><a href="{{ $adhdAdults | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
+            <li><a href="{{ $adhdWomen | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
+            <li><a href="{{ $adhdYouth | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
+            <li><a href="{{ $adhdMedication | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Medication{{ else }}Medicinering{{ end }}</a></li>
+            <li><a href="{{ $adhdTest | relLangURL }}" onclick="closeMobileMenu()">ADHD-test</a></li>
           </ul>
         </li>
         <li class="has-submenu">
           <div class="submenu-trigger">
-            <a href="/autism-utredning/" onclick="closeMobileMenu()">Autism-utredning</a>
+            <a href="{{ $autismPath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Autism assessment{{ else }}Autism-utredning{{ end }}</a>
             <button type="button"
                     class="submenu-toggle"
                     aria-expanded="false"
                     aria-controls="mobileAutismSubmenu"
-                    aria-label="Visa undersidor för Autism-utredning">
+                    aria-label="{{ if $isEn }}Show subpages for Autism assessment{{ else }}Visa undersidor för Autism-utredning{{ end }}">
               <span aria-hidden="true">&#9662;</span>
             </button>
           </div>
           <ul class="submenu" id="mobileAutismSubmenu">
-            <li><a href="/autism-utredning/vuxna/" onclick="closeMobileMenu()">Vuxna</a></li>
-            <li><a href="/autism-utredning/kvinnor/" onclick="closeMobileMenu()">Kvinnor</a></li>
-            <li><a href="/autism-utredning/barn-och-ungdomar/" onclick="closeMobileMenu()">Barn och ungdomar</a></li>
-            <li><a href="/autism-test/" onclick="closeMobileMenu()">Autism-test</a></li>
+            <li><a href="{{ $autismAdults | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
+            <li><a href="{{ $autismWomen | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
+            <li><a href="{{ $autismYouth | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
+            <li><a href="{{ $autismTest | relLangURL }}" onclick="closeMobileMenu()">Autism-test</a></li>
           </ul>
         </li>
         <!-- Temporarily hidden: <li><a href="/vart-team/" onclick="closeMobileMenu()">Vårt team</a></li> -->
-        <li><a href="/priser/" onclick="closeMobileMenu()">Priser</a></li>
-        <li><a href="/om-oss/" onclick="closeMobileMenu()">Om oss</a></li>
-        <li><a class="cta" href="#kontakt" onclick="closeMobileMenu()">Kontakta oss</a></li>
+        <li><a href="{{ $pricingPath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
+        <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">{{ if $isEn }}About us{{ else }}Om oss{{ end }}</a></li>
+        <li><a class="cta" href="{{ $contactLink }}" onclick="closeMobileMenu()">{{ if $isEn }}Contact us{{ else }}Kontakta oss{{ end }}</a></li>
+        <li class="language-switch"><a href="{{ $languageSwitch }}">{{ if $isEn }}Svenska{{ else }}English{{ end }}</a></li>
       </ul>
     </nav>
   </div>

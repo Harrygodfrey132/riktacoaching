@@ -2,8 +2,19 @@ baseURL = "https://riktapsykiatri.se/"
 languageCode = "sv"
 title = "Rikta Psykiatri"
 defaultContentLanguage = "sv"
+defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 disableKinds = ["taxonomy","term"]   # no taxonomies for this one-page site
+
+[languages]
+  [languages.sv]
+    languageName = "Svenska"
+    weight = 1
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    title = "Rikta Psychiatry"
+    weight = 2
 
 [params]
   primary = "#000000"
