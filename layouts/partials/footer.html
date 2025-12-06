@@ -16,10 +16,11 @@
   {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
   {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
   {{ $logoHref := cond $isEn "/en/" "/" }}
+  {{ $logo := default "/img/logo.png" .Site.Params.logo }}
   <div class="container footer-main">
     <div class="footer-brand">
       <a class="footer-logo" href="{{ $logoHref | relURL }}">
-        <img src="/img/logo.png" alt="{{ .Site.Title }}">
+        <img src="{{ $logo }}" alt="{{ .Site.Title }}">
       </a>
       <a class="footer-email" href="mailto:outreach@riktapsykiatri.se">info@riktapsykiatri.se</a>
       <div class="footer-company">Riktningskliniken AB</div>

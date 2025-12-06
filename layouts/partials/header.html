@@ -23,8 +23,9 @@
     {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
     {{ $homeLink := cond $isEn "/en/" "/" }}
+    {{ $logo := default "/img/logo.png" .Site.Params.logo }}
     <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
-      <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logotyp">
+      <img src="{{ $logo }}" alt="{{ if $isEn }}{{ .Site.Title }} logo{{ else }}{{ .Site.Title }} logotyp{{ end }}">
     </a>
     <nav aria-label="{{ if $isEn }}Main navigation{{ else }}Huvudmeny{{ end }}" class="desktop-nav">
       <ul>
