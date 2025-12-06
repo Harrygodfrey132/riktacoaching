@@ -14,5 +14,3 @@ cascade:
   type: "blogg"
   layout: "blogg/single"
 ---
-
-Welcome to our English blog. Articles on ADHD, autism, treatment options, and everyday strategies will appear here. Add your posts under `content/en/blog/` using the same structure as `content/blogg/`.
