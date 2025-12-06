@@ -848,6 +848,16 @@ nav a.active {
   margin-bottom: clamp(56px, 8vw, 96px);
 }
 
+.coachning-page {
+  padding: clamp(32px, 6vw, 64px) 0 clamp(72px, 10vw, 120px);
+}
+
+.coachning-container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 var(--pad);
+}
+
 .coachning-hero__inner {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
