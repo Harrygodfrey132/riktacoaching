@@ -4,6 +4,7 @@ layout: "coachning"
 meta_title: "Autism coaching | Rikta Psychiatry"
 meta_description: "Coaching for autistic teens and adults. Get support with structure, sensory balance, and confident communication."
 summary: "Individual coaching that helps you navigate daily life with more calm and clarity."
+type: coachning
 ---
 
 <section class="coachning-hero">

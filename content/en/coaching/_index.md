@@ -2,6 +2,7 @@
 title: "Coaching that complements your diagnosis"
 translationKey: "coaching"
 layout: coachning
+type: coachning
 meta_title: "Coaching for ADHD & autism | Rikta Psychiatry"
 meta_description: "See our coaching programs for ADHD and autism. Compare focus areas and find the right support team at Rikta Psychiatry."
 summary: "A single entry point to our specialized ADHD and autism coaching."

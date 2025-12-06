@@ -4,6 +4,7 @@ layout: coachning
 meta_title: "ADHD coaching | Rikta Psychiatry"
 meta_description: "Coaching that builds on your ADHD assessment. Get structured support for planning, focus, and sustainable routines."
 summary: "Practical coaching that turns assessment insights into everyday strategies."
+type: coachning
 ---
 
 <section class="coachning-hero">
