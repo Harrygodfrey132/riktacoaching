@@ -20,7 +20,7 @@ disableKinds = ["taxonomy","term","sitemap"]   # no taxonomies and custom sitema
     [languages.en.outputs]
       home = ["HTML","RSS","JSON","SITEMAP_EN"]
     [languages.en.params]
-      logo = "/img/English_logo.png"
+      logo = "/img/EnglishLogo.png"
 
 [params]
   primary = "#000000"
