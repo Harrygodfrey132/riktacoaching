@@ -6,8 +6,8 @@ description: "En klinisk genomgång av centrala tecken och symtom vid autism, f�
 meta_title: "Tecken och symtom vid autism | Rikta Psykiatri"
 meta_description: "Översikt över social kommunikation, sensoriska skillnader, behov av struktur och intensiva intressen vid autism."
 meta_keywords: "autism tecken, autism symtom, sensorisk känslighet, social kommunikation, rutiner och struktur"
-hero: "/img/child-playing.jpg"
-hero_alt: "Barn som leker utomhus"
+hero: "/img/autism-wording-blog.jpg"
+hero_alt: "Autism ord skrivet bland pusselbitar"
 draft: false
 ---
 **Detta är en klinisk genomgång för dig som söker förståelse för ditt sätt att fungera**

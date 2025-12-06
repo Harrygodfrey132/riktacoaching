@@ -23,7 +23,7 @@
     {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
     {{ $homeLink := cond $isEn "/en/" "/" }}
-    {{ $logo := default "/img/logo.png" .Site.Params.logo }}
+    {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
     <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
       <img src="{{ $logo }}" alt="{{ if $isEn }}{{ .Site.Title }} logo{{ else }}{{ .Site.Title }} logotyp{{ end }}">
     </a>
