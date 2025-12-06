@@ -36,20 +36,20 @@ Coaching is not:
 
 ## How ADHD coaching can help you
 ADHD often affects executive functions — the brain’s “control system” for planning, initiation, focus, shifting, finishing tasks, and regulating emotions. An ADHD coach can help with:
-- 1. From “I should” to clear, doable steps  
+### 1. From “I should” to clear, doable steps
 Many people with ADHD relate to: “I know exactly what I should do — I just don’t do it.” Coaching breaks vague goals into small, explicit actions. For example:  
   - From “fix everything about my studies”  
     → “On Wednesday at 18:00 I open the learning platform, download the assignment, and write down the first three steps.”  
   - From “get more organised”  
     → “Create a 10-minute evening routine where you list tomorrow’s three most important tasks or reminders.”  
   You and your coach then review what actually gets done, why things sometimes jam, and adjust the plan.
-- 2. Working with your attention  
+### 2. Working with your attention
 With ADHD, attention often swings between hyperfocus and total “block.” Coaching can help you:
   - identify times of day when you usually have the best mental energy
   - schedule demanding tasks when your brain can cooperate
   - use aids (timers, body doubling, reminders, visual lists) to get started
   - distinguish “I don’t want to” from “I can’t get going”
-- 3. Time perception, deadlines, and routines  
+### 3. Time perception, deadlines, and routines
 Many with ADHD:
   - underestimate how long things take
   - end up doing last-minute work
@@ -58,7 +58,7 @@ Coaching can support you to:
   - plan your week so you can see what fits and what doesn’t
   - build simple systems for bills, email, studies, or cleaning
   - add time buffers for tasks that tend to expand
-- 4. Emotion regulation and self-image  
+### 4. Emotion regulation and self-image
 ADHD isn’t only about structure. It often involves:
   - fast mood swings
   - strong reactions to criticism or rejection
@@ -76,20 +76,20 @@ Autism often involves different perception and processing of information, social
 - a strong need for predictability and routines
 - deep special interests that give meaning and energy  
 ASD coaching focuses on making daily life more understandable, predictable, and sustainable.
-- 1. Structure and predictability in daily life  
+### 1. Structure and predictability in daily life
   Together with your coach you can:
   - map situations that often lead to overload or shutdown/meltdown
   - create strategies before, during, and after those situations
   - build clear routines around sleep, food, recovery, and work/studies
   - use visual supports, checklists, or schedules to reduce decisions in the moment
-- 2. Social situations on your terms  
+### 2. Social situations on your terms
   Coaching can help you:
   - analyse recurring challenging social situations (e.g., meetings, group work, coffee breaks)
   - prepare for important conversations or meetings (what to say, what’s okay to ask, when to take a break)
   - set boundaries without over-explaining
   - shape an environment where others understand how you work, not just that you’re “different”  
   The focus is on making it possible to be more yourself, with enough support and structure.
-- 3. Sensory load and recovery  
+### 3. Sensory load and recovery
   Many with ASD live with constant sensory overload without fully tracking the energy cost. Coaching can help you:
   - identify your main sensory triggers (sound, light, smells, movement, touch)
   - plan so the most demanding environments are not back-to-back
