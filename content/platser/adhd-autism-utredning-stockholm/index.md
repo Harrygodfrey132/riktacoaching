@@ -125,7 +125,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
       <p>Skicka en kort beskrivning av din situation i Stockholm – vi sätter ihop ett digitalt upplägg, matchar dig med rätt specialist och skickar tider samma dag.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/kontakta-oss/">Boka kostnadsfritt samtal</a>
-        <a class="btn link" href="mailto:info@riktapsykiatri.se">info@riktapsykiatri.se</a>
+        <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>
       </div>
     </div>
   </div>

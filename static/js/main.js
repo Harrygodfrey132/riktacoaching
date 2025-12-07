@@ -89,6 +89,20 @@
     });
   }
 
+  // ----- Hydrate email links (avoid Cloudflare rewriting) -----
+  const emailLinks = document.querySelectorAll('[data-email-user][data-email-domain]');
+  emailLinks.forEach(link => {
+    const user = link.dataset.emailUser;
+    const domain = link.dataset.emailDomain;
+    if (!user || !domain) return;
+    const email = `${user}@${domain}`;
+    link.href = `mailto:${email}`;
+    if (!link.dataset.emailPreserveText) {
+      const placeholder = link.textContent && link.textContent.trim();
+      link.textContent = placeholder || email;
+    }
+  });
+
   // ----- Screening Test Logic (ADHD + Autism) -----
   function initScreeningForm({
     formId,

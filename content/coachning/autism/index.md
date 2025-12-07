@@ -240,7 +240,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
     <p>Beskriv kort vad du vill ha stöd med så matchar vi dig med rätt coach och upplägg.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
-      <a class="btn secondary on-dark" href="mailto:info@riktapsykiatri.se">Kontakta oss</a>
+      <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktapsykiatri.se" data-email-preserve-text="true">Kontakta oss</a>
     </div>
   </div>
 </section>

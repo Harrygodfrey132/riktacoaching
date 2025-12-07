@@ -225,7 +225,7 @@ type: coachning
     <p>Send a short note about your situation and we’ll match you with the right coach and format — individual sessions or the 6-week program.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/en/contact/#contactform">Book a free info call</a>
-      <a class="btn secondary on-dark" href="mailto:info@riktapsykiatri.se">Contact us</a>
+      <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktapsykiatri.se" data-email-preserve-text="true">Contact us</a>
     </div>
   </div>
 </section>

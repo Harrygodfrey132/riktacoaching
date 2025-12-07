@@ -88,7 +88,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
     <p>Berätta kort om din situation så guidar vi dig till rätt program, coach och uppstartstid.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
-      <a class="btn secondary on-dark" href="mailto:info@riktapsykiatri.se">Kontakta oss</a>
+      <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktapsykiatri.se" data-email-preserve-text="true">Kontakta oss</a>
     </div>
   </div>
 </section>
