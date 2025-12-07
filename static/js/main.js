@@ -98,8 +98,7 @@
     const email = `${user}@${domain}`;
     link.href = `mailto:${email}`;
     if (!link.dataset.emailPreserveText) {
-      const placeholder = link.textContent && link.textContent.trim();
-      link.textContent = placeholder || email;
+      link.textContent = email;
     }
   });
 
