@@ -1,6 +1,6 @@
 ---
 title: "5 Lies About Productivity ADHD Brains Need to Stop Believing"
-date: 2025-12-17
+date: 2025-12-07
 draft: false
 meta_title: "ADHD Productivity Myths: 5 Lies to Stop Believing"
 meta_description: "Five common productivity myths that backfire for ADHD brains—and what actually works instead."
