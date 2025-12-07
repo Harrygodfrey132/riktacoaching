@@ -1,8 +1,8 @@
 ---
-title: "Autism test"
+title: "Autism Test Online"
 translationKey: "autism-test"
 draft: false
-meta_title: "Autism test online | AQ-10 screening"
+meta_title: "Autism Test Online | AQ-10"
 meta_keywords: "autism test online, AQ-10, autism screening, self-test autism, Rikta Psychiatry"
 meta_description: "Take AQ-10 – a short autism self-test – and get guidance on next steps with Rikta Psychiatry."
 og_title: "AQ-10 from Rikta Psychiatry"
