@@ -37,6 +37,7 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
           <h3>ADHD coaching</h3>
           <p class="meta">Digital or on-site • 45 min</p>
           <p class="price">1500 kr</p>
+          <p class="price-note">Package: 6 sessions for the cost of 5 (1200 kr per session).</p>
           <ul class="details">
             <li>Support to build structure and routines that improve focus and productivity.</li>
             <li>Help managing impulse control and time management to reduce stress and reach goals.</li>
@@ -47,6 +48,7 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
           <h3>Autism coaching</h3>
           <p class="meta">Digital or on-site • 45 min</p>
           <p class="price">1500 kr</p>
+          <p class="price-note">Package: 6 sessions for the cost of 5 (1200 kr per session).</p>
           <ul class="details">
             <li>Support to understand and manage social situations and communication.</li>
             <li>Help to create strategies for handling sensory input and changes in everyday life.</li>
