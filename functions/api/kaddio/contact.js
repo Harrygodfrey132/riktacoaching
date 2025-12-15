@@ -8,14 +8,29 @@
  * - KADDIO_IMPERSONATION_ID (optional) host id to impersonate
  */
 
-const CREATE_CONTACT_MUTATION = `
-mutation CreateContact($contact: ContactInsertInput!) {
-  createContact(contact: $contact) {
-    _id
-    firstname
-    lastname
-    email
-  }
+const CREATE_CLIENT_MUTATION = `
+mutation CreateClient(
+  $firstname: String
+  $lastname: String
+  $email: String
+  $notification: String
+  $pnr: String
+  $zip: String
+  $city: String
+  $streetAdress: String
+  $cellphone: String
+) {
+  createClient(
+    firstname: $firstname
+    lastname: $lastname
+    email: $email
+    notification: $notification
+    pnr: $pnr
+    zip: $zip
+    city: $city
+    streetAdress: $streetAdress
+    cellphone: $cellphone
+  )
 }
 `;
 
@@ -51,18 +66,22 @@ export async function onRequest(context) {
   }
 
   const combinedDescription = [normalized.description, normalized.note].filter(Boolean).join(' | ') || 'Website enquiry';
-  const contactInput = {
+  const clientInput = {
     firstname: normalized.firstname,
     lastname: normalized.lastname,
     email: normalized.email,
-    description: combinedDescription,
-    leadSource: normalized.leadSource
+    notification: combinedDescription,
+    pnr: null,
+    zip: null,
+    city: null,
+    streetAdress: null,
+    cellphone: null
   };
 
   try {
     const graphqlResponse = await callKaddio({
-      query: CREATE_CONTACT_MUTATION,
-      variables: { contact: contactInput },
+      query: CREATE_CLIENT_MUTATION,
+      variables: clientInput,
       env
     });
 
@@ -71,7 +90,7 @@ export async function onRequest(context) {
       return withCors(json({ error: message || 'Kaddio rejected the request' }, 502));
     }
 
-    return withCors(json({ ok: true, contact: graphqlResponse.data?.createContact || null }));
+    return withCors(json({ ok: true, clientId: graphqlResponse.data?.createClient || null }));
   } catch (error) {
     return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
   }
