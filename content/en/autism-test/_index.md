@@ -184,32 +184,28 @@ layout: "autism-test/list"
       <p>We unlock the result on the page and send it to your email so you have it saved.</p>
       <p class="lead-modal__hint">We need your email so you can return to the result and so we can send a short plan for next steps.</p>
     </div>
-    <iframe id="adhd-lead-target" name="adhd-lead-target" title="Lead form" src="about:blank" hidden></iframe>
-    <form id="webform896517000000571075"
+    <form id="kaddio-lead-form"
       class="lead-modal__form"
-      action="https://crm.zoho.eu/crm/WebToLeadForm"
-      name="WebToLeads896517000000571075"
+      data-kaddio-form="lead"
+      data-form-context="autism-screening-en"
+      data-success-message="Thanks! Your result is now visible."
+      action="/api/kaddio/contact"
       method="POST"
-      target="adhd-lead-target"
-      accept-charset="UTF-8"
-      onsubmit='javascript:document.charset="UTF-8"; return checkMandatory896517000000571075()'>
-      <input type="hidden" name="xnQsjsdp" value="fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3">
-      <input type="hidden" name="xmIwtLD" value="fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5">
-      <input type="hidden" name="actionType" value="TGVhZHM=">
-      <input type="hidden" name="returnURL" value="https://riktapsykiatri.se/">
-      <input type="hidden" name="zc_gad" id="zc_gad" value="">
-      <input type="hidden" name="Lead Source" id="adhd-lead-source" value="Autism Investigation">
-      <input type="hidden" name="Rating" id="adhd-lead-rating" value="">
+      accept-charset="UTF-8">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Autism Investigation">
+      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
+      <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">
-        <label class="lead-modal__label" for="Last Name">Name</label>
-        <input class="lead-modal__input" type="text" id="Last Name" name="Last Name" maxlength="80" required>
-        <label class="lead-modal__label" for="Email">Email</label>
-        <input class="lead-modal__input" type="email" id="Email" name="Email" maxlength="100" required>
+        <label class="lead-modal__label" for="lead-full-name">Name</label>
+        <input class="lead-modal__input" type="text" id="lead-full-name" name="fullName" maxlength="120" autocomplete="name" required>
+        <label class="lead-modal__label" for="lead-email">Email</label>
+        <input class="lead-modal__input" type="email" id="lead-email" name="email" maxlength="100" autocomplete="email" required>
       </div>
       <div class="lead-modal__actions">
         <button class="btn primary" type="submit">Show my result</button>
         <button class="btn secondary" type="button" data-close-lead>Close</button>
       </div>
+      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
     </form>
   </div>
 </div>

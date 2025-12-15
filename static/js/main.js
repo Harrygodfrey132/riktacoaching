@@ -277,18 +277,138 @@
     });
   }
 
-  // ----- Lead capture modal (Zoho) -----
+  // ----- Kaddio form helpers -----
+  const KADDIO_ENDPOINT = '/api/kaddio/contact';
+  const SUBMITTING_ATTR = 'data-submitting';
+
+  function toggleFormDisabled(form, disabled){
+    form.setAttribute(SUBMITTING_ATTR, disabled ? 'true' : 'false');
+    const controls = form.querySelectorAll('input, textarea, select, button');
+    controls.forEach(ctrl => {
+      if (disabled) {
+        ctrl.setAttribute('disabled', 'true');
+      } else {
+        ctrl.removeAttribute('disabled');
+      }
+    });
+  }
+
+  function setFormStatus(form, message, type){
+    const statusEl = form.querySelector('[data-form-status]');
+    if (!statusEl) return;
+    statusEl.textContent = message || '';
+    statusEl.dataset.statusType = type || 'info';
+    statusEl.hidden = !message;
+  }
+
+  function mergeMetadata(baseMeta, extraMeta){
+    if (!extraMeta) return baseMeta;
+    return { ...(baseMeta || {}), ...extraMeta };
+  }
+
+  function buildContactPayload(form){
+    const formData = new FormData(form);
+    const firstName = (formData.get('firstName') || '').trim();
+    const lastName = (formData.get('lastName') || '').trim();
+    const fullNameField = (formData.get('fullName') || '').trim();
+    const fullName = (fullNameField || [firstName, lastName].filter(Boolean).join(' ')).trim();
+    const email = (formData.get('email') || '').trim();
+    const description = (formData.get('description') || formData.get('message') || '').trim();
+    const leadSource = (formData.get('leadSource') || '').trim();
+    const ratingRaw = formData.get('rating');
+    const baseMetadata = {
+      path: window.location.pathname,
+      formContext: form.dataset.formContext || form.dataset.kaddioForm || null
+    };
+    const payload = {
+      fullName,
+      email,
+      description,
+      leadSource: leadSource || undefined,
+      metadata: baseMetadata
+    };
+    if (ratingRaw !== null && ratingRaw !== '') {
+      payload.rating = Number(ratingRaw);
+    }
+    return payload;
+  }
+
+  async function postToBackend(payload){
+    const response = await fetch(KADDIO_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      credentials: 'same-origin',
+      body: JSON.stringify(payload)
+    });
+    let body = null;
+    const contentType = response.headers.get('content-type') || '';
+    if (contentType.includes('application/json')) {
+      body = await response.json().catch(() => null);
+    }
+    if (!response.ok) {
+      const error = new Error(body?.error || body?.message || 'Could not submit the form just now.');
+      error.status = response.status;
+      throw error;
+    }
+    return body;
+  }
+
+  function bindKaddioForm(form, { augmentPayload, onSuccess } = {}){
+    if (!form) return;
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      const thankYou = form.querySelector('[data-thank-you]');
+      if (thankYou) {
+        thankYou.hidden = true;
+      }
+      setFormStatus(form, form.dataset.sendingMessage || 'Sending...', 'info');
+      toggleFormDisabled(form, true);
+
+      try {
+        const basePayload = buildContactPayload(form);
+        if (!basePayload.fullName || !basePayload.email) {
+          setFormStatus(form, 'Please add your name and email before submitting.', 'error');
+          toggleFormDisabled(form, false);
+          return;
+        }
+        const extra = typeof augmentPayload === 'function' ? augmentPayload(basePayload) : null;
+        const merged = { ...basePayload, ...(extra || {}) };
+        merged.metadata = mergeMetadata(basePayload.metadata, extra?.metadata);
+        await postToBackend(merged);
+        if (thankYou) {
+          thankYou.hidden = false;
+        }
+        const successCopy = form.dataset.successMessage || 'Tack! Vi hör av oss snart.';
+        setFormStatus(form, successCopy, 'success');
+        form.reset();
+        if (typeof onSuccess === 'function') {
+          onSuccess();
+        }
+      } catch (error) {
+        const msg = error?.status === 429
+          ? 'We are handling many requests right now. Please try again in a moment.'
+          : (error?.message || 'We could not send your request. Please try again.');
+        setFormStatus(form, msg, 'error');
+      } finally {
+        toggleFormDisabled(form, false);
+      }
+    });
+  }
+
+  const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
+  contactForms.forEach(form => {
+    bindKaddioForm(form);
+  });
+
+  // ----- Lead capture modal (Kaddio) -----
   const leadModal = document.getElementById('adhd-lead-modal');
-  const leadForm = document.getElementById('webform896517000000571075');
+  const leadForm = document.getElementById('kaddio-lead-form');
   const leadDescription = document.getElementById('adhd-lead-description');
   const leadSource = document.getElementById('adhd-lead-source');
   const leadRating = document.getElementById('adhd-lead-rating');
-  const leadFrame = document.getElementById('adhd-lead-target');
   const leadSubmitButton = document.getElementById('adhd-lead-submit');
   const leadCloseTriggers = document.querySelectorAll('[data-close-lead]');
   let leadResultPayload = null;
-  let leadIframeReady = false;
-  let leadSubmitted = false;
 
   function buildLeadDescription(result) {
     if (!result) return '';
@@ -326,7 +446,7 @@
     }
     leadModal.removeAttribute('hidden');
     document.body.classList.add('lead-modal-open');
-    const emailInput = leadForm.querySelector('#Email');
+    const emailInput = leadForm.querySelector('#Email, #lead-email');
     if (emailInput && typeof emailInput.focus === 'function') {
       emailInput.focus({ preventScroll: true });
     }
@@ -360,24 +480,25 @@
     });
   });
 
-  if (leadFrame) {
-    leadFrame.addEventListener('load', () => {
-      if (!leadIframeReady) {
-        leadIframeReady = true;
-      }
-      if (leadSubmitted) {
-        leadSubmitted = false;
-        handleLeadSuccess();
-      }
-    });
-  }
-
   if (leadForm) {
-    leadForm.addEventListener('submit', () => {
-      leadSubmitted = true;
-      if (leadSubmitButton) {
-        leadSubmitButton.setAttribute('disabled', 'true');
-      }
+    bindKaddioForm(leadForm, {
+      augmentPayload(basePayload){
+        const screeningMeta = leadResultPayload ? {
+          testName: leadResultPayload.testName,
+          total: leadResultPayload.total,
+          interpretation: leadResultPayload.interpretation,
+          answers: leadResultPayload.answers
+        } : null;
+        const derivedDescription = leadDescription?.value || basePayload.description;
+        return {
+          description: derivedDescription,
+          leadSource: (leadSource?.value || basePayload.leadSource || 'Screening form').trim(),
+          metadata: mergeMetadata(basePayload.metadata, {
+            screening: screeningMeta
+          })
+        };
+      },
+      onSuccess: handleLeadSuccess
     });
   }
 
