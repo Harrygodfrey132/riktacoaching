@@ -152,6 +152,61 @@
         </form>
       </div>
       <p class="contact-form__note">We typically respond within 1–2 business days.</p>
+      <script>
+        // Inline fallback to ensure the contact form submits and shows a thank-you.
+        (function(){
+          const form = document.getElementById('kaddio-contact-form');
+          if (!form || form.dataset.kaddioInlineBound) return;
+          form.dataset.kaddioInlineBound = 'true';
+          const statusEl = form.querySelector('[data-form-status]');
+          const thankYou = form.querySelector('[data-thank-you]');
+
+          function setStatus(message, type){
+            if (!statusEl) return;
+            statusEl.textContent = message || '';
+            statusEl.dataset.statusType = type || 'info';
+            statusEl.hidden = !message;
+          }
+
+          form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            if (thankYou) thankYou.hidden = true;
+            setStatus(form.dataset.sendingMessage || 'Sending...', 'info');
+
+            const data = new FormData(form);
+            const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
+            const email = (data.get('email') || data.get('Email') || '').trim();
+            const payload = {
+              fullName,
+              email,
+              description: (data.get('description') || data.get('message') || '').trim(),
+              leadSource: (data.get('leadSource') || '').trim()
+            };
+            if (!payload.email) {
+              setStatus('Please add your email before submitting.', 'error');
+              return;
+            }
+
+            try {
+              const res = await fetch('/api/kaddio/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+              });
+              const body = await res.json().catch(() => ({}));
+              if (!res.ok) {
+                setStatus(body?.error || body?.message || 'Could not submit the form just now.', 'error');
+                return;
+              }
+              if (thankYou) thankYou.hidden = false;
+              setStatus(form.dataset.successMessage || 'Thank you! We’ll get back to you as soon as possible.', 'success');
+              form.reset();
+            } catch (_err) {
+              setStatus('Could not submit the form just now.', 'error');
+            }
+          });
+        })();
+      </script>
     </section>
   </div>
 </main>
