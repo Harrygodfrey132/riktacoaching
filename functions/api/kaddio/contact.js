@@ -117,7 +117,7 @@ function normalizeInput(body) {
 
   const fullName = (body.fullName || '').trim();
   const email = (body.email || '').trim();
-  const description = (body.description || '').trim();
+  const description = (body.description || body.Description || body.message || '').trim();
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
@@ -126,7 +126,6 @@ function normalizeInput(body) {
   const metadata = body.metadata || {};
 
   const metaNote = [
-    description ? `Message: ${description}` : '',
     metadata.path ? `Path: ${metadata.path}` : '',
     metadata.formContext ? `Form: ${metadata.formContext}` : '',
     metadata.screening ? `Screening: ${safeStringify(metadata.screening)}` : ''
