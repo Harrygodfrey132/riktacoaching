@@ -312,7 +312,8 @@
     const lastName = (formData.get('lastName') || '').trim();
     const fullNameField = (formData.get('fullName') || '').trim();
     const fullName = (fullNameField || [firstName, lastName].filter(Boolean).join(' ') || '').trim();
-    const email = (formData.get('email') || '').trim();
+    // Accept both "email" and legacy "Email" field names to avoid missed submissions.
+    const email = (formData.get('email') || formData.get('Email') || '').trim();
     const description = (formData.get('description') || formData.get('message') || '').trim();
     const leadSource = (formData.get('leadSource') || '').trim();
     const ratingRaw = formData.get('rating');
@@ -361,7 +362,7 @@
       if (thankYou) {
         thankYou.hidden = true;
       }
-      setFormStatus(form, form.dataset.sendingMessage || 'Sending...', 'info');
+      setFormStatus(form, form.dataset.sendingMessage || 'Skickar...', 'info');
       toggleFormDisabled(form, true);
 
       try {
