@@ -311,7 +311,7 @@
     const firstName = (formData.get('firstName') || '').trim();
     const lastName = (formData.get('lastName') || '').trim();
     const fullNameField = (formData.get('fullName') || '').trim();
-    const fullName = (fullNameField || [firstName, lastName].filter(Boolean).join(' ')).trim();
+    const fullName = (fullNameField || [firstName, lastName].filter(Boolean).join(' ') || '').trim();
     const email = (formData.get('email') || '').trim();
     const description = (formData.get('description') || formData.get('message') || '').trim();
     const leadSource = (formData.get('leadSource') || '').trim();
