@@ -366,8 +366,8 @@
 
       try {
         const basePayload = buildContactPayload(form);
-        if (!basePayload.fullName || !basePayload.email) {
-          setFormStatus(form, 'Please add your name and email before submitting.', 'error');
+        if (!basePayload.email) {
+          setFormStatus(form, 'Please add your email before submitting.', 'error');
           toggleFormDisabled(form, false);
           return;
         }
