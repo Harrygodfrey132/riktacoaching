@@ -26,7 +26,7 @@ summary: "Guides, articles, and tools to help you understand neurodivergent cond
         <div class="news-body">
           <span class="news-tag"></span>
           <h4>Your complete guide to ADHD</h4>
-          <a class="news-link" href="/en/adhd-guide/">Explore the ADHD guide</a>
+          <a class="news-link" href="/en/knowledge/adhd-around-the-clock/">Explore the ADHD guide</a>
         </div>
       </article>
       <article class="news-card">

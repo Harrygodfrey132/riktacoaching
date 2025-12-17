@@ -6727,6 +6727,12 @@ nav a.cta:active{
   border-bottom: none;
 }
 
+.guide-section--accordion{
+  padding: 0;
+  border: none;
+  scroll-margin-top: calc(var(--sticky) + 16px);
+}
+
 .guide-section-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.5fr) minmax(0, 0.5fr);

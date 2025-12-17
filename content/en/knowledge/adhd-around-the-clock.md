@@ -1,5 +1,6 @@
 ---
 title: "About ADHD – your guide to symptoms, diagnosis, and support"
+translationKey: "adhd-guide"
 date: 2024-09-27
 description: "A clear walkthrough of what ADHD is, how diagnoses are made, and which treatments help."
 layout: "guide"
@@ -8,8 +9,8 @@ meta_description: "Concise guide to ADHD: symptoms, diagnostic process, and trea
 meta_keywords: "ADHD guide, symptoms, diagnosis, treatment, support"
 hero: "/img/child-smiling-with-pillow.jpg"
 hero_alt: "Child smiling and holding a pillow"
-url: "/en/adhd-guide/"
 aliases:
+  - "/en/adhd-guide/"
   - "/en/knowledge/adhd-around-the-clock/"
   - "/en/knowledge/adhd-around-the-clock/index.html"
 ---

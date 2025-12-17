@@ -25,6 +25,16 @@
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
   <link rel="canonical" href="{{ $page.Permalink }}">
+  {{- /* Hreflang alternates for translated pages */ -}}
+  {{- $translations := $page.AllTranslations -}}
+  {{- if gt (len $translations) 0 -}}
+    {{- range $translations -}}
+  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+    {{- end -}}
+    {{- $svList := where $translations "Lang" "sv" -}}
+    {{- $defaultPage := cond (gt (len $svList) 0) (index $svList 0) ($page) -}}
+  <link rel="alternate" hreflang="x-default" href="{{ $defaultPage.Permalink }}">
+  {{- end }}
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <!-- Google tag (gtag.js) -->

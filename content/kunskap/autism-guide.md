@@ -9,6 +9,8 @@ meta_description: "En klar guide om autism: vad diagnosen innebär, hur utrednin
 meta_keywords: "autism guide, symtom, utredning, stöd, strategier"
 hero: "/img/autism-coachning.jpg"
 hero_alt: "Samtal om autismstöd"
+aliases:
+  - "/blogg/autism-guide/"
 ---
 <div class="guide-page guide-page--autism">
   <section class="guide-hero" id="intro">

@@ -1,5 +1,6 @@
 ---
 title: "Om ADHD – din guide till symtom, diagnos och stöd"
+translationKey: "adhd-guide"
 date: 2024-09-27
 description: "En lättöverskådlig genomgång av vad ADHD är, hur diagnoser ställs och vilka behandlingar som hjälper."
 layout: "guide"
@@ -8,6 +9,8 @@ meta_description: "En överskådlig guide om ADHD: symtom, diagnosprocess och vi
 meta_keywords: "ADHD guide, symtom, diagnos, behandling, stöd"
 hero: "/img/child-smiling-with-pillow.jpg"
 hero_alt: "Barn som ler och håller en kudde"
+aliases:
+  - "/blogg/adhd-dygnet-runt/"
 ---
 <div class="guide-page guide-page--adhd">
   <section class="guide-hero" id="intro">

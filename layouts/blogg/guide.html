@@ -2,6 +2,7 @@
   {{ .Content }}
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+      if (!window.matchMedia || !window.matchMedia('(max-width: 900px)').matches) return;
       const sections = Array.from(document.querySelectorAll('.guide-page .guide-section'));
       sections.forEach((section, index) => {
         if (index === 0) return; // keep the first content section expanded
@@ -11,6 +12,7 @@
 
         const details = document.createElement('details');
         details.className = 'guide-accordion';
+        section.classList.add('guide-section--accordion');
 
         const summary = document.createElement('summary');
         summary.textContent = heading.textContent.trim();
