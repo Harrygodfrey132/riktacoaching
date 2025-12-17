@@ -28,11 +28,18 @@
   {{- /* Hreflang alternates for translated pages */ -}}
   {{- $translations := $page.AllTranslations -}}
   {{- if gt (len $translations) 0 -}}
+    {{- $seen := dict -}}
+    {{- $defaultPage := $page -}}
     {{- range $translations -}}
-  <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+      {{- $lang := cond (or (eq .Lang "en") (hasPrefix .RelPermalink "/en/")) "en" "sv" -}}
+      {{- if and $lang (not (isset $seen $lang)) -}}
+  <link rel="alternate" hreflang="{{ $lang }}" href="{{ .Permalink }}">
+        {{- $seen = merge $seen (dict $lang true) -}}
+      {{- end -}}
+      {{- if eq $lang "sv" -}}
+        {{- $defaultPage = . -}}
+      {{- end -}}
     {{- end -}}
-    {{- $svList := where $translations "Lang" "sv" -}}
-    {{- $defaultPage := cond (gt (len $svList) 0) (index $svList 0) ($page) -}}
   <link rel="alternate" hreflang="x-default" href="{{ $defaultPage.Permalink }}">
   {{- end }}
   <link rel="preconnect" href="https://www.googletagmanager.com">
