@@ -65,12 +65,11 @@ export async function onRequest(context) {
     return withCors(json({ error: 'Missing required fields' }, 400));
   }
 
-  const combinedDescription = [normalized.description, normalized.note].filter(Boolean).join(' | ') || 'Website enquiry';
   const clientInput = {
     firstname: normalized.firstname,
     lastname: normalized.lastname,
     email: normalized.email,
-    notification: combinedDescription,
+    notification: normalized.description || 'Website enquiry',
     pnr: null,
     zip: null,
     city: null,
