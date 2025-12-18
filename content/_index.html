@@ -243,6 +243,61 @@ hide_template_hero: true
           <p class="contact-form__note form-thank-you" data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
           <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
         </form>
+        <script>
+          // Inline fallback to ensure the homepage contact form always submits and shows feedback.
+          (function(){
+            const form = document.getElementById('kaddio-contact-form-home');
+            if (!form || form.dataset.kaddioInlineBound) return;
+            form.dataset.kaddioInlineBound = 'true';
+            const statusEl = form.querySelector('[data-form-status]');
+            const thankYou = form.querySelector('[data-thank-you]');
+
+            function setStatus(message, type){
+              if (!statusEl) return;
+              statusEl.textContent = message || '';
+              statusEl.dataset.statusType = type || 'info';
+              statusEl.hidden = !message;
+            }
+
+            form.addEventListener('submit', async (event) => {
+              event.preventDefault();
+              if (thankYou) thankYou.hidden = true;
+              setStatus(form.dataset.sendingMessage || 'Skickar...', 'info');
+
+              const data = new FormData(form);
+              const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
+              const email = (data.get('email') || data.get('Email') || '').trim();
+              const payload = {
+                fullName,
+                email,
+                description: (data.get('description') || data.get('message') || '').trim(),
+                leadSource: (data.get('leadSource') || '').trim()
+              };
+              if (!payload.email) {
+                setStatus('Lägg till din e-post innan du skickar.', 'error');
+                return;
+              }
+
+              try {
+                const res = await fetch('/api/kaddio/contact', {
+                  method: 'POST',
+                  headers: { 'Content-Type': 'application/json' },
+                  body: JSON.stringify(payload)
+                });
+                const body = await res.json().catch(() => ({}));
+                if (!res.ok) {
+                  setStatus(body?.error || body?.message || 'Det gick inte att skicka just nu.', 'error');
+                  return;
+                }
+                if (thankYou) thankYou.hidden = false;
+                setStatus(form.dataset.successMessage || 'Tack! Vi återkommer så snart vi kan.', 'success');
+                form.reset();
+              } catch (_err) {
+                setStatus('Det gick inte att skicka just nu.', 'error');
+              }
+            });
+          })();
+        </script>
         <p class="contact-form__note">Vi behandlar dina uppgifter konfidentiellt och återkommer vanligtvis inom 1–2 arbetsdagar.</p>
       </div>
     </div>
