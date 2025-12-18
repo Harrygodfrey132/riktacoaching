@@ -190,6 +190,65 @@ hide_template_hero: true
   </div>
 </section>
 
+<section class="home-contact" id="kontakt-hem">
+  <div class="container">
+    <div class="home-contact__inner">
+      <aside class="home-contact__quote-card" aria-label="Om Rikta">
+        <span class="home-contact__kicker">Vi finns kvar efter diagnosen</span>
+        <h2>Kontakta oss och så tar vi nästa steg tillsammans</h2>
+        <p class="home-contact__quote">
+          “Vården ska inte ta slut när du får en diagnos. På Rikta stannar vi kvar – med långsiktigt stöd som hjälper dig att hitta trygghet,
+          struktur och riktning, så att du kan leva ett liv som faktiskt fungerar i vardagen.”
+        </p>
+        <p class="home-contact__quote-author"> - Philip Lindersten , CEO </p>
+        <ul class="home-contact__points" aria-label="Vad du kan förvänta dig">
+          <li>Återkoppling inom 1–2 arbetsdagar</li>
+          <li>Trygg matchning med rätt specialist</li>
+          <li>Stöd som håller över tid – inte bara ett första steg</li>
+        </ul>
+      </aside>
+
+      <div class="home-contact__form-card contact-form" aria-label="Kontaktformulär">
+        <h2>Kontakta oss</h2>
+        <p>Fyll i formuläret så återkommer vi med förslag på tider och upplägg som passar dig.</p>
+        <form id="kaddio-contact-form-home"
+          class="contact-form__body"
+          data-kaddio-form="contact"
+          data-form-context="homepage-reviews-sv"
+          data-success-message="Tack! Vi återkommer så snart vi kan."
+          data-sending-message="Skickar..."
+          action="/api/kaddio/contact"
+          method="POST"
+          accept-charset="UTF-8">
+          <input type="hidden" name="leadSource" value="Homepage (Reviews section)">
+          <div class="form-row">
+            <label for="home-contact-first-name">Förnamn</label>
+            <input type="text" id="home-contact-first-name" name="firstName" maxlength="40" autocomplete="given-name" placeholder="Ange ditt förnamn">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-last-name">Efternamn <span style="color:red;">*</span></label>
+            <input type="text" id="home-contact-last-name" name="lastName" maxlength="80" autocomplete="family-name" required placeholder="Ange ditt efternamn">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-email">E-postadress <span style="color:red;">*</span></label>
+            <input type="email" id="home-contact-email" name="email" maxlength="100" autocomplete="email" required placeholder="namn@example.se">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-description">Berätta kort hur vi kan hjälpa dig</label>
+            <textarea id="home-contact-description" name="description" placeholder="Beskriv din situation eller ställ din fråga"></textarea>
+          </div>
+          <div class="form-row form-row--actions">
+            <button type="submit" class="btn primary">Skicka</button>
+          </div>
+          <p class="contact-form__note form-thank-you" data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
+          <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
+        </form>
+        <p class="contact-form__note">Vi behandlar dina uppgifter konfidentiellt och återkommer vanligtvis inom 1–2 arbetsdagar.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="news-section">
   <div class="container">
     <div class="news-heading">

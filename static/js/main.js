@@ -356,6 +356,8 @@
 
   function bindKaddioForm(form, { augmentPayload, onSuccess } = {}){
     if (!form) return;
+    // Some pages include an inline fallback handler; avoid double-submitting to Kaddio.
+    if (form.dataset.kaddioInlineBound === 'true') return;
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const thankYou = form.querySelector('[data-thank-you]');

@@ -190,6 +190,65 @@ hide_template_hero: true
   </div>
 </section>
 
+<section class="home-contact" id="contact-home">
+  <div class="container">
+    <div class="home-contact__inner">
+      <aside class="home-contact__quote-card" aria-label="About Rikta">
+        <span class="home-contact__kicker">We stay with you after diagnosis</span>
+        <h2>Contact us and let’s take the next step together</h2>
+        <p class="home-contact__quote">
+          “Care shouldn’t stop at the moment you receive a diagnosis. At Rikta, we stay with you, providing long-term support that helps you find
+          steadiness, structure, and direction, so everyday life starts to feel manageable again.”
+        </p>
+        <p class="home-contact__quote-author">- Philip Lindersten, CEO of Rikta Psychiatry</p>
+        <ul class="home-contact__points" aria-label="What to expect">
+          <li>Response within 1–2 business days</li>
+          <li>Careful matching with the right specialist</li>
+          <li>Support that lasts — not just a first step</li>
+        </ul>
+      </aside>
+
+      <div class="home-contact__form-card contact-form" aria-label="Contact form">
+        <h2>Contact us</h2>
+        <p>Fill out the form and we’ll get back to you with suggested times and a plan that fits you.</p>
+        <form id="kaddio-contact-form-home-en"
+          class="contact-form__body"
+          data-kaddio-form="contact"
+          data-form-context="homepage-reviews-en"
+          data-success-message="Thank you! We’ll get back to you as soon as possible."
+          data-sending-message="Sending..."
+          action="/api/kaddio/contact"
+          method="POST"
+          accept-charset="UTF-8">
+          <input type="hidden" name="leadSource" value="Homepage (Reviews section)">
+          <div class="form-row">
+            <label for="home-contact-first-name-en">First name</label>
+            <input type="text" id="home-contact-first-name-en" name="firstName" maxlength="40" autocomplete="given-name" placeholder="Enter your first name">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-last-name-en">Last name <span style="color:red;">*</span></label>
+            <input type="text" id="home-contact-last-name-en" name="lastName" maxlength="80" autocomplete="family-name" required placeholder="Enter your last name">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-email-en">Email address <span style="color:red;">*</span></label>
+            <input type="email" id="home-contact-email-en" name="email" maxlength="100" autocomplete="email" required placeholder="name@example.com">
+          </div>
+          <div class="form-row">
+            <label for="home-contact-description-en">Tell us briefly how we can help</label>
+            <textarea id="home-contact-description-en" name="description" placeholder="Describe your situation or ask your question"></textarea>
+          </div>
+          <div class="form-row form-row--actions">
+            <button type="submit" class="btn primary">Send</button>
+          </div>
+          <p class="contact-form__note form-thank-you" data-thank-you hidden>Thank you! We’ll get back to you as soon as possible.</p>
+          <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
+        </form>
+        <p class="contact-form__note">We treat your information confidentially and typically respond within 1–2 business days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="news-section">
   <div class="container">
     <div class="news-heading">
