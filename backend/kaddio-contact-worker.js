@@ -44,6 +44,17 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 }
 `;
 
+const UPDATE_CONTACT_MUTATION = `
+mutation UpdateContact($contactId: ID!, $customProperties: [CustomFieldValueInput]) {
+  updateContact(
+    contactId: $contactId
+    customProperties: $customProperties
+  ) {
+    _id
+  }
+}
+`;
+
 const MAX_BODY_SIZE = 8000; // basic guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 
@@ -109,18 +120,31 @@ export default {
       ];
 
       try {
-        const updateResponse = await callKaddio({
-          query: UPDATE_USER_MUTATION,
+        // Try updating the contact first.
+        const updateContactResponse = await callKaddio({
+          query: UPDATE_CONTACT_MUTATION,
           variables: {
-            userId: clientId,
+            contactId: clientId,
             customProperties: customProps
           },
           env
         });
 
-        if (updateResponse.errors?.length) {
-          const messageText = updateResponse.errors.map(err => err.message).join('; ');
-          return buildCorsResponse(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
+        if (updateContactResponse.errors?.length) {
+          // Fallback: try updating the user.
+          const updateUserResponse = await callKaddio({
+            query: UPDATE_USER_MUTATION,
+            variables: {
+              userId: clientId,
+              customProperties: customProps
+            },
+            env
+          });
+
+          if (updateUserResponse.errors?.length) {
+            const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
+            return buildCorsResponse(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
+          }
         }
       } catch (_updateErr) {
         return buildCorsResponse(json({ ok: true, clientId, warning: 'Client created; custom field update failed' }));
