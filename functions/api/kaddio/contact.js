@@ -34,6 +34,17 @@ mutation CreateClient(
 }
 `;
 
+const UPDATE_USER_MUTATION = `
+mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
+  updateUser(
+    userId: $userId
+    customProperties: $customProperties
+  ) {
+    _id
+  }
+}
+`;
+
 const MAX_BODY_SIZE = 8000; // guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 
@@ -78,18 +89,42 @@ export async function onRequest(context) {
   };
 
   try {
-    const graphqlResponse = await callKaddio({
+    const createResponse = await callKaddio({
       query: CREATE_CLIENT_MUTATION,
       variables: clientInput,
       env
     });
 
-    if (graphqlResponse.errors?.length) {
-      const message = graphqlResponse.errors.map(err => err.message).join('; ');
+    if (createResponse.errors?.length) {
+      const message = createResponse.errors.map(err => err.message).join('; ');
       return withCors(json({ error: message || 'Kaddio rejected the request' }, 502));
     }
 
-    return withCors(json({ ok: true, clientId: graphqlResponse.data?.createClient || null }));
+    const clientId = createResponse.data?.createClient || null;
+    if (!clientId) {
+      return withCors(json({ error: 'Kaddio did not return a client id' }, 502));
+    }
+
+    const message = normalized.description || 'Website enquiry';
+    const customProps = [
+      { field: 'Reason_Field', valueString: message }
+    ];
+
+    const updateResponse = await callKaddio({
+      query: UPDATE_USER_MUTATION,
+      variables: {
+        userId: clientId,
+        customProperties: customProps
+      },
+      env
+    });
+
+    if (updateResponse.errors?.length) {
+      const messageText = updateResponse.errors.map(err => err.message).join('; ');
+      return withCors(json({ error: messageText || 'Kaddio rejected the update' }, 502));
+    }
+
+    return withCors(json({ ok: true, clientId }));
   } catch (error) {
     return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
   }

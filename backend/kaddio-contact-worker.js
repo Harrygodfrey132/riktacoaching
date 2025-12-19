@@ -7,13 +7,39 @@
  * - KADDIO_IMPERSONATION_ID: (optional) host id to impersonate when creating contacts
  */
 
-const CREATE_CONTACT_MUTATION = `
-mutation CreateContact($contact: ContactInsertInput!) {
-  createContact(contact: $contact) {
+const CREATE_CLIENT_MUTATION = `
+mutation CreateClient(
+  $firstname: String
+  $lastname: String
+  $email: String
+  $notification: String
+  $pnr: String
+  $zip: String
+  $city: String
+  $streetAdress: String
+  $cellphone: String
+) {
+  createClient(
+    firstname: $firstname
+    lastname: $lastname
+    email: $email
+    notification: $notification
+    pnr: $pnr
+    zip: $zip
+    city: $city
+    streetAdress: $streetAdress
+    cellphone: $cellphone
+  )
+}
+`;
+
+const UPDATE_USER_MUTATION = `
+mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
+  updateUser(
+    userId: $userId
+    customProperties: $customProperties
+  ) {
     _id
-    firstname
-    lastname
-    email
   }
 }
 `;
@@ -48,28 +74,55 @@ export default {
       return buildCorsResponse(json({ error: 'Missing required fields' }, 400));
     }
 
-    const combinedDescription = [normalized.description, normalized.note].filter(Boolean).join(' | ') || 'Website enquiry';
-    const contactInput = {
+    const notification = normalized.description || 'Website enquiry';
+    const clientInput = {
       firstname: normalized.firstname,
       lastname: normalized.lastname,
       email: normalized.email,
-      description: combinedDescription,
-      leadSource: normalized.leadSource
+      notification,
+      pnr: null,
+      zip: null,
+      city: null,
+      streetAdress: null,
+      cellphone: null
     };
 
     try {
-      const graphqlResponse = await callKaddio({
-        query: CREATE_CONTACT_MUTATION,
-        variables: { contact: contactInput },
+      const createResponse = await callKaddio({
+        query: CREATE_CLIENT_MUTATION,
+        variables: clientInput,
         env
       });
 
-      if (graphqlResponse.errors?.length) {
-        const message = graphqlResponse.errors.map(err => err.message).join('; ');
+      if (createResponse.errors?.length) {
+        const message = createResponse.errors.map(err => err.message).join('; ');
         return buildCorsResponse(json({ error: message || 'Kaddio rejected the request' }, 502));
       }
 
-      return buildCorsResponse(json({ ok: true, contact: graphqlResponse.data?.createContact || null }));
+      const clientId = createResponse.data?.createClient || null;
+      if (!clientId) {
+        return buildCorsResponse(json({ error: 'Kaddio did not return a client id' }, 502));
+      }
+
+      const customProps = [
+        { field: 'Reason_Field', valueString: notification }
+      ];
+
+      const updateResponse = await callKaddio({
+        query: UPDATE_USER_MUTATION,
+        variables: {
+          userId: clientId,
+          customProperties: customProps
+        },
+        env
+      });
+
+      if (updateResponse.errors?.length) {
+        const messageText = updateResponse.errors.map(err => err.message).join('; ');
+        return buildCorsResponse(json({ error: messageText || 'Kaddio rejected the update' }, 502));
+      }
+
+      return buildCorsResponse(json({ ok: true, clientId }));
     } catch (error) {
       return buildCorsResponse(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
     }
