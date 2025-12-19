@@ -110,21 +110,26 @@ export async function onRequest(context) {
       { field: 'Reason_Field', valueString: message }
     ];
 
-    const updateResponse = await callKaddio({
-      query: UPDATE_USER_MUTATION,
-      variables: {
-        userId: clientId,
-        customProperties: customProps
-      },
-      env
-    });
+    try {
+      const updateResponse = await callKaddio({
+        query: UPDATE_USER_MUTATION,
+        variables: {
+          userId: clientId,
+          customProperties: customProps
+        },
+        env
+      });
 
-    if (updateResponse.errors?.length) {
-      const messageText = updateResponse.errors.map(err => err.message).join('; ');
-      return withCors(json({ error: messageText || 'Kaddio rejected the update' }, 502));
+      if (updateResponse.errors?.length) {
+        const messageText = updateResponse.errors.map(err => err.message).join('; ');
+        return withCors(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
+      }
+    } catch (_updateErr) {
+      // Gracefully continue if customProperties update fails.
+      return withCors(json({ ok: true, clientId, warning: 'Client created; custom field update failed' }));
     }
 
-    return withCors(json({ ok: true, clientId }));
+    return withCors(json({ ok: true, clientId, updatedCustomProperties: true }));
   } catch (error) {
     return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
   }
