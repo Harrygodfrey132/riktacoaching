@@ -408,6 +408,8 @@ function initScreeningForm({
     const lastName = (form.querySelector('input[name="lastName"]')?.value || '').trim();
     const email = (form.querySelector('input[name="email"]')?.value || '').trim();
     const statusEl = statusTarget || form.querySelector('[data-form-status]');
+    const lang = (document.documentElement?.lang || 'sv').toLowerCase();
+    const isEn = lang.startsWith('en');
 
     const setStatus = (msg, type = 'info') => {
       if (!statusEl) return;
@@ -417,12 +419,12 @@ function initScreeningForm({
     };
 
     if (!email) {
-      setStatus('Lägg till din e-post innan du skickar.', 'error');
+      setStatus(isEn ? 'Please add your email.' : 'Lägg till din e-post.', 'error');
       return;
     }
     const fullName = [firstName, lastName].filter(Boolean).join(' ').trim() || firstName || lastName || '';
     if (!fullName) {
-      setStatus('Lägg till ditt namn innan du skickar.', 'error');
+      setStatus(isEn ? 'Please add your name.' : 'Lägg till ditt namn.', 'error');
       return;
     }
 
@@ -448,18 +450,13 @@ function initScreeningForm({
     };
 
     try {
-      setStatus('Skickar...', 'info');
+      setStatus(isEn ? 'Sending your results…' : 'Skickar dina resultat…', 'info');
       await postToBackend(body);
-      setStatus('Tack! Vi återkommer så snart vi kan.', 'success');
-      form.reset();
-      const scoreBox = form.closest('.adhd-screening__card')?.querySelector('.adhd-score');
-      if (scoreBox) {
-        scoreBox.hidden = true;
-      }
+      setStatus(isEn ? 'Thank you! We’ll contact you with your results.' : 'Tack! Vi kontaktar dig med dina resultat.', 'success');
     } catch (err) {
       const msg = err?.status === 429
-        ? 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.'
-        : (err?.message || 'Det gick inte att skicka just nu.');
+        ? (isEn ? 'We are handling many requests right now. Please try again shortly.' : 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.')
+        : (err?.message || (isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.'));
       setStatus(msg, 'error');
     }
   }

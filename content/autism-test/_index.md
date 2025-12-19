@@ -21,6 +21,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
       <form class="adhd-screening__card" id="autism-screening-form">
         <fieldset class="adhd-screening__identity">
           <legend>Dina uppgifter</legend>
+          <p class="adhd-screening__note">Fyll i namn och e-post för att få ditt resultat och en personlig rapport.</p>
           <label class="adhd-input">
             <span>Förnamn</span>
             <input type="text" name="firstName" autocomplete="given-name" placeholder="Förnamn" required>

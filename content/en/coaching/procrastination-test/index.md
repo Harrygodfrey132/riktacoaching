@@ -20,6 +20,7 @@ summary: "Short self-check to understand your procrastination patterns."
       <form class="adhd-screening__card" id="procrastination-screening-form">
         <fieldset class="adhd-screening__identity">
           <legend>Your details</legend>
+          <p class="adhd-screening__note">Add your name and email to get your result and a personalised report.</p>
           <label class="adhd-input">
             <span>First name</span>
             <input type="text" name="firstName" autocomplete="given-name" placeholder="First name" required>
