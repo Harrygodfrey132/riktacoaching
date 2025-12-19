@@ -44,6 +44,17 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 }
 `;
 
+const UPDATE_CONTACT_MUTATION = `
+mutation UpdateContact($contactId: ID!, $customProperties: [CustomFieldValueInput]) {
+  updateContact(
+    contactId: $contactId
+    customProperties: $customProperties
+  ) {
+    _id
+  }
+}
+`;
+
 const MAX_BODY_SIZE = 8000; // basic guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 
@@ -108,8 +119,27 @@ export default {
         { field: 'Reason_Field', valueString: notification }
       ];
 
+      const warnings = [];
+
+      // Try updating the contact first.
       try {
-        // Update the user (client) with the custom field. If it fails, still return ok with a warning.
+        const updateContactResponse = await callKaddio({
+          query: UPDATE_CONTACT_MUTATION,
+          variables: {
+            contactId: clientId,
+            customProperties: customProps
+          },
+          env
+        });
+        if (updateContactResponse.errors?.length) {
+          warnings.push(updateContactResponse.errors.map(err => err.message).join('; '));
+        }
+      } catch (err) {
+        warnings.push(err?.message || 'Contact custom field update failed');
+      }
+
+      // Fallback: also try updating the user.
+      try {
         const updateUserResponse = await callKaddio({
           query: UPDATE_USER_MUTATION,
           variables: {
@@ -118,13 +148,15 @@ export default {
           },
           env
         });
-
         if (updateUserResponse.errors?.length) {
-          const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
-          return buildCorsResponse(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
+          warnings.push(updateUserResponse.errors.map(err => err.message).join('; '));
         }
-      } catch (_updateErr) {
-        return buildCorsResponse(json({ ok: true, clientId, warning: 'Client created; custom field update failed' }));
+      } catch (err) {
+        warnings.push(err?.message || 'User custom field update failed');
+      }
+
+      if (warnings.length) {
+        return buildCorsResponse(json({ ok: true, clientId, warning: warnings.join(' | ') }));
       }
 
       return buildCorsResponse(json({ ok: true, clientId, updatedCustomProperties: true }));
