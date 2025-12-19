@@ -1748,6 +1748,14 @@ main#content > .location-page:first-child {
   background: linear-gradient(145deg, rgba(236, 78, 91, 0.12), rgba(255, 255, 255, 0.92));
 }
 
+.location-card--vasteras {
+  background: linear-gradient(145deg, rgba(89, 116, 192, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.location-card--katrineholm {
+  background: linear-gradient(145deg, rgba(76, 150, 120, 0.12), rgba(255, 255, 255, 0.92));
+}
+
 .location-card__header h3 {
   margin: 10px 0 8px;
   font-size: 30px;
@@ -1855,6 +1863,14 @@ main#content > .location-page:first-child {
 
 .location-hero--goteborg {
   background: linear-gradient(140deg, #f9efef 0%, #ffffff 40%, #fdf3f1 100%);
+}
+
+.location-hero--vasteras {
+  background: linear-gradient(140deg, #eef2ff 0%, #ffffff 40%, #f0f7ff 100%);
+}
+
+.location-hero--katrineholm {
+  background: linear-gradient(140deg, #eef6f3 0%, #ffffff 40%, #f8f2ea 100%);
 }
 
 .location-hero__grid {
@@ -2033,6 +2049,14 @@ main#content > .location-page:first-child {
 
 .location-cta--goteborg {
   background: linear-gradient(120deg, rgba(236, 78, 91, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--vasteras {
+  background: linear-gradient(120deg, rgba(89, 116, 192, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--katrineholm {
+  background: linear-gradient(120deg, rgba(76, 150, 120, 0.12), rgba(255, 255, 255, 0.9));
 }
 
 .location-cta__content {

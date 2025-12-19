@@ -19,7 +19,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
           Kartläggning, psykologintervjuer, tester och läkarbesök genomförs digitalt – och bara om vi behöver ett specifikt moment på plats bokar vi ett kort precisionspass i city.
         </p>
         <ul class="location-hero__highlights">
-          <li>Personlig plan inom 48 timmar och utredning som avslutas på 2–4 veckor helt online.</li>
+          <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg (tidsplanen beror på dina behov).</li>
           <li>Lokalkännedom om krav från Stockholms arbetsgivare, CSN, universitet och Försäkringskassan.</li>
           <li>Digital medicinuppstart, coachning och arbetslivsanpassningar med samma team – fysiska besök endast vid behov.</li>
         </ul>
