@@ -20,23 +20,6 @@ layout: "autism-test/list"
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="autism-screening-form">
-        <fieldset class="adhd-screening__identity">
-          <legend>Your details</legend>
-          <p class="adhd-screening__note">Add your name and email to get your result and a personalised report.</p>
-          <label class="adhd-input">
-            <span>First name</span>
-            <input type="text" name="firstName" autocomplete="given-name" placeholder="First name" required>
-          </label>
-          <label class="adhd-input">
-            <span>Last name</span>
-            <input type="text" name="lastName" autocomplete="family-name" placeholder="Last name" required>
-          </label>
-          <label class="adhd-input">
-            <span>Email</span>
-            <input type="email" name="email" autocomplete="email" placeholder="name@example.com" required>
-          </label>
-          <p class="adhd-form-status" data-form-status hidden></p>
-        </fieldset>
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Choose the response that best describes how you usually feel or behave. AQ-10 helps identify autistic traits to see if further assessment might be relevant.</p>
           <dl class="adhd-meta">

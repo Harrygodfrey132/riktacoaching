@@ -111,7 +111,7 @@ function initScreeningForm({
   interpretationId,
   ranges,
   defaultInterpretation,
-  gateWithLeadForm = false,
+  gateWithLeadForm = true,
   onLeadRequired,
   scoreCalculator,
   buildInterpretation,
@@ -580,18 +580,9 @@ function initScreeningForm({
       { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
       { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
     ],
-    gateWithLeadForm: false,
-    onLeadRequired: null,
-    testName: 'Attention & Regulation Scale (R-ARS-12)',
-    onCompleted(payload, form){
-      sendScreeningToKaddio({
-        form,
-        payload,
-        formContext: 'adhd-screening',
-        leadSourceOverride: 'ADHD Screening',
-        statusTarget: form.querySelector('[data-form-status]')
-      });
-    }
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'Attention & Regulation Scale (R-ARS-12)'
   });
 
   initScreeningForm({
@@ -605,18 +596,9 @@ function initScreeningForm({
       { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
       { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
     ],
-    gateWithLeadForm: false,
-    onLeadRequired: null,
-    testName: 'Autism Screening (AQ-10)',
-    onCompleted(payload, form){
-      sendScreeningToKaddio({
-        form,
-        payload,
-        formContext: 'autism-screening',
-        leadSourceOverride: 'Autism Screening',
-        statusTarget: form.querySelector('[data-form-status]')
-      });
-    }
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'Autism Screening (AQ-10)'
   });
 
   initScreeningForm({
@@ -639,18 +621,9 @@ function initScreeningForm({
       }
       return Number(value);
     },
-    gateWithLeadForm: false,
-    onLeadRequired: null,
-    testName: 'Procrastination Test (GPS)',
-    onCompleted(payload, form){
-      sendScreeningToKaddio({
-        form,
-        payload,
-        formContext: 'procrastination-test',
-        leadSourceOverride: 'Procrastination Test',
-        statusTarget: form.querySelector('[data-form-status]')
-      });
-    }
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'Procrastination Test (GPS)'
   });
 
   // ----- Newsletter Popup -----

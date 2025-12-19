@@ -18,23 +18,6 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="procrastination-screening-form">
-        <fieldset class="adhd-screening__identity">
-          <legend>Dina uppgifter</legend>
-          <p class="adhd-screening__note">Fyll i namn och e-post för att få ditt resultat och en personlig rapport.</p>
-          <label class="adhd-input">
-            <span>Förnamn</span>
-            <input type="text" name="firstName" autocomplete="given-name" placeholder="Förnamn" required>
-          </label>
-          <label class="adhd-input">
-            <span>Efternamn</span>
-            <input type="text" name="lastName" autocomplete="family-name" placeholder="Efternamn" required>
-          </label>
-          <label class="adhd-input">
-            <span>E-post</span>
-            <input type="email" name="email" autocomplete="email" placeholder="namn@example.com" required>
-          </label>
-          <p class="adhd-form-status" data-form-status hidden></p>
-        </fieldset>
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Formuläret består av 15 påståenden om uppskjutande, igångsättning, tidsplanering och självreglering. Resultatet är vägledande och ska inte användas för diagnos.</p>
           <dl class="adhd-meta">
