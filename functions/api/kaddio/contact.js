@@ -45,17 +45,6 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 }
 `;
 
-const UPDATE_CONTACT_MUTATION = `
-mutation UpdateContact($contactId: ID!, $customProperties: [CustomFieldValueInput]) {
-  updateContact(
-    contactId: $contactId
-    customProperties: $customProperties
-  ) {
-    _id
-  }
-}
-`;
-
 const MAX_BODY_SIZE = 8000; // guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 
@@ -122,19 +111,8 @@ export async function onRequest(context) {
     ];
 
     try {
-      // Try updating the contact first (customProperties are typically bound to contacts/clients).
-      const updateContactResponse = await callKaddio({
-        query: UPDATE_CONTACT_MUTATION,
-        variables: {
-          contactId: clientId,
-          customProperties: customProps
-        },
-        env
-      });
-
-      if (updateContactResponse.errors?.length) {
-        // If contact update fails, try updating the user as a fallback.
-        const updateUserResponse = await callKaddio({
+      // Update the user (client) with the custom field. If it fails, still return ok with a warning.
+      const updateUserResponse = await callKaddio({
         query: UPDATE_USER_MUTATION,
         variables: {
           userId: clientId,
@@ -143,13 +121,11 @@ export async function onRequest(context) {
         env
       });
 
-        if (updateUserResponse.errors?.length) {
-          const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
-          return withCors(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
-        }
+      if (updateUserResponse.errors?.length) {
+        const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
+        return withCors(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
       }
     } catch (_updateErr) {
-      // Gracefully continue if customProperties update fails.
       return withCors(json({ ok: true, clientId, warning: 'Client created; custom field update failed' }));
     }
 
@@ -178,13 +154,14 @@ function withCors(response) {
 function normalizeInput(body) {
   if (!body || typeof body !== 'object') return null;
 
-  const fullName = (body.fullName || '').trim();
+  const fullName = (body.fullName || [body.firstName, body.lastName].filter(Boolean).join(' ') || '').trim();
   const email = (body.email || '').trim();
   const description = (body.description || body.Description || body.message || '').trim();
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
-  const lastname = rest.join(' ') || 'N/A';
+  const lastname = rest.join(' ') || (body.lastName || 'N/A');
+  const firstname = first || (body.firstName || 'N/A');
   const leadSource = (body.leadSource || 'Website form').trim();
   const metadata = body.metadata || {};
 
@@ -195,7 +172,7 @@ function normalizeInput(body) {
   ].filter(Boolean).join(' | ');
 
   return {
-    firstname: first,
+    firstname,
     lastname,
     email,
     description,
