@@ -33,24 +33,6 @@ mutation CreateClient(
 }
 `;
 
-const UPDATE_USER_MUTATION = `
-mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
-  updateUser(
-    userId: $userId
-    customProperties: $customProperties
-  )
-}
-`;
-
-const UPDATE_CONTACT_MUTATION = `
-mutation UpdateContact($contactId: ID!, $customProperties: [CustomFieldValueInput]) {
-  updateContact(
-    contactId: $contactId
-    customProperties: $customProperties
-  )
-}
-`;
-
 const MAX_BODY_SIZE = 8000; // basic guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 
@@ -111,58 +93,8 @@ export default {
         return buildCorsResponse(json({ error: 'Kaddio did not return a client id' }, 502));
       }
 
-      const customProps = [
-        { field: 'Reason_Field', valueString: notification }
-      ];
-
-      const warnings = [];
-      let updated = false;
-
-      // Try updating the contact first.
-      try {
-        const updateContactResponse = await callKaddio({
-          query: UPDATE_CONTACT_MUTATION,
-          variables: {
-            contactId: clientId,
-            customProperties: customProps
-          },
-          env
-        });
-        if (updateContactResponse.errors?.length) {
-          warnings.push(`contact update: ${updateContactResponse.errors.map(err => err.message).join('; ')}`);
-        } else {
-          updated = true;
-        }
-      } catch (err) {
-        warnings.push(`contact update: ${err?.message || 'Contact custom field update failed'}`);
-      }
-
-      // Fallback: try updating the user.
-      if (!updated) {
-        try {
-          const updateUserResponse = await callKaddio({
-            query: UPDATE_USER_MUTATION,
-            variables: {
-              userId: clientId,
-              customProperties: customProps
-            },
-            env
-          });
-          if (updateUserResponse.errors?.length) {
-            warnings.push(`user update: ${updateUserResponse.errors.map(err => err.message).join('; ')}`);
-          } else {
-            updated = true;
-          }
-        } catch (err) {
-          warnings.push(`user update: ${err?.message || 'User custom field update failed'}`);
-        }
-      }
-
-      if (warnings.length) {
-        return buildCorsResponse(json({ ok: true, clientId, warning: warnings.join(' | ') }));
-      }
-
-      return buildCorsResponse(json({ ok: true, clientId, updatedCustomProperties: updated }));
+      // Simplify: only create the client. Skip customProperties to avoid Kaddio rejections.
+      return buildCorsResponse(json({ ok: true, clientId }));
     } catch (error) {
       return buildCorsResponse(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
     }
