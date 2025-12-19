@@ -188,3 +188,48 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
     </div>
   </div>
 </section>
+
+<div class="lead-modal" id="adhd-lead-modal" hidden>
+  <div class="lead-modal__overlay" data-close-lead></div>
+  <div class="lead-modal__dialog">
+    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
+    <div class="lead-modal__intro">
+      <p class="lead-modal__eyebrow">Visa resultat</p>
+      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
+      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
+      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
+    </div>
+    <form id="kaddio-lead-form"
+      class="lead-modal__form"
+      data-kaddio-form="lead"
+      data-form-context="adhd-screening"
+      data-success-message="Tack! Resultatet visas nu."
+      action="/api/kaddio/contact"
+      method="POST"
+      accept-charset="UTF-8">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="ADHD Screening">
+      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
+      <textarea id="adhd-lead-description" name="description" hidden></textarea>
+      <div class="lead-modal__fields">
+        <label class="lead-modal__field">
+          <span>Förnamn <span class="lead-required">*</span></span>
+          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>Efternamn <span class="lead-required">*</span></span>
+          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>E-post <span class="lead-required">*</span></span>
+          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
+        </label>
+      </div>
+      <div class="lead-modal__actions">
+        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
+        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
+      </div>
+      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
+    </form>
+    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en kort plan för nästa steg. Tack, Rikta Psykiatri-teamet.</p>
+  </div>
+</div>
