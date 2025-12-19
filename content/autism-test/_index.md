@@ -19,6 +19,22 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="autism-screening-form">
+        <fieldset class="adhd-screening__identity">
+          <legend>Dina uppgifter</legend>
+          <label class="adhd-input">
+            <span>Förnamn</span>
+            <input type="text" name="firstName" autocomplete="given-name" placeholder="Förnamn" required>
+          </label>
+          <label class="adhd-input">
+            <span>Efternamn</span>
+            <input type="text" name="lastName" autocomplete="family-name" placeholder="Efternamn" required>
+          </label>
+          <label class="adhd-input">
+            <span>E-post</span>
+            <input type="email" name="email" autocomplete="email" placeholder="namn@example.com" required>
+          </label>
+          <p class="adhd-form-status" data-form-status hidden></p>
+        </fieldset>
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Välj det svar som bäst beskriver hur du vanligtvis känner eller beter dig. AQ-10 hjälper till att identifiera autistiska drag för att se om en vidare utredning kan vara relevant.</p>
           <dl class="adhd-meta">

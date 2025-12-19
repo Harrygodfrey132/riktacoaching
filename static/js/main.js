@@ -103,22 +103,23 @@
   });
 
   // ----- Screening Test Logic (ADHD + Autism) -----
-  function initScreeningForm({
-    formId,
-    totalQuestions,
-    scoreBoxId,
-    scoreValueId,
-    interpretationId,
-    ranges,
-    defaultInterpretation,
-    gateWithLeadForm = false,
-    onLeadRequired,
-    scoreCalculator,
-    buildInterpretation,
-    metaUpdater,
-    testName,
-    transformValue
-  }) {
+function initScreeningForm({
+  formId,
+  totalQuestions,
+  scoreBoxId,
+  scoreValueId,
+  interpretationId,
+  ranges,
+  defaultInterpretation,
+  gateWithLeadForm = false,
+  onLeadRequired,
+  scoreCalculator,
+  buildInterpretation,
+  metaUpdater,
+  testName,
+  transformValue,
+  onCompleted
+}) {
     const form = document.getElementById(formId);
     if (!form) return;
 
@@ -198,11 +199,11 @@
       return { total, answered };
     }
 
-    function collectAnswerDetails() {
-      const answers = [];
-      const questions = form.querySelectorAll('.adhd-question');
-      questions.forEach((question, index) => {
-        const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
+  function collectAnswerDetails() {
+    const answers = [];
+    const questions = form.querySelectorAll('.adhd-question');
+    questions.forEach((question, index) => {
+      const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
         const selected = question.querySelector('input[type="radio"]:checked');
         let answerText = '';
         if (selected) {
@@ -230,20 +231,23 @@
           }
           showScoreBox();
         };
-        const payload = {
-          testName,
-          total: scoreData.total,
-          answered: scoreData.answered,
-          meta: scoreData.meta || {},
-          interpretation: interpretation ? interpretation.text : '',
-          answers: collectAnswerDetails(),
-          renderResult
-        };
+      const payload = {
+        testName,
+        total: scoreData.total,
+        answered: scoreData.answered,
+        meta: scoreData.meta || {},
+        interpretation: interpretation ? interpretation.text : '',
+        answers: collectAnswerDetails(),
+        renderResult
+      };
 
         if (gateWithLeadForm && typeof onLeadRequired === 'function') {
           onLeadRequired(payload);
         } else {
           renderResult();
+          if (typeof onCompleted === 'function') {
+            onCompleted(payload, form);
+          }
         }
       }
     });
@@ -398,6 +402,68 @@
     });
   }
 
+  async function sendScreeningToKaddio({ form, payload, formContext, leadSourceOverride, statusTarget }){
+    if (!form) return;
+    const firstName = (form.querySelector('input[name="firstName"]')?.value || '').trim();
+    const lastName = (form.querySelector('input[name="lastName"]')?.value || '').trim();
+    const email = (form.querySelector('input[name="email"]')?.value || '').trim();
+    const statusEl = statusTarget || form.querySelector('[data-form-status]');
+
+    const setStatus = (msg, type = 'info') => {
+      if (!statusEl) return;
+      statusEl.textContent = msg || '';
+      statusEl.dataset.statusType = type;
+      statusEl.hidden = !msg;
+    };
+
+    if (!email) {
+      setStatus('Lägg till din e-post innan du skickar.', 'error');
+      return;
+    }
+    const fullName = [firstName, lastName].filter(Boolean).join(' ').trim() || firstName || lastName || '';
+    if (!fullName) {
+      setStatus('Lägg till ditt namn innan du skickar.', 'error');
+      return;
+    }
+
+    const lines = [];
+    if (payload?.testName) lines.push(`Test: ${payload.testName}`);
+    lines.push(`Total: ${payload.total || 0}`);
+    if (payload?.interpretation) lines.push(`Tolkning: ${payload.interpretation}`);
+    lines.push('Svar:');
+    (payload?.answers || []).forEach(item => {
+      lines.push(`${item.number}. ${item.prompt} — ${item.answer || 'Ej angivet'}`);
+    });
+    const description = lines.join('\n');
+
+    const body = {
+      fullName,
+      email,
+      description,
+      leadSource: leadSourceOverride || 'Procrastination Test',
+      metadata: {
+        path: window.location.pathname,
+        formContext: formContext || 'procrastination-test'
+      }
+    };
+
+    try {
+      setStatus('Skickar...', 'info');
+      await postToBackend(body);
+      setStatus('Tack! Vi återkommer så snart vi kan.', 'success');
+      form.reset();
+      const scoreBox = form.closest('.adhd-screening__card')?.querySelector('.adhd-score');
+      if (scoreBox) {
+        scoreBox.hidden = true;
+      }
+    } catch (err) {
+      const msg = err?.status === 429
+        ? 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.'
+        : (err?.message || 'Det gick inte att skicka just nu.');
+      setStatus(msg, 'error');
+    }
+  }
+
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
   contactForms.forEach(form => {
     bindKaddioForm(form);
@@ -517,9 +583,18 @@
       { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
       { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
     ],
-    gateWithLeadForm: true,
-    onLeadRequired: openLeadModal,
-    testName: 'Attention & Regulation Scale (R-ARS-12)'
+    gateWithLeadForm: false,
+    onLeadRequired: null,
+    testName: 'Attention & Regulation Scale (R-ARS-12)',
+    onCompleted(payload, form){
+      sendScreeningToKaddio({
+        form,
+        payload,
+        formContext: 'adhd-screening',
+        leadSourceOverride: 'ADHD Screening',
+        statusTarget: form.querySelector('[data-form-status]')
+      });
+    }
   });
 
   initScreeningForm({
@@ -533,9 +608,18 @@
       { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
       { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
     ],
-    gateWithLeadForm: true,
-    onLeadRequired: openLeadModal,
-    testName: 'Autism Screening (AQ-10)'
+    gateWithLeadForm: false,
+    onLeadRequired: null,
+    testName: 'Autism Screening (AQ-10)',
+    onCompleted(payload, form){
+      sendScreeningToKaddio({
+        form,
+        payload,
+        formContext: 'autism-screening',
+        leadSourceOverride: 'Autism Screening',
+        statusTarget: form.querySelector('[data-form-status]')
+      });
+    }
   });
 
   initScreeningForm({
@@ -557,6 +641,18 @@
         return 6 - num; // invert 1-5 to 5-1
       }
       return Number(value);
+    },
+    gateWithLeadForm: false,
+    onLeadRequired: null,
+    testName: 'Procrastination Test (GPS)',
+    onCompleted(payload, form){
+      sendScreeningToKaddio({
+        form,
+        payload,
+        formContext: 'procrastination-test',
+        leadSourceOverride: 'Procrastination Test',
+        statusTarget: form.querySelector('[data-form-status]')
+      });
     }
   });
 
