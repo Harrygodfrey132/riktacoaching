@@ -118,25 +118,9 @@ export async function onRequest(context) {
     ];
 
     let warnings = [];
+    let updated = false;
 
-    // Try updating the contact first (most likely target for client custom fields).
-    try {
-      const updateContactResponse = await callKaddio({
-        query: UPDATE_CONTACT_MUTATION,
-        variables: {
-          contactId: clientId,
-          customProperties: customProps
-        },
-        env
-      });
-      if (updateContactResponse.errors?.length) {
-        warnings.push(updateContactResponse.errors.map(err => err.message).join('; '));
-      }
-    } catch (err) {
-      warnings.push(err?.message || 'Contact custom field update failed');
-    }
-
-    // Fallback: also try updating the user.
+    // Update the user (client) with the custom field.
     try {
       const updateUserResponse = await callKaddio({
         query: UPDATE_USER_MUTATION,
@@ -148,6 +132,8 @@ export async function onRequest(context) {
       });
       if (updateUserResponse.errors?.length) {
         warnings.push(updateUserResponse.errors.map(err => err.message).join('; '));
+      } else {
+        updated = true;
       }
     } catch (err) {
       warnings.push(err?.message || 'User custom field update failed');
@@ -157,7 +143,7 @@ export async function onRequest(context) {
       return withCors(json({ ok: true, clientId, warning: warnings.join(' | ') }));
     }
 
-    return withCors(json({ ok: true, clientId, updatedCustomProperties: true }));
+    return withCors(json({ ok: true, clientId, updatedCustomProperties: updated }));
   } catch (error) {
     return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
   }
