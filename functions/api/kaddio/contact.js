@@ -250,7 +250,8 @@ async function callKaddio({ query, variables, env }) {
     }
     const parsed = await response.json().catch(() => ({}));
     if (!response.ok) {
-      const err = new Error(parsed?.error || parsed?.message || 'Kaddio API error');
+      const raw = typeof parsed === 'object' ? JSON.stringify(parsed) : String(parsed || '');
+      const err = new Error(`${parsed?.error || parsed?.message || 'Kaddio API error'} [status ${response.status}] ${raw ? `| ${raw}` : ''}`);
       err.statusCode = response.status;
       throw err;
     }
