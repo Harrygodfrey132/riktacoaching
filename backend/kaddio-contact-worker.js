@@ -118,23 +118,44 @@ export default {
       const warnings = [];
       let updated = false;
 
-      // Update the user (client) with the custom field.
+      // Try updating the contact first.
       try {
-        const updateUserResponse = await callKaddio({
-          query: UPDATE_USER_MUTATION,
+        const updateContactResponse = await callKaddio({
+          query: UPDATE_CONTACT_MUTATION,
           variables: {
-            userId: clientId,
+            contactId: clientId,
             customProperties: customProps
           },
           env
         });
-        if (updateUserResponse.errors?.length) {
-          warnings.push(updateUserResponse.errors.map(err => err.message).join('; '));
+        if (updateContactResponse.errors?.length) {
+          warnings.push(`contact update: ${updateContactResponse.errors.map(err => err.message).join('; ')}`);
         } else {
           updated = true;
         }
       } catch (err) {
-        warnings.push(err?.message || 'User custom field update failed');
+        warnings.push(`contact update: ${err?.message || 'Contact custom field update failed'}`);
+      }
+
+      // Fallback: try updating the user.
+      if (!updated) {
+        try {
+          const updateUserResponse = await callKaddio({
+            query: UPDATE_USER_MUTATION,
+            variables: {
+              userId: clientId,
+              customProperties: customProps
+            },
+            env
+          });
+          if (updateUserResponse.errors?.length) {
+            warnings.push(`user update: ${updateUserResponse.errors.map(err => err.message).join('; ')}`);
+          } else {
+            updated = true;
+          }
+        } catch (err) {
+          warnings.push(`user update: ${err?.message || 'User custom field update failed'}`);
+        }
       }
 
       if (warnings.length) {
