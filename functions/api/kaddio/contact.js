@@ -39,9 +39,7 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
   updateUser(
     userId: $userId
     customProperties: $customProperties
-  ) {
-    _id
-  }
+  )
 }
 `;
 
@@ -50,9 +48,7 @@ mutation UpdateContact($contactId: ID!, $customProperties: [CustomFieldValueInpu
   updateContact(
     contactId: $contactId
     customProperties: $customProperties
-  ) {
-    _id
-  }
+  )
 }
 `;
 
