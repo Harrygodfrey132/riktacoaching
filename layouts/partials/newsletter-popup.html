@@ -3,90 +3,84 @@
   <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
   <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
     <button type="button" class="newsletter-popup__close" aria-label="{{ if $isEn }}Close offer{{ else }}Stäng erbjudandet{{ end }}" data-popup-close>&times;</button>
+    <p class="newsletter-popup__eyebrow">{{ if $isEn }}Rikta Psychiatry{{ else }}Rikta Psykiatri{{ end }}</p>
     <h2 id="newsletter-popup-title">
-      {{ if $isEn }}Book an assessment call today.{{ else }}Boka ett bedömningssamtal redan idag.{{ end }}
+      {{ if $isEn }}See how we can support you at Rikta Psykiatri{{ else }}Se hur vi kan stötta dig på Rikta Psykiatri{{ end }}
     </h2>
-    <div class="newsletter-popup__cta">
-      <button
-        type="button"
-        class="newsletter-popup__submit"
-        data-popup-focus
-        data-cal-link="riktapsykiatri/15min"
-        data-cal-namespace="15min"
-        data-cal-config='{"layout":"month_view"}'
-      >{{ if $isEn }}Book an assessment call{{ else }}Boka ett bedömningssamtal{{ end }}
-      </button>
-    </div>
-    <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
-      {{ if $isEn }}
-        We follow the National Board of Health and Welfare’s requirements for clinical quality, evidence, and documentation.
-      {{ else }}
-        Vi följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
-      {{ end }}
+    <p class="newsletter-popup__lead">
+      {{ if $isEn }}Share a few details and we’ll get back to you within 1–2 business days.{{ else }}Berätta kort hur vi kan hjälpa dig så återkommer vi inom 1–2 arbetsdagar.{{ end }}
     </p>
+
+    <form
+      id="kaddio-popup-form"
+      class="newsletter-popup__form"
+      data-kaddio-form="contact"
+      data-form-context="{{ if $isEn }}popup-en{{ else }}popup-sv{{ end }}"
+      data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}"
+      data-sending-message="{{ if $isEn }}Sending...{{ else }}Skickar...{{ end }}"
+      action="/api/kaddio/contact"
+      method="POST"
+      accept-charset="UTF-8"
+    >
+      <input type="hidden" name="leadSource" value="Popup">
+      <div class="newsletter-popup__field">
+        <label for="popup-first-name">{{ if $isEn }}First name{{ else }}Förnamn{{ end }}</label>
+        <input
+          type="text"
+          id="popup-first-name"
+          name="firstName"
+          maxlength="40"
+          autocomplete="given-name"
+          placeholder="{{ if $isEn }}Enter your first name{{ else }}Ange ditt förnamn{{ end }}"
+          data-popup-focus
+        >
+      </div>
+      <div class="newsletter-popup__field">
+        <label for="popup-last-name">{{ if $isEn }}Last name{{ else }}Efternamn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+        <input
+          type="text"
+          id="popup-last-name"
+          name="lastName"
+          maxlength="80"
+          autocomplete="family-name"
+          placeholder="{{ if $isEn }}Enter your last name{{ else }}Ange ditt efternamn{{ end }}"
+          required
+        >
+      </div>
+      <div class="newsletter-popup__field">
+        <label for="popup-email">{{ if $isEn }}Email address{{ else }}E-postadress{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+        <input
+          type="email"
+          id="popup-email"
+          name="email"
+          maxlength="100"
+          autocomplete="email"
+          placeholder="{{ if $isEn }}name@example.com{{ else }}namn@example.se{{ end }}"
+          required
+        >
+      </div>
+      <div class="newsletter-popup__field">
+        <label for="popup-description">{{ if $isEn }}Tell us briefly how we can help{{ else }}Berätta kort hur vi kan hjälpa dig{{ end }}</label>
+        <textarea
+          id="popup-description"
+          name="description"
+          placeholder="{{ if $isEn }}Describe your situation or ask your question{{ else }}Beskriv din situation eller ställ din fråga{{ end }}"
+        ></textarea>
+      </div>
+      <button type="submit" class="newsletter-popup__submit">
+        {{ if $isEn }}Send request{{ else }}Skicka förfrågan{{ end }}
+      </button>
+      <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
+        {{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}
+      </p>
+      <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
+      <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
+        {{ if $isEn }}
+          We treat your information confidentially and follow the National Board of Health and Welfare’s requirements for clinical quality, evidence, and documentation.
+        {{ else }}
+          Vi behandlar dina uppgifter konfidentiellt och följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
+        {{ end }}
+      </p>
+    </form>
   </div>
 </div>
-
-<script>
-  (function preloadCal(){
-    const preconnects = ["https://app.cal.com", "https://cdn.cal.com"];
-    preconnects.forEach(url => {
-      if (document.querySelector(`link[rel="preconnect"][href="${url}"]`)) return;
-      const link = document.createElement('link');
-      link.rel = 'preconnect';
-      link.href = url;
-      link.crossOrigin = 'anonymous';
-      document.head.appendChild(link);
-    });
-    const scriptHref = "https://app.cal.com/embed/embed.js";
-    if (!document.querySelector(`link[rel="preload"][href="${scriptHref}"]`)) {
-      const preload = document.createElement('link');
-      preload.rel = 'preload';
-      preload.as = 'script';
-      preload.href = scriptHref;
-      preload.crossOrigin = 'anonymous';
-      document.head.appendChild(preload);
-    }
-  })();
-</script>
-
-<!-- Cal element-click embed code -->
-<script type="text/javascript">
-  (function (C, A, L) {
-    let p = function (a, ar) { a.q.push(ar); };
-    let d = C.document;
-    C.Cal = C.Cal || function () {
-      let cal = C.Cal;
-      let ar = arguments;
-      if (!cal.loaded) {
-        cal.ns = {};
-        cal.q = cal.q || [];
-        d.head.appendChild(d.createElement("script")).src = A;
-        cal.loaded = true;
-      }
-      if (ar[0] === L) {
-        const api = function () { p(api, arguments); };
-        const namespace = ar[1];
-        api.q = api.q || [];
-        if (typeof namespace === "string") {
-          cal.ns[namespace] = cal.ns[namespace] || api;
-          p(cal.ns[namespace], ar);
-          p(cal, ["initNamespace", namespace]);
-        } else p(cal, ar);
-        return;
-      }
-      p(cal, ar);
-    };
-  })(window, "https://app.cal.com/embed/embed.js", "init");
-
-  Cal("init", "15min", { origin: "https://app.cal.com" });
-  Cal.ns["15min"]("ui", {
-    cssVarsPerTheme: {
-      light: { "cal-brand": "#f1ebe6" },
-      dark: { "cal-brand": "#3774ab" }
-    },
-    hideEventTypeDetails: false,
-    layout: "month_view",
-    theme: "light"
-  });
-</script>

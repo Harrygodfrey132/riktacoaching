@@ -7174,18 +7174,23 @@ nav a.cta:active{
 .newsletter-popup__overlay {
   position: absolute;
   inset: 0;
-  background: rgba(10, 18, 28, 0.6);
+  background: rgba(10, 18, 28, 0.5);
   backdrop-filter: blur(3px);
 }
 
 .newsletter-popup__dialog {
   position: relative;
-  width: min(420px, calc(100% - 32px));
+  width: min(520px, calc(100% - 40px));
+  max-width: 600px;
   max-height: calc(100vh - 48px);
-  background: linear-gradient(180deg, #ffffff 0%, #fdf7f4 100%);
+  background:
+    radial-gradient(140% 140% at 20% 16%, rgba(236, 78, 91, 0.08), transparent 42%),
+    radial-gradient(120% 120% at 80% 0%, rgba(55, 116, 171, 0.08), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #fdf7f4 100%);
   border-radius: 24px;
-  padding: clamp(22px, 4.5vw, 32px);
-  box-shadow: 0 40px 120px rgba(15, 23, 42, 0.32);
+  padding: clamp(24px, 4vw, 32px);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: 0 36px 110px rgba(15, 23, 42, 0.24);
   transform: translateY(32px);
   transition: transform 0.35s ease;
   text-align: center;
@@ -7206,10 +7211,10 @@ nav a.cta:active{
 }
 
 .newsletter-popup__dialog h2 {
-  margin: 0 0 8px;
-  font-size: clamp(20px, 3.2vw, 26px);
+  margin: 6px 0 12px;
+  font-size: clamp(22px, 3.1vw, 28px);
   color: #1d2c3b;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
 .newsletter-popup__dialog p {
@@ -7222,7 +7227,7 @@ nav a.cta:active{
   font-size: 15px;
   font-weight: 500;
   color: #1d2c3b;
-  margin-bottom: 14px;
+  margin: 0 0 18px;
 }
 
 .newsletter-popup__badge {
@@ -7299,7 +7304,8 @@ nav a.cta:active{
 .newsletter-popup__form {
   display: grid;
   gap: 16px;
-  margin-top: 24px;
+  margin: 22px auto 0;
+  width: min(480px, 100%);
 }
 
 .newsletter-popup__field {
@@ -7311,6 +7317,7 @@ nav a.cta:active{
   font-weight: 600;
   font-size: 14px;
   color: #1f2937;
+  text-align: left;
 }
 
 .newsletter-popup__field input {
@@ -7327,25 +7334,50 @@ nav a.cta:active{
   outline: none;
 }
 
+.newsletter-popup__field textarea {
+  border-radius: 18px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  padding: 14px 16px;
+  font-size: 15px;
+  min-height: 110px;
+  resize: vertical;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.newsletter-popup__field textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(236, 78, 91, 0.2);
+  outline: none;
+}
+
 .newsletter-popup__submit {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 999px;
-  padding: 14px 20px;
-  font-size: 14px;
+  padding: 16px 20px;
+  font-size: 15px;
   font-weight: 600;
   cursor: pointer;
   background: var(--accent);
   color: #ffffff;
   transition: filter 0.2s ease, transform 0.2s ease;
   text-decoration: none;
+  width: 100%;
+  box-shadow: 0 10px 24px rgba(236, 78, 91, 0.26);
 }
 
 .newsletter-popup__submit:hover {
   filter: brightness(0.95);
   transform: translateY(-1px);
+}
+
+.newsletter-popup__status {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: rgba(15, 23, 42, 0.7);
+  text-align: center;
 }
 
 .newsletter-popup__booking-note {
@@ -7395,10 +7427,9 @@ body.newsletter-popup--locked {
   }
 
   .newsletter-popup__dialog {
-    width: min(380px, calc(100% - 35px));
-    border-radius: 20px;
+    width: min(420px, calc(100% - 32px));
+    border-radius: 22px;
     padding: 24px 20px 28px;
-    text-align: left;
   }
 
   .newsletter-popup__badge {
