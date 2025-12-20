@@ -7180,13 +7180,10 @@ nav a.cta:active{
 
 .newsletter-popup__dialog {
   position: relative;
-  width: min(520px, calc(100% - 40px));
-  max-width: 600px;
+  width: min(540px, calc(100% - 36px));
+  max-width: 620px;
   max-height: calc(100vh - 48px);
-  background:
-    radial-gradient(140% 140% at 20% 16%, rgba(236, 78, 91, 0.08), transparent 42%),
-    radial-gradient(120% 120% at 80% 0%, rgba(55, 116, 171, 0.08), transparent 40%),
-    linear-gradient(180deg, #ffffff 0%, #fdf7f4 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #f9f4f1 100%);
   border-radius: 24px;
   padding: clamp(24px, 4vw, 32px);
   border: 1px solid rgba(15, 23, 42, 0.05);
@@ -7305,7 +7302,7 @@ nav a.cta:active{
   display: grid;
   gap: 16px;
   margin: 22px auto 0;
-  width: min(480px, 100%);
+  width: min(500px, 100%);
 }
 
 .newsletter-popup__field {
@@ -7335,9 +7332,9 @@ nav a.cta:active{
 }
 
 .newsletter-popup__field textarea {
-  border-radius: 18px;
-  border: 1px solid rgba(15, 23, 42, 0.18);
-  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  padding: 14px 18px;
   font-size: 15px;
   min-height: 110px;
   resize: vertical;
@@ -7427,9 +7424,9 @@ body.newsletter-popup--locked {
   }
 
   .newsletter-popup__dialog {
-    width: min(420px, calc(100% - 32px));
+    width: calc(100% - 18px);
     border-radius: 22px;
-    padding: 24px 20px 28px;
+    padding: 22px 18px 26px;
   }
 
   .newsletter-popup__badge {

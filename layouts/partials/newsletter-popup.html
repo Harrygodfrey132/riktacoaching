@@ -24,27 +24,16 @@
     >
       <input type="hidden" name="leadSource" value="Popup">
       <div class="newsletter-popup__field">
-        <label for="popup-first-name">{{ if $isEn }}First name{{ else }}Förnamn{{ end }}</label>
+        <label for="popup-full-name">{{ if $isEn }}Full name{{ else }}Fullständigt namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
         <input
           type="text"
-          id="popup-first-name"
-          name="firstName"
-          maxlength="40"
-          autocomplete="given-name"
-          placeholder="{{ if $isEn }}Enter your first name{{ else }}Ange ditt förnamn{{ end }}"
-          data-popup-focus
-        >
-      </div>
-      <div class="newsletter-popup__field">
-        <label for="popup-last-name">{{ if $isEn }}Last name{{ else }}Efternamn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
-        <input
-          type="text"
-          id="popup-last-name"
-          name="lastName"
-          maxlength="80"
-          autocomplete="family-name"
-          placeholder="{{ if $isEn }}Enter your last name{{ else }}Ange ditt efternamn{{ end }}"
+          id="popup-full-name"
+          name="fullName"
+          maxlength="120"
+          autocomplete="name"
+          placeholder="{{ if $isEn }}Enter your full name{{ else }}Ange ditt fullständiga namn{{ end }}"
           required
+          data-popup-focus
         >
       </div>
       <div class="newsletter-popup__field">
