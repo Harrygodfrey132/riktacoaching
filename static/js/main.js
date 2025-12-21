@@ -628,6 +628,9 @@ function initScreeningForm({
 
   // ----- Newsletter Popup -----
   (function initNewsletterPopup(){
+    const DISABLE_POPUP = true;
+    if (DISABLE_POPUP) return;
+
     const popup = document.getElementById('newsletter-popup');
     if (!popup) return;
 
