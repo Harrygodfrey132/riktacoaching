@@ -373,15 +373,14 @@ function initScreeningForm({
         thankYou.hidden = true;
       }
       setFormStatus(form, form.dataset.sendingMessage || 'Skickar...', 'info');
-      toggleFormDisabled(form, true);
 
       try {
         const basePayload = buildContactPayload(form);
         if (!basePayload.email) {
           setFormStatus(form, 'Please add your email before submitting.', 'error');
-          toggleFormDisabled(form, false);
           return;
         }
+        toggleFormDisabled(form, true);
         const extra = typeof augmentPayload === 'function' ? augmentPayload(basePayload) : null;
         const merged = { ...basePayload, ...(extra || {}) };
         merged.metadata = mergeMetadata(basePayload.metadata, extra?.metadata);
