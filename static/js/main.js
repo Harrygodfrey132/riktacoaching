@@ -175,10 +175,14 @@ function initScreeningForm({
     }
 
     function getInterpretation(score) {
+      const numericScore = (score && typeof score === 'object' && typeof score.total !== 'undefined')
+        ? Number(score.total)
+        : Number(score);
+      const safeScore = Number.isFinite(numericScore) ? numericScore : 0;
       if (typeof buildInterpretation === 'function') {
-        return buildInterpretation(score);
+        return buildInterpretation(safeScore);
       }
-      return ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
+      return ranges.find(range => safeScore <= range.max) || ranges[ranges.length - 1];
     }
 
     function calculateScore() {
@@ -199,11 +203,11 @@ function initScreeningForm({
       return { total, answered };
     }
 
-  function collectAnswerDetails() {
-    const answers = [];
-    const questions = form.querySelectorAll('.adhd-question');
-    questions.forEach((question, index) => {
-      const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
+    function collectAnswerDetails() {
+      const answers = [];
+      const questions = form.querySelectorAll('.adhd-question');
+      questions.forEach((question, index) => {
+        const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
         const selected = question.querySelector('input[type="radio"]:checked');
         let answerText = '';
         if (selected) {
@@ -223,23 +227,23 @@ function initScreeningForm({
       const scoreData = calculateScore();
       const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        const interpretation = getInterpretation(scoreData);
+        const interpretation = getInterpretation(total);
         const renderResult = () => {
           updateScoreDisplay(total, interpretation);
           if (typeof metaUpdater === 'function') {
-            metaUpdater(scoreData);
+            metaUpdater({ ...scoreData, interpretation });
           }
           showScoreBox();
         };
-      const payload = {
-        testName,
-        total: scoreData.total,
-        answered: scoreData.answered,
-        meta: scoreData.meta || {},
-        interpretation: interpretation ? interpretation.text : '',
-        answers: collectAnswerDetails(),
-        renderResult
-      };
+        const payload = {
+          testName,
+          total: scoreData.total,
+          answered: scoreData.answered,
+          meta: scoreData.meta || {},
+          interpretation: interpretation ? interpretation.text : '',
+          answers: collectAnswerDetails(),
+          renderResult
+        };
 
         if (gateWithLeadForm && typeof onLeadRequired === 'function') {
           onLeadRequired(payload);
@@ -272,10 +276,10 @@ function initScreeningForm({
       const scoreData = calculateScore();
       const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        const interpretation = getInterpretation(scoreData);
+        const interpretation = getInterpretation(total);
         updateScoreDisplay(total, interpretation);
         if (typeof metaUpdater === 'function') {
-          metaUpdater(scoreData);
+          metaUpdater({ ...scoreData, interpretation });
         }
       }
     });
@@ -494,6 +498,7 @@ function initScreeningForm({
 
   function openLeadModal(result) {
     if (!leadModal || !leadForm) return;
+    setFormStatus(leadForm, '', 'info');
     leadResultPayload = result;
     if (leadSource) {
       const derivedSource = (result?.testName || '').toLowerCase().includes('autism')
@@ -549,13 +554,22 @@ function initScreeningForm({
   if (leadForm) {
     bindKaddioForm(leadForm, {
       augmentPayload(basePayload){
-        const screeningMeta = leadResultPayload ? {
+        if (!leadResultPayload) {
+          const lang = (document.documentElement?.lang || 'sv').toLowerCase();
+          const message = lang.startsWith('en')
+            ? 'Please complete the screening before sending.'
+            : 'Slutför självtestet innan du skickar.';
+          throw new Error(message);
+        }
+        const screeningMeta = {
           testName: leadResultPayload.testName,
           total: leadResultPayload.total,
           interpretation: leadResultPayload.interpretation,
           answers: leadResultPayload.answers
-        } : null;
-        const derivedDescription = leadDescription?.value || basePayload.description;
+        };
+        const derivedDescription = leadDescription?.value
+          || buildLeadDescription(leadResultPayload)
+          || basePayload.description;
         return {
           description: derivedDescription,
           leadSource: (leadSource?.value || basePayload.leadSource || 'Screening form').trim(),
