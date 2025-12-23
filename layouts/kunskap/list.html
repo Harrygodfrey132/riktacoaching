@@ -1,5 +1,43 @@
 {{ define "main" }}
   <main class="knowledge-page" id="top">
     {{ .Content }}
+    {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+    {{ $section := cond $isEn "blog" "blogg" }}
+    {{ $posts := where (where .Site.RegularPages "Section" $section) "Lang" .Lang }}
+    {{ $posts = sort $posts "Date" "desc" }}
+    {{ if gt (len $posts) 0 }}
+      <section class="knowledge-grid knowledge-grid--all">
+        <div class="container">
+          <div class="knowledge-heading">
+            <h2>{{ if $isEn }}All articles{{ else }}Alla artiklar{{ end }}</h2>
+            <p>{{ if $isEn }}Everything from our ADHD and autism guides in one place.{{ else }}Allt från våra ADHD- och autismguider på ett ställe.{{ end }}</p>
+          </div>
+          <div class="knowledge-cards knowledge-cards--list">
+            {{ range $posts }}
+              <article class="blog-card knowledge-blog-card">
+                <a class="blog-card__link" href="{{ .RelPermalink }}">
+                  <div class="blog-card__media">
+                    <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
+                    <div class="blog-card__badge">
+                      <span>{{ .Date.Format "2006-01-02" }}</span>
+                      <span aria-hidden="true">·</span>
+                      <span>{{ .ReadingTime }} min</span>
+                    </div>
+                  </div>
+                  <div class="blog-card__body">
+                    <span class="knowledge-card__eyebrow">{{ if $isEn }}Guide article{{ else }}Guideartikel{{ end }}</span>
+                    <h2>{{ .Title }}</h2>
+                    <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
+                    <div class="blog-card__meta">
+                      {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+    {{ end }}
   </main>
 {{ end }}

@@ -677,6 +677,11 @@ nav a.active {
   justify-items: stretch;
 }
 
+.knowledge-cards--list {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
 .knowledge-card {
   background: #fff;
   border-radius: 24px;
@@ -707,6 +712,33 @@ nav a.active {
   display: flex;
   flex-direction: column;
   gap: 14px;
+}
+
+.knowledge-card--flat {
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 18px 40px -30px rgba(29, 44, 59, 0.2);
+}
+
+.knowledge-card--flat .knowledge-card__body {
+  padding: 22px 22px 20px;
+  gap: 10px;
+}
+
+.knowledge-card__eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(29, 44, 59, 0.55);
+}
+
+.knowledge-blog-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.knowledge-blog-card .blog-card__badge {
+  font-size: 12px;
 }
 
 .knowledge-card h3 {
