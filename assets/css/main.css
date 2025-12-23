@@ -6154,7 +6154,7 @@ nav a.cta:active{
 /* ===== ADHD Screening Test ===== */
 .adhd-screening {
   padding: clamp(84px, 14vw, 160px) 0 clamp(92px, 15vw, 170px);
-  background: #ffffff;
+  background: radial-gradient(120% 120% at 15% 10%, #f4f8ff 0%, #ffffff 42%, #ffffff 100%);
   border-top: none;
 }
 
@@ -6204,19 +6204,19 @@ nav a.cta:active{
 .adhd-screening__glow {
   position: absolute;
   inset: -36px;
-  background: radial-gradient(120% 120% at 50% 0%, rgba(143, 186, 230, 0.12) 0%, rgba(255, 255, 255, 0) 68%);
-  filter: blur(0.25px);
-  border-radius: 40px;
+  background: radial-gradient(120% 120% at 50% 0%, rgba(230, 78, 78, 0.06) 0%, rgba(255, 255, 255, 0) 70%);
+  filter: blur(0.4px);
+  border-radius: 44px;
   z-index: 0;
 }
 
 .adhd-screening__card {
   position: relative;
   z-index: 1;
-  background: #ffffff;
-  border-radius: 28px;
-  padding: clamp(32px, 5vw, 44px);
-  box-shadow: 0 32px 80px -40px rgba(15, 23, 42, 0.24);
+  background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
+  border-radius: 30px;
+  padding: clamp(32px, 5vw, 46px);
+  box-shadow: 0 36px 90px -48px rgba(15, 23, 42, 0.3);
   border: 1px solid rgba(226, 232, 240, 0.9);
 }
 
@@ -6254,7 +6254,7 @@ nav a.cta:active{
 .adhd-section {
   position: relative;
   border: none;
-  padding: clamp(44px, 7vw, 64px) clamp(12px, 4vw, 28px) clamp(26px, 6vw, 36px);
+  padding: clamp(44px, 7vw, 64px) clamp(8px, 3vw, 18px) clamp(22px, 5vw, 32px);
   margin: 0 0 clamp(32px, 6vw, 48px);
   background: transparent;
 }
@@ -6274,29 +6274,35 @@ nav a.cta:active{
 .adhd-question-list {
   list-style: none;
   margin: clamp(16px, 3vw, 32px) 0 0;
-  padding: 0;
+  padding: clamp(12px, 2vw, 18px);
   display: grid;
-  gap: clamp(10px, 2.6vw, 18px);
+  gap: 0;
+  background: #ffffff;
+  border-radius: 22px;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 24px 60px -42px rgba(15, 23, 42, 0.28);
+  overflow: hidden;
   counter-reset: adhd-question var(--adhd-counter-start, 0);
 }
 
 .adhd-question {
   position: relative;
   counter-increment: adhd-question;
-  border-radius: 16px;
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  background: rgba(247, 250, 252, 0.6);
-  padding: clamp(18px, 3.6vw, 26px) clamp(16px, 3.5vw, 26px) clamp(18px, 3.6vw, 26px) clamp(72px, 8vw, 92px);
-  box-shadow: 0 10px 28px -20px rgba(15, 23, 42, 0.2);
+  border-radius: 0;
+  border: none;
+  background: transparent;
+  padding: clamp(18px, 3.4vw, 26px) clamp(14px, 3.4vw, 22px) clamp(18px, 3.4vw, 26px) clamp(72px, 7.4vw, 92px);
+  box-shadow: none;
+  border-bottom: 1px solid rgba(229, 231, 235, 0.9);
 }
 
 .adhd-question::before {
   content: counter(adhd-question) ".";
   position: absolute;
-  left: clamp(18px, 3.6vw, 28px);
-  top: clamp(18px, 3vw, 26px);
-  width: 32px;
-  height: 32px;
+  left: clamp(16px, 3.2vw, 26px);
+  top: clamp(18px, 3vw, 24px);
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -6304,7 +6310,7 @@ nav a.cta:active{
   font-size: 15px;
   font-weight: 700;
   color: #0f172a;
-  background: #e6eef6;
+  background: radial-gradient(120% 120% at 30% 30%, #e8f2ff 0%, #eef3f9 60%, #f7f9ff 100%);
 }
 
 .adhd-question__prompt {
@@ -6329,17 +6335,18 @@ nav a.cta:active{
   justify-content: center;
   padding: 10px 20px;
   border-radius: 999px;
-  border: 1px solid rgba(209, 213, 219, 0.9);
-  background: #ffffff;
+  border: 1px solid rgba(209, 213, 219, 0.75);
+  background: linear-gradient(180deg, #ffffff 0%, #f7f9fb 100%);
   color: #1f2937;
   cursor: pointer;
-  transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease;
+  transition: border-color 0.18s ease, background 0.18s ease, box-shadow 0.18s ease, color 0.18s ease, transform 0.12s ease;
   min-width: 104px;
 }
 
 .adhd-response:hover {
-  border-color: rgba(236, 78, 78, 0.35);
-  box-shadow: 0 10px 24px -16px rgba(236, 78, 78, 0.45);
+  border-color: rgba(230, 78, 78, 0.35);
+  box-shadow: 0 12px 26px -18px rgba(230, 78, 78, 0.45);
+  transform: translateY(-1px);
 }
 
 .adhd-response input {
@@ -6483,7 +6490,7 @@ nav a.cta:active{
   }
 
   .adhd-question {
-    padding: 20px clamp(16px, 4vw, 24px) 22px clamp(64px, 7vw, 84px);
+    padding: 18px clamp(14px, 4vw, 20px) 20px clamp(58px, 7vw, 80px);
   }
 }
 
@@ -6515,11 +6522,11 @@ nav a.cta:active{
   }
 
   .adhd-question {
-    padding: 18px 16px 20px 58px;
+    padding: 16px 14px 18px 52px;
   }
 
   .adhd-question::before {
-    left: 16px;
+    left: 14px;
   }
 
   .adhd-response {
