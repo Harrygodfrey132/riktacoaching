@@ -79,10 +79,12 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Utredning för ADHD & autism (neuropsykiatrisk utredning)</h3>
           <p class="meta">Digitalt eller på mottagning</p>
-          <p class="price">35000kr</p>
+          <p class="price">35 000 kr</p>
+          <p class="price-note">Bedömning + 2 timmars coachning ingår.</p>
           <ul class="details">
             <li>Bedömningssamtal med specialistpsykiater</li>
             <li>Strukturerade intervjuer (DIVA-5) och skattningsformulär</li>
+            <li>Två coachsessioner (2 × 60 min) för planering och uppföljning</li>
             <li>Skriftligt läkarutlåtande och plan för fortsatt stöd inom 10 arbetsdagar</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>

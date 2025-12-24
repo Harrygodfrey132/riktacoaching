@@ -79,10 +79,12 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
         <article class="card">
           <h3>Assessment for ADHD &amp; autism (neuropsychiatric assessment)</h3>
           <p class="meta">Digital or at the clinic</p>
-          <p class="price">35000 kr</p>
+          <p class="price">35 000 kr</p>
+          <p class="price-note">Assessment plus 2 hours of coaching included.</p>
           <ul class="details">
             <li>Consultation with specialist psychiatrist.</li>
             <li>Structured interviews (DIVA-5) and rating scales.</li>
+            <li>Two coaching sessions (2 × 60 min) for planning and follow-up.</li>
             <li>Written medical statement and plan for continued support within 10 business days.</li>
           </ul>
           <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
