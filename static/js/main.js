@@ -3,6 +3,7 @@
   const DURATION_MS = 1200;           // << make this bigger for slower scroll
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
+  const IS_EN = (document.documentElement?.lang || 'sv').toLowerCase().startsWith('en');
 
   // ----- Smooth scroll (custom duration) -----
   function easeInOutCubic(t){ return t<0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
@@ -377,7 +378,9 @@ function initScreeningForm({
       try {
         const basePayload = buildContactPayload(form);
         if (!basePayload.email) {
-          setFormStatus(form, 'Please add your email before submitting.', 'error');
+          const missingEmailCopy = form.dataset.missingEmailMessage
+            || (IS_EN ? 'Please add your email before submitting.' : 'Lägg till din e-post innan du skickar.');
+          setFormStatus(form, missingEmailCopy, 'error');
           return;
         }
         toggleFormDisabled(form, true);
@@ -394,10 +397,22 @@ function initScreeningForm({
         if (typeof onSuccess === 'function') {
           onSuccess();
         }
+        form.dispatchEvent(new CustomEvent('kaddio:success', {
+          detail: { payload: merged },
+          bubbles: true
+        }));
       } catch (error) {
+        const busyMessage = form.dataset.rateLimitMessage
+          || (IS_EN
+            ? 'We are handling many requests right now. Please try again in a moment.'
+            : 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.');
+        const fallbackError = form.dataset.errorMessage
+          || (IS_EN
+            ? 'We could not send your request. Please try again.'
+            : 'Vi kunde inte skicka din förfrågan. Försök igen.');
         const msg = error?.status === 429
-          ? 'We are handling many requests right now. Please try again in a moment.'
-          : (error?.message || 'We could not send your request. Please try again.');
+          ? busyMessage
+          : (error?.message || fallbackError);
         setFormStatus(form, msg, 'error');
       } finally {
         toggleFormDisabled(form, false);
@@ -641,7 +656,7 @@ function initScreeningForm({
 
   // ----- Newsletter Popup -----
   (function initNewsletterPopup(){
-    const DISABLE_POPUP = true;
+    const DISABLE_POPUP = false;
     if (DISABLE_POPUP) return;
 
     const popup = document.getElementById('newsletter-popup');
@@ -750,14 +765,15 @@ function initScreeningForm({
     closeTriggers.forEach(btn => btn.addEventListener('click', () => closePopup('dismissed')));
 
     const form = popup.querySelector('form');
+    const handleSubmitted = () => {
+      if (openTimeout) {
+        clearTimeout(openTimeout);
+        openTimeout = null;
+      }
+      closePopup('submitted');
+    };
     if (form) {
-      form.addEventListener('submit', () => {
-        if (openTimeout) {
-          clearTimeout(openTimeout);
-          openTimeout = null;
-        }
-        closePopup('submitted');
-      });
+      form.addEventListener('kaddio:success', handleSubmitted);
     }
 
     scheduleOpen();

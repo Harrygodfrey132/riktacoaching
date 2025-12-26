@@ -17,6 +17,9 @@
       data-kaddio-form="contact"
       data-form-context="{{ if $isEn }}popup-en{{ else }}popup-sv{{ end }}"
       data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}"
+      data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
+      data-error-message="{{ if $isEn }}We could not send your request. Please try again.{{ else }}Vi kunde inte skicka din förfrågan. Försök igen.{{ end }}"
+      data-rate-limit-message="{{ if $isEn }}We are handling many requests right now. Please try again in a moment.{{ else }}Vi hanterar många förfrågningar just nu. Försök igen om en stund.{{ end }}"
       data-sending-message="{{ if $isEn }}Sending...{{ else }}Skickar...{{ end }}"
       action="/api/kaddio/contact"
       method="POST"
@@ -73,76 +76,3 @@
     </form>
   </div>
 </div>
-
-<script>
-  // Inline fallback mirroring the contact page logic for Kaddio.
-  (function(){
-    const form = document.getElementById('kaddio-popup-form');
-    if (!form || form.dataset.kaddioInlineBound) return;
-    form.dataset.kaddioInlineBound = 'true';
-
-    const statusEl = form.querySelector('[data-form-status]');
-    const thankYou = form.querySelector('[data-thank-you]');
-    const isEn = {{ if $isEn }}true{{ else }}false{{ end }};
-
-    function setStatus(message, type){
-      if (!statusEl) return;
-      statusEl.textContent = message || '';
-      statusEl.dataset.statusType = type || 'info';
-      statusEl.hidden = !message;
-    }
-
-    function setDisabled(disabled){
-      const controls = form.querySelectorAll('input, textarea, button');
-      controls.forEach(ctrl => {
-        if (disabled) ctrl.setAttribute('disabled', 'true');
-        else ctrl.removeAttribute('disabled');
-      });
-    }
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      if (thankYou) thankYou.hidden = true;
-      setStatus(form.dataset.sendingMessage || (isEn ? 'Sending...' : 'Skickar...'), 'info');
-      setDisabled(true);
-
-      const data = new FormData(form);
-      const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
-      const email = (data.get('email') || data.get('Email') || '').trim();
-      const description = (data.get('description') || data.get('message') || '').trim();
-      const leadSource = (data.get('leadSource') || '').trim();
-
-      if (!email) {
-        setStatus(isEn ? 'Please add your email before submitting.' : 'Lägg till din e-post innan du skickar.', 'error');
-        setDisabled(false);
-        return;
-      }
-
-      try {
-        const res = await fetch('/api/kaddio/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            fullName,
-            email,
-            description,
-            leadSource
-          })
-        });
-        const body = await res.json().catch(() => ({}));
-        if (!res.ok) {
-          setStatus(body?.error || body?.message || (isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.'), 'error');
-          setDisabled(false);
-          return;
-        }
-        if (thankYou) thankYou.hidden = false;
-        setStatus(form.dataset.successMessage || (isEn ? 'Thank you! We’ll get back to you as soon as possible.' : 'Tack! Vi återkommer så snart vi kan.'), 'success');
-        form.reset();
-      } catch (_err) {
-        setStatus(isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.', 'error');
-      } finally {
-        setDisabled(false);
-      }
-    });
-  })();
-</script>
