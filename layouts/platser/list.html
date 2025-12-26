@@ -1,5 +1,13 @@
 {{ define "main" }}
-  <div class="platser-page">
+  <main class="platser-page" id="top">
+    <header class="locations-hero">
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.meta_description }}
+          <p class="lead">{{ . }}</p>
+        {{ end }}
+      </div>
+    </header>
     {{ .Content }}
-  </div>
+  </main>
 {{ end }}

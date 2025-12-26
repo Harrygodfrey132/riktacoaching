@@ -4,7 +4,7 @@ translationKey: "autism-guide"
 date: 2025-04-11
 description: "A clear walkthrough of autism, diagnostic criteria, assessment, and everyday support strategies."
 layout: "guide"
-meta_title: "About autism – guide to symptoms, assessment, and support | Rikta Psychiatry"
+meta_title: "Autism guide: symptoms, assessment, support | Rikta Psychiatry"
 meta_description: "A concise guide to autism: what the diagnosis means, how assessments work, and the support strategies that ease daily life."
 meta_keywords: "autism guide, symptoms, assessment, support, strategies"
 hero: "/img/autism-coachning.jpg"

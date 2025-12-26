@@ -3,12 +3,12 @@ title: "Att vara sin egen bästa vän: Din guide till självmedkänsla vid ADHD 
 translationKey: "self-compassion-adhd-autism"
 date: 2025-12-06
 description: "En guide till hur självmedkänsla kan stötta vid ADHD och autism genom att ersätta den inre kritikern med en vänligare röst."
-meta_title: "Att vara sin egen bästa vän: självmedkänsla vid ADHD och autism | Rikta Psykiatri"
 meta_description: "Lär dig hur självmedkänsla kan minska skam, stress och överbelastning vid ADHD och autism och stärka välmående och fokus."
 meta_keywords: "självmedkänsla, ADHD, autism, NPF, psykisk hälsa, välmående"
 hero: "/img/psychologist-smiling.jpg"
 hero_alt: "Psykolog som ler i samtal"
 draft: false
+meta_title: "Självmedkänsla vid ADHD och autism | Rikta Psykiatri"
 ---
 Att leva med ett (eller flera) neuropsykiatriskt funktionssätt som ADHD eller autism innebär ofta att man möter extra utmaningar i vardagen. Ofta är dessa utmaningar kopplade till svårigheter att orientera sig i en värld som i första hand är anpassad för neurotypiska individer. Det kan handla om allt från utmaningar med exekutiva funktioner (som planering och organisering) till svårigheter med känsloreglering och att hantera sociala eller sensoriska intryck.
 Men de yttre svårigheterna - de som är knutna till diagnosen i sig - förvärras ofta av en strängare, inre röst. Ofta blir ens egen inre röst den strängaste kritikern. Tänk om det fanns ett sätt att byta ut den rösten mot en som var stöttande och vänlig? Tänk om du i stället kunde vara din egen bästa vän? Genom självmedkänsla: konsten att vara snäll mot sig själv, kan du lära dig att bemöta dina svårigheter med värme och därmed stärka ditt välmående.

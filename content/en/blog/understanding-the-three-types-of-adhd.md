@@ -2,7 +2,7 @@
 title: "Understanding the Three Types of ADHD: Inattentive, Hyperactive-Impulsive, and Combined"
 date: 2025-12-18
 draft: false
-meta_title: "The Three Types of ADHD Explained: Inattentive, Hyperactive-Impulsive, Combined"
+meta_title: "The Three Types of ADHD Explained | Rikta Psychiatry"
 meta_description: "Clear guide to the inattentive, hyperactive-impulsive, and combined types of ADHD: hallmark symptoms, how diagnosis works, and why the presentation matters for support and treatment."
 meta_keywords: "ADHD types, inattentive ADHD, hyperactive-impulsive ADHD, combined ADHD, ADHD diagnosis, ADHD treatment"
 url: "/en/blog/understanding-the-three-types-of-adhd/"

@@ -25,10 +25,12 @@
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
   <link rel="canonical" href="{{ $page.Permalink }}">
-  {{- /* Hreflang alternates for translated pages */ -}}
+  {{- /* Hreflang alternates (deduped, including self-reference) */ -}}
+  {{- $selfLang := cond $isEn "en" "sv" -}}
+  {{- $seen := dict $selfLang true -}}
+  <link rel="alternate" hreflang="{{ $selfLang }}" href="{{ $page.Permalink }}">
   {{- $translations := $page.AllTranslations -}}
   {{- if gt (len $translations) 0 -}}
-    {{- $seen := dict -}}
     {{- $defaultPage := $page -}}
     {{- range $translations -}}
       {{- $lang := cond (or (eq .Lang "en") (hasPrefix .RelPermalink "/en/")) "en" "sv" -}}

@@ -3,7 +3,7 @@ title: "Guiden till dig som förälder till barn med ADHD"
 translationKey: "parent-guide-adhd-child"
 date: 2025-12-23
 description: "Praktisk, jordnära guide för föräldrar till barn med ADHD – struktur, rutiner, konflikter, skola, fritid, sömn, skärmtid och självkänsla."
-meta_title: "Guiden till dig som förälder till barn med ADHD"
+meta_title: "ADHD: guide för dig som förälder | Rikta Psykiatri"
 meta_description: "Konkreta råd och strategier för vardagen med ett barn som har ADHD: morgonrutiner, läxläsning, konflikter, fritid, sömn, mat, skärmtid och självkänsla."
 meta_keywords: "ADHD barn, föräldraguiden ADHD, ADHD tips barn, rutiner ADHD, konflikter ADHD, skärmtid ADHD, sömn ADHD barn"
 hero: "/img/child-smiling-with-pillow.jpg"

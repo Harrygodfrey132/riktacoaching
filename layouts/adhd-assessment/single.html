@@ -1,5 +1,17 @@
 {{ define "main" }}
 <article class="adhd-page{{ with .Params.page_class }} {{ . }}{{ end }}">
-  {{ .Content }}
+  <header class="adhd-page__header">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="lead">{{ . }}</p>
+      {{ end }}
+    </div>
+  </header>
+  <div class="adhd-page__body">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </div>
 </article>
 {{ end }}

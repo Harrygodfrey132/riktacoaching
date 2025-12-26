@@ -2,15 +2,35 @@
   {{/* Use custom shell for assessment pages to preserve their native structure */}}
   {{ $path := .RelPermalink }}
   {{ $baseClass := "" }}
+  {{ $needsHeader := false }}
   {{ if or (hasPrefix $path "/adhd-utredning/") (hasPrefix $path "/en/adhd-assessment/") }}
     {{ $baseClass = "adhd-page" }}
   {{ else if or (hasPrefix $path "/autism-utredning/") (hasPrefix $path "/en/autism-assessment/") }}
     {{ $baseClass = "autism-page" }}
   {{ end }}
+  {{ if and (ne $baseClass "") (not (in (lower .Content) "<h1")) }}
+    {{ $needsHeader = true }}
+  {{ end }}
 
   {{ if ne $baseClass "" }}
     <article class="{{ $baseClass }}{{ with .Params.page_class }} {{ . }}{{ end }}">
+      {{ if $needsHeader }}
+        <header class="{{ $baseClass }}__header">
+          <div class="container">
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.description }}
+              <p class="lead">{{ . }}</p>
+            {{ end }}
+          </div>
+        </header>
+        <div class="{{ $baseClass }}__body">
+          <div class="container">
+            {{ .Content }}
+          </div>
+        </div>
+      {{ else }}
       {{ .Content }}
+      {{ end }}
     </article>
   {{ else }}
     <main class="screen" id="top">
