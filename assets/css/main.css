@@ -7921,6 +7921,67 @@ body.newsletter-popup--locked {
   padding: 16px;
 }
 
+.simple-form-card .crmWebToEntityForm {
+  background: #f8fafc;
+  border: 1px solid rgba(17, 32, 56, 0.1);
+  border-radius: 14px;
+  padding: 16px;
+  width: 100%;
+}
+
+.simple-form-card .crmWebToEntityForm .zcwf_row {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0;
+}
+
+.simple-form-card .crmWebToEntityForm .zcwf_col_lab {
+  width: 100%;
+  margin: 0 0 6px;
+  padding: 0;
+  float: none;
+}
+
+.simple-form-card .crmWebToEntityForm .zcwf_col_fld {
+  width: 100%;
+  padding: 0;
+  float: none;
+}
+
+.simple-form-card .crmWebToEntityForm label {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.simple-form-card .crmWebToEntityForm input[type="text"],
+.simple-form-card .crmWebToEntityForm input[type="email"],
+.simple-form-card .crmWebToEntityForm select,
+.simple-form-card .crmWebToEntityForm textarea {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.simple-form-card .crmWebToEntityForm textarea {
+  min-height: 110px;
+}
+
+.simple-form-card .crmWebToEntityForm .wfrm_fld_dpNn {
+  display: none;
+}
+
+.simple-form-card .crmWebToEntityForm .formsubmit {
+  width: 100%;
+  border-radius: 999px;
+  background: var(--accent, #f35a68);
+  color: #fff;
+  border: none;
+  padding: 14px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .simple-form-card .form-row {
   margin-bottom: 14px;
 }
