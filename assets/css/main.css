@@ -4372,15 +4372,7 @@ nav a.cta:active{
 }
 
 .home-contact__quote-card::before{
-  content: "“";
-  position: absolute;
-  top: 18px;
-  left: 22px;
-  font-size: 72px;
-  line-height: 1;
-  color: var(--secondary);
-  opacity: 0.14;
-  pointer-events: none;
+  content: none;
 }
 
 .home-contact__quote-card::after{
@@ -4428,12 +4420,13 @@ nav a.cta:active{
   color: rgba(0,0,0,0.74);
 }
 
-.home-contact__quote-author{
+.home-contact__body{
   position: relative;
   z-index: 1;
-  margin: 0 0 22px;
-  font-weight: 800;
-  color: rgba(29,44,59,0.78);
+  margin: 14px 0 0;
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(0,0,0,0.74);
 }
 
 .home-contact__points{
@@ -4441,7 +4434,7 @@ nav a.cta:active{
   z-index: 1;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 24px 0 0;
   display: grid;
   gap: 10px;
 }

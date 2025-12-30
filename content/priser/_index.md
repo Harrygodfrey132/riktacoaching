@@ -80,12 +80,23 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <h3>Utredning för ADHD & autism (neuropsykiatrisk utredning)</h3>
           <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">35 000 kr</p>
-          <p class="price-note">Bedömning + 2 timmars coachning ingår.</p>
           <ul class="details">
             <li>Bedömningssamtal med specialistpsykiater</li>
             <li>Strukturerade intervjuer (DIVA-5) och skattningsformulär</li>
-            <li>Två coachsessioner (2 × 60 min) för planering och uppföljning</li>
             <li>Skriftligt läkarutlåtande och plan för fortsatt stöd inom 10 arbetsdagar</li>
+          </ul>
+          <div class="bg-blue-50" style="border-top: 1px solid rgba(0, 0, 0, 0.06); padding: 0.75rem 1rem; margin-top: 0.5rem;">
+            <strong>Ingår utan extra kostnad:</strong>
+            <em> 2 st Coachingsessioner (90 min totalt)</em>
+          </div>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="card">
+          <h3>Omprövning / Avskrivning av npf-diagnos</h3>
+          <p class="meta">Digitalt eller på mottagning</p>
+          <p class="price">28 000 kr</p>
+          <ul class="details">
+            <li>Omprövning eller avskrivning av diagnos kan vara aktuell för dig som tidigare diagnostiserats med adhd eller autism, och som misstänker att diagnoskriterierna inte längre är uppfyllda.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
@@ -94,7 +105,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">0 kr</p>
           <ul class="details">
-            <li>Samtal med legitimerad psykolog</li>
+            <li>Samtal med en av våra specialister på Rikta</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
