@@ -1,0 +1,117 @@
+{{ define "main" }}
+  {{/* Collect webinars that explicitly enable the listing and align with current language (empty Lang counts as Swedish).
+       Use .Site.Pages to avoid missing HTML-based leaf bundles. Explicitly drop English pages on Swedish hub, even if their Lang is empty. */}}
+  {{ $lang := or $.Lang "sv" }}
+  {{ $allWebinars := where .Site.Pages "Params.webinar.enabled" true }}
+  {{ $allWebinars = where $allWebinars "Kind" "page" }}
+  {{ $webinars := slice }}
+  {{ range $allWebinars }}
+    {{ $isEnglish := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") (hasPrefix .File.Path "content/en/") }}
+    {{ if eq $lang "sv" }}
+      {{ if and (not $isEnglish) (or (eq .Lang "sv") (eq .Lang "")) }}
+        {{ $webinars = $webinars | append . }}
+      {{ end }}
+    {{ else }}
+      {{ if and (not $isEnglish) (eq .Lang $lang) }}
+        {{ $webinars = $webinars | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $webinars = sort $webinars ".Params.webinar.datetime" "asc" }}
+
+  {{/* Swedish month/day labels for consistent display */}}
+  {{ $monthNames := dict "January" "januari" "February" "februari" "March" "mars" "April" "april" "May" "maj" "June" "juni" "July" "juli" "August" "augusti" "September" "september" "October" "oktober" "November" "november" "December" "december" }}
+  {{ $dayNames := dict "Monday" "MÅN" "Tuesday" "TIS" "Wednesday" "ONS" "Thursday" "TOR" "Friday" "FRE" "Saturday" "LÖR" "Sunday" "SÖN" }}
+
+  <main class="webinar-hub" id="top">
+    <section class="webinar-hero">
+      <div class="container">
+        <div class="webinar-hero-copy">
+          <p class="eyebrow">Webbinarier</p>
+          <h1>{{ .Title }}</h1>
+          <p class="lead">
+            {{ with .Params.summary }}
+              {{ . }}
+            {{ else }}
+              Samlad översikt över våra webbinarier – datum, format och snabb väg till anmälan.
+            {{ end }}
+          </p>
+          {{ if .Content }}
+            <div class="webinar-hub__intro">
+              {{ .Content }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+
+    <section class="webinar-hub__list">
+      <div class="container">
+        {{ if not (gt (len $webinars) 0) }}
+          <div class="webinar-empty">
+            <p>Inga planerade webbinarier just nu. Kom tillbaka snart eller <a href="/kontakta-oss/">kontakta oss</a> så meddelar vi när nästa datum släpps.</p>
+          </div>
+        {{ else }}
+          {{ $currentMonth := "" }}
+          {{ range $webinars }}
+            {{ $dtValue := or .Params.webinar.datetime .Date }}
+            {{ $dt := time $dtValue }}
+            {{ $monthKey := $dt.Format "January" }}
+            {{ $monthLabel := printf "%s %d" (index $monthNames $monthKey | default $monthKey) $dt.Year }}
+            {{ if ne $monthLabel $currentMonth }}
+              {{ if ne $currentMonth "" }}</div></div>{{ end }}
+              <div class="webinar-month">
+                <div class="webinar-month__label">{{ $monthLabel }}</div>
+                <div class="webinar-month__items">
+              {{ $currentMonth = $monthLabel }}
+            {{ end }}
+
+            {{ $dowKey := $dt.Format "Monday" }}
+            {{ $dow := index $dayNames $dowKey | default $dowKey }}
+            {{ $image := .Params.webinar.image }}
+            {{ if not $image }}
+              {{ if .Params.hero }}
+                {{ $image = .Params.hero }}
+              {{ else if .Params.og_image }}
+                {{ $image = .Params.og_image }}
+              {{ else if .Resources.GetMatch "hero*" }}
+                {{ $image = (.Resources.GetMatch "hero*").RelPermalink }}
+              {{ else }}
+                {{ $image = "/img/psychologist-picture.jpg" }}
+              {{ end }}
+            {{ end }}
+            {{ $imageAlt := .Params.webinar.image_alt | default .Title }}
+            <article class="webinar-hub-card">
+              <div class="webinar-date">
+                <span class="webinar-date__dow">{{ $dow }}</span>
+                <span class="webinar-date__day">{{ printf "%02d" $dt.Day }}</span>
+              </div>
+              <div class="webinar-card__body">
+                <p class="webinar-card__meta">
+                  {{ $monthName := index $monthNames $monthKey | default $monthKey }}
+                  <time datetime="{{ $dt.Format "2006-01-02T15:04:05Z07:00" }}">{{ printf "%d %s %d kl. %s" $dt.Day $monthName $dt.Year ($dt.Format "15:04") }}</time>
+                  {{ with .Params.webinar.duration }} · {{ . }}{{ end }}
+                  {{ with .Params.webinar.location }} · {{ . }}{{ end }}
+                </p>
+                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+                {{ with .Params.webinar.location }}
+                  <p class="webinar-card__note">{{ . }}</p>
+                {{ end }}
+                {{ with .Params.webinar.summary }}
+                  <p>{{ . }}</p>
+                {{ else }}
+                  <p>{{ .Summary | plainify }}</p>
+                {{ end }}
+                <a class="webinar-card__cta" href="{{ .RelPermalink }}">{{ .Params.webinar.cta | default "Läs mer och boka plats" }} →</a>
+              </div>
+              <div class="webinar-card__image">
+                <img src="{{ $image }}" alt="{{ $imageAlt }}" loading="lazy">
+              </div>
+            </article>
+          {{ end }}
+          {{ if ne $currentMonth "" }}</div></div>{{ end }}
+        {{ end }}
+      </div>
+    </section>
+  </main>
+{{ end }}
