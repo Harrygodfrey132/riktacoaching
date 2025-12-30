@@ -94,7 +94,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Omprövning / Avskrivning av npf-diagnos</h3>
           <p class="meta">Digitalt eller på mottagning</p>
-          <p class="price">28 000 kr</p>
+          <p class="price">32 000 kr</p>
           <ul class="details">
             <li>Omprövning eller avskrivning av diagnos kan vara aktuell för dig som tidigare diagnostiserats med adhd eller autism, och som misstänker att diagnoskriterierna inte längre är uppfyllda.</li>
           </ul>
