@@ -41,6 +41,9 @@
           <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
           <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
+          {{ if not $isEn }}
+            <li><a href="{{ "/webbinarier/" | relLangURL }}">Webbinarier</a></li>
+          {{ end }}
         </ul>
       </div>
       <div class="footer-column">
