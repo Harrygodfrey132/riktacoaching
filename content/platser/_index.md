@@ -3,8 +3,8 @@ title: "Platser"
 translationKey: "locations"
 draft: false
 meta_title: "Våra mottagningar och digitala besök | Rikta Psykiatri"
-meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Malmö, neuropsykiatri Uppsala, neuropsykiatri Linköping, neuropsykiatri Örebro, neuropsykiatri Jönköping, neuropsykiatri Helsingborg, neuropsykiatri Sverige"
-meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Malmö, Västerås, Uppsala, Linköping, Örebro, Jönköping, Helsingborg och Katrineholm."
+meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Malmö, neuropsykiatri Uppsala, neuropsykiatri Linköping, neuropsykiatri Örebro, neuropsykiatri Jönköping, neuropsykiatri Helsingborg, neuropsykiatri Gävle, neuropsykiatri Sundsvall, neuropsykiatri Umeå, neuropsykiatri Sverige"
+meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Malmö, Västerås, Uppsala, Linköping, Örebro, Jönköping, Helsingborg, Gävle, Sundsvall, Umeå och Katrineholm."
 og_title: "Var vi tar emot patienter - Rikta Psykiatri"
 og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med fysiska träffar för neuropsykiatrisk vård."
 ---
@@ -224,6 +224,78 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
           <div class="location-actions">
             <a class="btn secondary" href="/platser/adhd-autism-utredning-helsingborg/">Till Helsingborg</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--gavle">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Gästrikland</span>
+          <h3>Gävle</h3>
+          <p>
+            Vi opererar i Gävle och Gästrikland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för högskolestudier, näringsliv och familjeliv.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Lokalkännedom om krav från Gävles arbetsgivare, Högskolan i Gävle, skolor och myndigheter.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-gavle/">Till Gävle</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--sundsvall">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Medelpad</span>
+          <h3>Sundsvall</h3>
+          <p>
+            Vi opererar i Sundsvall och Medelpad med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Lokalkännedom om krav från Sundsvalls arbetsgivare, Mittuniversitetet, skolor och myndigheter.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-sundsvall/">Till Sundsvall</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--umea">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Västerbotten</span>
+          <h3>Umeå</h3>
+          <p>
+            Vi opererar i Umeå och Västerbotten med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Lokalkännedom om krav från Umeås arbetsgivare, Umeå universitet, skolor och myndigheter.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-umea/">Till Umeå</a>
             <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
           </div>
         </div>
