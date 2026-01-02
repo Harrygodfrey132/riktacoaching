@@ -230,10 +230,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--katrineholm">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Sörmland</span>
+          <span class="location-tag">Psykologer på plats</span>
           <h3>Katrineholm</h3>
           <p>
-            Heldigital utredning som kan kompletteras med korta fysiska pass i Stockholm eller Eskilstuna om ett test kräver det.
+            Våra psykologer är baserade i Katrineholm. Fysiska besök på plats kombineras med digitala möten för läkarbesök och uppföljning.
             Anpassad för pendling, skiftarbete och familjeliv i Sörmland.
           </p>
         </div>
@@ -244,12 +244,12 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
         </ul>
         <div class="location-card__footer">
           <div class="location-meta">
-            <span>Digitalt upplägg</span>
-            <span>Punktbesök vid behov</span>
+            <span>Fysiska besök i Katrineholm</span>
+            <span>Digitala möten vid behov</span>
           </div>
           <div class="location-actions">
             <a class="btn secondary" href="/platser/adhd-autism-utredning-katrineholm/">Till Katrineholm</a>
-            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
           </div>
         </div>
       </article>

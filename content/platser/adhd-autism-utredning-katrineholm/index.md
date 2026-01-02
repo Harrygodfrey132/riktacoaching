@@ -3,25 +3,25 @@ title: "ADHD- och autismutredning i Katrineholm"
 draft: false
 meta_title: "ADHD- och autismutredning i Katrineholm | Rikta"
 meta_keywords: "ADHD utredning Katrineholm, autism privat Katrineholm, psykiater Sörmland, neuropsykiatri Katrineholm, Rikta Katrineholm"
-meta_description: "Digitala ADHD- och autismutredningar för Katrineholm med specialistteam, videobesök och korta fysiska pass när det behövs."
+meta_description: "ADHD- och autismutredningar i Katrineholm med våra psykologer på plats. Fysiska besök kombineras med digitala möten för flexibilitet."
 og_title: "Neuropsykiatrisk utredning i Katrineholm"
-og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och punktinsatser nära Katrineholm."
+og_description: "Komplett ADHD- och autismutredning med psykologer på plats i Katrineholm, kompletterat med digitala möten."
 ---
 
 <section class="location-hero location-hero--katrineholm">
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Katrineholm • Digital-first</span>
+        <span class="eyebrow">Katrineholm • Psykologer på plats</span>
         <h1>ADHD- och autismutredning i Katrineholm</h1>
         <p class="lead">
-          Vi hjälper invånare i Katrineholm och Sörmland att få en strukturerad utredning utan att pausa jobb eller studier.
-          Kartläggning, psykologintervjuer, tester och läkarbesök sker via video; bara om ett särskilt moment kräver det bokar vi ett kort precisionspass i Stockholm eller Eskilstuna.
+          Våra psykologer är baserade i Katrineholm och hjälper invånare i Sörmland att få en strukturerad utredning.
+          Psykologintervjuer, tester och bedömningar sker på plats i Katrineholm, medan läkarbesök och uppföljning kan ske digitalt för flexibilitet.
         </p>
         <ul class="location-hero__highlights">
-          <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg (tidsplanen styrs av dina behov).</li>
+          <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med fysiska besök i Katrineholm (tidsplanen styrs av dina behov).</li>
           <li>Intyg och underlag anpassade för Sörmlands arbetsgivare, kommunala skolor och CSN.</li>
-          <li>Samma team för medicin, coachning och arbetslivsstöd; fysiska moment schemaläggs komprimerat.</li>
+          <li>Samma team för medicin, coachning och arbetslivsstöd; digitala möten kan användas för läkarbesök och uppföljning.</li>
         </ul>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss/">Boka konsultation</a>
@@ -41,7 +41,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           </div>
           <div>
             <dt>Tillgänglighet</dt>
-            <dd>Videosamtal 07–21; korta pass i Stockholm eller Eskilstuna vid behov</dd>
+            <dd>Fysiska besök i Katrineholm; digitala möten för läkarbesök och uppföljning</dd>
           </div>
           <div>
             <dt>Eftervård</dt>
@@ -59,13 +59,13 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       <span class="eyebrow">Så går det till</span>
       <h2>Din utredning i tre steg</h2>
       <p>Upplägget anpassas för dig som bor i Katrineholm, pendlar längs Sörmlandspilen eller kombinerar skiftarbete med studier.
-        Så här brukar processen se ut när vi gör allt digitalt med möjlighet till punktinsatser på plats.</p>
+        Så här brukar processen se ut med fysiska besök i Katrineholm, kompletterat med digitala möten när det passar.</p>
     </header>
     <div class="location-journey__steps">
       <article class="location-step">
         <span class="location-step__number">1</span>
-        <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju sker via krypterad video. Du får en tydlig tidslinje och påminnelser som fungerar med både skift och studietider.</p>
+        <h3>Kartläggning och intervjuer</h3>
+        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju sker på plats i Katrineholm med våra psykologer. Du får en tydlig tidslinje och påminnelser som fungerar med både skift och studietider.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till med intygsunderlag, remisser och eventuellt ED-nummer.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas till journalen.</li>
@@ -73,20 +73,20 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       </article>
       <article class="location-step">
         <span class="location-step__number">2</span>
-        <h3>Tester på plats</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro lägger vi hela paketet i ett kort besök i Stockholm eller Eskilstuna.</p>
+        <h3>Tester och bedömning</h3>
+        <p>Neuropsykologiska tester görs på plats i Katrineholm med våra psykologer. Läkarbedömning kan ske digitalt för flexibilitet, eller på plats om du föredrar det.</p>
         <ul class="location-step__list">
-          <li>Tysta rum och pausvänliga pass erbjuds vid fysiska inslag.</li>
+          <li>Tysta rum och pausvänliga pass erbjuds i våra lokaler i Katrineholm.</li>
           <li>Somatiska kontroller löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
         <h3>Plan &amp; uppföljning</h3>
-        <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
+        <p>Du får rapport, diagnosbeslut och behandlingsplan. Återkopplingen kan ske på plats i Katrineholm eller digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online utan resor.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd kan fortsätta på plats eller digitalt beroende på vad som passar dig.</li>
         </ul>
       </article>
     </div>
