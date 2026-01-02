@@ -3,22 +3,14 @@ title: "Platser"
 translationKey: "locations"
 draft: false
 meta_title: "Våra mottagningar och digitala besök | Rikta Psykiatri"
-meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Sverige"
-meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Västerås och Katrineholm."
+meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Malmö, neuropsykiatri Uppsala, neuropsykiatri Linköping, neuropsykiatri Örebro, neuropsykiatri Jönköping, neuropsykiatri Helsingborg, neuropsykiatri Sverige"
+meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Malmö, Västerås, Uppsala, Linköping, Örebro, Jönköping, Helsingborg och Katrineholm."
 og_title: "Var vi tar emot patienter - Rikta Psykiatri"
 og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med fysiska träffar för neuropsykiatrisk vård."
 ---
 
 <section class="locations-section" id="platser">
   <div class="container">
-    <div class="locations-intro">
-      <span class="eyebrow">Platser</span>
-      <h2>ADHD- och ASD-assessments i Stockholm, Göteborg, Västerås och Katrineholm</h2>
-      <p>
-        Våra specialistteam kombinerar videobesök med träffar på plats så att du kan genomföra din ADHD- eller autismutredning där det passar dig.
-        Välj mottagning nedan och följ hela patientresan från första bedömning till uppföljning.
-      </p>
-    </div>
     <div class="locations-grid">
       <article class="location-card location-card--stockholm">
         <div class="location-card__header">
@@ -68,6 +60,30 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
         </div>
       </article>
+      <article class="location-card location-card--malmo">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Skåne</span>
+          <h3>Malmö</h3>
+          <p>
+            Heldigital utredning för dig i Skåne som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling, studier och arbetsliv i regionen.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Intyg och underlag för arbetsgivare, skolor och myndigheter i regionen.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-malmo/">Till Malmö</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
       <article class="location-card location-card--vasteras">
         <div class="location-card__header">
           <span class="location-tag">Mälardalen hybrid</span>
@@ -89,6 +105,126 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           <div class="location-actions">
             <a class="btn secondary" href="/platser/adhd-autism-utredning-vasteras/">Till Västerås</a>
             <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--uppsala">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Uppsala</span>
+          <h3>Uppsala</h3>
+          <p>
+            Heldigital utredning för dig i Uppsala som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, pendling och arbetsliv i regionen.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Intyg och underlag för arbetsgivare, skolor och myndigheter i regionen.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-uppsala/">Till Uppsala</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--linkoping">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Östergötland</span>
+          <h3>Linköping</h3>
+          <p>
+            Heldigital utredning för dig i Linköping som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, tech och arbetsliv i regionen.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Intyg och underlag för arbetsgivare, skolor och myndigheter i regionen.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-linkoping/">Till Linköping</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--orebro">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Närke</span>
+          <h3>Örebro</h3>
+          <p>
+            Vi opererar i Örebro och Närke med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier och arbetsliv i regionen.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
+          <li>Intyg och underlag för arbetsgivare, skolor och myndigheter i regionen.</li>
+          <li>Samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-orebro/">Till Örebro</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--jonkoping">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Småland</span>
+          <h3>Jönköping</h3>
+          <p>
+            Vi opererar i Jönköping och Småland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för näringsliv, universitetsstudier och familjeliv.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Snabb onboarding med personlig plan inom några dagar och utredning klar på 2–4 veckor.</li>
+          <li>Lokalkännedom om krav från Jönköpings arbetsgivare, universitet, skolor och myndigheter.</li>
+          <li>Kontinuerligt stöd med samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-jonkoping/">Till Jönköping</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--helsingborg">
+        <div class="location-card__header">
+          <span class="location-tag">Digital-first Skåne</span>
+          <h3>Helsingborg</h3>
+          <p>
+            Vi opererar i Helsingborg och norra Skåne med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling över Öresund, näringsliv och familjeliv.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Flexibla tider med personlig plan inom några dagar och utredning klar på 2–4 veckor.</li>
+          <li>Lokalkännedom om krav från Helsingborgs arbetsgivare, skolor och myndigheter.</li>
+          <li>Kontinuerligt stöd med samma team genom utredning, medicinering och coachning.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Digitalt upplägg</span>
+            <span>Punktbesök vid behov</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/platser/adhd-autism-utredning-helsingborg/">Till Helsingborg</a>
+            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
           </div>
         </div>
       </article>
