@@ -217,6 +217,20 @@ nav a.active {
   width: auto;
 }
 
+@media (min-width: 900px) {
+  .home-banner__card {
+    padding: 36px 40px;
+  }
+
+  .home-banner__text {
+    font-size: 18px;
+  }
+
+  .home-banner__logo img {
+    height: 52px;
+  }
+}
+
 @media (max-width: 720px) {
   .home-banner__card {
     grid-template-columns: 1fr;
