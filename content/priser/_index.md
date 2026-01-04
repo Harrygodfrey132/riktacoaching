@@ -152,5 +152,39 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         </article>
       </div>
     </div>
+    <div class="pricing-payment" id="monthly-payment-estimate">
+      <div class="payment-box" data-payment-calculator data-currency="SEK" data-locale="sv-SE" data-term-unit="månader">
+        <h3>Beräkna din månadskostnad</h3>
+        <p class="payment-helper">Den här kalkylatorn ger en grov uppskattning baserad på dina val och är endast för illustration. Slutliga villkor fastställs av vår finansieringspartner efter kreditprövning.</p>
+        <div class="payment-controls">
+          <div class="payment-control">
+            <label class="payment-label" for="payment-loan">
+              <span>Lånebelopp</span>
+              <output id="payment-loan-output" class="payment-label__value" data-payment-display="loan" for="payment-loan"></output>
+            </label>
+            <input type="range" id="payment-loan" min="1000" max="60000" step="500" value="35000" data-payment-input="loan">
+          </div>
+          <div class="payment-control">
+            <label class="payment-label" for="payment-term">
+              <span>Återbetalningstid</span>
+              <output id="payment-term-output" class="payment-label__value" data-payment-display="term" for="payment-term"></output>
+            </label>
+            <input type="range" id="payment-term" min="6" max="24" step="1" value="24" data-payment-input="term">
+          </div>
+        </div>
+        <p class="payment-fees">Exempelränta: <span data-payment-display="interest-rate"></span>. Administrationsavgift: <span data-payment-display="admin-fee"></span> / månad. Startavgift: <span data-payment-display="setup-fee"></span> engångsavgift (visas som <span data-payment-display="setup-monthly"></span> / månad).</p>
+        <p class="payment-note">Månadskostnaden är densamma under hela löptiden. Startavgiften betalas vid start men visas här som en genomsnittlig månadskostnad för att tydliggöra den totala kostnaden över tid.</p>
+        <div class="payment-output">
+          <span class="payment-output__label">Uppskattad månadskostnad (grov uppskattning)</span>
+          <span class="payment-output__value">
+            <span data-payment-display="monthly" aria-live="polite"></span>
+            <span class="payment-output__unit">/ månad</span>
+          </span>
+        </div>
+        <p class="payment-total">Uppskattat totalbelopp att betala: <span data-payment-display="total"></span></p>
+        <p class="payment-disclosure">Detta är ett representativt exempel och en grov uppskattning för illustration. Det är inte ett bindande erbjudande om kredit och innebär ingen garanti för beviljad finansiering. Finansiering erbjuds av en oberoende extern finansieringspartner och förutsätter kreditprövning. Räntefria villkor gäller endast om alla betalningar sker i tid. Sena eller uteblivna betalningar kan medföra att ränta tillkommer. Avgifter tillkommer, inklusive en engångs startavgift och en månatlig administrationsavgift. Slutliga villkor bekräftas efter kreditprövning.</p>
+        <p class="payment-warning"><strong>Att låna kostar pengar.</strong> Om du inte kan betala tillbaka i tid kan detta påverka din kreditvärdighet och möjligheten att få kredit i framtiden.</p>
+      </div>
+    </div>
   </div>
 </section>

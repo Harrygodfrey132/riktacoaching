@@ -781,4 +781,85 @@ function initScreeningForm({
 
     scheduleOpen();
   })();
+
+  // ----- Payment estimate calculator -----
+  (function initPaymentCalculator(){
+    const calculators = document.querySelectorAll('[data-payment-calculator]');
+    if (!calculators.length) return;
+
+    const CONSTANTS = {
+      interestRate: 0,
+      monthlyAdminFee: 55,
+      setupFee: 575
+    };
+
+    function roundTo(value, decimals){
+      const factor = Math.pow(10, decimals);
+      return Math.round((value + Number.EPSILON) * factor) / factor;
+    }
+
+    calculators.forEach(calculator => {
+      const loanInput = calculator.querySelector('[data-payment-input="loan"]');
+      const termInput = calculator.querySelector('[data-payment-input="term"]');
+      if (!loanInput || !termInput) return;
+
+      const locale = calculator.dataset.locale || document.documentElement.lang || 'en-GB';
+      const currency = calculator.dataset.currency || (locale.toLowerCase().startsWith('sv') ? 'SEK' : 'GBP');
+      const formatWhole = new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0
+      });
+      const formatTwo = new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency,
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+
+      const termUnit = calculator.dataset.termUnit
+        || (locale.toLowerCase().startsWith('sv') ? 'månader' : 'months');
+
+      const display = {
+        loan: calculator.querySelector('[data-payment-display="loan"]'),
+        term: calculator.querySelector('[data-payment-display="term"]'),
+        monthly: calculator.querySelector('[data-payment-display="monthly"]'),
+        interestRate: calculator.querySelector('[data-payment-display="interest-rate"]'),
+        setupFee: calculator.querySelector('[data-payment-display="setup-fee"]'),
+        setupMonthly: calculator.querySelector('[data-payment-display="setup-monthly"]'),
+        adminFee: calculator.querySelector('[data-payment-display="admin-fee"]'),
+        total: calculator.querySelector('[data-payment-display="total"]')
+      };
+
+      function formatCurrency(value, digits){
+        return digits === 0 ? formatWhole.format(value) : formatTwo.format(value);
+      }
+
+      function update(){
+        const loanAmount = Number(loanInput.value);
+        const termMonths = Number(termInput.value);
+
+        const baseMonthlyRepayment = loanAmount / termMonths;
+        const monthlySetupCost = CONSTANTS.setupFee / termMonths;
+        const estimatedMonthlyCost = baseMonthlyRepayment + CONSTANTS.monthlyAdminFee + monthlySetupCost;
+        const estimatedMonthlyRounded = roundTo(estimatedMonthlyCost, 2);
+        const totalPayable = loanAmount + CONSTANTS.setupFee + (CONSTANTS.monthlyAdminFee * termMonths);
+        const totalPayableRounded = roundTo(totalPayable, 2);
+
+        if (display.loan) display.loan.textContent = formatCurrency(loanAmount, 0);
+        if (display.term) display.term.textContent = `${termMonths} ${termUnit}`;
+        if (display.monthly) display.monthly.textContent = formatCurrency(estimatedMonthlyRounded, 2);
+        if (display.interestRate) display.interestRate.textContent = `${CONSTANTS.interestRate}%`;
+        if (display.setupFee) display.setupFee.textContent = formatCurrency(CONSTANTS.setupFee, 0);
+        if (display.setupMonthly) display.setupMonthly.textContent = formatCurrency(roundTo(monthlySetupCost, 2), 2);
+        if (display.adminFee) display.adminFee.textContent = formatCurrency(CONSTANTS.monthlyAdminFee, 0);
+        if (display.total) display.total.textContent = formatCurrency(totalPayableRounded, 2);
+      }
+
+      loanInput.addEventListener('input', update);
+      termInput.addEventListener('input', update);
+      update();
+    });
+  })();
 })();
