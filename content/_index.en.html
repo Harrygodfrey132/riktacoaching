@@ -288,10 +288,14 @@ hide_template_hero: true
                   setStatus(body?.error || body?.message || 'Could not submit the form just now.', 'error');
                   return;
                 }
-                if (thankYou) thankYou.hidden = false;
-                setStatus(form.dataset.successMessage || 'Thank you! We’ll get back to you as soon as possible.', 'success');
-                form.reset();
-              } catch (_err) {
+              if (thankYou) thankYou.hidden = false;
+              setStatus(form.dataset.successMessage || 'Thank you! We’ll get back to you as soon as possible.', 'success');
+              form.dispatchEvent(new CustomEvent('kaddio:success', {
+                detail: { payload },
+                bubbles: true
+              }));
+              form.reset();
+            } catch (_err) {
                 setStatus('Could not submit the form just now.', 'error');
               }
             });

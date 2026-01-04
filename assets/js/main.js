@@ -420,6 +420,133 @@ function initScreeningForm({
     });
   }
 
+  // ----- Zoho CRM (WebToLead) bridge -----
+  const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
+  const ZOHO_WEBTOLEAD_FIELDS = {
+    xnQsjsdp: 'fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3',
+    zc_gad: '',
+    xmIwtLD: 'fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5',
+    actionType: 'TGVhZHM=',
+    returnURL: 'https://riktapsykiatri.se',
+    aG9uZXlwb3Q: ''
+  };
+  const ZOHO_FALLBACK_NAME = 'Customer';
+  const ZOHO_FALLBACK_EMAIL = 'customer@gmail.com';
+  let zohoForm = null;
+  let zohoFields = null;
+
+  function ensureZohoForm(){
+    if (zohoForm || !document.body) return;
+    const iframe = document.createElement('iframe');
+    iframe.name = 'zoho-webtolead-frame';
+    iframe.title = '';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    zohoForm = document.createElement('form');
+    zohoForm.method = 'POST';
+    zohoForm.action = ZOHO_WEBTOLEAD_ENDPOINT;
+    zohoForm.acceptCharset = 'UTF-8';
+    zohoForm.target = iframe.name;
+    zohoForm.style.display = 'none';
+    document.body.appendChild(zohoForm);
+
+    zohoFields = {};
+    const addField = (name, value) => {
+      const input = document.createElement('input');
+      input.type = 'hidden';
+      input.name = name;
+      input.value = value || '';
+      zohoForm.appendChild(input);
+      zohoFields[name] = input;
+    };
+    Object.entries(ZOHO_WEBTOLEAD_FIELDS).forEach(([name, value]) => addField(name, value));
+    addField('First Name', '');
+    addField('Last Name', '');
+    addField('Email', '');
+    addField('Lead Source', '');
+  }
+
+  function readFormValue(form, selectors){
+    if (!form) return '';
+    for (const selector of selectors) {
+      const field = form.querySelector(selector);
+      if (field && typeof field.value === 'string' && field.value.trim()) {
+        return field.value.trim();
+      }
+    }
+    return '';
+  }
+
+  function splitName(fullName){
+    const parts = (fullName || '').trim().split(/\s+/).filter(Boolean);
+    if (!parts.length) return { firstName: '', lastName: '' };
+    if (parts.length === 1) return { firstName: parts[0], lastName: '' };
+    return { firstName: parts[0], lastName: parts.slice(1).join(' ') };
+  }
+
+  function buildZohoLeadData(form, payload){
+    const payloadFullName = (payload?.fullName || '').trim();
+    const payloadEmail = (payload?.email || '').trim();
+    const payloadLeadSource = (payload?.leadSource || '').trim();
+
+    let firstName = readFormValue(form, [
+      'input[name="firstName"]',
+      'input[name="First Name"]',
+      '#First_Name'
+    ]);
+    let lastName = readFormValue(form, [
+      'input[name="lastName"]',
+      'input[name="Last Name"]',
+      '#Last_Name'
+    ]);
+    const formFullName = readFormValue(form, [
+      'input[name="fullName"]',
+      'input[name="Full Name"]'
+    ]);
+    const formEmail = readFormValue(form, [
+      'input[name="email"]',
+      'input[name="Email"]',
+      '#Email'
+    ]);
+    const fullName = payloadFullName || formFullName || [firstName, lastName].filter(Boolean).join(' ');
+    if ((!firstName || !lastName) && fullName) {
+      const parsed = splitName(fullName);
+      if (!firstName) firstName = parsed.firstName;
+      if (!lastName) lastName = parsed.lastName;
+    }
+
+    if (!firstName) firstName = ZOHO_FALLBACK_NAME;
+    if (!lastName) lastName = ZOHO_FALLBACK_NAME;
+
+    const email = payloadEmail || formEmail || ZOHO_FALLBACK_EMAIL;
+    const leadSource = payloadLeadSource;
+
+    return { firstName, lastName, email, leadSource };
+  }
+
+  function sendZohoLead({ form, payload } = {}){
+    try {
+      ensureZohoForm();
+      if (!zohoForm || !zohoFields) return;
+      const data = buildZohoLeadData(form, payload);
+      zohoFields['First Name'].value = data.firstName;
+      zohoFields['Last Name'].value = data.lastName;
+      zohoFields['Email'].value = data.email;
+      zohoFields['Lead Source'].value = data.leadSource || '';
+      zohoForm.submit();
+    } catch (_err) {
+      // Best-effort only: avoid interfering with primary form submission.
+    }
+  }
+
+  document.addEventListener('kaddio:success', (event) => {
+    sendZohoLead({
+      form: event.target && event.target.nodeName === 'FORM' ? event.target : null,
+      payload: event.detail?.payload || null
+    });
+  });
+
   async function sendScreeningToKaddio({ form, payload, formContext, leadSourceOverride, statusTarget }){
     if (!form) return;
     const firstName = (form.querySelector('input[name="firstName"]')?.value || '').trim();
