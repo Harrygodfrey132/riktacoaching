@@ -27,6 +27,20 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
     </div>
 </section>
 
+<section class="home-banner" aria-label="Betalningspartner">
+  <div class="container">
+    <div class="home-banner__card">
+      <div class="home-banner__copy">
+        <p class="home-banner__kicker">Betalningspartner</p>
+        <p class="home-banner__text">Vi erbjuder flexibla betalningslösningar i samarbete med vår betalningspartner Medical Finance.</p>
+      </div>
+      <a class="home-banner__logo" href="/img/Medical-Finance-Logo.png" aria-label="Medical Finance logotyp">
+        <img src="/img/Medical-Finance-Logo.png" alt="Medical Finance logotyp" loading="lazy" decoding="async">
+      </a>
+    </div>
+  </div>
+</section>
+
 <section id="priser">
   <div class="container">
     <h2>Priser</h2>
