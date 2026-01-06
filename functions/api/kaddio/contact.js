@@ -43,8 +43,19 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 }
 `;
 
+const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
+const ZOHO_WEBTOLEAD_FIELDS = {
+  xnQsjsdp: 'fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3',
+  zc_gad: '',
+  xmIwtLD: 'fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5',
+  actionType: 'TGVhZHM=',
+  returnURL: 'https://riktapsykiatri.se/tack/',
+  aG9uZXlwb3Q: ''
+};
+
 const MAX_BODY_SIZE = 8000; // guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
+const ZOHO_RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -107,6 +118,8 @@ export async function onRequest(context) {
     const customProps = [
       { field: 'Reason_Field', valueString: message }
     ];
+    let updateWarning = null;
+    let updatedCustomProperties = true;
 
     try {
       const updateUserResponse = await callKaddio({
@@ -120,13 +133,26 @@ export async function onRequest(context) {
 
       if (updateUserResponse.errors?.length) {
         const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
-        return withCors(json({ ok: true, clientId, warning: messageText || 'Client created but custom field not updated' }));
+        updateWarning = messageText || 'Client created but custom field not updated';
+        updatedCustomProperties = false;
       }
     } catch (err) {
-      return withCors(json({ ok: true, clientId, warning: err?.message || 'Client created; custom field update failed' }));
+      updateWarning = err?.message || 'Client created; custom field update failed';
+      updatedCustomProperties = false;
     }
 
-    return withCors(json({ ok: true, clientId, updatedCustomProperties: true }));
+    try {
+      await sendZohoLead(normalized);
+    } catch (_err) {
+      return withCors(json({ error: 'Could not submit the form just now.' }, 502));
+    }
+
+    return withCors(json({
+      ok: true,
+      clientId,
+      updatedCustomProperties,
+      ...(updateWarning ? { warning: updateWarning } : {})
+    }));
   } catch (error) {
     return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
   }
@@ -184,6 +210,62 @@ function safeStringify(value) {
   } catch (_err) {
     return '[unserializable metadata]';
   }
+}
+
+function buildZohoParams(normalized) {
+  const params = new URLSearchParams();
+  Object.entries(ZOHO_WEBTOLEAD_FIELDS).forEach(([key, value]) => {
+    params.set(key, value || '');
+  });
+  params.set('First Name', normalized.firstname || '');
+  params.set('Last Name', normalized.lastname || '');
+  params.set('Email', normalized.email || '');
+  if (normalized.leadSource) {
+    params.set('Lead Source', normalized.leadSource);
+  }
+  return params;
+}
+
+async function sendZohoLead(normalized) {
+  const params = buildZohoParams(normalized);
+  const response = await postZoho(params);
+  if (!response) {
+    const err = new Error('Zoho request failed');
+    err.statusCode = 502;
+    throw err;
+  }
+  if (!(response.ok || (response.status >= 300 && response.status < 400))) {
+    const err = new Error(`Zoho rejected lead [status ${response.status}]`);
+    err.statusCode = response.status;
+    throw err;
+  }
+}
+
+async function postZoho(params) {
+  let lastResponse = null;
+  const maxAttempts = 3;
+  for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+    try {
+      const response = await fetch(ZOHO_WEBTOLEAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: params.toString()
+      });
+      lastResponse = response;
+      if (response.ok || (response.status >= 300 && response.status < 400)) {
+        return response;
+      }
+      if (!ZOHO_RETRYABLE_STATUS.has(response.status) || attempt === maxAttempts) {
+        return response;
+      }
+    } catch (_err) {
+      if (attempt === maxAttempts) {
+        return lastResponse;
+      }
+    }
+    await wait(300 * attempt);
+  }
+  return lastResponse;
 }
 
 async function callKaddio({ query, variables, env }) {

@@ -546,13 +546,6 @@ function initScreeningForm({
     }
   }
 
-  document.addEventListener('kaddio:success', (event) => {
-    sendZohoLead({
-      form: event.target && event.target.nodeName === 'FORM' ? event.target : null,
-      payload: event.detail?.payload || null
-    });
-  });
-
   async function sendScreeningToKaddio({ form, payload, formContext, leadSourceOverride, statusTarget }){
     if (!form) return;
     const firstName = (form.querySelector('input[name="firstName"]')?.value || '').trim();
