@@ -403,7 +403,9 @@ function initScreeningForm({
         }));
         const redirectUrl = form.dataset.redirectUrl;
         if (redirectUrl) {
-          window.location.assign(redirectUrl);
+          window.setTimeout(() => {
+            window.location.assign(redirectUrl);
+          }, 400);
         }
       } catch (error) {
         const busyMessage = form.dataset.rateLimitMessage

@@ -312,7 +312,9 @@ hide_template_hero: true
               form.reset();
               const redirectUrl = form.dataset.redirectUrl;
               if (redirectUrl) {
-                window.location.assign(redirectUrl);
+                window.setTimeout(() => {
+                  window.location.assign(redirectUrl);
+                }, 400);
               }
             } catch (_err) {
                 setStatus('Det gick inte att skicka just nu.', 'error');
