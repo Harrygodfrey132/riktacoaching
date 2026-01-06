@@ -167,9 +167,6 @@ draft: false
               if (!validateEmail896517000000571075()){
                 return false;
               }
-              if (typeof fbq === 'function') {
-                fbq('track', 'CompleteRegistration');
-              }
               document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
             }
           </script>

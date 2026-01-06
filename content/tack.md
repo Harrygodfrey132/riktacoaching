@@ -1,12 +1,14 @@
 ---
 title: "Tack"
 url: "/tack"
-meta_title: "Tack för ditt meddelande | Rikta Psykiatri"
-meta_keywords: "tack sida, Rikta Psykiatri kontakt, kundservice psykiatri, bekräftelse meddelande"
-meta_description: "Vi återkommer samma arbetsdag med svar och nästa steg. Tack för att du kontaktade Rikta Psykiatri."
-og_title: "Tack - vi hör av oss snart"
-og_description: "Ditt meddelande är mottaget av vårt koordinatorsteam. Vi kontaktar dig för att boka rätt specialist och tider."
+meta_title: "Tack för din intresseanmälan | Rikta Psykiatri"
+meta_keywords: "tack sida, intresseanmälan, Rikta Psykiatri, webbinarium, kontakt"
+meta_description: "Tack för din intresseanmälan. Vi skickar webbinarieinformation inom kort och återkommer inom 24 timmar."
+og_title: "Tack för din intresseanmälan"
+og_description: "Vi skickar webbinarieinformation inom kort och återkommer inom 24 timmar."
 ---
-<h2>Tack för ditt meddelande!</h2>
-<p>Vi återkommer till dig så snart vi kan.</p>
+<h2>Tack för din intresseanmälan!</h2>
+<p>Tack för att du anmält ditt intresse hos Rikta Psykiatri.</p>
+<p>Om du ska delta i ett webbinarium skickar vi informationen inom kort.</p>
+<p>För inskickade formulär strävar vi efter att återkomma inom 24 timmar.</p>
 <p><a class="btn" href="/">Tillbaka till startsidan</a></p>

@@ -227,6 +227,7 @@ hide_template_hero: true
         <form id="kaddio-contact-form-home"
           class="contact-form__body"
           data-kaddio-form="contact"
+          data-redirect-url="/tack/"
           data-form-context="homepage-reviews-sv"
           data-success-message="Tack! Vi återkommer så snart vi kan."
           data-sending-message="Skickar..."
@@ -309,6 +310,10 @@ hide_template_hero: true
                 bubbles: true
               }));
               form.reset();
+              const redirectUrl = form.dataset.redirectUrl;
+              if (redirectUrl) {
+                window.location.assign(redirectUrl);
+              }
             } catch (_err) {
                 setStatus('Det gick inte att skicka just nu.', 'error');
               }

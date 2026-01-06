@@ -401,6 +401,10 @@ function initScreeningForm({
           detail: { payload: merged },
           bubbles: true
         }));
+        const redirectUrl = form.dataset.redirectUrl;
+        if (redirectUrl) {
+          window.location.assign(redirectUrl);
+        }
       } catch (error) {
         const busyMessage = form.dataset.rateLimitMessage
           || (IS_EN

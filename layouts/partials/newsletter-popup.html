@@ -15,6 +15,7 @@
       id="kaddio-popup-form"
       class="newsletter-popup__form"
       data-kaddio-form="contact"
+      {{ if not $isEn }}data-redirect-url="/tack/"{{ end }}
       data-form-context="{{ if $isEn }}popup-en{{ else }}popup-sv{{ end }}"
       data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}"
       data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
