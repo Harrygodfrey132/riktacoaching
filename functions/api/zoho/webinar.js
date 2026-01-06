@@ -1,6 +1,4 @@
 const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
-const THANK_YOU_PATH = '/tack/';
-const THANK_YOU_URL = 'https://riktapsykiatri.se/tack/';
 const RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
 const REQUIRED_FIELDS = ['xnQsjsdp', 'xmIwtLD', 'actionType', 'Last Name', 'Email'];
 
@@ -27,10 +25,6 @@ export async function onRequest({ request }) {
     }
   }
 
-  if (!params.get('returnURL')) {
-    params.set('returnURL', THANK_YOU_URL);
-  }
-
   if (!params.get('Last Name')) {
     params.set('Last Name', 'Webbinarium');
   }
@@ -52,7 +46,10 @@ export async function onRequest({ request }) {
     return new Response('Lead submission failed', { status: 502 });
   }
 
-  return Response.redirect(THANK_YOU_PATH, 303);
+  return new Response(JSON.stringify({ ok: true }), {
+    status: 200,
+    headers: { 'Content-Type': 'application/json' }
+  });
 }
 
 async function postToZoho(params) {

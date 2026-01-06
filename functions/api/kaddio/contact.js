@@ -68,94 +68,35 @@ export async function onRequest(context) {
     return withCors(json({ error: 'Method not allowed' }, 405));
   }
 
-  const rawText = await request.text();
-  if (!rawText || rawText.length > MAX_BODY_SIZE) {
-    return withCors(json({ error: 'Invalid payload' }, 400));
+  const parsed = await parseRequestPayload(request);
+  if (parsed.error) {
+    return withCors(json({ error: parsed.error }, 400));
   }
 
-  let parsed = null;
-  try {
-    parsed = JSON.parse(rawText);
-  } catch (_err) {
-    return withCors(json({ error: 'Malformed JSON' }, 400));
-  }
-
-  const normalized = normalizeInput(parsed);
+  const normalized = normalizeInput(parsed.data);
   if (!normalized) {
     return withCors(json({ error: 'Missing required fields' }, 400));
   }
 
-  const clientInput = {
-    firstname: normalized.firstname,
-    lastname: normalized.lastname,
-    email: normalized.email,
-    notification: normalized.description || 'Website enquiry',
-    pnr: null,
-    zip: null,
-    city: null,
-    streetAdress: null,
-    cellphone: null
+  const kaddioResult = await sendKaddioLead(normalized, env);
+  if (!kaddioResult.ok) {
+    return withCors(json({ error: kaddioResult.warning || 'Could not submit the form just now.' }, 502));
+  }
+
+  const zohoResult = await sendZohoLeadSafe(normalized);
+
+  const response = {
+    ok: true,
+    clientId: kaddioResult.clientId,
+    updatedCustomProperties: kaddioResult.updatedCustomProperties
   };
 
-  try {
-    const createResponse = await callKaddio({
-      query: CREATE_CLIENT_MUTATION,
-      variables: clientInput,
-      env
-    });
-
-    if (createResponse.errors?.length) {
-      const message = createResponse.errors.map(err => err.message).join('; ');
-      return withCors(json({ error: message || 'Kaddio rejected the request' }, 502));
-    }
-
-    const clientId = createResponse.data?.createClient || null;
-    if (!clientId) {
-      return withCors(json({ error: 'Kaddio did not return a client id' }, 502));
-    }
-
-    const message = normalized.description || 'Website enquiry';
-    const customProps = [
-      { field: 'Reason_Field', valueString: message }
-    ];
-    let updateWarning = null;
-    let updatedCustomProperties = true;
-
-    try {
-      const updateUserResponse = await callKaddio({
-        query: UPDATE_USER_MUTATION,
-        variables: {
-          userId: clientId,
-          customProperties: customProps
-        },
-        env
-      });
-
-      if (updateUserResponse.errors?.length) {
-        const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
-        updateWarning = messageText || 'Client created but custom field not updated';
-        updatedCustomProperties = false;
-      }
-    } catch (err) {
-      updateWarning = err?.message || 'Client created; custom field update failed';
-      updatedCustomProperties = false;
-    }
-
-    try {
-      await sendZohoLead(normalized);
-    } catch (_err) {
-      return withCors(json({ error: 'Could not submit the form just now.' }, 502));
-    }
-
-    return withCors(json({
-      ok: true,
-      clientId,
-      updatedCustomProperties,
-      ...(updateWarning ? { warning: updateWarning } : {})
-    }));
-  } catch (error) {
-    return withCors(json({ error: error.message || 'Failed to reach Kaddio' }, error.statusCode || 502));
+  const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
+  if (warnings.length) {
+    response.warning = warnings.join(' | ');
   }
+
+  return withCors(json(response));
 }
 
 function json(body, status = 200) {
@@ -174,19 +115,82 @@ function withCors(response) {
   return new Response(response.body, { status: response.status, headers });
 }
 
+async function parseRequestPayload(request) {
+  const contentType = (request.headers.get('content-type') || '').toLowerCase();
+  let rawText = '';
+  try {
+    rawText = await request.clone().text();
+  } catch (_err) {
+    return { error: 'Invalid payload' };
+  }
+
+  if (!rawText || rawText.length > MAX_BODY_SIZE) {
+    return { error: 'Invalid payload' };
+  }
+
+  if (contentType.includes('application/json')) {
+    try {
+      return { data: JSON.parse(rawText) };
+    } catch (_err) {
+      return { error: 'Malformed JSON' };
+    }
+  }
+
+  if (contentType.includes('application/x-www-form-urlencoded')) {
+    return { data: Object.fromEntries(new URLSearchParams(rawText)) };
+  }
+
+  if (contentType.includes('multipart/form-data')) {
+    try {
+      const formData = await request.formData();
+      return { data: formDataToObject(formData) };
+    } catch (_err) {
+      return { error: 'Invalid form submission' };
+    }
+  }
+
+  try {
+    return { data: JSON.parse(rawText) };
+  } catch (_err) {
+    if (rawText.includes('=')) {
+      return { data: Object.fromEntries(new URLSearchParams(rawText)) };
+    }
+  }
+
+  return { error: 'Invalid payload' };
+}
+
+function formDataToObject(formData) {
+  const data = {};
+  for (const [key, value] of formData.entries()) {
+    if (typeof value === 'string') {
+      data[key] = value;
+    }
+  }
+  return data;
+}
+
+function coerceString(value) {
+  if (value === null || value === undefined) return '';
+  return String(value).trim();
+}
+
 function normalizeInput(body) {
   if (!body || typeof body !== 'object') return null;
 
-  const fullName = (body.fullName || [body.firstName, body.lastName].filter(Boolean).join(' ') || '').trim();
-  const email = (body.email || '').trim();
-  const description = (body.description || body.Description || body.message || '').trim();
+  const firstNameInput = coerceString(body.firstName || body['First Name']);
+  const lastNameInput = coerceString(body.lastName || body['Last Name']);
+  const fullNameInput = coerceString(body.fullName || body['Full Name']);
+  const fullName = (fullNameInput || [firstNameInput, lastNameInput].filter(Boolean).join(' ') || '').trim();
+  const email = coerceString(body.email || body.Email);
+  const description = coerceString(body.description || body.Description || body.message);
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
-  const lastname = rest.join(' ') || (body.lastName || 'N/A');
-  const firstname = first || (body.firstName || 'N/A');
-  const leadSource = (body.leadSource || 'Website form').trim();
-  const metadata = body.metadata || {};
+  const lastname = rest.join(' ') || lastNameInput || 'N/A';
+  const firstname = first || firstNameInput || 'N/A';
+  const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Website form');
+  const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
 
   const metaNote = [
     metadata.path ? `Path: ${metadata.path}` : '',
@@ -209,6 +213,93 @@ function safeStringify(value) {
     return JSON.stringify(value);
   } catch (_err) {
     return '[unserializable metadata]';
+  }
+}
+
+async function sendKaddioLead(normalized, env) {
+  const result = {
+    ok: false,
+    clientId: null,
+    updatedCustomProperties: false,
+    warning: null
+  };
+
+  if (!env?.KADDIO_GRAPHQL_URL || !env?.KADDIO_API_TOKEN) {
+    result.warning = 'Kaddio configuration missing';
+    return result;
+  }
+
+  const clientInput = {
+    firstname: normalized.firstname,
+    lastname: normalized.lastname,
+    email: normalized.email,
+    notification: normalized.description || 'Website enquiry',
+    pnr: null,
+    zip: null,
+    city: null,
+    streetAdress: null,
+    cellphone: null
+  };
+
+  try {
+    const createResponse = await callKaddio({
+      query: CREATE_CLIENT_MUTATION,
+      variables: clientInput,
+      env
+    });
+
+    if (createResponse.errors?.length) {
+      result.warning = createResponse.errors.map(err => err.message).join('; ') || 'Kaddio rejected the request';
+      return result;
+    }
+
+    const clientId = createResponse.data?.createClient || null;
+    if (!clientId) {
+      result.warning = 'Kaddio did not return a client id';
+      return result;
+    }
+
+    result.ok = true;
+    result.clientId = clientId;
+    result.updatedCustomProperties = true;
+
+    const message = normalized.description || 'Website enquiry';
+    const customProps = [
+      { field: 'Reason_Field', valueString: message }
+    ];
+
+    try {
+      const updateUserResponse = await callKaddio({
+        query: UPDATE_USER_MUTATION,
+        variables: {
+          userId: clientId,
+          customProperties: customProps
+        },
+        env
+      });
+
+      if (updateUserResponse.errors?.length) {
+        const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
+        result.warning = messageText || 'Client created but custom field not updated';
+        result.updatedCustomProperties = false;
+      }
+    } catch (err) {
+      result.warning = err?.message || 'Client created; custom field update failed';
+      result.updatedCustomProperties = false;
+    }
+  } catch (error) {
+    result.warning = error?.message || 'Failed to reach Kaddio';
+  }
+
+  return result;
+}
+
+async function sendZohoLeadSafe(normalized) {
+  try {
+    await sendZohoLead(normalized);
+    return { ok: true, warning: null };
+  } catch (err) {
+    return { ok: false, warning: err?.message || 'Zoho lead submission failed' };
   }
 }
 

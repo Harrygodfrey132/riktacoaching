@@ -227,9 +227,8 @@ hide_template_hero: true
         <form id="kaddio-contact-form-home"
           class="contact-form__body"
           data-kaddio-form="contact"
-          data-redirect-url="/tack/"
           data-form-context="homepage-reviews-sv"
-          data-success-message="Tack! Vi återkommer så snart vi kan."
+          data-success-message="Tack för din förfrågan. Vi återkommer inom en till två arbetsdagar."
           data-sending-message="Skickar..."
           action="/api/kaddio/contact"
           method="POST"
@@ -254,7 +253,6 @@ hide_template_hero: true
           <div class="form-row form-row--actions">
             <button type="submit" class="btn primary">Skicka</button>
           </div>
-          <p class="contact-form__note form-thank-you" data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
           <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
         </form>
         <script>
@@ -270,7 +268,9 @@ hide_template_hero: true
               if (!statusEl) return;
               statusEl.textContent = message || '';
               statusEl.dataset.statusType = type || 'info';
-              statusEl.hidden = !message;
+              const isVisible = Boolean(message);
+              statusEl.hidden = !isVisible;
+              statusEl.classList.toggle('is-visible', isVisible);
             }
 
             form.addEventListener('submit', async (event) => {
@@ -303,20 +303,14 @@ hide_template_hero: true
                   setStatus(body?.error || body?.message || 'Det gick inte att skicka just nu.', 'error');
                   return;
                 }
-              if (thankYou) thankYou.hidden = false;
-              setStatus(form.dataset.successMessage || 'Tack! Vi återkommer så snart vi kan.', 'success');
-              form.dispatchEvent(new CustomEvent('kaddio:success', {
-                detail: { payload },
-                bubbles: true
-              }));
-              form.reset();
-              const redirectUrl = form.dataset.redirectUrl;
-              if (redirectUrl) {
-                window.setTimeout(() => {
-                  window.location.assign(redirectUrl);
-                }, 400);
-              }
-            } catch (_err) {
+                if (thankYou) thankYou.hidden = false;
+                setStatus(form.dataset.successMessage || 'Tack för din förfrågan. Vi återkommer inom en till två arbetsdagar.', 'success');
+                form.dispatchEvent(new CustomEvent('kaddio:success', {
+                  detail: { payload },
+                  bubbles: true
+                }));
+                form.reset();
+              } catch (_err) {
                 setStatus('Det gick inte att skicka just nu.', 'error');
               }
             });

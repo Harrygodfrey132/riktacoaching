@@ -61,7 +61,6 @@ draft: false
           <input type="hidden" name="zc_gad" id="zc_gad_sv" value="">
           <input type="text" style="display:none;" name="xmIwtLD" value="fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5">
           <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
-          <input type="text" style="display:none;" name="returnURL" value="https&#x3a;&#x2f;&#x2f;riktapsykiatri.se/tack/">
 
           <div class="zcwf_row">
             <div class="zcwf_col_lab">
@@ -174,7 +173,50 @@ draft: false
               document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
             }
           </script>
+          <p class="contact-form__note form-status" data-webinar-status aria-live="polite" hidden></p>
         </form>
+        <script>
+          (function(){
+            const form = document.getElementById('webform896517000000571075_sv');
+            if (!form || form.dataset.webinarBound) return;
+            form.dataset.webinarBound = 'true';
+            const statusEl = form.querySelector('[data-webinar-status]');
+            const submitButton = form.querySelector('input[type="submit"], button[type="submit"]');
+
+            function setStatus(message, type){
+              if (!statusEl) return;
+              statusEl.textContent = message || '';
+              statusEl.dataset.statusType = type || 'info';
+              const isVisible = Boolean(message);
+              statusEl.hidden = !isVisible;
+              statusEl.classList.toggle('is-visible', isVisible);
+            }
+
+            form.addEventListener('submit', async (event) => {
+              if (event.defaultPrevented) return;
+              event.preventDefault();
+              setStatus('Skickar...', 'info');
+              if (submitButton) submitButton.setAttribute('disabled', 'true');
+
+              const formData = new FormData(form);
+              try {
+                const response = await fetch(form.action, {
+                  method: 'POST',
+                  body: formData
+                });
+                if (!response.ok) {
+                  throw new Error('Submission failed');
+                }
+                setStatus('Tack för din anmälan. Vi skickar ett mejl till dig inom kort.', 'success');
+                form.reset();
+              } catch (_err) {
+                setStatus('Det gick inte att skicka just nu. Försök igen om en stund.', 'error');
+              } finally {
+                if (submitButton) submitButton.removeAttribute('disabled');
+              }
+            });
+          })();
+        </script>
       </div>
       <!-- End Zoho CRM form -->
     </div>

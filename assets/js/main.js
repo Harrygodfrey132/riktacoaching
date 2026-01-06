@@ -307,7 +307,9 @@ function initScreeningForm({
     if (!statusEl) return;
     statusEl.textContent = message || '';
     statusEl.dataset.statusType = type || 'info';
-    statusEl.hidden = !message;
+    const isVisible = Boolean(message);
+    statusEl.hidden = !isVisible;
+    statusEl.classList.toggle('is-visible', isVisible);
   }
 
   function mergeMetadata(baseMeta, extraMeta){
