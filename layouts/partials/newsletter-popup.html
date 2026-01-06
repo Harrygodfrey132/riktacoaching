@@ -15,8 +15,9 @@
       id="kaddio-popup-form"
       class="newsletter-popup__form"
       data-kaddio-form="contact"
+      {{ if not $isEn }}data-redirect-url="/tack/"{{ end }}
       data-form-context="{{ if $isEn }}popup-en{{ else }}popup-sv{{ end }}"
-      data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack för din förfrågan. Vi återkommer inom en till två arbetsdagar.{{ end }}"
+      data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}"
       data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
       data-error-message="{{ if $isEn }}We could not send your request. Please try again.{{ else }}Vi kunde inte skicka din förfrågan. Försök igen.{{ end }}"
       data-rate-limit-message="{{ if $isEn }}We are handling many requests right now. Please try again in a moment.{{ else }}Vi hanterar många förfrågningar just nu. Försök igen om en stund.{{ end }}"
@@ -62,11 +63,9 @@
       <button type="submit" class="newsletter-popup__submit">
         {{ if $isEn }}Send request{{ else }}Skicka förfrågan{{ end }}
       </button>
-      {{ if $isEn }}
-        <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
-          Thank you! We’ll get back to you as soon as possible.
-        </p>
-      {{ end }}
+      <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
+        {{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}
+      </p>
       <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
       <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
         {{ if $isEn }}

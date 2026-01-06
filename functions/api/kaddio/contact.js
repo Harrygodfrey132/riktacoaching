@@ -60,43 +60,47 @@ const ZOHO_RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
 export async function onRequest(context) {
   const { request, env } = context;
 
-  if (request.method === 'OPTIONS') {
-    return withCors(new Response(null, { status: 204 }));
+  try {
+    if (request.method === 'OPTIONS') {
+      return withCors(new Response(null, { status: 204 }));
+    }
+
+    if (request.method !== 'POST') {
+      return withCors(json({ error: 'Method not allowed' }, 405));
+    }
+
+    const parsed = await parseRequestPayload(request);
+    if (parsed.error) {
+      return withCors(json({ error: parsed.error }, 400));
+    }
+
+    const normalized = normalizeInput(parsed.data);
+    if (!normalized) {
+      return withCors(json({ error: 'Missing required fields' }, 400));
+    }
+
+    const kaddioResult = await sendKaddioLead(normalized, env);
+    if (!kaddioResult.ok) {
+      return withCors(json({ error: kaddioResult.warning || 'Could not submit the form just now.' }, 502));
+    }
+
+    const zohoResult = await sendZohoLeadSafe(normalized);
+
+    const response = {
+      ok: true,
+      clientId: kaddioResult.clientId,
+      updatedCustomProperties: kaddioResult.updatedCustomProperties
+    };
+
+    const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
+    if (warnings.length) {
+      response.warning = warnings.join(' | ');
+    }
+
+    return withCors(json(response));
+  } catch (_err) {
+    return withCors(json({ error: 'Could not submit the form just now.' }, 502));
   }
-
-  if (request.method !== 'POST') {
-    return withCors(json({ error: 'Method not allowed' }, 405));
-  }
-
-  const parsed = await parseRequestPayload(request);
-  if (parsed.error) {
-    return withCors(json({ error: parsed.error }, 400));
-  }
-
-  const normalized = normalizeInput(parsed.data);
-  if (!normalized) {
-    return withCors(json({ error: 'Missing required fields' }, 400));
-  }
-
-  const kaddioResult = await sendKaddioLead(normalized, env);
-  if (!kaddioResult.ok) {
-    return withCors(json({ error: kaddioResult.warning || 'Could not submit the form just now.' }, 502));
-  }
-
-  const zohoResult = await sendZohoLeadSafe(normalized);
-
-  const response = {
-    ok: true,
-    clientId: kaddioResult.clientId,
-    updatedCustomProperties: kaddioResult.updatedCustomProperties
-  };
-
-  const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
-  if (warnings.length) {
-    response.warning = warnings.join(' | ');
-  }
-
-  return withCors(json(response));
 }
 
 function json(body, status = 200) {
@@ -117,38 +121,31 @@ function withCors(response) {
 
 async function parseRequestPayload(request) {
   const contentType = (request.headers.get('content-type') || '').toLowerCase();
-  let rawText = '';
-  try {
-    rawText = await request.clone().text();
-  } catch (_err) {
-    return { error: 'Invalid payload' };
-  }
-
-  if (!rawText || rawText.length > MAX_BODY_SIZE) {
-    return { error: 'Invalid payload' };
-  }
-
   if (contentType.includes('application/json')) {
-    try {
-      return { data: JSON.parse(rawText) };
-    } catch (_err) {
-      return { error: 'Malformed JSON' };
-    }
+    return parseJsonBody(request);
   }
 
   if (contentType.includes('application/x-www-form-urlencoded')) {
-    return { data: Object.fromEntries(new URLSearchParams(rawText)) };
+    return parseUrlEncodedBody(request);
   }
 
   if (contentType.includes('multipart/form-data')) {
     try {
       const formData = await request.formData();
-      return { data: formDataToObject(formData) };
+      const data = formDataToObject(formData);
+      if (estimatePayloadSize(data) > MAX_BODY_SIZE) {
+        return { error: 'Invalid payload' };
+      }
+      return { data };
     } catch (_err) {
       return { error: 'Invalid form submission' };
     }
   }
 
+  const rawText = await safeReadText(request);
+  if (!rawText || rawText.length > MAX_BODY_SIZE) {
+    return { error: 'Invalid payload' };
+  }
   try {
     return { data: JSON.parse(rawText) };
   } catch (_err) {
@@ -160,6 +157,34 @@ async function parseRequestPayload(request) {
   return { error: 'Invalid payload' };
 }
 
+async function parseJsonBody(request) {
+  const rawText = await safeReadText(request);
+  if (!rawText || rawText.length > MAX_BODY_SIZE) {
+    return { error: 'Invalid payload' };
+  }
+  try {
+    return { data: JSON.parse(rawText) };
+  } catch (_err) {
+    return { error: 'Malformed JSON' };
+  }
+}
+
+async function parseUrlEncodedBody(request) {
+  const rawText = await safeReadText(request);
+  if (!rawText || rawText.length > MAX_BODY_SIZE) {
+    return { error: 'Invalid payload' };
+  }
+  return { data: Object.fromEntries(new URLSearchParams(rawText)) };
+}
+
+async function safeReadText(request) {
+  try {
+    return await request.text();
+  } catch (_err) {
+    return '';
+  }
+}
+
 function formDataToObject(formData) {
   const data = {};
   for (const [key, value] of formData.entries()) {
@@ -168,6 +193,14 @@ function formDataToObject(formData) {
     }
   }
   return data;
+}
+
+function estimatePayloadSize(data) {
+  if (!data || typeof data !== 'object') return 0;
+  return Object.values(data).reduce((total, value) => {
+    if (value === null || value === undefined) return total;
+    return total + String(value).length;
+  }, 0);
 }
 
 function coerceString(value) {
