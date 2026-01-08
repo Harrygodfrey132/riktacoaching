@@ -5672,6 +5672,10 @@ nav a.cta:active{
   border: 1px solid rgba(55, 116, 171, 0.12);
 }
 
+.adhd-standards-card--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .adhd-standards-mark {
   display: flex;
   align-items: center;
