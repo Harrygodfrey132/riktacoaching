@@ -13,7 +13,7 @@ draft: false
 # Tidiga tecken på ADHD hos vuxna 
 
 Allt fler vuxna börjar fundera på om långvariga svårigheter med fokus, organisering och känslor kan hänga ihop med ADHD. Samtidigt är det inte alltid lätt att avgöra var gränsen går mellan “normal” stress och ett neuropsykiatriskt mönster som faktiskt kan behöva utredas.  
-Internationella riktlinjer - såsom till exempel NICE NG87 i Storbritannien - understryker att ADHD ofta kvarstår in i vuxenlivet och kan ge betydande påverkan på arbete, studier, relationer och psykisk hälsa.  
+Svenska riktlinjer från Socialstyrelsen understryker att ADHD ofta kvarstår in i vuxenlivet och kan ge betydande påverkan på arbete, studier, relationer och psykisk hälsa.  
 Den här texten sammanfattar tidiga tecken på ADHD hos vuxna med fokus på hur de kan se ut i vardagen och när det är rimligt att söka professionell hjälp.
 
 ## Vad menar vi med “tidiga tecken” hos vuxna?
@@ -77,7 +77,7 @@ En viktig del av att identifiera tidiga tecken på ADHD hos vuxna är att titta 
 - Har du i många år upplevt att du måste lägga mer energi än andra på sådant som struktur, planering och uppgifter i plugget eller på jobbet?
 - Har du återkommande hamnat i samma typer av problem - på olika arbetsplatser, i olika relationer eller utbildningar?
 - Har du ofta fått höra att du är “slarvig, sen, rörig, ofokuserad” - trots att du lagt ned stora mängder ansträngning?  
-De brittiska NICE-riktlinjerna menar att ADHD bör misstänkas när en vuxen person har bestående symtom på ouppmärksamhet och/eller hyperaktivitet-impulsivitet som orsakar åtminstone måttlig funktionsnedsättning i flera områden.
+Socialstyrelsens riktlinjer betonar att ADHD bör övervägas när en vuxen person har långvariga symtom på ouppmärksamhet och/eller hyperaktivitet-impulsivitet som leder till påtaglig funktionsnedsättning i flera områden.
 
 ## Samsjuklighet som “första signal” (utmattning, ångest, depression)
 För många vuxna är det inte koncentrationssvårigheterna som blir anledningen till den första kontakten med vården utan vad de får för följder:

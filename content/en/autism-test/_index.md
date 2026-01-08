@@ -163,7 +163,7 @@ layout: "autism-test/list"
         </ul>
         <p><strong>Sources:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
-        National Institute for Health and Care Excellence (NICE). Autism spectrum disorder in adults: diagnosis and management. Clinical guideline CG142, 2012.</p>
+        Swedish National Board of Health and Welfare (Socialstyrelsen). National guidelines for ADHD and autism care.</p>
         <p><strong>Translation note:</strong><br>
         English adaptation by RiktaPsychiatry.se (2025), based on AQ-10.</p>
         <p><strong>Important:</strong><br>

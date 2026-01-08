@@ -12,7 +12,7 @@ draft: false
 ---
 # Early signs of ADHD in adults
 
-More adults are wondering whether long-standing difficulties with focus, organisation, and emotions could be related to ADHD. It is not always easy to tell the difference between “normal” stress and a neurodivergent pattern that may need assessment. International guidelines such as NICE NG87 highlight that ADHD often persists into adult life and can significantly affect work, studies, relationships, and mental health. This article summarizes early signs of ADHD in adults, how they appear day to day, and when it makes sense to seek professional support.
+More adults are wondering whether long-standing difficulties with focus, organisation, and emotions could be related to ADHD. It is not always easy to tell the difference between “normal” stress and a neurodivergent pattern that may need assessment. Guidance from Sweden's National Board of Health and Welfare (Socialstyrelsen) highlights that ADHD often persists into adult life and can significantly affect work, studies, relationships, and mental health. This article summarizes early signs of ADHD in adults, how they appear day to day, and when it makes sense to seek professional support.
 
 ## What do we mean by “early signs” in adults?
 When we talk about early signs in adults, we usually mean two things:
@@ -66,7 +66,7 @@ An important part of spotting early signs is looking at your life story as a who
 - Have you spent years putting in more effort than others on structure, planning, and tasks at school or work?
 - Do you repeatedly end up in the same types of problems — at different workplaces, in different relationships or studies?
 - Have you often been called “careless, late, messy, unfocused” despite significant effort?  
-NICE guidelines suggest suspecting ADHD when an adult has persistent inattention and/or hyperactivity-impulsivity that causes at least moderate impairment across several areas.
+Socialstyrelsen guidance suggests considering ADHD when an adult has persistent inattention and/or hyperactivity-impulsivity that causes clear impairment across several areas.
 
 ## Comorbidities as the “first signal” (burnout, anxiety, depression)
 For many adults, the first contact with healthcare is not about attention but its consequences:

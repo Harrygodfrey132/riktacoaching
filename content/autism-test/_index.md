@@ -162,7 +162,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
         </ul>
         <p><strong>Källor:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
-        National Institute for Health and Care Excellence (NICE). Autism spectrum disorder in adults: diagnosis and management. Klinisk riktlinje CG142, 2012.</p>
+        Socialstyrelsen. Nationella riktlinjer för vård vid autism och ADHD.</p>
         <p><strong>Svensk översättning:</strong><br>
         Svensk översättning av Riktapsykiatri.se (2025), baserad på AQ-10.</p>
         <p><strong>Viktigt:</strong><br>

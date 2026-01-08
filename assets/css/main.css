@@ -5678,6 +5678,8 @@ nav a.cta:active{
   font-weight: 700;
   color: var(--adhd-blue);
   letter-spacing: 0.08em;
+  max-width: 100%;
+  overflow-wrap: anywhere;
 }
 
 .adhd-standards-copy ul {
