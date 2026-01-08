@@ -5672,6 +5672,13 @@ nav a.cta:active{
   border: 1px solid rgba(55, 116, 171, 0.12);
 }
 
+.adhd-standards-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
 .adhd-standards-mark span {
   display: inline-block;
   font-size: clamp(32px, 5vw, 46px);
@@ -5680,6 +5687,14 @@ nav a.cta:active{
   letter-spacing: 0.08em;
   max-width: 100%;
   overflow-wrap: anywhere;
+}
+
+.adhd-standards-mark img {
+  display: block;
+  width: min(280px, 70vw);
+  height: auto;
+  max-height: 110px;
+  object-fit: contain;
 }
 
 .adhd-standards-copy ul {
@@ -6236,6 +6251,11 @@ nav a.cta:active{
 
   .adhd-standards-card {
     padding: 32px 26px;
+  }
+
+  .adhd-standards-mark img {
+    width: min(200px, 70vw);
+    max-height: 80px;
   }
 
   .adhd-symptom-grid,
