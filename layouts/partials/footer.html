@@ -76,4 +76,27 @@
 </footer>
 {{ $mainJS := resources.Get "js/main.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $mainJS.RelPermalink }}" defer integrity="{{ $mainJS.Data.Integrity }}"></script>
+<script>
+  (function(){
+    var leadKey = 'rk_lead_ts';
+    var leadTtlMs = 5 * 60 * 1000;
+    function trackLeadOnce(){
+      var now = Date.now();
+      try {
+        var last = Number(sessionStorage.getItem(leadKey) || 0);
+        if (last && now - last < leadTtlMs) {
+          return;
+        }
+        sessionStorage.setItem(leadKey, String(now));
+      } catch (err) {}
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead');
+      }
+    }
+    window.riktaTrackLead = trackLeadOnce;
+    document.addEventListener('kaddio:success', function(){
+      trackLeadOnce();
+    });
+  })();
+</script>
 </body></html>

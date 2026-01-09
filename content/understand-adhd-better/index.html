@@ -169,6 +169,9 @@ draft: false
                 return false;
               }
               document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+              if (typeof window.riktaTrackLead === 'function') {
+                window.riktaTrackLead();
+              }
             }
           </script>
         </form>

@@ -12,6 +12,20 @@ og_description: "Vi skickar webbinarieinformation inom kort och återkommer inom
 <p>Om du ska delta i ett webbinarium skickar vi informationen inom kort.</p>
 <p>För inskickade formulär strävar vi efter att återkomma inom 24 timmar.</p>
 <script>
-  fbq('track', 'Lead');
+  (function(){
+    var leadKey = 'rk_lead_ts';
+    var leadTtlMs = 5 * 60 * 1000;
+    var now = Date.now();
+    try {
+      var last = Number(sessionStorage.getItem(leadKey) || 0);
+      if (last && now - last < leadTtlMs) {
+        return;
+      }
+      sessionStorage.setItem(leadKey, String(now));
+    } catch (err) {}
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead');
+    }
+  })();
 </script>
 <p><a class="btn" href="/">Tillbaka till startsidan</a></p>
