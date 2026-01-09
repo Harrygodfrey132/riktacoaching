@@ -11,7 +11,7 @@ og_description: "Vi skickar webbinarieinformation inom kort och återkommer inom
 <p>Tack för att du anmält ditt intresse hos Rikta Psykiatri.</p>
 <p>Om du ska delta i ett webbinarium skickar vi informationen inom kort.</p>
 <p>För inskickade formulär strävar vi efter att återkomma inom 24 timmar.</p>
-<script>
+<script type="text/plain" data-cookieconsent="marketing">
   fbq('track', 'Lead');
 </script>
 <p><a class="btn" href="/">Tillbaka till startsidan</a></p>

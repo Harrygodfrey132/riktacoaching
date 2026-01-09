@@ -25,6 +25,7 @@
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
   <link rel="canonical" href="{{ $page.Permalink }}">
+  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0ae4fd35-fa61-4925-8c57-14a68d42732c" data-blockingmode="auto" type="text/javascript"></script>
   {{- /* Hreflang alternates (deduped, including self-reference) */ -}}
   {{- $selfLang := cond $isEn "en" "sv" -}}
   {{- $seen := dict $selfLang true -}}
@@ -56,7 +57,7 @@
     gtag('config', 'G-DBD3TNFENE');
   </script>
   <!-- Meta Pixel Code -->
-  <script>
+  <script type="text/plain" data-cookieconsent="marketing">
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
