@@ -4,11 +4,10 @@
   <meta charset="utf-8">
   <title>{{ .Permalink }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="0ae4fd35-fa61-4925-8c57-14a68d42732c" data-blockingmode="auto" type="text/javascript"></script>
   <meta name="robots" content="noindex,follow">
   <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
   <!-- Meta Pixel Code -->
-  <script type="text/plain" data-cookieconsent="marketing">
+  <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -17,14 +16,14 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1616123489799623');
+    fbq('init', '919802637440375');
     fbq('track', 'PageView');
   </script>
   <!-- End Meta Pixel Code -->
 </head>
 <body>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1616123489799623&ev=PageView&noscript=1"
+    src="https://www.facebook.com/tr?id=919802637440375&ev=PageView&noscript=1"
   /></noscript>
   {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
   <main>
