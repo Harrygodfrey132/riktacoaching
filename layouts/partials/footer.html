@@ -94,7 +94,11 @@
       }
     }
     window.riktaTrackLead = trackLeadOnce;
-    document.addEventListener('kaddio:success', function(){
+    document.addEventListener('kaddio:success', function(event){
+      var target = event && event.target;
+      if (target && target.dataset && target.dataset.redirectUrl) {
+        return;
+      }
       trackLeadOnce();
     });
   })();

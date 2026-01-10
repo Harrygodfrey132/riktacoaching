@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <title>{{ .Permalink }}</title>
   <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
+  <link rel="dns-prefetch" href="https://connect.facebook.net">
+  <link rel="preconnect" href="https://www.facebook.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.facebook.com">
   <meta name="robots" content="noindex,follow">
   <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
   <!-- Meta Pixel Code -->
@@ -13,11 +17,34 @@
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};
     if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
     n.queue=[];t=b.createElement(e);t.async=!0;
+    t.onload=function(){window._metaPixelLoaded=true;};
+    t.onerror=function(){window._metaPixelError=true;};
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1616123489799623');
     fbq('track', 'PageView');
+  </script>
+  <script>
+    (function(){
+      var retryMs = 2000;
+      function retryPixelLoad(){
+        if (window._metaPixelLoaded) {
+          return;
+        }
+        if (document.querySelector('script[data-meta-pixel-retry]')) {
+          return;
+        }
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        s.setAttribute('data-meta-pixel-retry', 'true');
+        document.head.appendChild(s);
+      }
+      window.addEventListener('load', function(){
+        setTimeout(retryPixelLoad, retryMs);
+      });
+    })();
   </script>
   <!-- End Meta Pixel Code -->
 </head>
