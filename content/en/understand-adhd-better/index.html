@@ -168,9 +168,10 @@ draft: false
                 return false;
               }
               document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-              if (typeof window.riktaTrackLead === 'function') {
-                window.riktaTrackLead();
-              }
+              try {
+                sessionStorage.setItem('rk_lead_pending', '1');
+                sessionStorage.setItem('rk_lead_pending_ts', String(Date.now()));
+              } catch (err) {}
             }
           </script>
         </form>

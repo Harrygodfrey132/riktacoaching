@@ -15,8 +15,18 @@ og_description: "Vi skickar webbinarieinformation inom kort och återkommer inom
   (function(){
     var leadKey = 'rk_lead_ts';
     var leadTtlMs = 5 * 60 * 1000;
+    var pendingKey = 'rk_lead_pending';
+    var pendingTsKey = 'rk_lead_pending_ts';
+    var pendingTtlMs = 10 * 60 * 1000;
     var now = Date.now();
     try {
+      var pending = sessionStorage.getItem(pendingKey);
+      var pendingTs = Number(sessionStorage.getItem(pendingTsKey) || 0);
+      if (!pending || (pendingTs && now - pendingTs > pendingTtlMs)) {
+        return;
+      }
+      sessionStorage.removeItem(pendingKey);
+      sessionStorage.removeItem(pendingTsKey);
       var last = Number(sessionStorage.getItem(leadKey) || 0);
       if (last && now - last < leadTtlMs) {
         return;

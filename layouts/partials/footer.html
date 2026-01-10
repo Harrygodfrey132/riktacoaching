@@ -80,6 +80,8 @@
   (function(){
     var leadKey = 'rk_lead_ts';
     var leadTtlMs = 5 * 60 * 1000;
+    var pendingKey = 'rk_lead_pending';
+    var pendingTsKey = 'rk_lead_pending_ts';
     function trackLeadOnce(){
       var now = Date.now();
       try {
@@ -93,10 +95,17 @@
         fbq('track', 'Lead');
       }
     }
+    function markLeadPending(){
+      try {
+        sessionStorage.setItem(pendingKey, '1');
+        sessionStorage.setItem(pendingTsKey, String(Date.now()));
+      } catch (err) {}
+    }
     window.riktaTrackLead = trackLeadOnce;
     document.addEventListener('kaddio:success', function(event){
       var target = event && event.target;
       if (target && target.dataset && target.dataset.redirectUrl) {
+        markLeadPending();
         return;
       }
       trackLeadOnce();
