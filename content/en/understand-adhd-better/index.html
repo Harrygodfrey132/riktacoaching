@@ -168,10 +168,22 @@ draft: false
                 return false;
               }
               document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-              try {
-                sessionStorage.setItem('rk_lead_pending', '1');
-                sessionStorage.setItem('rk_lead_pending_ts', String(Date.now()));
-              } catch (err) {}
+              var leadFired = false;
+              if (typeof fbq === 'function') {
+                fbq('track', 'Lead');
+                leadFired = true;
+              }
+              if (!leadFired) {
+                try {
+                  sessionStorage.setItem('rk_lead_pending', '1');
+                  sessionStorage.setItem('rk_lead_pending_ts', String(Date.now()));
+                } catch (err) {}
+              } else {
+                try {
+                  sessionStorage.removeItem('rk_lead_pending');
+                  sessionStorage.removeItem('rk_lead_pending_ts');
+                } catch (err) {}
+              }
             }
           </script>
         </form>
