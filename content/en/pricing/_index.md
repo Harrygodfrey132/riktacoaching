@@ -35,9 +35,9 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <div class="pricing">
         <article class="card">
           <h3>ADHD coaching</h3>
-          <p class="meta">Digital or on-site • 45 min</p>
-          <p class="price">1500 kr</p>
-          <p class="price-note">Package: 6 sessions for the cost of 5 (1200 kr per session).</p>
+          <p class="meta">Digital • 45 min</p>
+          <p class="price">£120</p>
+          <p class="price-note">Package: 6 sessions for the cost of 5 (£100 per session).</p>
           <ul class="details">
             <li>Support to build structure and routines that improve focus and productivity.</li>
             <li>Help managing impulse control and time management to reduce stress and reach goals.</li>
@@ -46,9 +46,9 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
         </article>
         <article class="card">
           <h3>Autism coaching</h3>
-          <p class="meta">Digital or on-site • 45 min</p>
-          <p class="price">1500 kr</p>
-          <p class="price-note">Package: 6 sessions for the cost of 5 (1200 kr per session).</p>
+          <p class="meta">Digital • 45 min</p>
+          <p class="price">£120</p>
+          <p class="price-note">Package: 6 sessions for the cost of 5 (£100 per session).</p>
           <ul class="details">
             <li>Support to understand and manage social situations and communication.</li>
             <li>Help to create strategies for handling sensory input and changes in everyday life.</li>
@@ -62,8 +62,8 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <div class="pricing">
         <article class="card">
           <h3>NPF therapy</h3>
-          <p class="meta">Digital or on-site • 45 min</p>
-          <p class="price">1900 kr</p>
+          <p class="meta">Digital • 45 min</p>
+          <p class="price">£150</p>
           <ul class="details">
             <li>Support with emotion regulation, social interaction, and managing sensory input.</li>
             <li>Practical strategies for daily structure and behavior change.</li>
@@ -78,9 +78,9 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <div class="pricing">
         <article class="card">
           <h3>Assessment for ADHD &amp; autism (neuropsychiatric assessment)</h3>
-          <p class="meta">Digital or at the clinic</p>
-          <p class="price">35 000 kr</p>
-          <p class="price-note">Assessment plus 2 hours of coaching included.</p>
+          <p class="meta">Digital</p>
+          <p class="price">£2,500</p>
+          <p class="price-note">Assessments are not available in the UK.</p>
           <ul class="details">
             <li>Consultation with specialist psychiatrist.</li>
             <li>Structured interviews (DIVA-5) and rating scales.</li>
@@ -91,8 +91,8 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
         </article>
         <article class="card">
           <h3>Screening for ADHD and autism</h3>
-          <p class="meta">Digital or at the clinic</p>
-          <p class="price">0 kr</p>
+          <p class="meta">Digital</p>
+          <p class="price">£0</p>
           <ul class="details">
             <li>Conversation with a licensed psychologist.</li>
           </ul>
@@ -104,26 +104,13 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <h3>Medication pricing</h3>
       <div class="pricing">
         <article class="card">
-          <h3>Subscription</h3>
-          <p class="meta">Video • 75 min</p>
-          <p class="price">400 kr/month</p>
+          <h3>Medication support</h3>
+          <p class="meta">Unavailable in the UK</p>
+          <p class="price">Unavailable</p>
           <ul class="details">
-            <li>Start-up cost of 3 000 kr, then only 400 kr/month (12-month commitment).</li>
-            <li>Fast start within 1 week.</li>
-            <li>Ongoing doctor contact + materials, education &amp; webinars.</li>
+            <li>Medication services are not available for UK residents.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card">
-          <h3>Initiation</h3>
-          <p class="meta">Digital or on-site</p>
-          <p class="price">7600 kr</p>
-          <ul class="details">
-            <li>Start-up cost 7 600 kr (6 months), then 2 400 kr per half-year.</li>
-            <li>Includes all treatment + 2 referrals sent to psychiatry.</li>
-            <li>Written summary within 48 hours.</li>
-          </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>
