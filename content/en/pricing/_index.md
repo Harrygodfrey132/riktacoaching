@@ -62,14 +62,12 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <div class="pricing">
         <article class="card">
           <h3>NPF therapy</h3>
-          <p class="meta">Digital • 45 min</p>
-          <p class="price">£150</p>
+          <p class="meta">Unavailable in the UK</p>
+          <p class="price">Unavailable</p>
           <ul class="details">
-            <li>Support with emotion regulation, social interaction, and managing sensory input.</li>
-            <li>Practical strategies for daily structure and behavior change.</li>
-            <li>Conducted by a licensed psychologist experienced in both ADHD and autism.</li>
+            <li>NPF therapy is not available for UK residents.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>
