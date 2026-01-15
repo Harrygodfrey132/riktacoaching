@@ -36,7 +36,7 @@ og_description: "Compare coaching pricing and service availability before you bo
         <article class="card">
           <h3>ADHD coaching</h3>
           <p class="meta">Digital &bull; 45 min</p>
-          <p class="price">&pound;60</p>
+          <p class="price">&pound;70</p>
           <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
             <li>Support to build structure and routines that improve focus and productivity.</li>
@@ -47,7 +47,7 @@ og_description: "Compare coaching pricing and service availability before you bo
         <article class="card">
           <h3>Autism coaching</h3>
           <p class="meta">Digital &bull; 45 min</p>
-          <p class="price">&pound;60</p>
+          <p class="price">&pound;70</p>
           <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
             <li>Support to understand and manage social situations and communication.</li>
