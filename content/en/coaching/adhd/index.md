@@ -2,8 +2,8 @@
 title: "ADHD coaching"
 layout: coachning
 meta_title: "ADHD coaching | Rikta Psychiatry"
-meta_description: "Coaching that builds on your ADHD assessment. Get structured support for planning, focus, and sustainable routines."
-summary: "Practical coaching that turns assessment insights into everyday strategies."
+meta_description: "Specialized ADHD coaching with practical support for planning, focus, and sustainable routines."
+summary: "Practical coaching that turns ADHD insight into everyday strategies."
 type: coachning
 ---
 
@@ -14,13 +14,13 @@ type: coachning
       <h1>Change how ADHD shapes your life</h1>
       <p>
         Structured video sessions where you learn strategies tailored to your brain and lifestyle. Choose single sessions
-        or a 6-week program for teens or adults – always led by licensed psychologists or specialist coaches.
+        or a 6-week program for teens or adults - always led by Rikta-trained coaches who are psychology graduates.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/en/contact/#contactform">Book an intro call</a>
       </div>
       <ul class="coachning-hero__signals">
-        <li>Licensed coaches and psychologists</li>
+        <li>Rikta-trained coaches who are psychology graduates</li>
         <li>Reply within 1–2 business days</li>
         <li>Digital or at our Stockholm clinic</li>
       </ul>
@@ -68,7 +68,7 @@ type: coachning
     <span class="coachning-program__eyebrow">Coaching for teens (13–18)</span>
     <h3>6 weeks to improve school, emotions, and relationships</h3>
     <p>
-      Weekly sessions with a licensed psychologist or ADHD coach where you get practical tools to handle school,
+      Weekly sessions with a Rikta-trained ADHD coach where you get practical tools to handle school,
       emotions, and friendships. Homework between sessions helps you keep new habits.
     </p>
     <p><strong>Great for:</strong> Teens with ADHD who want better school structure, support with attention and emotions, and more control in everyday life.</p>
@@ -87,7 +87,7 @@ type: coachning
       </div>
       <div>
         <span>Led by</span>
-        <strong>Licensed psychologist/coach</strong>
+        <strong>Rikta-trained coach</strong>
       </div>
     </div>
     <div class="program-modules">
@@ -145,7 +145,7 @@ type: coachning
     <span class="coachning-program__eyebrow">Coaching for adults (18+)</span>
     <h3>6 weeks for focus, priorities, and less procrastination</h3>
     <p>
-      Meet the same psychologist or coach each week and learn strategies to reduce procrastination, improve attention,
+      Meet the same coach each week and learn strategies to reduce procrastination, improve attention,
       and prioritize effectively. Homework helps the change stick.
     </p>
     <p><strong>Great for:</strong> Adults with ADHD who want to get a handle on time and tasks, cut procrastination, and keep daily life flowing at home, in studies, and at work.</p>
@@ -164,7 +164,7 @@ type: coachning
       </div>
       <div>
         <span>Led by</span>
-        <strong>Licensed psychologist/coach</strong>
+        <strong>Rikta-trained coach</strong>
       </div>
     </div>
     <div class="program-modules">

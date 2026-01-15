@@ -46,26 +46,37 @@
           {{ end }}
         </ul>
       </div>
-      <div class="footer-column">
-        <h4>{{ if $isEn }}ADHD assessment{{ else }}ADHD-utredning{{ end }}</h4>
-        <ul>
-          <li><a href="{{ $adhdPath | relLangURL }}">{{ if $isEn }}Overview{{ else }}Översikt{{ end }}</a></li>
-          <li><a href="{{ $adhdAdults | relLangURL }}">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
-          <li><a href="{{ $adhdWomen | relLangURL }}">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
-          <li><a href="{{ $adhdYouth | relLangURL }}">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
-          <li><a href="{{ $adhdCoaching | relLangURL }}">{{ if $isEn }}Coaching{{ else }}Coachning{{ end }}</a></li>
-          <li><a href="{{ $adhdMedication | relLangURL }}">{{ if $isEn }}Medication{{ else }}Medicinering{{ end }}</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h4>{{ if $isEn }}Autism assessment{{ else }}Autism-utredning{{ end }}</h4>
-        <ul>
-          <li><a href="{{ $autismPath | relLangURL }}">{{ if $isEn }}Overview{{ else }}Översikt{{ end }}</a></li>
-          <li><a href="{{ $autismAdults | relLangURL }}">{{ if $isEn }}Adults{{ else }}Vuxna{{ end }}</a></li>
-          <li><a href="{{ $autismWomen | relLangURL }}">{{ if $isEn }}Women{{ else }}Kvinnor{{ end }}</a></li>
-          <li><a href="{{ $autismYouth | relLangURL }}">{{ if $isEn }}Children &amp; teens{{ else }}Barn och ungdomar{{ end }}</a></li>
-        </ul>
-      </div>
+      {{ if $isEn }}
+        <div class="footer-column">
+          <h4>Coaching</h4>
+          <ul>
+            <li><a href="{{ "en/coaching/" | relLangURL }}">Overview</a></li>
+            <li><a href="{{ "en/coaching/adhd/" | relLangURL }}">ADHD coaching</a></li>
+            <li><a href="{{ "en/coaching/autism/" | relLangURL }}">ASD coaching</a></li>
+          </ul>
+        </div>
+      {{ else }}
+        <div class="footer-column">
+          <h4>ADHD-utredning</h4>
+          <ul>
+            <li><a href="{{ $adhdPath | relLangURL }}">Översikt</a></li>
+            <li><a href="{{ $adhdAdults | relLangURL }}">Vuxna</a></li>
+            <li><a href="{{ $adhdWomen | relLangURL }}">Kvinnor</a></li>
+            <li><a href="{{ $adhdYouth | relLangURL }}">Barn och ungdomar</a></li>
+            <li><a href="{{ $adhdCoaching | relLangURL }}">Coachning</a></li>
+            <li><a href="{{ $adhdMedication | relLangURL }}">Medicinering</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Autism-utredning</h4>
+          <ul>
+            <li><a href="{{ $autismPath | relLangURL }}">Översikt</a></li>
+            <li><a href="{{ $autismAdults | relLangURL }}">Vuxna</a></li>
+            <li><a href="{{ $autismWomen | relLangURL }}">Kvinnor</a></li>
+            <li><a href="{{ $autismYouth | relLangURL }}">Barn och ungdomar</a></li>
+          </ul>
+        </div>
+      {{ end }}
     </div>
   </div>
   <div class="footer-bottom">

@@ -3,9 +3,9 @@ title: "Contact us"
 translationKey: "contact"
 draft: false
 meta_title: "Contact Rikta Psychiatry | Book a consultation"
-meta_keywords: "contact Rikta Psychiatry, book ADHD assessment, psychiatrist contact, neuropsychiatry contact, private psychiatry Stockholm"
-meta_description: "Fill out the form or email us to book an ADHD or autism assessment, medication review, or follow-up."
+meta_keywords: "contact Rikta Psychiatry, ADHD coaching, ASD coaching, autism coaching, neurodiversity coaching"
+meta_description: "Fill out the form or email us to book an ADHD or ASD coaching consultation."
 og_title: "Contact us - Rikta Psychiatry"
-og_description: "Choose the time and format that suits you. Our coordinators connect you with the right specialist for ADHD, autism, and follow-up care."
+og_description: "Choose the time and format that suits you. Our team connects you with the right coach for ADHD and ASD support."
 type: "contact"
 ---

@@ -1,21 +1,21 @@
 ---
-title: "Coaching that complements your diagnosis"
+title: "ADHD & ASD coaching"
 translationKey: "coaching"
 layout: coachning
 type: coachning
-meta_title: "Coaching for ADHD & autism | Rikta Psychiatry"
-meta_description: "See our coaching programs for ADHD and autism. Compare focus areas and find the right support team at Rikta Psychiatry."
-summary: "A single entry point to our specialized ADHD and autism coaching."
+meta_title: "ADHD & ASD coaching | Rikta Psychiatry"
+meta_description: "Specialized coaching for ADHD and autism. Compare focus areas and choose the right support."
+summary: "A single entry point to our specialized ADHD and ASD coaching."
 ---
 
 <section class="coachning-hero">
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
-      <span class="coachning-hero__eyebrow">Coaching for ADHD &amp; autism</span>
-      <h1>A hub for support after your assessment</h1>
+      <span class="coachning-hero__eyebrow">ADHD and ASD coaching</span>
+      <h1>Specialized coaching that meets you where you are</h1>
       <p>
-        Our coaching programs pick up where the assessment ends. Here you can see how we work with both ADHD and autism coaching,
-        what they have in common, and how to choose the right setup for your needs.
+        Our coaching programs are built for ADHD and ASD. We start by mapping your goals, choose a pace that fits you,
+        and build routines that stick in everyday life.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/en/contact/#contactform">Book an intro call</a>
@@ -23,7 +23,7 @@ summary: "A single entry point to our specialized ADHD and autism coaching."
       </div>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/coachning-hero-park.jpg" alt="Clinician supporting a patient digitally or at the clinic">
+      <img src="/img/coachning-hero-park.jpg" alt="Coach supporting a client digitally or at the clinic">
     </div>
   </div>
 </section>
@@ -32,7 +32,7 @@ summary: "A single entry point to our specialized ADHD and autism coaching."
   <div class="coachning-panel">
     <h2>How our coaching works</h2>
     <p>
-      Regardless of diagnosis we start by revisiting your assessment, defining goals, and agreeing on how often to meet.
+      We start by mapping your daily challenges, defining goals, and agreeing on how often to meet.
       You get concrete tools, homework, and ways to stay in touch between sessions so the change lasts.
     </p>
     <div class="coachning-format-grid">
@@ -41,8 +41,8 @@ summary: "A single entry point to our specialized ADHD and autism coaching."
         <p>You and your coach prioritize focus areas across daily life, work, relationships, or studies.</p>
       </article>
       <article class="coachning-format">
-        <h4>Cross-functional support</h4>
-        <p>If you need input from a physician or psychologist we bring the right expertise into your team.</p>
+        <h4>Rikta-trained coaches</h4>
+        <p>All coaches are trained in our ADHD and ASD methods and are psychology graduates.</p>
       </article>
       <article class="coachning-format">
         <h4>Continuous follow-ups</h4>
@@ -55,7 +55,7 @@ summary: "A single entry point to our specialized ADHD and autism coaching."
 <section class="coachning-section" id="programs">
   <div class="coachning-panel">
     <h2>Our programs</h2>
-    <p>Choose the track that fits you best – both can be combined with medical follow-ups or family support.</p>
+    <p>Choose the track that fits you best - both can be combined with family support or school and work planning.</p>
     <div class="coachning-step-grid">
       <article class="coachning-step">
         <figure class="coachning-step__media">
@@ -73,8 +73,8 @@ summary: "A single entry point to our specialized ADHD and autism coaching."
           <img src="/img/autism-coachning.jpg" alt="Person receiving autism coaching support">
         </figure>
         <div class="coachning-step__body">
-          <span class="coachning-step__number">Autism</span>
-          <h4>Autism coaching</h4>
+          <span class="coachning-step__number">ASD</span>
+          <h4>ASD coaching</h4>
           <p>Centered on sensory balance, communication, and creating safe structure in everyday life. Suitable for adults, teens, and relatives.</p>
           <a class="btn secondary" href="/en/coaching/autism/">Learn more</a>
         </div>

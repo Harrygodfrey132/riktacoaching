@@ -1,8 +1,8 @@
 ---
-title: "Autism coaching"
+title: "ASD coaching"
 layout: "coachning"
-meta_title: "Autism coaching | Rikta Psychiatry"
-meta_description: "Coaching for autistic teens and adults. Get support with structure, sensory balance, and confident communication."
+meta_title: "ASD coaching | Rikta Psychiatry"
+meta_description: "ASD coaching for teens and adults. Get support with structure, sensory balance, and confident communication."
 summary: "Individual coaching that helps you navigate daily life with more calm and clarity."
 type: coachning
 ---
@@ -10,17 +10,17 @@ type: coachning
 <section class="coachning-hero">
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
-      <span class="coachning-hero__eyebrow">Coaching for autism</span>
-      <h1>Change how autism shapes your life</h1>
+      <span class="coachning-hero__eyebrow">Coaching for ASD</span>
+      <h1>Change how ASD shapes your life</h1>
       <p>
-        Autism coaching at Rikta focuses on shaping the world to fit your needs. Choose single sessions or a 6-week
-        program for teens or adults – always led by a licensed psychologist or autism coach.
+        ASD coaching at Rikta focuses on shaping the world to fit your needs. Choose single sessions or a 6-week
+        program for teens or adults - always led by Rikta-trained coaches who are psychology graduates.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/en/contact/#contactform">Book an intro call</a>
       </div>
       <ul class="coachning-hero__signals">
-        <li>Psychologists or specialized therapists</li>
+        <li>Rikta-trained coaches who are psychology graduates</li>
         <li>Plans tailored to everyday life, studies, or work</li>
         <li>Email access to your coach between sessions</li>
       </ul>
@@ -35,7 +35,7 @@ type: coachning
   <div class="coachning-panel">
     <h2>What we work on</h2>
     <p>
-      Autism affects how the brain filters input and how routines and relationships feel. Together we map your strengths
+      ASD affects how the brain filters input and how routines and relationships feel. Together we map your strengths
       and challenges and design systems that make everyday life more predictable.
     </p>
     <ul class="coachning-list">
@@ -84,7 +84,7 @@ type: coachning
     <span class="coachning-program__eyebrow">Coaching for teens (13–18)</span>
     <h3>6 weeks for structure, sensory balance, and safer relationships</h3>
     <p>
-      Weekly sessions with a licensed psychologist or autism coach where you get tools for school, emotions, sensory
+      Weekly sessions with a Rikta-trained autism coach where you get tools for school, emotions, sensory
       needs, and social situations. Homework between sessions helps you keep new habits.
     </p>
     <p><strong>Great for:</strong> Teens with autism or autistic traits who want better school structure, feel safer socially, and have more control day to day.</p>
@@ -103,7 +103,7 @@ type: coachning
       </div>
       <div>
         <span>Led by</span>
-        <strong>Licensed psychologist/coach</strong>
+        <strong>Rikta-trained coach</strong>
       </div>
     </div>
     <div class="program-modules">
@@ -180,7 +180,7 @@ type: coachning
       </div>
       <div>
         <span>Led by</span>
-        <strong>Licensed psychologist/coach</strong>
+        <strong>Rikta-trained coach</strong>
       </div>
     </div>
     <div class="program-modules">

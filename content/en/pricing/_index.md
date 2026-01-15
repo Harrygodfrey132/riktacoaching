@@ -3,11 +3,11 @@ title: "Pricing"
 translationKey: "pricing"
 layout: "priser"
 draft: false
-meta_title: "Pricing for ADHD and autism assessments | Rikta Psychiatry"
-meta_keywords: "ADHD assessment price, autism pricing, private psychiatry cost, Rikta prices, neuropsychiatry fees"
-meta_description: "See fixed prices for ADHD and autism assessments, medical consultations, follow-ups, and coaching at Rikta Psychiatry."
+meta_title: "Pricing for ADHD and ASD coaching | Rikta Psychiatry"
+meta_keywords: "ADHD coaching price, ASD coaching pricing, autism coaching cost, Rikta prices, neurodiversity coaching fees"
+meta_description: "See prices for ADHD and ASD coaching plus availability for other services at Rikta Psychiatry in the UK."
 og_title: "Price list for Rikta Psychiatry"
-og_description: "Compare packages for assessments, medical visits, and follow-ups and see what is included before you book."
+og_description: "Compare coaching pricing and service availability before you book."
 ---
 
 <section class="pricing-intro">
@@ -35,25 +35,25 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
       <div class="pricing">
         <article class="card">
           <h3>ADHD coaching</h3>
-          <p class="meta">Digital • 45 min</p>
-          <p class="price">£120</p>
-          <p class="price-note">Package: 6 sessions for the cost of 5 (£100 per session).</p>
+          <p class="meta">Digital &bull; 45 min</p>
+          <p class="price">&pound;60</p>
+          <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
             <li>Support to build structure and routines that improve focus and productivity.</li>
             <li>Help managing impulse control and time management to reduce stress and reach goals.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">&rarr;</span></a>
         </article>
         <article class="card">
           <h3>Autism coaching</h3>
-          <p class="meta">Digital • 45 min</p>
-          <p class="price">£120</p>
-          <p class="price-note">Package: 6 sessions for the cost of 5 (£100 per session).</p>
+          <p class="meta">Digital &bull; 45 min</p>
+          <p class="price">&pound;60</p>
+          <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
             <li>Support to understand and manage social situations and communication.</li>
             <li>Help to create strategies for handling sensory input and changes in everyday life.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>
@@ -67,34 +67,7 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
           <ul class="details">
             <li>NPF therapy is not available for UK residents.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">→</span></a>
-        </article>
-      </div>
-    </div>
-    <div class="pricing-group">
-      <h3>Neuropsychiatric assessments</h3>
-      <div class="pricing">
-        <article class="card">
-          <h3>Assessment for ADHD &amp; autism (neuropsychiatric assessment)</h3>
-          <p class="meta">Digital</p>
-          <p class="price">£2,500</p>
-          <p class="price-note">Assessments are not available in the UK.</p>
-          <ul class="details">
-            <li>Consultation with specialist psychiatrist.</li>
-            <li>Structured interviews (DIVA-5) and rating scales.</li>
-            <li>Two coaching sessions (2 × 60 min) for planning and follow-up.</li>
-            <li>Written medical statement and plan for continued support within 10 business days.</li>
-          </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
-        </article>
-        <article class="card">
-          <h3>Screening for ADHD and autism</h3>
-          <p class="meta">Digital</p>
-          <p class="price">£0</p>
-          <ul class="details">
-            <li>Conversation with a licensed psychologist.</li>
-          </ul>
-          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>
@@ -108,7 +81,7 @@ og_description: "Compare packages for assessments, medical visits, and follow-up
           <ul class="details">
             <li>Medication services are not available for UK residents.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>
