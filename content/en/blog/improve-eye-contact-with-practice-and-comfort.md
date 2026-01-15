@@ -13,7 +13,7 @@ draft: false
 
 # Improve eye contact with practice and comfort
 
-Eye contact is a learnable social skill. It can feel awkward, especially with unfamiliar people or when you are thinking. The goal is not to stare; it is to connect. Below are practical experiments, followed by an anonymized three-session coaching plan you can adapt.
+Eye contact is a learnable social skill. It can feel awkward, especially with unfamiliar people or when you are thinking. The goal is not to stare; it is to connect. Below are practical experiments, followed by an anonymised three-session coaching plan you can adapt.
 
 ## Practical experiments you can start today
 - **Walk-by reps:** Practice brief eye contact with strangers while walking; let each interaction end as you pass to reduce pressure.
@@ -25,19 +25,19 @@ Eye contact is a learnable social skill. It can feel awkward, especially with un
 - **Use soft signals:** Pair eye contact with a small smile, nods, or open body posture. A glance plus warmth signals “I see you” without feeling like a stare.
 - **Thinking moments:** It is fine to look away briefly to think—do it calmly, then reconnect.
 
-## An anonymized client story
+## An anonymised client story
 A recent client (name withheld for privacy) began with very limited eye contact—quick glances to the ground when thinking, difficulty looking at new people, and concern that she appeared disengaged. Through structured practice she moved from 1–2 second glances to natural 5–8 second holds, even while answering questions. The outline below follows that progression and can be tailored to individual comfort levels.
 
-## Structured coaching plan (anonymized case)
+## Structured coaching plan (anonymised case)
 
 ### Session 1: Awareness and basics (45 minutes)
-- **Goals:** Normalize the challenge; set baselines; teach simple holds (4–5 seconds) and where to look (eyes, gaze triangle, or nose bridge); introduce slow, confident gaze breaks.
+- **Goals:** Normalise the challenge; set baselines; teach simple holds (4–5 seconds) and where to look (eyes, gaze triangle, or nose bridge); introduce slow, confident gaze breaks.
 - **Exercises:** Warm-up chat for baseline; “Eye Contact 101” demo; guided 3–5 second responses with immediate feedback; practice looking away slowly to think, then reconnecting.
 - **Homework:** Daily mini-challenges (e.g., eye contact with cashier for 2–3 seconds); note eye color to ensure you looked; log attempts and comfort (1–10). Target: at least three logged interactions per day.
 
 ### Session 2: Confidence and duration
 - **Goals:** Extend holds, handle thinking moments, differentiate listening vs speaking eye contact, and introduce soft gaze versus stare.
-- **Exercises:** Role-play conversations targeting ~70% eye contact while listening and ~50% while speaking; practice “thinking” pauses (brief glance away, then reconnect); timed silent gazes (10–30 seconds) to desensitize; unfamiliar-person role-play; soft gaze drills with natural blinking.
+- **Exercises:** Role-play conversations targeting ~70% eye contact while listening and ~50% while speaking; practice “thinking” pauses (brief glance away, then reconnect); timed silent gazes (10–30 seconds) to desensitise; unfamiliar-person role-play; soft gaze drills with natural blinking.
 - **Homework:** 5-second eye contact in 5 interactions per day, including polite strangers; plan one upcoming scenario to apply skills; log “thinking moments” and reconnections; note which settings feel easier or harder and why.
 
 ### Session 3: Real-world application

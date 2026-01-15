@@ -76,7 +76,7 @@ page_class: "adhd-page--women"
       <h2>A process that brings clarity and the right support</h2>
       <p class="muted">
         Our adult ADHD assessment is designed to identify ADHD or related conditions in people 18 or older. Many seek help
-        after long-standing difficulties with attention, organization, restlessness, or impulsivity that affect work, studies,
+        after long-standing difficulties with attention, organisation, restlessness, or impulsivity that affect work, studies,
         and relationships. The goal is clarity and the right treatment — for many it is a relief to understand the roots of
         their challenges.
       </p>
@@ -104,7 +104,7 @@ page_class: "adhd-page--women"
           <p>
             A licensed psychologist gathers a detailed history from childhood to now — upbringing, school, work, relationships,
             and daily functioning — with focus on social interaction, attention, and hyperactivity. When possible we also
-            interview someone who knew you in childhood. You complete standardized self-ratings that map ADHD traits and
+            interview someone who knew you in childhood. You complete standardised self-ratings that map ADHD traits and
             related symptoms.
           </p>
         </div>

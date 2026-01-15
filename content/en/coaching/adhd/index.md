@@ -2,7 +2,7 @@
 title: "ADHD coaching"
 layout: coachning
 meta_title: "ADHD coaching | Rikta Psychiatry"
-meta_description: "Specialized ADHD coaching with practical support for planning, focus, and sustainable routines."
+meta_description: "Specialised ADHD coaching with practical support for planning, focus, and sustainable routines."
 summary: "Practical coaching that turns ADHD insight into everyday strategies."
 type: coachning
 ---
@@ -146,7 +146,7 @@ type: coachning
     <h3>6 weeks for focus, priorities, and less procrastination</h3>
     <p>
       Meet the same coach each week and learn strategies to reduce procrastination, improve attention,
-      and prioritize effectively. Homework helps the change stick.
+      and prioritise effectively. Homework helps the change stick.
     </p>
     <p><strong>Great for:</strong> Adults with ADHD who want to get a handle on time and tasks, cut procrastination, and keep daily life flowing at home, in studies, and at work.</p>
     <div class="program-meta">
@@ -180,7 +180,7 @@ type: coachning
         <li>
           <span class="module-number">2</span>
           <div>
-            <h5>Planning and prioritizing</h5>
+            <h5>Planning and prioritising</h5>
             <p>Concrete methods to break down work, studies, and daily tasks.</p>
           </div>
         </li>

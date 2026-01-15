@@ -42,7 +42,7 @@ page_class: "autism-page--adult"
         <h2>What does autism mean in adulthood?</h2>
         <p>
           Autism is a neurodevelopmental profile that affects how we read social situations, process sensory input,
-          and organize daily life. As an adult it can show up as fatigue after social events, focused special interests,
+          and organise daily life. As an adult it can show up as fatigue after social events, focused special interests,
           or a strong need for predictability.
         </p>
         <p>
@@ -82,7 +82,7 @@ page_class: "autism-page--adult"
       </p>
       <p class="muted">
         Many come to us after long-standing challenges in social situations or daily life, sometimes after a relative received a
-        diagnosis or recognizing earlier struggles. Whatever your situation, the goal is to understand your strengths and
+        diagnosis or recognising earlier struggles. Whatever your situation, the goal is to understand your strengths and
         difficulties better and get the right help going forward.
       </p>
     </div>
@@ -109,7 +109,7 @@ page_class: "autism-page--adult"
           <p>
             A licensed psychologist conducts a detailed history from childhood to today focusing on social interaction,
             communication, routines, and sensory sensitivity. When possible we also interview a relative who has known you
-            since childhood. You complete standardized self-assessments that map autistic traits and related symptoms.
+            since childhood. You complete standardised self-assessments that map autistic traits and related symptoms.
           </p>
         </div>
       </article>

@@ -107,7 +107,7 @@ page_class: "adhd-page--medication"
         <div class="adhd-step">
           <span class="adhd-step-number">3</span>
           <div>
-            <h3>Stabilization</h3>
+            <h3>Stabilisation</h3>
             <p>When a dose works, we follow up on how it affects daily life, sleep, appetite, and mood.</p>
           </div>
         </div>

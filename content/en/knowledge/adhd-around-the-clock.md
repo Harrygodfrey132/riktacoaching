@@ -50,7 +50,7 @@ aliases:
         <h2>What is ADHD?</h2>
         <p>
           ADHD (Attention Deficit Hyperactivity Disorder) is not about willpower or intelligence – it is about how the brain
-          prioritizes information and regulates energy. Challenges with focus, sense of time, and impulse control affect
+          prioritises information and regulates energy. Challenges with focus, sense of time, and impulse control affect
           planning, finishing tasks, and recovery.
         </p>
         <p>
@@ -205,7 +205,7 @@ aliases:
         </article>
         <article class="guide-card">
           <h3>Teens</h3>
-          <p>More schoolwork and social cues raise the load; time management and organization become tougher.</p>
+          <p>More schoolwork and social cues raise the load; time management and organisation become tougher.</p>
         </article>
         <article class="guide-card">
           <h3>Adults</h3>
@@ -351,7 +351,7 @@ aliases:
       <div class="guide-card-grid">
         <article class="guide-card guide-card--accent">
           <h3>Medication</h3>
-          <p>Stimulant or non-stimulant medication can improve attention and impulse control. Dosing is individualized and monitored.</p>
+          <p>Stimulant or non-stimulant medication can improve attention and impulse control. Dosing is individualised and monitored.</p>
         </article>
         <article class="guide-card">
           <h3>Coaching &amp; therapy</h3>
@@ -382,7 +382,7 @@ aliases:
           <h3>Typical signals</h3>
           <ul class="guide-card-list">
             <li>Chronic procrastination and missed deadlines.</li>
-            <li>Time blindness and disorganization despite effort.</li>
+            <li>Time blindness and disorganisation despite effort.</li>
             <li>Emotional overload or frequent burnout.</li>
           </ul>
         </article>

@@ -28,7 +28,7 @@ page_class: "autism-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/woman-smiling-picture.jpg" alt="Woman recognizing herself during a professional conversation">
+          <img src="/img/woman-smiling-picture.jpg" alt="Woman recognising herself during a professional conversation">
         </figure>
       </div>
     </div>
@@ -57,7 +57,7 @@ page_class: "autism-page--women"
         <ul>
           <li>Masking strategies, social anxiety, and how your energy changes after social time.</li>
           <li>Sensory sensitivity, sleep, hormonal variation, and body signals.</li>
-          <li>Special interests, strengths, and how you organize daily life, relationships, and family.</li>
+          <li>Special interests, strengths, and how you organise daily life, relationships, and family.</li>
           <li>Co-occurring conditions such as ADHD, anxiety, depression, or burnout.</li>
         </ul>
         <p class="small">
@@ -79,7 +79,7 @@ page_class: "autism-page--women"
       </p>
       <p class="muted">
         Many come to us after long-term struggles in social situations or daily life, sometimes after a loved one’s diagnosis
-        or recognizing earlier challenges in hindsight. Whatever your situation, the goal is for you to better understand your
+        or recognising earlier challenges in hindsight. Whatever your situation, the goal is for you to better understand your
         strengths and difficulties and get the right help forward.
       </p>
     </div>
@@ -106,7 +106,7 @@ page_class: "autism-page--women"
           <p>
             A licensed psychologist gathers a detailed history from childhood to now, focusing on social interaction,
             communication, routines, and sensory sensitivity. When possible we interview someone who knew you in childhood.
-            You complete standardized self-ratings that map autistic traits and related symptoms.
+            You complete standardised self-ratings that map autistic traits and related symptoms.
           </p>
         </div>
       </article>
@@ -173,7 +173,7 @@ page_class: "autism-page--women"
         </article>
         <article>
           <h3>Therapy &amp; coaching</h3>
-          <p>Autism coaching with knowledge and tools to optimize your daily life.</p>
+          <p>Autism coaching with knowledge and tools to optimise your daily life.</p>
         </article>
         <article>
           <h3>Structure &amp; accommodations</h3>

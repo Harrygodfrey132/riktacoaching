@@ -12,7 +12,7 @@ draft: false
 ---
 # Early signs of ADHD in adults
 
-More adults are wondering whether long-standing difficulties with focus, organisation, and emotions could be related to ADHD. It is not always easy to tell the difference between “normal” stress and a neurodivergent pattern that may need assessment. Guidance from Sweden's National Board of Health and Welfare (Socialstyrelsen) highlights that ADHD often persists into adult life and can significantly affect work, studies, relationships, and mental health. This article summarizes early signs of ADHD in adults, how they appear day to day, and when it makes sense to seek professional support.
+More adults are wondering whether long-standing difficulties with focus, organisation, and emotions could be related to ADHD. It is not always easy to tell the difference between “normal” stress and a neurodivergent pattern that may need assessment. Guidance from Sweden's National Board of Health and Welfare (Socialstyrelsen) highlights that ADHD often persists into adult life and can significantly affect work, studies, relationships, and mental health. This article summarises early signs of ADHD in adults, how they appear day to day, and when it makes sense to seek professional support.
 
 ## What do we mean by “early signs” in adults?
 When we talk about early signs in adults, we usually mean two things:
@@ -35,7 +35,7 @@ Many adults notice early signs in executive functioning — the brain’s “pro
 - poor time estimation; underestimating how long things take or getting stuck in details
 - lots of started projects but few finished
 - recurring stress because calendar, emails, and tasks never feel under control  
-Guidelines emphasize executive dysfunction as a key part of ADHD, especially in adults where outward hyperactivity often fades but planning, organisation, and time management remain challenging. When this pattern persists for years despite repeated attempts to “get disciplined” or try different systems and apps, a neurodevelopmental explanation should be considered.
+Guidelines emphasise executive dysfunction as a key part of ADHD, especially in adults where outward hyperactivity often fades but planning, organisation, and time management remain challenging. When this pattern persists for years despite repeated attempts to “get disciplined” or try different systems and apps, a neurodevelopmental explanation should be considered.
 
 ## Inner restlessness
 In adults, hyperactivity is rarely “running around the classroom.” Many describe:
@@ -54,7 +54,7 @@ Impulsivity in adults can be subtle but consistent:
 Research on adults with ADHD shows that impulsivity can contribute to conflicts, financial instability, and difficulty building long-term stability in work and relationships.
 
 ## Emotions on “high volume”
-Emotional dysregulation has increasingly been recognized as central to ADHD, especially in adults. Early signs may be:
+Emotional dysregulation has increasingly been recognised as central to ADHD, especially in adults. Early signs may be:
 - reacting strongly and quickly to small things; anger, frustration, or shame show up immediately
 - difficulty “letting go” when something feels wrong or unfair
 - feeling emotionally drained after certain social situations or conflicts
@@ -73,7 +73,7 @@ For many adults, the first contact with healthcare is not about attention but it
 - repeated burnout or long-term stress
 - anxiety, worry, and overwhelming feelings
 - depression or low mood linked to repeated setbacks  
-Research shows adults with ADHD have higher risk of anxiety disorders, depression, and stress-related problems. An early sign can be receiving treatment for anxiety or burnout multiple times, yet still returning to the same organizational and attention-related struggles.
+Research shows adults with ADHD have higher risk of anxiety disorders, depression, and stress-related problems. An early sign can be receiving treatment for anxiety or burnout multiple times, yet still returning to the same organisational and attention-related struggles.
 
 ## When is it time to seek a professional assessment?
 You do not have to be sure you have ADHD before reaching out. Consider an assessment if:

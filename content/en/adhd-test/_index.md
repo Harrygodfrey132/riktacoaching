@@ -75,7 +75,7 @@ og_description: "Complete our R-ARS-12 to get an indication of attention and reg
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">I find it hard to organize or plan tasks in the right order.</div>
+              <div class="adhd-question__prompt">I find it hard to organise or plan tasks in the right order.</div>
               <div class="adhd-response-group">
                 <label class="adhd-response"><input type="radio" name="q4" value="1" required><span>1</span></label>
                 <label class="adhd-response"><input type="radio" name="q4" value="2"><span>2</span></label>

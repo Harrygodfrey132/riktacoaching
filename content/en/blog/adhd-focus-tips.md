@@ -63,7 +63,7 @@ This builds the skill of self-regulation over time. The goal is not to never get
 
 ## Environmental modifications: shape your space for success
 
-ADHD-friendly spaces reduce friction and minimize “attention traps.” Start with your immediate working zone. If it’s visually noisy, constantly interrupted, or full of tempting cues, your brain is doing extra work before you even begin.
+ADHD-friendly spaces reduce friction and minimise “attention traps.” Start with your immediate working zone. If it’s visually noisy, constantly interrupted, or full of tempting cues, your brain is doing extra work before you even begin.
 
 ### Declutter the “attention field”
 
@@ -185,7 +185,7 @@ Choose a style you won’t dread. Consistency beats intensity.
 
 Working memory is the mental space that holds information while you use it. Many people with ADHD struggle here, especially with interruptions, multi-step tasks, or juggling multiple priorities.
 
-### Externalize information
+### Externalise information
 
 Instead of relying on memory alone:
 - keep a single to-do list you trust

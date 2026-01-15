@@ -6,7 +6,7 @@ meta_title: "Adult ADHD assessment | Rikta Psychiatry"
 meta_keywords: "adult ADHD, adult ADHD assessment, ADHD symptoms adults, neuropsychiatry adult, Rikta ADHD plan"
 meta_description: "How we help adults understand ADHD: structured interviews, team analysis, report, and recommendations for treatment and support."
 og_title: "Adult ADHD assessments at Rikta"
-og_description: "In-depth review of executive function, emotional regulation, and comorbidities with feedback and a personalized plan."
+og_description: "In-depth review of executive function, emotional regulation, and comorbidities with feedback and a personalised plan."
 weight: 20
 page_class: "adhd-page--adult"
 layout: "adhd-assessment/single"
@@ -58,7 +58,7 @@ layout: "adhd-assessment/single"
       <div class="intro-stats adhd-definition-card">
         <h3>During the assessment we review:</h3>
         <ul>
-          <li>Executive functions — your ability to plan and prioritize.</li>
+          <li>Executive functions — your ability to plan and prioritise.</li>
           <li>Emotion regulation, impulsivity, and stress levels over time.</li>
           <li>Developmental history, masking strategies, and current supports.</li>
           <li>Medical background and co-occurring conditions that shape the picture.</li>
@@ -78,7 +78,7 @@ layout: "adhd-assessment/single"
       <h2>A process that brings clarity and the right support</h2>
       <p class="muted">
         Our adult ADHD assessment is designed to identify ADHD or related conditions in people 18 or older. Many seek help
-        after long-standing difficulties with attention, organization, restlessness, or impulsivity affecting work, studies,
+        after long-standing difficulties with attention, organisation, restlessness, or impulsivity affecting work, studies,
         and relationships. The goal is clarity and the right treatment — for many it is a relief to understand the roots of
         their challenges.
       </p>
@@ -106,7 +106,7 @@ layout: "adhd-assessment/single"
           <p>
             A licensed psychologist gathers a detailed history from childhood to now — upbringing, school, work, relationships,
             and daily functioning — with focus on social interaction, attention, and hyperactivity. When possible we also
-            interview someone who knew you in childhood. You complete standardized self-ratings that map ADHD traits and
+            interview someone who knew you in childhood. You complete standardised self-ratings that map ADHD traits and
             related symptoms.
           </p>
         </div>

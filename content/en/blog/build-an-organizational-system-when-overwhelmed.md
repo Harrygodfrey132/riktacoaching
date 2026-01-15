@@ -1,11 +1,11 @@
 ---
-title: "Build an organizational system when everything feels overwhelming"
-translationKey: "build-an-organizational-system-when-overwhelmed"
+title: "Build an organisational system when everything feels overwhelming"
+translationKey: "build-an-organisational-system-when-overwhelmed"
 date: 2025-05-26
 description: "A structured, professional guide to capturing, prioritising, and delivering work when your mind feels overloaded."
-meta_title: "Build an organizational system when overwhelmed | Rikta Psychiatry"
-meta_description: "Evidence-informed steps to capture tasks, reduce anxiety, and create a sustainable organizational system—tools, routines, and habits that work in real life."
-meta_keywords: "organization, task management, overwhelm, ADHD organization, planning, routines"
+meta_title: "Build an organisational system when overwhelmed | Rikta Psychiatry"
+meta_description: "Evidence-informed steps to capture tasks, reduce anxiety, and create a sustainable organisational system—tools, routines, and habits that work in real life."
+meta_keywords: "organisation, task management, overwhelm, ADHD organisation, planning, routines"
 hero: "/img/coachning-hero-park.jpg"
 hero_alt: "Calm outdoor setting for coaching and planning"
 draft: false

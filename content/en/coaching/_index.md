@@ -4,15 +4,15 @@ translationKey: "coaching"
 layout: coachning
 type: coachning
 meta_title: "ADHD & ASD coaching | Rikta Psychiatry"
-meta_description: "Specialized coaching for ADHD and autism. Compare focus areas and choose the right support."
-summary: "A single entry point to our specialized ADHD and ASD coaching."
+meta_description: "Specialised coaching for ADHD and autism. Compare focus areas and choose the right support."
+summary: "A single entry point to our specialised ADHD and ASD coaching."
 ---
 
 <section class="coachning-hero">
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
       <span class="coachning-hero__eyebrow">ADHD and ASD coaching</span>
-      <h1>Specialized coaching that meets you where you are</h1>
+      <h1>Specialised coaching that meets you where you are</h1>
       <p>
         Our coaching programs are built for ADHD and ASD. We start by mapping your goals, choose a pace that fits you,
         and build routines that stick in everyday life.
@@ -38,7 +38,7 @@ summary: "A single entry point to our specialized ADHD and ASD coaching."
     <div class="coachning-format-grid">
       <article class="coachning-format">
         <h4>Personal goals</h4>
-        <p>You and your coach prioritize focus areas across daily life, work, relationships, or studies.</p>
+        <p>You and your coach prioritise focus areas across daily life, work, relationships, or studies.</p>
       </article>
       <article class="coachning-format">
         <h4>Rikta-trained coaches</h4>
