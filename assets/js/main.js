@@ -622,15 +622,16 @@ function initScreeningForm({
 
   function buildLeadDescription(result) {
     if (!result) return '';
+    const isEn = IS_EN;
     const lines = [
-      result.testName || 'Screeningresultat',
-      `Totalpoäng: ${result.total}`,
-      `Tolkning: ${result.interpretation}`,
-      'Svar:'
+      result.testName || (isEn ? 'Screening results' : 'Screeningresultat'),
+      `${isEn ? 'Total score' : 'Totalpoäng'}: ${result.total}`,
+      `${isEn ? 'Interpretation' : 'Tolkning'}: ${result.interpretation}`,
+      isEn ? 'Answers:' : 'Svar:'
     ];
     (result.answers || []).forEach(item => {
       const prompt = item.prompt || '';
-      const answer = item.answer || 'Ej angivet';
+      const answer = item.answer || (isEn ? 'Not provided' : 'Ej angivet');
       lines.push(`${item.number}. ${prompt} — ${answer}`);
     });
     return lines.join('\n');
@@ -728,12 +729,20 @@ function initScreeningForm({
     scoreBoxId: 'adhd-score',
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din R-ARS-12 poäng.',
-    ranges: [
-      { max: 27, text: '12–27: låg grad av uppmärksamhets-/regleringssvårigheter.' },
-      { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
-      { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
-    ],
+    defaultInterpretation: IS_EN
+      ? 'Answer all questions to see your R-ARS-12 score.'
+      : 'Besvara alla frågor för att se din R-ARS-12 poäng.',
+    ranges: IS_EN
+      ? [
+          { max: 27, text: '12–27: low level of attention/self-regulation difficulties.' },
+          { max: 41, text: '28–41: moderate level — can affect daily life. Planning support or coaching may help.', className: 'is-amber' },
+          { max: Infinity, text: '42–60: high level. We recommend further evaluation or a neuropsychiatric assessment.', className: 'is-red' }
+        ]
+      : [
+          { max: 27, text: '12–27: låg grad av uppmärksamhets-/regleringssvårigheter.' },
+          { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
+          { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
+        ],
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
     testName: 'Attention & Regulation Scale (R-ARS-12)'
@@ -745,11 +754,18 @@ function initScreeningForm({
     scoreBoxId: 'autism-score',
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din AQ-10 poäng.',
-    ranges: [
-      { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
-      { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
-    ],
+    defaultInterpretation: IS_EN
+      ? 'Answer all questions to see your AQ-10 score.'
+      : 'Besvara alla frågor för att se din AQ-10 poäng.',
+    ranges: IS_EN
+      ? [
+          { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still experience difficulties.' },
+          { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional autism assessment for a clear evaluation.', className: 'is-amber' }
+        ]
+      : [
+          { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
+          { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
+        ],
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
     testName: 'Autism Screening (AQ-10)'
@@ -761,12 +777,20 @@ function initScreeningForm({
     scoreBoxId: 'procrastination-score',
     scoreValueId: 'procrastination-score-value',
     interpretationId: 'procrastination-score-interpretation',
-    defaultInterpretation: 'Besvara alla frågor för att se din GPS-poäng.',
-    ranges: [
-      { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
-      { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
-      { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coaching.', className: 'is-red' }
-    ],
+    defaultInterpretation: IS_EN
+      ? 'Answer all questions to see your GPS score.'
+      : 'Besvara alla frågor för att se din GPS-poäng.',
+    ranges: IS_EN
+      ? [
+          { max: 35, text: '15–35: low level of procrastination. Keep the routines that work.' },
+          { max: 50, text: '36–50: moderate level. Planning support, time blocking, or coaching may help.', className: 'is-amber' },
+          { max: Infinity, text: '51–75: high level. We recommend targeted strategies and possibly NPF-focused coaching.', className: 'is-red' }
+        ]
+      : [
+          { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
+          { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
+          { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coaching.', className: 'is-red' }
+        ],
     transformValue(value, questionNumber){
       // Question 12 is reverse-scored (agreeing reduces procrastination score)
       if(questionNumber === 12){

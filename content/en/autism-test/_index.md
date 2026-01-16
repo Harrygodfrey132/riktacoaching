@@ -180,15 +180,15 @@ layout: "autism-test/list"
     <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
     <div class="lead-modal__intro">
       <p class="lead-modal__eyebrow">Show results</p>
-      <h3>Get the result instantly – we’ll email it to you</h3>
-      <p>We unlock the result on the page and send it to your email so you have it saved.</p>
-      <p class="lead-modal__hint">We need your email so you can return to the result and so we can send a short plan for next steps.</p>
+      <h3>Get your result instantly — we’ll email it to you</h3>
+      <p>We unlock the result on the page and send it to your email so you can keep it.</p>
+      <p class="lead-modal__hint">We need your email so you can revisit your result and so we can send a brief plan for next steps.</p>
     </div>
     <form id="kaddio-lead-form"
       class="lead-modal__form"
       data-kaddio-form="lead"
-      data-form-context="autism-screening-en"
-      data-success-message="Thanks! Your result is now visible."
+      data-form-context="autism-screening"
+      data-success-message="Thank you! Your result is now visible."
       action="/api/kaddio/contact"
       method="POST"
       accept-charset="UTF-8">
@@ -196,16 +196,25 @@ layout: "autism-test/list"
       <input type="hidden" name="rating" id="adhd-lead-rating" value="">
       <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">
-        <label class="lead-modal__label" for="lead-full-name">Name</label>
-        <input class="lead-modal__input" type="text" id="lead-full-name" name="fullName" maxlength="120" autocomplete="name" required>
-        <label class="lead-modal__label" for="lead-email">Email</label>
-        <input class="lead-modal__input" type="email" id="lead-email" name="email" maxlength="100" autocomplete="email" required>
+        <label class="lead-modal__field">
+          <span>First name <span class="lead-required">*</span></span>
+          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>Last name <span class="lead-required">*</span></span>
+          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
+        </label>
+        <label class="lead-modal__field">
+          <span>Email <span class="lead-required">*</span></span>
+          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
+        </label>
       </div>
       <div class="lead-modal__actions">
-        <button class="btn primary" type="submit">Show my result</button>
-        <button class="btn secondary" type="button" data-close-lead>Close</button>
+        <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
+        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>
       </div>
       <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
     </form>
+    <p class="lead-modal__privacy">We email your answers so you can save and review them later. We’ll follow up with a brief plan if needed. Thank you, Rikta Psychiatry team.</p>
   </div>
 </div>
