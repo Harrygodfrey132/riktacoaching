@@ -17,7 +17,7 @@ summary: "Short self-check to understand your procrastination patterns."
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="procrastination-screening-form">
+      <form class="adhd-screening__card" id="procrastination-screening-form" data-locale="en">
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">15 statements about postponing, getting started, time planning, and self-regulation. The result is indicative only and not for diagnosis.</p>
           <dl class="adhd-meta">

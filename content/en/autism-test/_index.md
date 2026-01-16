@@ -19,7 +19,7 @@ layout: "autism-test/list"
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="autism-screening-form">
+      <form class="adhd-screening__card" id="autism-screening-form" data-locale="en">
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Choose the response that best describes how you usually feel or behave. AQ-10 helps identify autistic traits to see if further assessment might be relevant.</p>
           <dl class="adhd-meta">
@@ -32,20 +32,16 @@ layout: "autism-test/list"
               <dd class="adhd-meta__value">Adults screening for autistic traits.</dd>
             </div>
             <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Respondent</dt>
-              <dd class="adhd-meta__value">You.</dd>
-            </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Purpose</dt>
-              <dd class="adhd-meta__value">Early guidance on whether to book a diagnostic autism assessment.</dd>
-            </div>
-            <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Scale</dt>
               <dd class="adhd-meta__value">Agree / Slightly agree = 1 point on straight statements. Questions 4 &amp; 7 are reversed: disagreement gives 1 point.</dd>
             </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Interpretation</dt>
+              <dd class="adhd-meta__value">0–5 low · 6–10 elevated (screening guidance only, not diagnostic).</dd>
+            </div>
           </dl>
         </div>
-        <p class="adhd-screening__intro">Answer every question. Total 0–10 points. A result of 6 or more suggests higher likelihood and further assessment.</p>
+        <p class="adhd-screening__intro">Answer every question. The result is indicative and does not replace a clinical assessment.</p>
         <fieldset class="adhd-section">
           <legend>AQ-10 – English version</legend>
           <ol class="adhd-question-list">
@@ -155,20 +151,12 @@ layout: "autism-test/list"
         </div>
       </form>
       <aside class="adhd-screening__note">
-        <h3>How scoring works</h3>
-        <ul>
-          <li>Each question gives 1 point when you agree (fully or slightly) with an autistic trait.</li>
-          <li>Questions 4 and 7 are reversed: disagreement gives 1 point.</li>
-          <li>Total 0–10. Score ≥ 6 → positive screening, recommend further assessment.</li>
-        </ul>
+        <h3>Legal and ethics</h3>
+        <p><strong>AQ-10 is a screening tool.</strong> It does not provide a diagnosis. If your score is elevated, we recommend a professional autism assessment.</p>
+        <p><strong>Scoring:</strong> Agree / slightly agree gives 1 point on straight statements. Questions 4 and 7 are reversed.</p>
         <p><strong>Sources:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
         Swedish National Board of Health and Welfare (Socialstyrelsen). National guidelines for ADHD and autism care.</p>
-        <p><strong>Translation note:</strong><br>
-        English adaptation by RiktaPsychiatry.se (2025), based on AQ-10.</p>
-        <p><strong>Important:</strong><br>
-        This is a screening form, not a diagnostic test.<br>
-        The result indicates whether you might benefit from further autism assessment, but cannot establish a diagnosis. If your score is elevated, we recommend contacting a clinician or booking a professional neuropsychiatric evaluation.</p>
       </aside>
     </div>
   </div>

@@ -3,7 +3,14 @@
   const DURATION_MS = 1200;           // << make this bigger for slower scroll
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
-  const IS_EN = (document.documentElement?.lang || 'sv').toLowerCase().startsWith('en');
+  const DOC_LANG = (document.documentElement?.lang || '').toLowerCase();
+  const IS_EN = DOC_LANG.startsWith('en') || window.location.pathname.startsWith('/en/');
+
+  function resolveLocale(form){
+    const formLocale = (form?.dataset?.locale || '').toLowerCase();
+    if (formLocale) return formLocale;
+    return IS_EN ? 'en' : 'sv';
+  }
 
   // ----- Smooth scroll (custom duration) -----
   function easeInOutCubic(t){ return t<0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
@@ -128,7 +135,25 @@ function initScreeningForm({
     const scoreValue = document.getElementById(scoreValueId);
     const interpretationEl = document.getElementById(interpretationId);
     const resetButton = form.querySelector('.adhd-screening__reset');
+    const getFormLocale = () => resolveLocale(form);
     let hideTimeout = null;
+
+    function getDefaultInterpretation(locale) {
+      if (typeof defaultInterpretation === 'function') {
+        return defaultInterpretation(locale);
+      }
+      if (defaultInterpretation && typeof defaultInterpretation === 'object') {
+        return defaultInterpretation[locale] || defaultInterpretation.en || defaultInterpretation.sv || '';
+      }
+      return defaultInterpretation || '';
+    }
+
+    function getRanges(locale) {
+      if (typeof ranges === 'function') {
+        return ranges(locale) || [];
+      }
+      return ranges || [];
+    }
 
     function removeInterpretationClasses() {
       if (!interpretationEl) return;
@@ -164,26 +189,30 @@ function initScreeningForm({
       }, 350);
     }
 
-    function updateScoreDisplay(score, interpretationObj) {
+    function updateScoreDisplay(score, interpretationObj, locale) {
       if (!scoreBox || !scoreValue || !interpretationEl) return;
+      const activeLocale = locale || getFormLocale();
+      const activeRanges = getRanges(activeLocale);
       scoreValue.textContent = String(score);
       removeInterpretationClasses();
-      const match = interpretationObj || ranges.find(range => score <= range.max) || ranges[ranges.length - 1];
-      interpretationEl.textContent = (match && match.text) ? match.text : defaultInterpretation;
+      const match = interpretationObj || activeRanges.find(range => score <= range.max) || activeRanges[activeRanges.length - 1];
+      interpretationEl.textContent = (match && match.text) ? match.text : getDefaultInterpretation(activeLocale);
       if (match && match.className) {
         interpretationEl.classList.add(match.className);
       }
     }
 
-    function getInterpretation(score) {
+    function getInterpretation(score, locale) {
       const numericScore = (score && typeof score === 'object' && typeof score.total !== 'undefined')
         ? Number(score.total)
         : Number(score);
       const safeScore = Number.isFinite(numericScore) ? numericScore : 0;
+      const activeLocale = locale || getFormLocale();
       if (typeof buildInterpretation === 'function') {
-        return buildInterpretation(safeScore);
+        return buildInterpretation(safeScore, activeLocale);
       }
-      return ranges.find(range => safeScore <= range.max) || ranges[ranges.length - 1];
+      const activeRanges = getRanges(activeLocale);
+      return activeRanges.find(range => safeScore <= range.max) || activeRanges[activeRanges.length - 1];
     }
 
     function calculateScore() {
@@ -228,9 +257,10 @@ function initScreeningForm({
       const scoreData = calculateScore();
       const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        const interpretation = getInterpretation(total);
+        const locale = getFormLocale();
+        const interpretation = getInterpretation(total, locale);
         const renderResult = () => {
-          updateScoreDisplay(total, interpretation);
+          updateScoreDisplay(total, interpretation, locale);
           if (typeof metaUpdater === 'function') {
             metaUpdater({ ...scoreData, interpretation });
           }
@@ -243,6 +273,7 @@ function initScreeningForm({
           meta: scoreData.meta || {},
           interpretation: interpretation ? interpretation.text : '',
           answers: collectAnswerDetails(),
+          locale,
           renderResult
         };
 
@@ -262,7 +293,7 @@ function initScreeningForm({
         form.reset();
         if (scoreBox && interpretationEl) {
           scoreValue.textContent = '0';
-          interpretationEl.textContent = defaultInterpretation;
+          interpretationEl.textContent = getDefaultInterpretation(getFormLocale());
           removeInterpretationClasses();
           hideScoreBox();
         }
@@ -277,8 +308,9 @@ function initScreeningForm({
       const scoreData = calculateScore();
       const { total, answered } = scoreData;
       if (answered === totalQuestions) {
-        const interpretation = getInterpretation(total);
-        updateScoreDisplay(total, interpretation);
+        const locale = getFormLocale();
+        const interpretation = getInterpretation(total, locale);
+        updateScoreDisplay(total, interpretation, locale);
         if (typeof metaUpdater === 'function') {
           metaUpdater({ ...scoreData, interpretation });
         }
@@ -496,7 +528,8 @@ function initScreeningForm({
 
   function buildLeadDescription(result) {
     if (!result) return '';
-    const isEn = IS_EN;
+    const locale = (result?.locale || (IS_EN ? 'en' : 'sv')).toLowerCase();
+    const isEn = locale.startsWith('en');
     const lines = [
       result.testName || (isEn ? 'Screening results' : 'Screeningresultat'),
       `${isEn ? 'Total score' : 'Totalpoäng'}: ${result.total}`,
@@ -603,10 +636,11 @@ function initScreeningForm({
     scoreBoxId: 'adhd-score',
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
-    defaultInterpretation: IS_EN
-      ? 'Answer all questions to see your R-ARS-12 score.'
-      : 'Besvara alla frågor för att se din R-ARS-12 poäng.',
-    ranges: IS_EN
+    defaultInterpretation: {
+      en: 'Answer all questions to see your R-ARS-12 score.',
+      sv: 'Besvara alla frågor för att se din R-ARS-12 poäng.'
+    },
+    ranges: (locale) => (locale === 'en'
       ? [
           { max: 27, text: '12–27: low level of attention/self-regulation difficulties.' },
           { max: 41, text: '28–41: moderate level — can affect daily life. Planning support or coaching may help.', className: 'is-amber' },
@@ -616,7 +650,7 @@ function initScreeningForm({
           { max: 27, text: '12–27: låg grad av uppmärksamhets-/regleringssvårigheter.' },
           { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
           { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
-        ],
+        ]),
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
     testName: 'Attention & Regulation Scale (R-ARS-12)'
@@ -628,10 +662,11 @@ function initScreeningForm({
     scoreBoxId: 'autism-score',
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
-    defaultInterpretation: IS_EN
-      ? 'Answer all questions to see your AQ-10 score.'
-      : 'Besvara alla frågor för att se din AQ-10 poäng.',
-    ranges: IS_EN
+    defaultInterpretation: {
+      en: 'Answer all questions to see your AQ-10 score.',
+      sv: 'Besvara alla frågor för att se din AQ-10 poäng.'
+    },
+    ranges: (locale) => (locale === 'en'
       ? [
           { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still experience difficulties.' },
           { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional autism assessment for a clear evaluation.', className: 'is-amber' }
@@ -639,7 +674,7 @@ function initScreeningForm({
       : [
           { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
           { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
-        ],
+        ]),
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
     testName: 'Autism Screening (AQ-10)'
@@ -651,10 +686,11 @@ function initScreeningForm({
     scoreBoxId: 'procrastination-score',
     scoreValueId: 'procrastination-score-value',
     interpretationId: 'procrastination-score-interpretation',
-    defaultInterpretation: IS_EN
-      ? 'Answer all questions to see your GPS score.'
-      : 'Besvara alla frågor för att se din GPS-poäng.',
-    ranges: IS_EN
+    defaultInterpretation: {
+      en: 'Answer all questions to see your GPS score.',
+      sv: 'Besvara alla frågor för att se din GPS-poäng.'
+    },
+    ranges: (locale) => (locale === 'en'
       ? [
           { max: 35, text: '15–35: low level of procrastination. Keep the routines that work.' },
           { max: 50, text: '36–50: moderate level. Planning support, time blocking, or coaching may help.', className: 'is-amber' },
@@ -664,7 +700,7 @@ function initScreeningForm({
           { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
           { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
           { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coaching.', className: 'is-red' }
-        ],
+        ]),
     transformValue(value, questionNumber){
       // Question 12 is reverse-scored (agreeing reduces procrastination score)
       if(questionNumber === 12){

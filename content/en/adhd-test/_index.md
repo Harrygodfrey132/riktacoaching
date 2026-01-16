@@ -18,7 +18,7 @@ og_description: "Complete our R-ARS-12 to get an indication of attention and reg
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="adhd-screening-form">
+      <form class="adhd-screening__card" id="adhd-screening-form" data-locale="en">
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Choose the option (1–5) that best fits you. The scale gives an indicative picture of attention and self-regulation difficulties – not a diagnosis.</p>
           <dl class="adhd-meta">
