@@ -32,7 +32,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       </div>
       <div class="hero-media animate-up">
         <div class="hero-image">
-          <img src="https://riktapsykiatri.se/img/iStock-1461189339.jpg" alt="Samtal mellan två personer i lugn miljö">
+          <img src="/img/iStock-1461189339.jpg" alt="Samtal mellan två personer i lugn miljö">
         </div>
       </div>
     </div>

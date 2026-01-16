@@ -32,7 +32,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
       </div>
       <div class="hero-media animate-up">
         <div class="hero-image">
-          <img src="https://riktapsykiatri.se/img/iStock-1461189339.jpg" alt="Conversation between two people in a calm setting">
+          <img src="/img/iStock-1461189339.jpg" alt="Conversation between two people in a calm setting">
         </div>
       </div>
     </div>
