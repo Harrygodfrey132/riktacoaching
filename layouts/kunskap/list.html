@@ -26,11 +26,6 @@
                 <a class="blog-card__link" href="{{ .RelPermalink }}">
                   <div class="blog-card__media">
                     <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
-                    <div class="blog-card__badge">
-                      <span>{{ .Date.Format "2006-01-02" }}</span>
-                      <span aria-hidden="true">·</span>
-                      <span>{{ .ReadingTime }} min</span>
-                    </div>
                   </div>
                   <div class="blog-card__body">
                     <span class="knowledge-card__eyebrow">{{ if $isEn }}Guide article{{ else }}Guideartikel{{ end }}</span>

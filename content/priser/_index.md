@@ -69,6 +69,18 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
+        <article class="card">
+          <h3>Fokus- &amp; Strukturcoachning</h3>
+          <p class="meta">Digitalt eller på plats • 45 min</p>
+          <p class="price">1500 kr</p>
+          <p class="price-note">Paket: 6 sessioner till priset av 5 (1200 kr per session).</p>
+          <ul class="details">
+            <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
+            <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>
+            <li>Energi &amp; Självreglering: Strategier för att hantera mentalt brus, minska stress och optimera ditt fokus.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
       </div>
     </div>
     <div class="pricing-group">
