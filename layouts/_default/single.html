@@ -12,7 +12,11 @@
     {{ $needsHeader = true }}
   {{ end }}
 
-  {{ if ne $baseClass "" }}
+  {{ if or (eq .Section "locations") (hasPrefix $path "/en/locations/") }}
+    <div class="location-page">
+      {{ .Content }}
+    </div>
+  {{ else if ne $baseClass "" }}
     <article class="{{ $baseClass }}{{ with .Params.page_class }} {{ . }}{{ end }}">
       {{ if $needsHeader }}
         <header class="{{ $baseClass }}__header">

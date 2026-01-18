@@ -2241,6 +2241,22 @@ main#content > .location-page:first-child {
   background: linear-gradient(145deg, rgba(76, 150, 120, 0.12), rgba(255, 255, 255, 0.92));
 }
 
+.location-card--london {
+  background: linear-gradient(145deg, rgba(62, 128, 125, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.location-card--cambridge {
+  background: linear-gradient(145deg, rgba(71, 111, 178, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.location-card--oxford {
+  background: linear-gradient(145deg, rgba(173, 113, 74, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.location-card--manchester {
+  background: linear-gradient(145deg, rgba(54, 110, 141, 0.12), rgba(255, 255, 255, 0.92));
+}
+
 .location-card__header h3 {
   margin: 10px 0 8px;
   font-size: 30px;
@@ -2356,6 +2372,26 @@ main#content > .location-page:first-child {
 
 .location-hero--katrineholm {
   background: linear-gradient(140deg, #eef6f3 0%, #ffffff 40%, #f8f2ea 100%);
+}
+
+.location-hero--uk {
+  background: linear-gradient(140deg, #eef4f3 0%, #ffffff 40%, #f6f7fb 100%);
+}
+
+.location-hero--london {
+  background: linear-gradient(140deg, #eef4f3 0%, #ffffff 40%, #f2f5f9 100%);
+}
+
+.location-hero--cambridge {
+  background: linear-gradient(140deg, #eef2f9 0%, #ffffff 40%, #f2f5fb 100%);
+}
+
+.location-hero--oxford {
+  background: linear-gradient(140deg, #f6f1ec 0%, #ffffff 40%, #f7f2ee 100%);
+}
+
+.location-hero--manchester {
+  background: linear-gradient(140deg, #eef3f7 0%, #ffffff 40%, #f1f6f9 100%);
 }
 
 .location-hero__grid {
@@ -2523,6 +2559,50 @@ main#content > .location-page:first-child {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.location-map {
+  padding: 80px 0;
+  background: #ffffff;
+  border-top: none;
+}
+
+.location-map__card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 22px 46px rgba(29, 44, 59, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  display: grid;
+  gap: 18px;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.location-map__header h3 {
+  margin: 0 0 8px;
+}
+
+.location-map__header p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.location-map__frame {
+  width: 100%;
+  height: clamp(280px, 36vw, 420px);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 12px 26px rgba(29, 44, 59, 0.1);
+  background: #f5f6f8;
+}
+
+.location-map__frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .location-cta {
   padding: 80px 0;
   border-top: none;
@@ -2542,6 +2622,22 @@ main#content > .location-page:first-child {
 
 .location-cta--katrineholm {
   background: linear-gradient(120deg, rgba(76, 150, 120, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--london {
+  background: linear-gradient(120deg, rgba(62, 128, 125, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--cambridge {
+  background: linear-gradient(120deg, rgba(71, 111, 178, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--oxford {
+  background: linear-gradient(120deg, rgba(173, 113, 74, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--manchester {
+  background: linear-gradient(120deg, rgba(54, 110, 141, 0.12), rgba(255, 255, 255, 0.9));
 }
 
 .location-cta__content {

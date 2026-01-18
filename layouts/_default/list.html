@@ -1,19 +1,25 @@
 {{ define "main" }}
-  <main class="screen" id="top">
-    <div class="container">
-      <h1>{{ .Title }}</h1>
-      <div class="content">
-        {{ .Content }}
-      </div>
-      {{ if .Pages }}
-        <ul class="list">
-          {{ range .Pages }}
-            <li>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </li>
-          {{ end }}
-        </ul>
-      {{ end }}
+  {{ if or (eq .Section "locations") (hasPrefix .RelPermalink "/en/locations/") }}
+    <div class="location-page" id="top">
+      {{ .Content }}
     </div>
-  </main>
+  {{ else }}
+    <main class="screen" id="top">
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{ if .Pages }}
+          <ul class="list">
+            {{ range .Pages }}
+              <li>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        {{ end }}
+      </div>
+    </main>
+  {{ end }}
 {{ end }}
