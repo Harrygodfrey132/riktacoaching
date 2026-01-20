@@ -186,3 +186,5 @@ Om du fått en ADHD-diagnos som barn och inte längre känner att den stämmer i
 ---
 
 Behöver du en ADHD-utredning eller stöd efter en diagnos? [Kontakta oss](https://riktapsykiatri.se/kontakta-oss) så hjälper vi dig vidare.
+
+[Testa om du har ADHD](/adhd-test/)

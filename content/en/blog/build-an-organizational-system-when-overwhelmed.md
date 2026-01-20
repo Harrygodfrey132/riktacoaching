@@ -71,3 +71,5 @@ draft: false
 - Daily plan (3 priorities), weekly review, and recurring reminders.
 - Reduce friction: clear homes for essentials; distinct work/rest spaces.
 - Adjust visibility in tough weeks; seek professional help if impairments persist.
+
+[Test if you have ADHD](/en/adhd-test/)

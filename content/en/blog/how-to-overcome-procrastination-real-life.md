@@ -98,3 +98,5 @@ draft: false
 - Change starts with tiny, safe actions: 10 focused minutes, one concrete first step, one moment of self-compassion.
 - If you want structure and accountability, that is exactly what coaching is for.
 - Ready for one click? 👉 Take the procrastination test: https://riktapsykiatri.se/en/coaching/procrastination-test/
+
+[Test if you have ADHD](/en/adhd-test/)

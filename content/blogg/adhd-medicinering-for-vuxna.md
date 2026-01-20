@@ -114,3 +114,5 @@ Svensk vård har som mål att medicineringen ska leda till ökad självständigh
 6. Karolinska Institutet (2014). *Studie: ADHD-medicinering minskar risken för trafikolyckor.* Publicerad i JAMA Psychiatry. Visar på medicineringens skyddande effekt i trafiken.
 7. E-hälsomyndigheten. *Resa med narkotikaklassade läkemedel.* Regler kring Schengenintyg och dokumentation vid utlandsvistelse.
 8. Sveriges Riksdag. *Diskrimineringslag (2008:567).* Lagstiftning som skyddar personer med funktionsnedsättning i arbetslivet och samhället.
+
+[Testa om du har ADHD](/adhd-test/)

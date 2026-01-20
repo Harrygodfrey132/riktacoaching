@@ -74,3 +74,5 @@ Nya rutiner fastnar bättre när de hakar i något du redan gör automatiskt.
 - Fira små leveranser: “skickade mailet”, “30 min fokus utan mobil”, “alla nycklar låg i skålen”.
 
 Vill du ha stöd att bygga systemen kring din vardag? Rikta Psykiatris team hjälper med ADHD-utredning, behandling och coachning. Hör av dig så tar vi fram en plan som håller även när livet är rörigt.
+
+[Testa om du har ADHD](/adhd-test/)

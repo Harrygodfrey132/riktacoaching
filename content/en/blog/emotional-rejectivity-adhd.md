@@ -104,3 +104,5 @@ Emotional rejectivity becomes less of a verdict and more of a message:
 That shift alone changes relationships, conflict patterns, and your internal sense of safety.
 
 Rikta Psychiatry can support this work through ADHD-informed assessments, coaching, and practical tools that help you steady the nervous system, build clearer communication, and reduce the impact of emotional rejectivity on your daily life.
+
+[Test if you have ADHD](/en/adhd-test/)

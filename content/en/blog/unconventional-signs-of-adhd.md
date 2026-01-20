@@ -60,3 +60,5 @@ Many people expect ADHD to look like obvious restlessness or distraction. In pra
 
 ## Check your next step
 - If you want an initial orientation, try our [ADHD self-test](/en/adhd-test/). It is not a diagnosis, but it can help you decide whether to seek a full clinical evaluation.
+
+[Test if you have ADHD](/en/adhd-test/)

@@ -96,3 +96,5 @@ Att prova ADHD-medicinering kan kännas stort men det kan också öppna dörrar 
 1. Socialstyrelsen, "Nu kommer nationella riktlinjer för adhd och autism", Socialstyrelsens pressrum, publicerad 20 oktober 2022, hämtad 2 januari 2026, https://www.socialstyrelsen.se/om-socialstyrelsen/pressrum/press/nu-kommer-nationella-riktlinjer-for-adhd-och-autism/
 2. Region Uppsala, "Medicinering vid adhd", Infoteket om funktionshinder, hämtad 2 januari 2026, https://regionuppsala.se/infoteket/hamta-kunskap/fakta-om-funktionsnedsattningar/adhd/medicinering-vid-adhd/
 3. ADHD, "Kunskapsstöd för vårdgivare", uppdaterad oktober 2025, hämtad 2 januari 2026, https://kunskapsstodforvardgivare.se/omraden/psykisk-halsa/regionala-kunskapsstod/adhd
+
+[Testa om du har ADHD](/adhd-test/)

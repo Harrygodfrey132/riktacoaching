@@ -173,3 +173,5 @@ Det kan vara värt att söka professionell hjälp om du känner igen dig i att:
 - du pendlar mellan intensiv ansträngning och total utmattning
 
 En utredning eller kontakt med en mottagning som kan ADHD och exekutiva funktioner handlar dels om den hjälp diagnosen i sig kan innebära, dels om ett språk för det du redan upplever, och dels en plan för hur du kan gå vidare.
+
+[Testa om du har ADHD](/adhd-test/)

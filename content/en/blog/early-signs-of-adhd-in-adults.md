@@ -100,3 +100,5 @@ If you recognise several of these early signs, it can help to:
   - accommodations at work/studies?  
   - better strategies for emotions and stress?  
 Next, consider contacting a professional for an assessment.
+
+[Test if you have ADHD](/en/adhd-test/)

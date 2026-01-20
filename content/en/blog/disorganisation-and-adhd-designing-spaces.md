@@ -96,3 +96,5 @@ To make this easier, we have created a structured worksheet that mirrors the one
 We cannot eliminate clutter entirely. But we can ensure that the objects in our space serve us, support us, and reflect how we genuinely live. When environments align with behaviour rather than fight against it, disorganisation becomes manageable rather than overwhelming.
 
 Understanding your patterns is about clarity, not criticism; that clarity makes room for choice and change. If you want structured support translating these insights into daily life, Rikta Psychiatry offers ADHD-informed assessments, coaching, and practical planning so your spaces and routines match the way your brain works.
+
+[Test if you have ADHD](/en/adhd-test/)

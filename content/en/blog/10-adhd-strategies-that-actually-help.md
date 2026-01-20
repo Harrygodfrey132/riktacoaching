@@ -47,3 +47,5 @@ Set simple rules: one-tab work, app limits during focus blocks, or “park” di
 ---
 
 No single strategy fits everyone. Experiment, track what actually helps, and adjust. If you see long-standing patterns of getting stuck despite repeated attempts, consider working with a coach or clinician who can tailor strategies to how your brain works.
+
+[Test if you have ADHD](/en/adhd-test/)

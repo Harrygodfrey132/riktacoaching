@@ -126,3 +126,5 @@ Coaching is not a substitute for assessment, medical treatment, or therapy, but 
 
 **Coaching and assessments across Sweden**  
 Rikta Psychiatry offers digital coaching and assessments across Sweden plus in-person visits in Stockholm. [Book a call](/en/contact/) so we can find the setup that suits you.
+
+[Test if you have ADHD](/en/adhd-test/)

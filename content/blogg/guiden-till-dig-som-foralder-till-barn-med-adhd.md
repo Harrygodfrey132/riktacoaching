@@ -272,3 +272,5 @@ En stark självkänsla är kanske den finaste gåva du kan ge ditt barn. Det gö
 Som förälder till ett barn med ADHD har du antagligen redan lärt dig att navigera i en vardag som andra kanske inte förstår. Det är tufft, men du gör ett fantastiskt jobb som kämpar för ditt barn varje dag. Kom ihåg att du inte är ensam - det finns många andra i liknande situation, och gemenskap med dem kan ge styrka och tips. Med tiden kommer många svårigheter att minska. Ditt barn blir äldre, mognar, och lär sig strategier för att hantera sin ADHD. Hyperaktiviteten brukar också ofta minska något med åren. Och mitt i allt det svåra finns också guldkorn: kreativitet, initiativrikedom, humor och energi som ditt barn kanske har extra mycket av tack vare sitt unika sätt att vara.
 
 Fokusera på det positiva, fira framgångar (små som stora) och glöm inte att ge dig själv en28 klapp på axeln för allt du gör. Med kärlek, kunskap och uthållighet kan ni tillsammans hitta vägar som leder till en fungerande vardag med ADHD. Ta hand om dig, och ta hand om ditt barn. Ni har en spännande resa tillsammans, och du är precis den förälder ditt barn behöver.
+
+[Testa om du har ADHD](/adhd-test/)

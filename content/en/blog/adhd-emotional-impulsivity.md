@@ -60,3 +60,5 @@ Off days still happen. Aim for repair, not perfection: acknowledge what happened
 
 ### How Rikta Psychiatry can help (experience + expertise)
 Rikta Psychiatry works globally with adults who want better control over emotional impulsivity. Our clinicians and coaches combine medical care (assessment, medication when appropriate) with practical skills for emotion regulation. We teach ADHD-friendly tools—short mindfulness drills, if–then scripts, and environment tweaks—and support you in practising them between sessions so the “pause” becomes automatic, even on tough days.
+
+[Test if you have ADHD](/en/adhd-test/)

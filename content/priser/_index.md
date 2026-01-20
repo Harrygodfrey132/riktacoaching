@@ -50,8 +50,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>ADHD-coachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">1500 kr</p>
-          <p class="price-note">Paket: 6 sessioner till priset av 5 (1200 kr per session).</p>
+          <p class="price">850 kr</p>
           <ul class="details">
             <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
             <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
@@ -61,8 +60,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Autism-coachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">1500 kr</p>
-          <p class="price-note">Paket: 6 sessioner till priset av 5 (1200 kr per session).</p>
+          <p class="price">850 kr</p>
           <ul class="details">
             <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
             <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
@@ -72,8 +70,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Fokus- &amp; Strukturcoachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">1500 kr</p>
-          <p class="price-note">Paket: 6 sessioner till priset av 5 (1200 kr per session).</p>
+          <p class="price">850 kr</p>
           <ul class="details">
             <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
             <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>

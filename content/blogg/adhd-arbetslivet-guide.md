@@ -228,3 +228,5 @@ Var samtidigt medveten om att ADHD ibland kan innebära en viss sårbarhet för 
 Avslutningsvis, försök ha ett tillåtande och humoristiskt förhållningssätt både till dig själv och till andra på jobbet. Alla människor gör misstag och har svackor ibland - även chefer och kollegor. Om vi kan skratta lite åt tokigheterna och inte döma varandra för hårt, blir arbetslivet mänskligare och mer inkluderande. Du behöver inte be om ursäkt för den du är. Hela människan ska få plats på jobbet. Med den inställningen banar vi väg för öppnare arbetsplatser där personer med ADHD kan vara förebilder i stället för att försöka passa in i en alltför snäv mall.
 
 Vi hoppas att denna guide gett dig både konkreta tips och hopp om framtiden. Du är inte ensam - det finns många i liknande situation och en växande förståelse för ADHD i samhället. Ta en dag i taget, fira dina framsteg och kom ihåg att be om hjälp när du behöver. Med struktur, strategier och stöd kan du absolut hantera ADHD på arbetsplatsen och bygga en karriär där du trivs. Lycka till - du fixar det här!
+
+[Testa om du har ADHD](/adhd-test/)

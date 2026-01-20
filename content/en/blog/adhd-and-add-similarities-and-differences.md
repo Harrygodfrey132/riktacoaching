@@ -77,3 +77,5 @@ This aligns with research showing symptoms can vary within the same person over 
 ---
 
 Want to know more about assessment, treatment, or coaching? Contact us and we will guide you. 
+
+[Test if you have ADHD](/en/adhd-test/)

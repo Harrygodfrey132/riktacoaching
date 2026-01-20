@@ -62,3 +62,5 @@ Procrastination is not a character flaw; it is a predictable response to fear, o
 - Start with micro-steps; favour “done” over “perfect.”
 - Tackle the hardest task first; move within five seconds of deciding.
 - Block distractions, reward completion, use accountability, and accept productive discomfort.
+
+[Test if you have ADHD](/en/adhd-test/)

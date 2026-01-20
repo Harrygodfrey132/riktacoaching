@@ -168,3 +168,5 @@ Vi hoppas att texten ovan har hjälpt dig i att förstå skillnaderna och likhet
 
 Behöver du hjälp med utredning eller behandling? [Kontakta oss](https://riktapsykiatri.se/kontakta-oss) så hjälper vi dig vidare.
 
+
+[Testa om du har ADHD](/adhd-test/)

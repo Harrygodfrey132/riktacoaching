@@ -243,3 +243,5 @@ If you are experiencing thoughts of self harm or you feel unsafe, seek urgent su
 ## How Rikta Psychiatry can help
 
 Rikta Psychiatry uses structured coaching strategies designed for adult life: planning systems that you will actually use, routines that stick, practical approaches to time and focus, and support with emotional regulation and follow through. The emphasis is on measurable change, clear next steps, and tools that fit your real schedule rather than an ideal one. If you would like help, you can contact Rikta Psychiatry to discuss what support would be most suitable for you.
+
+[Test if you have ADHD](/en/adhd-test/)

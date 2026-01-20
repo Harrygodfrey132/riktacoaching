@@ -111,3 +111,5 @@ Om du känner igen dig i flera av de tidiga tecknen kan det vara hjälpsamt att:
   - anpassningar i arbete/studier?
   - bättre strategier för känslor och stress?  
 Nästa steg kan sedan vara att ta kontakt för en professionell bedömning.
+
+[Testa om du har ADHD](/adhd-test/)

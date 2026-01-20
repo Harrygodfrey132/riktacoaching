@@ -54,3 +54,5 @@ Om prokrastineringen påverkar studier, jobb eller relationer återkommande är 
 
 ## Stöd via Rikta Psykiatri
 Rikta Psykiatri erbjuder hjälp för dig som brottas med prokrastinering kopplad till ADHD. Tillsammans sätter ni tydliga mål, bygger fungerande system och etablerar ansvarsskapande rutiner – anpassade efter din verklighet. Kontakta oss för en konsultation och kom igång med förändringen i dag.
+
+[Testa om du har ADHD](/adhd-test/)

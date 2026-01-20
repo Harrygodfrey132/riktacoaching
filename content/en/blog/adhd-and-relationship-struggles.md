@@ -250,3 +250,5 @@ Understanding, accountability, and appropriate support are the foundations on wh
 
 **Rikta Psychiatry**
 Specialist assessment and support for ADHD and related conditions.
+
+[Test if you have ADHD](/en/adhd-test/)

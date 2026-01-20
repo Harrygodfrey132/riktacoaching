@@ -133,3 +133,5 @@ If you were diagnosed as a child but feel it no longer fits — and you do not n
 ---
 
 Need an ADHD assessment or support after a diagnosis? [Contact us](/en/contact/) and we will help you take the next step.
+
+[Test if you have ADHD](/en/adhd-test/)

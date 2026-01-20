@@ -68,3 +68,5 @@ Personalise the material: connect it to an interest, create analogies to your ho
 ## Conclusion: Progress Over Perfection
 
 Studying with ADHD won’t always be smooth, and that’s okay. Aim for progress, not perfection. If a strategy fizzles, treat it as data and try another. Mix and match: a tidy desk, a timer, a body double, a fidget, and a small reward might be the winning combo for today. Celebrate small wins and stay flexible. With the right supports, your creative, energetic brain can learn effectively – on its own terms.
+
+[Test if you have ADHD](/en/adhd-test/)

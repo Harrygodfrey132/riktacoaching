@@ -64,3 +64,5 @@ draft: false
 - Meditate briefly and often; move between blocks.
 - Externalise plans; reduce low-quality stimulation.
 - Seek professional assessment if focus challenges persist or impair daily life.
+
+[Test if you have ADHD](/en/adhd-test/)

@@ -25,10 +25,9 @@
               <article class="blog-card knowledge-blog-card">
                 <a class="blog-card__link" href="{{ .RelPermalink }}">
                   <div class="blog-card__media">
-                    <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
+                  <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
                   </div>
                   <div class="blog-card__body">
-                    <span class="knowledge-card__eyebrow">{{ if $isEn }}Guide article{{ else }}Guideartikel{{ end }}</span>
                     <h2>{{ .Title }}</h2>
                     <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
                     <div class="blog-card__meta">

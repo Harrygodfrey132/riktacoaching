@@ -82,3 +82,5 @@ If someone comes to us unsure which path they need, we talk it through together.
 ADHD doesn’t require you to choose one perfect kind of help. What it requires is support that makes sense for the life you’re living right now. Therapy strengthens the ground you stand on. Coaching helps you build a life on top of it that actually works.
 
 If you’re unsure what you need, reach out anyway. You don’t have to know the answer before the conversation starts – that’s what we’re here to help you discover.
+
+[Test if you have ADHD](/en/adhd-test/)
