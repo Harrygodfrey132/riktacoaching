@@ -14,8 +14,6 @@ draft: false
 
 # Den ultimata guiden för att hantera ADHD
 
-## i arbetslivet
-
 Att leva med ADHD i arbetslivet kan innebära unika utmaningar oavsett om du arbetar på kontor, inom vården, i ett praktiskt hantverkaryrke eller i en kreativ bransch. Samtidigt är det fullt möjligt att lyckas och trivas på jobbet med ADHD när du hittar rätt strategier och stöd. Låt oss dyka in i denna guide som samlar övergripande strategier och konkreta verktyg för att hjälpa dig hantera din diagnos på arbetsplatsen.
 
 ## Övergripande strategier för framgång i arbetslivet

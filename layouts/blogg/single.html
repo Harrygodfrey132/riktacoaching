@@ -19,10 +19,6 @@
             <p class="blog-simple__lead">{{ . }}</p>
           {{ end }}
         </div>
-        <ul class="blog-simple__meta">
-          <li><span>{{ if $isEn }}Published{{ else }}Publicerad{{ end }}</span><strong>{{ .Date.Format "2006-01-02" }}</strong></li>
-          <li><span>{{ if $isEn }}Reading time{{ else }}Lästid{{ end }}</span><strong>{{ .ReadingTime }} min</strong></li>
-        </ul>
       </header>
       <div class="blog-simple__divider"></div>
       <div class="blog-simple__body">
