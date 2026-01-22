@@ -24,6 +24,9 @@
       </a>
       <a class="footer-email" data-email-user="info" data-email-domain="riktapsykiatri.se">info@riktapsykiatri.se</a>
       <div class="footer-company">Riktningskliniken AB</div>
+      {{ if $isEn }}
+        <div class="footer-worldwide">We offer ADHD coaching worldwide.</div>
+      {{ end }}
       <div class="footer-hours">
         <h4>{{ if $isEn }}Opening hours{{ else }}Öppettider{{ end }}</h4>
         <ul>
