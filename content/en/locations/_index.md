@@ -64,14 +64,14 @@ url: "/en/locations/"
           <span class="location-tag">Online coaching</span>
           <h3>London</h3>
           <p>
-            Online coaching for ADHD and ASD shaped around London routines: commuting, hybrid work, and packed calendars.
-            We build realistic systems that survive busy weeks.
+            Online coaching for ADHD and ASD shaped around London routines: long commutes, meeting-heavy days,
+            and multi-borough schedules. We build systems that hold under pressure.
           </p>
         </div>
         <ul class="location-services">
-          <li>Plans designed around peak hours, travel time, and long workdays.</li>
-          <li>Tools for focus and follow-through when days are overloaded.</li>
-          <li>Coaching that adapts to shifting schedules and family life.</li>
+          <li>Plans built around commute time and meeting clusters.</li>
+          <li>Tools for prioritisation, focus, and recovery in busy weeks.</li>
+          <li>Support for hybrid work, travel, and family logistics.</li>
         </ul>
         <div class="location-card__footer">
           <div class="location-meta">
@@ -89,14 +89,14 @@ url: "/en/locations/"
           <span class="location-tag">Online coaching</span>
           <h3>Cambridge</h3>
           <p>
-            Online coaching for ADHD and ASD tailored to Cambridge rhythms: term-time structure, research deadlines,
-            and busy study weeks.
+            Online coaching for ADHD and ASD tailored to Cambridge rhythms: term cycles, supervisions,
+            lab schedules, and research deadlines.
           </p>
         </div>
         <ul class="location-services">
-          <li>Plans built around supervision deadlines, lab work, and study blocks.</li>
-          <li>Systems for focus, prioritisation, and consistent routines.</li>
-          <li>Support that fits work, study, and family schedules.</li>
+          <li>Deep work blocks around lab time and supervisions.</li>
+          <li>Systems for deadlines, grant pacing, and recovery.</li>
+          <li>Support that fits research, study, and family schedules.</li>
         </ul>
         <div class="location-card__footer">
           <div class="location-meta">
@@ -114,14 +114,14 @@ url: "/en/locations/"
           <span class="location-tag">Online coaching</span>
           <h3>Oxford</h3>
           <p>
-            Online coaching for ADHD and ASD designed around Oxford rhythms: tutorials, research blocks,
-            and packed weeks with multiple deadlines.
+            Online coaching for ADHD and ASD designed around Oxford rhythms: tutorial essays, reading lists,
+            and term milestones.
           </p>
         </div>
         <ul class="location-services">
-          <li>Plans built around tutorials, essays, and term-time structure.</li>
-          <li>Tools for focus, prioritisation, and realistic pacing.</li>
-          <li>Support that fits work, study, and family schedules.</li>
+          <li>Plans built around tutorial prep and essay cycles.</li>
+          <li>Tools for focus, pacing, and sustainable study weeks.</li>
+          <li>Support that fits study, work, and family schedules.</li>
         </ul>
         <div class="location-card__footer">
           <div class="location-meta">
@@ -140,12 +140,12 @@ url: "/en/locations/"
           <h3>Manchester</h3>
           <p>
             Online coaching for ADHD and ASD shaped around Manchester life: shift patterns, busy city commutes,
-            and hybrid work or study schedules.
+            and project-driven work or study schedules.
           </p>
         </div>
         <ul class="location-services">
           <li>Plans that adapt to rotas, late shifts, and changing weeks.</li>
-          <li>Tools for focus and follow-through in fast-moving roles.</li>
+          <li>Tools for focus, deadline pacing, and handovers.</li>
           <li>Support that fits work, study, and family schedules.</li>
         </ul>
         <div class="location-card__footer">
@@ -159,9 +159,59 @@ url: "/en/locations/"
           </div>
         </div>
       </article>
+      <article class="location-card location-card--liverpool animate-up">
+        <div class="location-card__header">
+          <span class="location-tag">Online coaching</span>
+          <h3>Liverpool</h3>
+          <p>
+            Online coaching for ADHD and ASD tailored to Liverpool life: port and hospitality shifts,
+            university schedules, and busy family routines.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Plans that adapt to rotas, late shifts, and changing weeks.</li>
+          <li>Tools for home routines, planning, and calmer evenings.</li>
+          <li>Support that fits work, study, and family schedules.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Online only</span>
+            <span>UK time zone</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/en/locations/liverpool-adhd-asd-coaching/">View Liverpool</a>
+            <a class="btn link" href="/en/contact/">Book an intro call</a>
+          </div>
+        </div>
+      </article>
+      <article class="location-card location-card--birmingham animate-up">
+        <div class="location-card__header">
+          <span class="location-tag">Online coaching</span>
+          <h3>Birmingham</h3>
+          <p>
+            Online coaching for ADHD and ASD shaped around Birmingham life: West Midlands commutes,
+            logistics, and busy weekly schedules.
+          </p>
+        </div>
+        <ul class="location-services">
+          <li>Plans that fit changing rotas, hybrid work, and study weeks.</li>
+          <li>Tools for prioritisation, energy balance, and recovery.</li>
+          <li>Support that fits work, study, and family schedules.</li>
+        </ul>
+        <div class="location-card__footer">
+          <div class="location-meta">
+            <span>Online only</span>
+            <span>UK time zone</span>
+          </div>
+          <div class="location-actions">
+            <a class="btn secondary" href="/en/locations/birmingham-adhd-asd-coaching/">View Birmingham</a>
+            <a class="btn link" href="/en/contact/">Book an intro call</a>
+          </div>
+        </div>
+      </article>
     </div>
     <div class="locations-note animate-up">
-      Not in London, Cambridge, Oxford, or Manchester? We still cover the whole of the UK online.
+      Not in London, Cambridge, Oxford, Manchester, Liverpool, or Birmingham? We still cover the whole of the UK online.
     </div>
   </div>
 </section>

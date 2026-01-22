@@ -14,12 +14,12 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
         <span class="eyebrow">Oxford, UK</span>
         <h1>Online coaching in Oxford</h1>
         <p class="lead">
-          Online coaching built around Oxford tutorial weeks, essay cycles, and college routines.
+          Online coaching built around Oxford tutorial essays, college routines, and term deadlines.
           Secure video sessions turn priorities into steady weekly systems.
         </p>
         <ul class="location-hero__highlights">
-          <li>Plans that fit tutorial weeks, essays, and research deadlines.</li>
-          <li>Tools for focus, planning, and emotional balance under pressure.</li>
+          <li>Plans that fit tutorial essays, reading lists, and term milestones.</li>
+          <li>Tools for sustained focus, planning, and recovery during deadline peaks.</li>
           <li>UK-wide online sessions with Oxford-friendly hours.</li>
         </ul>
         <div class="hero-actions">
@@ -40,7 +40,7 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
           </div>
           <div>
             <dt>Local focus</dt>
-            <dd>Tutorial weeks and essay cycles</dd>
+            <dd>Tutorial essays, reading loads, and term deadlines</dd>
           </div>
           <div>
             <dt>Next step</dt>
@@ -65,17 +65,17 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
         <h3>Intro call and matching</h3>
         <p>Tell us about your goals, schedule, and preferences. We map your Oxford routine and match you with a coach.</p>
         <ul class="location-step__list">
-          <li>Capture tutorial weeks, deadline peaks, and recovery time.</li>
-          <li>Choose a format that fits work, study, or research weeks.</li>
+          <li>Map tutorial weeks, deadline peaks, and recovery time.</li>
+          <li>Choose a format that fits study blocks, research, or family weeks.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
         <span class="location-step__number">2</span>
         <h3>Structured video sessions</h3>
-        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work in busy study cycles.</p>
+        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work in intense study cycles.</p>
         <ul class="location-step__list">
-          <li>Plan focus blocks around essays, labs, or teaching.</li>
-          <li>Build habits that hold through intense deadlines.</li>
+          <li>Plan focus blocks around essays, reading lists, or teaching.</li>
+          <li>Build habits that hold through heavy term deadlines.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
@@ -83,7 +83,7 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
         <h3>Progress and adjustment</h3>
         <p>We review what is working and adjust the plan as your terms and projects change. The aim is steady progress and confidence.</p>
         <ul class="location-step__list">
-          <li>Track wins through exam periods and deadline weeks.</li>
+          <li>Track wins through exam periods and term milestones.</li>
           <li>Leave each session with clear, realistic next steps.</li>
         </ul>
       </article>
@@ -97,8 +97,8 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
       <article class="location-info animate-up">
         <h3>What we can work on</h3>
         <ul class="location-info__list">
-          <li>Focus and attention management.</li>
-          <li>Planning, routines, and time structure.</li>
+          <li>Focus and attention management in intensive reading blocks.</li>
+          <li>Planning, routines, and time structure across term weeks.</li>
           <li>Deadline stress, workload balance, and recovery.</li>
           <li>Communication, boundaries, and social confidence.</li>
         </ul>
@@ -121,7 +121,7 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
       <div class="location-map__card animate-up">
         <div class="location-map__header">
         <h3>Oxford map</h3>
-        <p>Supporting Oxford and nearby areas.</p>
+        <p>Supporting Oxford and surrounding areas.</p>
       </div>
       <div class="location-map__frame" aria-label="Oxford map">
         <iframe
@@ -140,7 +140,7 @@ url: "/en/locations/oxford-adhd-asd-coaching/"
   <div class="container">
     <div class="location-cta__content animate-up">
       <h2>Ready to get started?</h2>
-      <p>Tell us a bit about your situation in Oxford and we will match you with the right coach.</p>
+      <p>Tell us a bit about your Oxford routine and we will match you with the right coach.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/en/contact/">Book an intro call</a>
         <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>

@@ -1374,7 +1374,7 @@ nav a.active {
 }
 
 .coachning-page {
-  padding: clamp(32px, 6vw, 64px) 0 clamp(72px, 10vw, 120px);
+  padding: clamp(12px, 3vw, 36px) 0 clamp(72px, 10vw, 120px);
 }
 
 .coachning-container {
@@ -2297,6 +2297,14 @@ main#content > .location-page:first-child {
   background: linear-gradient(145deg, rgba(54, 110, 141, 0.12), rgba(255, 255, 255, 0.92));
 }
 
+.location-card--liverpool {
+  background: linear-gradient(145deg, rgba(30, 120, 149, 0.12), rgba(255, 255, 255, 0.92));
+}
+
+.location-card--birmingham {
+  background: linear-gradient(145deg, rgba(173, 113, 74, 0.12), rgba(255, 255, 255, 0.92));
+}
+
 .location-card__header h3 {
   margin: 10px 0 8px;
   font-size: 30px;
@@ -2432,6 +2440,14 @@ main#content > .location-page:first-child {
 
 .location-hero--manchester {
   background: linear-gradient(140deg, #eef3f7 0%, #ffffff 40%, #f1f6f9 100%);
+}
+
+.location-hero--liverpool {
+  background: linear-gradient(140deg, #eef4f7 0%, #ffffff 40%, #f1f7fb 100%);
+}
+
+.location-hero--birmingham {
+  background: linear-gradient(140deg, #f7f2ee 0%, #ffffff 40%, #f8f3ef 100%);
 }
 
 .location-hero__grid {
@@ -2678,6 +2694,14 @@ main#content > .location-page:first-child {
 
 .location-cta--manchester {
   background: linear-gradient(120deg, rgba(54, 110, 141, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--liverpool {
+  background: linear-gradient(120deg, rgba(30, 120, 149, 0.12), rgba(255, 255, 255, 0.9));
+}
+
+.location-cta--birmingham {
+  background: linear-gradient(120deg, rgba(173, 113, 74, 0.12), rgba(255, 255, 255, 0.9));
 }
 
 .location-cta__content {

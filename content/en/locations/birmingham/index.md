@@ -1,26 +1,26 @@
 ---
-title: "Cambridge"
+title: "Birmingham"
 draft: false
-meta_title: "Online coaching in Cambridge | Rikta Psychiatry"
-meta_description: "We provide coaching online in Cambridge with structured video sessions."
-summary: "Online coaching in Cambridge."
-url: "/en/locations/cambridge-adhd-asd-coaching/"
+meta_title: "Online coaching in Birmingham | Rikta Psychiatry"
+meta_description: "We provide coaching online in Birmingham with structured video sessions."
+summary: "Online coaching in Birmingham."
+url: "/en/locations/birmingham-adhd-asd-coaching/"
 ---
 
-<section class="location-hero location-hero--cambridge">
+<section class="location-hero location-hero--birmingham">
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy animate-up">
-        <span class="eyebrow">Cambridge, UK</span>
-        <h1>Online coaching in Cambridge</h1>
+        <span class="eyebrow">Birmingham, UK</span>
+        <h1>Online coaching in Birmingham</h1>
         <p class="lead">
-          Online coaching built around Cambridge term cycles and research-park schedules, from supervisions to lab time.
-          Secure video sessions turn priorities into practical weekly systems.
+          Online coaching tailored to Birmingham life, from West Midlands commutes and shift work to logistics,
+          manufacturing, and university schedules across the region.
         </p>
         <ul class="location-hero__highlights">
-          <li>Plans shaped for term-time intensity, lab rotations, and supervision deadlines.</li>
-          <li>Tools for deep work, planning, and recovery in research-heavy weeks.</li>
-          <li>UK-wide online sessions with Cambridge-friendly hours.</li>
+          <li>Plans that fit changing rotas, hybrid work, and study weeks.</li>
+          <li>Tools for focus, planning, and steadier energy in complex schedules.</li>
+          <li>UK-wide online sessions with Birmingham-friendly hours.</li>
         </ul>
         <div class="hero-actions">
           <a class="btn primary" href="/en/contact/">Book an intro call</a>
@@ -32,7 +32,7 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
         <dl class="location-hero__facts">
           <div>
             <dt>Location</dt>
-            <dd>Cambridge, UK</dd>
+            <dd>Birmingham, UK</dd>
           </div>
           <div>
             <dt>Format</dt>
@@ -40,7 +40,7 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
           </div>
           <div>
             <dt>Local focus</dt>
-            <dd>Term cycles, lab schedules, and research deadlines</dd>
+            <dd>West Midlands commutes and multi-site commitments</dd>
           </div>
           <div>
             <dt>Next step</dt>
@@ -56,34 +56,34 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
   <div class="container">
     <header class="location-section__header animate-up">
       <span class="eyebrow">How it works</span>
-      <h2>Your Cambridge coaching plan in three steps</h2>
+      <h2>Your Birmingham coaching plan in three steps</h2>
       <p>Simple, structured, and fully online. We start with your goals and build a plan you can use every week.</p>
     </header>
     <div class="location-journey__steps">
       <article class="location-step animate-up">
         <span class="location-step__number">1</span>
         <h3>Intro call and matching</h3>
-        <p>Tell us about your goals, schedule, and preferences. We map your Cambridge routine and match you with a coach.</p>
+        <p>Tell us about your goals, schedule, and preferences. We map your Birmingham routine and match you with a coach.</p>
         <ul class="location-step__list">
-          <li>Map supervision deadlines, lab slots, and recovery time.</li>
-          <li>Choose a format that fits college, research, or family weeks.</li>
+          <li>Map commute windows, peak shifts, and recovery time.</li>
+          <li>Choose a format that fits work, study, or family weeks.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
         <span class="location-step__number">2</span>
         <h3>Structured video sessions</h3>
-        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work in busy term cycles.</p>
+        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work around busy weeks.</p>
         <ul class="location-step__list">
-          <li>Plan focus blocks around lab time, reading lists, or supervisions.</li>
-          <li>Build habits that hold through term peaks and grant deadlines.</li>
+          <li>Plan focus blocks around travel time and long days.</li>
+          <li>Build habits that survive shifting routines.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
         <span class="location-step__number">3</span>
         <h3>Progress and adjustment</h3>
-        <p>We review what is working and adjust the plan as your terms and projects change. The aim is steady progress and confidence.</p>
+        <p>We review what is working and adjust the plan as your workload changes. The aim is steady progress and confidence.</p>
         <ul class="location-step__list">
-          <li>Track wins through exam periods and project milestones.</li>
+          <li>Track wins through heavy workloads and peak weeks.</li>
           <li>Leave each session with clear, realistic next steps.</li>
         </ul>
       </article>
@@ -97,16 +97,16 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
       <article class="location-info animate-up">
         <h3>What we can work on</h3>
         <ul class="location-info__list">
-          <li>Deep work blocks, attention in shared spaces, and task switching.</li>
-          <li>Planning, routines, and time structure across term cycles.</li>
-          <li>Deadline stress, workload balance, and recovery.</li>
-          <li>Communication, boundaries, and confidence with supervisors.</li>
+          <li>Focus and attention management across busy, multi-site days.</li>
+          <li>Planning, routines, and time structure across multiple commitments.</li>
+          <li>Shift-related sleep, energy balance, and recovery.</li>
+          <li>Communication, boundaries, and social confidence.</li>
         </ul>
       </article>
       <article class="location-info animate-up">
         <h3>How online coaching works</h3>
         <ul class="location-info__list">
-          <li>Secure video sessions aligned with term calendars.</li>
+          <li>Secure video sessions scheduled around Birmingham hours.</li>
           <li>Clear goals and action steps after each meeting.</li>
           <li>Practical tools you can use between sessions.</li>
           <li>Ongoing review so your plan stays relevant.</li>
@@ -120,13 +120,13 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
   <div class="container">
       <div class="location-map__card animate-up">
         <div class="location-map__header">
-        <h3>Cambridge map</h3>
-        <p>Supporting Cambridge and surrounding villages.</p>
+        <h3>Birmingham map</h3>
+        <p>Supporting Birmingham and the wider West Midlands.</p>
       </div>
-      <div class="location-map__frame" aria-label="Cambridge map">
+      <div class="location-map__frame" aria-label="Birmingham map">
         <iframe
-          title="Cambridge map"
-          src="https://www.google.com/maps?q=Cambridge,+UK&output=embed"
+          title="Birmingham map"
+          src="https://www.google.com/maps?q=Birmingham,+UK&output=embed"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen>
@@ -136,11 +136,11 @@ url: "/en/locations/cambridge-adhd-asd-coaching/"
   </div>
 </section>
 
-<section class="location-cta location-cta--cambridge">
+<section class="location-cta location-cta--birmingham">
   <div class="container">
     <div class="location-cta__content animate-up">
       <h2>Ready to get started?</h2>
-      <p>Tell us a bit about your Cambridge routine and we will match you with the right coach.</p>
+      <p>Tell us a bit about your Birmingham routine and we will match you with the right coach.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/en/contact/">Book an intro call</a>
         <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>

@@ -14,12 +14,12 @@ url: "/en/locations/london-adhd-asd-coaching/"
         <span class="eyebrow">London, UK</span>
         <h1>Online coaching in London</h1>
         <p class="lead">
-          Online coaching shaped around London routines: commute-heavy days, hybrid schedules, and fast deadlines.
+          Online coaching shaped around London life: long commutes, meeting-dense weeks, and multi-borough routines.
           Secure video sessions keep it flexible and focused.
         </p>
         <ul class="location-hero__highlights">
-          <li>Plans that account for commuting, hybrid work, and long days.</li>
-          <li>Tools for focus, planning, and emotional balance under pressure.</li>
+          <li>Plans that account for long commutes, meeting-heavy diaries, and late finishes.</li>
+          <li>Tools for prioritisation, focus, and recovery in high-demand roles.</li>
           <li>UK-wide online sessions with London-friendly hours.</li>
         </ul>
         <div class="hero-actions">
@@ -40,7 +40,7 @@ url: "/en/locations/london-adhd-asd-coaching/"
           </div>
           <div>
             <dt>Local focus</dt>
-            <dd>Commute-heavy weeks and hybrid work</dd>
+            <dd>Commute-heavy, meeting-dense schedules</dd>
           </div>
           <div>
             <dt>Next step</dt>
@@ -65,17 +65,17 @@ url: "/en/locations/london-adhd-asd-coaching/"
         <h3>Intro call and matching</h3>
         <p>Tell us about your goals, schedule, and preferences. We map your London routine and match you with a coach.</p>
         <ul class="location-step__list">
-          <li>Capture commute windows, peak meetings, and recovery time.</li>
-          <li>Choose a format that fits your work or study week.</li>
+          <li>Map commute windows, peak meetings, and recovery time.</li>
+          <li>Choose a format that fits hybrid work, study, or family logistics.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
         <span class="location-step__number">2</span>
         <h3>Structured video sessions</h3>
-        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work with a busy schedule.</p>
+        <p>Sessions are held over secure video with clear goals for each meeting. You get tools that work with full calendars.</p>
         <ul class="location-step__list">
-          <li>Plan focus blocks around travel time and long days.</li>
-          <li>Build habits that survive packed weeks and shifting plans.</li>
+          <li>Design focus blocks around travel time and meeting clusters.</li>
+          <li>Build habits that survive packed weeks and shifting priorities.</li>
         </ul>
       </article>
       <article class="location-step animate-up">
@@ -83,7 +83,7 @@ url: "/en/locations/london-adhd-asd-coaching/"
         <h3>Progress and adjustment</h3>
         <p>We review what is working and adjust the plan as your week changes. The aim is steady progress and confidence.</p>
         <ul class="location-step__list">
-          <li>Track wins through busy periods and travel-heavy weeks.</li>
+          <li>Track wins through deadline peaks and travel-heavy weeks.</li>
           <li>Leave each session with clear, realistic next steps.</li>
         </ul>
       </article>
@@ -97,8 +97,8 @@ url: "/en/locations/london-adhd-asd-coaching/"
       <article class="location-info animate-up">
         <h3>What we can work on</h3>
         <ul class="location-info__list">
-          <li>Focus and attention management.</li>
-          <li>Planning, routines, and time structure.</li>
+          <li>Focus and attention management in fast-paced environments.</li>
+          <li>Planning across multi-site days and shifting priorities.</li>
           <li>Commuting fatigue, overwhelm, and energy balance.</li>
           <li>Communication, boundaries, and social confidence.</li>
         </ul>
@@ -106,7 +106,7 @@ url: "/en/locations/london-adhd-asd-coaching/"
       <article class="location-info animate-up">
         <h3>How online coaching works</h3>
         <ul class="location-info__list">
-          <li>Secure video sessions with early and late slots when needed.</li>
+          <li>Secure video sessions with early or late slots when needed.</li>
           <li>Clear goals and action steps after each meeting.</li>
           <li>Practical tools you can use between sessions.</li>
           <li>Ongoing review so your plan stays relevant.</li>
@@ -121,7 +121,7 @@ url: "/en/locations/london-adhd-asd-coaching/"
       <div class="location-map__card animate-up">
         <div class="location-map__header">
         <h3>London map</h3>
-        <p>Supporting Greater London.</p>
+        <p>Supporting Greater London and surrounding areas.</p>
       </div>
       <div class="location-map__frame" aria-label="London map">
         <iframe
@@ -140,7 +140,7 @@ url: "/en/locations/london-adhd-asd-coaching/"
   <div class="container">
     <div class="location-cta__content animate-up">
       <h2>Ready to get started?</h2>
-      <p>Tell us a bit about your situation in London and we will match you with the right coach.</p>
+      <p>Tell us a bit about your London routine and we will match you with the right coach.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/en/contact/">Book an intro call</a>
         <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>

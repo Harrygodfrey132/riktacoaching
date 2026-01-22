@@ -14,12 +14,12 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
         <span class="eyebrow">Manchester, UK</span>
         <h1>Online coaching in Manchester</h1>
         <p class="lead">
-          Online coaching tailored to Manchester life, from shift patterns and busy city commutes to hybrid work
-          and study schedules.
+          Online coaching tailored to Manchester life, from shift patterns and busy city commutes to media,
+          healthcare, and university schedules across the region.
         </p>
         <ul class="location-hero__highlights">
           <li>Plans that adapt to rotas, late shifts, and changing weeks.</li>
-          <li>Tools for focus and follow-through in fast-moving roles.</li>
+          <li>Tools for focus and follow-through in project-driven roles.</li>
           <li>UK-wide online sessions with Manchester-friendly hours.</li>
         </ul>
         <div class="hero-actions">
@@ -40,7 +40,7 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
           </div>
           <div>
             <dt>Local focus</dt>
-            <dd>Shift patterns and hybrid schedules</dd>
+            <dd>Shift patterns and city-region travel</dd>
           </div>
           <div>
             <dt>Next step</dt>
@@ -65,7 +65,7 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
         <h3>Intro call and matching</h3>
         <p>Tell us about your goals, schedule, and preferences. We map your Manchester routine and match you with a coach.</p>
         <ul class="location-step__list">
-          <li>Capture rota changes, peak shifts, and recovery time.</li>
+          <li>Map rota changes, peak shifts, and recovery time.</li>
           <li>Choose a format that fits work, study, or family weeks.</li>
         </ul>
       </article>
@@ -97,9 +97,9 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
       <article class="location-info animate-up">
         <h3>What we can work on</h3>
         <ul class="location-info__list">
-          <li>Focus and attention management.</li>
-          <li>Planning, routines, and time structure.</li>
-          <li>Shift-related sleep, energy balance, and recovery.</li>
+          <li>Focus and attention management in high-traffic days.</li>
+          <li>Planning, routines, and time structure across rotating weeks.</li>
+          <li>Project handovers, deadline pacing, and recovery.</li>
           <li>Communication, boundaries, and social confidence.</li>
         </ul>
       </article>
@@ -121,7 +121,7 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
       <div class="location-map__card animate-up">
         <div class="location-map__header">
         <h3>Manchester map</h3>
-        <p>Supporting Greater Manchester.</p>
+        <p>Supporting Greater Manchester and nearby areas.</p>
       </div>
       <div class="location-map__frame" aria-label="Manchester map">
         <iframe
@@ -140,7 +140,7 @@ url: "/en/locations/manchester-adhd-asd-coaching/"
   <div class="container">
     <div class="location-cta__content animate-up">
       <h2>Ready to get started?</h2>
-      <p>Tell us a bit about your situation in Manchester and we will match you with the right coach.</p>
+      <p>Tell us a bit about your Manchester routine and we will match you with the right coach.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/en/contact/">Book an intro call</a>
         <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>
