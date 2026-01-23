@@ -3,11 +3,11 @@
   const DURATION_MS = 1200;           // << make this bigger for slower scroll
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
-  const DOC_LANG = (document.documentElement?.lang || '').toLowerCase();
+  const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
   const IS_EN = DOC_LANG.startsWith('en') || window.location.pathname.startsWith('/en/');
 
   function resolveLocale(form){
-    const formLocale = (form?.dataset?.locale || '').toLowerCase();
+    const formLocale = ((form && form.dataset && form.dataset.locale) || '').toLowerCase();
     if (formLocale) return formLocale;
     return IS_EN ? 'en' : 'sv';
   }
@@ -237,7 +237,8 @@ function initScreeningForm({
       const answers = [];
       const questions = form.querySelectorAll('.adhd-question');
       questions.forEach((question, index) => {
-        const prompt = (question.querySelector('.adhd-question__prompt')?.textContent || '').replace(/\s+/g, ' ').trim();
+        const promptEl = question.querySelector('.adhd-question__prompt');
+        const prompt = ((promptEl && promptEl.textContent) || '').replace(/\s+/g, ' ').trim();
         const selected = question.querySelector('input[type="radio"]:checked');
         let answerText = '';
         if (selected) {
@@ -388,7 +389,8 @@ function initScreeningForm({
       body = await response.json().catch(() => null);
     }
     if (!response.ok) {
-      const error = new Error(body?.error || body?.message || 'Could not submit the form just now.');
+      const message = (body && (body.error || body.message)) || 'Could not submit the form just now.';
+      const error = new Error(message);
       error.status = response.status;
       throw error;
     }
@@ -418,7 +420,7 @@ function initScreeningForm({
         toggleFormDisabled(form, true);
         const extra = typeof augmentPayload === 'function' ? augmentPayload(basePayload) : null;
         const merged = { ...basePayload, ...(extra || {}) };
-        merged.metadata = mergeMetadata(basePayload.metadata, extra?.metadata);
+        merged.metadata = mergeMetadata(basePayload.metadata, extra && extra.metadata);
         await postToBackend(merged);
         if (thankYou) {
           thankYou.hidden = false;
@@ -442,9 +444,11 @@ function initScreeningForm({
           || (IS_EN
             ? 'We could not send your request. Please try again.'
             : 'Vi kunde inte skicka din förfrågan. Försök igen.');
-        const msg = error?.status === 429
+        const status = error && error.status;
+        const message = error && error.message;
+        const msg = status === 429
           ? busyMessage
-          : (error?.message || fallbackError);
+          : (message || fallbackError);
         setFormStatus(form, msg, 'error');
       } finally {
         toggleFormDisabled(form, false);
@@ -454,11 +458,14 @@ function initScreeningForm({
 
   async function sendScreeningToKaddio({ form, payload, formContext, leadSourceOverride, statusTarget }){
     if (!form) return;
-    const firstName = (form.querySelector('input[name="firstName"]')?.value || '').trim();
-    const lastName = (form.querySelector('input[name="lastName"]')?.value || '').trim();
-    const email = (form.querySelector('input[name="email"]')?.value || '').trim();
+    const firstNameInput = form.querySelector('input[name="firstName"]');
+    const lastNameInput = form.querySelector('input[name="lastName"]');
+    const emailInput = form.querySelector('input[name="email"]');
+    const firstName = ((firstNameInput && firstNameInput.value) || '').trim();
+    const lastName = ((lastNameInput && lastNameInput.value) || '').trim();
+    const email = ((emailInput && emailInput.value) || '').trim();
     const statusEl = statusTarget || form.querySelector('[data-form-status]');
-    const lang = (document.documentElement?.lang || 'sv').toLowerCase();
+    const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
     const isEn = lang.startsWith('en');
 
     const setStatus = (msg, type = 'info') => {
@@ -479,11 +486,11 @@ function initScreeningForm({
     }
 
     const lines = [];
-    if (payload?.testName) lines.push(`Test: ${payload.testName}`);
+    if (payload && payload.testName) lines.push(`Test: ${payload.testName}`);
     lines.push(`Total: ${payload.total || 0}`);
-    if (payload?.interpretation) lines.push(`Tolkning: ${payload.interpretation}`);
+    if (payload && payload.interpretation) lines.push(`Tolkning: ${payload.interpretation}`);
     lines.push('Svar:');
-    (payload?.answers || []).forEach(item => {
+    ((payload && payload.answers) || []).forEach(item => {
       lines.push(`${item.number}. ${item.prompt} — ${item.answer || 'Ej angivet'}`);
     });
     const description = lines.join('\n');
@@ -504,9 +511,11 @@ function initScreeningForm({
       await postToBackend(body);
       setStatus(isEn ? 'Thank you! We’ll contact you with your results.' : 'Tack! Vi kontaktar dig med dina resultat.', 'success');
     } catch (err) {
-      const msg = err?.status === 429
+      const status = err && err.status;
+      const message = err && err.message;
+      const msg = status === 429
         ? (isEn ? 'We are handling many requests right now. Please try again shortly.' : 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.')
-        : (err?.message || (isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.'));
+        : (message || (isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.'));
       setStatus(msg, 'error');
     }
   }
@@ -528,7 +537,7 @@ function initScreeningForm({
 
   function buildLeadDescription(result) {
     if (!result) return '';
-    const locale = (result?.locale || (IS_EN ? 'en' : 'sv')).toLowerCase();
+    const locale = (((result && result.locale) || (IS_EN ? 'en' : 'sv'))).toLowerCase();
     const isEn = locale.startsWith('en');
     const lines = [
       result.testName || (isEn ? 'Screening results' : 'Screeningresultat'),
@@ -549,7 +558,7 @@ function initScreeningForm({
     setFormStatus(leadForm, '', 'info');
     leadResultPayload = result;
     if (leadSource) {
-      const derivedSource = (result?.testName || '').toLowerCase().includes('autism')
+      const derivedSource = (((result && result.testName) || '').toLowerCase().includes('autism'))
         ? 'Autism Investigation'
         : 'ADHD Investigation';
       if (!leadSource.value || leadSource.value === 'ADHD Investigation') {
@@ -603,7 +612,7 @@ function initScreeningForm({
     bindKaddioForm(leadForm, {
       augmentPayload(basePayload){
         if (!leadResultPayload) {
-          const lang = (document.documentElement?.lang || 'sv').toLowerCase();
+          const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
           const message = lang.startsWith('en')
             ? 'Please complete the screening before sending.'
             : 'Slutför självtestet innan du skickar.';
@@ -615,12 +624,12 @@ function initScreeningForm({
           interpretation: leadResultPayload.interpretation,
           answers: leadResultPayload.answers
         };
-        const derivedDescription = leadDescription?.value
+        const derivedDescription = (leadDescription && leadDescription.value)
           || buildLeadDescription(leadResultPayload)
           || basePayload.description;
         return {
           description: derivedDescription,
-          leadSource: (leadSource?.value || basePayload.leadSource || 'Screening form').trim(),
+          leadSource: (((leadSource && leadSource.value) || basePayload.leadSource || 'Screening form')).trim(),
           metadata: mergeMetadata(basePayload.metadata, {
             screening: screeningMeta
           })

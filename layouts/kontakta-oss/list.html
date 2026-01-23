@@ -181,7 +181,8 @@
               });
               const body = await res.json().catch(() => ({}));
               if (!res.ok) {
-                setStatus(body?.error || body?.message || 'Det gick inte att skicka just nu.', 'error');
+                const message = (body && (body.error || body.message)) || 'Det gick inte att skicka just nu.';
+                setStatus(message, 'error');
                 return;
               }
               if (thankYou) thankYou.hidden = false;

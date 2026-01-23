@@ -333,7 +333,8 @@ hide_template_hero: true
               });
               const body = await res.json().catch(() => ({}));
               if (!res.ok) {
-                setStatus(body?.error || body?.message || 'Could not submit the form just now.', 'error');
+                const message = (body && (body.error || body.message)) || 'Could not submit the form just now.';
+                setStatus(message, 'error');
                 return;
               }
               if (thankYou) thankYou.hidden = false;

@@ -298,11 +298,12 @@ hide_template_hero: true
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify(payload)
                 });
-                const body = await res.json().catch(() => ({}));
-                if (!res.ok) {
-                  setStatus(body?.error || body?.message || 'Det gick inte att skicka just nu.', 'error');
-                  return;
-                }
+              const body = await res.json().catch(() => ({}));
+              if (!res.ok) {
+                const message = (body && (body.error || body.message)) || 'Det gick inte att skicka just nu.';
+                setStatus(message, 'error');
+                return;
+              }
               if (thankYou) thankYou.hidden = false;
               setStatus(form.dataset.successMessage || 'Tack! Vi återkommer så snart vi kan.', 'success');
               form.dispatchEvent(new CustomEvent('kaddio:success', {

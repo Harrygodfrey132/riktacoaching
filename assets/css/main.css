@@ -677,6 +677,7 @@ nav a.active {
   .coaching-definition__card {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (max-width: 720px) {
@@ -716,6 +717,7 @@ nav a.active {
   .coaching-definition {
     padding: 96px 0;
   }
+
 }
 
 .team-preview {
