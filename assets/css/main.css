@@ -8252,6 +8252,8 @@ body.newsletter-popup--locked {
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .blog-simple__eyebrow {
@@ -8275,6 +8277,8 @@ body.newsletter-popup--locked {
   font-size: 18px;
   line-height: 1.65;
   color: #374151;
+  font-family: var(--blog-font-sans);
+  font-weight: 500;
 }
 
 .blog-simple__meta {
