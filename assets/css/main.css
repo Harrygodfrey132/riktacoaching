@@ -14,39 +14,20 @@
   --adhd-rose: #ec4e5b;
   --adhd-sand: #f1ebe6;
   --adhd-ink: #1d2c3b;
-  --font-sans: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-serif: "Charter", "Lora", "Times New Roman", serif;
-  --body-size-desktop: 1.25rem;
-  --body-size-mobile: 1.125rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   color: var(--text);
   background: var(--bg);
-  line-height: 1.65;
-  font-family: var(--font-serif);
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  min-height: 100%;
-  background: var(--bg);
-  color: var(--text);
-  font-size: var(--body-size-desktop);
-}
-
-@media (max-width: 768px) {
-  body {
-    font-size: var(--body-size-mobile);
-  }
+  line-height: 1.6;
 }
 
 img {
@@ -60,23 +41,6 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6,
-nav, nav a,
-button, .btn,
-label, input, textarea, select,
-small, .eyebrow,
-.blog-simple__meta {
-  font-family: var(--font-sans);
-}
-
-h1 {
-  font-weight: 800;
-}
-
-p, li {
-  font-family: var(--font-serif);
-  line-height: 1.65;
-}
 
 .container {
   max-width: var(--container);
@@ -4721,7 +4685,7 @@ nav a.cta:active{
   padding: 12px 16px;
   border: 1px solid rgba(0,0,0,0.12);
   font-size: 16px;
-  font-family: var(--font-sans);
+  font-family: inherit;
   transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
   background: rgba(249,249,249,0.9);
 }
@@ -6939,7 +6903,7 @@ nav a.cta:active{
 }
 
 .adhd-screening__header h1 {
-  font-family: var(--font-sans);
+  font-family: "Inter", "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-size: clamp(36px, 5.2vw, 48px);
   font-weight: 700;
   margin: 0 0 18px;
@@ -8222,11 +8186,40 @@ body.newsletter-popup--locked {
 
 /* ===== Blog Articles ===== */
 .blog-simple {
+  --blog-font-sans: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --blog-font-serif: "Charter", "Lora", "Times New Roman", serif;
+  --blog-body-size-desktop: 1.25rem;
+  --blog-body-size-mobile: 1.125rem;
   --blog-accent: #1d4ed8;
   background: radial-gradient(120% 120% at 12% 10%, rgba(29, 78, 216, 0.08), transparent 38%),
     radial-gradient(120% 120% at 86% 12%, rgba(14, 165, 233, 0.08), transparent 40%),
     linear-gradient(180deg, #f8fafc 0%, #ffffff 42%, #f8fafc 100%);
   color: #0f172a;
+}
+
+.blog-simple h1,
+.blog-simple h2,
+.blog-simple h3,
+.blog-simple h4,
+.blog-simple h5,
+.blog-simple h6,
+.blog-simple nav,
+.blog-simple nav a,
+.blog-simple button,
+.blog-simple .btn,
+.blog-simple .blog-simple__meta,
+.blog-simple .eyebrow {
+  font-family: var(--blog-font-sans);
+}
+
+.blog-simple h1 {
+  font-weight: 800;
+}
+
+.blog-simple p,
+.blog-simple li {
+  font-family: var(--blog-font-serif);
+  line-height: 1.65;
 }
 
 .blog-simple__shell {
@@ -8319,10 +8312,10 @@ body.newsletter-popup--locked {
 }
 
 .blog-simple__body {
-  max-width: 100%;
-  margin: 0;
-  font-family: var(--font-serif);
-  font-size: var(--body-size-desktop);
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--blog-font-serif);
+  font-size: var(--blog-body-size-desktop);
   line-height: 1.65;
   color: #1f2937;
   position: relative;
@@ -8335,7 +8328,7 @@ body.newsletter-popup--locked {
   line-height: 1.25;
   letter-spacing: -0.01em;
   position: relative;
-  font-family: var(--font-sans);
+  font-family: var(--blog-font-sans);
   font-weight: 700;
 }
 
@@ -8343,7 +8336,7 @@ body.newsletter-popup--locked {
   margin: 38px 0 12px;
   font-size: 20px;
   line-height: 1.35;
-  font-family: var(--font-sans);
+  font-family: var(--blog-font-sans);
   font-weight: 700;
 }
 
@@ -8363,7 +8356,7 @@ body.newsletter-popup--locked {
 
 @media (max-width: 768px) {
   .blog-simple__body {
-    font-size: var(--body-size-mobile);
+    font-size: var(--blog-body-size-mobile);
   }
 }
 
