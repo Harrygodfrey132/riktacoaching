@@ -8342,6 +8342,7 @@ body.newsletter-popup--locked {
 
 .blog-simple__body p {
   margin: 0 0 18px;
+  text-indent: 0;
 }
 
 .blog-simple__body ul,
