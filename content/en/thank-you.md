@@ -27,10 +27,10 @@ meta_description: "Thanks for booking a call with Rikta Psychiatry. Reach us by 
       </div>
       <div>
         <div class="card">
-          <h2>Enjoying your sessions?</h2>
+          <h2>Make a difference and get rewarded</h2>
           <p>
-            If you're enjoying your sessions and would love another one on us, simply refer a friend.
-            Share their name with us, and when they book, we'll gift you a free coaching call.
+            If your sessions are helping, share that support with a friend who could benefit too.
+            Send us their name, and when they book, we’ll thank you with a free coaching call.
           </p>
         </div>
       </div>
