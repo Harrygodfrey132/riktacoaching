@@ -596,6 +596,90 @@ nav a.active {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.cofounder-spotlight {
+  padding: 110px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f3ef 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: none;
+}
+
+.cofounder-spotlight::before,
+.cofounder-spotlight::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cofounder-spotlight::before {
+  top: -110px;
+  right: -110px;
+  background: radial-gradient(circle, rgba(71, 115, 166, 0.18), rgba(71, 115, 166, 0));
+}
+
+.cofounder-spotlight::after {
+  bottom: -110px;
+  left: -110px;
+  background: radial-gradient(circle, rgba(218, 91, 95, 0.16), rgba(218, 91, 95, 0));
+}
+
+.cofounder-spotlight__card {
+  display: grid;
+  gap: 24px;
+  padding: clamp(28px, 4vw, 40px);
+  border-radius: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(29, 44, 59, 0.08);
+  box-shadow: 0 16px 32px rgba(29, 44, 59, 0.12);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.cofounder-spotlight__eyebrow {
+  margin-bottom: 8px;
+}
+
+.cofounder-spotlight__title {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.cofounder-spotlight__lead {
+  margin: 0 auto 18px;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 17px;
+  max-width: 760px;
+}
+
+.cofounder-spotlight__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.cofounder-spotlight__frame {
+  aspect-ratio: 16 / 9;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #111827;
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  box-shadow: 0 14px 28px rgba(29, 44, 59, 0.16);
+}
+
+.cofounder-spotlight__frame iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
 .coaching-definition {
   padding: 110px 0;
   background: #fff;
@@ -712,6 +796,10 @@ nav a.active {
     width: 36px;
     height: 36px;
     border-radius: 12px;
+  }
+
+  .cofounder-spotlight {
+    padding: 96px 0;
   }
 
   .coaching-definition {
