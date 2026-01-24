@@ -2270,6 +2270,35 @@ nav a.active {
   margin: 0 0 24px;
 }
 
+.thank-you.hero {
+  padding: 96px 0 88px;
+}
+
+.thank-you .grid {
+  gap: 48px;
+}
+
+.thank-you .card {
+  padding: 26px 28px;
+  border-radius: 22px;
+  border: 1px solid rgba(17, 32, 56, 0.08);
+  box-shadow: 0 18px 36px rgba(17, 32, 56, 0.12);
+}
+
+.thank-you .actions {
+  margin-top: 28px;
+}
+
+@media (max-width: 900px) {
+  .thank-you.hero {
+    padding: 72px 0 64px;
+  }
+
+  .thank-you .grid {
+    gap: 28px;
+  }
+}
+
 .actions {
   display: flex;
   gap: 16px;
