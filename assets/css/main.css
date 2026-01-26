@@ -366,7 +366,7 @@ nav a.active {
   justify-content: center;
 }
 .coaching-intro {
-  padding: 120px 0;
+  padding: 104px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f6f1ec 100%);
   position: relative;
   overflow: hidden;
@@ -475,7 +475,7 @@ nav a.active {
 }
 
 .coaching-process {
-  padding: 120px 0;
+  padding: 104px 0;
   background: linear-gradient(180deg, #f6f1ec 0%, #ffffff 100%);
   position: relative;
   overflow: hidden;
@@ -597,7 +597,7 @@ nav a.active {
 }
 
 .cofounder-spotlight {
-  padding: 110px 0;
+  padding: 96px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7f3ef 100%);
   position: relative;
   overflow: hidden;
@@ -681,7 +681,7 @@ nav a.active {
 }
 
 .externalised-thinking {
-  padding: 110px 0;
+  padding: 96px 0;
   background: #ffffff;
   border-top: none;
 }
@@ -745,7 +745,7 @@ nav a.active {
 }
 
 .coaching-definition {
-  padding: 110px 0;
+  padding: 96px 0;
   background: #fff;
   border-top: none;
 }
