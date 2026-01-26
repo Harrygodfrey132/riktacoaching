@@ -102,7 +102,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <article class="card">
           <h3>Utredning för ADHD & autism (neuropsykiatrisk utredning)</h3>
           <p class="meta">Digitalt eller på mottagning</p>
-          <p class="price">35 000 kr</p>
+          <p class="price">29 000 kr</p>
           <ul class="details">
             <li>Bedömningssamtal med specialistpsykiater</li>
             <li>Strukturerade intervjuer (DIVA-5) och skattningsformulär</li>
@@ -110,14 +110,14 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <div class="bg-blue-50" style="border-top: 1px solid rgba(0, 0, 0, 0.06); padding: 0.75rem 1rem; margin-top: 0.5rem;">
             <strong>Ingår utan extra kostnad:</strong>
-            <em> 2 st Coachingsessioner (90 min totalt)</em>
+            <em> 1 st Coachingsessioner (90 min totalt)</em>
           </div>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
           <h3>Omprövning / Avskrivning av npf-diagnos</h3>
           <p class="meta">Digitalt eller på mottagning</p>
-          <p class="price">32 000 kr</p>
+          <p class="price">20 000 kr</p>
           <ul class="details">
             <li>Omprövning eller avskrivning av diagnos kan vara aktuell för dig som tidigare diagnostiserats med adhd eller autism, och som misstänker att diagnoskriterierna inte längre är uppfyllda.</li>
           </ul>
