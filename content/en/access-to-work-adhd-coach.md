@@ -25,11 +25,11 @@ layout: "none"
             Turn your AtW award into actual workplace success. We provide specialist coaching for neurodivergent professionals who need more than just “tips”—they need a system that works.
           </p>
           <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <a href="#upload" class="inline-flex items-center justify-center rounded-full bg-teal-700 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:-translate-y-0.5 hover:bg-teal-800">
+            <a href="https://riktapsykiatri.se/en/contact/" class="inline-flex items-center justify-center rounded-full bg-teal-700 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:-translate-y-0.5 hover:bg-teal-800">
               Redeem My Grant – Book Onboarding
             </a>
             <a href="#cheatsheet" class="inline-flex items-center justify-center rounded-full border border-teal-200 px-5 py-3 text-base font-semibold text-teal-800 hover:border-teal-300 hover:bg-teal-50">
-              Download the AtW Application Cheat Sheet
+              Download the AtW Application Guide
             </a>
           </div>
           <ul class="space-y-2 text-slate-700">
@@ -116,7 +116,7 @@ layout: "none"
         </div>
       </div>
       <div class="mt-8 flex justify-center">
-        <a href="#upload" class="inline-flex items-center justify-center rounded-full bg-teal-700 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:-translate-y-0.5 hover:bg-teal-800">
+        <a href="https://riktapsykiatri.se/en/contact/" class="inline-flex items-center justify-center rounded-full bg-teal-700 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:-translate-y-0.5 hover:bg-teal-800">
           Submit Award Letter
         </a>
       </div>
@@ -149,9 +149,9 @@ layout: "none"
 </div>
 
 <!-- Mobile sticky CTA -->
-<div class="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-10px_30px_-20px_rgba(15,23,42,0.25)] md:hidden">
+  <div class="fixed inset-x-0 bottom-0 z-30 border-t border-slate-200 bg-white/95 px-4 py-3 shadow-[0_-10px_30px_-20px_rgba(15,23,42,0.25)] md:hidden">
   <a
-    href="#upload"
+    href="https://riktapsykiatri.se/en/contact/"
     class="flex w-full items-center justify-center rounded-full bg-teal-700 px-4 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:bg-teal-800"
   >
     Redeem My Grant
