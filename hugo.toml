@@ -5,6 +5,7 @@ defaultContentLanguage = "sv"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 disableKinds = ["taxonomy","term","sitemap"]   # no taxonomies and custom sitemap handling
+buildFuture = true
 
 [languages]
   [languages.sv]

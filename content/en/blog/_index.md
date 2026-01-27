@@ -13,4 +13,7 @@ og_description: "Read guides, patient support, and expert insights on neuropsych
 cascade:
   type: "blogg"
   layout: "blogg/single"
+  publishDate: 2024-01-01
+  build:
+    future: true
 ---
