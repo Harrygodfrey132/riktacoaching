@@ -46,7 +46,7 @@
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
           <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
           {{ if $isEn }}
-            <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
+            <li><a href="{{ $atwPath | relURL }}">Access to Work (ADHD &amp; Autism)</a></li>
           {{ end }}
           {{ if not $isEn }}
             <li><a href="{{ "/webbinarier/" | relLangURL }}">Webbinarier</a></li>
