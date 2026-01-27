@@ -28,7 +28,7 @@ layout: "none"
             <a href="https://riktapsykiatri.se/en/contact/" class="inline-flex items-center justify-center rounded-full bg-teal-700 px-5 py-3 text-base font-semibold text-white shadow-lg shadow-teal-700/25 transition hover:-translate-y-0.5 hover:bg-teal-800">
               Redeem My Grant – Book Onboarding
             </a>
-            <a href="#cheatsheet" class="inline-flex items-center justify-center rounded-full border border-teal-200 px-5 py-3 text-base font-semibold text-teal-800 hover:border-teal-300 hover:bg-teal-50">
+            <a href="/AtW-ApplicationGuide-RiktaCoaching.pdf" download class="inline-flex items-center justify-center rounded-full border border-teal-200 px-5 py-3 text-base font-semibold text-teal-800 hover:border-teal-300 hover:bg-teal-50">
               Download the AtW Application Guide
             </a>
           </div>
