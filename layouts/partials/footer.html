@@ -15,7 +15,7 @@
   {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
   {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
   {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
-  {{ $atwPath := cond $isEn "/access-to-work-adhd-coach-2026/" "" }}
+  {{ $atwPath := "access-to-work-adhd-coach/" }}
   {{ $logoHref := cond $isEn "/en/" "/" }}
   {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
   <div class="container footer-main">
@@ -46,7 +46,7 @@
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
           <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
           {{ if $isEn }}
-            <li><a href="{{ $atwPath | relURL }}">Access to Work (ADHD &amp; Autism)</a></li>
+            <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
           {{ end }}
           {{ if not $isEn }}
             <li><a href="{{ "/webbinarier/" | relLangURL }}">Webbinarier</a></li>
