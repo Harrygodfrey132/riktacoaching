@@ -27,7 +27,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
         </p>
         <div class="hero-actions">
           <a class="btn primary coral" href="/en/contact/">Book a consultation</a>
-          <a class="btn link" href="/en/adhd-assessment/">View services</a>
         </div>
       </div>
       <div class="hero-media animate-up">
