@@ -10,6 +10,7 @@ og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledar
 description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad vård med värme."
 ---
 
+{{< rawhtml >}}
 <section class="team-feature who-section" id="team">
   <div class="container">
     <header class="team-feature__header">
@@ -69,6 +70,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
     </div>
   </div>
 </section>
+{{< /rawhtml >}}
 
 <section class="who-hero who-section">
   <div class="container">

@@ -10,6 +10,7 @@ og_description: "Meet our specialist psychiatrists, psychologists, and operation
 description: "Get to know the specialist team behind Rikta Psychiatry and how we build safe, evidence-based care."
 ---
 
+{{< rawhtml >}}
 <section class="team-feature who-section" id="team">
   <div class="container">
     <header class="team-feature__header">
@@ -69,6 +70,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
     </div>
   </div>
 </section>
+{{< /rawhtml >}}
 
 <section class="who-hero who-section">
   <div class="container">
