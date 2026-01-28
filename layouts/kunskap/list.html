@@ -10,8 +10,14 @@
     </header>
     {{ .Content }}
     {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-    {{ $section := cond $isEn "blog" "blogg" }}
-    {{ $posts := where (where .Site.AllPages "Section" $section) "Lang" .Lang }}
+    {{ $posts := slice }}
+    {{ if $isEn }}
+      {{ $posts = where .Site.RegularPages "Section" "blog" }}
+      {{ $posts = where $posts "Lang" "en" }}
+    {{ else }}
+      {{ $posts = where .Site.RegularPages "Section" "blogg" }}
+      {{ $posts = where $posts "Lang" "sv" }}
+    {{ end }}
     {{ $posts = sort $posts "Date" "desc" }}
     {{ if gt (len $posts) 0 }}
       <section class="knowledge-grid knowledge-grid--all">

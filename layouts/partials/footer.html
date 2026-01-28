@@ -15,7 +15,7 @@
   {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
   {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
   {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
-  {{ $atwPath := "access-to-work-adhd-coach/" }}
+  {{ $atwPath := cond $isEn "en/access-to-work-adhd-coach/" "/access-to-work-adhd-coach/" }}
   {{ $logoHref := cond $isEn "/en/" "/" }}
   {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
   <div class="container footer-main">
