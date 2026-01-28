@@ -6754,6 +6754,12 @@ nav a.cta:active{
   margin: 0;
 }
 
+/* Amplify Professionals header */
+.team-feature__header h2 {
+  margin: 0;
+  font-size: 150%;
+}
+
 .team-feature__bullets {
   margin: 8px 0 0;
   padding-left: 18px;
