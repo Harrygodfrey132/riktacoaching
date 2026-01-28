@@ -8739,8 +8739,9 @@ body.newsletter-popup--locked {
 
 .blog-simple__body ul,
 .blog-simple__body ol {
-  margin: 0 0 22px 30px;
-  padding-left: 4px;
+  margin: 0 0 22px;
+  padding-left: 0;
+  list-style-position: inside;
 }
 
 .blog-simple__body li {
