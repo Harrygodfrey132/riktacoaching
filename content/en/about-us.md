@@ -101,29 +101,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 </section>
 {{< /rawhtml >}}
 
-<section class="who-intro who-section" id="values">
-  <div class="container">
-    <div class="who-grid intro-grid">
-      <div class="intro-copy animate-up">
-        <h2>Safe psychiatric care where every step connects</h2>
-        <p>
-          Rikta was created to shorten waiting times and make care clearer. We build teams and processes that stay with you from your first consultation through assessment, treatment, and coaching.
-        </p>
-        <ul class="intro-list">
-          <li>Cross-functional teams follow you through the whole journey.</li>
-          <li>Digital and in-person visits combined to match your needs.</li>
-          <li>Clear plans, follow-ups, and support between sessions.</li>
-        </ul>
-      </div>
-      <div class="intro-stats animate-up">
-        <figure class="intro-photo primary">
-          <img src="/img/coachning-hero-park.jpg" alt="Conversation between patient and psychologist">
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="who-values who-section">
   <div class="container">
     <header class="section-header animate-up">
