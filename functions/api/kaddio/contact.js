@@ -234,8 +234,9 @@ function normalizeInput(body) {
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
-  const lastname = rest.join(' ') || lastNameInput || 'N/A';
+  const lastFallback = lastNameInput || nameSuffix || 'N/A';
   const firstname = first || firstNameInput || 'N/A';
+  const lastname = rest.join(' ') || lastFallback;
   const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Website form');
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
 
