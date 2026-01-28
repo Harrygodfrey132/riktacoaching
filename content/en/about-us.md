@@ -20,10 +20,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
             <li>About Rikta</li>
           </ol>
         </nav>
-        <span class="eyebrow">The Rikta team</span>
-        <h1>Specialists who meet you where you are</h1>
+        <span class="eyebrow">MEET THE TEAM</span>
+        <h1>Specialist support tailored to your life</h1>
         <p class="lead">
-          We are a close-knit team of psychiatrists, psychologists, and coordinators who combine medical precision with genuine care.
+          A collaborative team of clinicians and coaches combining rigorous medical standards with a bespoke approach to ADHD and autism management.
         </p>
         <div class="hero-actions">
           <a class="btn primary coral" href="#team">Meet our team</a>
@@ -43,6 +43,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 <section class="team-feature who-section" id="team">
   <div class="container">
     <header class="team-feature__header">
+      <h2>Professionals</h2>
       <p class="eyebrow">Our Team</p>
       <p class="muted">A cross-functional team of psychiatrists and coaches.</p>
     </header>
