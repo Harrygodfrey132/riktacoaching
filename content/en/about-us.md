@@ -26,8 +26,8 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           A collaborative team of clinicians and coaches combining rigorous medical standards with a bespoke approach to ADHD and autism management.
         </p>
         <div class="hero-actions">
-          <a class="btn primary coral" href="#team">Meet our team</a>
-          <a class="btn link" href="/en/contact/">Contact us</a>
+          <a class="btn primary coral" href="/en/contact/">Book a consultation</a>
+          <a class="btn link" href="/en/adhd-assessment/">View services</a>
         </div>
       </div>
       <div class="hero-media animate-up">
@@ -45,7 +45,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
     <header class="team-feature__header">
       <h2>Professionals</h2>
       <p class="eyebrow">Our Team</p>
-      <p class="muted">A cross-functional team of psychiatrists and coaches.</p>
     </header>
 
     <div class="clinician-grid clinician-grid--feature">
@@ -105,7 +104,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
   <div class="container">
     <header class="section-header animate-up">
       <h2>Our core values</h2>
-      <p class="muted">The foundation of our care.</p>
+      <p class="muted">How our team puts your care first.</p>
     </header>
     <div class="value-grid">
       <article class="value-card animate-up">

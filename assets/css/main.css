@@ -6757,14 +6757,22 @@ nav a.cta:active{
 /* Amplify Professionals header */
 .team-feature__header h2 {
   margin: 0;
-  font-size: 150%;
+  font-size: clamp(34px, 4vw, 48px);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.team-feature__header .eyebrow {
+  letter-spacing: 0.1rem;
 }
 
 .team-feature__bullets {
   margin: 8px 0 0;
   padding-left: 18px;
   color: #444;
-  line-height: 1.6;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.65;
 }
 
 .team-feature__bullets li {
@@ -6787,6 +6795,7 @@ nav a.cta:active{
 .team-feature .clinician-grid--feature {
   display: flex;
   flex-wrap: nowrap;
+  align-items: stretch;
   overflow-x: auto;
   gap: clamp(16px, 3vw, 24px);
   padding-bottom: 10px;
@@ -6798,6 +6807,9 @@ nav a.cta:active{
 .team-feature .clinician-grid--feature .clinician-card {
   flex: 0 0 260px;
   scroll-snap-align: start;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 520px;
 }
 
 .clinician-card {
@@ -6850,12 +6862,13 @@ nav a.cta:active{
 .clinician-card__body h3 {
   margin: 0;
   color: var(--adhd-blue);
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 .clinician-card__role {
   margin: 0;
+  font-size: 15px;
   font-weight: 600;
   color: #222;
 }
