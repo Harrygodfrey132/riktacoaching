@@ -1,14 +1,14 @@
 ---
-title: "Dr Simon Hill"
+title: "Alice Stern"
 draft: true
-meta_title: "Dr Simon Hill | Konsultpsykiater inom neuropsykiatri"
-meta_keywords: "Simon Hill psykiater, neuropsykiatri expert, minnesmottagning, ADHD och kognition, Rikta specialist"
-meta_description: "Dr Simon Hill kombinerar neuropsykiatri och minnesmedicin för vuxna med ADHD, kognitiva frågor och behov av sammanhållen uppföljning."
-og_title: "Dr Simon Hill på Rikta Psykiatri"
-og_description: "Tidigare Medical Director inom NHS, Dr Hill erbjuder precision i ADHD-utredningar med kognitivt fokus och koordinerad uppföljning."
+meta_title: "Alice Stern | ADHD- och autismcoach"
+meta_keywords: "Alice Stern ADHD coach, autism coach, neuropsykiatri, kognition, Rikta specialist"
+meta_description: "Alice Stern kombinerar neuropsykiatri och kognition för vuxna med ADHD och behov av sammanhållen uppföljning."
+og_title: "Alice Stern på Rikta Psykiatri"
+og_description: "Alice erbjuder precision i ADHD-utredningar med kognitivt fokus och koordinerad uppföljning."
 slug: "simon-hill"
 weight: 40
-role: "Consultant Psychiatrist"
+role: "ADHD and Autism Coach"
 focus: "Neuropsychiatry, memory clinics, multidisciplinary care"
 credentials:
   - "Former Medical Director of Specialist Services, Southern Health NHS Foundation Trust"

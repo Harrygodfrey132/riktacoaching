@@ -15,55 +15,54 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
   <div class="container">
     <header class="team-feature__header">
       <p class="eyebrow">Our Team</p>
-      <h1>Specialists who meet you where you are</h1>
-      <p class="muted">A cross-functional team of psychiatrists and psychologists with leadership experience from the NHS and Swedish specialist care.</p>
+      <p class="muted">A cross-functional team of psychiatrists and coaches.</p>
     </header>
 
     <div class="clinician-grid clinician-grid--feature">
       <article class="clinician-card">
-        <img src="/img/Jonny.png" alt="Dr Sourabh Singh" class="clinician-card__photo">
+        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Sourabh Singh</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Jonny Baker</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Adult ADHD, mood disorders, trauma-informed care</li>
-            <li>Former Associate Clinical Director, Oxleas NHS</li>
+            <li>Integrative Practitioner: 19 years supporting neurodivergent adults.</li>
+            <li>Expert Coach: Specialist in executive functioning and routines.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Antonia.png" alt="Dr Joanna Woodger" class="clinician-card__photo">
+        <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Joanna Woodger</h3>
+          <h3>Dr Antonia Risberg</h3>
           <p class="clinician-card__role">Consultant Psychiatrist</p>
           <ul class="team-feature__bullets">
-            <li>Women’s neurodiversity, liaison psychiatry, adult ADHD</li>
-            <li>Former Clinical Director, Central &amp; North Norfolk (NSFT)</li>
+            <li>Specialist Physician: 30 years in neurodivergence and psychiatry.</li>
+            <li>Medical Expert: Specialist in ADHD/Autism diagnosis and treatment.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Philip.png" alt="Dr Chris Kalafatis" class="clinician-card__photo">
+        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Chris Kalafatis</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Philip Lindersten</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Complex mood disorders and neuropsychiatry</li>
-            <li>Affiliate at King’s College London</li>
+            <li>CEO &amp; Co-Founder</li>
+            <li>Clinical Psychologist Candidate: Expert in data-driven psychiatric care.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Alice.png" alt="Dr Simon Hill" class="clinician-card__photo">
+        <img src="/img/Alice.png" alt="Alice Stern" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Simon Hill</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Alice Stern</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Neuropsychiatry, cognition, multidisciplinary care</li>
-            <li>Former Medical Director, Southern Health NHS</li>
+            <li>Accredited ADHD Coach: MSc in Child Development.</li>
+            <li>Specialist Coach: Research-driven support for neurodivergent individuals.</li>
           </ul>
         </div>
       </article>
@@ -83,7 +82,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </ol>
         </nav>
         <span class="eyebrow">The Rikta team</span>
-        <h1>Specialist psychiatry with heart and structure</h1>
+        <h1>Specialists who meet you where you are</h1>
         <p class="lead">
           We are a close-knit team of psychiatrists, psychologists, and coordinators who combine medical precision with genuine care.
         </p>

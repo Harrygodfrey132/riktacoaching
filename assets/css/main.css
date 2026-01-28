@@ -6766,8 +6766,9 @@ nav a.cta:active{
 }
 
 .clinician-grid--feature {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  margin-top: clamp(28px, 6vw, 40px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(16px, 3vw, 24px);
+  margin-top: clamp(24px, 5vw, 32px);
 }
 
 .clinician-grid {
@@ -6797,6 +6798,10 @@ nav a.cta:active{
   object-fit: cover;
 }
 
+.team-feature .clinician-card__photo {
+  aspect-ratio: 1 / 1;
+}
+
 .clinician-card__placeholder {
   width: 100%;
   aspect-ratio: 3 / 4;
@@ -6813,6 +6818,10 @@ nav a.cta:active{
   padding: clamp(24px, 4vw, 32px);
   display: grid;
   gap: 12px;
+}
+
+.team-feature .clinician-card__body {
+  padding: clamp(16px, 3vw, 20px);
 }
 
 .clinician-card__body h3 {

@@ -21,49 +21,49 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
 
     <div class="clinician-grid clinician-grid--feature">
       <article class="clinician-card">
-        <img src="/img/Jonny.png" alt="Dr Sourabh Singh" class="clinician-card__photo">
+        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Sourabh Singh</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Jonny Baker</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Vuxen-ADHD, affektiva tillstånd och PTSD</li>
-            <li>Tidigare Associate Clinical Director, Oxleas NHS</li>
+            <li>Integrativ behandlare: 19 års erfarenhet av neurodivergens.</li>
+            <li>Expertcoach: Specialist på exekutiva funktioner och vardagsstruktur.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Antonia.png" alt="Dr Joanna Woodger" class="clinician-card__photo">
+        <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Joanna Woodger</h3>
+          <h3>Dr Antonia Risberg</h3>
           <p class="clinician-card__role">Consultant Psychiatrist</p>
           <ul class="team-feature__bullets">
-            <li>Kvinnors neuropsykiatri, liaison-psykiatri, ADHD</li>
-            <li>Tidigare Clinical Director, Central &amp; North Norfolk (NSFT)</li>
+            <li>Specialistläkare: 30 års erfarenhet inom neurodivergens och psykiatri.</li>
+            <li>Medicinsk expert: Specialist på ADHD/Autism-diagnostik och behandling.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Philip.png" alt="Dr Chris Kalafatis" class="clinician-card__photo">
+        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Chris Kalafatis</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Philip Lindersten</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Komplexa affektiva tillstånd och neuropsykiatri</li>
-            <li>Affiliate vid King’s College London</li>
+            <li>VD och medgrundare</li>
+            <li>Medicinsk expert: Utvecklar datadriven psykiatri och funktionellt stöd.</li>
           </ul>
         </div>
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Alice.png" alt="Dr Simon Hill" class="clinician-card__photo">
+        <img src="/img/Alice.png" alt="Alice Stern" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Simon Hill</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <h3>Alice Stern</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Neuropsykiatri, kognition och multidisciplinära team</li>
-            <li>Tidigare Medical Director, Southern Health NHS</li>
+            <li>Diplomerad ADHD-coach: Masterexamen i barns utveckling.</li>
+            <li>Specialistcoach: Forskningsbaserat stöd för neuroatypiska individer.</li>
           </ul>
         </div>
       </article>

@@ -1,14 +1,14 @@
 ---
-title: "Dr Chris Kalafatis"
+title: "Philip Lindersten"
 draft: true
-meta_title: "Dr Chris Kalafatis | Specialist på komplex psykiatri"
-meta_keywords: "Chris Kalafatis psykiater, komplexa mood disorders, neuropsykiatri expert, second opinion psykiatri, Rikta läkarteam"
-meta_description: "Möt Dr Chris Kalafatis, konsultpsykiater med fokus på komplexa stämningslägen, neuropsykiatri och fördjupade second opinions."
-og_title: "Dr Chris Kalafatis - komplex neuropsykiatri"
-og_description: "Dr Kalafatis leder fallkonferenser och skräddarsyr medicinska planer för patienter med kombinerade ADHD, affektiva och kognitiva behov."
+meta_title: "Philip Lindersten | ADHD- och autismcoach"
+meta_keywords: "Philip Lindersten ADHD coach, autism coach, komplexa tillstånd, neuropsykiatri, Rikta"
+meta_description: "Möt Philip Lindersten, ADHD- och autismcoach med fokus på komplexa stämningslägen och neuropsykiatri."
+og_title: "Philip Lindersten - neuropsykiatrisk coach"
+og_description: "Philip leder fallkonferenser och stöttar patienter med kombinerade ADHD-, affektiva och kognitiva behov."
 slug: "chris-kalafatis"
 weight: 30
-role: "Consultant Psychiatrist"
+role: "ADHD and Autism Coach"
 focus: "Complex mood disorders, neuropsychiatry, second opinions"
 credentials:
   - "Member of the Royal College of Psychiatrists"

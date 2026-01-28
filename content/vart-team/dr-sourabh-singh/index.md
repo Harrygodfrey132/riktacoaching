@@ -1,14 +1,14 @@
 ---
-title: "Dr Sourabh Singh"
+title: "Jonny Baker"
 draft: true
-meta_title: "Dr Sourabh Singh | Konsultpsykiater Rikta"
-meta_keywords: "Sourabh Singh psykiater, ADHD specialist, Oxleas NHS psykiater, traumapsykiatri, Rikta psykiater"
-meta_description: "Möt Dr Sourabh Singh, konsultpsykiater med 15 års erfarenhet av ADHD-utredningar, traumavård och multidisciplinära team."
-og_title: "Dr Sourabh Singh - ADHD och traumafokus"
-og_description: "Dr Singh leder vuxenutredningar och traumainformerad behandling på Rikta Psykiatri med erfarenhet från Oxleas NHS och multiprofessionella team."
+meta_title: "Jonny Baker | ADHD- och autismcoach Rikta"
+meta_keywords: "Jonny Baker ADHD coach, autism coach, Oxleas NHS, traumafokus, Rikta coach"
+meta_description: "Möt Jonny Baker, ADHD- och autismcoach med erfarenhet av vuxenutredningar, traumavård och multidisciplinära team."
+og_title: "Jonny Baker - ADHD och traumafokus"
+og_description: "Jonny stöttar vuxna med ADHD och trauma på Rikta Psykiatri med erfarenhet från Oxleas NHS och multiprofessionella team."
 slug: "sourabh-singh"
 weight: 10
-role: "Consultant Psychiatrist"
+role: "ADHD and Autism Coach"
 focus: "Adult ADHD assessments, mood disorders, PTSD in professionals"
 credentials:
   - "Former Associate Clinical Director at Oxleas NHS Foundation Trust"
