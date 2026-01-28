@@ -144,15 +144,24 @@ layout: "none"
         >
           <input type="hidden" name="description" value="Requested the ADHD Access to Work guide (EN).">
           <input type="hidden" name="leadSource" value="Access to Work guide EN">
-          <input type="hidden" name="nameSuffix" value="AtW">
-          <label for="atw-guide-name">Full name</label>
+          <input type="hidden" name="nameSuffix" value="Rtw">
+          <label for="atw-guide-first-name">First name</label>
           <input
-            id="atw-guide-name"
-            name="fullName"
+            id="atw-guide-first-name"
+            name="firstName"
             type="text"
             required
-            autocomplete="name"
-            placeholder="Your name"
+            autocomplete="given-name"
+            placeholder="Your first name"
+          >
+          <label for="atw-guide-last-name">Last name</label>
+          <input
+            id="atw-guide-last-name"
+            name="lastName"
+            type="text"
+            required
+            autocomplete="family-name"
+            placeholder="Your last name"
           >
           <label for="atw-guide-email">Email address</label>
           <input
