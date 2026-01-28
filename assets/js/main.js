@@ -353,7 +353,21 @@ function initScreeningForm({
     const firstName = (formData.get('firstName') || '').trim();
     const lastName = (formData.get('lastName') || '').trim();
     const fullNameField = (formData.get('fullName') || '').trim();
-    const fullName = (fullNameField || [firstName, lastName].filter(Boolean).join(' ') || '').trim();
+    const nameSuffix = (formData.get('nameSuffix') || form.dataset.nameSuffix || '').trim();
+    const appendSuffix = (value, suffix) => {
+      if (!suffix) return value;
+      if (!value) return suffix;
+      const normalized = value.trim();
+      const target = suffix.trim();
+      if (!target) return normalized;
+      if (normalized.toLowerCase().endsWith(target.toLowerCase())) {
+        return normalized;
+      }
+      return `${normalized} ${target}`.trim();
+    };
+    const lastNameWithSuffix = appendSuffix(lastName, nameSuffix);
+    const fullNameSeed = fullNameField || [firstName, lastNameWithSuffix].filter(Boolean).join(' ');
+    const fullName = appendSuffix(fullNameSeed, nameSuffix);
     // Accept both "email" and legacy "Email" field names to avoid missed submissions.
     const email = (formData.get('email') || formData.get('Email') || '').trim();
     const description = (formData.get('description') || formData.get('message') || '').trim();

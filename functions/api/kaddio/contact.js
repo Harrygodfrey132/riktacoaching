@@ -214,7 +214,21 @@ function normalizeInput(body) {
   const firstNameInput = coerceString(body.firstName || body['First Name']);
   const lastNameInput = coerceString(body.lastName || body['Last Name']);
   const fullNameInput = coerceString(body.fullName || body['Full Name']);
-  const fullName = (fullNameInput || [firstNameInput, lastNameInput].filter(Boolean).join(' ') || '').trim();
+  const nameSuffix = coerceString(body.nameSuffix || body['Name Suffix']);
+  const appendSuffix = (value, suffix) => {
+    if (!suffix) return value;
+    if (!value) return suffix;
+    const normalized = String(value).trim();
+    const target = String(suffix).trim();
+    if (!target) return normalized;
+    if (normalized.toLowerCase().endsWith(target.toLowerCase())) {
+      return normalized;
+    }
+    return `${normalized} ${target}`.trim();
+  };
+  const lastNameWithSuffix = appendSuffix(lastNameInput, nameSuffix);
+  const fullNameSeed = fullNameInput || [firstNameInput, lastNameWithSuffix].filter(Boolean).join(' ');
+  const fullName = appendSuffix(fullNameSeed, nameSuffix);
   const email = coerceString(body.email || body.Email);
   const description = coerceString(body.description || body.Description || body.message);
   if (!fullName || !email) return null;

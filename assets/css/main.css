@@ -8640,8 +8640,8 @@ body.newsletter-popup--locked {
   gap: 20px;
   align-items: flex-start;
   flex-wrap: wrap;
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 
 .blog-simple__eyebrow {
@@ -8704,8 +8704,8 @@ body.newsletter-popup--locked {
 }
 
 .blog-simple__body {
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
   font-family: var(--blog-font-serif);
   font-size: var(--blog-body-size-desktop);
   line-height: 1.65;
@@ -8740,8 +8740,8 @@ body.newsletter-popup--locked {
 .blog-simple__body ul,
 .blog-simple__body ol {
   margin: 0 0 22px;
-  padding-left: 0;
-  list-style-position: inside;
+  padding-left: 1.25rem;
+  list-style-position: outside;
 }
 
 .blog-simple__body li {
