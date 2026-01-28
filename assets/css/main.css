@@ -30,6 +30,12 @@ html, body {
   line-height: 1.6;
 }
 
+/* Site-wide heading typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -8666,8 +8672,8 @@ body.newsletter-popup--locked {
 /* ===== Blog Articles ===== */
 .blog-simple {
   /* Typography tokens for blog */
-  --blog-font-heading: "Söhne", "Sohne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --blog-font-meta: "Söhne", "Sohne", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --blog-font-heading: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --blog-font-meta: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --blog-font-serif: "Charter", "Lora", "Times New Roman", serif;
   --blog-body-size-desktop: 1.25rem;
   --blog-body-size-mobile: 1.125rem;
