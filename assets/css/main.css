@@ -5100,10 +5100,14 @@ nav a.cta:active{
 }
 
 .form-status{
-  display: none;
+  display: block;
   padding: 12px 16px;
   border-radius: 14px;
   font-size: 15px;
+}
+
+.form-status[hidden]{
+  display: none;
 }
 
 .form-status--success{

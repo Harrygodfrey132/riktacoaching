@@ -339,8 +339,14 @@ function initScreeningForm({
     const statusEl = form.querySelector('[data-form-status]');
     if (!statusEl) return;
     statusEl.textContent = message || '';
-    statusEl.dataset.statusType = type || 'info';
+    const normalizedType = (type || 'info').toLowerCase();
+    statusEl.dataset.statusType = normalizedType;
+    statusEl.classList.remove('form-status--success', 'form-status--error', 'form-status--info', 'is-visible');
+    statusEl.classList.add('form-status--' + normalizedType, 'is-visible');
     statusEl.hidden = !message;
+    if (!message) {
+      statusEl.classList.remove('is-visible');
+    }
   }
 
   function mergeMetadata(baseMeta, extraMeta){
