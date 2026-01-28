@@ -3365,6 +3365,29 @@ main.hero.screen, section.screen {
 }
 
 /* ===== Mobile Menu Styles ===== */
+.mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 12px;
+}
+
+.mobile-login {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(29, 44, 59, 0.2);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  background: #fff;
+}
+
+.mobile-login:hover {
+  border-color: rgba(29, 44, 59, 0.35);
+}
+
 .mobile-menu-toggle {
   display: none;
   flex-direction: column;
@@ -3529,6 +3552,10 @@ main.hero.screen, section.screen {
   }
   
   .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .mobile-actions {
     display: flex;
   }
   

@@ -21,6 +21,7 @@
     {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
     {{ $aboutPath := cond $isEn "en/about-us/" "/om-oss/" }}
     {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}
+    {{ $loginLink := "https://riktapsykiatri.kaddio.com/login" }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
     {{ $homeLink := cond $isEn "/en/" "/" }}
     {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
@@ -48,7 +49,7 @@
           </li>
           <li><a href="{{ $knowledgePath | relLangURL }}">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}">About us</a></li>
-          <li><a class="cta" href="{{ $contactLink }}">Contact us</a></li>
+          <li><a class="cta" href="{{ $loginLink }}">Log in</a></li>
           <li class="language-switch"><a href="{{ $languageSwitch }}">Svenska</a></li>
         {{ else }}
           <li class="has-submenu">
@@ -114,11 +115,16 @@
         {{ end }}
       </ul>
     </nav>
-    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="{{ if $isEn }}Open menu{{ else }}Öppna meny{{ end }}">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <div class="mobile-actions">
+      {{ if $isEn }}
+        <a class="mobile-login" href="{{ $loginLink }}">Log in</a>
+      {{ end }}
+      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="{{ if $isEn }}Open menu{{ else }}Öppna meny{{ end }}">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
     <nav class="mobile-nav" id="mobileNav" aria-label="{{ if $isEn }}Mobile navigation{{ else }}Mobilmeny{{ end }}">
       <ul>
         {{ if $isEn }}
@@ -140,7 +146,7 @@
           </li>
           <li><a href="{{ $knowledgePath | relLangURL }}" onclick="closeMobileMenu()">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">About us</a></li>
-          <li><a class="cta" href="{{ $contactLink }}" onclick="closeMobileMenu()">Contact us</a></li>
+          <li><a class="cta" href="{{ $loginLink }}" onclick="closeMobileMenu()">Log in</a></li>
           <li class="language-switch"><a href="{{ $languageSwitch }}">Svenska</a></li>
         {{ else }}
           <li class="has-submenu">
