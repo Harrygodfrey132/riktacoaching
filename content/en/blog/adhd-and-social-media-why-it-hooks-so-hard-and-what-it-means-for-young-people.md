@@ -7,7 +7,7 @@ description: "Why social media is so compelling for young people with ADHD, how 
 meta_title: "ADHD and social media | Why it hooks so hard"
 meta_description: "A practical look at why social media is so compelling for young people with ADHD, the impact on attention and sleep, and how coaching can help." 
 meta_keywords: "ADHD social media, teens ADHD, ADHD attention, ADHD sleep, ADHD coaching"
-hero: "/img/teenager-worried.jpg"
+hero: "/img/adolescent-male-looking-at-phone.jpg"
 hero_alt: "Teenager looking worried while holding a phone"
 draft: false
 ---

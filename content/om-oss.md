@@ -10,6 +10,66 @@ og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledar
 description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad vård med värme."
 ---
 
+<section class="team-feature who-section" id="team">
+  <div class="container">
+    <header class="team-feature__header">
+      <p class="eyebrow">Vårt team</p>
+      <h1>Specialister som möter dig där du är</h1>
+      <p class="muted">Ett tvärprofessionellt team av psykiatriker och psykologer som kombinerar erfarenhet från NHS och svensk specialistvård.</p>
+    </header>
+
+    <div class="clinician-grid clinician-grid--feature">
+      <article class="clinician-card">
+        <img src="/img/Jonny.png" alt="Dr Sourabh Singh" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Sourabh Singh</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Vuxen-ADHD, affektiva tillstånd och PTSD</li>
+            <li>Tidigare Associate Clinical Director, Oxleas NHS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Antonia.png" alt="Dr Joanna Woodger" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Joanna Woodger</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Kvinnors neuropsykiatri, liaison-psykiatri, ADHD</li>
+            <li>Tidigare Clinical Director, Central &amp; North Norfolk (NSFT)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Philip.png" alt="Dr Chris Kalafatis" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Chris Kalafatis</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Komplexa affektiva tillstånd och neuropsykiatri</li>
+            <li>Affiliate vid King’s College London</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Alice.png" alt="Dr Simon Hill" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Simon Hill</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Neuropsykiatri, kognition och multidisciplinära team</li>
+            <li>Tidigare Medical Director, Southern Health NHS</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="who-hero who-section">
   <div class="container">
     <div class="who-grid hero-grid">

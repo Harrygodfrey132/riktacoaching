@@ -6,7 +6,7 @@ description: "Less-recognised patterns that can accompany ADHD — and guidance 
 meta_title: "Unconventional signs of ADHD to notice | Rikta Psychiatry"
 meta_description: "Subtle or less-recognised ADHD patterns, how they can affect daily life, and when to seek a professional assessment."
 meta_keywords: "ADHD signs, executive dysfunction, rejection sensitivity, hyperfocus, assessment"
-hero: "/img/teenager-worried.jpg"
+hero: "/img/wandering-mind-art.jpg"
 hero_alt: "Person reflecting, looking slightly worried"
 draft: false
 ---

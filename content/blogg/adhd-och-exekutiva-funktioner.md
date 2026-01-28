@@ -6,7 +6,7 @@ description: "Vad exekutiva funktioner är, hur de hänger ihop med ADHD och pra
 meta_title: "ADHD och exekutiva funktioner | Så stöttar du hjärnans \"chef\""
 meta_description: "Lär dig vad exekutiva funktioner är, hur de påverkas vid ADHD och vilka strategier som stärker fokus, planering och känsloreglering."
 meta_keywords: "exekutiva funktioner, ADHD, arbetsminne, impulskontroll, tidsuppfattning, känsloreglering, planering"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/person-planning-day.jpg"
 hero_alt: "Psykolog som arbetar vid dator och planerar"
 ---
 

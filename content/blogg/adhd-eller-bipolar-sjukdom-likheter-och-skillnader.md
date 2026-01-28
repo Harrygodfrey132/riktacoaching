@@ -6,7 +6,7 @@ description: "En grundlig genomgång av skillnaderna och likheterna mellan ADHD 
 meta_title: "ADHD eller bipolär sjukdom? Likheter och skillnader | Rikta Psykiatri"
 meta_description: "Lär dig skilja mellan ADHD och bipolär sjukdom. Förstå skillnaderna i symtom, hjärnfunktion och behandling för att få rätt diagnos."
 meta_keywords: "ADHD, bipolär sjukdom, differentialdiagnostik, samsjuklighet, neuropsykiatri, stämningssvängningar"
-hero: "/img/adhd-utredning.jpg"
+hero: "/img/wandering-mind-art.jpg"
 hero_alt: "Professionell utredning av ADHD och bipolär sjukdom"
 ---
 

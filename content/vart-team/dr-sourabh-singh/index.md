@@ -14,6 +14,7 @@ credentials:
   - "Former Associate Clinical Director at Oxleas NHS Foundation Trust"
   - "Member of the Royal College of Psychiatrists"
 availability: "Digital across Sweden & select in-person clinics"
+image: "/img/Jonny.png"
 ---
 
 Dr Sourabh Singh is a consultant psychiatrist with over 15 years of experience delivering structured ADHD and mood disorder assessments for adults. He combines NHS leadership experience with a calm, collaborative style that helps patients feel heard while translating complex findings into practical next steps.

@@ -6,7 +6,7 @@ description: "Hur coachning för ADHD och AST kan göra vardagen mer hanterbar g
 meta_title: "Hur ADHD- och AST-coachning kan hjälpa dig i vardagen | Rikta Psykiatri"
 meta_description: "Praktisk guide till ADHD- och AST-coachning: struktur, strategier, sensorisk balans och stöd för vardagen."
 meta_keywords: "ADHD coachning, AST coachning, autism coach, exekutiva funktioner, sensorisk belastning, vardagsstrategier"
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/coach-and-coachee.jpg"
 hero_alt: "Psykolog som arbetar vid dator"
 draft: false
 ---

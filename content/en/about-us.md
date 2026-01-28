@@ -10,6 +10,66 @@ og_description: "Meet our specialist psychiatrists, psychologists, and operation
 description: "Get to know the specialist team behind Rikta Psychiatry and how we build safe, evidence-based care."
 ---
 
+<section class="team-feature who-section" id="team">
+  <div class="container">
+    <header class="team-feature__header">
+      <p class="eyebrow">Our Team</p>
+      <h1>Specialists who meet you where you are</h1>
+      <p class="muted">A cross-functional team of psychiatrists and psychologists with leadership experience from the NHS and Swedish specialist care.</p>
+    </header>
+
+    <div class="clinician-grid clinician-grid--feature">
+      <article class="clinician-card">
+        <img src="/img/Jonny.png" alt="Dr Sourabh Singh" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Sourabh Singh</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Adult ADHD, mood disorders, trauma-informed care</li>
+            <li>Former Associate Clinical Director, Oxleas NHS</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Antonia.png" alt="Dr Joanna Woodger" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Joanna Woodger</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Women’s neurodiversity, liaison psychiatry, adult ADHD</li>
+            <li>Former Clinical Director, Central &amp; North Norfolk (NSFT)</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Philip.png" alt="Dr Chris Kalafatis" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Chris Kalafatis</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Complex mood disorders and neuropsychiatry</li>
+            <li>Affiliate at King’s College London</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Alice.png" alt="Dr Simon Hill" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Dr Simon Hill</h3>
+          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <ul class="team-feature__bullets">
+            <li>Neuropsychiatry, cognition, multidisciplinary care</li>
+            <li>Former Medical Director, Southern Health NHS</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="who-hero who-section">
   <div class="container">
     <div class="who-grid hero-grid">
@@ -26,7 +86,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           We are a close-knit team of psychiatrists, psychologists, and coordinators who combine medical precision with genuine care.
         </p>
         <div class="hero-actions">
-          <a class="btn primary coral" href="#values">Our values</a>
+          <a class="btn primary coral" href="#team">Meet our team</a>
           <a class="btn link" href="/en/contact/">Contact us</a>
         </div>
       </div>

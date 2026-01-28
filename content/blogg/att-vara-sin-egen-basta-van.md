@@ -5,7 +5,7 @@ date: 2025-12-06
 description: "En guide till hur självmedkänsla kan stötta vid ADHD och autism genom att ersätta den inre kritikern med en vänligare röst."
 meta_description: "Lär dig hur självmedkänsla kan minska skam, stress och överbelastning vid ADHD och autism och stärka välmående och fokus."
 meta_keywords: "självmedkänsla, ADHD, autism, NPF, psykisk hälsa, välmående"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/young-adult-woman-on-walk.jpg"
 hero_alt: "Psykolog som ler i samtal"
 draft: false
 meta_title: "Självmedkänsla vid ADHD och autism | Rikta Psykiatri"

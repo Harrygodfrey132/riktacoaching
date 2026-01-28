@@ -6,7 +6,7 @@ description: "Tidiga tecken på ADHD hos vuxna och hur de kan märkas i vardagen
 meta_title: "Tidiga tecken på ADHD hos vuxna | Rikta Psykiatri"
 meta_description: "Sammanfattning av tidiga tecken på ADHD hos vuxna: koncentration, organisering, rastlöshet, impulsivitet, känslor och när söka utredning."
 meta_keywords: "vuxen ADHD, tidiga tecken ADHD, koncentrationssvårigheter vuxna, exekutiva funktioner, impulsivitet, emotionell dysreglering"
-hero: "/img/adhd-coachning.jpg"
+hero: "/img/adolescent-male-looking-at-phone.jpg"
 hero_alt: "Coach som samtalar med klient"
 draft: false
 ---

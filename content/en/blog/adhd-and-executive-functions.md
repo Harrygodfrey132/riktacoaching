@@ -6,7 +6,7 @@ description: "What executive functions are, how they relate to ADHD, and practic
 meta_title: "ADHD and executive functions | How to support the brain’s “manager”"
 meta_description: "Learn what executive functions are, how they are affected in ADHD, and strategies that strengthen focus, planning, and emotion regulation."
 meta_keywords: "executive functions, ADHD, working memory, impulse control, time perception, emotion regulation, planning"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/person-planning-day.jpg"
 hero_alt: "Psychologist working at a computer and planning"
 draft: false
 ---

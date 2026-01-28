@@ -6,7 +6,7 @@ description: "Why traditional study advice clashes with ADHD brains and how to u
 meta_title: "Studying with ADHD | Strategies That Match Your Brain"
 meta_description: "Learn practical, ADHD-friendly study tactics: Pomodoro bursts, micro-steps, focus-friendly environments, body doubling, sensory aids, and gamified motivation."
 meta_keywords: "ADHD study tips, ADHD focus, Pomodoro for ADHD, body doubling, sensory aids, executive function, time blindness"
-hero: "/img/studying-picture-with-pen.jpg"
+hero: "/img/studious-adolescents-in-school.jpg"
 hero_alt: "Person writing notes while studying at a desk"
 draft: false
 ---

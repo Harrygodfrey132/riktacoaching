@@ -6,7 +6,7 @@ description: "Everything you need to know about an ADHD assessment – from prep
 meta_title: "How an ADHD assessment works | Rikta Psychiatry"
 meta_description: "Step-by-step: what happens in an ADHD assessment, what to prepare, which parts are included, and what happens afterward."
 meta_keywords: "ADHD assessment, neuropsychiatric assessment, step by step, preparation, feedback"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/adhd-utredning.jpg"
 hero_alt: "Professional ADHD assessment in a consultation room"
 draft: false
 ---

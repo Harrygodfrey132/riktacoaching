@@ -6,7 +6,7 @@ description: "Practical ADHD tips for kids: calmer mornings, smoother transition
 meta_title: "ADHD tips for children | Practical supports that work on ordinary days"
 meta_description: "Practical ADHD tips for children: routines, single-step instructions, small starts, launch pads, timers, transitions, homework blocks, movement, and school supports."
 meta_keywords: "ADHD children tips, ADHD routines for kids, ADHD morning routine, ADHD transitions, ADHD homework help, ADHD parenting strategies"
-hero: "/img/family-bonding-picture.jpg"
+hero: "/img/happy-girl-child.jpg"
 hero_alt: "Parent sitting with a child, supporting them calmly"
 draft: false
 ---

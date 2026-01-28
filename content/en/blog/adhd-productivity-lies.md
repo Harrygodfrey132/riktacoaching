@@ -8,7 +8,7 @@ meta_keywords: "ADHD productivity, ADHD myths, ADHD focus, ADHD consistency, ADH
 url: "/en/blog/adhd-productivity-lies/"
 translationKey: "adhd-productivity-lies"
 description: "Five productivity myths that drain ADHD brains—and the ADHD-friendly truths that replace them."
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/open-office-land-scape.jpg"
 hero_alt: "Person working at a desk and reflecting"
 ---
 

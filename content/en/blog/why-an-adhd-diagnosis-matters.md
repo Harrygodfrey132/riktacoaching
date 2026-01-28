@@ -6,7 +6,7 @@ description: "How an ADHD diagnosis can change daily life, reduce self-criticism
 meta_title: "Why an ADHD diagnosis can matter | Understanding, support, and change"
 meta_description: "How a diagnosis helps: clearer self-view, fewer conflicts, better support at work and school, and pathways to treatment and accommodations."
 meta_keywords: "ADHD diagnosis, ADHD assessment, adult diagnosis, why ADHD diagnosis, ADHD support, Rikta Psychiatry"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/boy-and-mother.jpg"
 hero_alt: "Psychologist talking with a client during an assessment"
 draft: false
 ---

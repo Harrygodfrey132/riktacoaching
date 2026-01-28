@@ -6,7 +6,7 @@ description: "Masking refers to strategies autistic people use to hide natural b
 meta_title: "Masking and autism | Rikta Psychiatry"
 meta_description: "Masking in autism: why it happens, how common it is, clinical consequences, and strategies to reduce the need for masking."
 meta_keywords: "masking autism, autism masking, autistic burnout, autism diagnosis, sensory accommodations, autism support"
-hero: "/img/child-playing.jpg"
+hero: "/img/autism-wording-blog.jpg"
 hero_alt: "Child playing outdoors"
 draft: false
 ---

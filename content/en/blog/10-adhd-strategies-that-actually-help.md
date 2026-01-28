@@ -6,7 +6,7 @@ description: "Ten practical ADHD strategies that make a real difference for focu
 meta_title: "10 ADHD strategies that actually help | Practical tools that work"
 meta_description: "Ten actionable ADHD strategies: planning, cues, time tools, breaks, routines, and emotional regulation tips that support daily life."
 meta_keywords: "ADHD strategies, ADHD tips, focus tools, time management ADHD, executive functions, emotion regulation"
-hero: "/img/adhd-coachning.jpg"
+hero: "/img/coach-planning-with-coachee.jpg"
 hero_alt: "Coach supporting a client during a session"
 draft: false
 ---

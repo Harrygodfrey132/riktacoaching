@@ -6,7 +6,7 @@ description: "En pedagogisk och professionell genomgång av Aspergers syndrom ho
 meta_title: "Aspergers syndrom hos vuxna | Symtom, utredning och stöd"
 meta_description: "Läs om Aspergers syndrom hos vuxna, varför diagnosen ändrats, vanliga symtom, hur autismutredning går till i Sverige och vilket stöd som finns."
 meta_keywords: "Aspergers syndrom vuxna, autism hos vuxna symtom, autismutredning vuxna, AST, Asperger" 
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/young-adult-woman-sitting-in-library.jpg"
 hero_alt: "Person som reflekterar kring autism och Asperger"
 ---
 

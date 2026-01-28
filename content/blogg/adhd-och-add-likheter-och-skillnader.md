@@ -6,7 +6,7 @@ description: "En genomgång av hur ADHD i ouppmärksam form (ADD) skiljer sig fr
 meta_title: "ADHD och ADD – likheter och skillnader | Rikta Psykiatri"
 meta_description: "Vad som skiljer ADHD kombinerad form från ouppmärksam form (ADD) och hur skillnaderna märks i vardagen."
 meta_keywords: "ADHD, ADD, ouppmärksam form, kombinerad form, symtom, skillnader"
-hero: "/img/adhd-medicinering.jpg"
+hero: "/img/psychology-books.jpg"
 hero_alt: "Samtal om ADHD och ADD"
 ---
 

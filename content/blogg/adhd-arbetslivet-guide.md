@@ -7,7 +7,7 @@ layout: "blogg/single"
 meta_title: "Den ultimata guiden för att hantera ADHD i arbetslivet"
 meta_description: "Den ultimata guiden för att hantera ADHD i arbetslivet. Att leva med ADHD i arbetslivet kan innebära unika utmaningar oavsett om du arbetar på kontor, inom vården, i ett praktiskt hantverkaryrke eller i en kreativ bransch."
 description: "Den ultimata guiden för att hantera ADHD i arbetslivet. Att leva med ADHD i arbetslivet kan innebära unika utmaningar oavsett om du arbetar på kontor, inom vården, i ett praktiskt hantverkaryrke eller i en kreativ bransch."
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/open-office-land-scape.jpg"
 hero_alt: "Samtal i arbetsmiljö"
 draft: false
 ---

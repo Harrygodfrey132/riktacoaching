@@ -6,7 +6,7 @@ description: "How clutter, overwhelm, and ADHD interact, and practical ways to d
 meta_title: "Disorganisation and ADHD | Design Spaces That Work"
 meta_description: "Learn how clutter and ADHD reinforce each other, the difference between clutter in motion and clutter in stasis, and practical design strategies to create supportive spaces."
 meta_keywords: "ADHD, disorganisation, clutter, home design, executive function, sensory load"
-hero: "/img/psychology-books.jpg"
+hero: "/img/minimalistic-stock-bakground.jpg"
 hero_alt: "Stack of books and decor arranged neatly on a shelf"
 draft: false
 ---

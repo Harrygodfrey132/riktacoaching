@@ -6,7 +6,7 @@ description: "En guide till ADHD-medicinering för vuxna: läkemedelsval, titrer
 meta_title: "ADHD-medicinering för vuxna | Rikta Psykiatri"
 meta_description: "Så fungerar ADHD-medicinering för vuxna: läkemedelstrappan, titrering, vanliga biverkningar, juridik och viktiga vardagsfaktorer."
 meta_keywords: "ADHD medicinering vuxna, metylfenidat, lisdexamfetamin, atomoxetin, guanfacin, titrering, ADHD behandling"
-hero: "/img/adhd-medicinering.jpg"
+hero: "/img/psychologist-smiling.jpg"
 hero_alt: "Vuxen som får stöd vid ADHD-medicinering"
 ---
 

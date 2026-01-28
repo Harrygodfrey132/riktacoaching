@@ -9,7 +9,7 @@ meta_keywords: "ADHD strategier, mikro-uppgifter, body doubling, timers, brown n
 og_title: "10 ADHD-strategier som faktiskt gör skillnad"
 og_description: "Tio strategier som tar hänsyn till ADHD-hjärnan på riktigt – med steg-för-steg-förslag du kan testa redan idag."
 draft: false
-hero: "/img/adhd-coachning.jpg"
+hero: "/img/coach-planning-with-coachee.jpg"
 hero_alt: "Coachning med fokus på ADHD-strategier"
 ---
 # 10 ADHD-strategier som faktiskt gör skillnad (inte bara “skaffa en kalender”)

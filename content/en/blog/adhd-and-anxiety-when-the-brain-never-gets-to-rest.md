@@ -7,7 +7,7 @@ description: "Why anxiety is so common in ADHD, how the cycle forms, and how pra
 meta_title: "ADHD and anxiety | When the brain never gets to rest"
 meta_description: "Understand how ADHD and anxiety reinforce each other, why generic advice fails, and how coaching and structure can reduce daily pressure."
 meta_keywords: "ADHD and anxiety, ADHD anxiety cycle, ADHD emotional regulation, ADHD coaching, ADHD burnout"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/scenic-background-picture.jpg"
 hero_alt: "Person discussing anxiety and focus with a clinician"
 draft: false
 ---

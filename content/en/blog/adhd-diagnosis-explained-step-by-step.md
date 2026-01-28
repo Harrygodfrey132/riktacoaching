@@ -7,7 +7,7 @@ description: "A clear, step-by-step guide to how ADHD is diagnosed: who is invol
 meta_title: "ADHD diagnosis explained | Step-by-step guide"
 meta_description: "Understand how ADHD diagnosis really works: the stages of assessment, who diagnoses, what tests are used, differential diagnosis, and what happens after a diagnosis."
 meta_keywords: "ADHD diagnosis, ADHD assessment, ADHD evaluation, step by step, adult ADHD diagnosis, ADHD testing"
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/young-adult-male-meeting-computer.jpg"
 hero_alt: "Clinician discussing an assessment with a client"
 draft: false
 ---

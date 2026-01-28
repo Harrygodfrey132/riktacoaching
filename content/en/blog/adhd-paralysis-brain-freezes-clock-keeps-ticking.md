@@ -6,7 +6,7 @@ description: "What ADHD paralysis feels like, why it strikes so hard, and experi
 meta_title: "ADHD Paralysis | Why Your Brain Freezes and How to Move Again"
 meta_description: "Understand ADHD paralysis, why decision overload leads to feeling stuck, and how to work with your brain—with support from Rikta Psychiatry."
 meta_keywords: "ADHD paralysis, executive dysfunction, decision fatigue, analysis paralysis, ADHD coaching, Rikta Psychiatry"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/calendar.jpg"
 hero_alt: "Smiling therapist sitting in a comfortable office"
 draft: false
 ---

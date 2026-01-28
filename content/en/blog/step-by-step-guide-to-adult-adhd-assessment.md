@@ -6,7 +6,7 @@ description: "A clear walkthrough of what happens in an adult ADHD assessment—
 meta_title: "Step-by-step guide to adult ADHD assessment | Rikta Psychiatry"
 meta_description: "Learn what to expect in an adult ADHD assessment: screening forms, clinical interview, DIVA and rating scales, third-party input, medical review, and your final feedback report."
 meta_keywords: "adult ADHD assessment, ADHD evaluation, DIVA interview, ADHD diagnosis adults, psychiatric assessment, feedback report"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/doctor-and-computer.jpg"
 hero_alt: "Specialist meeting an adult client with focus and calm"
 draft: false
 ---

@@ -6,7 +6,7 @@ description: "Många vuxna lever med diffusa kroppsliga stressymtom - hjärtklap
 meta_title: "Stress, ångest och ADHD hos vuxna | Rikta Psykiatri"
 meta_description: "När stress och ångest känns i kroppen kan det hänga ihop med ADHD hos vuxna. Läs om symtom, mekanismer och när utredning kan vara aktuell."
 meta_keywords: "stress och ångest ADHD, vuxen ADHD symtom, stressymtom i kroppen, ångest och ADHD, utmattning ADHD"
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/frustrated-woman-by-computer.jpg"
 hero_alt: "Person som reflekterar över stress och ångest"
 ---
 

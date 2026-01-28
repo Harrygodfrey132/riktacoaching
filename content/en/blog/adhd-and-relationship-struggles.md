@@ -7,7 +7,7 @@ layout: "blogg/single"
 meta_title: "ADHD and Relationship Struggles | Understanding and Practical Guidance"
 meta_description: "ADHD can strain romantic relationships, friendships, and family connections. Learn how executive function, attention, emotional regulation, and impulsivity affect relationships and how to build healthier connections."
 description: "How ADHD impacts relationships and practical steps to build healthier connections in romance, friendships, and family life."
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/two-young-adult-women.jpg"
 hero_alt: "Therapist and clients in conversation"
 draft: false
 ---

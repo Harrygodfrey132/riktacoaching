@@ -7,7 +7,7 @@ description: "Why school can feel like a daily fight for teenagers with ADHD, ho
 meta_title: "Teenagers with ADHD at school | Why it feels like a daily battle"
 meta_description: "Understand why school is so hard for teenagers with ADHD, how time and emotions are affected, and how coaching can reduce pressure and improve outcomes."
 meta_keywords: "teen ADHD, ADHD school struggles, ADHD teenagers, ADHD coaching teens, ADHD exams"
-hero: "/img/studying-picture-with-pen.jpg"
+hero: "/img/children-in-class-room.jpg"
 hero_alt: "Teen studying with a notebook and pen"
 draft: false
 ---

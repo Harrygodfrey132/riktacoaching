@@ -6,7 +6,7 @@ description: "A clear, practical guide to what ADHD coaching does, what it doesn
 meta_title: "What ADHD Coaching Really Is (and Isn’t) | Rikta Psychiatry"
 meta_description: "Understand what ADHD coaching covers, what it doesn’t, how it differs from therapy and tutoring, and how to spot a good coach."
 meta_keywords: "ADHD coaching, executive function, time blindness, motivation, accountability, therapy vs coaching"
-hero: "/img/swedish-man-jumping.jpg"
+hero: "/img/girl-talking-to-coach.jpg"
 hero_alt: "Person mid-jump from a platform with open sky"
 draft: false
 ---

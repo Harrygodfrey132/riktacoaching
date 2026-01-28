@@ -6,7 +6,7 @@ description: "Hur ADHD-medicinering fungerar för barn och ungdomar, vilka läke
 meta_title: "ADHD-medicinering för barn och ungdomar | Rikta Psykiatri"
 meta_description: "Fakta om ADHD-medicinering för barn och ungdomar: effekter, vanliga läkemedel, uppföljning och praktiska vardagstips."
 meta_keywords: "ADHD medicinering barn, ADHD läkemedel ungdom, metylfenidat, lisdexamfetamin, atomoxetin, guanfacin, ADHD behandling"
-hero: "/img/adhd-medicinering.jpg"
+hero: "/img/doctor-and-computer.jpg"
 hero_alt: "Ungdom som får stöd vid ADHD-medicinering"
 ---
 

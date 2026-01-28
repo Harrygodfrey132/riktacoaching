@@ -6,7 +6,7 @@ description: "Praktisk, jordnära guide för föräldrar till barn med ADHD – 
 meta_title: "ADHD: guide för dig som förälder | Rikta Psykiatri"
 meta_description: "Konkreta råd och strategier för vardagen med ett barn som har ADHD: morgonrutiner, läxläsning, konflikter, fritid, sömn, mat, skärmtid och självkänsla."
 meta_keywords: "ADHD barn, föräldraguiden ADHD, ADHD tips barn, rutiner ADHD, konflikter ADHD, skärmtid ADHD, sömn ADHD barn"
-hero: "/img/child-smiling-with-pillow.jpg"
+hero: "/img/father-playing-with-daughter.jpg"
 hero_alt: "Förälder och barn som kramas och ler"
 ---
 

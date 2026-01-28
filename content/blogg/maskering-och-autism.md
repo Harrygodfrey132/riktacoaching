@@ -6,7 +6,7 @@ description: "Maskering syftar på strategier autistiska personer använder för
 meta_title: "Maskering och autism | Rikta Psykiatri"
 meta_description: "Maskering inom autism: varför det uppstår, hur vanligt det är, kliniska konsekvenser och strategier för att minska behovet av maskering."
 meta_keywords: "maskering autism, autism maskering, autistisk burnout, autismdiagnos, sensoriska anpassningar, autism stöd"
-hero: "/img/child-playing.jpg"
+hero: "/img/boy-playing-in-playground.jpg"
 hero_alt: "Barn som leker utomhus"
 draft: false
 ---

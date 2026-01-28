@@ -14,6 +14,7 @@ credentials:
   - "Former Medical Director of Specialist Services, Southern Health NHS Foundation Trust"
   - "Member of the Royal College of Psychiatrists"
 availability: "Virtual consultations with optional Stockholm visits"
+image: "/img/Alice.png"
 ---
 
 Dr Simon Hill is a consultant psychiatrist whose career spans specialist neuropsychiatry services, memory clinics, and community mental health teams. He has led multidisciplinary services supporting adults with ADHD alongside cognitive or neurological conditions.

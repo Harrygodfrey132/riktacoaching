@@ -6,7 +6,7 @@ description: "Practical, professional guidance to build natural eye contact—co
 meta_title: "Improve eye contact with practice and comfort | Rikta Psychiatry"
 meta_description: "Step-by-step guidance to make eye contact feel natural, with practical experiments and a three-session coaching plan you can adapt."
 meta_keywords: "eye contact, social skills, coaching plan, communication, practice"
-hero: "/img/psychologist-smiling.jpg"
+hero: "/img/woman-smiling-picture.jpg"
 hero_alt: "Warm, friendly conversation setting"
 draft: false
 ---

@@ -6,7 +6,7 @@ description: "A walkthrough of how inattentive ADHD (ADD) differs from the combi
 meta_title: "ADHD and ADD – similarities and differences | Rikta Psychiatry"
 meta_description: "What separates combined ADHD from the inattentive presentation (ADD) and how those differences show up day to day."
 meta_keywords: "ADHD, ADD, inattentive type, combined type, symptoms, differences"
-hero: "/img/adhd-medicinering.jpg"
+hero: "/img/psychology-books.jpg"
 hero_alt: "Conversation about ADHD and ADD"
 draft: false
 ---

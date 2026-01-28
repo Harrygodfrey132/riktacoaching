@@ -14,6 +14,7 @@ credentials:
   - "Former Clinical Director for Central & North Norfolk, NSFT"
   - "Member of the Royal College of Psychiatrists"
 availability: "Virtual consultations and monthly Gothenburg clinics"
+image: "/img/Antonia.png"
 ---
 
 Dr Joanna Woodger is a consultant psychiatrist specialising in women’s mental health and neurodiversity across the adult lifespan. She is particularly experienced in assessing ADHD when symptoms have been masked for years by high achievement, burnout, or hormonal transitions.

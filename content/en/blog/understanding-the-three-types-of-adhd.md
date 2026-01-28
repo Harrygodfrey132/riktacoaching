@@ -8,7 +8,7 @@ meta_keywords: "ADHD types, inattentive ADHD, hyperactive-impulsive ADHD, combin
 url: "/en/blog/understanding-the-three-types-of-adhd/"
 translationKey: "understanding-the-three-types-of-adhd"
 description: "A concise explainer of the three ADHD presentations—what defines each, how they’re diagnosed, and why knowing the type helps you tailor support."
-hero: "/img/psychology-books.jpg"
+hero: "/img/hero.jpg"
 hero_alt: "Stack of books and a pair of glasses on a desk"
 ---
 

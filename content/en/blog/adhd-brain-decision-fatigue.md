@@ -6,7 +6,7 @@ description: "Why decision fatigue hits so hard with ADHD, how it shows up in da
 meta_title: "ADHD and Decision Fatigue | Why Simple Choices Feel Hard"
 meta_description: "Understand why decision fatigue is common with ADHD, see real-life examples, and learn practical routines to reduce choice overload."
 meta_keywords: "ADHD, decision fatigue, executive function, time blindness, working memory, routines"
-hero: "/img/teenager-worried.jpg"
+hero: "/img/struggling-young-adult-male-student.jpg"
 hero_alt: "Child thinking while studying at a desk"
 draft: false
 ---

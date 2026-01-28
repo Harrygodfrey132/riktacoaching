@@ -6,7 +6,7 @@ description: "A structured, professional guide to understanding why we delay and
 meta_title: "How to stop procrastinating for good | Rikta Psychiatry"
 meta_description: "Professional guidance on why procrastination happens and ten practical steps to start, deliver, and finish work with less friction."
 meta_keywords: "procrastination, executive function, productivity, start tasks, finish tasks, ADHD strategies"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/psychologist-smiling.jpg"
 hero_alt: "Focused work session at a desk"
 draft: false
 ---

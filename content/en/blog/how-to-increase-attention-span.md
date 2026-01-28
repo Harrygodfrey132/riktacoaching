@@ -6,7 +6,7 @@ description: "Evidence-informed ways to rebuild focus in a distracted world—ha
 meta_title: "How to increase your attention span | Rikta Psychiatry"
 meta_description: "Professional guidance on improving attention span: reduce distraction, train focus progressively, use meditation, movement, and better routines to sustain deep work."
 meta_keywords: "attention span, focus, distraction, meditation, phone-free time, deep work, ADHD"
-hero: "/img/woman-reading.jpg"
+hero: "/img/studying-picture-with-pen.jpg"
 hero_alt: "Person focused on reading a book"
 draft: false
 ---

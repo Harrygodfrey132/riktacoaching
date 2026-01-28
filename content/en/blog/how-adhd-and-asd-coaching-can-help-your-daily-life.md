@@ -6,7 +6,7 @@ description: "How coaching for ADHD and ASD can make daily life more manageable 
 meta_title: "How ADHD and ASD coaching can help your daily life | Rikta Psychiatry"
 meta_description: "Practical guide to ADHD and ASD coaching: structure, strategies, sensory balance, and everyday support."
 meta_keywords: "ADHD coaching, ASD coaching, autism coach, executive functions, sensory load, daily strategies"
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/coach-and-coachee.jpg"
 hero_alt: "Psychologist working at a computer"
 draft: false
 ---

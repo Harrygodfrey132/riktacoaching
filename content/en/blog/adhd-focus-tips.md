@@ -6,7 +6,7 @@ description: "Practical, evidence-informed ADHD focus strategies: cognitive tool
 meta_title: "ADHD focus tips | Science-backed strategies that work"
 meta_description: "Struggling to stay focused? Learn practical ADHD focus tips—CBT-style reframes, distraction-proofing, Pomodoro, time blocking, movement, mindfulness, and sleep routines."
 meta_keywords: "ADHD focus tips, concentration, executive function, time management, Pomodoro, time blocking, mindfulness, working memory, sleep hygiene"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/woman-reading.jpg"
 hero_alt: "Psychologist working at a computer and planning"
 draft: false
 ---

@@ -6,7 +6,7 @@ description: "Early signs of ADHD in adults and how they show up in everyday lif
 meta_title: "Early signs of ADHD in adults | Rikta Psychiatry"
 meta_description: "Summary of early signs of adult ADHD: concentration, organisation, restlessness, impulsivity, emotions, and when to seek an assessment."
 meta_keywords: "adult ADHD, early signs ADHD, concentration difficulties adults, executive function, impulsivity, emotional dysregulation"
-hero: "/img/adhd-coachning.jpg"
+hero: "/img/young-adult-woman-on-walk.jpg"
 hero_alt: "Coach talking with a client"
 draft: false
 ---
