@@ -10,6 +10,35 @@ og_description: "Meet our specialist psychiatrists, psychologists, and operation
 description: "Get to know the specialist team behind Rikta Psychiatry and how we build safe, evidence-based care."
 ---
 
+<section class="who-hero who-section">
+  <div class="container">
+    <div class="who-grid hero-grid">
+      <div class="hero-copy animate-up">
+        <nav class="hero-breadcrumb" aria-label="Navigation">
+          <ol>
+            <li><a href="/en/">Home</a></li>
+            <li>About Rikta</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">The Rikta team</span>
+        <h1>Specialists who meet you where you are</h1>
+        <p class="lead">
+          We are a close-knit team of psychiatrists, psychologists, and coordinators who combine medical precision with genuine care.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary coral" href="#team">Meet our team</a>
+          <a class="btn link" href="/en/contact/">Contact us</a>
+        </div>
+      </div>
+      <div class="hero-media animate-up">
+        <div class="hero-image">
+          <img src="/img/iStock-1461189339.jpg" alt="Conversation between two people in a calm setting">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{< rawhtml >}}
 <section class="team-feature who-section" id="team">
   <div class="container">
@@ -70,35 +99,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
   </div>
 </section>
 {{< /rawhtml >}}
-
-<section class="who-hero who-section">
-  <div class="container">
-    <div class="who-grid hero-grid">
-      <div class="hero-copy animate-up">
-        <nav class="hero-breadcrumb" aria-label="Navigation">
-          <ol>
-            <li><a href="/en/">Home</a></li>
-            <li>About Rikta</li>
-          </ol>
-        </nav>
-        <span class="eyebrow">The Rikta team</span>
-        <h1>Specialists who meet you where you are</h1>
-        <p class="lead">
-          We are a close-knit team of psychiatrists, psychologists, and coordinators who combine medical precision with genuine care.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary coral" href="#team">Meet our team</a>
-          <a class="btn link" href="/en/contact/">Contact us</a>
-        </div>
-      </div>
-      <div class="hero-media animate-up">
-        <div class="hero-image">
-          <img src="/img/iStock-1461189339.jpg" alt="Conversation between two people in a calm setting">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="who-intro who-section" id="values">
   <div class="container">

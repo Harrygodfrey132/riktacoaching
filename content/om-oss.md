@@ -10,6 +10,35 @@ og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledar
 description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad vård med värme."
 ---
 
+<section class="who-hero who-section">
+  <div class="container">
+    <div class="who-grid hero-grid">
+      <div class="hero-copy animate-up">
+        <nav class="hero-breadcrumb" aria-label="Navigering">
+          <ol>
+            <li><a href="/">Hem</a></li>
+            <li>Om Rikta</li>
+          </ol>
+        </nav>
+        <span class="eyebrow">Teamet bakom Rikta</span>
+        <h1>Specialistpsykiatri med hjärta och struktur</h1>
+        <p class="lead">
+          Vi är ett sammansvetsat team av psykiatriker, psykologer och koordinatorer som kombinerar medicinsk precision med genuint engagemang.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary coral" href="#team">Möt vårt team</a>
+          <a class="btn link" href="/kontakt">Kontakta oss</a>
+        </div>
+      </div>
+      <div class="hero-media animate-up">
+        <div class="hero-image">
+          <img src="/img/iStock-1461189339.jpg" alt="Samtal mellan två personer i lugn miljö">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{< rawhtml >}}
 <section class="team-feature who-section" id="team">
   <div class="container">
@@ -71,35 +100,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
   </div>
 </section>
 {{< /rawhtml >}}
-
-<section class="who-hero who-section">
-  <div class="container">
-    <div class="who-grid hero-grid">
-      <div class="hero-copy animate-up">
-        <nav class="hero-breadcrumb" aria-label="Navigering">
-          <ol>
-            <li><a href="/">Hem</a></li>
-            <li>Om Rikta</li>
-          </ol>
-        </nav>
-        <span class="eyebrow">Teamet bakom Rikta</span>
-        <h1>Specialistpsykiatri med hjärta och struktur</h1>
-        <p class="lead">
-          Vi är ett sammansvetsat team av psykiatriker, psykologer och koordinatorer som kombinerar medicinsk precision med genuint engagemang.
-        </p>
-        <div class="hero-actions">
-          <a class="btn primary coral" href="#team">Möt vårt team</a>
-          <a class="btn link" href="/kontakt">Kontakta oss</a>
-        </div>
-      </div>
-      <div class="hero-media animate-up">
-        <div class="hero-image">
-          <img src="/img/iStock-1461189339.jpg" alt="Samtal mellan två personer i lugn miljö">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="who-intro who-section" id="snapshot">
   <div class="container">
