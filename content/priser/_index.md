@@ -118,7 +118,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <div class="bg-blue-50" style="border-top: 1px solid rgba(0, 0, 0, 0.06); padding: 0.75rem 1rem; margin-top: 0.5rem;">
             <strong>Ingår utan extra kostnad:</strong>
-            <em> 1 st Coachingsessioner (90 min totalt)</em>
+            <em> 1 st Coachingsession (45 min)</em>
           </div>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
