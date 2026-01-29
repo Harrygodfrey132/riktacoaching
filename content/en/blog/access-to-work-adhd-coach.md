@@ -1,21 +1,21 @@
 ---
-title: "Access to Work and ADHD/Autism: A Clear Guide for Adults Who Need Support at Work"
+title: "Access to Work and ADHD or Autism: A Clear Guide for Adults Who Need Support at Work"
 translationKey: "access-to-work-adhd-coach"
 date: 2026-01-28
-description: "A clear, practical guide to Access to Work for adults with ADHD and/or autism: who can apply, what support is funded, and how the process works."
-meta_title: "Access to Work for ADHD and Autism | Practical Guide for Adults"
-meta_description: "Learn how Access to Work helps adults with ADHD and autism at work. See eligibility, funding examples, application steps, and how coaching support works."
+description: "A clear, practical guide to Access to Work for adults with ADHD or autism: who can apply, what support is funded, and how the process works."
+meta_title: "Access to Work for ADHD or Autism | Practical Guide for Adults"
+meta_description: "Learn how Access to Work helps adults with ADHD or autism at work. See eligibility, funding examples, application steps, and how coaching support works."
 meta_keywords: "Access to Work ADHD, Access to Work autism, workplace support, ADHD autism coaching funding, UK disability grant"
 hero: "/img/access-to-work-uk.png"
 hero_alt: "Professional coach speaking with a client"
 draft: false
 ---
 
-# Access to Work and ADHD/autism: a clear guide for adults who need support at work
+# Access to Work and ADHD or autism: a clear guide for adults who need support at work
 
-If ADHD and/or autism makes your working life harder – whether that’s staying focused, managing time, handling social demands, or finishing tasks – there’s government help available. It’s called Access to Work, and it can fund practical support to make your job easier. It won’t affect your benefits, and you don’t have to pay it back.
+If ADHD or autism makes your working life harder – whether that’s staying focused, managing time, handling social demands, or finishing tasks – there’s government help available. It’s called Access to Work, and it can fund practical support to make your job easier. It won’t affect your benefits, and you don’t have to pay it back.
 
-This guide is for people with ADHD and/or autism who are working or about to start work and want to understand what Access to Work is, how to apply, and what it can offer.
+This guide is for people with ADHD or autism who are working or about to start work and want to understand what Access to Work is, how to apply, and what it can offer.
 
 ---
 
@@ -23,7 +23,7 @@ This guide is for people with ADHD and/or autism who are working or about to sta
 
 Access to Work is a UK government grant for people who have a disability or health condition that affects their ability to work. ADHD and autism both qualify. The grant can fund support that goes beyond what your employer is legally required to provide.
 
-You might use it to pay for an ADHD/autism coach, assistive technology, sensory-friendly adjustments, or even help getting to and from work if transport is a barrier. The goal is to help you do your job without unnecessary obstacles.
+You might use it to pay for an ADHD or autism coach, assistive technology, sensory-friendly adjustments, or even help getting to and from work if transport is a barrier. The goal is to help you do your job without unnecessary obstacles.
 
 ---
 
@@ -41,7 +41,7 @@ You must be:
 - Living in England, Scotland, or Wales
 - In paid work (or have a job offer or be about to start self-employment)
 
-That includes part-time work, freelance, self-employment, or zero-hours contracts. If you work, and ADHD and/or autism is making it harder, you can apply.
+That includes part-time work, freelance, self-employment, or zero-hours contracts. If you work, and ADHD or autism is making it harder, you can apply.
 
 ---
 
@@ -49,7 +49,7 @@ That includes part-time work, freelance, self-employment, or zero-hours contract
 
 Support is personalised. You’ll talk to someone about your work, your challenges, and what might help. From there, they’ll offer suggestions and funding.
 
-Here’s what people with ADHD and/or autism often get:
+Here’s what people with ADHD or autism often get:
 
 - Coaching. Weekly sessions with an ADHD/autism-informed coach to help with organisation, time management, sensory load, workload, and motivation. This is often the most valuable support.
 - Tech and tools. Software to manage tasks, remember deadlines, break down projects, or reduce sensory overload. Think of mind-mapping apps, calendar tools, or noise-reducing equipment.
@@ -98,11 +98,11 @@ You can choose how much you tell your employer. Some people say, “I’ve appli
 
 Nothing. It’s a grant, not a loan. It doesn’t affect benefits or taxes. If you’ve been in your job for less than six weeks – or if you’re self-employed – Access to Work usually covers the full cost of support.
 
-If you’ve been in your job longer, your employer may have to pay a small contribution, depending on the size of the company. But in most ADHD/autism-related cases (coaching, software, support workers), the full cost is covered.
+If you’ve been in your job longer, your employer may have to pay a small contribution, depending on the size of the company. But in most ADHD or autism-related cases (coaching, software, support workers), the full cost is covered.
 
 ---
 
-## Tips if you have ADHD and/or autism
+## Tips if you have ADHD or autism
 
 - Start small. Just visit the GOV.UK page and read one section.
 - Don’t aim for perfect answers – describe real issues you face.
@@ -118,7 +118,7 @@ Many people with ADHD or autism worry they’re not “struggling enough” to d
 
 Once you've been approved and your support has been confirmed, it’s time to put it into action. This is where we come in.
 
-We help ADHD and autistic adults make the most of their Access to Work grant. From choosing the right coaching to setting up tools and creating a practical routine that works for your brain, we’ll help you start strong and stay consistent.
+We help adults with ADHD or autism make the most of their Access to Work grant. From choosing the right coaching to setting up tools and creating a practical routine that works for your brain, we’ll help you start strong and stay consistent.
 
 Come and speak to us as soon as you’re approved, and we’ll help you design your plan. Email us today and let’s get started.
 
@@ -138,7 +138,7 @@ We’ve created a simple, clear Access to Work guide to help you:
   <div class="simple-form-card">
     <div>
       <span class="eyebrow">Access to Work guide</span>
-      <h2>Get the ADHD/Autism Access to Work guide</h2>
+      <h2>Get the ADHD or Autism Access to Work guide</h2>
       <p>Enter your email and we’ll send the guide straight away.</p>
     </div>
     <form
@@ -151,7 +151,7 @@ We’ve created a simple, clear Access to Work guide to help you:
       method="POST"
       accept-charset="UTF-8"
     >
-      <input type="hidden" name="description" value="Requested the ADHD/Autism Access to Work guide (EN).">
+      <input type="hidden" name="description" value="Requested the ADHD or Autism Access to Work guide (EN).">
       <input type="hidden" name="leadSource" value="Access to Work guide EN">
       <input type="hidden" name="nameSuffix" value="Rtw">
       <label for="atw-guide-first-name">First name</label>
