@@ -103,7 +103,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
   <div class="container">
     <header class="section-header animate-up">
       <h2>Our core values</h2>
-      <p class="muted">How our team puts your care first.</p>
     </header>
     <div class="value-grid">
       <article class="value-card animate-up">

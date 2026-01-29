@@ -4610,6 +4610,11 @@ nav a.cta:active{
   font-size: clamp(30px, 4vw, 42px);
 }
 
+.who-values .section-header{
+  margin: 0 auto clamp(12px, 3vw, 24px);
+  gap: 8px;
+}
+
 .value-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

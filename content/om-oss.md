@@ -127,7 +127,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
   <div class="container">
     <header class="section-header animate-up">
       <h2>Våra kärnvärden</h2>
-      <p class="muted">Den värdegrund vår vård vilar på.</p>
     </header>
     <div class="value-grid">
       <article class="value-card animate-up">
