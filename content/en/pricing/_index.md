@@ -63,8 +63,8 @@ og_description: "Compare coaching pricing and service availability before you bo
         <article class="card card--pro">
           <span class="card-label">Adult &amp; Professional</span>
           <span class="card-badge">Fundable via Access to Work</span>
-          <h3>Workplace Performance Coaching</h3>
-          <p class="meta">Digital &bull; 50 min</p>
+          <h3>Adult ADHD Coaching</h3>
+          <p class="meta">Workplace-focused &bull; Digital &bull; 50 min</p>
           <p class="price">&pound;100</p>
           <ul class="details">
             <li>Overcoming workplace barriers: meetings, emails, deadlines.</li>

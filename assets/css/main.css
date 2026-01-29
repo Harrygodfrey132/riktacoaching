@@ -4037,15 +4037,45 @@ main.hero.screen, section.screen {
 /* ===== Priser: horizontal cards (no number badge) ===== */
 #priser .pricing{
   display: grid;
-  grid-template-columns: repeat(3, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
   margin-top: 24px;
 }
 @media (max-width: 1100px){
-  #priser .pricing{ grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+  #priser .pricing{ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  #priser .card{
+    max-width: none;
+    width: 100%;
+  }
 }
 @media (max-width: 700px){
+  #priser .container{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
   #priser .pricing{ grid-template-columns: 1fr; }
+  #priser .pricing{ justify-items: stretch; }
+  #priser{ padding-top: 36px; padding-bottom: 48px; }
+  #priser .pricing{ margin-top: 16px; gap: 16px; }
+  #priser .pricing-group{ margin-top: 28px; }
+  #priser .pricing-group:first-of-type{ margin-top: 20px; }
+  #priser .pricing-group > .meta{
+    margin: 6px 0 8px;
+    font-size: 14px;
+  }
+  #priser .card{
+    max-width: none;
+    width: 100%;
+    padding: 20px 18px;
+    border-radius: 0;
+  }
+  #priser .pricing-group h3{
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  #priser .card h3{
+    font-size: 18px;
+  }
 }
 
 #priser h2{
@@ -4070,7 +4100,6 @@ main.hero.screen, section.screen {
   flex-direction: column;
   gap: 8px;
   flex: 1 1 280px;
-  max-width: 320px;
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
