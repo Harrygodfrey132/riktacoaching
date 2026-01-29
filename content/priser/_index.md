@@ -199,8 +199,10 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </span>
         </div>
         <p class="payment-total">Uppskattat totalbelopp att betala: <span data-payment-display="total"></span></p>
-        <p class="payment-disclosure">Detta är ett representativt exempel och en grov uppskattning för illustration. Det är inte ett bindande erbjudande om kredit och innebär ingen garanti för beviljad finansiering. Finansiering erbjuds av en oberoende extern finansieringspartner och förutsätter kreditprövning. Räntefria villkor gäller endast om alla betalningar sker i tid. Sena eller uteblivna betalningar kan medföra att ränta tillkommer. Avgifter tillkommer, inklusive en engångs startavgift och en månatlig administrationsavgift. Slutliga villkor bekräftas efter kreditprövning.</p>
-        <p class="payment-warning"><strong>Att låna kostar pengar.</strong> Om du inte kan betala tillbaka i tid kan detta påverka din kreditvärdighet och möjligheten att få kredit i framtiden.</p>
+        <div class="payment-legal">
+          <p class="payment-disclosure">Detta är ett representativt exempel och en grov uppskattning för illustration. Det är inte ett bindande erbjudande om kredit och innebär ingen garanti för beviljad finansiering. Finansiering erbjuds av en oberoende extern finansieringspartner och förutsätter kreditprövning. Räntefria villkor gäller endast om alla betalningar sker i tid. Sena eller uteblivna betalningar kan medföra att ränta tillkommer. Avgifter tillkommer, inklusive en engångs startavgift och en månatlig administrationsavgift. Slutliga villkor bekräftas efter kreditprövning.</p>
+          <p class="payment-warning"><strong>Att låna kostar pengar.</strong> Om du inte kan betala tillbaka i tid kan detta påverka din kreditvärdighet och möjligheten att få kredit i framtiden.</p>
+        </div>
       </div>
     </div>
   </div>
