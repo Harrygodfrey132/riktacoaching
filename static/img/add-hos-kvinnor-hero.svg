@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Abstrakt illustration av fokus och inre lugn</title>
+  <desc id="desc">Mjuka former, varma och svala gradienter samt cirklar som symboliserar uppmaerksamhet och balans.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4F7FF"/>
+      <stop offset="0.55" stop-color="#FFF4F2"/>
+      <stop offset="1" stop-color="#F7F3ED"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1140 220) rotate(120) scale(520 420)">
+      <stop offset="0" stop-color="#F9D6CF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#F9D6CF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D93C7"/>
+      <stop offset="1" stop-color="#EC4E5B"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" rx="48" fill="url(#bg)"/>
+  <rect width="1600" height="900" rx="48" fill="url(#glow)"/>
+  <circle cx="330" cy="590" r="240" fill="#F1E8E3"/>
+  <circle cx="1340" cy="620" r="210" fill="#E6EEF9"/>
+  <circle cx="1150" cy="220" r="110" fill="#F7DFDA"/>
+  <path d="M460 650 C520 560 610 520 700 510 C790 500 880 520 950 570 C1020 620 1100 640 1180 620" stroke="#2E4A66" stroke-opacity="0.18" stroke-width="6" stroke-linecap="round"/>
+  <path d="M520 580 C610 470 770 430 910 470" stroke="#EC4E5B" stroke-opacity="0.18" stroke-width="8" stroke-linecap="round"/>
+  <g transform="translate(720 250)">
+    <circle cx="80" cy="180" r="140" fill="#FFFFFF" stroke="#E1E8F2" stroke-width="3"/>
+    <circle cx="80" cy="180" r="92" fill="none" stroke="url(#ring)" stroke-width="4" stroke-dasharray="8 10"/>
+    <circle cx="80" cy="180" r="48" fill="#EC4E5B" fill-opacity="0.12"/>
+    <circle cx="80" cy="180" r="16" fill="#EC4E5B"/>
+    <path d="M36 94 C60 50 114 50 138 94" stroke="#2E4A66" stroke-opacity="0.22" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g opacity="0.6">
+    <circle cx="520" cy="320" r="10" fill="#2E4A66"/>
+    <circle cx="560" cy="300" r="6" fill="#2E4A66"/>
+    <circle cx="600" cy="320" r="8" fill="#2E4A66"/>
+    <circle cx="640" cy="300" r="5" fill="#2E4A66"/>
+  </g>
+</svg>
