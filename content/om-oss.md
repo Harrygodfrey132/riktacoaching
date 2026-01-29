@@ -17,7 +17,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         <nav class="hero-breadcrumb" aria-label="Navigering">
           <ol>
             <li><a href="/">Hem</a></li>
-            <li>Om Rikta</li>
+            <li>Vårt team</li>
           </ol>
         </nav>
         <span class="eyebrow">Teamet bakom Rikta</span>

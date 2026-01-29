@@ -17,7 +17,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
         <nav class="hero-breadcrumb" aria-label="Navigation">
           <ol>
             <li><a href="/en/">Home</a></li>
-            <li>About Rikta</li>
+            <li>Our Team</li>
           </ol>
         </nav>
         <span class="eyebrow">MEET THE TEAM</span>
