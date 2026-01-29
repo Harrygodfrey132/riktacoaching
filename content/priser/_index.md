@@ -78,19 +78,14 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
-      </div>
-    </div>
-    <div class="pricing-group">
-      <h3>NPF-terapi</h3>
-      <div class="pricing">
         <article class="card">
-          <h3>NPF-terapi</h3>
+          <h3>Föräldracoaching</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">1900 kr</p>
+          <p class="price">1050 kr</p>
           <ul class="details">
-            <li>Stöd kring känsloreglering, socialt samspel och hantering av sensoriska intryck.</li>
-            <li>Praktiska strategier för vardagsstruktur och beteendeförändring.</li>
-            <li>Genomförs av legitimerad psykolog med erfarenhet av både ADHD och autism.</li>
+            <li>Stöd i föräldrarollen för att navigera vardagen och förstå ditt barns specifika behov vid ADHD och/eller autism.</li>
+            <li>Verktyg för lågaffektivt bemötande och praktiska strategier för att minska konflikter och skapa lugn i hemmet.</li>
+            <li>Hållbart föräldraskap: Hjälp att balansera ditt barns behov av stöd med din egen återhämtning och ork.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
