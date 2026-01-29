@@ -4066,6 +4066,44 @@ main.hero.screen, section.screen {
   gap: 8px;
 }
 
+#priser .card-label{
+  display: inline-block;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #475569;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+#priser .card-badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.08), rgba(59, 130, 246, 0.12));
+  color: #0f172a;
+  font-size: 12px;
+  font-weight: 700;
+  border: 1px solid rgba(29, 78, 216, 0.18);
+}
+
+#priser .card--pro{
+  background: linear-gradient(180deg, #f8fbff 0%, #f3f7ff 100%);
+  border: 1px solid rgba(29, 78, 216, 0.16);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+#priser .card--pro .meta{
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+#priser .card--pro .price{
+  color: #1d4ed8;
+}
+
 #priser .card h3{
   font-size: 20px;
   margin: 0;

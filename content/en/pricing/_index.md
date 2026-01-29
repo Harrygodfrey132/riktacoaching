@@ -31,57 +31,47 @@ og_description: "Compare coaching pricing and service availability before you bo
   <div class="container">
     <h2>Prices</h2>
     <div class="pricing-group">
-      <h3>ADHD &amp; autism coaching</h3>
+      <h3>Youth &amp; Family (&pound;70/session)</h3>
       <div class="pricing">
-        <article class="card">
-          <h3>ADHD coaching</h3>
+        <article class="card card--youth">
+          <span class="card-label">Youth &amp; Family</span>
+          <h3>ADHD Youth Coaching (Ages 4–21)</h3>
           <p class="meta">Digital &bull; 45 min</p>
           <p class="price">&pound;70</p>
-          <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
-            <li>Support to build structure and routines that improve focus and productivity.</li>
-            <li>Help managing impulse control and time management to reduce stress and reach goals.</li>
+            <li>School routines and homework systems that fit attention spans.</li>
+            <li>Home-life structure for mornings, evenings, and transitions.</li>
           </ul>
           <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">&rarr;</span></a>
         </article>
-        <article class="card">
-          <h3>Autism coaching</h3>
+        <article class="card card--youth">
+          <span class="card-label">Youth &amp; Family</span>
+          <h3>Autism Youth Coaching (Ages 5–21)</h3>
           <p class="meta">Digital &bull; 45 min</p>
           <p class="price">&pound;70</p>
-          <p class="price-note">45 min session + 15 min coach preparation after your session. 45 minutes is the optimal concentration window.</p>
           <ul class="details">
-            <li>Support to understand and manage social situations and communication.</li>
-            <li>Help to create strategies for handling sensory input and changes in everyday life.</li>
+            <li>Social transitions: classroom to playground, school to home.</li>
+            <li>Sensory strategies for noise, crowds, and routine changes.</li>
           </ul>
           <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>
     <div class="pricing-group">
-      <h3>NPF therapy</h3>
+      <h3>Professional &amp; Adult (&pound;100/session)</h3>
       <div class="pricing">
-        <article class="card">
-          <h3>NPF therapy</h3>
-          <p class="meta">Unavailable in the UK</p>
-          <p class="price">Unavailable</p>
+        <article class="card card--pro">
+          <span class="card-label">Adult &amp; Professional</span>
+          <span class="card-badge">Fundable via Access to Work</span>
+          <h3>Workplace Performance Coaching</h3>
+          <p class="meta">Digital &bull; 50 min</p>
+          <p class="price">&pound;100</p>
           <ul class="details">
-            <li>NPF therapy is not available for UK residents.</li>
+            <li>Overcoming workplace barriers: meetings, emails, deadlines.</li>
+            <li>Executive function support: planning, prioritisation, follow-through.</li>
+            <li>Grant compliance assistance: paperwork, evidence, and AtW updates.</li>
           </ul>
-          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
-        </article>
-      </div>
-    </div>
-    <div class="pricing-group">
-      <h3>Medication pricing</h3>
-      <div class="pricing">
-        <article class="card">
-          <h3>Medication support</h3>
-          <p class="meta">Unavailable in the UK</p>
-          <p class="price">Unavailable</p>
-          <ul class="details">
-            <li>Medication services are not available for UK residents.</li>
-          </ul>
-          <a class="text-cta" href="/en/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
+          <a class="text-cta" href="/en/contact/">Book <span aria-hidden="true">&rarr;</span></a>
         </article>
       </div>
     </div>
