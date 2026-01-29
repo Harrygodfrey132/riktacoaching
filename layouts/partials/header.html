@@ -20,6 +20,7 @@
     {{ $autismTest := cond $isEn "en/autism-test/" "/autism-test/" }}
     {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
     {{ $aboutPath := cond $isEn "en/about-us/" "/om-oss/" }}
+    {{ $workplaceFunding := cond $isEn "https://riktapsykiatri.se/en/access-to-work-adhd-coach/" "" }}
     {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}
     {{ $loginLink := "https://riktacoaching.kaddio.com" }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
@@ -47,6 +48,7 @@
               <li><a href="{{ $coachingAutism | relLangURL }}">ASD coaching</a></li>
             </ul>
           </li>
+          {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}">Workplace Funding</a></li>{{ end }}
           <li><a href="{{ $knowledgePath | relLangURL }}">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}">Our Team</a></li>
           <li><a class="cta" href="{{ $loginLink }}">Log in</a></li>
@@ -144,6 +146,8 @@
               <li><a href="{{ $coachingAutism | relLangURL }}" onclick="closeMobileMenu()">ASD coaching</a></li>
             </ul>
           </li>
+          <li><a href="{{ $workplaceFunding }}" onclick="closeMobileMenu()">Workplace Funding</a></li>
+          {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}" onclick="closeMobileMenu()">Workplace Funding</a></li>{{ end }}
           <li><a href="{{ $knowledgePath | relLangURL }}" onclick="closeMobileMenu()">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">Our Team</a></li>
           <li><a class="cta" href="{{ $loginLink }}" onclick="closeMobileMenu()">Log in</a></li>
