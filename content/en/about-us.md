@@ -136,3 +136,13 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
     </div>
   </div>
 </section>
+
+<section class="who-cta who-section" id="connect">
+  <div class="container">
+    <div class="cta-content animate-up">
+      <h2>Ready to take the next step?</h2>
+      <p>We guide you through every step of the process. Book an assessment call or contact us for more information.</p>
+      <a class="btn primary coral" href="/en/contact/">Contact Rikta Psychiatry</a>
+    </div>
+  </div>
+</section>

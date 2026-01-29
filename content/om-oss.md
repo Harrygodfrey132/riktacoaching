@@ -45,7 +45,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
     <header class="team-feature__header">
       <p class="eyebrow">Vårt team</p>
       <h1>Specialister som möter dig där du är</h1>
-      <p class="muted">Ett tvärprofessionellt team av psykiatriker och psykologer som kombinerar erfarenhet från NHS och svensk specialistvård.</p>
     </header>
 
     <div class="clinician-grid clinician-grid--feature">
