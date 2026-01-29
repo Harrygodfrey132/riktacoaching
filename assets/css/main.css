@@ -8714,6 +8714,12 @@ body.newsletter-popup--locked {
   line-height: 1.65;
 }
 
+/* Force eyebrow to stay in Inter even when inside blog-simple */
+.blog-simple .blog-simple__eyebrow {
+  font-family: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
 .blog-simple__shell {
   max-width: 1000px;
   margin: 0 auto;
@@ -8766,6 +8772,7 @@ body.newsletter-popup--locked {
   font-weight: 500;
 }
 
+.blog-simple p.blog-simple__lead,
 .blog-simple__lead {
   margin: 0 0 6px;
   font-size: 21px;
