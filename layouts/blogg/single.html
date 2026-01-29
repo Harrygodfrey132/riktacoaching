@@ -18,15 +18,6 @@
           {{ with .Params.description }}
             <p class="blog-simple__lead">{{ . }}</p>
           {{ end }}
-          <ul class="blog-simple__meta">
-            <li>
-              {{ if $isEn }}Published{{ else }}Publicerad{{ end }}
-              <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-            </li>
-            <li>
-              {{ if $isEn }}Read time{{ else }}Lästid{{ end }} {{ .ReadingTime }} min
-            </li>
-          </ul>
         </div>
       </header>
       <div class="blog-simple__divider"></div>
