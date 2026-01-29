@@ -4065,7 +4065,7 @@ main.hero.screen, section.screen {
   flex-direction: column;
   gap: 8px;
   flex: 1 1 280px;
-  max-width: 340px;
+  max-width: 320px;
 }
 
 #priser .card-label{
