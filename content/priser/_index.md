@@ -89,6 +89,19 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
         </article>
+        <article class="card">
+          <h3>Stresshantering (NPF-fokus)</h3>
+          <p class="meta">Friskvård för en hållbar vardag • 45 min</p>
+          <p class="price">850 kr / 2 400 kr</p>
+          <ul class="details">
+            <li>Stressfysiologi vid NPF: Förstå hur din hjärna reagerar på belastning, sensoriska intryck och exekutiva krav.</li>
+            <li>Verktyg för återhämtning: Strategier som faktiskt fungerar för den neurodivergenta hjärnan, bortom standardsvaren.</li>
+            <li>Friskvårdsberättigat: Vi utfärdar giltiga kvitton för ditt friskvårdsbidrag (Epassi m.fl.).</li>
+            <li><strong>Välj paket:</strong> 1 tillfälle (850 kr): Kartläggning och omedelbara verktyg.</li>
+            <li><strong>Välj paket:</strong> 3 tillfällen (2 400 kr): Fullständig plan: Fysiologi, Balans &amp; Framtidsplan.</li>
+          </ul>
+          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+        </article>
       </div>
     </div>
     <div class="pricing-group">
