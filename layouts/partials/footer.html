@@ -23,7 +23,11 @@
       <a class="footer-logo" href="{{ $logoHref | relURL }}">
         <img src="{{ $logo }}" alt="{{ .Site.Title }}">
       </a>
-      <a class="footer-email" data-email-user="info" data-email-domain="riktapsykiatri.se">info@riktapsykiatri.se</a>
+      {{ if $isEn }}
+        <a class="footer-email" data-email-user="info" data-email-domain="riktacoaching.com">info@riktacoaching.com</a>
+      {{ else }}
+        <a class="footer-email" data-email-user="info" data-email-domain="riktapsykiatri.se">info@riktapsykiatri.se</a>
+      {{ end }}
       <div class="footer-company">Riktningskliniken AB</div>
       {{ if $isEn }}
         <div class="footer-worldwide">We offer ADHD and autism coaching worldwide.</div>
