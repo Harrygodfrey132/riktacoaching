@@ -8951,6 +8951,62 @@ body.newsletter-popup--locked {
   z-index: 1;
 }
 
+.author-box{
+  margin-top: 32px;
+  padding-top: 24px;
+}
+
+.author-divider{
+  height: 1px;
+  background: #e5e7eb;
+  border: 0;
+  margin: 0 0 18px;
+}
+
+.author-meta{
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.author-avatar{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #f1f5f9;
+}
+
+.author-kicker{
+  margin: 0 0 4px;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+.author-name{
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.author-title{
+  margin: 2px 0 6px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 600;
+}
+
+.author-bio{
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
 .blog-simple__body h2 {
   margin: 52px 0 16px;
   font-size: 27px;

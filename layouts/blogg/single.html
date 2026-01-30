@@ -24,6 +24,22 @@
       <div class="blog-simple__body">
         {{ $body | safeHTML }}
       </div>
+      {{ if $isEn }}
+        <div class="author-box">
+          <div class="author-divider"></div>
+          <div class="author-meta">
+            <img class="author-avatar" src="/img/Philip.png" alt="Philip Lindersten headshot">
+            <div class="author-text">
+              <p class="author-kicker">WRITTEN BY</p>
+              <p class="author-name">Philip Lindersten</p>
+              <p class="author-title">CEO &amp; Founder of Rikta Psykiatri | M.Sc. Medical Science, Karolinska Institutet</p>
+              <p class="author-bio">
+                Philip is a psychiatric researcher focusing on treatment-resistant depression and precision mental health. He is currently developing data-driven support systems for ADHD and Autism at Rikta Psykiatri. His work has been recognized by the Karolinska Institutet Department of Clinical Neuroscience.
+              </p>
+            </div>
+          </div>
+        </div>
+      {{ end }}
       <section class="blog-simple__cta">
         <div class="blog-simple__cta-grid">
           <div>
