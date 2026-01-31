@@ -80,19 +80,20 @@ export async function onRequest(context) {
     }
 
     const kaddioResult = await sendKaddioLead(normalized, env);
-    if (!kaddioResult.ok) {
-      return withCors(json({ error: kaddioResult.warning || 'Could not submit the form just now.' }, 502));
-    }
-
     const zohoResult = await sendZohoLeadSafe(normalized);
+
+    const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
+    if (!kaddioResult.ok && !zohoResult.ok) {
+      return withCors(json({ error: warnings[0] || 'Could not submit the form just now.' }, 502));
+    }
 
     const response = {
       ok: true,
       clientId: kaddioResult.clientId,
-      updatedCustomProperties: kaddioResult.updatedCustomProperties
+      updatedCustomProperties: kaddioResult.updatedCustomProperties,
+      delivery: kaddioResult.ok ? 'kaddio' : 'zoho'
     };
 
-    const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
     if (warnings.length) {
       response.warning = warnings.join(' | ');
     }
