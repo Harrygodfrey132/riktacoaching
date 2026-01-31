@@ -13,21 +13,33 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
       <h1>Hitta rätt kunskap direkt</h1>
       <div class="knowledge-paths">
         <a class="knowledge-pill" href="/adhd-test/">
-          <div>
+          <div class="pill-icon" aria-hidden="true">
+            <img src="/img/icon-search.svg" alt="" loading="lazy">
+          </div>
+          <div class="pill-copy">
             <strong>Jag misstänker att jag har en diagnos</strong>
             <small>Länkar till självtester, screeningverktyg och guider</small>
+            <span class="pill-cta">Starta självtester</span>
           </div>
         </a>
         <a class="knowledge-pill" href="/adhd-utredning/">
-          <div>
+          <div class="pill-icon" aria-hidden="true">
+            <img src="/img/icon-brain-check.svg" alt="" loading="lazy">
+          </div>
+          <div class="pill-copy">
             <strong>Jag har precis fått min diagnos</strong>
             <small>Information om medicinering, rättigheter och nästa steg</small>
+            <span class="pill-cta">Se nästa steg</span>
           </div>
         </a>
         <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
-          <div>
+          <div class="pill-icon" aria-hidden="true">
+            <img src="/img/icon-heart-outline.svg" alt="" loading="lazy">
+          </div>
+          <div class="pill-copy">
             <strong>Jag är förälder eller partner</strong>
             <small>Råd om skola, anhörigstöd och vardag</small>
+            <span class="pill-cta">Utforska anhörigstöd</span>
           </div>
         </a>
       </div>

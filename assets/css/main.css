@@ -9051,7 +9051,7 @@ body.newsletter-popup--locked {
 
 .knowledge-pill{
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 60px 1fr;
   gap: 12px;
   padding: 14px 16px;
   background: #ffffff;
@@ -9061,12 +9061,34 @@ body.newsletter-popup--locked {
   text-decoration: none;
   box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
   transition: border-color 140ms ease, box-shadow 160ms ease, transform 140ms ease;
+  align-items: center;
 }
 
 .knowledge-pill:hover{
   border-color: rgba(55, 116, 171, 0.45);
   box-shadow: 0 12px 28px rgba(55, 116, 171, 0.14);
   transform: translateY(-1px);
+}
+
+.knowledge-pill .pill-icon{
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: #eef4fb;
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.06);
+}
+
+.knowledge-pill .pill-icon img{
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+.knowledge-pill .pill-copy{
+  display: grid;
+  gap: 2px;
 }
 
 .knowledge-pill strong{
@@ -9076,6 +9098,25 @@ body.newsletter-popup--locked {
 
 .knowledge-pill small{
   color: #4b5563;
+}
+
+.knowledge-pill .pill-cta{
+  margin-top: 4px;
+  font-weight: 600;
+  color: #3565a9;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.knowledge-pill .pill-cta::after{
+  content: "→";
+  font-size: 16px;
+}
+
+.knowledge-pill:hover .pill-cta{
+  color: #274c85;
 }
 
 .knowledge-search{
