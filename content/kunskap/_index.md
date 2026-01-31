@@ -32,7 +32,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         </a>
       </div>
       <div class="knowledge-search">
-        <input type="search" placeholder="Sök...">
+        <input type="search" placeholder="Sök på t.ex. Elvanse, skolan eller utmattning...">
       </div>
     </header>
 
