@@ -10,41 +10,56 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
 <section class="knowledge-page" id="top">
   <div class="container">
     <header class="knowledge-hero">
-      <h1>Hitta rätt kunskap direkt</h1>
-      <div class="knowledge-paths">
-        <a class="knowledge-pill" href="/adhd-test/">
-          <div class="pill-icon" aria-hidden="true">
-            <img src="/img/icon-search.svg" alt="" loading="lazy">
+      <div class="knowledge-hero__inner">
+        <div class="knowledge-hero__copy">
+          <p class="knowledge-hero__eyebrow">Kunskap &amp; guider</p>
+          <h1>Hitta rätt kunskap direkt</h1>
+          <p class="knowledge-hero__lead">Snabb väg till självtester, guider och verktyg för ADHD och autism – med stöd och kontakt bara ett klick bort.</p>
+          <div class="knowledge-hero__actions">
+            <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
+            <a class="btn secondary" href="/kunskap/arkiv/">Visa alla artiklar</a>
           </div>
-          <div class="pill-copy">
-            <strong>Jag misstänker att jag har en diagnos</strong>
-            <small>Länkar till självtester, screeningverktyg och guider</small>
-            <span class="pill-cta">Starta självtester</span>
+        </div>
+        <div class="knowledge-hero__panel">
+          <div class="knowledge-search">
+            <span class="knowledge-search__icon" aria-hidden="true">
+              <img src="/img/icon-search.svg" alt="">
+            </span>
+            <input type="search" placeholder="Sök på t.ex. Elvanse, skolan eller utmattning..." aria-label="Sök i kunskapsartiklar">
           </div>
-        </a>
-        <a class="knowledge-pill" href="/adhd-utredning/">
-          <div class="pill-icon" aria-hidden="true">
-            <img src="/img/icon-brain-check.svg" alt="" loading="lazy">
+          <div class="knowledge-paths">
+            <a class="knowledge-pill" href="/adhd-test/">
+              <div class="pill-icon" aria-hidden="true">
+                <img src="/img/icon-search.svg" alt="" loading="lazy">
+              </div>
+              <div class="pill-copy">
+                <strong>Jag misstänker att jag har en diagnos</strong>
+                <small>Länkar till självtester, screeningverktyg och guider</small>
+                <span class="pill-cta">Starta självtester</span>
+              </div>
+            </a>
+            <a class="knowledge-pill" href="/adhd-utredning/">
+              <div class="pill-icon" aria-hidden="true">
+                <img src="/img/icon-brain-check.svg" alt="" loading="lazy">
+              </div>
+              <div class="pill-copy">
+                <strong>Jag har precis fått min diagnos</strong>
+                <small>Information om medicinering, rättigheter och nästa steg</small>
+                <span class="pill-cta">Se nästa steg</span>
+              </div>
+            </a>
+            <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
+              <div class="pill-icon" aria-hidden="true">
+                <img src="/img/icon-heart-outline.svg" alt="" loading="lazy">
+              </div>
+              <div class="pill-copy">
+                <strong>Jag är förälder eller partner</strong>
+                <small>Råd om skola, anhörigstöd och vardag</small>
+                <span class="pill-cta">Utforska anhörigstöd</span>
+              </div>
+            </a>
           </div>
-          <div class="pill-copy">
-            <strong>Jag har precis fått min diagnos</strong>
-            <small>Information om medicinering, rättigheter och nästa steg</small>
-            <span class="pill-cta">Se nästa steg</span>
-          </div>
-        </a>
-        <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
-          <div class="pill-icon" aria-hidden="true">
-            <img src="/img/icon-heart-outline.svg" alt="" loading="lazy">
-          </div>
-          <div class="pill-copy">
-            <strong>Jag är förälder eller partner</strong>
-            <small>Råd om skola, anhörigstöd och vardag</small>
-            <span class="pill-cta">Utforska anhörigstöd</span>
-          </div>
-        </a>
-      </div>
-      <div class="knowledge-search">
-        <input type="search" placeholder="Sök på t.ex. Elvanse, skolan eller utmattning...">
+        </div>
       </div>
     </header>
 
