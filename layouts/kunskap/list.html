@@ -9,41 +9,43 @@
       </div>
     </header>
     {{ .Content }}
-    {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-    {{ $sectionKey := cond $isEn "blog" "blogg" }}
-    {{ $sectionPage := .Site.GetPage "section" $sectionKey }}
-    {{ $posts := slice }}
-    {{ if $sectionPage }}
-      {{ $posts = $sectionPage.RegularPages }}
-      {{ $posts = sort $posts "Date" "desc" }}
-    {{ end }}
-    {{ if gt (len $posts) 0 }}
-      <section id="archive" class="knowledge-grid knowledge-grid--all">
-        <div class="container">
-          <div class="knowledge-heading">
-            <h2>{{ if $isEn }}All articles{{ else }}Alla artiklar{{ end }}</h2>
-            <p>{{ if $isEn }}All from our ADHD and autism guides in one place.{{ else }}Allt från våra ADHD- och autismguider på ett ställe.{{ end }}</p>
-          </div>
-          <div class="knowledge-cards knowledge-cards--list">
-            {{ range $posts }}
-              <article class="blog-card knowledge-blog-card">
-                <a class="blog-card__link" href="{{ .RelPermalink }}">
-                  <div class="blog-card__media">
-                    <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
-                  </div>
-                  <div class="blog-card__body">
-                    <h2>{{ .Title }}</h2>
-                    <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
-                    <div class="blog-card__meta">
-                      {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
+    {{ if .Params.show_archive }}
+      {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+      {{ $sectionKey := cond $isEn "blog" "blogg" }}
+      {{ $sectionPage := .Site.GetPage "section" $sectionKey }}
+      {{ $posts := slice }}
+      {{ if $sectionPage }}
+        {{ $posts = $sectionPage.RegularPages }}
+        {{ $posts = sort $posts "Date" "desc" }}
+      {{ end }}
+      {{ if gt (len $posts) 0 }}
+        <section id="archive" class="knowledge-grid knowledge-grid--all">
+          <div class="container">
+            <div class="knowledge-heading">
+              <h2>{{ if $isEn }}All articles{{ else }}Alla artiklar{{ end }}</h2>
+              <p>{{ if $isEn }}All from our ADHD and autism guides in one place.{{ else }}Allt från våra ADHD- och autismguider på ett ställe.{{ end }}</p>
+            </div>
+            <div class="knowledge-cards knowledge-cards--list">
+              {{ range $posts }}
+                <article class="blog-card knowledge-blog-card">
+                  <a class="blog-card__link" href="{{ .RelPermalink }}">
+                    <div class="blog-card__media">
+                      <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
                     </div>
-                  </div>
-                </a>
-              </article>
-            {{ end }}
+                    <div class="blog-card__body">
+                      <h2>{{ .Title }}</h2>
+                      <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
+                      <div class="blog-card__meta">
+                        {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              {{ end }}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      {{ end }}
     {{ end }}
   </main>
 {{ end }}

@@ -11,7 +11,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
   <div class="container">
     <header class="knowledge-hero">
       <h1>Hitta rätt kunskap direkt</h1>
-      <p>Snabba vägar till guider, screeningverktyg och praktiska råd för ADHD och autism.</p>
       <div class="knowledge-paths">
         <a class="knowledge-pill" href="/adhd-test/">
           <div>
@@ -40,8 +39,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     <div class="knowledge-grid">
       <section class="fast-track">
         <header>
-          <h2>Snabbspår (Hög intent)</h2>
-          <p>Snabba svar och uppskattad lästid.</p>
+          <h2>Snabbspår</h2>
         </header>
         <div class="fast-track-table">
           <div class="fast-row">
@@ -78,7 +76,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
             <div class="fast-desc">
               <div>
                 <strong>Medicinbiverkningar</strong>
-                <small>Länkar till medicinbiverkningar och säkerhet</small>
+                <small>Länkar till mediciner och biverkningar</small>
               </div>
             </div>
             <div class="fast-time">10 min</div>
@@ -120,7 +118,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     </div>
 
     <div class="knowledge-archive">
-      <a class="btn archive" href="#archive">Bläddra i hela artikelarkivet →</a>
+      <a class="btn archive" href="/kunskap/arkiv/">Bläddra i hela artikelarkivet →</a>
     </div>
 
     <div class="knowledge-footer">
