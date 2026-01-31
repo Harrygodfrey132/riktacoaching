@@ -6,40 +6,128 @@ meta_description: "Samlad kunskap om ADHD, autism och neuropsykiatriskt stöd. T
 summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykiatriska diagnoser."
 ---
 
-<section class="news-section">
+<section class="knowledge-page" id="top">
   <div class="container">
-    <div class="news-heading">
-      <h2>Kunskap som gör skillnad</h2>
-      <p>Här lyfter vi de senaste artiklarna från Rikta Psykiatris team - ett samlat stöd för dig som vill förstå mer om ADHD och autism.</p>
+    <header class="knowledge-hero">
+      <h1>Hitta rätt kunskap direkt</h1>
+      <p>Snabba vägar till guider, screeningverktyg och praktiska råd för ADHD och autism.</p>
+      <div class="knowledge-paths">
+        <a class="knowledge-pill" href="/adhd-test/">
+          <span class="pill-icon">🔍</span>
+          <div>
+            <strong>Jag misstänker att jag har en diagnos</strong>
+            <small>Länkar till självtester, screeningverktyg och guider</small>
+          </div>
+        </a>
+        <a class="knowledge-pill" href="/adhd-utredning/">
+          <span class="pill-icon">🧠</span>
+          <div>
+            <strong>Jag har precis fått min diagnos</strong>
+            <small>Information om medicinering, rättigheter och nästa steg</small>
+          </div>
+        </a>
+        <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
+          <span class="pill-icon">👥</span>
+          <div>
+            <strong>Jag är förälder eller partner</strong>
+            <small>Råd om skola, anhörigstöd och vardag</small>
+          </div>
+        </a>
+      </div>
+      <div class="knowledge-search">
+        <input type="search" placeholder="Sök...">
+        <span class="search-hint">Hitta rätt direkt (inga 404:or)</span>
+      </div>
+    </header>
+
+    <div class="knowledge-grid">
+      <section class="fast-track">
+        <header>
+          <h2>Snabbspår (Hög intent)</h2>
+          <p>Snabba svar och uppskattad lästid.</p>
+        </header>
+        <div class="fast-track-table">
+          <div class="fast-row">
+            <div class="fast-desc">
+              <span class="fast-icon">🧭</span>
+              <div>
+                <strong>Testa dig själv</strong>
+                <small>Länkar till självtester och screening</small>
+              </div>
+            </div>
+            <div class="fast-time">5 min</div>
+            <a class="fast-link" href="/adhd-test/" aria-label="Gå till test">→</a>
+          </div>
+          <div class="fast-row">
+            <div class="fast-desc">
+              <span class="fast-icon">🌊</span>
+              <div>
+                <strong>Autismnivåer</strong>
+                <small>Översikt av autismnivåer och stöd</small>
+              </div>
+            </div>
+            <div class="fast-time">8 min</div>
+            <a class="fast-link" href="/kunskap/autism-guide/" aria-label="Gå till autismguide">→</a>
+          </div>
+          <div class="fast-row">
+            <div class="fast-desc">
+              <span class="fast-icon">💼</span>
+              <div>
+                <strong>Priser utredning</strong>
+                <small>Länkar till priser för utredning</small>
+              </div>
+            </div>
+            <div class="fast-time">2 min</div>
+            <a class="fast-link" href="/priser/" aria-label="Gå till priser">→</a>
+          </div>
+          <div class="fast-row">
+            <div class="fast-desc">
+              <span class="fast-icon">💊</span>
+              <div>
+                <strong>Medicinbiverkningar</strong>
+                <small>Länkar till medicinbiverkningar och säkerhet</small>
+              </div>
+            </div>
+            <div class="fast-time">10 min</div>
+            <a class="fast-link" href="/adhd-utredning/medicinering/" aria-label="Gå till medicininfo">→</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="practical">
+        <header>
+          <h2>Praktiskt &amp; Vardag</h2>
+          <p>Expandera vid behov, undvik textväggar.</p>
+        </header>
+        <details open>
+          <summary>Pengar &amp; Rättigheter</summary>
+          <ul>
+            <li><a href="/blogg/adhd-arbetslivet-guide/">ADHD på jobbet</a></li>
+            <li><a href="/priser/">Prislista och finansiering</a></li>
+            <li><a href="/en/access-to-work-adhd-coach/">Access to Work (EN)</a></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Mediciner &amp; Hälsa</summary>
+          <ul>
+            <li><a href="/adhd-utredning/medicinering/">ADHD-medicinering</a></li>
+            <li><a href="/blogg/adhd-medicinering-for-barn-och-ungdomar/">Mediciner för barn och ungdomar</a></li>
+            <li><a href="/blogg/stress-angest-adhd-vuxna/">Stress &amp; ångest vid ADHD</a></li>
+          </ul>
+        </details>
+        <details>
+          <summary>Relationer &amp; Utbrändhet</summary>
+          <ul>
+            <li><a href="/blogg/adhd-och-autism-coachning-for-foraldrar/">Stöd för föräldrar</a></li>
+            <li><a href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">Föräldraguide</a></li>
+            <li><a href="/blogg/stress-angest-adhd-vuxna/">Stresshantering</a></li>
+          </ul>
+        </details>
+      </section>
     </div>
-    <div class="news-cards">
-      <article class="news-card">
-        <div class="news-hero news-hero--twilight">
-          <div class="news-meta">
-            <span>Guide</span>
-          </div>
-          <h3>ADHD-guiden</h3>
-        </div>
-        <div class="news-body">
-          <span class="news-tag"></span>
-          <h4>Din kompletta guide till ADHD</h4>
-          <a class="news-link" href="/kunskap/adhd-dygnet-runt/">Utforska hela ADHD-guiden</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="news-hero news-hero--rose">
-          <div class="news-meta">
-            <span>Guide</span>
-            <span></span>
-          </div>
-          <h3>Autism-guiden</h3>
-        </div>
-        <div class="news-body">
-          <span class="news-tag"></span>
-          <h4>Din kompletta guide till autism</h4>
-          <a class="news-link" href="/kunskap/autism-guide/">Utforska hela autism-guiden</a>
-        </div>
-      </article>
+
+    <div class="knowledge-footer">
+      <a class="btn secondary" href="#top">Tillbaka till toppen</a>
     </div>
   </div>
 </section>
