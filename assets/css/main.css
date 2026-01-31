@@ -9022,8 +9022,8 @@ body.newsletter-popup--locked {
 
 /* ===== Kunskap page redesign ===== */
 .knowledge-page{
-  background: #f8f8f6;
-  padding: 48px 0 64px;
+  background: #ffffff;
+  padding: 42px 0 60px;
 }
 
 .knowledge-hero{
@@ -9054,17 +9054,17 @@ body.newsletter-popup--locked {
   grid-template-columns: auto 1fr;
   gap: 12px;
   padding: 14px 16px;
-  background: linear-gradient(180deg, #ffffff 0%, #f1f4f9 100%);
-  border: 1px solid rgba(15, 23, 42, 0.12);
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
   border-radius: 14px;
   color: #0f172a;
   text-decoration: none;
-  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
 }
 
 .knowledge-pill:hover{
-  border-color: rgba(29, 78, 216, 0.25);
-  box-shadow: 0 12px 28px rgba(29, 78, 216, 0.12);
+  border-color: rgba(55, 116, 171, 0.35);
+  box-shadow: 0 10px 24px rgba(55, 116, 171, 0.12);
 }
 
 .knowledge-pill strong{
@@ -9079,8 +9079,7 @@ body.newsletter-popup--locked {
 .knowledge-search{
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 6px;
+  margin-top: 10px;
 }
 
 .knowledge-search input{
@@ -9090,11 +9089,6 @@ body.newsletter-popup--locked {
   padding: 10px 14px;
   background: #fff;
   font-size: 14px;
-}
-
-.knowledge-search .search-hint{
-  font-size: 13px;
-  color: #6b7280;
 }
 
 .knowledge-grid{
@@ -9111,7 +9105,7 @@ body.newsletter-popup--locked {
   background: #ffffff;
   border-radius: 14px;
   border: 1px solid rgba(15, 23, 42, 0.08);
-  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
   padding: 18px;
 }
 
@@ -9191,6 +9185,31 @@ body.newsletter-popup--locked {
   margin-top: 20px;
   display: flex;
   justify-content: flex-end;
+}
+
+.knowledge-archive{
+  margin: 18px 0 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn.archive{
+  border: 1px solid rgba(15, 23, 42, 0.16);
+  background: transparent;
+  color: #0f172a;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  transition: border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.btn.archive:hover,
+.btn.archive:focus-visible{
+  border-color: rgba(55, 116, 171, 0.5);
+  box-shadow: 0 10px 24px rgba(55, 116, 171, 0.12);
+  transform: translateY(-1px);
 }
 
 .blog-simple__body h2 {

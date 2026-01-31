@@ -18,18 +18,18 @@
       {{ $posts = sort $posts "Date" "desc" }}
     {{ end }}
     {{ if gt (len $posts) 0 }}
-      <section class="knowledge-grid knowledge-grid--all">
+      <section id="archive" class="knowledge-grid knowledge-grid--all">
         <div class="container">
           <div class="knowledge-heading">
             <h2>{{ if $isEn }}All articles{{ else }}Alla artiklar{{ end }}</h2>
-            <p>{{ if $isEn }}Everything from our ADHD and autism guides in one place.{{ else }}Allt från våra ADHD- och autismguider på ett ställe.{{ end }}</p>
+            <p>{{ if $isEn }}All from our ADHD and autism guides in one place.{{ else }}Allt från våra ADHD- och autismguider på ett ställe.{{ end }}</p>
           </div>
           <div class="knowledge-cards knowledge-cards--list">
             {{ range $posts }}
               <article class="blog-card knowledge-blog-card">
                 <a class="blog-card__link" href="{{ .RelPermalink }}">
                   <div class="blog-card__media">
-                  <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
+                    <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
                   </div>
                   <div class="blog-card__body">
                     <h2>{{ .Title }}</h2>

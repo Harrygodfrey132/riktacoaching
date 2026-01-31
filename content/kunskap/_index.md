@@ -34,7 +34,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
       </div>
       <div class="knowledge-search">
         <input type="search" placeholder="Sök...">
-        <span class="search-hint">Hitta rätt direkt (inga 404:or)</span>
       </div>
     </header>
 
@@ -118,6 +117,10 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
           </ul>
         </details>
       </section>
+    </div>
+
+    <div class="knowledge-archive">
+      <a class="btn archive" href="#archive">Bläddra i hela artikelarkivet →</a>
     </div>
 
     <div class="knowledge-footer">
