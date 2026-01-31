@@ -9067,11 +9067,6 @@ body.newsletter-popup--locked {
   box-shadow: 0 12px 28px rgba(29, 78, 216, 0.12);
 }
 
-.pill-icon{
-  font-size: 28px;
-  line-height: 1;
-}
-
 .knowledge-pill strong{
   display: block;
   margin: 0 0 2px;
@@ -9154,10 +9149,6 @@ body.newsletter-popup--locked {
   grid-template-columns: auto 1fr;
   gap: 10px;
   align-items: center;
-}
-
-.fast-icon{
-  font-size: 20px;
 }
 
 .fast-desc small{

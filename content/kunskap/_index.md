@@ -6,6 +6,7 @@ meta_description: "Samlad kunskap om ADHD, autism och neuropsykiatriskt stöd. T
 summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykiatriska diagnoser."
 ---
 
+{{< rawhtml >}}
 <section class="knowledge-page" id="top">
   <div class="container">
     <header class="knowledge-hero">
@@ -13,21 +14,18 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
       <p>Snabba vägar till guider, screeningverktyg och praktiska råd för ADHD och autism.</p>
       <div class="knowledge-paths">
         <a class="knowledge-pill" href="/adhd-test/">
-          <span class="pill-icon">🔍</span>
           <div>
             <strong>Jag misstänker att jag har en diagnos</strong>
             <small>Länkar till självtester, screeningverktyg och guider</small>
           </div>
         </a>
         <a class="knowledge-pill" href="/adhd-utredning/">
-          <span class="pill-icon">🧠</span>
           <div>
             <strong>Jag har precis fått min diagnos</strong>
             <small>Information om medicinering, rättigheter och nästa steg</small>
           </div>
         </a>
         <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
-          <span class="pill-icon">👥</span>
           <div>
             <strong>Jag är förälder eller partner</strong>
             <small>Råd om skola, anhörigstöd och vardag</small>
@@ -49,7 +47,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <div class="fast-track-table">
           <div class="fast-row">
             <div class="fast-desc">
-              <span class="fast-icon">🧭</span>
               <div>
                 <strong>Testa dig själv</strong>
                 <small>Länkar till självtester och screening</small>
@@ -60,7 +57,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
           </div>
           <div class="fast-row">
             <div class="fast-desc">
-              <span class="fast-icon">🌊</span>
               <div>
                 <strong>Autismnivåer</strong>
                 <small>Översikt av autismnivåer och stöd</small>
@@ -71,7 +67,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
           </div>
           <div class="fast-row">
             <div class="fast-desc">
-              <span class="fast-icon">💼</span>
               <div>
                 <strong>Priser utredning</strong>
                 <small>Länkar till priser för utredning</small>
@@ -82,7 +77,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
           </div>
           <div class="fast-row">
             <div class="fast-desc">
-              <span class="fast-icon">💊</span>
               <div>
                 <strong>Medicinbiverkningar</strong>
                 <small>Länkar till medicinbiverkningar och säkerhet</small>
@@ -131,3 +125,4 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     </div>
   </div>
 </section>
+{{< /rawhtml >}}
