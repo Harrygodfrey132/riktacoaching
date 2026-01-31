@@ -97,35 +97,42 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         </div>
       </section>
 
-      <section class="practical">
+      <section class="crisis">
         <header>
-          <h2>Praktiskt &amp; Vardag</h2>
-          <p>Expandera vid behov, undvik textväggar.</p>
+          <h2>Coaching för specifika utmaningar</h2>
+          <p>Fyra vanliga kriser vi hjälper patienter att lösa, med snabb väg till rätt stöd.</p>
         </header>
-        <details open>
-          <summary>Pengar &amp; Rättigheter</summary>
-          <ul>
-            <li><a href="/blogg/adhd-arbetslivet-guide/">ADHD på jobbet</a></li>
-            <li><a href="/priser/">Prislista och finansiering</a></li>
-            <li><a href="/en/access-to-work-adhd-coach/">Access to Work (EN)</a></li>
-          </ul>
-        </details>
-        <details>
-          <summary>Mediciner &amp; Hälsa</summary>
-          <ul>
-            <li><a href="/adhd-utredning/medicinering/">ADHD-medicinering</a></li>
-            <li><a href="/blogg/adhd-medicinering-for-barn-och-ungdomar/">Mediciner för barn och ungdomar</a></li>
-            <li><a href="/blogg/stress-angest-adhd-vuxna/">Stress &amp; ångest vid ADHD</a></li>
-          </ul>
-        </details>
-        <details>
-          <summary>Relationer &amp; Utbrändhet</summary>
-          <ul>
-            <li><a href="/blogg/adhd-och-autism-coachning-for-foraldrar/">Stöd för föräldrar</a></li>
-            <li><a href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">Föräldraguide</a></li>
-            <li><a href="/blogg/stress-angest-adhd-vuxna/">Stresshantering</a></li>
-          </ul>
-        </details>
+        <div class="crisis-grid">
+          <article class="crisis-card">
+            <div class="crisis-eyebrow">NPF på jobbet</div>
+            <h3>Prestation, sjukskrivning eller risk för att krascha?</h3>
+            <p>Konkreta åtgärder för att rädda arbetsdagen: kravsanpassning, energiplan, kollegialt samspel och intyg vid behov.</p>
+            <div class="crisis-actions">
+              <a class="crisis-cta" href="/blogg/adhd-arbetslivet-guide/">Läs jobbguiden</a>
+              <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka jobbstöd</a>
+            </div>
+          </article>
+
+          <article class="crisis-card">
+            <div class="crisis-eyebrow">Stöd vid föräldraskap</div>
+            <h3>Hantera utbrott och skolgång utan att relationen spricker</h3>
+            <p>Rutiner, förberedelser och samspelet med skolan – verktyg du kan testa samma vecka.</p>
+            <div class="crisis-actions">
+              <a class="crisis-cta" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">Läs föräldrarguiden</a>
+              <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka föräldrasamtal</a>
+            </div>
+          </article>
+
+          <article class="crisis-card">
+            <div class="crisis-eyebrow">Relationer &amp; NPF</div>
+            <h3>När hjärnorna fungerar olika</h3>
+            <p>Kommunikation, känsloreglering och strukturer som minskar friktionen i vardagen.</p>
+            <div class="crisis-actions">
+              <a class="crisis-cta" href="/en/blog/adhd-and-relationship-struggles/">Läs om relationsmönster</a>
+              <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka parsamtal</a>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
 

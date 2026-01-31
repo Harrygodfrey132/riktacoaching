@@ -9144,7 +9144,7 @@ body.newsletter-popup--locked {
   .knowledge-grid{ grid-template-columns: 1fr; }
 }
 
-.fast-track, .practical{
+.fast-track, .practical, .crisis{
   background: #ffffff;
   border-radius: 14px;
   border: 1px solid rgba(15, 23, 42, 0.08);
@@ -9153,13 +9153,15 @@ body.newsletter-popup--locked {
 }
 
 .fast-track header h2,
-.practical header h2{
+.practical header h2,
+.crisis header h2{
   margin: 0 0 6px;
   font-size: 20px;
 }
 
 .fast-track header p,
-.practical header p{
+.practical header p,
+.crisis header p{
   margin: 0 0 10px;
   color: #6b7280;
   font-size: 14px;
@@ -9222,6 +9224,85 @@ body.newsletter-popup--locked {
   margin: 8px 0 0;
   padding-left: 16px;
   color: #374151;
+}
+
+.crisis-grid{
+  display: grid;
+  gap: 14px;
+}
+
+.crisis-card{
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+  background: #f8fafc;
+  display: grid;
+  gap: 8px;
+  transition: border-color 140ms ease, box-shadow 160ms ease, transform 140ms ease;
+}
+
+.crisis-card:hover{
+  border-color: rgba(55, 116, 171, 0.35);
+  box-shadow: 0 10px 24px rgba(55, 116, 171, 0.12);
+  transform: translateY(-1px);
+}
+
+.crisis-eyebrow{
+  font-size: 13px;
+  font-weight: 700;
+  color: #274c85;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.crisis-card h3{
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.crisis-card p{
+  margin: 0;
+  color: #374151;
+  line-height: 1.45;
+}
+
+.crisis-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.crisis-cta{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(15, 23, 42, 0.12);
+  text-decoration: none;
+  color: #0f172a;
+  font-weight: 600;
+  background: #ffffff;
+  transition: border-color 120ms ease, background 120ms ease, color 120ms ease;
+}
+
+.crisis-cta.primary{
+  background: #3565a9;
+  color: #fff;
+  border-color: #3565a9;
+}
+
+.crisis-cta:hover{
+  border-color: rgba(55, 116, 171, 0.45);
+  color: #274c85;
+}
+
+.crisis-cta.primary:hover{
+  background: #274c85;
+  color: #fff;
+  border-color: #274c85;
 }
 
 .knowledge-footer{
