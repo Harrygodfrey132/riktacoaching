@@ -1009,6 +1009,7 @@ function initScreeningForm({
       }
 
       function showPhase2(track){
+        popup.dataset.selectedTrack = track;
         if (phase2Groups.adhd) phase2Groups.adhd.hidden = track !== 'adhd';
         if (phase2Groups.autism) phase2Groups.autism.hidden = track !== 'autism';
         setPhase(2);

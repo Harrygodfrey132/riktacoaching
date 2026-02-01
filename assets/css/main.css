@@ -8829,6 +8829,15 @@ body.newsletter-popup--locked {
 .newsletter-popup[data-current-phase="2"] .newsletter-popup__lead{
   display: none;
 }
+.newsletter-popup[data-current-phase="2"] .newsletter-popup__compliance{
+  display: none;
+}
+
+/* Phase-2 filtering by selection */
+.newsletter-popup[data-selected-track="adhd"] [data-phase2="autism"],
+.newsletter-popup[data-selected-track="autism"] [data-phase2="adhd"]{
+  display: none !important;
+}
 
 .popup-back{
   align-self: flex-start;
