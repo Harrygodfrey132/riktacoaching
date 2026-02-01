@@ -9427,6 +9427,7 @@ body.newsletter-popup--locked {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 4px;
+  align-items: center;
 }
 
 .crisis-cta{
@@ -9451,11 +9452,11 @@ body.newsletter-popup--locked {
 
 .crisis-cta.ghost{
   background: transparent;
-  border-color: rgba(15, 23, 42, 0.16);
-  color: #274c85;
-  padding-inline: 4px;
+  border: none;
+  padding: 0;
   gap: 4px;
   font-weight: 600;
+  color: #274c85;
 }
 
 .crisis-cta:hover{
@@ -9470,8 +9471,13 @@ body.newsletter-popup--locked {
 }
 
 .crisis-cta.ghost:hover{
-  background: rgba(55, 116, 171, 0.08);
-  border-color: rgba(55, 116, 171, 0.35);
+  background: transparent;
+  color: #1d3a66;
+  text-decoration: underline;
+}
+
+.crisis-cta.primary{
+  margin-left: auto;
 }
 
 .knowledge-footer{
@@ -9481,7 +9487,7 @@ body.newsletter-popup--locked {
 }
 
 .knowledge-archive{
-  margin: 18px 0 8px;
+  margin: 36px 0 16px;
   display: flex;
   justify-content: center;
 }

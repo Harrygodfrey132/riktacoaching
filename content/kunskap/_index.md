@@ -17,7 +17,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
           <p class="knowledge-hero__lead">Självtester, guider och verktyg för ADHD och autism - med stöd och kontakt bara ett klick bort.</p>
           <div class="knowledge-hero__actions">
             <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
-            <a class="btn secondary" href="/kunskap/arkiv/">Visa alla artiklar</a>
+            <a class="btn secondary" href="https://riktapsykiatri.se/blogg/">Visa alla artiklar</a>
           </div>
         </div>
         <div class="knowledge-hero__panel">
@@ -67,7 +67,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
       <section class="crisis">
         <header>
           <h2>Coaching för specifika utmaningar</h2>
-          <p>Fyra vanliga kriser vi hjälper patienter att lösa, med snabb väg till rätt stöd.</p>
         </header>
         <div class="crisis-grid">
           <article class="crisis-card">
@@ -104,12 +103,9 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     </div>
 
     <div class="knowledge-archive">
-      <a class="btn archive" href="/kunskap/arkiv/">Bläddra i hela artikelarkivet →</a>
+      <a class="btn archive" href="https://riktapsykiatri.se/blogg/">Bläddra i hela artikelarkivet →</a>
     </div>
 
-    <div class="knowledge-footer">
-      <a class="btn secondary" href="#top">Tillbaka till toppen</a>
-    </div>
   </div>
 </section>
 {{< /rawhtml >}}
