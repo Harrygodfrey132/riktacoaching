@@ -983,14 +983,59 @@ function initScreeningForm({
     closeTriggers.forEach(btn => btn.addEventListener('click', () => closePopup('dismissed')));
 
     const form = popup.querySelector('form');
-    const handleSubmitted = () => {
-      if (openTimeout) {
-        clearTimeout(openTimeout);
-        openTimeout = null;
+    const isMultiStepSv = !IS_EN && popup.dataset.popupMultistep === 'true';
+
+    if (isMultiStepSv && form) {
+      const phaseNodes = Array.from(form.querySelectorAll('[data-phase]'));
+      const phase3Groups = {
+        adhd: form.querySelector('[data-phase3="adhd"]'),
+        autism: form.querySelector('[data-phase3="autism"]')
+      };
+      const startBtn = form.querySelector('[data-popup-start]');
+      const choiceButtons = form.querySelectorAll('[data-select]');
+      let currentPhase = 1;
+      let selectedTrack = null;
+
+      function setPhase(next){
+        currentPhase = next;
+        phaseNodes.forEach(node => {
+          const isTarget = Number(node.dataset.phase) === next;
+          node.hidden = !isTarget;
+        });
+        const focusTarget = phaseNodes.find(n => !n.hidden)?.querySelector('[data-popup-focus], .popup-choice, a.popup-choice, button.popup-choice');
+        if (focusTarget && typeof focusTarget.focus === 'function') {
+          focusTarget.focus({ preventScroll: true });
+        }
       }
-      closePopup('submitted');
-    };
-    if (form) {
+
+      function showPhase3(track){
+        selectedTrack = track;
+        if (phase3Groups.adhd) phase3Groups.adhd.hidden = track !== 'adhd';
+        if (phase3Groups.autism) phase3Groups.autism.hidden = track !== 'autism';
+        setPhase(3);
+      }
+
+      if (startBtn) {
+        startBtn.addEventListener('click', () => setPhase(2));
+      }
+      choiceButtons.forEach(btn => {
+        btn.addEventListener('click', () => showPhase3(btn.dataset.select));
+      });
+      const finalLinks = form.querySelectorAll('[data-final]');
+      finalLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          writeState('submitted');
+          closePopup('submitted');
+        });
+      });
+    } else if (form) {
+      const handleSubmitted = () => {
+        if (openTimeout) {
+          clearTimeout(openTimeout);
+          openTimeout = null;
+        }
+        closePopup('submitted');
+      };
       form.addEventListener('kaddio:success', handleSubmitted);
     }
 

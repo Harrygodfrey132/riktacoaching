@@ -1,79 +1,142 @@
 {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-<div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true">
+<div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true" data-popup-multistep="{{ if $isEn }}false{{ else }}true{{ end }}">
   <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
   <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
     <button type="button" class="newsletter-popup__close" aria-label="{{ if $isEn }}Close offer{{ else }}Stäng erbjudandet{{ end }}" data-popup-close>&times;</button>
     <p class="newsletter-popup__eyebrow">{{ if $isEn }}Rikta Psychiatry{{ else }}Rikta Psykiatri{{ end }}</p>
     <h2 id="newsletter-popup-title">
-      {{ if $isEn }}See how we can support you at Rikta Psykiatri{{ else }}Se hur vi kan stötta dig på Rikta Psykiatri{{ end }}
+      {{ if $isEn }}See how we can support you at Rikta Psykiatri{{ else }}NPF-test: Är det autism eller ADHD?{{ end }}
     </h2>
     <p class="newsletter-popup__lead">
-      {{ if $isEn }}Share a few details and we’ll get back to you within 1–2 business days.{{ else }}Berätta kort hur vi kan hjälpa dig så återkommer vi inom 1–2 arbetsdagar.{{ end }}
+      {{ if $isEn }}Share a few details and we’ll get back to you within 1–2 business days.{{ else }}Få en första bild på 2 minuter. Vi skickar en tydlig sammanställning och vägledning till din e-post.{{ end }}
     </p>
 
-    <form
-      id="kaddio-popup-form"
-      class="newsletter-popup__form"
-      data-kaddio-form="contact"
-      {{ if not $isEn }}data-redirect-url="/tack/"{{ end }}
-      data-form-context="{{ if $isEn }}popup-en{{ else }}popup-sv{{ end }}"
-      data-success-message="{{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}"
-      data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
-      data-error-message="{{ if $isEn }}We could not send your request. Please try again.{{ else }}Vi kunde inte skicka din förfrågan. Försök igen.{{ end }}"
-      data-rate-limit-message="{{ if $isEn }}We are handling many requests right now. Please try again in a moment.{{ else }}Vi hanterar många förfrågningar just nu. Försök igen om en stund.{{ end }}"
-      data-sending-message="{{ if $isEn }}Sending...{{ else }}Skickar...{{ end }}"
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8"
-    >
-      <input type="hidden" name="leadSource" value="Popup">
-      <div class="newsletter-popup__field">
-        <label for="popup-full-name">{{ if $isEn }}Full name{{ else }}Fullständigt namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
-        <input
-          type="text"
-          id="popup-full-name"
-          name="fullName"
-          maxlength="120"
-          autocomplete="name"
-          placeholder="{{ if $isEn }}Enter your full name{{ else }}Ange ditt fullständiga namn{{ end }}"
-          required
-          data-popup-focus
-        >
-      </div>
-      <div class="newsletter-popup__field">
-        <label for="popup-email">{{ if $isEn }}Email address{{ else }}E-postadress{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
-        <input
-          type="email"
-          id="popup-email"
-          name="email"
-          maxlength="100"
-          autocomplete="email"
-          placeholder="{{ if $isEn }}name@example.com{{ else }}namn@example.se{{ end }}"
-          required
-        >
-      </div>
-      <div class="newsletter-popup__field">
-        <label for="popup-description">{{ if $isEn }}Tell us briefly how we can help{{ else }}Berätta kort hur vi kan hjälpa dig{{ end }}</label>
-        <textarea
-          id="popup-description"
-          name="description"
-          placeholder="{{ if $isEn }}Describe your situation or ask your question{{ else }}Beskriv din situation eller ställ din fråga{{ end }}"
-        ></textarea>
-      </div>
-      <button type="submit" class="newsletter-popup__submit">
-        {{ if $isEn }}Send request{{ else }}Skicka förfrågan{{ end }}
-      </button>
-      <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
-        {{ if $isEn }}Thank you! We’ll get back to you as soon as possible.{{ else }}Tack! Vi tar kontakt med dig så snart som möjligt.{{ end }}
-      </p>
-      <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
-      <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
-        {{ if $isEn }}
+    {{ if $isEn }}
+      <form
+        id="kaddio-popup-form"
+        class="newsletter-popup__form"
+        data-kaddio-form="contact"
+        data-form-context="popup-en"
+        data-success-message="Thank you! We’ll get back to you as soon as possible."
+        data-missing-email-message="Please add your email before submitting."
+        data-error-message="We could not send your request. Please try again."
+        data-rate-limit-message="We are handling many requests right now. Please try again in a moment."
+        data-sending-message="Sending..."
+        action="/api/kaddio/contact"
+        method="POST"
+        accept-charset="UTF-8"
+      >
+        <input type="hidden" name="leadSource" value="Popup">
+        <div class="newsletter-popup__field">
+          <label for="popup-full-name">Full name <span aria-hidden="true" style="color:red;">*</span></label>
+          <input
+            type="text"
+            id="popup-full-name"
+            name="fullName"
+            maxlength="120"
+            autocomplete="name"
+            placeholder="Enter your full name"
+            required
+            data-popup-focus
+          >
+        </div>
+        <div class="newsletter-popup__field">
+          <label for="popup-email">Email address <span aria-hidden="true" style="color:red;">*</span></label>
+          <input
+            type="email"
+            id="popup-email"
+            name="email"
+            maxlength="100"
+            autocomplete="email"
+            placeholder="name@example.com"
+            required
+          >
+        </div>
+        <div class="newsletter-popup__field">
+          <label for="popup-description">Tell us briefly how we can help</label>
+          <textarea
+            id="popup-description"
+            name="description"
+            placeholder="Describe your situation or ask your question"
+          ></textarea>
+        </div>
+        <button type="submit" class="newsletter-popup__submit">
+          Send request
+        </button>
+        <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
+          Thank you! We’ll get back to you as soon as possible.
+        </p>
+        <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
+        <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
           We treat your information confidentially and follow the National Board of Health and Welfare’s requirements for clinical quality, evidence, and documentation.
-        {{ else }}
+        </p>
+      </form>
+    {{ else }}
+      <form
+        id="kaddio-popup-form"
+        class="newsletter-popup__form"
+        data-form-context="popup-sv"
+        action="#"
+        onsubmit="return false;"
+      >
+        <input type="hidden" name="leadSource" value="Popup">
+        <input type="hidden" name="description" value="Popup NPF-test: snabbt självtest för autism/ADHD">
+
+        <div class="popup-phase" data-phase="1">
+          <div class="newsletter-popup__field">
+            <label for="popup-full-name">Namn <span aria-hidden="true" style="color:red;">*</span></label>
+            <input
+              type="text"
+              id="popup-full-name"
+              name="fullName"
+              maxlength="120"
+              autocomplete="name"
+              placeholder="Skriv ditt namn"
+              required
+              data-popup-focus
+            >
+          </div>
+          <div class="newsletter-popup__field">
+            <label for="popup-email">E-post <span aria-hidden="true" style="color:red;">*</span></label>
+            <input
+              type="email"
+              id="popup-email"
+              name="email"
+              maxlength="100"
+              autocomplete="email"
+              placeholder="namn@example.se"
+              required
+            >
+          </div>
+          <button type="button" class="newsletter-popup__submit" data-popup-start>Starta testet</button>
+        </div>
+
+        <div class="popup-phase" data-phase="2" hidden>
+          <h3 class="popup-phase__title">Vad vill du undersöka först?</h3>
+          <div class="popup-phase__buttons">
+            <button type="button" class="popup-choice" data-select="adhd">ADHD</button>
+            <button type="button" class="popup-choice" data-select="autism">Autism</button>
+          </div>
+          <p class="popup-phase__helper">Det går jättebra att göra båda testen efter varandra.</p>
+        </div>
+
+        <div class="popup-phase" data-phase="3" hidden>
+          <h3 class="popup-phase__title">Vem gäller testet för?</h3>
+          <div class="popup-phase__buttons" data-phase3="adhd">
+            <a class="popup-choice" href="/adhd-test/?age=vuxen" data-final="true">ADHD-test: Vuxen</a>
+            <a class="popup-choice" href="/adhd-test/?age=barn" data-final="true">ADHD-test: Barn</a>
+          </div>
+          <div class="popup-phase__buttons" data-phase3="autism" hidden>
+            <a class="popup-choice" href="/autism-test/?age=vuxen" data-final="true">Autism-test: Vuxen</a>
+            <a class="popup-choice" href="/autism-test/?age=barn" data-final="true">Autism-test: Barn</a>
+          </div>
+        </div>
+
+        <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
+        <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
           Vi behandlar dina uppgifter konfidentiellt och följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
-        {{ end }}
-      </p>
-    </form>
+        </p>
+      </form>
+    {{ end }}
   </div>
 </div>
