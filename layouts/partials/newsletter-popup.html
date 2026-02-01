@@ -83,50 +83,21 @@
         <input type="hidden" name="description" value="Popup NPF-test: snabbt självtest för autism/ADHD">
 
         <div class="popup-phase" data-phase="1">
-          <div class="newsletter-popup__field">
-            <label for="popup-full-name">Namn <span aria-hidden="true" style="color:red;">*</span></label>
-            <input
-              type="text"
-              id="popup-full-name"
-              name="fullName"
-              maxlength="120"
-              autocomplete="name"
-              placeholder="Skriv ditt namn"
-              required
-              data-popup-focus
-            >
+          <h3 class="popup-phase__title">NPF-test: Är det autism eller ADHD?</h3>
+          <p class="popup-phase__helper">Få en första bild på 2 minuter.</p>
+          <div class="popup-phase__buttons">
+            <button type="button" class="popup-choice" data-select="adhd" data-popup-focus>ADHD</button>
+            <button type="button" class="popup-choice" data-select="autism">Autism</button>
           </div>
-          <div class="newsletter-popup__field">
-            <label for="popup-email">E-post <span aria-hidden="true" style="color:red;">*</span></label>
-            <input
-              type="email"
-              id="popup-email"
-              name="email"
-              maxlength="100"
-              autocomplete="email"
-              placeholder="namn@example.se"
-              required
-            >
-          </div>
-          <button type="button" class="newsletter-popup__submit" data-popup-start>Starta testet</button>
         </div>
 
         <div class="popup-phase" data-phase="2" hidden>
-          <h3 class="popup-phase__title">Vad vill du undersöka först?</h3>
-          <div class="popup-phase__buttons">
-            <button type="button" class="popup-choice" data-select="adhd">ADHD</button>
-            <button type="button" class="popup-choice" data-select="autism">Autism</button>
-          </div>
-          <p class="popup-phase__helper">Det går jättebra att göra båda testen efter varandra.</p>
-        </div>
-
-        <div class="popup-phase" data-phase="3" hidden>
           <h3 class="popup-phase__title">Vem gäller testet för?</h3>
-          <div class="popup-phase__buttons" data-phase3="adhd">
+          <div class="popup-phase__buttons" data-phase2="adhd">
             <a class="popup-choice" href="/adhd-test/?age=vuxen" data-final="true">ADHD-test: Vuxen</a>
             <a class="popup-choice" href="/adhd-test/?age=barn" data-final="true">ADHD-test: Barn</a>
           </div>
-          <div class="popup-phase__buttons" data-phase3="autism" hidden>
+          <div class="popup-phase__buttons" data-phase2="autism" hidden>
             <a class="popup-choice" href="/autism-test/?age=vuxen" data-final="true">Autism-test: Vuxen</a>
             <a class="popup-choice" href="/autism-test/?age=barn" data-final="true">Autism-test: Barn</a>
           </div>

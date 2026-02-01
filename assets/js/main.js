@@ -987,14 +987,12 @@ function initScreeningForm({
 
     if (isMultiStepSv && form) {
       const phaseNodes = Array.from(form.querySelectorAll('[data-phase]'));
-      const phase3Groups = {
-        adhd: form.querySelector('[data-phase3="adhd"]'),
-        autism: form.querySelector('[data-phase3="autism"]')
+      const phase2Groups = {
+        adhd: form.querySelector('[data-phase2="adhd"]'),
+        autism: form.querySelector('[data-phase2="autism"]')
       };
-      const startBtn = form.querySelector('[data-popup-start]');
       const choiceButtons = form.querySelectorAll('[data-select]');
       let currentPhase = 1;
-      let selectedTrack = null;
 
       function setPhase(next){
         currentPhase = next;
@@ -1008,18 +1006,14 @@ function initScreeningForm({
         }
       }
 
-      function showPhase3(track){
-        selectedTrack = track;
-        if (phase3Groups.adhd) phase3Groups.adhd.hidden = track !== 'adhd';
-        if (phase3Groups.autism) phase3Groups.autism.hidden = track !== 'autism';
-        setPhase(3);
+      function showPhase2(track){
+        if (phase2Groups.adhd) phase2Groups.adhd.hidden = track !== 'adhd';
+        if (phase2Groups.autism) phase2Groups.autism.hidden = track !== 'autism';
+        setPhase(2);
       }
 
-      if (startBtn) {
-        startBtn.addEventListener('click', () => setPhase(2));
-      }
       choiceButtons.forEach(btn => {
-        btn.addEventListener('click', () => showPhase3(btn.dataset.select));
+        btn.addEventListener('click', () => showPhase2(btn.dataset.select));
       });
       const finalLinks = form.querySelectorAll('[data-final]');
       finalLinks.forEach(link => {
