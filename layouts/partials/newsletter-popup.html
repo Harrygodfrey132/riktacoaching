@@ -5,11 +5,15 @@
     <button type="button" class="newsletter-popup__close" aria-label="{{ if $isEn }}Close offer{{ else }}Stäng erbjudandet{{ end }}" data-popup-close>&times;</button>
     <p class="newsletter-popup__eyebrow">{{ if $isEn }}Rikta Psychiatry{{ else }}Rikta Psykiatri{{ end }}</p>
     <h2 id="newsletter-popup-title">
-      {{ if $isEn }}See how we can support you at Rikta Psykiatri{{ else }}Gör ett ADHD- eller autismtest{{ end }}
+      {{ if $isEn }}See how we can support you at Rikta Psykiatri{{ else }}Självtest: ADHD eller Autism?{{ end }}
     </h2>
-    <p class="newsletter-popup__lead">
-      {{ if $isEn }}Share a few details and we’ll get back to you within 1–2 business days.{{ else }}Få ett första svar på 2 minuter. Vi skickar en sammanställning och vägledning till din e-post.{{ end }}
-    </p>
+    {{ if $isEn }}
+      <p class="newsletter-popup__lead">
+        Share a few details and we’ll get back to you within 1–2 business days.
+      </p>
+    {{ else }}
+      <div class="newsletter-popup__badge">Tar ca 2 minuter</div>
+    {{ end }}
 
     {{ if $isEn }}
       <form
@@ -105,7 +109,7 @@
 
         <p class="newsletter-popup__status" data-form-status aria-live="polite" hidden></p>
         <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
-          Vi behandlar dina uppgifter konfidentiellt och följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
+          Registrerad vårdgivare hos IVO. Vi följer Socialstyrelsens krav på evidens och dokumentation.
         </p>
       </form>
     {{ end }}
