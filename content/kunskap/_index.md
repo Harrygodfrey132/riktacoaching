@@ -64,50 +64,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
     </header>
 
     <div class="knowledge-grid">
-      <section class="fast-track">
-        <header>
-          <h2>Snabbspår</h2>
-        </header>
-        <div class="fast-track-table">
-          <div class="fast-row">
-            <div class="fast-desc">
-              <div>
-                <strong>Testa dig själv</strong>
-                <small>Länkar till självtester och screening</small>
-              </div>
-            </div>
-            <a class="fast-link" href="/adhd-test/" aria-label="Gå till test">→</a>
-          </div>
-          <div class="fast-row">
-            <div class="fast-desc">
-              <div>
-                <strong>Autismnivåer</strong>
-                <small>Översikt av autismnivåer och stöd</small>
-              </div>
-            </div>
-            <a class="fast-link" href="/kunskap/autism-guide/" aria-label="Gå till autismguide">→</a>
-          </div>
-          <div class="fast-row">
-            <div class="fast-desc">
-              <div>
-                <strong>Priser utredning</strong>
-                <small>Länkar till priser för utredning</small>
-              </div>
-            </div>
-            <a class="fast-link" href="/priser/" aria-label="Gå till priser">→</a>
-          </div>
-          <div class="fast-row">
-            <div class="fast-desc">
-              <div>
-                <strong>Medicinbiverkningar</strong>
-                <small>Länkar till mediciner och biverkningar</small>
-              </div>
-            </div>
-            <a class="fast-link" href="/adhd-utredning/medicinering/" aria-label="Gå till medicininfo">→</a>
-          </div>
-        </div>
-      </section>
-
       <section class="crisis">
         <header>
           <h2>Coaching för specifika utmaningar</h2>
