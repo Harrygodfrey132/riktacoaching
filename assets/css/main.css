@@ -8824,6 +8824,29 @@ body.newsletter-popup--locked {
   color: rgba(15, 23, 42, 0.7);
 }
 
+/* Hide header copy in phase 2 of SV popup */
+.newsletter-popup[data-current-phase="2"] .newsletter-popup__dialog h2,
+.newsletter-popup[data-current-phase="2"] .newsletter-popup__lead{
+  display: none;
+}
+
+.popup-back{
+  align-self: flex-start;
+  border: none;
+  background: transparent;
+  color: #274c85;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 0;
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+.popup-back:hover{
+  color: #1d3a66;
+}
+
 /* ===== Blog Articles ===== */
 .blog-simple {
   /* Typography tokens for blog */

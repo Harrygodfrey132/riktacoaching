@@ -992,10 +992,12 @@ function initScreeningForm({
         autism: form.querySelector('[data-phase2="autism"]')
       };
       const choiceButtons = form.querySelectorAll('[data-select]');
+      const backButtons = form.querySelectorAll('[data-popup-back]');
       let currentPhase = 1;
 
       function setPhase(next){
         currentPhase = next;
+        popup.dataset.currentPhase = String(next);
         phaseNodes.forEach(node => {
           const isTarget = Number(node.dataset.phase) === next;
           node.hidden = !isTarget;
@@ -1015,6 +1017,9 @@ function initScreeningForm({
       choiceButtons.forEach(btn => {
         btn.addEventListener('click', () => showPhase2(btn.dataset.select));
       });
+      backButtons.forEach(btn => {
+        btn.addEventListener('click', () => setPhase(1));
+      });
       const finalLinks = form.querySelectorAll('[data-final]');
       finalLinks.forEach(link => {
         link.addEventListener('click', () => {
@@ -1022,6 +1027,7 @@ function initScreeningForm({
           closePopup('submitted');
         });
       });
+      setPhase(1);
     } else if (form) {
       const handleSubmitted = () => {
         if (openTimeout) {
