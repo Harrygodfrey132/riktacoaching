@@ -8797,6 +8797,15 @@ body.newsletter-popup--locked {
   display: grid;
   gap: 10px;
 }
+.popup-phase[data-phase="2"]{
+  align-items: start;
+}
+.popup-phase[data-phase="2"] .popup-phase__title{
+  margin-top: -6px;
+}
+.popup-phase[data-phase="2"] .popup-phase__buttons{
+  margin-top: 4px;
+}
 .popup-choice{
   display: inline-flex;
   align-items: center;
