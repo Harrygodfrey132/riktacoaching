@@ -993,6 +993,7 @@ function initScreeningForm({
       };
       const choiceButtons = form.querySelectorAll('[data-select]');
       const backButtons = form.querySelectorAll('[data-popup-back]');
+      const complianceNote = popup.querySelector('.newsletter-popup__compliance');
       let currentPhase = 1;
 
       function setPhase(next){
@@ -1002,6 +1003,9 @@ function initScreeningForm({
           const isTarget = Number(node.dataset.phase) === next;
           node.hidden = !isTarget;
         });
+        if (complianceNote) {
+          complianceNote.hidden = next === 2;
+        }
         const focusTarget = phaseNodes.find(n => !n.hidden)?.querySelector('[data-popup-focus], .popup-choice, a.popup-choice, button.popup-choice');
         if (focusTarget && typeof focusTarget.focus === 'function') {
           focusTarget.focus({ preventScroll: true });
@@ -1010,8 +1014,18 @@ function initScreeningForm({
 
       function showPhase2(track){
         popup.dataset.selectedTrack = track;
-        if (phase2Groups.adhd) phase2Groups.adhd.hidden = track !== 'adhd';
-        if (phase2Groups.autism) phase2Groups.autism.hidden = track !== 'autism';
+        if (phase2Groups.adhd){
+          const show = track === 'adhd';
+          phase2Groups.adhd.hidden = !show;
+          phase2Groups.adhd.style.display = show ? 'grid' : 'none';
+          phase2Groups.adhd.setAttribute('aria-hidden', show ? 'false' : 'true');
+        }
+        if (phase2Groups.autism){
+          const show = track === 'autism';
+          phase2Groups.autism.hidden = !show;
+          phase2Groups.autism.style.display = show ? 'grid' : 'none';
+          phase2Groups.autism.setAttribute('aria-hidden', show ? 'false' : 'true');
+        }
         setPhase(2);
       }
 
@@ -1019,7 +1033,10 @@ function initScreeningForm({
         btn.addEventListener('click', () => showPhase2(btn.dataset.select));
       });
       backButtons.forEach(btn => {
-        btn.addEventListener('click', () => setPhase(1));
+        btn.addEventListener('click', () => {
+          popup.dataset.selectedTrack = '';
+          setPhase(1);
+        });
       });
       const finalLinks = form.querySelectorAll('[data-final]');
       finalLinks.forEach(link => {
