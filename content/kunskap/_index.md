@@ -40,7 +40,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
             </a>
             <a class="knowledge-pill" href="/adhd-utredning/">
               <div class="pill-icon" aria-hidden="true">
-                <img src="/img/icon-brain-check.svg" alt="" loading="lazy">
+                <img src="/img/icon-person-raise.svg" alt="" loading="lazy">
               </div>
               <div class="pill-copy">
                 <strong>Jag har precis fått min diagnos</strong>
