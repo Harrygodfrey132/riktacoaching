@@ -14,7 +14,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <div class="knowledge-hero__copy">
           <p class="knowledge-hero__eyebrow">Kunskap &amp; guider</p>
           <h1>Hitta rätt kunskap direkt</h1>
-          <p class="knowledge-hero__lead">Snabb väg till självtester, guider och verktyg för ADHD och autism – med stöd och kontakt bara ett klick bort.</p>
+          <p class="knowledge-hero__lead">Självtester, guider och verktyg för ADHD och autism - med stöd och kontakt bara ett klick bort.</p>
           <div class="knowledge-hero__actions">
             <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
             <a class="btn secondary" href="/kunskap/arkiv/">Visa alla artiklar</a>
@@ -76,7 +76,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <small>Länkar till självtester och screening</small>
               </div>
             </div>
-            <div class="fast-time">5 min</div>
             <a class="fast-link" href="/adhd-test/" aria-label="Gå till test">→</a>
           </div>
           <div class="fast-row">
@@ -86,7 +85,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <small>Översikt av autismnivåer och stöd</small>
               </div>
             </div>
-            <div class="fast-time">8 min</div>
             <a class="fast-link" href="/kunskap/autism-guide/" aria-label="Gå till autismguide">→</a>
           </div>
           <div class="fast-row">
@@ -96,7 +94,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <small>Länkar till priser för utredning</small>
               </div>
             </div>
-            <div class="fast-time">2 min</div>
             <a class="fast-link" href="/priser/" aria-label="Gå till priser">→</a>
           </div>
           <div class="fast-row">
@@ -106,7 +103,6 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <small>Länkar till mediciner och biverkningar</small>
               </div>
             </div>
-            <div class="fast-time">10 min</div>
             <a class="fast-link" href="/adhd-utredning/medicinering/" aria-label="Gå till medicininfo">→</a>
           </div>
         </div>
@@ -120,30 +116,30 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
         <div class="crisis-grid">
           <article class="crisis-card">
             <div class="crisis-eyebrow">NPF på jobbet</div>
-            <h3>Prestation, sjukskrivning eller risk för att krascha?</h3>
-            <p>Konkreta åtgärder för att rädda arbetsdagen: kravsanpassning, energiplan, kollegialt samspel och intyg vid behov.</p>
+            <h3>Hållbarhet i arbetslivet</h3>
+            <p>Strategier för prestation, energiplanering och anpassning för att förebygga sjukskrivning.</p>
             <div class="crisis-actions">
-              <a class="crisis-cta" href="/blogg/adhd-arbetslivet-guide/">Läs jobbguiden</a>
+              <a class="crisis-cta ghost" href="/blogg/adhd-arbetslivet-guide/">Läs jobbguiden →</a>
               <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka jobbstöd</a>
             </div>
           </article>
 
           <article class="crisis-card">
             <div class="crisis-eyebrow">Stöd vid föräldraskap</div>
-            <h3>Hantera utbrott och skolgång utan att relationen spricker</h3>
-            <p>Rutiner, förberedelser och samspelet med skolan – verktyg du kan testa samma vecka.</p>
+            <h3>Tryggare föräldraskap</h3>
+            <p>Praktiska verktyg för att hantera utbrott och skolgång medan ni behåller en nära relation.</p>
             <div class="crisis-actions">
-              <a class="crisis-cta" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">Läs föräldrarguiden</a>
+              <a class="crisis-cta ghost" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">Läs föräldrarguiden →</a>
               <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka föräldrasamtal</a>
             </div>
           </article>
 
           <article class="crisis-card">
             <div class="crisis-eyebrow">Relationer &amp; NPF</div>
-            <h3>När hjärnorna fungerar olika</h3>
-            <p>Kommunikation, känsloreglering och strukturer som minskar friktionen i vardagen.</p>
+            <h3>Förståelse i relationen</h3>
+            <p>Minska friktion i vardagen genom bättre kommunikation och verktyg för känsloreglering.</p>
             <div class="crisis-actions">
-              <a class="crisis-cta" href="/en/blog/adhd-and-relationship-struggles/">Läs om relationsmönster</a>
+              <a class="crisis-cta ghost" href="/en/blog/adhd-and-relationship-struggles/">Läs om relationsmönster →</a>
               <a class="crisis-cta primary" href="/kontakta-oss/#kontaktformular">Boka parsamtal</a>
             </div>
           </article>
