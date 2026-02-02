@@ -2545,6 +2545,21 @@ section h2 {
   box-sizing: border-box;
 }
 
+.partners-cards {
+  margin-top: 20px;
+}
+
+@media (max-width: 700px) {
+  .partners-cards {
+    flex-direction: column;
+  }
+
+  .partners-cards .card {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
 main#content > .platser-page:first-child,
 main#content > .location-page:first-child {
   padding-top: 0;
