@@ -49,18 +49,6 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
 
     <div class="clinician-grid clinician-grid--feature">
       <article class="clinician-card">
-        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
-        <div class="clinician-card__body">
-          <h3>Jonny Baker</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
-          <ul class="team-feature__bullets">
-            <li>Integrativ behandlare: 19 års erfarenhet av neurodivergens.</li>
-            <li>Expertcoach: Specialist på exekutiva funktioner och vardagsstruktur.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="clinician-card">
         <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Dr Antonia Risberg</h3>
@@ -80,6 +68,18 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
           <ul class="team-feature__bullets">
             <li>VD och medgrundare</li>
             <li>Medicinsk expert: Utvecklar datadriven psykiatri och funktionellt stöd.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Jonny Baker</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <ul class="team-feature__bullets">
+            <li>Integrativ behandlare: 19 års erfarenhet av neurodivergens.</li>
+            <li>Expertcoach: Specialist på exekutiva funktioner och vardagsstruktur.</li>
           </ul>
         </div>
       </article>

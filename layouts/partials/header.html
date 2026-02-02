@@ -26,7 +26,7 @@
     {{ $loginLink := "https://riktacoaching.kaddio.com" }}
     {{ $languageSwitch := cond $isEn "/" "/en/" }}
     {{ $homeLink := cond $isEn "/en/" "/" }}
-    {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
+    {{ $logo := cond $isEn "/img/EnglishLogo.svg" "/img/logo.png" }}
     <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
       <img src="{{ $logo }}" alt="{{ if $isEn }}{{ .Site.Title }} logo{{ else }}{{ .Site.Title }} logotyp{{ end }}">
     </a>

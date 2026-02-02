@@ -17,7 +17,7 @@
   {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
   {{ $atwPath := cond $isEn "en/access-to-work-adhd-coach/" "/access-to-work-adhd-coach/" }}
   {{ $logoHref := cond $isEn "/en/" "/" }}
-  {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
+  {{ $logo := cond $isEn "/img/EnglishLogo.svg" "/img/logo.png" }}
   <div class="container footer-main">
     <div class="footer-brand">
       <a class="footer-logo" href="{{ $logoHref | relURL }}">

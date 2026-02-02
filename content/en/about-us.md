@@ -48,18 +48,6 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 
     <div class="clinician-grid clinician-grid--feature">
       <article class="clinician-card">
-        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
-        <div class="clinician-card__body">
-          <h3>Jonny Baker</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
-          <ul class="team-feature__bullets">
-            <li>Integrative Practitioner: 19 years supporting neurodivergent adults.</li>
-            <li>Expert Coach: Specialist in executive functioning and routines.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="clinician-card">
         <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Dr Antonia Risberg</h3>
@@ -79,6 +67,18 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           <ul class="team-feature__bullets">
             <li>CEO &amp; Co-Founder</li>
             <li>Clinical Psychologist Candidate: Expert in data-driven psychiatric care.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Jonny Baker</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <ul class="team-feature__bullets">
+            <li>Integrative Practitioner: 19 years supporting neurodivergent adults.</li>
+            <li>Expert Coach: Specialist in executive functioning and routines.</li>
           </ul>
         </div>
       </article>
