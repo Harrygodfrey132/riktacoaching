@@ -21,7 +21,7 @@ buildFuture = true
     [languages.en.outputs]
       home = ["HTML","RSS","JSON","SITEMAP_EN"]
     [languages.en.params]
-      logo = "/img/EnglishLogo.svg"
+      logo = "/img/EnglishLogo.png"
 
 [params]
   primary = "#000000"
