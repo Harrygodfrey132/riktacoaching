@@ -161,7 +161,7 @@ url: "/en/test/"
           <li>Child version checklist</li>
           <li>Designed for parent completion</li>
         </ul>
-        <a class="text-cta" href="/en/test/child-teen-adhd-test/">Take the child AQ-10 <span aria-hidden="true">&rarr;</span></a>
+        <a class="text-cta" href="/en/test/child-teen-autism-test/">Take the child AQ-10 <span aria-hidden="true">&rarr;</span></a>
       </article>
       <article class="tests-card">
         <div class="tests-card__header">

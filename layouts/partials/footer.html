@@ -19,11 +19,15 @@
   {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
   {{ $atwPath := cond $isEn "en/access-to-work-adhd-coach/" "/access-to-work-adhd-coach/" }}
   {{ $logoHref := cond $isEn "/en/" "/" }}
-  {{ $logo := cond $isEn "/img/EnglishLogo.png" "/img/logo.png" }}
+  {{ $logoBase := cond $isEn "EnglishLogo" "logo" }}
   <div class="container footer-main">
     <div class="footer-brand">
       <a class="footer-logo" href="{{ $logoHref | relURL }}">
-        <img src="{{ $logo }}" alt="{{ .Site.Title }}">
+        <picture>
+          <source type="image/webp" srcset="/img/optimized/{{ $logoBase }}-264.webp 264w, /img/optimized/{{ $logoBase }}-528.webp 528w" sizes="264px">
+          <source type="image/png" srcset="/img/optimized/{{ $logoBase }}-264.png 264w, /img/optimized/{{ $logoBase }}-528.png 528w" sizes="264px">
+          <img src="/img/optimized/{{ $logoBase }}-264.png" alt="{{ .Site.Title }}" width="264" height="67" decoding="async" loading="lazy">
+        </picture>
       </a>
       {{ if $isEn }}
         <a class="footer-email" data-email-user="info" data-email-domain="riktacoaching.com">info@riktacoaching.com</a>

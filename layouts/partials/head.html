@@ -46,10 +46,19 @@
   {{- end }}
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
   <link rel="dns-prefetch" href="https://connect.facebook.net">
   <link rel="preconnect" href="https://www.facebook.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.facebook.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&display=swap">
+  </noscript>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBD3TNFENE"></script>
   <script>
@@ -99,7 +108,7 @@
   <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{- if .IsHome }}
-  <link rel="preload" as="image" href="/img/psychologist-picture.jpg" imagesrcset="/img/psychologist-picture.jpg 2121w" imagesizes="(max-width: 900px) 90vw, 640px">
+  <link rel="preload" as="image" href="/img/optimized/psychologist-picture-768.webp" imagesrcset="/img/optimized/psychologist-picture-480.webp 480w, /img/optimized/psychologist-picture-768.webp 768w, /img/optimized/psychologist-picture-1024.webp 1024w, /img/optimized/psychologist-picture-1440.webp 1440w" imagesizes="(max-width: 900px) 90vw, 640px">
   {{- end }}
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="shortcut icon" href="/favicon.ico">

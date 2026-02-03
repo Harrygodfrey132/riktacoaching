@@ -22,7 +22,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="autism-screening-form">
+      <form class="adhd-screening__card" id="autism-screening-form" data-locale="sv">
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Välj det svar som bäst beskriver hur du vanligtvis känner eller beter dig. AQ-10 hjälper till att identifiera autistiska drag för att se om en vidare utredning kan vara relevant.</p>
           <dl class="adhd-meta">
@@ -219,7 +219,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
         </label>
       </div>
       <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka & visa resultat</button>
+        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
         <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
       </div>
       <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>

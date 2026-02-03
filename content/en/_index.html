@@ -28,7 +28,11 @@ hide_template_hero: true
         </div>
         <div class="hero-figure hero-media">
           <div class="hero-image-frame">
-            <img src="/img/psychologist-picture.jpg" alt="Coach meeting a client at Rikta Psychiatry" fetchpriority="high" decoding="async" width="2121" height="1414">
+            <picture>
+              <source type="image/webp" srcset="/img/optimized/psychologist-picture-480.webp 480w, /img/optimized/psychologist-picture-768.webp 768w, /img/optimized/psychologist-picture-1024.webp 1024w, /img/optimized/psychologist-picture-1440.webp 1440w" sizes="(max-width: 900px) 90vw, 640px">
+              <source type="image/jpeg" srcset="/img/optimized/psychologist-picture-480.jpg 480w, /img/optimized/psychologist-picture-768.jpg 768w, /img/optimized/psychologist-picture-1024.jpg 1024w" sizes="(max-width: 900px) 90vw, 640px">
+              <img src="/img/optimized/psychologist-picture-768.jpg" alt="Coach meeting a client at Rikta Psychiatry" fetchpriority="high" decoding="async" width="640" height="427">
+            </picture>
           </div>
         </div>
       </div>

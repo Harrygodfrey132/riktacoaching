@@ -1,11 +1,12 @@
 ---
 title: "AQ-10 (Child Version)"
-translationKey: "child-teen-adhd-test"
+translationKey: "child-teen-autism-test"
 draft: false
 layout: "none"
 type: "none"
 aliases:
   - /en/child-teen-adhd-test/
+url: "/en/test/child-teen-autism-test/"
 meta_title: "AQ-10 (Child Version) | Rikta Psychiatry"
 meta_keywords: "AQ-10 child version, autism screening child, AQ-10 child questionnaire"
 meta_description: "AQ-10 (Child Version) Autism Spectrum Quotient (AQ) quick referral guide for parents."

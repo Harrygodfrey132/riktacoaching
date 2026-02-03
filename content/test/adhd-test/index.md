@@ -22,7 +22,7 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="adhd-screening-form">
+      <form class="adhd-screening__card" id="adhd-screening-form" data-locale="sv">
         <div class="adhd-screening__summary">
           <p class="adhd-screening__lead">Välj det alternativ (1–5) som bäst stämmer in på dig. Skalan ger en indikativ bild av uppmärksamhets- och självregleringssvårigheter – inte en diagnos.</p>
           <dl class="adhd-meta">
