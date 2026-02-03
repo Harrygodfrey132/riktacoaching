@@ -76,6 +76,25 @@ url: "/test/"
             </svg>
           </span>
           <div>
+            <p class="tests-card__eyebrow">GPS</p>
+            <h3>Prokrastinerings-test</h3>
+          </div>
+        </div>
+        <p>15 påståenden som mäter uppskjutande och igångsättning i vardagen.</p>
+        <ul class="tests-card__list">
+          <li>General Procrastination Scale (Lay, 1986)</li>
+          <li>Visar låg, måttlig eller hög nivå</li>
+        </ul>
+        <a class="text-cta" href="/test/prokrastinerings-test/">Gör prokrastinerings-testet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
             <p class="tests-card__eyebrow">ADD</p>
             <h3>Ouppmärksamhetssymtom (ADD)</h3>
           </div>

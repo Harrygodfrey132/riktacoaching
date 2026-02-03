@@ -17,7 +17,7 @@ draft: false
 - You delay, feel guilty, and the guilt makes it harder to start.
 - Procrastination is rarely laziness; it is about mood, stress, and how the brain treats time.
 - This guide explains the “why,” the common patterns, and the practical tools that work in daily life.
-- Quick start: 👉 Take the free Procrastination Test: https://riktapsykiatri.se/en/coaching/procrastination-test/
+- Quick start: 👉 Take the free Procrastination Test: https://riktapsykiatri.se/en/test/procrastination-test/
 
 ## 1) What Procrastination Really Is (and Isn’t)
 - It is **not** a personality flaw; it is a self-regulation problem.
@@ -49,7 +49,7 @@ draft: false
   - The task touches shame, insecurity, or fear (e.g., CV updates, finances, studying after a setback).
   - Story: “I’ll face it later; I’m not ready.” Avoidance delays the feeling, not just the task.
   - Driver: protecting against painful emotions.
-- To spot your dominant pattern, try the 👉 Procrastination Test: https://riktapsykiatri.se/en/coaching/procrastination-test/
+- To spot your dominant pattern, try the 👉 Procrastination Test: https://riktapsykiatri.se/en/test/procrastination-test/
 
 ## 4) Is It “Just Procrastination” – or Something Deeper?
 - Red flags: it happens almost daily, harms work/studies/relationships, or keeps you stressed and ashamed.
@@ -89,7 +89,7 @@ draft: false
 ## 7) A Small First Step: Check Your Procrastination Pattern
 - Procrastination is a learned coping strategy, not your identity.
 - A quick diagnostic step can guide which tools to try first.
-- 👉 Take the Procrastination Test: https://riktapsykiatri.se/en/coaching/procrastination-test/
+- 👉 Take the Procrastination Test: https://riktapsykiatri.se/en/test/procrastination-test/
 - You’ll see: which type is strongest for you, which situations trigger you, and where to focus first changes.
 - Use your results to pick 1–2 tools above, bring them into coaching if you want support, and track your habit shifts.
 
@@ -97,6 +97,6 @@ draft: false
 - You are not lazy or broken; you learned a short-term coping pattern that now costs you.
 - Change starts with tiny, safe actions: 10 focused minutes, one concrete first step, one moment of self-compassion.
 - If you want structure and accountability, that is exactly what coaching is for.
-- Ready for one click? 👉 Take the procrastination test: https://riktapsykiatri.se/en/coaching/procrastination-test/
+- Ready for one click? 👉 Take the procrastination test: https://riktapsykiatri.se/en/test/procrastination-test/
 
 [Test if you have ADHD](/en/test/adhd-test/)
