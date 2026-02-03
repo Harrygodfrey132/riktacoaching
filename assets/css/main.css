@@ -4725,6 +4725,18 @@ section.screen{  min-height: 60vh; }      /* gives structure without huge whites
   .brand img{ height: 38px; }  /* keep it sensible on small screens */
 }
 
+@media (max-width: 430px){
+  .brand {
+    gap: 8px;
+  }
+
+  .brand img{
+    height: 32px;
+    width: auto;
+    max-width: 180px;
+  }
+}
+
 /* === Make the red CTAs identical === */
 .btn.primary,
 nav a.cta{
