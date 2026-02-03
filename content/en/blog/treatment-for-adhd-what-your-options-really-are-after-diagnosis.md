@@ -108,7 +108,7 @@ None of these options cancel the others out. They serve different purposes at di
 
 If you are early in your ADHD journey, it can be helpful to reflect on which challenges affect you most right now. Is it focus? Emotional regulation? Organisation? Burnout? Confidence?
 
-As a starting point, some people choose to complete an ADHD screening to better understand their patterns before deciding what support to pursue. On our English-language website (/en), we offer an ADHD test designed to help individuals reflect on their experiences and consider next steps. It is not diagnostic, but it can support informed decision-making. You can take it here: [ADHD test](/en/adhd-test/).
+As a starting point, some people choose to complete an ADHD screening to better understand their patterns before deciding what support to pursue. On our English-language website (/en), we offer an ADHD test designed to help individuals reflect on their experiences and consider next steps. It is not diagnostic, but it can support informed decision-making. You can take it here: [ADHD test](/en/test/adhd-test/).
 
 ## Final reflection
 

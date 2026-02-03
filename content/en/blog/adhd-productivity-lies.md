@@ -122,4 +122,4 @@ You’re not broken. You’re built differently — and so is your path to produ
 
 Rikta Psychiatry coaches and clinicians work with adults who want a calmer, more effective way to get things done. We combine medical expertise (when appropriate) with practical ADHD-friendly systems: realistic weekly planning, task initiation support, focus intervals shaped to your attention span, and routines that flex with your energy. If you’re ready for productivity that fits your brain instead of fighting it, we’ll help you build it — without the shame spiral.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

@@ -5,6 +5,7 @@
   {{ $locationsPath := cond $isEn "en/locations/" "/platser/" }}
   {{ $pricingPath := cond $isEn  "en/pricing/" "/priser/" }}
   {{ $blogPath := cond $isEn "en/blog/" "/blogg/" }}
+  {{ $testsPath := cond $isEn "en/test/" "/test/" }}
   {{ $partnersPath := cond $isEn "en/partners/" "" }}
   {{ $adhdPath := cond $isEn "en/adhd-assessment/" "/adhd-utredning/" }}
   {{ $adhdAdults := cond $isEn "en/adhd-assessment/adults/" "/adhd-utredning/vuxna/" }}
@@ -50,6 +51,7 @@
           <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
           <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
+          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
           {{ if $isEn }}
             <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
             <li><a href="{{ $partnersPath | relLangURL }}">Partners</a></li>

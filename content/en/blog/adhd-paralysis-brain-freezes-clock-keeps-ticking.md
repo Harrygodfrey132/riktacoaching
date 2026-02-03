@@ -234,4 +234,4 @@ You deserve tools that respect how your brain actually works, and support that d
 
 Rikta Psychiatry exists to offer exactly that kind of help. If ADHD paralysis is stealing too much of your time and energy, reaching out is not a sign that you’ve failed. It’s a step towards building a life where your brain has space to move again.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

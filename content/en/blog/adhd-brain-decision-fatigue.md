@@ -65,4 +65,4 @@ You can try these ideas on your own, but ADHD coaching can make it much easier t
 
 If simple choices leave you exhausted, it’s not because you’re weak or lazy. It’s because your brain is doing a huge amount of invisible work. Small design changes – a few more routines, fewer options, clearer priorities – can take a surprising amount of pressure off your executive function. You don’t need to become perfectly organised. You just need to give your ADHD brain a little less to carry, so it can finally focus on the things you actually care about. If you want to see which procrastination patterns show up for you, you can start with our free Procrastination Test: https://riktapsykiatri.se/en/coaching/procrastination-test/
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

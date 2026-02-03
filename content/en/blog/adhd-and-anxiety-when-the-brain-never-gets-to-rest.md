@@ -88,7 +88,7 @@ For many people, diagnosis explains the past. Coaching supports the future. It o
 
 If your anxiety is tied to organisation, time, performance, or constant mental effort, it may be worth exploring whether ADHD traits are present.
 
-As a first step, many people choose to complete an ADHD screening to reflect on their patterns and experiences. You can do that on our English-language site here: [ADHD test](/en/adhd-test/).
+As a first step, many people choose to complete an ADHD screening to reflect on their patterns and experiences. You can do that on our English-language site here: [ADHD test](/en/test/adhd-test/).
 
 ## A final thought
 

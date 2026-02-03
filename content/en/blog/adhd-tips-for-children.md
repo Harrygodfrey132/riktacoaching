@@ -211,4 +211,4 @@ If there is any concern about safety, such as threats of self harm or severe agg
 
 Rikta Psychiatry uses structured, practical coaching strategies designed for everyday life. We focus on routines that stick, calmer transitions, stronger emotional regulation, and collaborative plans with school. Sessions translate challenges into clear systems and teach skills that children can practise, track, and improve over time. If you would like support, contact Rikta Psychiatry and we can advise on the most appropriate next step for your child and your family.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

@@ -132,4 +132,4 @@ A simple first step:
 - note what others have said over the years (“you are always late,” “you juggle too many things,” “you always forget…”)
 - consider what you hope an assessment would give you: more understanding, support, treatment, or accommodations
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

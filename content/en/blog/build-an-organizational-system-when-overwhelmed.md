@@ -72,4 +72,4 @@ draft: false
 - Reduce friction: clear homes for essentials; distinct work/rest spaces.
 - Adjust visibility in tough weeks; seek professional help if impairments persist.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

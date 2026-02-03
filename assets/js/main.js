@@ -275,7 +275,9 @@ function initScreeningForm({
           interpretation: interpretation ? interpretation.text : '',
           answers: collectAnswerDetails(),
           locale,
-          renderResult
+          renderResult,
+          onCompleted,
+          form
         };
 
         if (gateWithLeadForm && typeof onLeadRequired === 'function') {
@@ -696,6 +698,9 @@ function initScreeningForm({
       const answer = item.answer || (isEn ? 'Not provided' : 'Ej angivet');
       lines.push(`${item.number}. ${prompt} — ${answer}`);
     });
+    if (result.meta && result.meta.functionalDifficulty) {
+      lines.push(`${isEn ? 'Functional difficulty' : 'Funktionell svårighet'}: ${result.meta.functionalDifficulty}`);
+    }
     return lines.join('\n');
   }
 
@@ -739,6 +744,9 @@ function initScreeningForm({
     closeLeadModal();
     if (leadResultPayload && typeof leadResultPayload.renderResult === 'function') {
       leadResultPayload.renderResult();
+      if (typeof leadResultPayload.onCompleted === 'function') {
+        leadResultPayload.onCompleted(leadResultPayload, leadResultPayload.form);
+      }
       const scoreBox = document.getElementById('adhd-score');
       if (scoreBox) {
         const targetY = scoreBox.getBoundingClientRect().top + window.pageYOffset - OFFSET;
@@ -867,6 +875,78 @@ function initScreeningForm({
     gateWithLeadForm: true,
     onLeadRequired: openLeadModal,
     testName: 'Procrastination Test (GPS)'
+  });
+
+  initScreeningForm({
+    formId: 'gad7-screening-form',
+    totalQuestions: 7,
+    scoreBoxId: 'gad7-score',
+    scoreValueId: 'gad7-score-value',
+    interpretationId: 'gad7-score-interpretation',
+    defaultInterpretation: {
+      en: 'Answer all questions to see your GAD-7 score.'
+    },
+    buildInterpretation(score){
+      if (score <= 4) return { text: 'Minimal anxiety' };
+      if (score <= 9) return { text: 'Mild anxiety' };
+      if (score <= 14) return { text: 'Moderate anxiety' };
+      return { text: 'Severe anxiety' };
+    },
+    scoreCalculator(formData){
+      let total = 0;
+      let answered = 0;
+      for (let i = 1; i <= 7; i += 1) {
+        const value = formData.get(`q${i}`);
+        if (value !== null) {
+          total += Number(value);
+          answered += 1;
+        }
+      }
+      return {
+        total,
+        answered,
+        meta: {
+          functionalDifficulty: formData.get('functional') || ''
+        }
+      };
+    },
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'GAD-7 Anxiety',
+    onCompleted(payload, form){
+      const resultsEl = document.getElementById('gad7-results');
+      if (!resultsEl || !form) return;
+      const formData = new FormData(form);
+      const questions = Array.from(form.querySelectorAll('.adhd-question'));
+      const rows = questions.map((question, index) => {
+        const promptEl = question.querySelector('.adhd-question__prompt');
+        const prompt = ((promptEl && promptEl.textContent) || '').replace(/\s+/g, ' ').trim();
+        const selected = question.querySelector('input[type=\"radio\"]:checked');
+        const label = selected ? selected.closest('label') : null;
+        const textEl = label ? label.querySelector('span') : null;
+        const answerText = textEl ? textEl.textContent.trim() : '';
+        const numeric = selected ? selected.value : '';
+        return {
+          number: index + 1,
+          prompt,
+          answerText,
+          numeric
+        };
+      });
+      const functionalAnswer = formData.get('functional') || '';
+      const severity = payload && payload.interpretation ? payload.interpretation : '';
+
+      const listItems = rows.map(row => (
+        `<li><strong>${row.number}. ${row.prompt}</strong><br>` +
+        `Response: ${row.answerText} (${row.numeric})</li>`
+      )).join('');
+
+      resultsEl.innerHTML =
+        `<h3>Results</h3>` +
+        `<ul>${listItems}</ul>` +
+        `<p><strong>Severity:</strong> ${severity}</p>` +
+        `<p><strong>Functional difficulty:</strong> ${functionalAnswer}</p>`;
+    }
   });
 
   // ----- Newsletter Popup -----

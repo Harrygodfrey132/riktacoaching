@@ -95,4 +95,4 @@ Masking is a complex and often invisible part of autism. It can help autistic pe
 **Coaching and assessments across Sweden**  
 Rikta Psychiatry offers digital coaching and assessments across Sweden plus in-person visits in Stockholm. [Book a call](/en/contact/) so we can find the setup that suits you.
 
-[Test if you have Autism](/en/autism-test/)
+[Test if you have Autism](/en/test/autism-test/)

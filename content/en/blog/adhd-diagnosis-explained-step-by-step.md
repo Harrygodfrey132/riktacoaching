@@ -126,7 +126,7 @@ If parts of this article resonate, that does not automatically mean you have ADH
 
 A helpful first step is a screening tool that simply helps you reflect on your experiences. On our English-language site we offer the **Rikta Psychiatry Attention & Regulation Scale (R-ARS-12)** — a 12-item ADHD screening test for children (7–12) and adults. It is an informational tool, not a diagnosis, and can help you decide whether a full assessment may be helpful.
 
-You can find it here: [ADHD test](/en/adhd-test/). It is on the /en version of our website, not the Swedish site.
+You can find it here: [ADHD test](/en/test/adhd-test/). It is on the /en version of our website, not the Swedish site.
 
 ## Final thoughts
 

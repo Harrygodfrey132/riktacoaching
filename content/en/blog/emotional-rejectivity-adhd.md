@@ -105,4 +105,4 @@ That shift alone changes relationships, conflict patterns, and your internal sen
 
 Rikta Psychiatry can support this work through ADHD-informed assessments, coaching, and practical tools that help you steady the nervous system, build clearer communication, and reduce the impact of emotional rejectivity on your daily life.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

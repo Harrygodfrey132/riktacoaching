@@ -136,4 +136,4 @@ Consider an assessment or support if you:
 
 An ADHD assessment can clarify what is happening, rule out other explanations, and guide personalised strategies — with or without medication — so you can work with your brain, not against it.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

@@ -56,4 +56,4 @@ If procrastination repeatedly affects studies, work, or relationships, support i
 ## Support via Rikta Psychiatry
 Rikta Psychiatry offers help for procrastination linked to ADHD. Together you set clear goals, build working systems, and establish accountability routines tailored to your reality. Contact us for a consultation and start the change today.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

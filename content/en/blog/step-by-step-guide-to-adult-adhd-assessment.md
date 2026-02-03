@@ -154,4 +154,4 @@ And with the clarity that comes from a thorough ADHD evaluation, you can move fo
 If you’re considering an ADHD assessment, we hope this guide reassures you about the process. Feel free to reach out with any questions. Taking that first step toward clarity can be daunting, but it may also be the start of a more empowered and sustainable life. We are ready when you are – and we’ll be with you all the way.
 
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

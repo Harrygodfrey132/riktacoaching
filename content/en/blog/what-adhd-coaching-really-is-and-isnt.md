@@ -95,4 +95,4 @@ draft: false
 - Where many providers stop at diagnosis and medication, coaching steps into the “after”: routines, work, studies, inboxes, mornings, evenings.
 - With the right coach, you get guidance and accountability to move from “I know” to “I did,” one practical, realistic step at a time.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

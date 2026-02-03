@@ -59,6 +59,6 @@ Many people expect ADHD to look like obvious restlessness or distraction. In pra
 - Expect a structured assessment that considers overlapping conditions; accurate diagnosis guides effective support.
 
 ## Check your next step
-- If you want an initial orientation, try our [ADHD self-test](/en/adhd-test/). It is not a diagnosis, but it can help you decide whether to seek a full clinical evaluation.
+- If you want an initial orientation, try our [ADHD self-test](/en/test/adhd-test/). It is not a diagnosis, but it can help you decide whether to seek a full clinical evaluation.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

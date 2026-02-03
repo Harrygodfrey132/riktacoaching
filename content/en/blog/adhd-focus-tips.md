@@ -244,4 +244,4 @@ You don’t need to implement everything at once. Choose one or two strategies, 
 
 If you want structured support applying these tools, Rikta Psychiatry offers adult ADHD coaching. Coaching can help you translate strategies into routines, build accountability, and troubleshoot what gets in the way—so the tips don’t just sound good on paper, they start working in your real week.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

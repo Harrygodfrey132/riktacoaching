@@ -80,4 +80,4 @@ När du är omtänksam mot dig själv blir det lättare att ta ansvar och göra 
 Att utveckla mer självmedkänsla är en resa som tar tid och tålamod. Invanda mönster av självkritik är djupt rotade och kan vara svåra att bryta på egen hand.
 I dessa fall är det värdefullt att få stöd utifrån. Att arbeta med en professionell coach eller terapeut kan ge de verktyg och den vägledning som behövs för att omprogrammera den inre dialogen. Denna process syftar till att du kan bli den vän för dig själv som du förtjänar att ha. Du behöver inte göra resan ensam - det finns stöd tillgängligt för att stötta dig när du känner dig redo att ta nästa steg. Så om du känner att din självkritiska sida av dig själv är för högljudd, eller att du helt enkelt skulle vilja bli vänligare mot dig själv är du varmt välkommen att kontakta oss på Rikta Psykiatri. 
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

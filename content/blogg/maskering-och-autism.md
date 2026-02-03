@@ -95,4 +95,4 @@ Maskering är ett djupt komplext och ofta osynligt fenomen inom autism. Det gör
 **Coachning och bedömning i hela landet**  
 Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. [Boka samtal](/kontakta-oss/) så hittar vi upplägget som passar dig.
 
-[Testa om du har autism](/autism-test/)
+[Testa om du har autism](/test/autism-test/)

@@ -227,4 +227,4 @@ Avslutningsvis, försök ha ett tillåtande och humoristiskt förhållningssätt
 
 Vi hoppas att denna guide gett dig både konkreta tips och hopp om framtiden. Du är inte ensam - det finns många i liknande situation och en växande förståelse för ADHD i samhället. Ta en dag i taget, fira dina framsteg och kom ihåg att be om hjälp när du behöver. Med struktur, strategier och stöd kan du absolut hantera ADHD på arbetsplatsen och bygga en karriär där du trivs. Lycka till - du fixar det här!
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

@@ -76,4 +76,4 @@ Different presentations call for different emphasis:
 
 Recognising the type also improves understanding and reduces stigma: not everyone with ADHD is visibly hyperactive; some quietly struggle to focus. Knowing the presentation helps families, teachers, employers, and clinicians tailor support so people with ADHD can leverage their strengths and manage challenges effectively.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

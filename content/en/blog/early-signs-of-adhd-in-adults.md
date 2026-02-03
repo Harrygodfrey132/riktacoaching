@@ -101,4 +101,4 @@ If you recognise several of these early signs, it can help to:
   - better strategies for emotions and stress?  
 Next, consider contacting a professional for an assessment.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

@@ -133,4 +133,4 @@ Om du känner igen dig i det här kan nästa steg vara att boka ett första samt
 **Coachning och bedömning i hela landet**  
 Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. [Boka samtal](/kontakta-oss/) så hittar vi upplägget som passar dig.
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

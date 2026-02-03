@@ -97,4 +97,4 @@ We cannot eliminate clutter entirely. But we can ensure that the objects in our 
 
 Understanding your patterns is about clarity, not criticism; that clarity makes room for choice and change. If you want structured support translating these insights into daily life, Rikta Psychiatry offers ADHD-informed assessments, coaching, and practical planning so your spaces and routines match the way your brain works.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

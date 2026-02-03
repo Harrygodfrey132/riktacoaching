@@ -99,4 +99,4 @@ draft: false
 - If you want structure and accountability, that is exactly what coaching is for.
 - Ready for one click? 👉 Take the procrastination test: https://riktapsykiatri.se/en/coaching/procrastination-test/
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

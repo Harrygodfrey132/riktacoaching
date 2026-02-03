@@ -152,4 +152,4 @@ Ett enkelt första steg kan vara:
 - notera vad andra sagt till dig genom åren (“du är alltid sen”, “du har tusen bollar i luften”, “du glömmer alltid…”)
 - fundera på vad du hoppas att en utredning skulle ge dig: mer förståelse, stöd, behandling, eller anpassningar?
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

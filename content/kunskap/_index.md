@@ -28,7 +28,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
             <input type="search" placeholder="Sök på t.ex. Elvanse, skolan eller utmattning..." aria-label="Sök i kunskapsartiklar">
           </div>
           <div class="knowledge-paths">
-            <a class="knowledge-pill" href="/adhd-test/">
+            <a class="knowledge-pill" href="/test/adhd-test/">
               <div class="pill-icon" aria-hidden="true">
                 <img src="/img/icon-search.svg" alt="" loading="lazy">
               </div>

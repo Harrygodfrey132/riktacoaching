@@ -77,4 +77,4 @@ Det här stämmer väl med forskningen, som visar att symtomen kan variera hos s
 
 Vill du veta mer om utredning, behandling eller coachning? Kontakta oss så hjälper vi dig vidare.
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

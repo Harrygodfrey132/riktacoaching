@@ -83,4 +83,4 @@ ADHD doesn’t require you to choose one perfect kind of help. What it requires 
 
 If you’re unsure what you need, reach out anyway. You don’t have to know the answer before the conversation starts – that’s what we’re here to help you discover.
 
-[Test if you have ADHD](/en/adhd-test/)
+[Test if you have ADHD](/en/test/adhd-test/)

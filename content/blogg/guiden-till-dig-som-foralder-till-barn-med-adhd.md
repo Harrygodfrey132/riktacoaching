@@ -273,4 +273,4 @@ Som förälder till ett barn med ADHD har du antagligen redan lärt dig att navi
 
 Fokusera på det positiva, fira framgångar (små som stora) och glöm inte att ge dig själv en28 klapp på axeln för allt du gör. Med kärlek, kunskap och uthållighet kan ni tillsammans hitta vägar som leder till en fungerande vardag med ADHD. Ta hand om dig, och ta hand om ditt barn. Ni har en spännande resa tillsammans, och du är precis den förälder ditt barn behöver.
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

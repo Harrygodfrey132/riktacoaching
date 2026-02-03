@@ -115,4 +115,4 @@ Svensk vård har som mål att medicineringen ska leda till ökad självständigh
 7. E-hälsomyndigheten. *Resa med narkotikaklassade läkemedel.* Regler kring Schengenintyg och dokumentation vid utlandsvistelse.
 8. Sveriges Riksdag. *Diskrimineringslag (2008:567).* Lagstiftning som skyddar personer med funktionsnedsättning i arbetslivet och samhället.
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)

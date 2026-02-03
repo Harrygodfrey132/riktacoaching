@@ -97,4 +97,4 @@ Att prova ADHD-medicinering kan kännas stort men det kan också öppna dörrar 
 2. Region Uppsala, "Medicinering vid adhd", Infoteket om funktionshinder, hämtad 2 januari 2026, https://regionuppsala.se/infoteket/hamta-kunskap/fakta-om-funktionsnedsattningar/adhd/medicinering-vid-adhd/
 3. ADHD, "Kunskapsstöd för vårdgivare", uppdaterad oktober 2025, hämtad 2 januari 2026, https://kunskapsstodforvardgivare.se/omraden/psykisk-halsa/regionala-kunskapsstod/adhd
 
-[Testa om du har ADHD](/adhd-test/)
+[Testa om du har ADHD](/test/adhd-test/)
