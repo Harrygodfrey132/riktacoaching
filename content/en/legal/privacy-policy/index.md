@@ -7,6 +7,8 @@ meta_keywords: "privacy policy, GDPR, patient data, Rikta Psychiatry, personal d
 meta_description: "How Rikta Psychiatry handles personal data, confidentiality, and your rights under GDPR and Swedish healthcare regulations."
 og_title: "Privacy policy for Rikta Psychiatry"
 og_description: "Learn how we collect, use, and protect personal data and how to exercise your rights."
+aliases:
+  - /en/privacy-policy/
 ---
 
 Rikta Psychiatry (Riktningskliniken AB) respects your privacy and handles personal data with confidentiality and care. This policy explains what data we collect, why we use it, and the choices and rights you have, including data collected through Facebook ads.

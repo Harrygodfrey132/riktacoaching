@@ -850,6 +850,56 @@ function initScreeningForm({
   });
 
   initScreeningForm({
+    formId: 'autism-child-screening-form',
+    totalQuestions: 10,
+    scoreBoxId: 'autism-child-score',
+    scoreValueId: 'autism-child-score-value',
+    interpretationId: 'autism-child-score-interpretation',
+    defaultInterpretation: {
+      sv: 'Besvara alla frågor för att se din AQ-10 (barn) poäng.',
+      en: 'Answer all questions to see your AQ-10 (child) score.'
+    },
+    ranges: (locale) => (locale === 'sv'
+      ? [
+          { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
+          { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell bedömning.', className: 'is-amber' }
+        ]
+      : [
+          { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still have concerns.' },
+          { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional assessment.', className: 'is-amber' }
+        ]),
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'AQ-10 (Barnversionen)'
+  });
+
+  initScreeningForm({
+    formId: 'add-screening-form',
+    totalQuestions: 9,
+    scoreBoxId: 'add-score',
+    scoreValueId: 'add-score-value',
+    interpretationId: 'add-score-interpretation',
+    defaultInterpretation: {
+      en: 'Answer all questions to see your inattentive symptoms score.',
+      sv: 'Besvara alla frågor för att se din ouppmärksamhetspoäng.'
+    },
+    ranges: (locale) => (locale === 'en'
+      ? [
+          { max: 20, text: '9–20: lower frequency of inattentive symptoms in this checklist.' },
+          { max: 32, text: '21–32: moderate frequency. If this impacts daily life, consider a professional assessment.', className: 'is-amber' },
+          { max: Infinity, text: '33–45: higher frequency. We recommend discussing these symptoms with a clinician.', className: 'is-red' }
+        ]
+      : [
+          { max: 20, text: '9–20: lägre frekvens av ouppmärksamhetssymtom i denna checklista.' },
+          { max: 32, text: '21–32: måttlig frekvens. Om det påverkar vardagen, överväg professionell bedömning.', className: 'is-amber' },
+          { max: Infinity, text: '33–45: högre frekvens. Rekommenderar att diskutera symtomen med vårdpersonal.', className: 'is-red' }
+        ]),
+    gateWithLeadForm: true,
+    onLeadRequired: openLeadModal,
+    testName: 'ADD Inattentive Symptoms'
+  });
+
+  initScreeningForm({
     formId: 'procrastination-screening-form',
     totalQuestions: 15,
     scoreBoxId: 'procrastination-score',

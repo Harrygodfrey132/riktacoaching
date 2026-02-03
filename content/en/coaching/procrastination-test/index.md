@@ -195,6 +195,12 @@ summary: "Short self-check to understand your procrastination patterns."
             </li>
           </ol>
         </fieldset>
+        <div class="adhd-consent">
+          <label class="adhd-consent__label">
+            <input type="checkbox" name="consentAcknowledgement" required>
+            <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Psychiatry processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/">Privacy Policy</a>, which explains how my data is handled in accordance with GDPR and the Patient Data Act.</span>
+          </label>
+        </div>
         <div class="adhd-screening__actions">
           <button class="btn primary adhd-screening__submit" type="submit">Calculate score</button>
           <button class="btn secondary adhd-screening__reset" type="button">Clear form</button>

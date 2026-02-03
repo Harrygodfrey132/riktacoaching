@@ -148,6 +148,12 @@ aliases:
           </div>
         </fieldset>
 
+        <div class="adhd-consent">
+          <label class="adhd-consent__label">
+            <input type="checkbox" name="consentAcknowledgement" required>
+            <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
+          </label>
+        </div>
         <div class="adhd-screening__actions">
           <button class="btn primary adhd-screening__submit" type="submit">Visa resultat</button>
           <button class="btn secondary adhd-screening__reset" type="button">Rensa formuläret</button>

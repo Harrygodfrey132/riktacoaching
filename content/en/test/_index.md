@@ -114,6 +114,63 @@ url: "/en/test/"
             </svg>
           </span>
           <div>
+            <p class="tests-card__eyebrow">ASRS v1.1</p>
+            <h3>Adult ADHD test</h3>
+          </div>
+        </div>
+        <p>Adult ADHD Self-Report Scale (ASRS v1.1) Symptom Checklist.</p>
+        <ul class="tests-card__list">
+          <li>6-item Part A screener</li>
+          <li>12-item Part B checklist</li>
+        </ul>
+        <a class="text-cta" href="/en/test/adult-adhd-test/">Take the adult ADHD test <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">ADD</p>
+            <h3>Inattentive symptoms</h3>
+          </div>
+        </div>
+        <p>Inattentive symptom items pulled from the ADHD symptom checklist.</p>
+        <ul class="tests-card__list">
+          <li>Focused on inattentive traits</li>
+          <li>9 screening items</li>
+        </ul>
+        <a class="text-cta" href="/en/test/add-test/">Take the ADD test <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">AQ-10</p>
+            <h3>AQ-10 (Child Version)</h3>
+          </div>
+        </div>
+        <p>A quick referral guide for parents of children aged 4–11 years with suspected autism.</p>
+        <ul class="tests-card__list">
+          <li>Child version checklist</li>
+          <li>Designed for parent completion</li>
+        </ul>
+        <a class="text-cta" href="/en/test/child-teen-adhd-test/">Take the child AQ-10 <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
             <p class="tests-card__eyebrow">MDQ</p>
             <h3>Bipolar screening</h3>
           </div>

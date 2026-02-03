@@ -76,6 +76,25 @@ url: "/test/"
             </svg>
           </span>
           <div>
+            <p class="tests-card__eyebrow">ADD</p>
+            <h3>Ouppmärksamhetssymtom (ADD)</h3>
+          </div>
+        </div>
+        <p>Ouppmärksamhetssymtom hämtade från den svenska versionen.</p>
+        <ul class="tests-card__list">
+          <li>Fokuserar på ouppmärksamhet</li>
+          <li>9 screeningfrågor</li>
+        </ul>
+        <a class="text-cta" href="/test/add-test/">Gör ADD-testet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
             <p class="tests-card__eyebrow">GAD-7</p>
             <h3>GAD-7 självskattningsfrågor</h3>
           </div>
@@ -105,6 +124,25 @@ url: "/test/"
           <li>Fokus på social kommunikation och detaljfokus</li>
         </ul>
         <a class="text-cta" href="/test/autism-test/">Gör autismtestet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">AQ-10</p>
+            <h3>Autismtest barn</h3>
+          </div>
+        </div>
+        <p>Kort föräldraenkät för barn 4–11 år med misstänkt autismspektrumtillstånd.</p>
+        <ul class="tests-card__list">
+          <li>Fylls i av föräldrar</li>
+          <li>10 frågor</li>
+        </ul>
+        <a class="text-cta" href="/test/autism-test-barn/">Gör barnversionen <span aria-hidden="true">&rarr;</span></a>
       </article>
       <article class="tests-card">
         <div class="tests-card__header">
