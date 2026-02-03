@@ -24,9 +24,9 @@
     <div class="footer-brand">
       <a class="footer-logo" href="{{ $logoHref | relURL }}">
         <picture>
-          <source type="image/webp" srcset="/img/optimized/{{ $logoBase }}-264.webp 264w, /img/optimized/{{ $logoBase }}-528.webp 528w" sizes="264px">
-          <source type="image/png" srcset="/img/optimized/{{ $logoBase }}-264.png 264w, /img/optimized/{{ $logoBase }}-528.png 528w" sizes="264px">
-          <img src="/img/optimized/{{ $logoBase }}-264.png" alt="{{ .Site.Title }}" width="264" height="67" decoding="async" loading="lazy">
+          <source type="image/webp" srcset="/img/optimized/{{ $logoBase }}-220.webp 220w, /img/optimized/{{ $logoBase }}-440.webp 440w" sizes="(max-width: 540px) 180px, 220px">
+          <source type="image/png" srcset="/img/optimized/{{ $logoBase }}-220.png 220w, /img/optimized/{{ $logoBase }}-440.png 440w" sizes="(max-width: 540px) 180px, 220px">
+          <img src="/img/optimized/{{ $logoBase }}-220.png" alt="{{ .Site.Title }}" width="220" height="56" decoding="async" loading="lazy">
         </picture>
       </a>
       {{ if $isEn }}
