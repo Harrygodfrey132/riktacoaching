@@ -68,6 +68,25 @@ url: "/test/"
         </ul>
         <a class="text-cta" href="/test/adhd-test/">Gör ADHD-testet <span aria-hidden="true">&rarr;</span></a>
       </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">GAD-7</p>
+            <h3>GAD-7 självskattningsfrågor</h3>
+          </div>
+        </div>
+        <p>Ett 7-frågors screeningformulär för ångest under de senaste två veckorna.</p>
+        <ul class="tests-card__list">
+          <li>Validerat kliniskt screeningverktyg</li>
+          <li>Inkluderar fråga om funktionspåverkan</li>
+        </ul>
+        <a class="text-cta" href="/test/anxiety-test/">Gör GAD-7-testet <span aria-hidden="true">&rarr;</span></a>
+      </article>
       <article class="tests-card tests-card--rose">
         <div class="tests-card__header">
           <span class="tests-card__icon" aria-hidden="true">
@@ -86,6 +105,25 @@ url: "/test/"
           <li>Fokus på social kommunikation och detaljfokus</li>
         </ul>
         <a class="text-cta" href="/test/autism-test/">Gör autismtestet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M6 4h12M6 20h12M4 8h16M4 16h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">MDQ</p>
+            <h3>Screening för bipolaritet</h3>
+          </div>
+        </div>
+        <p>Kompletterande screening för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST.</p>
+        <ul class="tests-card__list">
+          <li>Validerat screeningformulär</li>
+          <li>Fokuserar på perioder med förhöjt stämningsläge</li>
+        </ul>
+        <a class="text-cta" href="/test/bipolar-test/">Gör MDQ-screeningen <span aria-hidden="true">&rarr;</span></a>
       </article>
     </div>
   </div>

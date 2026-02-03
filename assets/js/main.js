@@ -698,6 +698,12 @@ function initScreeningForm({
       const answer = item.answer || (isEn ? 'Not provided' : 'Ej angivet');
       lines.push(`${item.number}. ${prompt} — ${answer}`);
     });
+    if (result.meta && result.meta.screenResult) {
+      lines.push(`${isEn ? 'MDQ screen result' : 'MDQ-screenresultat'}: ${result.meta.screenResult}`);
+    }
+    if (result.meta && typeof result.meta.q1YesCount !== 'undefined') {
+      lines.push(`${isEn ? 'Question 1 YES count' : 'Antal JA i fråga 1'}: ${result.meta.q1YesCount}`);
+    }
     if (result.meta && result.meta.functionalDifficulty) {
       lines.push(`${isEn ? 'Functional difficulty' : 'Funktionell svårighet'}: ${result.meta.functionalDifficulty}`);
     }
@@ -884,13 +890,15 @@ function initScreeningForm({
     scoreValueId: 'gad7-score-value',
     interpretationId: 'gad7-score-interpretation',
     defaultInterpretation: {
-      en: 'Answer all questions to see your GAD-7 score.'
+      en: 'Answer all questions to see your GAD-7 score.',
+      sv: 'Räkna samman poängen. Summa poäng:'
     },
-    buildInterpretation(score){
-      if (score <= 4) return { text: 'Minimal anxiety' };
-      if (score <= 9) return { text: 'Mild anxiety' };
-      if (score <= 14) return { text: 'Moderate anxiety' };
-      return { text: 'Severe anxiety' };
+    buildInterpretation(score, locale){
+      const isSv = (locale || '').toLowerCase().startsWith('sv');
+      if (score <= 4) return { text: isSv ? 'Minimal ångest' : 'Minimal anxiety' };
+      if (score <= 9) return { text: isSv ? 'Lindrig ångest' : 'Mild anxiety' };
+      if (score <= 14) return { text: isSv ? 'Måttlig ångest' : 'Moderate anxiety' };
+      return { text: isSv ? 'Svår ångest' : 'Severe anxiety' };
     },
     scoreCalculator(formData){
       let total = 0;
@@ -917,6 +925,8 @@ function initScreeningForm({
       const resultsEl = document.getElementById('gad7-results');
       if (!resultsEl || !form) return;
       const formData = new FormData(form);
+      const locale = ((payload && payload.locale) || '').toLowerCase();
+      const isSv = locale.startsWith('sv');
       const questions = Array.from(form.querySelectorAll('.adhd-question'));
       const rows = questions.map((question, index) => {
         const promptEl = question.querySelector('.adhd-question__prompt');
@@ -935,19 +945,142 @@ function initScreeningForm({
       });
       const functionalAnswer = formData.get('functional') || '';
       const severity = payload && payload.interpretation ? payload.interpretation : '';
+      const resultsLabel = isSv ? 'Resultat' : 'Results';
+      const responseLabel = isSv ? 'Svar' : 'Response';
+      const severityLabel = isSv ? 'Ångestnivå' : 'Severity';
+      const functionalLabel = isSv ? 'Funktionspåverkan' : 'Functional difficulty';
 
       const listItems = rows.map(row => (
         `<li><strong>${row.number}. ${row.prompt}</strong><br>` +
-        `Response: ${row.answerText} (${row.numeric})</li>`
+        `${responseLabel}: ${row.answerText} (${row.numeric})</li>`
       )).join('');
 
       resultsEl.innerHTML =
-        `<h3>Results</h3>` +
+        `<h3>${resultsLabel}</h3>` +
         `<ul>${listItems}</ul>` +
-        `<p><strong>Severity:</strong> ${severity}</p>` +
-        `<p><strong>Functional difficulty:</strong> ${functionalAnswer}</p>`;
+        `<p><strong>${severityLabel}:</strong> ${severity}</p>` +
+        `<p><strong>${functionalLabel}:</strong> ${functionalAnswer}</p>`;
     }
   });
+
+  (function initMdqForm(){
+    const form = document.getElementById('mdq-screening-form');
+    if (!form) return;
+    const scoreBox = document.getElementById('mdq-score');
+    const scoreValue = document.getElementById('mdq-score-value');
+    const interpretationEl = document.getElementById('mdq-score-interpretation');
+    const resultsEl = document.getElementById('mdq-results');
+    const resetButton = form.querySelector('.adhd-screening__reset');
+    const locale = ((form.dataset.locale || document.documentElement.lang || 'sv') || '').toLowerCase();
+    const isSv = locale.startsWith('sv');
+    const yesValue = isSv ? 'Ja' : 'Yes';
+    const positiveImpactValues = isSv ? ['Problem', 'Allvarliga problem'] : ['Moderate problem', 'Serious problem'];
+    const positiveLabel = isSv ? 'Positiv screening för bipolaritet' : 'Positive screen';
+    const negativeLabel = isSv ? 'Negativ screening för bipolaritet' : 'Negative screen';
+
+    function collectQ1Responses() {
+      const items = [];
+      for (let i = 1; i <= 13; i += 1) {
+        const name = `q1_${i}`;
+        const selected = form.querySelector(`input[name="${name}"]:checked`);
+        const answer = selected ? selected.value : '';
+        const promptEl = selected ? selected.closest('.adhd-question')?.querySelector('.adhd-question__prompt') : null;
+        const prompt = promptEl ? promptEl.textContent.trim() : '';
+        items.push({ number: i, prompt, answer });
+      }
+      return items;
+    }
+
+    function renderResults(result) {
+      if (!scoreBox || !scoreValue || !interpretationEl || !resultsEl) return;
+      scoreBox.hidden = false;
+      scoreBox.dataset.state = 'visible';
+      scoreValue.textContent = result.screenResult;
+      interpretationEl.textContent = isSv
+        ? 'Detta är ett screeningresultat och inte en diagnos.'
+        : 'This is a screening result, not a diagnosis.';
+
+      const q1Items = result.q1Items.map(item => (
+        `<li><strong>${item.number}. ${item.prompt}</strong><br>` +
+        `${isSv ? 'Svar' : 'Response'}: ${item.answer}</li>`
+      )).join('');
+
+      const resultsLabel = isSv ? 'Resultat' : 'Results';
+      const q1CountLabel = isSv ? 'Antal Ja-svar i Fråga 1' : 'Question 1 YES count';
+      const q2Label = isSv ? 'Svar på Fråga 2' : 'Question 2 response';
+      const q3Label = isSv ? 'Svar på Fråga 3' : 'Question 3 response';
+
+      resultsEl.innerHTML =
+        `<h3>${resultsLabel}</h3>` +
+        `<p><strong>${q1CountLabel}:</strong> ${result.q1YesCount}</p>` +
+        `<ul>${q1Items}</ul>` +
+        `<p><strong>${q2Label}:</strong> ${result.q2}</p>` +
+        `<p><strong>${q3Label}:</strong> ${result.q3}</p>` +
+        `<p><strong>${isSv ? 'Detta är ett screeningresultat och inte en diagnos.' : 'This is a screening result, not a diagnosis.'}</strong></p>`;
+    }
+
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const q1Items = collectQ1Responses();
+      const q1YesCount = q1Items.filter(item => item.answer === yesValue).length;
+      const q2 = (form.querySelector('input[name="q2"]:checked') || {}).value || '';
+      const q3 = (form.querySelector('input[name="q3"]:checked') || {}).value || '';
+
+      const positive = q1YesCount >= 7 && q2 === yesValue && positiveImpactValues.includes(q3);
+      const screenResult = positive ? positiveLabel : negativeLabel;
+
+      const resultPayload = {
+        q1Items,
+        q1YesCount,
+        q2,
+        q3,
+        screenResult
+      };
+
+      const answers = [
+        ...q1Items.map(item => ({ number: item.number, prompt: item.prompt, answer: item.answer })),
+        { number: 14, prompt: isSv ? 'Fråga 2' : 'Question 2', answer: q2 },
+        { number: 15, prompt: isSv ? 'Fråga 3' : 'Question 3', answer: q3 }
+      ];
+
+      const payload = {
+        testName: 'MDQ Bipolar Screening',
+        total: 0,
+        answered: 2 + q1Items.length,
+        meta: {
+          q1YesCount,
+          q2,
+          q3,
+          screenResult
+        },
+        interpretation: screenResult,
+        answers,
+        locale,
+        renderResult: () => renderResults(resultPayload)
+      };
+
+      openLeadModal(payload);
+    });
+
+    if (resetButton) {
+      resetButton.addEventListener('click', () => {
+        form.reset();
+        if (scoreBox) {
+          scoreBox.hidden = true;
+          scoreBox.removeAttribute('data-state');
+        }
+        if (scoreValue) scoreValue.textContent = '-';
+        if (interpretationEl) {
+          interpretationEl.textContent = isSv
+            ? 'Detta är ett screeningresultat och inte en diagnos.'
+            : 'This is a screening result, not a diagnosis.';
+        }
+        if (resultsEl) resultsEl.innerHTML = '';
+      });
+    }
+  })();
 
   // ----- Newsletter Popup -----
   (function initNewsletterPopup(){

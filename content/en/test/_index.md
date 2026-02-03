@@ -106,6 +106,25 @@ url: "/en/test/"
         </ul>
         <a class="text-cta" href="/en/test/autism-test/">Take the autism test <span aria-hidden="true">&rarr;</span></a>
       </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">MDQ</p>
+            <h3>Bipolar screening</h3>
+          </div>
+        </div>
+        <p>Additional screening to rule out mood patterns that can overlap with ADHD or ASD traits.</p>
+        <ul class="tests-card__list">
+          <li>Rule-based screening (no numeric score)</li>
+          <li>Includes symptom clustering and impact</li>
+        </ul>
+        <a class="text-cta" href="/en/test/bipolar-test/">Take the MDQ screening <span aria-hidden="true">&rarr;</span></a>
+      </article>
     </div>
   </div>
 </section>

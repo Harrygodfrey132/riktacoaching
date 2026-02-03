@@ -2742,6 +2742,26 @@ section h2 {
   margin-bottom: 10px;
 }
 
+.mdq-results {
+  margin-top: 16px;
+  color: #1f2933;
+}
+
+.mdq-results h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.mdq-results ul {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  color: #4b5563;
+}
+
+.mdq-results li {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 900px) {
   .tests-hero__grid {
     grid-template-columns: 1fr;
