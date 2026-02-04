@@ -46,7 +46,6 @@ url: "/test/"
   <div class="container">
     <header class="section-head">
       <h2>Tillgängliga tester</h2>
-      <p>Välj det test som bäst matchar dina frågor.</p>
     </header>
     <div class="tests-cards">
       <article class="tests-card">

@@ -224,6 +224,6 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
       </div>
       <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
     </form>
-    <p class="lead-modal__privacy">Tack för din intresseanmälan. Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en mer detaljerad sammanställning om det behövs. Tack, Rikta Psykiatri-teamet.</p>
+    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en mer detaljerad sammanställning om det behövs. Tack, Rikta Psykiatri-teamet.</p>
   </div>
 </div>
