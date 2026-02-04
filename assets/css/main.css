@@ -8221,6 +8221,61 @@ nav a.cta:active{
   }
 }
 
+@media (max-width: 480px) {
+  .adhd-screening__shell {
+    overflow: hidden;
+    border-radius: 24px;
+  }
+
+  .adhd-screening__glow {
+    inset: -16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .adhd-screening__card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .adhd-question {
+    padding: 12px 12px 14px 44px;
+  }
+
+  .adhd-question::before {
+    left: 10px;
+    top: 12px;
+  }
+
+  .adhd-response-group {
+    gap: 6px;
+  }
+
+  .adhd-screening__actions {
+    margin-top: 28px;
+  }
+
+  .lead-modal {
+    padding: 12px;
+  }
+
+  .lead-modal__dialog {
+    padding: 18px;
+  }
+
+  .lead-modal__actions {
+    justify-content: stretch;
+  }
+
+  .lead-modal__actions .btn {
+    width: 100%;
+  }
+
+  .lead-modal__field input {
+    height: 44px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .adhd-page * {
     transition: none !important;
