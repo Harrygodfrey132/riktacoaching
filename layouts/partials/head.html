@@ -13,6 +13,10 @@
   {{- $ogType := cond .IsHome "website" "article" -}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    // Hide PII-collecting forms until geofence is resolved client-side.
+    document.documentElement.classList.add('rk-pii-pending');
+  </script>
   <title>{{ $pageTitle }}</title>
   <meta name="description" content="{{ $metaDescription }}">
   {{- with $metaKeywords }}

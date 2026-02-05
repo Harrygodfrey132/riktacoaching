@@ -230,7 +230,7 @@ og_description: "Complete our R-ARS-12 to get an indication of attention and reg
       </div>
       <label class="lead-modal__consent">
         <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Psychiatry processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy Policy</a>, which explains how my data is handled in accordance with GDPR and the Patient Data Act.</span>
+        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Coaching processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy &amp; Data Protection Policy</a>, which explains how my data is handled in accordance with UK GDPR.</span>
       </label>
       <div class="lead-modal__actions">
         <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>

@@ -12,6 +12,93 @@
     return IS_EN ? 'en' : 'sv';
   }
 
+  // ----- Geo/PII gating (EU/UK only) -----
+  const GEO_ENDPOINT = '/api/geo';
+  const GEO_CACHE_KEY = 'rk_geo_gate_v1';
+  const GEO_CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6h
+  const geoGate = {
+    allowed: false,
+    country: '',
+    resolved: false
+  };
+
+  function safeJsonParse(raw){
+    try {
+      return raw ? JSON.parse(raw) : null;
+    } catch (_err) {
+      return null;
+    }
+  }
+
+  function readGeoCache(){
+    try {
+      const stored = safeJsonParse(sessionStorage.getItem(GEO_CACHE_KEY));
+      if (!stored || typeof stored.timestamp !== 'number') return null;
+      if (Date.now() - stored.timestamp > GEO_CACHE_TTL_MS) return null;
+      return stored;
+    } catch (_err) {
+      return null;
+    }
+  }
+
+  function writeGeoCache({ allowed, country } = {}){
+    try {
+      sessionStorage.setItem(GEO_CACHE_KEY, JSON.stringify({
+        allowed: allowed === true,
+        country: country || '',
+        timestamp: Date.now()
+      }));
+    } catch (_err) {
+      // ignore storage errors (private mode, quota, etc.)
+    }
+  }
+
+  function applyGeoGateClasses(){
+    const html = document.documentElement;
+    if (!html) return;
+    html.classList.remove('rk-pii-pending');
+    html.classList.toggle('rk-pii-allowed', geoGate.allowed === true);
+    html.classList.toggle('rk-pii-blocked', geoGate.allowed !== true);
+  }
+
+  function setGeoGate({ allowed, country } = {}){
+    geoGate.allowed = allowed === true;
+    geoGate.country = String(country || '').trim().toUpperCase();
+    geoGate.resolved = true;
+    writeGeoCache({ allowed: geoGate.allowed, country: geoGate.country });
+    applyGeoGateClasses();
+  }
+
+  function isPiiAllowed(){
+    return geoGate.allowed === true;
+  }
+
+  async function resolveGeoGate(){
+    const cached = readGeoCache();
+    if (cached) {
+      setGeoGate({ allowed: cached.allowed, country: cached.country });
+      return geoGate;
+    }
+    try {
+      const res = await fetch(GEO_ENDPOINT, {
+        method: 'GET',
+        headers: { 'Accept': 'application/json' },
+        credentials: 'same-origin'
+      });
+      const data = await res.json().catch(() => null);
+      setGeoGate({
+        allowed: !!(data && data.allowed),
+        country: data && data.country ? data.country : ''
+      });
+    } catch (_err) {
+      // Safe default: block PII collection when we cannot determine geography.
+      setGeoGate({ allowed: false, country: '' });
+    }
+    return geoGate;
+  }
+
+  const geoGateReady = resolveGeoGate();
+
   // ----- Smooth scroll (custom duration) -----
   function easeInOutCubic(t){ return t<0.5 ? 4*t*t*t : 1 - Math.pow(-2*t+2,3)/2; }
   function smoothScrollTo(yTarget){
@@ -280,7 +367,11 @@ function initScreeningForm({
           form
         };
 
-        if (gateWithLeadForm && typeof onLeadRequired === 'function') {
+        const shouldGate = typeof gateWithLeadForm === 'function'
+          ? gateWithLeadForm(payload, form)
+          : gateWithLeadForm;
+
+        if (shouldGate && typeof onLeadRequired === 'function') {
           onLeadRequired(payload);
         } else {
           renderResult();
@@ -462,6 +553,8 @@ function initScreeningForm({
     if (!form) return;
     // Some pages include an inline fallback handler; avoid double-submitting to Kaddio.
     if (form.dataset.kaddioInlineBound === 'true') return;
+    if (form.dataset.kaddioBound === 'true') return;
+    form.dataset.kaddioBound = 'true';
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const thankYou = form.querySelector('[data-thank-you]');
@@ -708,8 +801,9 @@ function initScreeningForm({
   }
 
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
-  contactForms.forEach(form => {
-    bindKaddioForm(form);
+  geoGateReady.then(() => {
+    if (!isPiiAllowed()) return;
+    contactForms.forEach(form => bindKaddioForm(form));
   });
 
   // ----- Lead capture modal (Kaddio) -----
@@ -750,6 +844,16 @@ function initScreeningForm({
   }
 
   function openLeadModal(result) {
+    // Outside EU/UK we do not collect or submit PII/health data. Still show the local score.
+    if (!isPiiAllowed()) {
+      if (result && typeof result.renderResult === 'function') {
+        result.renderResult();
+        if (typeof result.onCompleted === 'function') {
+          result.onCompleted(result, result.form);
+        }
+      }
+      return;
+    }
     if (!leadModal || !leadForm) return;
     setFormStatus(leadForm, '', 'info');
     leadResultPayload = result;
@@ -808,48 +912,51 @@ function initScreeningForm({
   });
 
   if (leadForm) {
-    bindKaddioForm(leadForm, {
-      augmentPayload(basePayload){
-        if (!leadResultPayload) {
+    geoGateReady.then(() => {
+      if (!isPiiAllowed()) return;
+      bindKaddioForm(leadForm, {
+        augmentPayload(basePayload){
+          if (!leadResultPayload) {
+            const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+            const message = lang.startsWith('en')
+              ? 'Please complete the screening before sending.'
+              : 'Slutför självtestet innan du skickar.';
+            throw new Error(message);
+          }
           const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
-          const message = lang.startsWith('en')
-            ? 'Please complete the screening before sending.'
-            : 'Slutför självtestet innan du skickar.';
-          throw new Error(message);
-        }
-        const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
-        const screeningMeta = {
-          testName: leadResultPayload.testName,
-          total: leadResultPayload.total,
-          interpretation: leadResultPayload.interpretation,
-          answers: leadResultPayload.answers
-        };
-        const consentMeta = buildConsentMetadata({
-          // Consent checkbox lives in the lead modal (same place as personal details).
-          screeningForm: leadForm,
-          testName: leadResultPayload.testName,
-          formContext: basePayload && basePayload.metadata ? basePayload.metadata.formContext : '',
-          locale: leadResultPayload.locale
-        });
-        if (!consentMeta || consentMeta.status !== true) {
-          const msg = lang.startsWith('en')
-            ? 'Please confirm the consent checkbox before sending your results.'
-            : 'Bekräfta samtycke-rutan innan du skickar dina resultat.';
-          throw new Error(msg);
-        }
-        const derivedDescription = (leadDescription && leadDescription.value)
-          || buildLeadDescription(leadResultPayload)
-          || basePayload.description;
-        return {
-          description: derivedDescription,
-          leadSource: (((leadSource && leadSource.value) || basePayload.leadSource || 'Screening form')).trim(),
-          metadata: mergeMetadata(basePayload.metadata, {
-            screening: screeningMeta,
-            consent: consentMeta
-          })
-        };
-      },
-      onSuccess: handleLeadSuccess
+          const screeningMeta = {
+            testName: leadResultPayload.testName,
+            total: leadResultPayload.total,
+            interpretation: leadResultPayload.interpretation,
+            answers: leadResultPayload.answers
+          };
+          const consentMeta = buildConsentMetadata({
+            // Consent checkbox lives in the lead modal (same place as personal details).
+            screeningForm: leadForm,
+            testName: leadResultPayload.testName,
+            formContext: basePayload && basePayload.metadata ? basePayload.metadata.formContext : '',
+            locale: leadResultPayload.locale
+          });
+          if (!consentMeta || consentMeta.status !== true) {
+            const msg = lang.startsWith('en')
+              ? 'Please confirm the consent checkbox before sending your results.'
+              : 'Bekräfta samtycke-rutan innan du skickar dina resultat.';
+            throw new Error(msg);
+          }
+          const derivedDescription = (leadDescription && leadDescription.value)
+            || buildLeadDescription(leadResultPayload)
+            || basePayload.description;
+          return {
+            description: derivedDescription,
+            leadSource: (((leadSource && leadSource.value) || basePayload.leadSource || 'Screening form')).trim(),
+            metadata: mergeMetadata(basePayload.metadata, {
+              screening: screeningMeta,
+              consent: consentMeta
+            })
+          };
+        },
+        onSuccess: handleLeadSuccess
+      });
     });
   }
 
@@ -874,7 +981,7 @@ function initScreeningForm({
           { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
           { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
         ]),
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'Attention & Regulation Scale (R-ARS-12)'
   });
@@ -898,7 +1005,7 @@ function initScreeningForm({
           { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
           { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
         ]),
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'Autism Screening (AQ-10)'
   });
@@ -922,7 +1029,7 @@ function initScreeningForm({
           { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still have concerns.' },
           { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional assessment.', className: 'is-amber' }
         ]),
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'AQ-10 (Barnversionen)'
   });
@@ -948,7 +1055,7 @@ function initScreeningForm({
           { max: 32, text: '21–32: måttlig frekvens. Om det påverkar vardagen, överväg professionell bedömning.', className: 'is-amber' },
           { max: Infinity, text: '33–45: högre frekvens. Rekommenderar att diskutera symtomen med vårdpersonal.', className: 'is-red' }
         ]),
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'ADD Inattentive Symptoms'
   });
@@ -982,7 +1089,7 @@ function initScreeningForm({
       }
       return Number(value);
     },
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'Procrastination Test (GPS)'
   });
@@ -1022,7 +1129,7 @@ function initScreeningForm({
         }
       };
     },
-    gateWithLeadForm: true,
+    gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
     testName: 'GAD-7 Anxiety',
     onCompleted(payload, form){
@@ -1293,7 +1400,12 @@ function initScreeningForm({
 
     function scheduleOpen(){
       if (!shouldShow()) return;
-      openTimeout = window.setTimeout(openPopup, SHOW_DELAY_MS);
+      openTimeout = window.setTimeout(() => {
+        geoGateReady.then(() => {
+          if (!isPiiAllowed()) return;
+          openPopup();
+        });
+      }, SHOW_DELAY_MS);
     }
 
     const closeTriggers = popup.querySelectorAll('[data-popup-close]');

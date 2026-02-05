@@ -66,6 +66,15 @@ const MAX_BODY_SIZE = 8000; // guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 const ZOHO_RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
 
+// Allow PII/health-data submission only from GDPR/UK-GDPR zones.
+const EU_UK_COUNTRIES = new Set([
+  // EU-27
+  'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE',
+  'IT', 'LV', 'LT', 'LU', 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE',
+  // UK
+  'GB', 'UK'
+]);
+
 export async function onRequest(context) {
   const { request, env } = context;
 
@@ -76,6 +85,11 @@ export async function onRequest(context) {
 
     if (request.method !== 'POST') {
       return withCors(json({ error: 'Method not allowed' }, 405));
+    }
+
+    const geo = getGeofenceDecision(request);
+    if (!geo.allowed) {
+      return withCors(json({ error: 'PII submissions are not available in your region.' }, 403));
     }
 
     const parsed = await parseRequestPayload(request);
@@ -218,6 +232,24 @@ function estimatePayloadSize(data) {
     if (value === null || value === undefined) return total;
     return total + String(value).length;
   }, 0);
+}
+
+function normalizeCountryCode(value) {
+  return (value === null || value === undefined) ? '' : String(value).trim().toUpperCase();
+}
+
+function getGeofenceDecision(request) {
+  // Prefer Worker-provided cf object; fall back to request header when available.
+  const cfCountry = request && request.cf && request.cf.country ? request.cf.country : '';
+  const headerCountry = request && request.headers ? (request.headers.get('cf-ipcountry') || request.headers.get('CF-IPCountry') || '') : '';
+  const country = normalizeCountryCode(cfCountry || headerCountry);
+
+  // When running locally (no Cloudflare metadata), allow submissions so development flows still work.
+  if (!country) {
+    return { allowed: true, country: '' };
+  }
+
+  return { allowed: EU_UK_COUNTRIES.has(country), country };
 }
 
 function coerceString(value) {

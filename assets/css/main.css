@@ -8327,6 +8327,19 @@ nav a.cta:active{
   margin: 0;
 }
 
+/* ===== Geo/PII gating ===== */
+html.rk-pii-pending [data-kaddio-form],
+html.rk-pii-blocked [data-kaddio-form] {
+  display: none !important;
+}
+
+html.rk-pii-pending #adhd-lead-modal,
+html.rk-pii-blocked #adhd-lead-modal,
+html.rk-pii-pending #newsletter-popup,
+html.rk-pii-blocked #newsletter-popup {
+  display: none !important;
+}
+
 /* ===== ADHD Lead Modal ===== */
 .lead-modal {
   position: fixed;
