@@ -6,6 +6,15 @@
  * - KADDIO_GRAPHQL_URL  e.g. https://<org>.kaddio.com/graphql
  * - KADDIO_API_TOKEN    personal API token from /my-profile
  * - KADDIO_IMPERSONATION_ID (optional) host id to impersonate
+ *
+ * Optional consent field mapping (CustomFieldValueInput.field identifiers in Kaddio):
+ * - KADDIO_CONSENT_STATUS_FIELD
+ * - KADDIO_CONSENT_TIMESTAMP_FIELD
+ * - KADDIO_CONSENT_SOURCE_FIELD
+ * - KADDIO_CONSENT_POLICY_URL_FIELD
+ * - KADDIO_CONSENT_POLICY_VERSION_FIELD
+ * - KADDIO_CONSENT_STATEMENT_VERSION_FIELD
+ * - KADDIO_CONSENT_METADATA_FIELD
  */
 
 const CREATE_CLIENT_MUTATION = `
@@ -74,12 +83,19 @@ export async function onRequest(context) {
       return withCors(json({ error: parsed.error }, 400));
     }
 
+    const receivedAt = new Date().toISOString();
+
     const normalized = normalizeInput(parsed.data);
     if (!normalized) {
       return withCors(json({ error: 'Missing required fields' }, 400));
     }
 
-    const kaddioResult = await sendKaddioLead(normalized, env);
+    // Health data screening submissions require explicit consent before storing any data.
+    if (normalized.hasScreening && (!normalized.consent || normalized.consent.status !== true)) {
+      return withCors(json({ error: 'Explicit consent is required to submit screening results.' }, 400));
+    }
+
+    const kaddioResult = await sendKaddioLead(normalized, env, { receivedAt });
     const zohoResult = await sendZohoLeadSafe(normalized);
 
     const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
@@ -209,6 +225,43 @@ function coerceString(value) {
   return String(value).trim();
 }
 
+function coerceBoolean(value) {
+  if (value === true) return true;
+  if (value === false) return false;
+  if (value === 1 || value === '1') return true;
+  if (value === 0 || value === '0') return false;
+  const normalized = coerceString(value).toLowerCase();
+  if (normalized === 'on') return true;
+  if (normalized === 'off') return false;
+  if (normalized === 'true' || normalized === 'yes' || normalized === 'y') return true;
+  if (normalized === 'false' || normalized === 'no' || normalized === 'n') return false;
+  return null;
+}
+
+function normalizeConsent(consent) {
+  if (!consent || typeof consent !== 'object') return null;
+  const statusCoerced = coerceBoolean(consent.status);
+  if (statusCoerced === null) return null;
+  const purpose = coerceString(consent.purpose);
+  const source = coerceString(consent.source);
+  const locale = coerceString(consent.locale);
+  const policyUrl = coerceString(consent.policyUrl);
+  const policyVersion = coerceString(consent.policyVersion);
+  const statementVersion = coerceString(consent.statementVersion);
+  const statement = coerceString(consent.statement);
+
+  return {
+    status: statusCoerced,
+    purpose: purpose || undefined,
+    source: source || undefined,
+    locale: locale || undefined,
+    policyUrl: policyUrl || undefined,
+    policyVersion: policyVersion || undefined,
+    statementVersion: statementVersion || undefined,
+    statement: statement || undefined
+  };
+}
+
 function normalizeInput(body) {
   if (!body || typeof body !== 'object') return null;
 
@@ -240,11 +293,16 @@ function normalizeInput(body) {
   const lastname = rest.join(' ') || lastFallback;
   const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Website form');
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
+  const path = coerceString(metadata.path);
+  const formContext = coerceString(metadata.formContext);
+  const screening = metadata.screening && typeof metadata.screening === 'object' ? metadata.screening : null;
+  const screeningLabel = screening ? coerceString(screening.testName || screening.name || screening.title) : '';
+  const consent = normalizeConsent(metadata.consent);
 
   const metaNote = [
-    metadata.path ? `Path: ${metadata.path}` : '',
-    metadata.formContext ? `Form: ${metadata.formContext}` : '',
-    metadata.screening ? `Screening: ${safeStringify(metadata.screening)}` : ''
+    path ? `Path: ${path}` : '',
+    formContext ? `Form: ${formContext}` : '',
+    screeningLabel ? `Screening: ${screeningLabel}` : ''
   ].filter(Boolean).join(' | ');
 
   return {
@@ -253,7 +311,14 @@ function normalizeInput(body) {
     email,
     description,
     leadSource,
-    note: metaNote
+    note: metaNote,
+    hasScreening: Boolean(screening),
+    meta: {
+      path: path || undefined,
+      formContext: formContext || undefined,
+      screeningLabel: screeningLabel || undefined
+    },
+    consent
   };
 }
 
@@ -265,7 +330,91 @@ function safeStringify(value) {
   }
 }
 
-async function sendKaddioLead(normalized, env) {
+function buildConsentRecord(normalized, receivedAt) {
+  const consent = normalized && normalized.consent;
+  if (!consent || consent.status !== true) return null;
+
+  const timestamp = receivedAt || new Date().toISOString();
+  const source = consent.source
+    || (normalized.meta && normalized.meta.formContext ? `Web Form: ${normalized.meta.formContext}` : '')
+    || (normalized.leadSource ? `Web Form: ${normalized.leadSource}` : 'Web Form');
+
+  return {
+    status: true,
+    timestamp,
+    subject: {
+      name: [normalized.firstname, normalized.lastname].filter(Boolean).join(' ').trim() || undefined,
+      email: normalized.email || undefined
+    },
+    purpose: consent.purpose || undefined,
+    source,
+    locale: consent.locale || undefined,
+    policyUrl: consent.policyUrl || undefined,
+    policyVersion: consent.policyVersion || undefined,
+    statementVersion: consent.statementVersion || undefined,
+    statement: consent.statement || undefined,
+    context: {
+      path: normalized.meta && normalized.meta.path ? normalized.meta.path : undefined,
+      formContext: normalized.meta && normalized.meta.formContext ? normalized.meta.formContext : undefined,
+      screeningLabel: normalized.meta && normalized.meta.screeningLabel ? normalized.meta.screeningLabel : undefined
+    }
+  };
+}
+
+function formatConsentBlock(record) {
+  if (!record) return '';
+  const subjectName = record.subject && record.subject.name ? coerceString(record.subject.name) : '';
+  const subjectEmail = record.subject && record.subject.email ? coerceString(record.subject.email) : '';
+  const statement = coerceString(record.statement);
+  const lines = [
+    'Consent (explicit):',
+    subjectName ? `subject_name: ${subjectName}` : '',
+    subjectEmail ? `subject_email: ${subjectEmail}` : '',
+    'consent_status: TRUE',
+    `consent_timestamp: ${record.timestamp}`,
+    record.purpose ? `consent_purpose: ${record.purpose}` : '',
+    record.source ? `consent_source: ${record.source}` : '',
+    record.locale ? `consent_locale: ${record.locale}` : '',
+    record.policyUrl ? `privacy_policy_url: ${record.policyUrl}` : '',
+    record.policyVersion ? `privacy_policy_version: ${record.policyVersion}` : '',
+    statement ? `consent_statement: ${statement.slice(0, 500)}` : '',
+    record.statementVersion ? `consent_statement_version: ${record.statementVersion}` : ''
+  ].filter(Boolean);
+  return lines.join('\n');
+}
+
+function appendConsentToMessage(message, record) {
+  const base = coerceString(message);
+  const block = formatConsentBlock(record);
+  if (!block) return base;
+  return base ? `${base}\n\n${block}` : block;
+}
+
+function pushCustomProp(list, field, value) {
+  const key = coerceString(field);
+  if (!key) return;
+  if (value === null || value === undefined) return;
+  const str = coerceString(value);
+  if (!str) return;
+  list.push({ field: key, valueString: str });
+}
+
+function buildConsentCustomProps(record, env) {
+  const props = [];
+  if (!record || !env) return props;
+
+  pushCustomProp(props, env.KADDIO_CONSENT_STATUS_FIELD, 'TRUE');
+  pushCustomProp(props, env.KADDIO_CONSENT_TIMESTAMP_FIELD, record.timestamp);
+  pushCustomProp(props, env.KADDIO_CONSENT_SOURCE_FIELD, record.source);
+  pushCustomProp(props, env.KADDIO_CONSENT_POLICY_URL_FIELD, record.policyUrl);
+  pushCustomProp(props, env.KADDIO_CONSENT_POLICY_VERSION_FIELD, record.policyVersion);
+  pushCustomProp(props, env.KADDIO_CONSENT_STATEMENT_VERSION_FIELD, record.statementVersion);
+  pushCustomProp(props, env.KADDIO_CONSENT_METADATA_FIELD, safeStringify(record));
+
+  return props;
+}
+
+async function sendKaddioLead(normalized, env, { receivedAt } = {}) {
   const result = {
     ok: false,
     clientId: null,
@@ -278,11 +427,13 @@ async function sendKaddioLead(normalized, env) {
     return result;
   }
 
+  const consentRecord = buildConsentRecord(normalized, receivedAt);
+  const message = appendConsentToMessage(normalized.description || 'Website enquiry', consentRecord);
   const clientInput = {
     firstname: normalized.firstname,
     lastname: normalized.lastname,
     email: normalized.email,
-    notification: normalized.description || 'Website enquiry',
+    notification: message || 'Website enquiry',
     pnr: null,
     zip: null,
     city: null,
@@ -312,7 +463,7 @@ async function sendKaddioLead(normalized, env) {
     result.clientId = clientId;
     result.updatedCustomProperties = true;
 
-    const message = normalized.description || 'Website enquiry';
+    const warnings = [];
     const customProps = [
       { field: 'Reason_Field', valueString: message }
     ];
@@ -329,12 +480,37 @@ async function sendKaddioLead(normalized, env) {
 
       if (updateUserResponse.errors?.length) {
         const messageText = updateUserResponse.errors.map(err => err.message).join('; ');
-        result.warning = messageText || 'Client created but custom field not updated';
+        warnings.push(messageText || 'Client created but custom field not updated');
         result.updatedCustomProperties = false;
       }
     } catch (err) {
-      result.warning = err?.message || 'Client created; custom field update failed';
+      warnings.push(err?.message || 'Client created; custom field update failed');
       result.updatedCustomProperties = false;
+    }
+
+    // Best-effort: record explicit consent in dedicated fields if configured.
+    const consentProps = buildConsentCustomProps(consentRecord, env);
+    if (consentProps.length) {
+      try {
+        const consentUpdateResponse = await callKaddio({
+          query: UPDATE_USER_MUTATION,
+          variables: {
+            userId: clientId,
+            customProperties: consentProps
+          },
+          env
+        });
+        if (consentUpdateResponse.errors?.length) {
+          const messageText = consentUpdateResponse.errors.map(err => err.message).join('; ');
+          warnings.push(messageText || 'Consent fields could not be updated');
+        }
+      } catch (err) {
+        warnings.push(err?.message || 'Consent fields could not be updated');
+      }
+    }
+
+    if (warnings.length) {
+      result.warning = warnings.join(' | ');
     }
   } catch (error) {
     result.warning = error?.message || 'Failed to reach Kaddio';

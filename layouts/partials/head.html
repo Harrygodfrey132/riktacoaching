@@ -25,6 +25,15 @@
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
   <link rel="canonical" href="{{ $page.Permalink }}">
+  {{- /* Consent/policy versioning for clinical consent logs */ -}}
+  {{- $policyVersion := cond $isEn (or $site.Params.privacy_policy_version_en $site.Params.privacy_policy_version) (or $site.Params.privacy_policy_version_sv $site.Params.privacy_policy_version) -}}
+  {{- $consentVersion := cond $isEn (or $site.Params.consent_statement_version_en $site.Params.consent_statement_version) (or $site.Params.consent_statement_version_sv $site.Params.consent_statement_version) -}}
+  {{- with $policyVersion }}
+  <meta name="rk-privacy-policy-version" content="{{ . }}">
+  {{- end }}
+  {{- with $consentVersion }}
+  <meta name="rk-consent-statement-version" content="{{ . }}">
+  {{- end }}
   {{- /* Hreflang alternates (deduped, including self-reference) */ -}}
   {{- $selfLang := cond $isEn "en" "sv" -}}
   {{- $seen := dict $selfLang true -}}

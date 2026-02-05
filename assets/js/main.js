@@ -356,6 +356,45 @@ function initScreeningForm({
     return { ...(baseMeta || {}), ...extraMeta };
   }
 
+  const CONSENT_PURPOSE_ASSESSMENT = 'preliminary_assessment';
+
+  function getMetaContent(name){
+    const el = document.querySelector(`meta[name="${name}"]`);
+    return el ? String(el.getAttribute('content') || '').trim() : '';
+  }
+
+  function squashText(value){
+    return String(value || '').replace(/\s+/g, ' ').trim();
+  }
+
+  function buildConsentMetadata({ screeningForm, testName, formContext, locale } = {}){
+    if (!screeningForm) return null;
+    const checkbox = screeningForm.querySelector('input[name="consentAcknowledgement"]');
+    const status = !!(checkbox && checkbox.checked);
+    const label = checkbox ? checkbox.closest('label') : null;
+    const statement = label ? squashText(label.textContent) : '';
+    const policyLink = screeningForm.querySelector('.privacy-link');
+    const policyUrl = policyLink ? squashText(policyLink.getAttribute('href')) : '';
+    const policyVersion = getMetaContent('rk-privacy-policy-version');
+    const statementVersion = getMetaContent('rk-consent-statement-version');
+    const resolvedLocale = (locale || resolveLocale(screeningForm) || (IS_EN ? 'en' : 'sv')).toLowerCase();
+    const source = formContext
+      ? (testName ? `Web Form: ${formContext} (${testName})` : `Web Form: ${formContext}`)
+      : (testName ? `Web Form: ${testName}` : 'Web Form');
+
+    return {
+      status,
+      purpose: CONSENT_PURPOSE_ASSESSMENT,
+      source,
+      locale: resolvedLocale,
+      policyUrl: policyUrl || undefined,
+      policyVersion: policyVersion || undefined,
+      statementVersion: statementVersion || undefined,
+      // Store the exact consent copy shown to the user (trimmed). Keep it short to avoid payload bloat.
+      statement: statement ? statement.slice(0, 800) : undefined
+    };
+  }
+
   function buildContactPayload(form){
     const formData = new FormData(form);
     const firstName = (formData.get('firstName') || '').trim();
@@ -778,12 +817,25 @@ function initScreeningForm({
             : 'Slutför självtestet innan du skickar.';
           throw new Error(message);
         }
+        const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
         const screeningMeta = {
           testName: leadResultPayload.testName,
           total: leadResultPayload.total,
           interpretation: leadResultPayload.interpretation,
           answers: leadResultPayload.answers
         };
+        const consentMeta = buildConsentMetadata({
+          screeningForm: leadResultPayload.form,
+          testName: leadResultPayload.testName,
+          formContext: basePayload && basePayload.metadata ? basePayload.metadata.formContext : '',
+          locale: leadResultPayload.locale
+        });
+        if (!consentMeta || consentMeta.status !== true) {
+          const msg = lang.startsWith('en')
+            ? 'Please confirm the consent checkbox before sending your results.'
+            : 'Bekräfta samtycke-rutan innan du skickar dina resultat.';
+          throw new Error(msg);
+        }
         const derivedDescription = (leadDescription && leadDescription.value)
           || buildLeadDescription(leadResultPayload)
           || basePayload.description;
@@ -791,7 +843,8 @@ function initScreeningForm({
           description: derivedDescription,
           leadSource: (((leadSource && leadSource.value) || basePayload.leadSource || 'Screening form')).trim(),
           metadata: mergeMetadata(basePayload.metadata, {
-            screening: screeningMeta
+            screening: screeningMeta,
+            consent: consentMeta
           })
         };
       },

@@ -8457,6 +8457,14 @@ nav a.cta:active{
   line-height: 1.6;
 }
 
+.lead-modal__privacy a,
+.privacy-link {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
 .lead-required {
   color: #e64e4e;
 }
