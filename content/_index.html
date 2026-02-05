@@ -275,6 +275,12 @@ hide_template_hero: true
             <label for="home-contact-description">Berätta kort hur vi kan hjälpa dig</label>
             <textarea id="home-contact-description" name="description" placeholder="Beskriv din situation eller ställ din fråga"></textarea>
           </div>
+          <div class="form-row form-row--consent">
+            <label class="form-consent" for="home-contact-policy-ack">
+              <input type="checkbox" id="home-contact-policy-ack" name="policyAcknowledgement" required>
+              <span>Jag godkänner att mina uppgifter hanteras i enlighet med Rikta Psykiatris <a class="privacy-link" href="/integritetspolicy/">Integritetspolicy</a> och <a class="privacy-link" href="/allmanna-villkor/">Allmänna villkor</a>.</span>
+            </label>
+          </div>
           <div class="form-row form-row--actions">
             <button type="submit" class="btn primary">Skicka</button>
           </div>
@@ -299,17 +305,27 @@ hide_template_hero: true
 
             form.addEventListener('submit', async (event) => {
               event.preventDefault();
+              if (typeof form.reportValidity === 'function') {
+                if (!form.reportValidity()) return;
+              } else if (typeof form.checkValidity === 'function') {
+                if (!form.checkValidity()) return;
+              }
               if (thankYou) thankYou.hidden = true;
               setStatus(form.dataset.sendingMessage || 'Skickar...', 'info');
 
               const data = new FormData(form);
               const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
               const email = (data.get('email') || data.get('Email') || '').trim();
+              const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
               const payload = {
                 fullName,
                 email,
                 description: (data.get('description') || data.get('message') || '').trim(),
-                leadSource: (data.get('leadSource') || '').trim()
+                leadSource: (data.get('leadSource') || '').trim(),
+                metadata: {
+                  path: window.location.pathname,
+                  formContext
+                }
               };
               if (!payload.email) {
                 setStatus('Lägg till din e-post innan du skickar.', 'error');

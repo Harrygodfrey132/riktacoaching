@@ -321,6 +321,15 @@ hide_template_hero: true
               <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='contact-description' aria-required='false' aria-label='Description' name='description' placeholder="Describe your situation or ask your question"></textarea>
             </div>
           </div>
+          <div class='zcwf_row form-row form-row--consent'>
+            <div class='zcwf_col_lab'></div>
+            <div class='zcwf_col_fld'>
+              <label class="form-consent" for="contact-policy-ack">
+                <input type="checkbox" id="contact-policy-ack" name="policyAcknowledgement" required>
+                <span>I agree that my data is handled in accordance with Rikta Coaching's <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>.</span>
+              </label>
+            </div>
+          </div>
           <div class='zcwf_row form-row form-row--actions'>
             <div class='zcwf_col_lab'>
             </div>
@@ -351,17 +360,27 @@ hide_template_hero: true
 
           form.addEventListener('submit', async (event) => {
             event.preventDefault();
+            if (typeof form.reportValidity === 'function') {
+              if (!form.reportValidity()) return;
+            } else if (typeof form.checkValidity === 'function') {
+              if (!form.checkValidity()) return;
+            }
             if (thankYou) thankYou.hidden = true;
             setStatus(form.dataset.sendingMessage || 'Sending...', 'info');
 
             const data = new FormData(form);
             const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
             const email = (data.get('email') || data.get('Email') || '').trim();
+            const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
             const payload = {
               fullName,
               email,
               description: (data.get('description') || data.get('message') || '').trim(),
-              leadSource: (data.get('leadSource') || '').trim()
+              leadSource: (data.get('leadSource') || '').trim(),
+              metadata: {
+                path: window.location.pathname,
+                formContext
+              }
             };
             if (!payload.email) {
               setStatus('Please add your email before submitting.', 'error');

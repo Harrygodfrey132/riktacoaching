@@ -1581,6 +1581,44 @@ nav a.active {
   gap: 8px;
 }
 
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: #f8fafc;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  font-size: 13px;
+  line-height: 1.6;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin-top: 3px;
+  flex: none;
+  border-radius: 4px;
+  accent-color: var(--secondary);
+}
+
+#crmWebToEntityForm .form-consent input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin-top: 3px;
+  flex: none;
+  border-radius: 4px;
+  accent-color: var(--secondary);
+}
+
+.form-consent span {
+  display: block;
+}
+
 .contact-form label {
   font-weight: 600;
   color: rgba(29, 44, 59, 0.85);

@@ -557,6 +557,11 @@ function initScreeningForm({
     form.dataset.kaddioBound = 'true';
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
+      if (typeof form.reportValidity === 'function') {
+        if (!form.reportValidity()) return;
+      } else if (typeof form.checkValidity === 'function') {
+        if (!form.checkValidity()) return;
+      }
       const thankYou = form.querySelector('[data-thank-you]');
       if (thankYou) {
         thankYou.hidden = true;
