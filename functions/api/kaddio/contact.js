@@ -104,9 +104,17 @@ export async function onRequest(context) {
       return withCors(json({ error: 'Missing required fields' }, 400));
     }
 
-    // Health data screening submissions require explicit consent before storing any data.
-    if (normalized.hasScreening && (!normalized.consent || normalized.consent.status !== true)) {
-      return withCors(json({ error: 'Explicit consent is required to submit screening results.' }, 400));
+    // Explicit consent is required for screening submissions and for our primary contact forms.
+    const formContext = normalized.meta && normalized.meta.formContext ? String(normalized.meta.formContext).toLowerCase() : '';
+    const isContactFormContext = formContext.startsWith('contact-page') || formContext.startsWith('homepage-reviews');
+    const requiresConsent = normalized.hasScreening
+      || (normalized.meta && normalized.meta.consentRequired === true)
+      || isContactFormContext;
+    if (requiresConsent && (!normalized.consent || normalized.consent.status !== true)) {
+      const errorMessage = normalized.hasScreening
+        ? 'Explicit consent is required to submit screening results.'
+        : 'Explicit consent is required to submit this form.';
+      return withCors(json({ error: errorMessage }, 400));
     }
 
     const kaddioResult = await sendKaddioLead(normalized, env, { receivedAt });
@@ -278,6 +286,7 @@ function normalizeConsent(consent) {
   const source = coerceString(consent.source);
   const locale = coerceString(consent.locale);
   const policyUrl = coerceString(consent.policyUrl);
+  const termsUrl = coerceString(consent.termsUrl);
   const policyVersion = coerceString(consent.policyVersion);
   const statementVersion = coerceString(consent.statementVersion);
   const statement = coerceString(consent.statement);
@@ -288,6 +297,7 @@ function normalizeConsent(consent) {
     source: source || undefined,
     locale: locale || undefined,
     policyUrl: policyUrl || undefined,
+    termsUrl: termsUrl || undefined,
     policyVersion: policyVersion || undefined,
     statementVersion: statementVersion || undefined,
     statement: statement || undefined
@@ -327,6 +337,7 @@ function normalizeInput(body) {
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
   const path = coerceString(metadata.path);
   const formContext = coerceString(metadata.formContext);
+  const consentRequired = coerceBoolean(metadata.consentRequired) === true;
   const screening = metadata.screening && typeof metadata.screening === 'object' ? metadata.screening : null;
   const screeningLabel = screening ? coerceString(screening.testName || screening.name || screening.title) : '';
   const consent = normalizeConsent(metadata.consent);
@@ -348,7 +359,8 @@ function normalizeInput(body) {
     meta: {
       path: path || undefined,
       formContext: formContext || undefined,
-      screeningLabel: screeningLabel || undefined
+      screeningLabel: screeningLabel || undefined,
+      consentRequired: consentRequired || undefined
     },
     consent
   };
@@ -382,6 +394,7 @@ function buildConsentRecord(normalized, receivedAt) {
     source,
     locale: consent.locale || undefined,
     policyUrl: consent.policyUrl || undefined,
+    termsUrl: consent.termsUrl || undefined,
     policyVersion: consent.policyVersion || undefined,
     statementVersion: consent.statementVersion || undefined,
     statement: consent.statement || undefined,
@@ -408,6 +421,7 @@ function formatConsentBlock(record) {
     record.source ? `consent_source: ${record.source}` : '',
     record.locale ? `consent_locale: ${record.locale}` : '',
     record.policyUrl ? `privacy_policy_url: ${record.policyUrl}` : '',
+    record.termsUrl ? `terms_url: ${record.termsUrl}` : '',
     record.policyVersion ? `privacy_policy_version: ${record.policyVersion}` : '',
     statement ? `consent_statement: ${statement.slice(0, 500)}` : '',
     record.statementVersion ? `consent_statement_version: ${record.statementVersion}` : ''

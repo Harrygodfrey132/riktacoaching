@@ -448,6 +448,7 @@ function initScreeningForm({
   }
 
   const CONSENT_PURPOSE_ASSESSMENT = 'preliminary_assessment';
+  const CONSENT_PURPOSE_CONTACT = 'contact_request';
 
   function getMetaContent(name){
     const el = document.querySelector(`meta[name="${name}"]`);
@@ -458,14 +459,22 @@ function initScreeningForm({
     return String(value || '').replace(/\s+/g, ' ').trim();
   }
 
-  function buildConsentMetadata({ screeningForm, testName, formContext, locale } = {}){
+  function buildConsentMetadata({
+    screeningForm,
+    testName,
+    formContext,
+    locale,
+    checkboxName = 'consentAcknowledgement',
+    purpose = CONSENT_PURPOSE_ASSESSMENT
+  } = {}){
     if (!screeningForm) return null;
-    const checkbox = screeningForm.querySelector('input[name="consentAcknowledgement"]');
+    const checkbox = screeningForm.querySelector(`input[name="${checkboxName}"]`);
     const status = !!(checkbox && checkbox.checked);
     const label = checkbox ? checkbox.closest('label') : null;
     const statement = label ? squashText(label.textContent) : '';
-    const policyLink = screeningForm.querySelector('.privacy-link');
-    const policyUrl = policyLink ? squashText(policyLink.getAttribute('href')) : '';
+    const linkEls = label ? Array.from(label.querySelectorAll('a.privacy-link')) : [];
+    const policyUrl = linkEls[0] ? squashText(linkEls[0].getAttribute('href')) : '';
+    const termsUrl = linkEls[1] ? squashText(linkEls[1].getAttribute('href')) : '';
     const policyVersion = getMetaContent('rk-privacy-policy-version');
     const statementVersion = getMetaContent('rk-consent-statement-version');
     const resolvedLocale = (locale || resolveLocale(screeningForm) || (IS_EN ? 'en' : 'sv')).toLowerCase();
@@ -475,10 +484,11 @@ function initScreeningForm({
 
     return {
       status,
-      purpose: CONSENT_PURPOSE_ASSESSMENT,
+      purpose,
       source,
       locale: resolvedLocale,
       policyUrl: policyUrl || undefined,
+      termsUrl: termsUrl || undefined,
       policyVersion: policyVersion || undefined,
       statementVersion: statementVersion || undefined,
       // Store the exact consent copy shown to the user (trimmed). Keep it short to avoid payload bloat.
@@ -515,6 +525,17 @@ function initScreeningForm({
       path: window.location.pathname,
       formContext: form.dataset.formContext || form.dataset.kaddioForm || null
     };
+    const policyAck = form.querySelector('input[name="policyAcknowledgement"]');
+    if (policyAck) {
+      baseMetadata.consentRequired = true;
+      baseMetadata.consent = buildConsentMetadata({
+        screeningForm: form,
+        formContext: baseMetadata.formContext,
+        locale: resolveLocale(form),
+        checkboxName: 'policyAcknowledgement',
+        purpose: CONSENT_PURPOSE_CONTACT
+      });
+    }
     const payload = {
       fullName,
       email,
