@@ -102,12 +102,6 @@ og_description: "A validated 7-item anxiety screening questionnaire."
           </div>
         </fieldset>
 
-        <div class="adhd-consent">
-          <label class="adhd-consent__label">
-            <input type="checkbox" name="consentAcknowledgement" required>
-            <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Psychiatry processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy Policy</a>, which explains how my data is handled in accordance with GDPR and the Patient Data Act.</span>
-          </label>
-        </div>
         <div class="adhd-screening__actions">
           <button class="btn primary adhd-screening__submit" type="submit">Calculate score</button>
           <button class="btn secondary adhd-screening__reset" type="button">Clear form</button>
@@ -160,6 +154,10 @@ og_description: "A validated 7-item anxiety screening questionnaire."
           <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
         </label>
       </div>
+      <label class="lead-modal__consent">
+        <input type="checkbox" name="consentAcknowledgement" required>
+        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Psychiatry processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy Policy</a>, which explains how my data is handled in accordance with GDPR and the Patient Data Act.</span>
+      </label>
       <div class="lead-modal__actions">
         <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
         <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>

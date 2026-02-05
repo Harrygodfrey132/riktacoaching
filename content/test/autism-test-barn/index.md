@@ -121,12 +121,6 @@ og_description: "Kort föräldraenkät för barn 4–11 år."
             </li>
           </ol>
         </fieldset>
-        <div class="adhd-consent">
-          <label class="adhd-consent__label">
-            <input type="checkbox" name="consentAcknowledgement" required>
-            <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-          </label>
-        </div>
         <div class="adhd-screening__actions">
           <button class="btn primary adhd-screening__submit" type="submit">Räkna poäng</button>
           <button class="btn secondary adhd-screening__reset" type="button">Rensa formulär</button>
@@ -179,6 +173,10 @@ og_description: "Kort föräldraenkät för barn 4–11 år."
           <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
         </label>
       </div>
+      <label class="lead-modal__consent">
+        <input type="checkbox" name="consentAcknowledgement" required>
+        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
+      </label>
       <div class="lead-modal__actions">
         <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
         <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>

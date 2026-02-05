@@ -825,7 +825,8 @@ function initScreeningForm({
           answers: leadResultPayload.answers
         };
         const consentMeta = buildConsentMetadata({
-          screeningForm: leadResultPayload.form,
+          // Consent checkbox lives in the lead modal (same place as personal details).
+          screeningForm: leadForm,
           testName: leadResultPayload.testName,
           formContext: basePayload && basePayload.metadata ? basePayload.metadata.formContext : '',
           locale: leadResultPayload.locale
