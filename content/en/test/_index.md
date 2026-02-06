@@ -172,7 +172,7 @@ url: "/en/test/"
           </span>
           <div>
             <p class="tests-card__eyebrow">AQ-10</p>
-            <h3>AQ-10 (Child Version)</h3>
+            <h3>Child autism test</h3>
           </div>
         </div>
         <p>A quick referral guide for parents of children aged 4–11 years with suspected autism.</p>
