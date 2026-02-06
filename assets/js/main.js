@@ -12,7 +12,7 @@
     return IS_EN ? 'en' : 'sv';
   }
 
-  // ----- Geo/PII gating (EU/UK only) -----
+  // ----- Geo gating (EU/UK only; applies to screening submissions) -----
   const GEO_ENDPOINT = '/api/geo';
   const GEO_CACHE_KEY = 'rk_geo_gate_v1';
   const GEO_CACHE_TTL_MS = 6 * 60 * 60 * 1000; // 6h
@@ -827,10 +827,7 @@ function initScreeningForm({
   }
 
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
-  geoGateReady.then(() => {
-    if (!isPiiAllowed()) return;
-    contactForms.forEach(form => bindKaddioForm(form));
-  });
+  contactForms.forEach(form => bindKaddioForm(form));
 
   // ----- Lead capture modal (Kaddio) -----
   const leadModal = document.getElementById('adhd-lead-modal');
@@ -870,7 +867,7 @@ function initScreeningForm({
   }
 
   function openLeadModal(result) {
-    // Outside EU/UK we do not collect or submit PII/health data. Still show the local score.
+    // Outside EU/UK we do not collect or submit screening (health) data. Still show the local score.
     if (!isPiiAllowed()) {
       if (result && typeof result.renderResult === 'function') {
         result.renderResult();

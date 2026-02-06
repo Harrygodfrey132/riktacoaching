@@ -1,7 +1,7 @@
 /**
  * Lightweight geofence endpoint for client-side gating.
  *
- * Returns whether PII/health-data submission is allowed from the visitor's country.
+ * Returns whether screening (health-data) submission is allowed from the visitor's country.
  * Cloudflare provides `request.cf.country` (ISO 3166-1 alpha-2) when running on Pages.
  */
 
@@ -38,4 +38,3 @@ export async function onRequest(context) {
     country: country || null
   });
 }
-

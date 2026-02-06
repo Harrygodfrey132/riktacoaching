@@ -8365,16 +8365,14 @@ nav a.cta:active{
   margin: 0;
 }
 
-/* ===== Geo/PII gating ===== */
-html.rk-pii-pending [data-kaddio-form],
-html.rk-pii-blocked [data-kaddio-form] {
+/* ===== Geo gating (screening only) ===== */
+html.rk-pii-pending [data-kaddio-form="lead"],
+html.rk-pii-blocked [data-kaddio-form="lead"] {
   display: none !important;
 }
 
 html.rk-pii-pending #adhd-lead-modal,
-html.rk-pii-blocked #adhd-lead-modal,
-html.rk-pii-pending #newsletter-popup,
-html.rk-pii-blocked #newsletter-popup {
+html.rk-pii-blocked #adhd-lead-modal {
   display: none !important;
 }
 

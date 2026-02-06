@@ -66,7 +66,7 @@ const MAX_BODY_SIZE = 8000; // guardrail against oversized payloads
 const RETRYABLE_STATUS = new Set([429, 502, 503, 504]);
 const ZOHO_RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
 
-// Allow PII/health-data submission only from GDPR/UK-GDPR zones.
+// Allow screening (health-data) submissions only from GDPR/UK-GDPR zones.
 const EU_UK_COUNTRIES = new Set([
   // EU-27
   'AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE', 'FI', 'FR', 'DE', 'GR', 'HU', 'IE',
@@ -87,11 +87,6 @@ export async function onRequest(context) {
       return withCors(json({ error: 'Method not allowed' }, 405));
     }
 
-    const geo = getGeofenceDecision(request);
-    if (!geo.allowed) {
-      return withCors(json({ error: 'PII submissions are not available in your region.' }, 403));
-    }
-
     const parsed = await parseRequestPayload(request);
     if (parsed.error) {
       return withCors(json({ error: parsed.error }, 400));
@@ -102,6 +97,11 @@ export async function onRequest(context) {
     const normalized = normalizeInput(parsed.data);
     if (!normalized) {
       return withCors(json({ error: 'Missing required fields' }, 400));
+    }
+
+    const geo = getGeofenceDecision(request);
+    if (!geo.allowed && normalized.hasScreening) {
+      return withCors(json({ error: 'Screening submissions are not available in your region.' }, 403));
     }
 
     // Explicit consent is required for screening submissions and for our primary contact forms.
