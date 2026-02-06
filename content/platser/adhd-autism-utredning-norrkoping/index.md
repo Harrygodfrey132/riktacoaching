@@ -3,25 +3,25 @@ title: "ADHD- och autismutredning i Norrköping"
 draft: false
 meta_title: "ADHD- och autismutredning i Norrköping | Rikta"
 meta_keywords: "ADHD utredning Norrköping, autism privat Norrköping, psykiater Norrköping, neuropsykiatri Östergötland, Rikta Norrköping"
-meta_description: "Digitala ADHD- och autismutredningar för Norrköping med specialistteam, videobesök och korta fysiska pass när det behövs."
+meta_description: "ADHD- och autismutredning för Norrköping med digitalt upplägg, fysiska kontroller via mobilt team från Katrineholm och somatiska prover hos lokala partners."
 og_title: "Neuropsykiatrisk utredning i Norrköping"
-og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och punktinsatser nära Norrköping."
+og_description: "Digital utredning med fysiska kontroller i Norrköping via mobilt team från Katrineholm och provtagning hos lokala partners."
 ---
 
 <section class="location-hero location-hero--norrkoping">
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Norrköping • Digital-first</span>
+        <span class="eyebrow">Norrköping • Mobil Hub</span>
         <h1>ADHD- och autismutredning i Norrköping</h1>
         <p class="lead">
-          Vi opererar i Norrköping och Östergötland och hjälper dig att få en strukturerad utredning som fungerar med ditt arbetsliv, studier eller familjesituation.
-          Kartläggning, psykologintervjuer, tester och läkarbesök sker via video; bara om ett särskilt moment kräver det kan vi arrangera ett kort precisionspass i Stockholm.
+          Specialistvård på dina villkor. Vi hjälper dig i Norrköping och Östergötland att få en strukturerad utredning som fungerar med jobb, studier eller familjeliv.
+          Vårt mobila team från Katrineholm servar Norrköping med omnejd för fysiska kontroller, vilket minimerar ditt behov av resor. Somatiska prover koordineras hos lokala partners.
         </p>
         <ul class="location-hero__highlights">
           <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg (tidsplanen styrs av dina behov).</li>
-          <li>Intyg och underlag anpassade för Norrköpings arbetsgivare, Linköpings universitet, kommunala skolor och CSN.</li>
-          <li>Samma team för medicin, coachning och arbetslivsstöd; fysiska moment kan arrangeras vid behov.</li>
+          <li>Intyg och underlag anpassade för Campus Norrköping (LiU), arbetsgivare i tech och näringsliv, kommunala skolor och CSN.</li>
+          <li>Samma team för medicin, coachning och arbetslivsstöd; fysiska kontroller kan ske i Norrköping via mobilt team.</li>
         </ul>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss/">Boka konsultation</a>
@@ -41,7 +41,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           </div>
           <div>
             <dt>Tillgänglighet</dt>
-            <dd>Videosamtal 07–21; korta pass i Stockholm vid behov</dd>
+            <dd>Videosamtal 07–21; fysiska kontroller i Norrköping vid behov</dd>
           </div>
           <div>
             <dt>Eftervård</dt>
@@ -57,9 +57,9 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
   <div class="container">
     <header class="location-section__header">
       <span class="eyebrow">Så går det till</span>
-      <h2>Din utredning i tre steg</h2>
-      <p>Upplägget anpassas för dig som bor i Norrköping, studerar på Linköpings universitet, arbetar i näringslivet eller balanserar familjeliv med karriär.
-        Så här brukar processen se ut när vi gör allt digitalt med möjlighet till punktinsatser på plats.</p>
+      <h2>Din utredning i Norrköping, steg för steg</h2>
+      <p>Upplägget passar dig som studerar på Campus Norrköping (LiU), jobbar i tech-sektorn runt Visualiseringscenter eller vill få vardagen att fungera bättre utan extra resor.
+        Så här brukar processen se ut när vi kombinerar digitalt upplägg med lokala fysiska kontroller.</p>
     </header>
     <div class="location-journey__steps">
       <article class="location-step">
@@ -73,11 +73,11 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       </article>
       <article class="location-step">
         <span class="location-step__number">2</span>
-        <h3>Tester på plats</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro kan vi arrangera ett kort besök i Stockholm.</p>
+        <h3>Fysiska kontroller nära dig</h3>
+        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. När vi behöver ett fysiskt delmoment planerar vi det i Norrköping via vårt mobila team från Katrineholm. Somatiska kontroller koordineras hos lokala partners.</p>
         <ul class="location-step__list">
-          <li>Tysta rum och pausvänliga pass erbjuds vid fysiska inslag.</li>
-          <li>Somatiska kontroller löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Fysiska moment planeras kompakt så att du slipper flera resor.</li>
+          <li>Somatiska prover tas lokalt och kopplas till utredningen.</li>
         </ul>
       </article>
       <article class="location-step">
@@ -98,10 +98,10 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
     <div class="location-details__grid">
       <article class="location-info">
         <h3>Stöd för dig i Norrköping</h3>
-        <p>Vi hjälper dig att omsätta diagnosen i konkreta verktyg för vardagen i Norrköping och Östergötland – helt digitalt men med lokalkännedom när du behöver kontakter eller intyg.</p>
+        <p>Vi hjälper dig att omsätta diagnosen i konkreta verktyg för vardagen i Norrköping och Östergötland – digitalt i grunden, med lokala fysiska kontroller när det behövs.</p>
         <ul class="location-info__list">
-          <li>Mallar för arbetsgivare, studenthälsa vid Linköpings universitet, CSN, Försäkringskassan och privata försäkringar.</li>
-          <li>Digitala fokusprogram och coachning anpassade för näringsliv, studier och familjeliv i regionen.</li>
+          <li>Mallar för arbetsgivare, studenthälsa (LiU Campus Norrköping), CSN, Försäkringskassan och privata försäkringar.</li>
+          <li>Digitala fokusprogram och coachning anpassade för studier, tech-jobb och familjeliv i regionen.</li>
           <li>Samarbeten med lokala företagshälsor, rehabaktörer och terapeuter när du behöver fler insatser.</li>
         </ul>
       </article>
@@ -130,4 +130,3 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
     </div>
   </div>
 </section>
-

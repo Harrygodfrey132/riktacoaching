@@ -3,8 +3,8 @@ title: "Platser"
 translationKey: "locations"
 draft: false
 meta_title: "Våra mottagningar och digitala besök | Rikta Psykiatri"
-meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Malmö, neuropsykiatri Uppsala, neuropsykiatri Linköping, neuropsykiatri Örebro, neuropsykiatri Jönköping, neuropsykiatri Helsingborg, neuropsykiatri Gävle, neuropsykiatri Sundsvall, neuropsykiatri Umeå, neuropsykiatri Växjö, neuropsykiatri Norrköping, neuropsykiatri Eskilstuna, neuropsykiatri Sverige"
-meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Malmö, Västerås, Uppsala, Linköping, Örebro, Jönköping, Helsingborg, Gävle, Sundsvall, Umeå, Växjö, Norrköping, Eskilstuna och Katrineholm."
+meta_keywords: "Rikta mottagningar, digital psykiatri, ADHD vård Stockholm, autism Göteborg, neuropsykiatri Västerås, ADHD Katrineholm, neuropsykiatri Malmö, neuropsykiatri Lund, neuropsykiatri Uppsala, neuropsykiatri Enköping, neuropsykiatri Linköping, neuropsykiatri Örebro, neuropsykiatri Karlstad, neuropsykiatri Jönköping, neuropsykiatri Helsingborg, neuropsykiatri Gävle, neuropsykiatri Sundsvall, neuropsykiatri Umeå, neuropsykiatri Växjö, neuropsykiatri Norrköping, neuropsykiatri Nyköping, neuropsykiatri Eskilstuna, neuropsykiatri Flen, neuropsykiatri Gnesta, neuropsykiatri Vingåker, neuropsykiatri Sverige"
+meta_description: "Få ADHD- och autismstöd digitalt i hela Sverige eller på våra mottagningar i Stockholm, Göteborg, Malmö, Västerås och Katrineholm. Vi erbjuder även mobilt och digitalt upplägg i Uppsala, Linköping, Örebro, Jönköping, Helsingborg, Gävle, Sundsvall, Umeå, Växjö, Norrköping, Eskilstuna, Nyköping, Enköping, Flen, Gnesta, Vingåker, Karlstad och Lund."
 og_title: "Var vi tar emot patienter - Rikta Psykiatri"
 og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med fysiska träffar för neuropsykiatrisk vård."
 ---
@@ -60,7 +60,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
         </div>
       </article>
-      <article class="location-card location-card--malmo">
+	      <article class="location-card location-card--malmo">
         <div class="location-card__header">
           <span class="location-tag">Digital-first Skåne</span>
           <h3>Malmö</h3>
@@ -83,8 +83,32 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
             <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
           </div>
         </div>
-      </article>
-      <article class="location-card location-card--vasteras">
+	      </article>
+	      <article class="location-card location-card--lund">
+	        <div class="location-card__header">
+	          <span class="location-tag">Digital-first studentfokus</span>
+	          <h3>Lund</h3>
+	          <p>
+	            Anpassat för studenter och forskare. Heldigital utredning med somatiska kontroller hos våra partners i Lund eller Malmö.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Flexibla tider som fungerar med föreläsningar, labb och deltidsjobb.</li>
+	          <li>Underlag och intyg för studenthälsa, CSN, arbetsgivare och myndigheter.</li>
+	          <li>Somatiska kontroller koordineras i Lund eller Malmö vid behov.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt upplägg</span>
+	            <span>Prover i Lund/Malmö</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-lund/">Till Lund</a>
+	            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--vasteras">
         <div class="location-card__header">
           <span class="location-tag">Mälardalen hybrid</span>
           <h3>Västerås</h3>
@@ -107,8 +131,32 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
             <a class="btn link" href="/kontakta-oss/">Boka tid</a>
           </div>
         </div>
-      </article>
-      <article class="location-card location-card--uppsala">
+	      </article>
+	      <article class="location-card location-card--enkoping">
+	        <div class="location-card__header">
+	          <span class="location-tag">Hybrid Mälardalen</span>
+	          <h3>Enköping</h3>
+	          <p>
+	            Smidig hybridmodell för dig i Enköping. Digitalt förarbete med fysiska statuskontroller i närliggande Västerås eller via hembesök från vårt mobila team.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning och videobesök 07–21 med tydlig tidslinje.</li>
+	          <li>Statuskontroller samlas i Västerås eller görs som hembesök vid behov.</li>
+	          <li>Planerad för dig som pendlar mot Stockholm/Västerås eller jobbar i logistik.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Hybrid: digitalt + status</span>
+	            <span>Västerås/hembesök</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-enkoping/">Till Enköping</a>
+	            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--uppsala">
         <div class="location-card__header">
           <span class="location-tag">Digital-first Uppsala</span>
           <h3>Uppsala</h3>
@@ -156,7 +204,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
         </div>
       </article>
-      <article class="location-card location-card--orebro">
+	      <article class="location-card location-card--orebro">
         <div class="location-card__header">
           <span class="location-tag">Digital-first Närke</span>
           <h3>Örebro</h3>
@@ -179,8 +227,32 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
             <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
           </div>
         </div>
-      </article>
-      <article class="location-card location-card--jonkoping">
+	      </article>
+	      <article class="location-card location-card--karlstad">
+	        <div class="location-card__header">
+	          <span class="location-tag">Digital-first Värmland</span>
+	          <h3>Karlstad</h3>
+	          <p>
+	            Digital specialistutredning för Värmland. Vi koordinerar dina somatiska prover hos våra partners i Karlstad centrum.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning, intervjuer och tester via video.</li>
+	          <li>Somatiska prover koordineras lokalt i Karlstad centrum.</li>
+	          <li>Samma team genom utredning, medicinering och coachning.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt upplägg</span>
+	            <span>Prover i Karlstad</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-karlstad/">Till Karlstad</a>
+	            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--jonkoping">
         <div class="location-card__header">
           <span class="location-tag">Digital-first Småland</span>
           <h3>Jönköping</h3>
@@ -324,31 +396,127 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
         </div>
       </article>
-      <article class="location-card location-card--norrkoping">
-        <div class="location-card__header">
-          <span class="location-tag">Digital-first Östergötland</span>
-          <h3>Norrköping</h3>
-          <p>
-            Vi opererar i Norrköping och Östergötland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
-          </p>
-        </div>
-        <ul class="location-services">
-          <li>Personlig plan inom 48 timmar och utredning klar på 2–4 veckor.</li>
-          <li>Lokalkännedom om krav från Norrköpings arbetsgivare, Linköpings universitet, skolor och myndigheter.</li>
-          <li>Samma team genom utredning, medicinering och coachning.</li>
-        </ul>
-        <div class="location-card__footer">
-          <div class="location-meta">
-            <span>Digitalt upplägg</span>
-            <span>Punktbesök vid behov</span>
-          </div>
-          <div class="location-actions">
-            <a class="btn secondary" href="/platser/adhd-autism-utredning-norrkoping/">Till Norrköping</a>
-            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
-          </div>
-        </div>
-      </article>
-      <article class="location-card location-card--eskilstuna">
+	      <article class="location-card location-card--norrkoping">
+	        <div class="location-card__header">
+	          <span class="location-tag">Mobil Hub Östergötland</span>
+	          <h3>Norrköping</h3>
+	          <p>
+	            Specialistvård på dina villkor. Vårt mobila team från Katrineholm servar Norrköping med omnejd för fysiska kontroller, kombinerat med digital utredning och lokala somatiska prover.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning och videobesök med tydlig tidslinje.</li>
+	          <li>Fysiska kontroller i Norrköping via mobilt team från Katrineholm.</li>
+	          <li>Underlag för Campus Norrköping (LiU), Visualiseringscenter, arbetsgivare och skolor.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt + mobilt team</span>
+	            <span>Fysiska kontroller lokalt</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-norrkoping/">Till Norrköping</a>
+	            <a class="btn link" href="/kontakta-oss/">Planera ditt upplägg</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--nykoping">
+	        <div class="location-card__header">
+	          <span class="location-tag">Mobil Hub Sörmland</span>
+	          <h3>Nyköping</h3>
+	          <p>
+	            Digital utredning med fysiska utredningsmoment i Nyköping när det behövs. Vårt team utgår från Katrineholm och samarbetar med lokala provtagningspartners i city.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning och videobesök med tydlig tidslinje.</li>
+	          <li>Fysiska moment i Nyköping via mobilt team från Katrineholm.</li>
+	          <li>Somatiska prover hos lokala partners i Nyköping city.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt + mobilt team</span>
+	            <span>Prover lokalt</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-nykoping/">Till Nyköping</a>
+	            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--flen">
+	        <div class="location-card__header">
+	          <span class="location-tag">Lokal närvaro Sörmland</span>
+	          <h3>Flen</h3>
+	          <p>
+	            Vi täcker hjärtat av Sörmland. Genom vår bas i Katrineholm erbjuder vi utredning och coaching för dig i Flen med lokal specialistnärvaro.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital utredning med lokala prover hos partners i Flen.</li>
+	          <li>Fysiska punktinsatser från vårt mobila team i Katrineholm vid behov.</li>
+	          <li>Intyg och underlag för skola, arbete och myndigheter.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt upplägg</span>
+	            <span>Mobilt team från Katrineholm</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-flen/">Till Flen</a>
+	            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--gnesta">
+	        <div class="location-card__header">
+	          <span class="location-tag">Lokal närvaro Sörmland</span>
+	          <h3>Gnesta</h3>
+	          <p>
+	            För dig i Gnesta som vill göra det mesta digitalt och slippa långa resor. Lokala prover hos partners och mobila punktinsatser vid behov.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning och videobesök med tider som fungerar för pendling.</li>
+	          <li>Lokala prover hos partners i Gnesta.</li>
+	          <li>Fysiska punktinsatser från Katrineholm när det behövs.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt upplägg</span>
+	            <span>Mobilt team från Katrineholm</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-gnesta/">Till Gnesta</a>
+	            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--vingaker">
+	        <div class="location-card__header">
+	          <span class="location-tag">Lokal närvaro Sörmland</span>
+	          <h3>Vingåker</h3>
+	          <p>
+	            Digital utredning och coaching för dig i Vingåker, med lokala prover hos partners och mobilt stöd från Katrineholm vid behov.
+	          </p>
+	        </div>
+	        <ul class="location-services">
+	          <li>Digital kartläggning och videobesök med tydlig tidslinje.</li>
+	          <li>Lokala prover hos partners i Vingåker.</li>
+	          <li>Fysiska punktinsatser från Katrineholm när det behövs.</li>
+	        </ul>
+	        <div class="location-card__footer">
+	          <div class="location-meta">
+	            <span>Digitalt upplägg</span>
+	            <span>Mobilt team från Katrineholm</span>
+	          </div>
+	          <div class="location-actions">
+	            <a class="btn secondary" href="/platser/adhd-autism-utredning-vingaker/">Till Vingåker</a>
+	            <a class="btn link" href="/kontakta-oss/">Boka tid</a>
+	          </div>
+	        </div>
+	      </article>
+	      <article class="location-card location-card--eskilstuna">
         <div class="location-card__header">
           <span class="location-tag">Digital-first Sörmland</span>
           <h3>Eskilstuna</h3>
