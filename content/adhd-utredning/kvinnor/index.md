@@ -70,11 +70,11 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-	<section class="who-section adhd-process adhd-process--timeline" id="process">
-	  <div class="container">
-	    <div class="section-intro">
-	      <span class="eyebrow">ADHD-utredning för kvinnor</span>
-	      <h2>En process som ger klarhet och rätt stöd</h2>
+<section class="who-section adhd-process adhd-process--timeline" id="process">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">ADHD-utredning för kvinnor</span>
+      <h2>En process som ger klarhet och rätt stöd</h2>
       <p class="muted">
         Vår ADHD-utredning för vuxna är utformad för att identifiera ADHD eller närliggande tillstånd hos personer som är 18
         år eller äldre. Många söker efter långvariga svårigheter med uppmärksamhet, organisering, rastlöshet eller
@@ -152,12 +152,12 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-	<section class="who-section adhd-next" id="fortsatt-stod">
-	  <div class="container">
-	    <div class="who-grid intro-grid">
-	      <div class="intro-copy">
-	        <span class="eyebrow">Nästa steg</span>
-	        <h2>Fortsatt stöd efter diagnos</h2>
+<section class="who-section adhd-next" id="fortsatt-stod">
+  <div class="container">
+    <div class="who-grid intro-grid">
+      <div class="intro-copy">
+        <span class="eyebrow">Nästa steg</span>
+        <h2>Fortsatt stöd efter diagnos</h2>
         <p>
           Vi erbjuder fortsatt uppföljning som anpassas efter arbete, familjeliv och energinivå. Du väljer hur omfattande
           stödet behöver vara.
@@ -184,21 +184,21 @@ page_class: "adhd-page--women"
   </div>
 </section>
 
-	<section class="who-section adhd-faq" id="faq">
-	  <div class="container">
-	    <div class="section-intro">
-	      <span class="eyebrow">Frågor och svar</span>
-	      <h2>Vanliga frågor</h2>
-	      <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
-	    </div>
+<section class="who-section adhd-faq" id="faq">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Frågor och svar</span>
+      <h2>Vanliga frågor</h2>
+      <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
+    </div>
     <div class="adhd-faq-accordion">
-	      <details>
-	        <summary>Hur påverkar hormoner utredningen?</summary>
-	        <p>
-	          Vi kartlägger symtom över cykeln och väger in graviditet, amning eller klimakterium. Vid behov samarbetar vi med
-	          andra professioner eller vårdgivare.
-	        </p>
-	      </details>
+      <details>
+        <summary>Hur påverkar hormoner utredningen?</summary>
+        <p>
+          Vi kartlägger symtom över cykeln och väger in graviditet, amning eller klimakterium. Vid behov samarbetar vi med
+          andra professioner eller vårdgivare.
+        </p>
+      </details>
       <details>
         <summary>Jag har redan en utmattningsdiagnos – kan jag ändå få ADHD-hjälp?</summary>
         <p>

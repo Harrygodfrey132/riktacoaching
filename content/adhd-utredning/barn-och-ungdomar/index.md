@@ -164,12 +164,12 @@ page_class: "adhd-page--youth"
   </div>
 </section>
 
-	<section class="who-section adhd-next" id="fortsatt-stod">
-	  <div class="container">
-	    <div class="who-grid intro-grid">
-	      <div class="intro-copy">
-	        <span class="eyebrow">Nästa steg</span>
-	        <h2>Fortsatt stöd efter diagnos</h2>
+<section class="who-section adhd-next" id="fortsatt-stod">
+  <div class="container">
+    <div class="who-grid intro-grid">
+      <div class="intro-copy">
+        <span class="eyebrow">Nästa steg</span>
+        <h2>Fortsatt stöd efter diagnos</h2>
         <p>
           Vi ser utredningen som starten på en långsiktig plan. Vi fortsätter gärna att arbeta med er familj och i samverkan med
           skola, vårdcentral eller annan vårdgivare.
@@ -196,13 +196,13 @@ page_class: "adhd-page--youth"
   </div>
 </section>
 
-	<section class="who-section adhd-faq" id="faq">
-	  <div class="container">
-	    <div class="section-intro">
-	      <span class="eyebrow">Frågor och svar</span>
-	      <h2>Vanliga frågor</h2>
-	      <p class="muted">Hittar ni inte svaret? Hör av er så guidar vi er vidare.</p>
-	    </div>
+<section class="who-section adhd-faq" id="faq">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Frågor och svar</span>
+      <h2>Vanliga frågor</h2>
+      <p class="muted">Hittar ni inte svaret? Hör av er så guidar vi er vidare.</p>
+    </div>
     <div class="adhd-faq-accordion">
       <details>
         <summary>Behöver skolan vara involverad?</summary>
@@ -218,12 +218,12 @@ page_class: "adhd-page--youth"
           eller ansökningar om stöd.
         </p>
       </details>
-	      <details>
-	        <summary>Går det att genomföra utredningen digitalt?</summary>
-	        <p>
-	          Vi ser gärna att hela utredningen sker digitalt, men vi kan också planera in fysiska möten vid behov.
-	        </p>
-	      </details>
+      <details>
+        <summary>Går det att genomföra utredningen digitalt?</summary>
+        <p>
+          Vi ser gärna att hela utredningen sker digitalt, men vi kan också planera in fysiska möten vid behov.
+        </p>
+      </details>
       <details>
         <summary>Vad händer om bedömningen visar något annat än ADHD?</summary>
         <p>
