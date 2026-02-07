@@ -5,10 +5,10 @@ draft: false
 layout: "none"
 type: "none"
 meta_title: "GAD-7 självskattningsfrågor | Rikta Psykiatri"
-meta_keywords: "GAD-7, ångesttest, ångestscreening, generaliserat ångestsyndrom"
+meta_keywords: "GAD-7, ångesttest, självskattning, generaliserat ångestsyndrom"
 meta_description: "Gör GAD-7 självskattningsformuläret och se din poäng och nivå."
 og_title: "GAD-7 självskattningsfrågor"
-og_description: "Ett validerat 7-frågors screeningformulär för ångest."
+og_description: "Ett validerat 7-frågors självskattningsformulär för ångest."
 ---
 
 {{< rawhtml >}}

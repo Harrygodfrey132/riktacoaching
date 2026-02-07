@@ -36,7 +36,7 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -67,7 +67,7 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som gör att inget moment tappas bort.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som gör att inget moment tappas bort.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till att samla in underlag från vård, arbetsgivare och skola.</li>
           <li>Du väljer tider som funkar med pendling och skift.</li>
@@ -76,7 +76,7 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Statuskontroller &amp; prover</h3>
-        <p>Neuropsykologiska tester görs i första hand via vår digitala testsvit. När vi behöver ett fysiskt moment planerar vi ett kort pass i Västerås eller ett hembesök i Enköping. Vi kombinerar digital utredning med lokala fysiska prover hos våra partners i Enköping.</p>
+        <p>Neuropsykologiska tester görs i första hand via vårt digitala testbatteri. När vi behöver ett fysiskt moment planerar vi ett kort pass i Västerås eller ett hembesök i Enköping. Vi kombinerar digital utredning med lokala fysiska prover hos våra partners i Enköping.</p>
         <ul class="location-step__list">
           <li>Vi samlar fysiska moment så att du slipper flera resor.</li>
           <li>Somatiska prover och kontroller koordineras lokalt och delas digitalt med teamet.</li>
@@ -84,11 +84,11 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte för att ge en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online utan extra resor.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt utan extra resor.</li>
         </ul>
       </article>
     </div>
@@ -103,7 +103,7 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
         <p>Vi gör det lätt att komma vidare – oavsett om du jobbar i logistik, pendlar eller vill få ordning på vardagen hemma.</p>
         <ul class="location-info__list">
           <li>Underlag och intyg för arbetsgivare, CSN, Försäkringskassan och privata försäkringar.</li>
-          <li>Coachning som hjälper dig att bygga rutiner som håller – i en vardag med resor, leveranser och deadlines.</li>
+          <li>Coachning som hjälper dig att bygga rutiner som håller – i en vardag med resor, leveranser och tidsfrister.</li>
           <li>Samarbeten med företagshälsor och terapeuter i Mälardalen när du behöver fler insatser.</li>
         </ul>
       </article>
@@ -132,4 +132,3 @@ og_description: "Digital utredning med smidiga fysiska statuskontroller nära En
     </div>
   </div>
 </section>
-

@@ -12,14 +12,14 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Jönköping • Digital-first</span>
+        <span class="eyebrow">Jönköping • Digitalt upplägg</span>
         <h1>ADHD- och autismutredning i Jönköping</h1>
         <p class="lead">
-          Vi opererar i Jönköping och Småland och hjälper dig att få en strukturerad utredning som fungerar med ditt arbetsliv och familjesituation.
+          Vi hjälper dig i Jönköping och Småland att få en strukturerad utredning som fungerar med ditt arbetsliv och familjesituation.
           Hela processen från kartläggning till uppföljning sker digitalt via video; endast om ett specifikt testmoment kräver det kan vi arrangera ett kort besök i Stockholm.
         </p>
         <ul class="location-hero__highlights">
-          <li>Snabb onboarding – personlig plan inom några dagar och utredning klar på cirka 2–4 veckor med flexibla tider som passar både kontorsjobb och skiftarbete.</li>
+          <li>Snabb uppstart – personlig plan inom några dagar och utredning klar på cirka 2–4 veckor med flexibla tider som passar både kontorsjobb och skiftarbete.</li>
           <li>Lokalkännedom om krav från Jönköpings arbetsgivare, Jönköping University, kommunala skolor, CSN och Försäkringskassan.</li>
           <li>Kontinuerligt stöd – samma team följer dig genom utredning, medicinering och coachning utan att du behöver byta vårdgivare.</li>
         </ul>
@@ -36,7 +36,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -65,7 +65,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Efter ett kostnadsfritt introduktionssamtal får du tillgång till vår digitala portal med screeningformulär. DIVA-5, anamnes och anhörigintervju sker via krypterad video på tider som passar dig – även kvällar och helger.</p>
+        <p>Efter ett kostnadsfritt introduktionssamtal får du tillgång till vår digitala portal med självskattningsformulär. DIVA-5, anamnes och anhörigintervju sker via krypterad video på tider som passar dig – även kvällar och helger.</p>
         <ul class="location-step__list">
           <li>Koordinator guidar dig genom processen och hjälper med intygsunderlag, remisser och eventuellt ED-nummer.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas direkt till din journal.</li>
@@ -74,10 +74,10 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Tester och bedömning</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs via vår digitala testsvit. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro kan vi arrangera ett kompakt besök i Stockholm.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs via vårt digitala testbatteri. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro kan vi arrangera ett kompakt besök i Stockholm.</p>
         <ul class="location-step__list">
           <li>Sensoriskt lugna miljöer och pausvänliga pass erbjuds vid fysiska inslag.</li>
-          <li>Somatiska kontroller och labbremisser löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Somatiska kontroller och labbremisser löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
@@ -111,7 +111,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           <li>Tvärprofessionellt team med psykiater, psykolog, sjuksköterska och koordinator som följer dig genom hela processen.</li>
           <li>Fullständig rapport med diagnoskriterier, styrkor, rekommendationer och uppföljningsplan som tar hänsyn till Jönköpings arbetsliv, universitetsstudier och skolstruktur.</li>
           <li>Uppstart av medicinering och coachning i samma team för en sömlös övergång från utredning till behandling.</li>
-          <li>Tillgång till patientportalen med journal, intyg, videoåtergivningar, mikroövningar och kom-ihåg-listor.</li>
+          <li>Tillgång till patientportalen med journal, intyg, videogenomgångar, mikroövningar och kom-ihåg-listor.</li>
         </ul>
       </article>
     </div>
@@ -130,4 +130,3 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
     </div>
   </div>
 </section>
-

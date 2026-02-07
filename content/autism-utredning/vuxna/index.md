@@ -63,7 +63,7 @@ page_class: "autism-page--adult"
           <li>Samsjuklighet såsom ADHD, ångest, depression eller EDS som påverkar helheten.</li>
         </ul>
         <p class="small">
-          Vi använder bland annat RAADS-14, AQ, 3Di och SRS-2 i kombination med kliniska intervjuer och önskade anhörigperspektiv.
+          Vi använder bland annat RAADS-14, AQ, 3Di och SRS-2 i kombination med kliniska intervjuer och, när det är möjligt, anhörigperspektiv.
         </p>
       </div>
     </div>
@@ -159,7 +159,7 @@ page_class: "autism-page--adult"
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy">
-        <span class="eyebrow">Next steps</span>
+        <span class="eyebrow">Nästa steg</span>
         <h2>Fortsatt stöd efter diagnos</h2>
         <p>
           Utredningen är ofta början. Vi fortsätter gärna tillsammans med dig för att skapa hållbara rutiner, dialog med
@@ -176,7 +176,7 @@ page_class: "autism-page--adult"
           <p>Stöd i kontakt med regionvård, husläkare och intyg för LSS, habilitering eller försäkringsärenden.</p>
         </article>
         <article>
-          <h3>Terapi &amp; coachning</h3>
+          <h3>Terapi och coachning</h3>
           <p>Neuroaffirmativ terapi, autismcoachning och verktyg för energi, social balans och relationer.</p>
         </article>
         <article>
@@ -191,7 +191,7 @@ page_class: "autism-page--adult"
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">FAQ</span>
+      <span class="eyebrow">Frågor och svar</span>
       <h2>Vanliga frågor</h2>
       <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
     </div>
@@ -207,7 +207,7 @@ page_class: "autism-page--adult"
         <summary>Hur hanterar ni maskering och sena diagnoser?</summary>
         <p>
           Vi kartlägger hur du anpassat dig över tid och väger in autismtypiska mönster även när de inte alltid syns utåt.
-          Många av våra klienter får sin diagnos först i vuxen ålder.
+          Många får sin diagnos först i vuxen ålder.
         </p>
       </details>
       <details>

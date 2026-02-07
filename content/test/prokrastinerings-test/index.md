@@ -1,14 +1,14 @@
 ---
-title: "Prokrastinerings-test"
+title: "Prokrastineringstest"
 translationKey: "procrastination-test"
 layout: "none"
 type: "none"
 aliases:
   - /coachning/prokrastinerings-test/
 url: "/test/prokrastinerings-test/"
-meta_title: "Prokrastinerings-test online | GPS-screening"
+meta_title: "Prokrastineringstest | GPS-självtest"
 meta_description: "Gör General Procrastination Scale (GPS, 15 påståenden) och få en indikation på hur mycket prokrastinering påverkar din vardag."
-og_title: "Prokrastinerings-test (GPS)"
+og_title: "Prokrastineringstest (GPS)"
 og_description: "Svara på 15 påståenden och se om dina uppskjutandemönster ligger på låg, måttlig eller hög nivå."
 summary: "Kort självskattning för att förstå dina uppskjutandemönster."
 ---
@@ -17,14 +17,14 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
       <span class="adhd-screening__eyebrow">Självskattning</span>
-      <h1>Prokrastinerings-test (GPS)</h1>
+      <h1>Prokrastineringstest (GPS)</h1>
       <p>General Procrastination Scale (GPS) av T.A. Lay (1986) är ett av de mest använda instrumenten för att mäta generell prokrastinering hos vuxna.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="procrastination-screening-form" data-locale="sv">
         <div class="adhd-screening__summary">
-          <p class="adhd-screening__lead">Formuläret består av 15 påståenden om uppskjutande, igångsättning, tidsplanering och självreglering. Resultatet är vägledande och ska inte användas för diagnos.</p>
+          <p class="adhd-screening__lead">Formuläret består av 15 påståenden om uppskjutande, att komma igång, tidsplanering och självreglering. Resultatet är vägledande och ska inte användas för diagnos.</p>
           <dl class="adhd-meta">
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Källa</dt>
@@ -119,7 +119,7 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag har svårt att hålla deadlines.</div>
+              <div class="adhd-question__prompt">Jag har svårt att hålla tidsfrister.</div>
               <div class="adhd-response-group">
                 <label class="adhd-response"><input type="radio" name="q8" value="1" required><span>1</span></label>
                 <label class="adhd-response"><input type="radio" name="q8" value="2"><span>2</span></label>
@@ -209,10 +209,10 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
             <span class="adhd-score__label">Totalpoäng</span>
             <span class="adhd-score__value" id="procrastination-score-value">0</span>
           </div>
-          <p class="adhd-score__interpretation" id="procrastination-score-interpretation">Besvara alla frågor för att se din GPS-poäng.</p>
-          <p class="adhd-score__note">Poängen ger en indikation på prokrastineringsmönster men ersätter inte professionell bedömning. Coaching eller vidare utredning kan hjälpa om du känner att uppskjutandet påverkar dig mycket.</p>
-        </div>
-      </form>
+	          <p class="adhd-score__interpretation" id="procrastination-score-interpretation">Besvara alla frågor för att se din GPS-poäng.</p>
+	          <p class="adhd-score__note">Poängen ger en indikation på uppskjutandemönster men ersätter inte professionell bedömning. Coachning eller vidare utredning kan hjälpa om du upplever att uppskjutandet påverkar dig mycket.</p>
+	        </div>
+	      </form>
       <aside class="adhd-screening__note">
         <h3>Hur skalan räknas</h3>
         <ul>
@@ -221,8 +221,8 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
           <li>Tolkning (vägledande): 15–35 låg · 36–50 måttlig · 51–75 hög.</li>
         </ul>
         <p><strong>Källhänvisning:</strong><br>Lay, C. H. (1986). At last, my research article on procrastination. Journal of Research in Personality, 20(4), 474–495.<br><em>Svensk översättning av Riktapsykiatri.se (2025).</em></p>
-        <p><strong>Viktigt:</strong><br>Detta är inte ett diagnostiskt test. Resultatet är vägledande. Om du upplever betydande svårigheter rekommenderar vi coaching eller professionell bedömning.</p>
-      </aside>
+	        <p><strong>Viktigt:</strong><br>Detta är inte ett diagnostiskt test. Resultatet är vägledande. Om du upplever betydande svårigheter rekommenderar vi coachning eller professionell bedömning.</p>
+	      </aside>
     </div>
   </div>
 </section>
@@ -245,7 +245,7 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
       action="/api/kaddio/contact"
       method="POST"
       accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Procrastination Test">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Prokrastineringstest">
       <input type="hidden" name="rating" id="adhd-lead-rating" value="">
       <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">

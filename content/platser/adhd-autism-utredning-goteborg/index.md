@@ -15,13 +15,13 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
         <span class="eyebrow">Göteborg • Digital klinikvecka</span>
         <h1>ADHD- och autismutredning i Göteborg</h1>
         <p class="lead">
-          Vårt västsvenska team hjälper dig oavsett om du pendlar längs E6, jobbar offshore eller pluggar i Borås.
-          Kartläggning, tester, läkarbesök och uppföljning sker online; bara om ett visst moment kräver fysisk närvaro bjuder vi in till ett kort klinikpass under våra månatliga Göteborgsdagar.
+          Vårt västsvenska team hjälper dig oavsett om du pendlar längs E6, arbetar till sjöss eller studerar i Borås.
+          Kartläggning, tester, läkarbesök och uppföljning sker digitalt. Om något moment kräver fysisk närvaro bjuder vi in till ett kort kompletterande besök under våra månatliga Göteborgsdagar.
         </p>
         <ul class="location-hero__highlights">
-          <li>Digital onboarding inom 48 timmar, även kvällar och helger.</li>
+          <li>Digital uppstart inom 48 timmar, även kvällar och helger.</li>
           <li>Komprimerade testpass (1,5–2 dagar) endast om det digitala upplägget behöver kompletteras.</li>
-          <li>Efter utredningen fortsätter medicin, coachning och intyg online utan väntetid.</li>
+          <li>Efter utredningen fortsätter medicinering, coachning och intyg digitalt utan ny väntetid.</li>
         </ul>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss/">Reservera klinikdag</a>
@@ -45,7 +45,7 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Digital medicin, coachning, intyg och arbetslivsstöd</dd>
+            <dd>Digital medicinering, coachning, intyg och arbetslivsstöd</dd>
           </div>
         </dl>
       </div>
@@ -58,12 +58,12 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
     <header class="location-section__header">
       <span class="eyebrow">Upplägg</span>
       <h2>Så fungerar våra klinikdagar</h2>
-      <p>Vi gör hela förarbetet digitalt, sammanför valfria tester när teamet är i Göteborg och fortsätter online. Resultatet är en komplett utredning med minimal frånvaro från jobb och studier.</p>
+      <p>Vi gör hela förarbetet digitalt, sammanför valfria tester när teamet är i Göteborg och fortsätter sedan digitalt. Resultatet är en komplett utredning med minimal frånvaro från jobb och studier.</p>
     </header>
     <div class="location-journey__steps">
       <article class="location-step">
         <span class="location-step__number">1</span>
-        <h3>Förberedelser online</h3>
+        <h3>Förberedelser digitalt</h3>
         <p>Efter ett kostnadsfritt kartläggningssamtal får du schemalagda videomöten för DIVA-5, anamnes och anhörigintervju. Du kan boka tid på kvällar och helger.</p>
         <ul class="location-step__list">
           <li>Digital portal med formulär och tydliga instruktioner.</li>
@@ -73,16 +73,16 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Klinikdagar på plats</h3>
-        <p>Du genomför neuropsykologiska tester, kliniska observationer och läkarbesök via våra digitala verktyg. Endast de moment som absolut kräver fysisk närvaro samlas i ett kompakt besök när vi är i Göteborg.</p>
+        <p>Neuropsykologiska tester, kliniska observationer och läkarbesök genomförs under våra Göteborgsdagar. Endast de moment som kräver fysisk närvaro samlas i ett kompakt besök när vi är i Göteborg.</p>
         <ul class="location-step__list">
           <li>Pausvänliga pass, ledsagare och tysta rum erbjuds när du väljer ett fysiskt komplement.</li>
-          <li>Somatiska kontroller och labbremisser löses via närmaste labb eller hemtagning.</li>
+          <li>Somatiska kontroller och labbremisser görs via närmaste provtagningsenhet eller hemprovtagning.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
         <h3>Uppföljning där du är</h3>
-        <p>Återkoppling, rapport och behandlingsplan sker digitalt veckan efter. Vi fortsätter med medicin, coachning och intyg online eller, om du önskar, under våra Stockholmsdagar.</p>
+        <p>Återkoppling, rapport och behandlingsplan sker digitalt veckan efter. Vi fortsätter med medicinering, coachning och intyg digitalt eller, om du önskar, under våra Stockholmsdagar.</p>
         <ul class="location-step__list">
           <li>Snabb tillgång till rapport i patientportalen.</li>
           <li>Möjlighet till arbetsplatsmöte via video tillsammans med vår psykolog.</li>
@@ -100,8 +100,8 @@ og_description: "Träffa våra specialistläkare under månatliga klinikdagar el
         <p>Om ett fysiskt moment behövs skickar vår koordinator packlista, dagsprogram och tips på hur du får klinikdagen att fungera med jobb, familj och boende utanför Göteborg.</p>
         <ul class="location-info__list">
           <li>Möjlighet att lägga tester i två kortare dagar, en lång dag eller delvis digitalt.</li>
-          <li>Checklista för arbetsgivare/skola och mallar för ledighetsansökan.</li>
-          <li>Stöd för logi, parkering, reseersättning och neurodivergent-friendly platser i city.</li>
+          <li>Underlag till arbetsgivare/skola och mallar för ledighetsansökan.</li>
+          <li>Stöd med logi, parkering och reseersättning samt tips om lugna, NPF-anpassade miljöer i centrala Göteborg.</li>
         </ul>
       </article>
       <article class="location-info">

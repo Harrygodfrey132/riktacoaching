@@ -44,10 +44,10 @@ page_class: "adhd-page--medication"
         <p>
           Läkemedel för ADHD höjer nivåerna av neurotransmittorer som dopamin och noradrenalin. Resultatet kan bli längre
           uppmärksamhetsspann, minskad hyperaktivitet, bättre impulskontroll och mindre exekutiva svårigheter. Medicinen botar
-          inte ADHD, men kan skapa förutsättningar för fungerande rutiner, arbetsro och bättre egenvård undet det att du använder den.
+          inte ADHD, men kan skapa förutsättningar för fungerande rutiner, arbetsro och bättre egenvård under den tid du använder den.
         </p>
         <blockquote>
-          ”Rätt medicin är inte ett quick fix – det är ett stöd för att kunna använda de strategier du redan vet hjälper, med
+          ”Rätt medicin är inte en snabb lösning – det är ett stöd för att kunna använda de strategier du redan vet hjälper, med
           färre hinder på vägen.”
         </blockquote>
       </div>
@@ -136,10 +136,10 @@ page_class: "adhd-page--medication"
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy">
-        <span class="eyebrow">Next steps</span>
+        <span class="eyebrow">Nästa steg</span>
         <h2>Vidare stöd och samverkan</h2>
         <p>
-          När medicinen sitter följer vi upp i den takt du behöver. Du kan boka boosterbesök inför terminsstart, livsförändringar
+          När medicinen fungerar följer vi upp i den takt du behöver. Du kan boka extra uppföljningsbesök inför terminsstart, livsförändringar
           eller om du vill se över dosen.
         </p>
         <p class="muted">
@@ -148,7 +148,7 @@ page_class: "adhd-page--medication"
       </div>
       <div class="intro-stats">
         <article>
-          <h3>Shared care</h3>
+          <h3>Delad vård</h3>
           <p>Vi hjälper till med intyg och kommunikation när regionen ska ta över uppföljningen.</p>
         </article>
         <article>
@@ -156,7 +156,7 @@ page_class: "adhd-page--medication"
           <p>Koordinering med coachning, terapi eller arbetsterapi så att insatserna drar åt samma håll.</p>
         </article>
         <article>
-          <h3>Årlig check-in</h3>
+          <h3>Årlig uppföljning</h3>
           <p>Genomgång av effekt, biverkningar och livsmål för att säkerställa att behandlingen fortfarande är rätt.</p>
         </article>
       </div>
@@ -167,7 +167,7 @@ page_class: "adhd-page--medication"
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">FAQ</span>
+      <span class="eyebrow">Frågor och svar</span>
       <h2>Vanliga frågor</h2>
       <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
     </div>

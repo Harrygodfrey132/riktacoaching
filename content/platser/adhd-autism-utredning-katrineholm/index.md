@@ -36,7 +36,7 @@ og_description: "Komplett ADHD- och autismutredning med psykologer på plats i K
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Komplett ADHD- och autismutredning med psykologer på plats i K
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -65,7 +65,7 @@ og_description: "Komplett ADHD- och autismutredning med psykologer på plats i K
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Kartläggning och intervjuer</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju sker på plats i Katrineholm med våra psykologer. Du får en tydlig tidslinje och påminnelser som fungerar med både skift och studietider.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju sker på plats i Katrineholm med våra psykologer. Du får en tydlig tidslinje och påminnelser som fungerar med både skift och studietider.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till med intygsunderlag, remisser och eventuellt ED-nummer.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas till journalen.</li>
@@ -77,12 +77,12 @@ og_description: "Komplett ADHD- och autismutredning med psykologer på plats i K
         <p>Neuropsykologiska tester görs på plats i Katrineholm med våra psykologer. Läkarbedömning kan ske digitalt för flexibilitet, eller på plats om du föredrar det.</p>
         <ul class="location-step__list">
           <li>Tysta rum och pausvänliga pass erbjuds i våra lokaler i Katrineholm.</li>
-          <li>Somatiska kontroller löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Somatiska kontroller löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan. Återkopplingen kan ske på plats i Katrineholm eller digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte.</li>

@@ -5,14 +5,14 @@ meta_title: "ADHD- och autismutredning i Lund | Rikta"
 meta_keywords: "ADHD utredning Lund, autism privat Lund, psykiater Lund, neuropsykiatri Skåne, Lunds universitet, Ideon, Rikta Lund"
 meta_description: "Digital ADHD- och autismutredning för Lund, anpassad för studenter och forskare, med somatiska kontroller hos våra partners i Lund eller Malmö."
 og_title: "Neuropsykiatrisk utredning i Lund"
-og_description: "Heldigital utredning för Lund med somatiska kontroller hos partners i Lund eller Malmö och uppföljning online."
+og_description: "Heldigital utredning för Lund med somatiska kontroller hos partners i Lund eller Malmö och uppföljning digitalt."
 ---
 
 <section class="location-hero location-hero--lund">
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Lund • Digital-first (studentfokus)</span>
+        <span class="eyebrow">Lund • Digitalt upplägg (studentfokus)</span>
         <h1>ADHD- och autismutredning i Lund</h1>
         <p class="lead">
           Anpassat för studenter och forskare i Lund. Vi gör utredningen digitalt med tider som fungerar med föreläsningar, labb och jobb.
@@ -36,7 +36,7 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -67,7 +67,7 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som passar terminstider och deadlines.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som passar terminstider och tidsfrister.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till att samla in relevanta underlag från vård, arbetsgivare och skola.</li>
           <li>Du kan boka tider tidigt, sent eller mellan moment i vardagen.</li>
@@ -76,7 +76,7 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Somatiska kontroller i Lund eller Malmö</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. Vi koordinerar somatiska kontroller hos våra partners i Lund eller Malmö, så att teamet får rätt underlag utan extra resor.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vårt digitala testbatteri. Vi koordinerar somatiska kontroller hos våra partners i Lund eller Malmö, så att teamet får rätt underlag utan extra resor.</p>
         <ul class="location-step__list">
           <li>Vi hjälper dig att boka provtagning och kopplar resultatet till utredningen.</li>
           <li>Behövs ett fysiskt delmoment planerar vi det så kompakt som möjligt.</li>
@@ -84,11 +84,11 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in studenthälsa, anhörig eller arbetsgivare till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte för en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt.</li>
         </ul>
       </article>
     </div>
@@ -104,7 +104,7 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
         <ul class="location-info__list">
           <li>Underlag och intyg för studenthälsa, CSN, Försäkringskassan och arbetsgivare.</li>
           <li>Coachning för fokus, energi och rutiner – anpassad för studier och prestationskrav.</li>
-          <li>Stöd för dig som jobbar inom tech och forskning, t.ex. runt Ideon och universitetet.</li>
+          <li>Stöd för dig som jobbar inom teknik och forskning, till exempel runt Ideon och universitetet.</li>
         </ul>
       </article>
       <article class="location-info">
@@ -132,4 +132,3 @@ og_description: "Heldigital utredning för Lund med somatiska kontroller hos par
     </div>
   </div>
 </section>
-

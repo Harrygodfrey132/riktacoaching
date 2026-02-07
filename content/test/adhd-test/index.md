@@ -7,8 +7,8 @@ type: "none"
 aliases:
   - /adhd-test/
 meta_title: "R-ARS-12 | Självskattning för uppmärksamhet och reglering"
-meta_keywords: "ADHD test online, uppmärksamhet test, självskattning fokus, R-ARS-12, Rikta Psykiatri"
-meta_description: "Besvara Riktapsykiatri Attention & Regulation Scale (R-ARS-12) – ett 12-items screeningverktyg för barn och vuxna."
+meta_keywords: "ADHD-test, självskattning, uppmärksamhet, reglering, fokus, R-ARS-12, Rikta Psykiatri"
+meta_description: "Besvara R-ARS-12 – ett 12-frågors självskattningsformulär för barn (7–12 år) och vuxna."
 og_title: "R-ARS-12 från Rikta Psykiatri"
 og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation på uppmärksamhets- och regleringssvårigheter."
 ---
@@ -17,8 +17,8 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
       <span class="adhd-screening__eyebrow">Självskattning</span>
-      <h1>Riktapsykiatri Attention &amp; Regulation Scale (R-ARS-12)</h1>
-      <p>Ett egenutvecklat 12-items screeningverktyg för både barn (7–12 år) och vuxna. Besvara hur väl varje påstående beskriver dig.</p>
+      <h1>R-ARS-12 – självskattning för uppmärksamhet och reglering</h1>
+      <p>Ett egenutvecklat självskattningsformulär med 12 påståenden för både barn (7–12 år) och vuxna. Besvara hur väl varje påstående beskriver dig.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
@@ -28,7 +28,7 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
           <dl class="adhd-meta">
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Källa</dt>
-              <dd class="adhd-meta__value">Riktapsykiatri Attention &amp; Regulation Scale (R-ARS-12), 2025.</dd>
+              <dd class="adhd-meta__value">R-ARS-12 (Rikta Psykiatri), 2025.</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Målgrupp</dt>
@@ -179,15 +179,15 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
             <span class="adhd-score__label">Totalpoäng</span>
             <span class="adhd-score__value" id="adhd-score-value">0</span>
           </div>
-          <p class="adhd-score__interpretation" id="adhd-score-interpretation">Besvara alla frågor för att se din R-ARS-12 poäng.</p>
-          <p class="adhd-score__note">Självskattningen ersätter inte en klinisk bedömning. Kontakta Rikta Psykiatri för professionell utredning eller coaching om poängen är förhöjd.</p>
-        </div>
-      </form>
+	          <p class="adhd-score__interpretation" id="adhd-score-interpretation">Besvara alla frågor för att se din R-ARS-12 poäng.</p>
+	          <p class="adhd-score__note">Självskattningen ersätter inte en klinisk bedömning. Kontakta Rikta Psykiatri för professionell utredning eller coachning om poängen är förhöjd.</p>
+	        </div>
+	      </form>
       <aside class="adhd-screening__note">
         <h3>Juridik och etik</h3>
-        <p><strong>R-ARS-12 är egenutvecklad av Riktapsykiatri.se (2025).</strong> Frågorna är originalformuleringar och baseras inte på något skyddat formulär.</p>
+        <p><strong>R-ARS-12 är egenutvecklad av Rikta Psykiatri (2025).</strong> Frågorna är originalformuleringar och baseras inte på något skyddat formulär.</p>
         <p><strong>Syfte:</strong> Ge en indikativ bild av uppmärksamhets- och självregleringssvårigheter hos barn och vuxna. Detta är inte ett diagnostiskt test. Vid höga poäng rekommenderas professionell neuropsykiatrisk utredning.</p>
-        <p><strong>Citering:</strong> Riktapsykiatri Attention &amp; Regulation Scale (R-ARS-12). © 2025 Riktapsykiatri.se – Fritt att använda med källhänvisning.</p>
+        <p><strong>Citering:</strong> R-ARS-12 (Rikta Psykiatri). © 2025 Rikta Psykiatri – Fritt att använda med källhänvisning.</p>
       </aside>
     </div>
   </div>
@@ -211,7 +211,7 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
       action="/api/kaddio/contact"
       method="POST"
       accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="ADHD Screening">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="ADHD-självtest">
       <input type="hidden" name="rating" id="adhd-lead-rating" value="">
       <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">

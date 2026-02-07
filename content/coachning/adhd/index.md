@@ -12,8 +12,8 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
       <span class="coachning-hero__eyebrow">Coachning för ADHD</span>
       <h1>Förändra hur din ADHD formar ditt liv</h1>
       <p>
-        Vårt ADHD-coachingprogram bygger på strukturerade videomöten där du får lära dig strategier anpassade efter din
-        unika hjärna och livsstil. Välj mellan fristående individuella sessioner eller ett 6-veckorsprogram för ungdomar
+        Vårt ADHD-coachningsprogram bygger på strukturerade videomöten där du får lära dig strategier anpassade efter din
+        unika hjärna och livsstil. Välj mellan enstaka individuella samtal eller ett 6-veckorsprogram för ungdomar
         eller vuxna – alltid lett av legitimerade psykologer eller coacher.
       </p>
       <div class="coachning-hero__actions">
@@ -36,22 +36,22 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
     <h3>Välj upplägg</h3>
     <div class="coachning-option-grid">
       <article class="coachning-option">
-        <h4>Individuella sessioner</h4>
+        <h4>Individuella samtal</h4>
         <p>Enstaka eller återkommande videomöten där du arbetar med ett specifikt mål tillsammans med din coach.</p>
         <ul>
           <li>45 minuter digitalt eller på vår mottagning.</li>
           <li>Du väljer tempo och kan pausa när du vill.</li>
           <li>Passar dig som behöver stöd med en tydlig utmaning eller vill testa coachning innan programstart.</li>
         </ul>
-        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka individuell session</a>
+        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka individuellt samtal</a>
       </article>
       <article class="coachning-option">
         <h4>6-veckors program</h4>
         <p>Strukturerat upplägg med veckomoduler, hemuppgifter och kontinuerlig uppföljning.</p>
         <ul>
           <li>Separata program för ungdomar (13–18 år) och vuxna.</li>
-          <li>Fast veckorytm + material mellan träffarna.</li>
-          <li>Ger tydlig progression och hållbara vanor.</li>
+          <li>Fast veckorytm med material mellan träffarna.</li>
+          <li>Ger tydliga framsteg och hållbara vanor.</li>
         </ul>
         <div class="coachning-option__links">
           <a class="btn link" href="#ungdom">Läs om ungdomsprogrammet</a>
@@ -65,11 +65,11 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
 <div class="coachning-program-grid">
   <section class="coachning-program coachning-section coachning-program--text-only" id="ungdom">
   <div class="coachning-program__content">
-    <span class="coachning-program__eyebrow">Coaching för ungdomar (13–18 år)</span>
+    <span class="coachning-program__eyebrow">Coachning för ungdomar (13–18 år)</span>
     <h3>6 veckor för bättre struktur i skola, känslor och relationer</h3>
     <p>
       Varje vecka träffar du en legitimerad psykolog eller ADHD-coach och får konkreta verktyg för att hantera skolan,
-      känslor och relationer. Hemuppgifter mellan sessionerna hjälper dig att behålla nya vanor.
+      känslor och relationer. Hemuppgifter mellan samtalen hjälper dig att behålla nya vanor.
     </p>
     <p><strong>Passar för:</strong> Ungdomar med ADHD som vill få bättre struktur i skolan, få hjälp med uppmärksamhet och känslor samt känna större kontroll i vardagen.</p>
     <div class="program-meta">
@@ -78,12 +78,12 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
         <strong>6 veckor</strong>
       </div>
       <div>
-        <span>Sessioner</span>
+        <span>Samtal</span>
         <strong>1 ×/vecka, 45 min</strong>
       </div>
       <div>
         <span>Format</span>
-        <strong>Zoom eller på plats</strong>
+        <strong>Videomöte eller på plats</strong>
       </div>
       <div>
         <span>Ledning</span>
@@ -142,7 +142,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
   </section>
   <section class="coachning-program coachning-section coachning-program--text-only" id="vuxna">
   <div class="coachning-program__content">
-    <span class="coachning-program__eyebrow">Coaching för vuxna (18+)</span>
+    <span class="coachning-program__eyebrow">Coachning för vuxna (18+)</span>
     <h3>6 veckor för fokus, prioritering och mindre uppskjutande</h3>
     <p>
       Du träffar samma psykolog eller coach varje vecka och får strategier för att minska prokrastinering, förbättra
@@ -155,12 +155,12 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
         <strong>6 veckor</strong>
       </div>
       <div>
-        <span>Sessioner</span>
+        <span>Samtal</span>
         <strong>1 ×/vecka, 45 min</strong>
       </div>
       <div>
         <span>Format</span>
-        <strong>Zoom eller på plats</strong>
+        <strong>Videomöte eller på plats</strong>
       </div>
       <div>
         <span>Ledning</span>
@@ -188,7 +188,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
           <span class="module-number">3</span>
           <div>
             <h5>Strategier mot prokrastinering</h5>
-            <p>Vi hittar sätt att komma igång med uppgifter och hålla momentum över tid.</p>
+            <p>Vi hittar sätt att komma igång med uppgifter och behålla kontinuiteten över tid.</p>
           </div>
         </li>
         <li>
@@ -222,7 +222,7 @@ summary: "Praktisk coachning som hjälper dig att omsätta utredningens insikter
 <section class="coachning-cta-band" id="coachning-cta">
   <div class="coachning-cta-band__content">
     <h3>Redo att få en plan som passar just dig?</h3>
-    <p>Skicka en kort beskrivning av din situation så matchar vi dig med rätt coach och upplägg – individuell session eller program.</p>
+    <p>Skicka en kort beskrivning av din situation så matchar vi dig med rätt coach och upplägg – enstaka samtal eller program.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka kostnadsfritt informationssamtal</a>
       <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktapsykiatri.se" data-email-preserve-text="true">Kontakta oss</a>

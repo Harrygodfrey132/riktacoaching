@@ -36,7 +36,7 @@ og_description: "Få en komplett ADHD- och autismutredning med digitalt upplägg
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Få en komplett ADHD- och autismutredning med digitalt upplägg
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -64,7 +64,7 @@ og_description: "Få en komplett ADHD- och autismutredning med digitalt upplägg
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video på tider som fungerar för skift och föreläsningar.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video på tider som fungerar för skift och föreläsningar.</p>
         <ul class="location-step__list">
           <li>Koordinator ser till att underlag från arbetsgivare, MDU och elevhälsa samlas in och kopplas till journalen.</li>
           <li>Du får en tidslinje med påminnelser så att inget moment tappas bort.</li>
@@ -73,19 +73,19 @@ og_description: "Få en komplett ADHD- och autismutredning med digitalt upplägg
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Tester på plats</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs primärt via vår digitala testsvit. Behövs ett motoriskt eller perceptuellt moment planerar vi ett kompakt pass i Västerås eller i Stockholm.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vårt digitala testbatteri. Behövs ett motoriskt eller perceptuellt moment planerar vi ett kompakt pass i Västerås eller i Stockholm.</p>
         <ul class="location-step__list">
           <li>Pausvänliga pass och tysta rum när du väljer ett fysiskt komplement.</li>
-          <li>Somatiska kontroller löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Somatiska kontroller löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in HR, chef, anhörig eller studentstöd till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog håller samma återkopplingsmöte för att ge en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online utan resor.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt utan resor.</li>
         </ul>
       </article>
     </div>

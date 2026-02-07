@@ -6,7 +6,7 @@ description: "En tydlig genomgång av autism, diagnoskriterier, utredning och st
 layout: "guide"
 meta_title: "Om autism – guide till symtom, utredning och stöd | Rikta Psykiatri"
 meta_description: "En klar guide om autism: vad diagnosen innebär, hur utredning går till och vilka stödstrategier som underlättar vardagen."
-meta_keywords: "autism guide, symtom, utredning, stöd, strategier"
+meta_keywords: "autismguide, symtom, utredning, stöd, strategier"
 hero: "/img/autism-coachning.jpg"
 hero_alt: "Samtal om autismstöd"
 aliases:
@@ -24,7 +24,7 @@ aliases:
             Guiden hjälper dig förstå vad autism är, hur diagnoser ställs och hur vardagen kan anpassas.
           </p>
           <div class="guide-hero-actions">
-            <a class="btn primary" href="/kontakta-oss/">Boka gratis bedömningssamtal</a>
+            <a class="btn primary" href="/kontakta-oss/">Boka kostnadsfritt bedömningssamtal</a>
             <a class="btn secondary" href="/autism-utredning/">Så går en autismutredning till</a>
           </div>
         </div>
@@ -77,7 +77,7 @@ aliases:
         </article>
         <article class="guide-card">
           <h3>Sensorik</h3>
-          <p>Känslighet för ljud, ljus, beröring eller dofter. Överstimulering kan leda till trötthet eller shutdown.</p>
+          <p>Känslighet för ljud, ljus, beröring eller dofter. Överstimulering kan leda till trötthet eller att du behöver dra dig undan för återhämtning.</p>
         </article>
         <article class="guide-card">
           <h3>Kommunikationssätt</h3>
@@ -229,11 +229,11 @@ aliases:
     <div class="container">
       <div class="guide-cta-card">
         <div>
-          <h2>Boka gratis bedömningssamtal</h2>
+          <h2>Boka kostnadsfritt bedömningssamtal</h2>
           <p>Du får tid inom 48 timmar – via video eller telefon på tider som passar dig.</p>
         </div>
         <div class="guide-hero-actions">
-          <a class="btn primary" href="/kontakta-oss/">Boka gratis samtal</a>
+          <a class="btn primary" href="/kontakta-oss/">Boka kostnadsfritt samtal</a>
           <a class="btn secondary" href="/autism-utredning/">Läs mer om autismutredning</a>
         </div>
         <p>Kostnad: 0 kr. Samtalet leds av psykolog som guidar dig vidare mot utredning eller andra stödinsatser.</p>

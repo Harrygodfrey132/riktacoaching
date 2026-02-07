@@ -2,7 +2,7 @@
 title: "ADHD- och autismutredning i Stockholm"
 draft: false
 meta_title: "ADHD- och autismutredning i Stockholm | Rikta"
-meta_keywords: "ADHD utredning Stockholm, autism privat Stockholm, psykiater Stockholm, neuropsykiatri city, Rikta Stockholm"
+meta_keywords: "ADHD utredning Stockholm, autism privat Stockholm, psykiater Stockholm, neuropsykiatri centrala Stockholm, Rikta Stockholm"
 meta_description: "Privata ADHD- och autismutredningar i centrala Stockholm med specialistläkare, psykolog och uppföljning på plats eller digitalt."
 og_title: "Neuropsykiatrisk utredning i Stockholm"
 og_description: "Besök vår mottagning nära kommunikationer eller möt oss digitalt. Vi erbjuder heltäckande ADHD- och autismutredningar."
@@ -12,11 +12,11 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Stockholm • Digital-first</span>
+        <span class="eyebrow">Stockholm • Digitalt upplägg</span>
         <h1>ADHD- och autismutredning i Stockholm</h1>
         <p class="lead">
           Vårt stockholmsteam hjälper allt från konsultbolag på Sveavägen till studenter på KTH att få en evidensbaserad utredning utan att pausa livet.
-          Kartläggning, psykologintervjuer, tester och läkarbesök genomförs digitalt – och bara om vi behöver ett specifikt moment på plats bokar vi ett kort precisionspass i city.
+          Kartläggning, psykologintervjuer, tester och läkarbesök genomförs digitalt. Om ett enskilt moment behöver göras på plats planerar vi ett kort besök i centrala Stockholm.
         </p>
         <ul class="location-hero__highlights">
           <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg (tidsplanen beror på dina behov).</li>
@@ -36,7 +36,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -65,7 +65,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, bakgrundsintervjuer och DIVA-5 sker via krypterad video. Du får en tidslinje med pushnotiser så att du kan kombinera utredningen med vardagen i stan.</p>
+        <p>Självskattningsformulär, bakgrundssamtal och DIVA-5 sker via krypterad video. Du får en tydlig tidslinje och påminnelser så att du kan kombinera utredningen med vardagen i Stockholm.</p>
         <ul class="location-step__list">
           <li>Koordinator läser in dig på upplägget och hjälper med intygsunderlag, ED-nummer och eventuella remisser.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas till journalen.</li>
@@ -74,15 +74,15 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Tester på plats</h3>
-        <p>Neuropsykologiska tester, läkarbedömning och kliniska observationer görs via vår digitala testsvit. Endast om vi behöver ett specifikt motoriskt eller perceptuellt moment bokar vi ett kort besök i Stockholm.</p>
+        <p>Neuropsykologiska tester, läkarbedömning och kliniska observationer görs via vårt digitala testbatteri. Endast om vi behöver ett specifikt motoriskt eller perceptuellt moment bokar vi ett kort besök i Stockholm.</p>
         <ul class="location-step__list">
           <li>Sensoriskt lugna rum och fokuszoner finns om du väljer ett fysiskt komplement.</li>
-          <li>Medicinsk provtagning löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Medicinsk provtagning löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får en skriftlig rapport, diagnosbeslut och behandlingsplan. Vi går igenom allt digitalt och kan bjuda in HR, anhörig eller studenthälsa till delar av samtalet.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte.</li>
@@ -111,7 +111,7 @@ og_description: "Besök vår mottagning nära kommunikationer eller möt oss dig
           <li>Tvärprofessionellt team med psykiater, psykolog, sjuksköterska och koordinator.</li>
           <li>Fullständig rapport med diagnoskriterier, styrkor, rekommendationer och uppföljningsplan som tar hänsyn till Stockholms arbetsliv och studiestruktur.</li>
           <li>Uppstart av medicinering och coachning i samma team för en sömlös övergång.</li>
-          <li>Tillgång till patientportalen med journal, intyg, videoåtergivningar, mikroövningar och kom-ihåg-listor.</li>
+          <li>Tillgång till patientportalen med journal, intyg, videogenomgångar, mikroövningar och kom-ihåg-listor.</li>
         </ul>
       </article>
     </div>

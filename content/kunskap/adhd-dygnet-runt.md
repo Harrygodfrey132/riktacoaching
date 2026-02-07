@@ -154,7 +154,7 @@ aliases:
         </article>
         <article class="guide-card">
           <h3>Exekutiva funktioner &amp; tid</h3>
-          <p>Utmaningar med igångsättning, planering och ”time blindness”.</p>
+          <p>Utmaningar med igångsättning, planering och bristande tidsuppfattning.</p>
         </article>
         <article class="guide-card">
           <h3>Känsloreglering</h3>

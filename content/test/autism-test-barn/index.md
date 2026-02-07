@@ -7,7 +7,7 @@ type: "none"
 aliases:
   - /test/autism-test-barn/
 meta_title: "AQ-10 (barnversionen) | Rikta Psykiatri"
-meta_keywords: "AQ-10 barn, autismtest barn, autism screening barn, föräldraenkät"
+meta_keywords: "AQ-10 barn, autismtest barn, självtest autism barn, föräldraenkät"
 meta_description: "AQ-10 (barnversionen) – kort föräldraenkät för barn 4–11 år."
 og_title: "AQ-10 (barnversionen)"
 og_description: "Kort föräldraenkät för barn 4–11 år."
@@ -20,7 +20,7 @@ og_description: "Kort föräldraenkät för barn 4–11 år."
       <span class="adhd-screening__eyebrow">Fylls i av föräldrar</span>
       <h1>AQ-10 (barnversionen)</h1>
       <p><strong>Autism Spectrum Quotient (AQ)</strong></p>
-      <p>En kort föräldraenkät för 4–11 år gamla barn med misstänkt autismspektrumtillstånd.</p>
+      <p>En kort föräldraenkät för barn i åldern 4–11 år med misstänkt autismspektrumtillstånd.</p>
       <p><strong>Kryssa endast i en ruta per fråga:</strong></p>
     </header>
     <div class="adhd-screening__shell">

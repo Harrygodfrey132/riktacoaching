@@ -3,7 +3,7 @@ title: "Autismutredning för kvinnor"
 description: "Autism hos kvinnor syns ofta mellan raderna. Vi erbjuder en neuroaffirmativ utredning som tar fasta på maskering, energi och hela livsresan."
 draft: false
 meta_title: "Autismutredning för kvinnor | Rikta Psykiatri"
-meta_keywords: "autism kvinnor, maskering autism, kvinnors neurodiversitet, sensorisk balans, Rikta autism kvinnor"
+meta_keywords: "autism kvinnor, maskering autism, autism hos kvinnor, sensorisk balans, Rikta autism kvinnor"
 meta_description: "Vi synliggör maskering, energibalans och hormonella mönster för kvinnor som misstänker autism och vill ha riktat stöd."
 og_title: "Autism hos kvinnor - utredning via Rikta"
 og_description: "Vårt team hjälper dig förstå hur autism påverkar relationer, arbete och hälsa och utformar strategier som håller över tid."
@@ -18,7 +18,7 @@ page_class: "autism-page--women"
         <span class="eyebrow">Rikta Psykiatri</span>
         <h1>Autism hos kvinnor</h1>
         <p class="lead">
-          Många kvinnor lever länge med autism utan diagnos. Maskande och samsjuklighet kan dessutom göra bilden komplex.
+          Många kvinnor lever länge med autism utan diagnos. Maskning och samsjuklighet kan dessutom göra bilden komplex.
           Vi erbjuder tydlig och strukturerad utredning som lyfter fram både dina styrkor och stödbehov.
         </p>
         <div class="hero-actions">
@@ -42,7 +42,7 @@ page_class: "autism-page--women"
         <h2>Hur kan autism visa sig hos kvinnor?</h2>
         <p>
           Autism handlar om hur hjärnan bearbetar sociala sammanhang, sinnesintryck och ibland vilka typer av intressen man har. Hos kvinnor tar det ofta
-          formen av maskande, perfektionism eller ett ständigt energibudgeterande för att klara vardagen.
+          formen av maskning, perfektionism eller ett ständigt behov av att hushålla med energi för att klara vardagen.
         </p>
         <p>
           I utredningen gör vi en kartläggning över hur du har fungerat i relationer, skolan och i arbetslivet under ditt liv. Vi särskiljer
@@ -55,13 +55,13 @@ page_class: "autism-page--women"
       <div class="intro-stats adhd-definition-card">
         <h3>Under utredningen tittar vi på:</h3>
         <ul>
-          <li>Maskandesstrategier, social ångest och hur energin påverkas efter socialt umgänge.</li>
+          <li>Maskningsstrategier, social ångest och hur energin påverkas efter socialt umgänge.</li>
           <li>Sensorisk känslighet, sömn, hormonella variationer och kroppsliga signaler.</li>
           <li>Specialintressen, styrkor och hur du organiserar vardag, relationer och familjeliv.</li>
           <li>Samsjuklighet såsom ADHD, ångest, depression, eller utmattningssyndrom.</li>
         </ul>
         <p class="small">
-          Vi använder oss av verktyg som RAADS-14, AQ och 3Di med kliniska intervjuer och anhörig- eller partnersamtal när du tror att det skulle tillföra till utrednining.
+          Vi använder bland annat RAADS-14, AQ och 3Di tillsammans med kliniska intervjuer och, när det är hjälpsamt, samtal med närstående eller partner.
         </p>
       </div>
     </div>
@@ -71,7 +71,7 @@ page_class: "autism-page--women"
 <section class="who-section adhd-process adhd-process--timeline" id="process">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">Autismutredning för vuxna</span>
+      <span class="eyebrow">Autismutredning för kvinnor</span>
       <h2>En noggrann process som ger tydlighet</h2>
       <p class="muted">
         Vår autismutredning för vuxna är en strukturerad, evidensbaserad process där vi bedömer om du befinner dig inom
@@ -157,14 +157,14 @@ page_class: "autism-page--women"
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy">
-        <span class="eyebrow">Next steps</span>
+        <span class="eyebrow">Nästa steg</span>
         <h2>Fortsatt stöd för ett hållbart liv</h2>
         <p>
           Utredningen kan bli startskottet för att forma en vardag som tar höjd för dina behov. Vi bygger vidare tillsammans med
           dig i takt med att nya situationer uppstår.
         </p>
         <p class="muted">
-          Stödet utformas efter dig – från regelbunden coachning till punktinsatser vid olika livsskeden. 
+          Stödet utformas efter dig – från regelbunden coachning till punktinsatser vid olika livsskeden.
         </p>
       </div>
       <div class="intro-stats">
@@ -173,8 +173,8 @@ page_class: "autism-page--women"
           <p>Hjälp med remisser, intyg och kontakt med regionvård, habilitering eller företagshälsa.</p>
         </article>
         <article>
-          <h3>Terapi &amp; coachning</h3>
-          <p>Autismcoachning där du ges kunskaper och verktyg för att optimera din vardag.</p>
+          <h3>Terapi och coachning</h3>
+          <p>Autismcoachning där du får kunskap och verktyg för att underlätta vardagen.</p>
         </article>
         <article>
           <h3>Struktur &amp; anpassningar</h3>
@@ -188,7 +188,7 @@ page_class: "autism-page--women"
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">FAQ</span>
+      <span class="eyebrow">Frågor och svar</span>
       <h2>Vanliga frågor</h2>
       <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
     </div>
@@ -217,7 +217,7 @@ page_class: "autism-page--women"
       <details>
         <summary>Vad händer efter att jag fått min rapport?</summary>
         <p>
-          Du kan boka uppföljningar när du vill. Vi hjälper med intyg, terapi, coachning eller samordning med annan vård -
+          Du kan boka uppföljningar när du vill. Vi hjälper med intyg, terapi, coachning eller samordning med annan vård –
           utifrån det stöd du behöver över tid.
         </p>
       </details>

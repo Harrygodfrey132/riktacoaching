@@ -2,19 +2,19 @@
 title: "Coachning som kompletterar din diagnos"
 translationKey: "coaching"
 layout: coachning
-meta_title: "Coachning för ADHD & autism | Rikta Psykiatri"
-meta_description: "Överblicka våra coachningsprogram för ADHD och autism. Jämför fokusområden och hitta rätt stödteam hos Rikta Psykiatri."
-summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachningar."
+meta_title: "Coachning för ADHD och autism | Rikta Psykiatri"
+meta_description: "Överblicka våra coachningsprogram för ADHD och autism. Jämför fokusområden och hitta rätt upplägg hos Rikta Psykiatri."
+summary: "En gemensam ingång till våra specialiserade upplägg för ADHD- och autismcoachning."
 ---
 
 <section class="coachning-hero">
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
-      <span class="coachning-hero__eyebrow">Coachning för ADHD &amp; autism</span>
-      <h1>Ett nav för stöd efter utredningen</h1>
+      <span class="coachning-hero__eyebrow">Coachning för ADHD och autism</span>
+      <h1>Stöd efter utredningen</h1>
       <p>
         Våra coachningsprogram tar vid där utredningen slutar. Här hittar du en överblick över hur vi arbetar med både
-        ADHD- och autism-coachning, vad de har gemensamt och hur du väljer rätt upplägg för dina behov.
+        ADHD- och autismcoachning, vad de har gemensamt och hur du väljer rätt upplägg för dina behov.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
@@ -32,7 +32,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
     <h2>Så fungerar vår coachning</h2>
     <p>
       Oavsett diagnos börjar vi alltid med att återkoppla till din utredning, definiera mål och avtala hur ofta vi ska ses.
-      Därefter får du konkreta verktyg, hemmauppgifter och kontaktvägar mellan sessionerna så att förändringen håller.
+      Därefter får du konkreta verktyg, hemuppgifter och kontakt mellan samtalen så att förändringen håller.
     </p>
     <div class="coachning-format-grid">
       <article class="coachning-format">
@@ -45,7 +45,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
       </article>
       <article class="coachning-format">
         <h4>Kontinuerliga uppföljningar</h4>
-        <p>Varje månad utvärderar vi progression och justerar plan och frekvens vid behov.</p>
+        <p>Varje månad utvärderar vi framsteg och justerar plan och frekvens vid behov.</p>
       </article>
     </div>
   </div>
@@ -73,7 +73,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
         </figure>
         <div class="coachning-step__body">
           <span class="coachning-step__number">Autism</span>
-          <h4>Autism-coachning</h4>
+          <h4>Autismcoachning</h4>
           <p>Inriktad på sensorisk balans, kommunikation och att skapa trygg struktur i vardagen. Passar både vuxna och ungdomar samt anhöriga.</p>
           <a class="btn secondary" href="/coachning/autism/">Läs mer</a>
         </div>
@@ -85,7 +85,7 @@ summary: "En gemensam ingång till våra specialiserade ADHD- och autism-coachni
 <section class="coachning-cta-band" id="coachning-cta">
   <div class="coachning-cta-band__content">
     <h3>Behöver du hjälp att välja?</h3>
-    <p>Berätta kort om din situation så guidar vi dig till rätt program, coach och uppstartstid.</p>
+    <p>Berätta kort om din situation så guidar vi dig till rätt program, coach och start.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
       <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktapsykiatri.se" data-email-preserve-text="true">Kontakta oss</a>

@@ -12,10 +12,10 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Helsingborg • Digital-first</span>
+        <span class="eyebrow">Helsingborg • Digitalt upplägg</span>
         <h1>ADHD- och autismutredning i Helsingborg</h1>
         <p class="lead">
-          Vi opererar i Helsingborg och norra Skåne och hjälper dig att få en strukturerad utredning som fungerar med ditt arbetsliv, pendling över Öresund eller familjesituation.
+          Vi hjälper dig i Helsingborg och norra Skåne att få en strukturerad utredning som fungerar med ditt arbetsliv, pendling över Öresund eller familjesituation.
           Hela processen från kartläggning till uppföljning sker digitalt via video; endast om ett specifikt testmoment kräver det kan vi arrangera ett kort besök.
         </p>
         <ul class="location-hero__highlights">
@@ -36,7 +36,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -65,7 +65,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Efter ett kostnadsfritt introduktionssamtal får du tillgång till vår digitala portal med screeningformulär. DIVA-5, anamnes och anhörigintervju sker via krypterad video på tider som passar dig – även kvällar och helger.</p>
+        <p>Efter ett kostnadsfritt introduktionssamtal får du tillgång till vår digitala portal med självskattningsformulär. DIVA-5, anamnes och anhörigintervju sker via krypterad video på tider som passar dig – även kvällar och helger.</p>
         <ul class="location-step__list">
           <li>Koordinator guidar dig genom processen och hjälper med intygsunderlag, remisser och eventuellt ED-nummer.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas direkt till din journal.</li>
@@ -74,10 +74,10 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Tester och bedömning</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs via vår digitala testsvit. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro kan vi arrangera ett kompakt besök.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs via vårt digitala testbatteri. Om ett motoriskt eller perceptuellt moment kräver fysisk närvaro kan vi arrangera ett kompakt besök.</p>
         <ul class="location-step__list">
           <li>Sensoriskt lugna miljöer och pausvänliga pass erbjuds vid fysiska inslag.</li>
-          <li>Somatiska kontroller och labbremisser löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Somatiska kontroller och labbremisser löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
@@ -111,7 +111,7 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
           <li>Tvärprofessionellt team med psykiater, psykolog, sjuksköterska och koordinator som följer dig genom hela processen.</li>
           <li>Fullständig rapport med diagnoskriterier, styrkor, rekommendationer och uppföljningsplan som tar hänsyn till Helsingborgs arbetsliv och skolstruktur.</li>
           <li>Uppstart av medicinering och coachning i samma team för en sömlös övergång från utredning till behandling.</li>
-          <li>Tillgång till patientportalen med journal, intyg, videoåtergivningar, mikroövningar och kom-ihåg-listor.</li>
+          <li>Tillgång till patientportalen med journal, intyg, videogenomgångar, mikroövningar och kom-ihåg-listor.</li>
         </ul>
       </article>
     </div>
@@ -130,4 +130,3 @@ og_description: "Komplett ADHD- och autismutredning med digitalt upplägg och pu
     </div>
   </div>
 </section>
-

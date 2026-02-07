@@ -19,7 +19,7 @@ page_class: "autism-page--youth"
         <h1>Autism hos barn och ungdomar</h1>
         <p class="lead">
           Autism påverkar hur barn kommunicerar, leker och hanterar sinnesintryck. Med en utredning
-          får ni klarhet i ditt barns behov och en plan som stöttar ditt barn och er som familj.
+          får du klarhet i ditt barns behov och en plan som stöttar ditt barn och din familj.
         </p>
         <div class="hero-actions">
           <a class="btn primary" href="/kontakta-oss">Boka en utredning</a>
@@ -165,13 +165,13 @@ page_class: "autism-page--youth"
   <div class="container">
     <div class="who-grid intro-grid">
       <div class="intro-copy">
-        <span class="eyebrow">Next steps</span>
+        <span class="eyebrow">Nästa steg</span>
         <h2>Fortsatt stöd efter utredningen</h2>
         <p>
-         Vi ser utredningen som  början på resan. Vi hjälper ditt barn att omsätta de rekommendationer som utredningen kommer fram till i våra coachning eller terapi-samtal. 
+         Vi ser utredningen som början på en fortsatt plan. Vi hjälper dig och ditt barn att omsätta rekommendationerna i vardagen, till exempel i coachnings- eller terapisamtal.
         </p>
         <p class="muted">
-          Stödet utformas efter ditt eller ditt barns behov och vad som känns viktigast här och nu. 
+          Stödet utformas efter ditt barns behov och vad som känns viktigast här och nu.
         </p>
       </div>
       <div class="intro-stats">
@@ -191,15 +191,15 @@ page_class: "autism-page--youth"
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">FAQ</span>
+      <span class="eyebrow">Frågor och svar</span>
       <h2>Vanliga frågor</h2>
-      <p class="muted">Hittar ni inte svaret? Hör av er så guidar vi er vidare.</p>
+      <p class="muted">Hittar du inte svaret? Hör av dig så hjälper vi dig vidare.</p>
     </div>
     <div class="adhd-faq-accordion">
       <details>
         <summary>Behöver vi remiss för utredningen?</summary>
         <p>
-          Nej, ni kan kontakta oss direkt. 
+          Nej, du kan kontakta oss direkt.
         </p>
       </details>
       <details>
@@ -212,7 +212,7 @@ page_class: "autism-page--youth"
       <details>
         <summary>Vad gör jag om mitt barn är oroligt inför utredningen?</summary>
         <p>
-          Vi anpassar vårt tempo och använder tydliga förberedelser. Vi kan skicka material i förväg så att ni vet vad som väntar.
+          Vi anpassar vårt tempo och använder tydliga förberedelser. Vi kan skicka material i förväg så att du vet vad som väntar.
         </p>
       </details>
       <details>
@@ -230,10 +230,10 @@ page_class: "autism-page--youth"
   <div class="container">
     <h2>Redo att boka en autismutredning?</h2>
     <p>
-      Ta första steget mot förståelse. Vi guidar er genom processen och hjälper er att skapa en vardag
-      där ditt barn kan utvecklas i rätt riktning. 
+      Ta första steget mot förståelse. Vi guidar dig genom processen och hjälper dig att skapa en vardag
+      där ditt barn kan må och utvecklas bättre.
     </p>
     <a class="btn primary" href="/kontakta-oss">Boka ett introduktionssamtal</a>
-    <p class="muted">Vill ni bli uppringda? Mejla oss så återkommer vi när det passar.</p>
+    <p class="muted">Vill du bli uppringd? Mejla oss så återkommer vi när det passar.</p>
   </div>
 </section>

@@ -12,11 +12,11 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Malmö • Digital-first</span>
+        <span class="eyebrow">Malmö • Digitalt upplägg</span>
         <h1>ADHD- och autismutredning i Malmö</h1>
         <p class="lead">
-          Vårt team hjälper dig oavsett om du pendlar över Öresund, jobbar i tech eller kreativt näringsliv, eller pluggar på Lund eller Malmö universitet.
-          Kartläggning, tester, läkarbesök och uppföljning sker online; bara om ett visst moment kräver fysisk närvaro kan vi arrangera ett kort besök.
+          Vårt team hjälper dig oavsett om du pendlar över Öresund, arbetar inom teknikbranschen eller kreativa näringar, eller studerar vid Lunds universitet eller Malmö universitet.
+          Kartläggning, tester, läkarbesök och uppföljning sker digitalt. Om något moment kräver fysisk närvaro kan vi ordna ett kort kompletterande besök.
         </p>
         <ul class="location-hero__highlights">
           <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg.</li>
@@ -45,7 +45,7 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Digital medicin, coachning, intyg och arbetslivsstöd</dd>
+            <dd>Digital medicinering, coachning, intyg och arbetslivsstöd</dd>
           </div>
         </dl>
       </div>
@@ -63,7 +63,7 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
     <div class="location-journey__steps">
       <article class="location-step">
         <span class="location-step__number">1</span>
-        <h3>Förberedelser online</h3>
+        <h3>Förberedelser digitalt</h3>
         <p>Efter ett kostnadsfritt kartläggningssamtal får du schemalagda videomöten för DIVA-5, anamnes och anhörigintervju. Du kan boka tid på kvällar och helger.</p>
         <ul class="location-step__list">
           <li>Digital portal med formulär och tydliga instruktioner.</li>
@@ -73,15 +73,15 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Tester på plats</h3>
-        <p>Neuropsykologiska tester, läkarbedömning och kliniska observationer görs via vår digitala testsvit. Endast om vi behöver ett specifikt motoriskt eller perceptuellt moment kan vi arrangera ett kort besök.</p>
+        <p>Neuropsykologiska tester, läkarbedömning och kliniska observationer görs via vårt digitala testbatteri. Endast om vi behöver ett specifikt motoriskt eller perceptuellt moment kan vi arrangera ett kort besök.</p>
         <ul class="location-step__list">
           <li>Sensoriskt lugna rum och fokuszoner finns om du väljer ett fysiskt komplement.</li>
-          <li>Medicinsk provtagning löses via närliggande labb, hemlabb-kit eller vår digitala partner.</li>
+          <li>Medicinsk provtagning löses via närliggande labb, hemprovtagning eller vår digitala partner.</li>
         </ul>
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får en skriftlig rapport, diagnosbeslut och behandlingsplan. Vi går igenom allt digitalt och kan bjuda in HR, anhörig eller studenthälsa till delar av samtalet.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte.</li>
@@ -110,7 +110,7 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
           <li>Tvärprofessionellt team med psykiater, psykolog, sjuksköterska och koordinator.</li>
           <li>Fullständig rapport med diagnoskriterier, styrkor, rekommendationer och uppföljningsplan som tar hänsyn till Skånes arbetsliv och studiestruktur.</li>
           <li>Uppstart av medicinering och coachning i samma team för en sömlös övergång.</li>
-          <li>Tillgång till patientportalen med journal, intyg, videoåtergivningar, mikroövningar och kom-ihåg-listor.</li>
+          <li>Tillgång till patientportalen med journal, intyg, videogenomgångar, mikroövningar och kom-ihåg-listor.</li>
         </ul>
       </article>
     </div>
@@ -129,4 +129,3 @@ og_description: "Heldigital utredning och uppföljning för dig i Skåne, med m�
     </div>
   </div>
 </section>
-

@@ -1,7 +1,7 @@
 ---
 title: ""
 layout: "coachning"
-meta_title: "Autism-coachning | Rikta Psykiatri"
+meta_title: "Autismcoachning | Rikta Psykiatri"
 meta_description: "Coachning för dig med autismdiagnos. Få stöd i att skapa struktur, hantera sensoriska intryck och stärka socialt självförtroende."
 summary: "Individuell coachning som hjälper dig att navigera vardagen med större lugn och tydlighet."
 ---
@@ -12,8 +12,8 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
       <span class="coachning-hero__eyebrow">Coachning för autism</span>
       <h1>Förändra hur din autism formar ditt liv</h1>
       <p>
-        Autism-coachning hos Rikta fokuserar på att anpassa omvärlden efter dina behov. Välj mellan fristående individuella
-        sessioner eller ett 6-veckorsprogram för ungdomar eller vuxna – alltid lett av legitimerad psykolog eller autism-coach.
+        Autismcoachning hos Rikta fokuserar på att anpassa omvärlden efter dina behov. Välj mellan enstaka individuella
+        samtal eller ett 6-veckorsprogram för ungdomar eller vuxna – alltid lett av legitimerad psykolog eller autism-coach.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/kontakta-oss/#kontaktformular">Boka introduktionssamtal</a>
@@ -25,7 +25,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
       </ul>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/autism-coachning.jpg" alt="Person som får autism-coachning digitalt eller på mottagning">
+      <img src="/img/autism-coachning.jpg" alt="Person som får autismcoachning digitalt eller på mottagning">
     </div>
   </div>
 </section>
@@ -51,14 +51,14 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
     <h3>Välj upplägg</h3>
     <div class="coachning-option-grid">
       <article class="coachning-option">
-        <h4>Individuella sessioner</h4>
+        <h4>Individuella samtal</h4>
         <p>Fokuserade möten där du arbetar med ett specifikt mål tillsammans med din coach.</p>
         <ul>
           <li>45 minuter digitalt eller på mottagning.</li>
           <li>Flexibelt tempo – du kan pausa eller boka löpande.</li>
           <li>Perfekt när du behöver stöd med en avgränsad utmaning.</li>
         </ul>
-        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka individuell session</a>
+        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka individuellt samtal</a>
       </article>
       <article class="coachning-option">
         <h4>6-veckors program</h4>
@@ -66,7 +66,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
         <ul>
           <li>Separata program för ungdomar och vuxna.</li>
           <li>Fast veckorytm med material mellan träffarna.</li>
-          <li>Ger tydlig progression och hållbara vanor.</li>
+          <li>Ger tydliga framsteg och hållbara vanor.</li>
         </ul>
         <div class="coachning-option__links">
           <a class="btn link" href="#ungdom-autism">Ungdomsprogram</a>
@@ -80,7 +80,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
 <div class="coachning-program-grid">
   <section class="coachning-program coachning-section coachning-program--text-only" id="ungdom-autism">
   <div class="coachning-program__content">
-    <span class="coachning-program__eyebrow">Coaching för ungdomar (13–18 år)</span>
+    <span class="coachning-program__eyebrow">Coachning för ungdomar (13–18 år)</span>
     <h3>6 veckor för struktur, sensorik och tryggare relationer</h3>
     <p>
       Du träffar en legitimerad psykolog eller autism-coach varje vecka och får verktyg för skola, känslor, sensorik och
@@ -93,12 +93,12 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
         <strong>6 veckor</strong>
       </div>
       <div>
-        <span>Sessioner</span>
+        <span>Samtal</span>
         <strong>1 ×/vecka, 45 min</strong>
       </div>
       <div>
         <span>Format</span>
-        <strong>Zoom eller på plats</strong>
+        <strong>Videomöte eller på plats</strong>
       </div>
       <div>
         <span>Ledning</span>
@@ -157,7 +157,7 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
   </section>
   <section class="coachning-program coachning-section coachning-program--text-only" id="vuxna-autism">
   <div class="coachning-program__content">
-    <span class="coachning-program__eyebrow">Coaching för vuxna (18+)</span>
+    <span class="coachning-program__eyebrow">Coachning för vuxna (18+)</span>
     <h3>6 veckor för vardagsplanering, socialt samspel och stresshantering</h3>
     <p>
       Du får strategier för planering, sociala situationer och återhämtning. Hemuppgifter hjälper dig att bryta ned mål,
@@ -170,12 +170,12 @@ summary: "Individuell coachning som hjälper dig att navigera vardagen med stör
         <strong>6 veckor</strong>
       </div>
       <div>
-        <span>Sessioner</span>
+        <span>Samtal</span>
         <strong>1 ×/vecka, 45 min</strong>
       </div>
       <div>
         <span>Format</span>
-        <strong>Zoom eller på plats</strong>
+        <strong>Videomöte eller på plats</strong>
       </div>
       <div>
         <span>Ledning</span>

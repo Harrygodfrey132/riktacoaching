@@ -7,7 +7,7 @@ type: "none"
 aliases:
   - /test/add-test/
 meta_title: "ADD – ouppmärksamhetssymtom | Rikta Psykiatri"
-meta_keywords: "ADD test, ouppmärksamhet, ADHD ouppmärksamhet, självskattning"
+meta_keywords: "ADD-test, ouppmärksamhet, ADHD, självskattning"
 meta_description: "Ouppmärksamhetssymtom (ADD) – frågor hämtade från den svenska versionen."
 og_title: "ADD – ouppmärksamhetssymtom"
 og_description: "Ouppmärksamhetssymtom (ADD) – självskattning."

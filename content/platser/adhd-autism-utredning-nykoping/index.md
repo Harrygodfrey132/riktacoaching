@@ -3,7 +3,7 @@ title: "ADHD- och autismutredning i Nyköping"
 draft: false
 meta_title: "ADHD- och autismutredning i Nyköping | Rikta"
 meta_keywords: "ADHD utredning Nyköping, autism privat Nyköping, psykiater Nyköping, neuropsykiatri Södermanland, Region Sörmland, Rikta Nyköping"
-meta_description: "ADHD- och autismutredning för Nyköping med digitalt upplägg, fysiska moment via vårt mobila team från Katrineholm och somatiska prover hos lokala partners i city."
+meta_description: "ADHD- och autismutredning för Nyköping med digitalt upplägg, fysiska moment via vårt mobila team från Katrineholm och somatiska prover hos lokala partners i centrala Nyköping."
 og_title: "Neuropsykiatrisk utredning i Nyköping"
 og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via mobilt team från Katrineholm och provtagning hos lokala partners."
 ---
@@ -16,7 +16,7 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
         <h1>ADHD- och autismutredning i Nyköping</h1>
         <p class="lead">
           Du kan göra en komplett ADHD- och autismutredning med ett upplägg som fungerar med jobb, pendling och familjeliv i Nyköping.
-          Vårt team utgår från Katrineholm och besöker Nyköping regelbundet för fysiska utredningsmoment; somatiska prover sker hos lokala partners i city.
+          Vårt team utgår från Katrineholm och besöker Nyköping regelbundet för fysiska utredningsmoment; somatiska prover sker hos lokala partners i centrala Nyköping.
         </p>
         <ul class="location-hero__highlights">
           <li>Snabb start inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor (tidsplanen anpassas efter dig).</li>
@@ -36,7 +36,7 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -67,7 +67,7 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som håller ihop processen.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som håller ihop processen.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till med intygsunderlag och samlar in relevanta uppgifter från vård, arbetsgivare och skola.</li>
           <li>Du kan göra momenten på tider som fungerar med pendling, skift och familjelogistik.</li>
@@ -76,7 +76,7 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Fysiska moment &amp; prover</h3>
-        <p>De flesta tester görs via vår digitala testsvit. När vi behöver ett fysiskt delmoment planerar vi ett kort pass i Nyköping. Somatiska prover koordineras hos våra partners i city.</p>
+        <p>De flesta tester görs via vårt digitala testbatteri. När vi behöver ett fysiskt delmoment planerar vi ett kort pass i Nyköping. Somatiska prover koordineras hos våra partners i centrum.</p>
         <ul class="location-step__list">
           <li>Vårt mobila team utgår från Katrineholm och kan möta upp i Nyköping när det behövs.</li>
           <li>Vi samlar fysiska moment så att du slipper flera resor och onödig väntan.</li>
@@ -84,11 +84,11 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte för en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online utan extra resor.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt utan extra resor.</li>
         </ul>
       </article>
     </div>
@@ -132,4 +132,3 @@ og_description: "Digital utredning med fysiska utredningsmoment i Nyköping via 
     </div>
   </div>
 </section>
-

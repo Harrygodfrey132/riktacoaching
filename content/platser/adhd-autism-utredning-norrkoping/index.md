@@ -20,7 +20,7 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
         </p>
         <ul class="location-hero__highlights">
           <li>Personlig plan inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor med övervägande digitalt upplägg (tidsplanen styrs av dina behov).</li>
-          <li>Intyg och underlag anpassade för Campus Norrköping (LiU), arbetsgivare i tech och näringsliv, kommunala skolor och CSN.</li>
+          <li>Intyg och underlag anpassade för Campus Norrköping (LiU), arbetsgivare inom teknik och näringsliv, kommunala skolor och CSN.</li>
           <li>Samma team för medicin, coachning och arbetslivsstöd; fysiska kontroller kan ske i Norrköping via mobilt team.</li>
         </ul>
         <div class="hero-actions">
@@ -36,7 +36,7 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -58,14 +58,14 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
     <header class="location-section__header">
       <span class="eyebrow">Så går det till</span>
       <h2>Din utredning i Norrköping, steg för steg</h2>
-      <p>Upplägget passar dig som studerar på Campus Norrköping (LiU), jobbar i tech-sektorn runt Visualiseringscenter eller vill få vardagen att fungera bättre utan extra resor.
+      <p>Upplägget passar dig som studerar på Campus Norrköping (LiU), jobbar inom tekniksektorn runt Visualiseringscenter eller vill få vardagen att fungera bättre utan extra resor.
         Så här brukar processen se ut när vi kombinerar digitalt upplägg med lokala fysiska kontroller.</p>
     </header>
     <div class="location-journey__steps">
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju sker via krypterad video. Du får en tydlig tidslinje och påminnelser som fungerar med både studietider och arbetsliv.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju sker via krypterad video. Du får en tydlig tidslinje och påminnelser som fungerar med både studietider och arbetsliv.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till med intygsunderlag, remisser och eventuellt ED-nummer.</li>
           <li>Arbetsgivar- och skolunderlag laddas upp digitalt och kopplas till journalen.</li>
@@ -74,7 +74,7 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Fysiska kontroller nära dig</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. När vi behöver ett fysiskt delmoment planerar vi det i Norrköping via vårt mobila team från Katrineholm. Somatiska kontroller koordineras hos lokala partners.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vårt digitala testbatteri. När vi behöver ett fysiskt delmoment planerar vi det i Norrköping via vårt mobila team från Katrineholm. Somatiska kontroller koordineras hos lokala partners.</p>
         <ul class="location-step__list">
           <li>Fysiska moment planeras kompakt så att du slipper flera resor.</li>
           <li>Somatiska prover tas lokalt och kopplas till utredningen.</li>
@@ -82,11 +82,11 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller studenthälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online utan resor.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt utan resor.</li>
         </ul>
       </article>
     </div>
@@ -101,7 +101,7 @@ og_description: "Digital utredning med fysiska kontroller i Norrköping via mobi
         <p>Vi hjälper dig att omsätta diagnosen i konkreta verktyg för vardagen i Norrköping och Östergötland – digitalt i grunden, med lokala fysiska kontroller när det behövs.</p>
         <ul class="location-info__list">
           <li>Mallar för arbetsgivare, studenthälsa (LiU Campus Norrköping), CSN, Försäkringskassan och privata försäkringar.</li>
-          <li>Digitala fokusprogram och coachning anpassade för studier, tech-jobb och familjeliv i regionen.</li>
+          <li>Digitala fokusprogram och coachning anpassade för studier, jobb inom teknik och familjeliv i regionen.</li>
           <li>Samarbeten med lokala företagshälsor, rehabaktörer och terapeuter när du behöver fler insatser.</li>
         </ul>
       </article>

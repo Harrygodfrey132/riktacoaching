@@ -1,13 +1,13 @@
 ---
-title: "Autism-test online"
+title: "Autismtest (AQ-10)"
 translationKey: "autism-test"
 draft: false
 layout: "none"
 type: "none"
 aliases:
   - /autism-test/
-meta_title: "Autism-test online | AQ-10"
-meta_keywords: "autism test online, AQ-10, autism screening, självtest autism, Rikta Psykiatri"
+meta_title: "AQ-10 | Självtest för autism"
+meta_keywords: "autismtest, AQ-10, självtest autism, autistiska drag, Rikta Psykiatri"
 meta_description: "Gör AQ-10 – ett kort autism-självtest – och få vägledning kring nästa steg tillsammans med Rikta Psykiatri."
 og_title: "AQ-10 från Rikta Psykiatri"
 og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autism och få rekommendationer om fortsatt stöd."
@@ -17,8 +17,8 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
       <span class="adhd-screening__eyebrow">Självskattning</span>
-      <h1>AQ-10 (kort autism-screening)</h1>
-      <p>Formuläret bygger på AQ-10 – ett kort, validerat screeningformulär för vuxna. Besvara frågorna utifrån hur du vanligtvis känner eller beter dig.</p>
+      <h1>AQ-10 (kort självtest för autism)</h1>
+      <p>Formuläret bygger på AQ-10 – ett kort, validerat självskattningsformulär för vuxna. Besvara frågorna utifrån hur du vanligtvis känner eller beter dig.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
@@ -32,7 +32,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Målgrupp</dt>
-              <dd class="adhd-meta__value">Vuxna som vill screena för autistiska drag.</dd>
+              <dd class="adhd-meta__value">Vuxna som vill göra ett självtest för autistiska drag.</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Respondent</dt>
@@ -53,7 +53,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
           <legend>AQ-10 – Svensk översättning</legend>
           <ol class="adhd-question-list">
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag tycker det är svårt att gå in i en konversation.</div>
+              <div class="adhd-question__prompt">Jag tycker det är svårt att delta i en konversation.</div>
               <div class="adhd-response-group">
                 <label class="adhd-response"><input type="radio" name="q1" value="1" required><span>Håller helt med</span></label>
                 <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Håller delvis med</span></label>
@@ -71,7 +71,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag har svårt att flöda naturligt i socialt umgänge.</div>
+              <div class="adhd-question__prompt">Jag har svårt att få samtalet att flyta naturligt i sociala situationer.</div>
               <div class="adhd-response-group">
                 <label class="adhd-response"><input type="radio" name="q3" value="1" required><span>Håller helt med</span></label>
                 <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Håller delvis med</span></label>
@@ -153,26 +153,26 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
             <span class="adhd-score__label">Totalpoäng</span>
             <span class="adhd-score__value" id="autism-score-value">0</span>
           </div>
-          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din AQ-10 poäng.</p>
-          <p class="adhd-score__note">Självtestet ersätter inte en klinisk autismutredning. Kontakta Rikta Psykiatri för professionell bedömning, behandling eller coachning.</p>
-        </div>
-      </form>
+	          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din AQ-10 poäng.</p>
+	          <p class="adhd-score__note">Självtestet ersätter inte en klinisk autismutredning. Kontakta Rikta Psykiatri för professionell bedömning och vägledning kring vidare utredning och stöd.</p>
+	        </div>
+	      </form>
       <aside class="adhd-screening__note">
         <h3>Hur poängen räknas</h3>
-        <ul>
-          <li>Varje fråga ger 1 poäng när du håller med (delvis eller helt) om ett autistiskt drag.</li>
-          <li>Fråga 4 och 7 är omvända: här ger oenighet 1 poäng.</li>
-          <li>Totalpoäng 0–10. Resultat ≥ 6 → positiv screening, rekommenderar fortsatt utredning.</li>
-        </ul>
+	        <ul>
+	          <li>Varje fråga ger 1 poäng när du håller med (delvis eller helt) om ett autistiskt drag.</li>
+	          <li>Fråga 4 och 7 är omvända: här ger oenighet 1 poäng.</li>
+	          <li>Totalpoäng 0–10. Resultat ≥ 6 → förhöjt utslag, vidare utredning kan vara aktuell.</li>
+	        </ul>
         <p><strong>Källor:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
         Socialstyrelsen. Nationella riktlinjer för vård vid autism och ADHD.</p>
         <p><strong>Svensk översättning:</strong><br>
         Svensk översättning av Riktapsykiatri.se (2025), baserad på AQ-10.</p>
-        <p><strong>Viktigt:</strong><br>
-        Detta är ett screeningformulär, inte ett diagnostiskt test.<br>
-        Resultatet ger en indikation på om du kan ha nytta av en vidare utredning för autism, men kan inte användas för att fastställa diagnos. Om du får ett förhöjt resultat rekommenderar vi att du kontaktar vårdpersonal eller bokar en professionell neuropsykiatrisk bedömning.</p>
-      </aside>
+	        <p><strong>Viktigt:</strong><br>
+	        Detta är ett självskattningsformulär, inte ett diagnostiskt test.<br>
+	        Resultatet ger en indikation på om du kan ha nytta av en vidare utredning för autism, men kan inte användas för att fastställa diagnos. Om du får ett förhöjt resultat rekommenderar vi att du kontaktar vårdpersonal eller bokar en professionell neuropsykiatrisk bedömning.</p>
+	      </aside>
     </div>
   </div>
 </section>
@@ -195,7 +195,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
       action="/api/kaddio/contact"
       method="POST"
       accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Autism Investigation">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Autism-självtest">
       <input type="hidden" name="rating" id="adhd-lead-rating" value="">
       <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">

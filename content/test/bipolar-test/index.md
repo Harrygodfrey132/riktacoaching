@@ -1,14 +1,14 @@
 ---
-title: "Screening för bipolaritet – MDQ"
+title: "Självskattning vid misstanke om bipolär sjukdom – MDQ"
 translationKey: "mdq-bipolar"
 draft: false
 layout: "none"
 type: "none"
-meta_title: "Screening för bipolaritet – MDQ | Rikta Psykiatri"
-meta_keywords: "MDQ, bipolär screening, screening för bipolaritet, Mood Disorder Questionnaire"
-meta_description: "Kompletterande screening för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
-og_title: "Screening för bipolaritet – MDQ"
-og_description: "Kompletterande screening för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
+meta_title: "Självskattning vid misstanke om bipolär sjukdom – MDQ | Rikta Psykiatri"
+meta_keywords: "MDQ, bipolär sjukdom, självskattning, Mood Disorder Questionnaire"
+meta_description: "Kompletterande självskattning för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
+og_title: "Självskattning vid misstanke om bipolär sjukdom – MDQ"
+og_description: "Kompletterande självskattning för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
 aliases:
   - /test/bipolar-test/
 ---
@@ -17,15 +17,15 @@ aliases:
 <section class="adhd-screening">
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
-      <span class="adhd-screening__eyebrow">Kompletterande screening</span>
-      <h1>Screening för bipolaritet – MDQ</h1>
-      <p>Kompletterande screening för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST.</p>
+      <span class="adhd-screening__eyebrow">Kompletterande självskattning</span>
+      <h1>Självskattning vid misstanke om bipolär sjukdom – MDQ</h1>
+      <p>Kompletterande självskattning för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="mdq-screening-form" data-locale="sv">
         <div class="adhd-screening__summary">
-          <p>Detta formulär är avsett som ett första steg och ersätter inte en fullständig medicinsk bedömning. Bipolär sjukdom är ett komplext tillstånd och en korrekt diagnos kan endast ställas efter en personlig bedömning av läkare. Ett positivt screeningresultat kan dock tala för att du kan ha nytta av vidare utredning. Vid oro för psykisk hälsa bör du kontakta hälso- och sjukvård.</p>
+          <p>Detta formulär är avsett som ett första steg och ersätter inte en fullständig medicinsk bedömning. Bipolär sjukdom är ett komplext tillstånd och en korrekt diagnos kan endast ställas efter en personlig bedömning av läkare. Ett förhöjt resultat kan dock tala för att du kan ha nytta av vidare utredning. Vid oro för psykisk hälsa bör du kontakta hälso- och sjukvård.</p>
           <p><strong>Instruktion: Besvara frågorna så gott du kan.</strong></p>
         </div>
 
@@ -154,10 +154,10 @@ aliases:
         </div>
         <div aria-live="polite" class="adhd-score" id="mdq-score" hidden>
           <div class="adhd-score__summary">
-            <span class="adhd-score__label">Screeningresultat</span>
+            <span class="adhd-score__label">Resultat</span>
             <span class="adhd-score__value" id="mdq-score-value">-</span>
           </div>
-          <p class="adhd-score__interpretation" id="mdq-score-interpretation">Detta är ett screeningresultat och inte en diagnos.</p>
+          <p class="adhd-score__interpretation" id="mdq-score-interpretation">Detta är ett resultat från en självskattning och inte en diagnos.</p>
           <div class="mdq-results" id="mdq-results"></div>
         </div>
       </form>
@@ -183,7 +183,7 @@ aliases:
       action="/api/kaddio/contact"
       method="POST"
       accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="MDQ Screening">
+      <input type="hidden" name="leadSource" id="adhd-lead-source" value="MDQ-självskattning">
       <input type="hidden" name="rating" id="adhd-lead-rating" value="">
       <textarea id="adhd-lead-description" name="description" hidden></textarea>
       <div class="lead-modal__fields">

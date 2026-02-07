@@ -198,11 +198,11 @@
   });
 
   // ----- Screening Test Logic (ADHD + Autism) -----
-function initScreeningForm({
-  formId,
-  totalQuestions,
-  scoreBoxId,
-  scoreValueId,
+	function initScreeningForm({
+	  formId,
+	  totalQuestions,
+	  scoreBoxId,
+	  scoreValueId,
   interpretationId,
   ranges,
   defaultInterpretation,
@@ -213,10 +213,10 @@ function initScreeningForm({
   metaUpdater,
   testName,
   transformValue,
-  onCompleted
-}) {
-    const form = document.getElementById(formId);
-    if (!form) return;
+	  onCompleted
+	}) {
+	    const form = document.getElementById(formId);
+	    if (!form) return;
 
     const scoreBox = document.getElementById(scoreBoxId);
     const scoreValue = document.getElementById(scoreValueId);
@@ -338,28 +338,33 @@ function initScreeningForm({
       return answers;
     }
 
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      if (!form.reportValidity()) return;
+	    form.addEventListener('submit', event => {
+	      event.preventDefault();
+	      if (!form.reportValidity()) return;
 
-      const scoreData = calculateScore();
-      const { total, answered } = scoreData;
-      if (answered === totalQuestions) {
-        const locale = getFormLocale();
-        const interpretation = getInterpretation(total, locale);
-        const renderResult = () => {
-          updateScoreDisplay(total, interpretation, locale);
-          if (typeof metaUpdater === 'function') {
+	      const scoreData = calculateScore();
+	      const { total, answered } = scoreData;
+	      if (answered === totalQuestions) {
+	        const locale = getFormLocale();
+	        const resolvedTestName = typeof testName === 'function'
+	          ? testName(locale, form)
+	          : (testName && typeof testName === 'object')
+	            ? (testName[locale] || testName.en || testName.sv || '')
+	            : (testName || '');
+	        const interpretation = getInterpretation(total, locale);
+	        const renderResult = () => {
+	          updateScoreDisplay(total, interpretation, locale);
+	          if (typeof metaUpdater === 'function') {
             metaUpdater({ ...scoreData, interpretation });
           }
           showScoreBox();
-        };
-        const payload = {
-          testName,
-          total: scoreData.total,
-          answered: scoreData.answered,
-          meta: scoreData.meta || {},
-          interpretation: interpretation ? interpretation.text : '',
+	        };
+	        const payload = {
+	          testName: resolvedTestName,
+	          total: scoreData.total,
+	          answered: scoreData.answered,
+	          meta: scoreData.meta || {},
+	          interpretation: interpretation ? interpretation.text : '',
           answers: collectAnswerDetails(),
           locale,
           renderResult,
@@ -844,7 +849,7 @@ function initScreeningForm({
     const locale = (((result && result.locale) || (IS_EN ? 'en' : 'sv'))).toLowerCase();
     const isEn = locale.startsWith('en');
     const lines = [
-      result.testName || (isEn ? 'Screening results' : 'Screeningresultat'),
+      result.testName || (isEn ? 'Screening results' : 'Självtestresultat'),
       `${isEn ? 'Total score' : 'Totalpoäng'}: ${result.total}`,
       `${isEn ? 'Interpretation' : 'Tolkning'}: ${result.interpretation}`,
       isEn ? 'Answers:' : 'Svar:'
@@ -1006,7 +1011,10 @@ function initScreeningForm({
         ]),
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'Attention & Regulation Scale (R-ARS-12)'
+    testName: {
+      en: 'Attention & Regulation Scale (R-ARS-12)',
+      sv: 'R-ARS-12 (självskattning)'
+    }
   });
 
   initScreeningForm({
@@ -1025,12 +1033,15 @@ function initScreeningForm({
           { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional autism assessment for a clear evaluation.', className: 'is-amber' }
         ]
       : [
-          { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
+          { max: 5, text: '0–5 poäng: inget tydligt utslag i detta självtest. Sök vård om du ändå upplever svårigheter.' },
           { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
         ]),
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'Autism Screening (AQ-10)'
+    testName: {
+      en: 'Autism Screening (AQ-10)',
+      sv: 'AQ-10 – självtest för autism'
+    }
   });
 
   initScreeningForm({
@@ -1045,7 +1056,7 @@ function initScreeningForm({
     },
     ranges: (locale) => (locale === 'sv'
       ? [
-          { max: 5, text: '0–5 poäng: inget tydligt utslag i denna screening. Sök vård om du ändå upplever svårigheter.' },
+          { max: 5, text: '0–5 poäng: inget tydligt utslag i detta självtest. Sök vård om du ändå upplever svårigheter.' },
           { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell bedömning.', className: 'is-amber' }
         ]
       : [
@@ -1054,7 +1065,10 @@ function initScreeningForm({
         ]),
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'AQ-10 (Barnversionen)'
+    testName: {
+      en: 'AQ-10 (Child version)',
+      sv: 'AQ-10 (barnversionen)'
+    }
   });
 
   initScreeningForm({
@@ -1080,7 +1094,10 @@ function initScreeningForm({
         ]),
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'ADD Inattentive Symptoms'
+    testName: {
+      en: 'ADD Inattentive Symptoms',
+      sv: 'ADD – ouppmärksamhetssymtom'
+    }
   });
 
   initScreeningForm({
@@ -1102,7 +1119,7 @@ function initScreeningForm({
       : [
           { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
           { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
-          { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coaching.', className: 'is-red' }
+          { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coachning.', className: 'is-red' }
         ]),
     transformValue(value, questionNumber){
       // Question 12 is reverse-scored (agreeing reduces procrastination score)
@@ -1114,7 +1131,10 @@ function initScreeningForm({
     },
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'Procrastination Test (GPS)'
+    testName: {
+      en: 'Procrastination Test (GPS)',
+      sv: 'Prokrastineringstest (GPS)'
+    }
   });
 
   initScreeningForm({
@@ -1154,7 +1174,10 @@ function initScreeningForm({
     },
     gateWithLeadForm: () => isPiiAllowed(),
     onLeadRequired: openLeadModal,
-    testName: 'GAD-7 Anxiety',
+    testName: {
+      en: 'GAD-7 Anxiety',
+      sv: 'GAD-7 – ångest'
+    },
     onCompleted(payload, form){
       const resultsEl = document.getElementById('gad7-results');
       if (!resultsEl || !form) return;
@@ -1209,8 +1232,8 @@ function initScreeningForm({
     const isSv = locale.startsWith('sv');
     const yesValue = isSv ? 'Ja' : 'Yes';
     const positiveImpactValues = isSv ? ['Problem', 'Allvarliga problem'] : ['Moderate problem', 'Serious problem'];
-    const positiveLabel = isSv ? 'Positiv screening för bipolaritet' : 'Positive screen';
-    const negativeLabel = isSv ? 'Negativ screening för bipolaritet' : 'Negative screen';
+    const positiveLabel = isSv ? 'Förhöjt utslag i MDQ' : 'Positive screen';
+    const negativeLabel = isSv ? 'Ej förhöjt utslag i MDQ' : 'Negative screen';
 
     function collectQ1Responses() {
       const items = [];
@@ -1231,7 +1254,7 @@ function initScreeningForm({
       scoreBox.dataset.state = 'visible';
       scoreValue.textContent = result.screenResult;
       interpretationEl.textContent = isSv
-        ? 'Detta är ett screeningresultat och inte en diagnos.'
+        ? 'Detta är ett resultat från en självskattning och inte en diagnos.'
         : 'This is a screening result, not a diagnosis.';
 
       const q1Items = result.q1Items.map(item => (
@@ -1250,7 +1273,7 @@ function initScreeningForm({
         `<ul>${q1Items}</ul>` +
         `<p><strong>${q2Label}:</strong> ${result.q2}</p>` +
         `<p><strong>${q3Label}:</strong> ${result.q3}</p>` +
-        `<p><strong>${isSv ? 'Detta är ett screeningresultat och inte en diagnos.' : 'This is a screening result, not a diagnosis.'}</strong></p>`;
+        `<p><strong>${isSv ? 'Detta är ett resultat från en självskattning och inte en diagnos.' : 'This is a screening result, not a diagnosis.'}</strong></p>`;
     }
 
     form.addEventListener('submit', event => {
@@ -1280,7 +1303,7 @@ function initScreeningForm({
       ];
 
       const payload = {
-        testName: 'MDQ Bipolar Screening',
+        testName: isSv ? 'MDQ – självskattning vid misstanke om bipolär sjukdom' : 'MDQ Bipolar Screening',
         total: 0,
         answered: 2 + q1Items.length,
         meta: {
@@ -1308,7 +1331,7 @@ function initScreeningForm({
         if (scoreValue) scoreValue.textContent = '-';
         if (interpretationEl) {
           interpretationEl.textContent = isSv
-            ? 'Detta är ett screeningresultat och inte en diagnos.'
+            ? 'Detta är ett resultat från en självskattning och inte en diagnos.'
             : 'This is a screening result, not a diagnosis.';
         }
         if (resultsEl) resultsEl.innerHTML = '';

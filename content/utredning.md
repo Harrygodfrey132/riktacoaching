@@ -2,7 +2,7 @@
 title: "Utredning"
 meta_title: "Neuropsykiatrisk utredning steg för steg | Rikta"
 meta_keywords: "neuropsykiatrisk utredning, ADHD process, autismutredning steg, psykiatrisk bedömning, Rikta Psykiatri"
-meta_description: "Så går en ADHD- eller autismutredning till hos Rikta Psykiatri - från första samtal och tester till återkoppling och plan för behandling."
+meta_description: "Så går en ADHD- eller autismutredning till hos Rikta Psykiatri – från första samtalet och tester till återkoppling och plan för behandling."
 og_title: "Så arbetar vi med neuropsykiatriska utredningar"
 og_description: "Upptäck hur våra specialistläkare och psykologer strukturerar bedömningssamtal, tester, teamanalys och återkoppling för ett tryggt resultat."
 description: "Så går en neuropsykiatrisk utredning till hos Rikta."
@@ -36,13 +36,12 @@ layout: "utredning"
 
     <h2>Efter utredningen</h2>
     <p>
-      Oavsett utfall får du en konkret plan. Det kan handla om behandling, stödinsatser, coachning eller remittering.
+      Oavsett utfall får du en konkret plan. Det kan handla om behandling, stödinsatser, coachning eller remiss till annan vård vid behov.
     </p>
 
     <p>
-      Vill du veta mer? <a href="/tack">Boka ett gratis bedömningssamtal</a> så berättar vi hur vi kan hjälpa.
+      Vill du veta mer? <a href="/kontakta-oss/">Boka ett kostnadsfritt bedömningssamtal</a> så berättar vi hur vi kan hjälpa.
     </p>
   </div>
   
 </section>
-

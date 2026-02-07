@@ -1,7 +1,7 @@
 ---
 title: "ADHD-utredning för vuxna"
 draft: false
-description: "En utförlig och nogrann ADHD-utredning för dig som vuxen"
+description: "En utförlig och noggrann ADHD-utredning för dig som vuxen."
 meta_title: "ADHD-utredning för vuxna | Rikta Psykiatri"
 meta_keywords: "ADHD vuxna, vuxenutredning ADHD, ADHD symtom vuxen, neuropsykiatri vuxen, Rikta ADHD plan"
 meta_description: "Så hjälper vi vuxna att förstå sin ADHD: strukturerade intervjuer, teamanalys, rapport och plan för behandling och stöd."
@@ -28,7 +28,7 @@ page_class: "adhd-page--adult"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/psychologist-smiling.jpg" alt="Specialist som möter vuxen klient med fokus och lugn">
+          <img src="/img/psychologist-smiling.jpg" alt="Specialist som möter en vuxen patient med fokus och lugn">
         </figure>
       </div>
     </div>
@@ -46,12 +46,12 @@ page_class: "adhd-page--adult"
           igång samtidigt.
         </p>
         <p>
-          Under utredningenen fokuserar vi på hur symtomen påverkar ditt arbete, dina relationer och din självbild. Vi skiljer även ADHD från
-          andra tillstånd som kan likna ADHD. 
+          Under utredningen fokuserar vi på hur symtomen påverkar ditt arbete, dina relationer och din självbild. Vi skiljer även ADHD från
+          andra tillstånd som kan likna ADHD.
         </p>
         <blockquote>
-          ”En korrekt diagnos handlar om att den ska vara meningsfull för dig och hjälper dig att de svårighet du stöter på. Diagnosen ger på så 
-          sätt dig ett språk och möjlighet att bygga vidare på dina styrkor.”
+          ”En korrekt diagnos ska vara meningsfull för dig och hjälpa dig att förstå de svårigheter du stöter på. Diagnosen ger dig ett språk och en
+          möjlighet att bygga vidare på dina styrkor.”
         </blockquote>
       </div>
       <div class="intro-stats adhd-definition-card">
@@ -154,10 +154,10 @@ page_class: "adhd-page--adult"
 
 <section class="who-section adhd-next" id="fortsatt-stod">
   <div class="container">
-    <div class="who-grid intro-grid">
-      <div class="intro-copy">
-        <span class="eyebrow">Next steps</span>
-        <h2>Fortsatt stöd efter diagnos</h2>
+        <div class="who-grid intro-grid">
+          <div class="intro-copy">
+            <span class="eyebrow">Nästa steg</span>
+            <h2>Fortsatt stöd efter diagnos</h2>
         <p>
           Utredningen är startpunkten. Vi fortsätter gärna att arbeta tillsammans med dig genom coachning eller psykologsamtal.
         </p>
@@ -187,7 +187,7 @@ page_class: "adhd-page--adult"
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">
-      <span class="eyebrow">FAQ</span>
+      <span class="eyebrow">Frågor och svar</span>
       <h2>Vanliga frågor</h2>
       <p class="muted">Hittar du inte svaret? Hör av dig så guidar vi dig vidare.</p>
     </div>
@@ -209,7 +209,7 @@ page_class: "adhd-page--adult"
       <details>
         <summary>Är medicinering den enda behandlingen?</summary>
         <p>
-          Nej. Vi arbetar med flera verktyg: medicin, eller coachin och terapi när det passar. 
+          Nej. Vi arbetar med flera verktyg: medicin, coachning och terapi när det passar.
         </p>
       </details>
       <details>

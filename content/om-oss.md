@@ -6,7 +6,7 @@ meta_title: "Om Rikta Psykiatri | Vårt specialistteam"
 meta_keywords: "Rikta Psykiatri team, specialistpsykiatri, ADHD experter, neuropsykiatriskt team, privat psykiatri Sverige"
 meta_description: "Lär känna läkarna, psykologerna och koordinatorerna bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad neuropsykiatrisk vård."
 og_title: "Teamet bakom Rikta Psykiatri"
-og_description: "Möt våra specialistpsykiatrer, psykologer och operationsledare och se hur vi kombinerar medicinsk precision med värme i varje patientresa."
+og_description: "Möt våra specialistpsykiatrer, psykologer och koordinatorer och se hur vi kombinerar medicinsk precision med värme i varje patientresa."
 description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygger trygg, evidensbaserad vård med värme."
 ---
 
@@ -27,7 +27,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         </p>
         <div class="hero-actions">
           <a class="btn primary coral" href="#team">Möt vårt team</a>
-          <a class="btn link" href="/kontakt">Kontakta oss</a>
+          <a class="btn link" href="/kontakta-oss/">Kontakta oss</a>
         </div>
       </div>
       <div class="hero-media animate-up">
@@ -52,10 +52,10 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Dr Antonia Risberg</h3>
-          <p class="clinician-card__role">Consultant Psychiatrist</p>
+          <p class="clinician-card__role">Specialistläkare i psykiatri</p>
           <ul class="team-feature__bullets">
-            <li>Specialistläkare: 30 års erfarenhet inom neurodivergens och psykiatri.</li>
-            <li>Medicinsk expert: Specialist på ADHD/Autism-diagnostik och behandling.</li>
+            <li>Specialistläkare: 30 års erfarenhet inom psykiatri och neuropsykiatri.</li>
+            <li>Medicinsk expert: Specialist på ADHD- och autismutredning samt behandling.</li>
           </ul>
         </div>
       </article>
@@ -64,10 +64,10 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Philip Lindersten</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <p class="clinician-card__role">ADHD- och autismcoach</p>
           <ul class="team-feature__bullets">
             <li>VD och medgrundare</li>
-            <li>Medicinsk expert: Utvecklar datadriven psykiatri och funktionellt stöd.</li>
+            <li>Utvecklar datadrivna verktyg för stöd och uppföljning.</li>
           </ul>
         </div>
       </article>
@@ -76,9 +76,9 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Jonny Baker</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <p class="clinician-card__role">ADHD- och autismcoach</p>
           <ul class="team-feature__bullets">
-            <li>Integrativ behandlare: 19 års erfarenhet av neurodivergens.</li>
+            <li>Integrativ behandlare: 19 års erfarenhet inom neuropsykiatri/NPF.</li>
             <li>Expertcoach: Specialist på exekutiva funktioner och vardagsstruktur.</li>
           </ul>
         </div>
@@ -88,10 +88,10 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
         <img src="/img/Alice.png" alt="Alice Stern" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Alice Stern</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <p class="clinician-card__role">ADHD- och autismcoach</p>
           <ul class="team-feature__bullets">
             <li>Diplomerad ADHD-coach: Masterexamen i barns utveckling.</li>
-            <li>Specialistcoach: Forskningsbaserat stöd för neuroatypiska individer.</li>
+            <li>Specialistcoach: Forskningsbaserat stöd för personer med NPF.</li>
           </ul>
         </div>
       </article>
@@ -106,7 +106,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       <div class="intro-copy animate-up">
         <h2>Trygg psykiatrisk vård där varje steg hänger ihop</h2>
         <p>
-          Rikta föddes ur frustrationen över årslånga köer och otydliga vårdresor. Därför har vi byggt team och arbetssätt som håller ihop hela processen – från första bedömningssamtal och utredning till behandling och coachning.
+          Rikta föddes ur frustrationen över långa köer och otydliga vårdprocesser. Därför har vi byggt ett arbetssätt som håller ihop hela processen – från första bedömningssamtal och utredning till behandling, uppföljning och coachning.
         </p>
         <ul class="intro-list">
           <li>Tvärprofessionella team som följer dig genom hela resan.</li>
@@ -136,7 +136,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
           </svg>
         </span>
         <h3>Tydlighet</h3>
-        <p>Vi erbjuder en evidensbaserad psykiatri med tydliga processer och  uppföljning.</p>
+        <p>Vi erbjuder evidensbaserad vård med tydliga processer och uppföljning.</p>
       </article>
       <article class="value-card animate-up">
         <span class="value-icon" aria-hidden="true">
@@ -145,7 +145,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
           </svg>
         </span>
         <h3>Omsorg</h3>
-        <p>Vi vill möta dig som patient med medkänsla, nyfikenhet och förståelse för dina personliga förutsättingar och mål.</p>
+        <p>Vi vill möta dig som patient med medkänsla, nyfikenhet och förståelse för dina personliga förutsättningar och mål.</p>
       </article>
       <article class="value-card animate-up">
         <span class="value-icon" aria-hidden="true">
@@ -162,10 +162,10 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
 
 <section class="who-cta who-section" id="connect">
   <div class="container">
-    <div class="cta-content animate-up">
-      <h2>Redo att ta nästa steg?</h2>
-      <p>Vi guidar dig genom varje steg i processen. Boka in ett bedömningssamtal eller kontakta oss för mer information.</p>
-      <a class="btn primary coral" href="/kontakt">Kontakta Rikta Psykiatri</a>
+      <div class="cta-content animate-up">
+        <h2>Redo att ta nästa steg?</h2>
+        <p>Vi guidar dig genom varje steg i processen. Boka in ett bedömningssamtal eller kontakta oss för mer information.</p>
+        <a class="btn primary coral" href="/kontakta-oss/">Kontakta Rikta Psykiatri</a>
+      </div>
     </div>
-  </div>
-</section>
+  </section>

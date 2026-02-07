@@ -15,8 +15,8 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
         <span class="eyebrow">Vingåker • Lokal närvaro</span>
         <h1>ADHD- och autismutredning i Vingåker</h1>
         <p class="lead">
-          Vi täcker hjärtat av Sörmland. Genom vår bas i Katrineholm erbjuder vi utredning och coaching för dig i Vingåker med lokal specialistnärvaro.
-          Vi kombinerar digital utredning med lokala fysiska prover hos våra partners i Vingåker, och vårt mobila team från Katrineholm kan även erbjuda fysiska punktinsatser vid behov.
+          Genom vår bas i Katrineholm erbjuder vi utredning och coachning för dig i Vingåker, med digitalt upplägg och lokala somatiska prover vid behov.
+          Vi kombinerar digital utredning med provtagning hos våra samarbetspartners i Vingåker, och vårt mobila team från Katrineholm kan även göra fysiska punktinsatser när det behövs.
         </p>
         <ul class="location-hero__highlights">
           <li>Snabb start inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor (tidsplanen anpassas efter dig).</li>
@@ -36,7 +36,7 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -67,7 +67,7 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som håller ihop processen.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som håller ihop processen.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till att samla in underlag från vård, arbetsgivare och skola.</li>
           <li>Du väljer tider som fungerar med ditt vardagstempo.</li>
@@ -76,7 +76,7 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Lokala kontroller</h3>
-        <p>De flesta tester görs via vår digitala testsvit. Vi kombinerar digital utredning med lokala fysiska prover hos våra partners i Vingåker. Behövs ett fysiskt delmoment kan vårt mobila team från Katrineholm planera in en punktinsats.</p>
+        <p>De flesta tester görs via vårt digitala testbatteri. Vi kombinerar digital utredning med lokala fysiska prover hos våra partners i Vingåker. Behövs ett fysiskt delmoment kan vårt mobila team från Katrineholm planera in en punktinsats.</p>
         <ul class="location-step__list">
           <li>Vi samlar fysiska moment så att du slipper flera resor.</li>
           <li>Somatiska prover koordineras lokalt och delas digitalt med teamet.</li>
@@ -84,11 +84,11 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller elevhälsa till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte för en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt.</li>
         </ul>
       </article>
     </div>
@@ -132,4 +132,3 @@ og_description: "Digital utredning med lokala prover i Vingåker och fysiska pun
     </div>
   </div>
 </section>
-

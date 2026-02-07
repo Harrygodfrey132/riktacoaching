@@ -15,7 +15,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
         <span class="badge">Specialistpsykiatri</span>
         <h2>Våra priser</h2>
         <p class="lead">
-            Hos Rikta Psykiatri träffar du legitimerade specialistläkare och psykologer samt NPF-coacher. Vi erbjuder både digitala och fysiska besök och du har tillgång till ditt behandlingsteam via mejl mellan besöken. Nedan hittar du våra priser och vad som ingår.
+            Hos Rikta Psykiatri träffar du specialistläkare och legitimerade psykologer samt NPF-coacher. Vi erbjuder både digitala och fysiska besök och du kan kontakta ditt behandlingsteam via mejl mellan besöken. Nedan hittar du våra priser och vad som ingår.
         </p>
         <figure class="pricing-hero-figure">
             <img src="/img/scenic-background-picture.jpg" alt="Lugn miljö som speglar Rikta Psykiatris omsorgsfulla process">
@@ -45,7 +45,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
   <div class="container">
     <h2>Priser</h2>
     <div class="pricing-group">
-      <h3>ADHD &amp; autism coachning</h3>
+      <h3>Coachning vid ADHD och autism</h3>
       <div class="pricing">
         <article class="card">
           <h3>ADHD-coachning</h3>
@@ -55,31 +55,31 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
             <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
             <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Autism-coachning</h3>
+          <h3>Autismcoachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
           <p class="price">850 kr</p>
           <ul class="details">
             <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
             <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Fokus- &amp; Strukturcoachning</h3>
+          <h3>Fokus- och strukturcoachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
           <p class="price">850 kr</p>
           <ul class="details">
             <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
             <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>
-            <li>Energi &amp; Självreglering: Strategier för att hantera mentalt brus, minska stress och optimera ditt fokus.</li>
+            <li>Energi och självreglering: Strategier för att hantera mentalt brus, minska stress och stärka ditt fokus.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Föräldracoaching</h3>
+          <h3>Föräldracoachning</h3>
           <p class="meta">Digitalt eller på plats • 45 min</p>
           <p class="price">1050 kr</p>
           <ul class="details">
@@ -87,7 +87,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
             <li>Verktyg för lågaffektivt bemötande och praktiska strategier för att minska konflikter och skapa lugn i hemmet.</li>
             <li>Hållbart föräldraskap: Hjälp att balansera ditt barns behov av stöd med din egen återhämtning och ork.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
           <h3>Stresshantering (NPF-fokus)</h3>
@@ -95,12 +95,12 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <p class="price">850 kr / 2 400 kr</p>
           <ul class="details">
             <li>Stressfysiologi vid NPF: Förstå hur din hjärna reagerar på belastning, sensoriska intryck och exekutiva krav.</li>
-            <li>Verktyg för återhämtning: Strategier som faktiskt fungerar för den neurodivergenta hjärnan, bortom standardsvaren.</li>
+            <li>Verktyg för återhämtning: Strategier som fungerar för hjärnan vid NPF, bortom standardsvaren.</li>
             <li>Friskvårdsberättigat: Vi utfärdar giltiga kvitton för ditt friskvårdsbidrag (Epassi m.fl.).</li>
             <li><strong>Välj paket:</strong> 1 tillfälle (850 kr): Kartläggning och omedelbara verktyg.</li>
             <li><strong>Välj paket:</strong> 3 tillfällen (2 400 kr): Fullständig plan: Fysiologi, Balans &amp; Framtidsplan.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>
@@ -108,7 +108,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
       <h3>Neuropsykiatriska utredningar</h3>
       <div class="pricing">
         <article class="card">
-          <h3>Utredning för ADHD & autism (neuropsykiatrisk utredning)</h3>
+          <h3>Utredning för ADHD och autism (neuropsykiatrisk utredning)</h3>
           <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">29 000 kr</p>
           <ul class="details">
@@ -118,54 +118,54 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <div class="bg-blue-50" style="border-top: 1px solid rgba(0, 0, 0, 0.06); padding: 0.75rem 1rem; margin-top: 0.5rem;">
             <strong>Ingår utan extra kostnad:</strong>
-            <em> 1 st Coachingsession (45 min)</em>
+            <em> 1 coachningssamtal (45 min)</em>
           </div>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Omprövning / Avskrivning av npf-diagnos</h3>
+          <h3>Omprövning / avskrivning av NPF-diagnos</h3>
           <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">20 000 kr</p>
           <ul class="details">
-            <li>Omprövning eller avskrivning av diagnos kan vara aktuell för dig som tidigare diagnostiserats med adhd eller autism, och som misstänker att diagnoskriterierna inte längre är uppfyllda.</li>
+            <li>Omprövning eller avskrivning av diagnos kan vara aktuell för dig som tidigare diagnostiserats med ADHD eller autism, och som misstänker att diagnoskriterierna inte längre är uppfyllda.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Screening för ADHD och autism</h3>
+          <h3>Inledande bedömningssamtal</h3>
           <p class="meta">Digitalt eller på mottagning</p>
           <p class="price">0 kr</p>
           <ul class="details">
-            <li>Samtal med en av våra specialister på Rikta</li>
+            <li>Samtal med specialist för att bedöma nästa steg</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>
     <div class="pricing-group">
-      <h3>Priser medicinering</h3>
+      <h3>Priser för medicinering</h3>
       <div class="pricing">
         <article class="card">
-          <h3>Prenumeration</h3>
-          <p class="meta">Video • 75 min</p>
+          <h3>Abonnemang</h3>
+          <p class="meta">Videosamtal • 75 min</p>
           <p class="price">400 kr/mån</p>
           <ul class="details">
             <li>Startkostnad på 3 000 kr, därefter endast 400 kr/mån (12 mån bindningstid).</li>
             <li>Snabb uppstart inom 1 vecka.</li>
-            <li>Löpande läkarkontakt + material, utbildning &amp; webinars.</li>
+            <li>Löpande läkarkontakt, material, utbildning och webbinarier.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
         <article class="card">
-          <h3>Insättning</h3>
+          <h3>Läkemedelsinsättning</h3>
           <p class="meta">Digitalt eller på plats</p>
           <p class="price">7600 kr</p>
           <ul class="details">
             <li>Startkostnad 7 600 kr (6 mån), därefter 2 400 kr/halvår.</li>
-            <li>Inkluderar all behandling + 2st remisser skickade till psykiatrin.</li>
-            <li>Skriftlig sammanfattning inom 48 timmar</li>
+            <li>Inkluderar behandling samt två remisser till psykiatrin.</li>
+            <li>Skriftlig sammanfattning inom 48 timmar.</li>
           </ul>
-          <a class="text-cta" href="/kontakta-oss/">Bokning <span aria-hidden="true">→</span></a>
+          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </div>

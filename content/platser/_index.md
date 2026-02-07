@@ -21,7 +21,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </p>
         </div>
         <ul class="location-services">
-          <li>Heltäckande ADHD- och ASD-assessments med samma team genom hela processen.</li>
+          <li>Heltäckande ADHD- och autismutredningar med samma team genom hela processen.</li>
           <li>Medicinstarter, intyg och arbetslivsanpassningar direkt på plats.</li>
           <li>Digitala uppföljningar mellan besök för att hålla planen levande.</li>
         </ul>
@@ -45,7 +45,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </p>
         </div>
         <ul class="location-services">
-          <li>Strukturerade ADHD- och ASD-assessments i ett tempo som passar dig.</li>
+          <li>Strukturerade ADHD- och autismutredningar i ett tempo som passar dig.</li>
           <li>För- och eftermöten via video så att du slipper onödiga resor.</li>
           <li>Koordinator hjälper till med upplägg, intyg och samordning.</li>
         </ul>
@@ -62,7 +62,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
 	      <article class="location-card location-card--malmo">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Skåne</span>
+          <span class="location-tag">Digitalt upplägg i Skåne</span>
           <h3>Malmö</h3>
           <p>
             Heldigital utredning för dig i Skåne som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling, studier och arbetsliv i regionen.
@@ -86,7 +86,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	      </article>
 	      <article class="location-card location-card--lund">
 	        <div class="location-card__header">
-	          <span class="location-tag">Digital-first studentfokus</span>
+	          <span class="location-tag">Digitalt upplägg (studentfokus)</span>
 	          <h3>Lund</h3>
 	          <p>
 	            Anpassat för studenter och forskare. Heldigital utredning med somatiska kontroller hos våra partners i Lund eller Malmö.
@@ -137,17 +137,17 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	          <span class="location-tag">Hybrid Mälardalen</span>
 	          <h3>Enköping</h3>
 	          <p>
-	            Smidig hybridmodell för dig i Enköping. Digitalt förarbete med fysiska statuskontroller i närliggande Västerås eller via hembesök från vårt mobila team.
+		            Smidig hybridmodell för dig i Enköping. Digitalt förarbete med somatiska kontroller i närliggande Västerås eller via hembesök från vårt mobila team.
 	          </p>
 	        </div>
 	        <ul class="location-services">
 	          <li>Digital kartläggning och videobesök 07–21 med tydlig tidslinje.</li>
-	          <li>Statuskontroller samlas i Västerås eller görs som hembesök vid behov.</li>
+		          <li>Somatiska kontroller samlas i Västerås eller görs som hembesök vid behov.</li>
 	          <li>Planerad för dig som pendlar mot Stockholm/Västerås eller jobbar i logistik.</li>
 	        </ul>
 	        <div class="location-card__footer">
 	          <div class="location-meta">
-	            <span>Hybrid: digitalt + status</span>
+		            <span>Hybrid: digitalt + kontroller</span>
 	            <span>Västerås/hembesök</span>
 	          </div>
 	          <div class="location-actions">
@@ -158,7 +158,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	      </article>
 	      <article class="location-card location-card--uppsala">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Uppsala</span>
+          <span class="location-tag">Digitalt upplägg i Uppsala</span>
           <h3>Uppsala</h3>
           <p>
             Heldigital utredning för dig i Uppsala som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, pendling och arbetsliv i regionen.
@@ -182,10 +182,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--linkoping">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Östergötland</span>
+          <span class="location-tag">Digitalt upplägg i Östergötland</span>
           <h3>Linköping</h3>
           <p>
-            Heldigital utredning för dig i Linköping som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, tech och arbetsliv i regionen.
+            Heldigital utredning för dig i Linköping som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, pendling och arbetsliv i regionen.
           </p>
         </div>
         <ul class="location-services">
@@ -206,10 +206,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
 	      <article class="location-card location-card--orebro">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Närke</span>
+	          <span class="location-tag">Digitalt upplägg i Närke</span>
           <h3>Örebro</h3>
           <p>
-            Vi opererar i Örebro och Närke med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier och arbetsliv i regionen.
+            Vi erbjuder heldigital utredning för dig i Örebro och Närke som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier och arbetsliv i regionen.
           </p>
         </div>
         <ul class="location-services">
@@ -230,7 +230,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	      </article>
 	      <article class="location-card location-card--karlstad">
 	        <div class="location-card__header">
-	          <span class="location-tag">Digital-first Värmland</span>
+	          <span class="location-tag">Digitalt upplägg i Värmland</span>
 	          <h3>Karlstad</h3>
 	          <p>
 	            Digital specialistutredning för Värmland. Vi koordinerar dina somatiska prover hos våra partners i Karlstad centrum.
@@ -254,14 +254,14 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	      </article>
 	      <article class="location-card location-card--jonkoping">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Småland</span>
+          <span class="location-tag">Digitalt upplägg i Småland</span>
           <h3>Jönköping</h3>
           <p>
-            Vi opererar i Jönköping och Småland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för näringsliv, universitetsstudier och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Jönköping och Småland som kan kompletteras med fysiska besök när det behövs. Anpassad för näringsliv, universitetsstudier och familjeliv.
           </p>
         </div>
         <ul class="location-services">
-          <li>Snabb onboarding med personlig plan inom några dagar och utredning klar på 2–4 veckor.</li>
+          <li>Snabb uppstart med personlig plan inom några dagar och utredning klar på 2–4 veckor.</li>
           <li>Lokalkännedom om krav från Jönköpings arbetsgivare, universitet, skolor och myndigheter.</li>
           <li>Kontinuerligt stöd med samma team genom utredning, medicinering och coachning.</li>
         </ul>
@@ -278,10 +278,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--helsingborg">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Skåne</span>
+          <span class="location-tag">Digitalt upplägg i Skåne</span>
           <h3>Helsingborg</h3>
           <p>
-            Vi opererar i Helsingborg och norra Skåne med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling över Öresund, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Helsingborg och norra Skåne som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling över Öresund, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">
@@ -302,10 +302,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--gavle">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Gästrikland</span>
+          <span class="location-tag">Digitalt upplägg i Gästrikland</span>
           <h3>Gävle</h3>
           <p>
-            Vi opererar i Gävle och Gästrikland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för högskolestudier, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Gävle och Gästrikland som kan kompletteras med fysiska besök när det behövs. Anpassad för högskolestudier, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">
@@ -326,10 +326,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--sundsvall">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Medelpad</span>
+          <span class="location-tag">Digitalt upplägg i Medelpad</span>
           <h3>Sundsvall</h3>
           <p>
-            Vi opererar i Sundsvall och Medelpad med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Sundsvall och Medelpad som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">
@@ -350,10 +350,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--umea">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Västerbotten</span>
+          <span class="location-tag">Digitalt upplägg i Västerbotten</span>
           <h3>Umeå</h3>
           <p>
-            Vi opererar i Umeå och Västerbotten med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Umeå och Västerbotten som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">
@@ -374,10 +374,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
       </article>
       <article class="location-card location-card--vaxjo">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Kronoberg</span>
+          <span class="location-tag">Digitalt upplägg i Kronoberg</span>
           <h3>Växjö</h3>
           <p>
-            Vi opererar i Växjö och Kronoberg med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Växjö och Kronoberg som kan kompletteras med fysiska besök när det behövs. Anpassad för universitetsstudier, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">
@@ -425,13 +425,13 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	          <span class="location-tag">Mobil Hub Sörmland</span>
 	          <h3>Nyköping</h3>
 	          <p>
-	            Digital utredning med fysiska utredningsmoment i Nyköping när det behövs. Vårt team utgår från Katrineholm och samarbetar med lokala provtagningspartners i city.
+		            Digital utredning med fysiska utredningsmoment i Nyköping när det behövs. Vårt team utgår från Katrineholm och samarbetar med lokala provtagningspartners i centrala Nyköping.
 	          </p>
 	        </div>
 	        <ul class="location-services">
 	          <li>Digital kartläggning och videobesök med tydlig tidslinje.</li>
 	          <li>Fysiska moment i Nyköping via mobilt team från Katrineholm.</li>
-	          <li>Somatiska prover hos lokala partners i Nyköping city.</li>
+		          <li>Somatiska prover hos lokala partners i centrala Nyköping.</li>
 	        </ul>
 	        <div class="location-card__footer">
 	          <div class="location-meta">
@@ -449,7 +449,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	          <span class="location-tag">Lokal närvaro Sörmland</span>
 	          <h3>Flen</h3>
 	          <p>
-	            Vi täcker hjärtat av Sörmland. Genom vår bas i Katrineholm erbjuder vi utredning och coaching för dig i Flen med lokal specialistnärvaro.
+		            Genom vår bas i Katrineholm erbjuder vi utredning och coachning för dig i Flen, med lokala moment vid behov.
 	          </p>
 	        </div>
 	        <ul class="location-services">
@@ -497,7 +497,7 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	          <span class="location-tag">Lokal närvaro Sörmland</span>
 	          <h3>Vingåker</h3>
 	          <p>
-	            Digital utredning och coaching för dig i Vingåker, med lokala prover hos partners och mobilt stöd från Katrineholm vid behov.
+		            Digital utredning och coachning för dig i Vingåker, med lokala prover hos partners och mobilt stöd från Katrineholm vid behov.
 	          </p>
 	        </div>
 	        <ul class="location-services">
@@ -518,10 +518,10 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 	      </article>
 	      <article class="location-card location-card--eskilstuna">
         <div class="location-card__header">
-          <span class="location-tag">Digital-first Sörmland</span>
+	          <span class="location-tag">Digitalt upplägg i Sörmland</span>
           <h3>Eskilstuna</h3>
           <p>
-            Vi opererar i Eskilstuna och Sörmland med heldigital utredning som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling mot Stockholm, näringsliv och familjeliv.
+            Vi erbjuder heldigital utredning för dig i Eskilstuna och Sörmland som kan kompletteras med fysiska besök när det behövs. Anpassad för pendling mot Stockholm, näringsliv och familjeliv.
           </p>
         </div>
         <ul class="location-services">

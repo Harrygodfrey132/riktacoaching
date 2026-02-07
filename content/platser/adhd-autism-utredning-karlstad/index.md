@@ -5,18 +5,18 @@ meta_title: "ADHD- och autismutredning i Karlstad | Rikta"
 meta_keywords: "ADHD utredning Karlstad, autism privat Karlstad, psykiater Karlstad, neuropsykiatri Värmland, Karlstads universitet, Rikta Karlstad"
 meta_description: "Digital specialistutredning för Karlstad och Värmland med videosamtal, digitala tester och somatiska prover hos våra partners i Karlstad centrum."
 og_title: "Neuropsykiatrisk utredning i Karlstad"
-og_description: "Digital utredning för Värmland med somatiska prover hos partners i Karlstad centrum och uppföljning online."
+og_description: "Digital utredning för Värmland med somatiska prover hos partners i Karlstad centrum och uppföljning digitalt."
 ---
 
 <section class="location-hero location-hero--karlstad">
   <div class="container">
     <div class="location-hero__grid">
       <div class="location-hero__copy">
-        <span class="eyebrow">Karlstad • Digital-first</span>
+        <span class="eyebrow">Karlstad • Digitalt upplägg</span>
         <h1>ADHD- och autismutredning i Karlstad</h1>
         <p class="lead">
           Digital specialistutredning för Värmland. Du gör kartläggning, psykologintervjuer, tester och läkarbesök via video – och vi koordinerar somatiska prover hos våra partners i Karlstad centrum.
-          Anpassat för dig som pluggar på Karlstads universitet eller vill få en tydlig plan utan långa väntetider.
+          Anpassat för dig som studerar på Karlstads universitet eller vill få en tydlig plan utan långa väntetider.
         </p>
         <ul class="location-hero__highlights">
           <li>Snabb start inom några dagar och utredning som ofta kan bli klar på cirka 2–4 veckor (tidsplanen anpassas efter dig).</li>
@@ -36,7 +36,7 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
             <dd>Psykiater, psykolog, koordinator och sjuksköterska</dd>
           </div>
           <div>
-            <dt>Leveranser</dt>
+            <dt>Innehåll</dt>
             <dd>Diagnos, neuropsykologisk profil, medicinsk plan, coachningsplan</dd>
           </div>
           <div>
@@ -45,7 +45,7 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
           </div>
           <div>
             <dt>Eftervård</dt>
-            <dd>Medicinsk uppföljning, recept och arbetslivsstöd online</dd>
+            <dd>Medicinsk uppföljning, recept och arbetslivsstöd digitalt</dd>
           </div>
         </dl>
       </div>
@@ -67,7 +67,7 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
       <article class="location-step">
         <span class="location-step__number">1</span>
         <h3>Digital kartläggning</h3>
-        <p>Screeningformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som gör att processen håller ihop.</p>
+        <p>Självskattningsformulär, anamnes, DIVA-5 och anhörigintervju görs via krypterad video. Du får en tydlig tidslinje och påminnelser som gör att processen håller ihop.</p>
         <ul class="location-step__list">
           <li>Koordinator hjälper till att samla in underlag från vård, arbetsgivare och skola.</li>
           <li>Du kan boka tider som fungerar med studier, skift och familjeliv.</li>
@@ -76,7 +76,7 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
       <article class="location-step">
         <span class="location-step__number">2</span>
         <h3>Somatiska kontroller lokalt</h3>
-        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vår digitala testsvit. Vi koordinerar dina somatiska prover hos våra partners i Karlstad centrum, så att teamet får rätt underlag utan onödiga resor.</p>
+        <p>Neuropsykologiska tester och läkarbedömning görs i första hand via vårt digitala testbatteri. Vi koordinerar dina somatiska prover hos våra partners i Karlstad centrum, så att teamet får rätt underlag utan onödiga resor.</p>
         <ul class="location-step__list">
           <li>Vi hjälper dig att boka provtagning och ser till att resultatet kopplas till utredningen.</li>
           <li>Behövs ett fysiskt delmoment planerar vi det så kompakt som möjligt.</li>
@@ -84,11 +84,11 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
       </article>
       <article class="location-step">
         <span class="location-step__number">3</span>
-        <h3>Plan &amp; uppföljning</h3>
+        <h3>Plan och uppföljning</h3>
         <p>Du får rapport, diagnosbeslut och behandlingsplan digitalt. Vi kan bjuda in arbetsgivare, anhörig eller studentstöd till delar av återkopplingen.</p>
         <ul class="location-step__list">
           <li>Läkare och psykolog deltar i samma återkopplingsmöte för en samlad plan.</li>
-          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter online.</li>
+          <li>Coachning, medicinuppföljning och arbetslivsstöd fortsätter digitalt.</li>
         </ul>
       </article>
     </div>
@@ -100,7 +100,7 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
     <div class="location-details__grid">
       <article class="location-info">
         <h3>Stöd för dig i Karlstad</h3>
-        <p>Vi hjälper dig att omsätta diagnosen i konkreta steg – oavsett om du pluggar, jobbar i industrin eller vill få vardagen att fungera bättre.</p>
+        <p>Vi hjälper dig att omsätta diagnosen i konkreta steg – oavsett om du studerar, jobbar i industrin eller vill få vardagen att fungera bättre.</p>
         <ul class="location-info__list">
           <li>Underlag och intyg för arbetsgivare, CSN, Försäkringskassan och privata försäkringar.</li>
           <li>Coachning för fokus, energi och rutiner – anpassad för studier och arbetsliv i Värmland.</li>
@@ -132,4 +132,3 @@ og_description: "Digital utredning för Värmland med somatiska prover hos partn
     </div>
   </div>
 </section>
-
