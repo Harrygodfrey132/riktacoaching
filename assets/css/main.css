@@ -8075,6 +8075,26 @@ nav a.cta:active{
   margin-bottom: 16px;
 }
 
+.adhd-score__breakdown {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.adhd-score__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 15px;
+  color: #334155;
+}
+
+.adhd-score__row span:last-child {
+  font-weight: 600;
+  color: #0f172a;
+}
+
 .adhd-score__label {
   font-size: 16px;
   font-weight: 600;

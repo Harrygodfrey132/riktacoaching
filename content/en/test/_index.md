@@ -76,6 +76,25 @@ url: "/en/test/"
             </svg>
           </span>
           <div>
+            <p class="tests-card__eyebrow">SNAP-IV</p>
+            <h3>Child ADHD test</h3>
+          </div>
+        </div>
+        <p>SNAP-IV parent rating scale for ADHD symptoms and oppositional defiant traits.</p>
+        <ul class="tests-card__list">
+          <li>26-item parent report</li>
+          <li>Scores for inattention and hyperactivity/impulsivity</li>
+        </ul>
+        <a class="text-cta" href="/en/test/child-adhd-test/">Take the child ADHD test <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
             <p class="tests-card__eyebrow">GPS</p>
             <h3>Procrastination test</h3>
           </div>
@@ -124,6 +143,25 @@ url: "/en/test/"
           <li>Focus on social communication and detail focus</li>
         </ul>
         <a class="text-cta" href="/en/test/autism-test/">Take the autism test <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card tests-card--rose">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M12 4v16M4 12h16M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">RAADS-14</p>
+            <h3>Adult autism test</h3>
+          </div>
+        </div>
+        <p>RAADS-14 Screen – brief adult autism self-assessment.</p>
+        <ul class="tests-card__list">
+          <li>14 statements</li>
+          <li>Now/when young response options</li>
+        </ul>
+        <a class="text-cta" href="/en/test/autism-test-adult/">Take the adult autism test <span aria-hidden="true">&rarr;</span></a>
       </article>
       <article class="tests-card">
         <div class="tests-card__header">

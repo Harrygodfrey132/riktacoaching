@@ -74,6 +74,44 @@ url: "/test/"
               <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
             </svg>
           </span>
+          <div>
+            <p class="tests-card__eyebrow">ASRS v1.1</p>
+            <h3>ADHD-test vuxna</h3>
+          </div>
+        </div>
+        <p>ASRS v1.1 symtomchecklista för vuxna.</p>
+        <ul class="tests-card__list">
+          <li>Del A (6 frågor) och Del B (12 frågor)</li>
+          <li>Skattning över de senaste 6 månaderna</li>
+        </ul>
+        <a class="text-cta" href="/test/adhd-test-vuxna/">Gör vuxentestet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <p class="tests-card__eyebrow">SNAP-IV</p>
+            <h3>ADHD-test barn</h3>
+          </div>
+        </div>
+        <p>SNAP-IV Teacher and Parent Rating Scale – svensk version för barn.</p>
+        <ul class="tests-card__list">
+          <li>Skattning av beteenden hemma och i skola</li>
+          <li>Skala 0–3 (Inte alls till Väldigt mycket)</li>
+        </ul>
+        <a class="text-cta" href="/test/adhd-test-barn/">Gör barntestet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M4 12h16M12 4v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
 	          <div>
 	            <p class="tests-card__eyebrow">GPS</p>
 	            <h3>Prokrastineringstest</h3>
@@ -132,15 +170,34 @@ url: "/test/"
             </svg>
           </span>
           <div>
+            <p class="tests-card__eyebrow">RAADS-14</p>
+            <h3>Autismtest vuxna</h3>
+          </div>
+        </div>
+        <p>RAADS-14 Screen – förkortad självskattning för vuxna.</p>
+        <ul class="tests-card__list">
+          <li>14 påståenden</li>
+          <li>Stämmer nu/när jag var ung</li>
+        </ul>
+        <a class="text-cta" href="/test/autism-test-vuxna/">Gör vuxentestet <span aria-hidden="true">&rarr;</span></a>
+      </article>
+      <article class="tests-card tests-card--rose">
+        <div class="tests-card__header">
+          <span class="tests-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation" aria-hidden="true">
+              <path d="M12 4v16M4 12h16M7 7l10 10M17 7L7 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+            </svg>
+          </span>
+          <div>
             <p class="tests-card__eyebrow">AQ-10</p>
             <h3>Autism-test</h3>
           </div>
-	        </div>
-	        <p>Ett kort, validerat självskattningsformulär för vuxna som vill utforska autistiska drag.</p>
-	        <ul class="tests-card__list">
-	          <li>Validerat frågeformulär för vuxna</li>
-	          <li>Fokus på social kommunikation och detaljfokus</li>
-	        </ul>
+        </div>
+        <p>Ett kort, validerat självskattningsformulär för vuxna som vill utforska autistiska drag.</p>
+        <ul class="tests-card__list">
+          <li>Validerat frågeformulär för vuxna</li>
+          <li>Fokus på social kommunikation och detaljfokus</li>
+        </ul>
         <a class="text-cta" href="/test/autism-test/">Gör autismtestet <span aria-hidden="true">&rarr;</span></a>
       </article>
       <article class="tests-card">

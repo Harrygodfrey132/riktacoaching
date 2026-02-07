@@ -492,6 +492,7 @@
       purpose,
       source,
       locale: resolvedLocale,
+      timestamp: new Date().toISOString(),
       policyUrl: policyUrl || undefined,
       termsUrl: termsUrl || undefined,
       policyVersion: policyVersion || undefined,
@@ -1072,6 +1073,70 @@
   });
 
   initScreeningForm({
+    formId: 'snap-child-adhd-form',
+    totalQuestions: 26,
+    scoreBoxId: 'snap-score',
+    scoreValueId: 'snap-total-score',
+    interpretationId: 'snap-score-interpretation',
+    defaultInterpretation: {
+      en: 'If the total score is 13 or above in either of the inattention or hyperactivity/impulsivity sections, it may suggest a presentation of ADHD and you may consider a referral for a comprehensive ADHD assessment.'
+    },
+    buildInterpretation() {
+      return {
+        text: 'If the total score is 13 or above in either of the inattention or hyperactivity/impulsivity sections, it may suggest a presentation of ADHD and you may consider a referral for a comprehensive ADHD assessment.'
+      };
+    },
+    scoreCalculator(formData) {
+      let total = 0;
+      let answered = 0;
+      let inattention = 0;
+      let hyperactivity = 0;
+      let opposition = 0;
+      for (let i = 1; i <= 26; i += 1) {
+        const value = formData.get(`q${i}`);
+        if (value !== null) {
+          const numeric = Number(value);
+          total += numeric;
+          answered += 1;
+          if (i <= 9) {
+            inattention += numeric;
+          } else if (i <= 18) {
+            hyperactivity += numeric;
+          } else {
+            opposition += numeric;
+          }
+        }
+      }
+      return {
+        total,
+        answered,
+        meta: {
+          inattention,
+          hyperactivity,
+          opposition
+        }
+      };
+    },
+    metaUpdater({ meta } = {}) {
+      const inattentionEl = document.getElementById('snap-inattention-score');
+      const hyperEl = document.getElementById('snap-hyper-score');
+      const oppositionEl = document.getElementById('snap-opposition-score');
+      const inattention = meta && typeof meta.inattention === 'number' ? meta.inattention : 0;
+      const hyperactivity = meta && typeof meta.hyperactivity === 'number' ? meta.hyperactivity : 0;
+      const opposition = meta && typeof meta.opposition === 'number' ? meta.opposition : 0;
+      if (inattentionEl) inattentionEl.textContent = String(inattention);
+      if (hyperEl) hyperEl.textContent = String(hyperactivity);
+      if (oppositionEl) oppositionEl.textContent = String(opposition);
+    },
+    gateWithLeadForm: () => isPiiAllowed(),
+    onLeadRequired: openLeadModal,
+    testName: {
+      en: 'SNAP-IV 26-Item Parent Rating Scale',
+      sv: 'SNAP-IV 26-Item Parent Rating Scale'
+    }
+  });
+
+  initScreeningForm({
     formId: 'add-screening-form',
     totalQuestions: 9,
     scoreBoxId: 'add-score',
@@ -1097,6 +1162,96 @@
     testName: {
       en: 'ADD Inattentive Symptoms',
       sv: 'ADD – ouppmärksamhetssymtom'
+    }
+  });
+
+  initScreeningForm({
+    formId: 'asrs-vuxna-form',
+    totalQuestions: 18,
+    scoreBoxId: 'asrs-vuxna-score',
+    scoreValueId: 'asrs-vuxna-score-value',
+    interpretationId: 'asrs-vuxna-score-interpretation',
+    defaultInterpretation: {
+      sv: 'Detta är ett självskattningsformulär och ersätter inte en klinisk bedömning.'
+    },
+    buildInterpretation() {
+      return { text: 'Detta är ett självskattningsformulär och ersätter inte en klinisk bedömning.' };
+    },
+    gateWithLeadForm: () => isPiiAllowed(),
+    onLeadRequired: openLeadModal,
+    testName: {
+      sv: 'ASRS v1.1 (vuxna)',
+      en: 'ASRS v1.1 (adults)'
+    }
+  });
+
+  initScreeningForm({
+    formId: 'snap-barn-form',
+    totalQuestions: 30,
+    scoreBoxId: 'snap-barn-score',
+    scoreValueId: 'snap-barn-score-value',
+    interpretationId: 'snap-barn-score-interpretation',
+    defaultInterpretation: {
+      sv: 'Detta är ett screeninginstrument och ersätter inte en klinisk bedömning.'
+    },
+    buildInterpretation() {
+      return { text: 'Detta är ett screeninginstrument och ersätter inte en klinisk bedömning.' };
+    },
+    gateWithLeadForm: () => isPiiAllowed(),
+    onLeadRequired: openLeadModal,
+    testName: {
+      sv: 'SNAP-IV (barn)',
+      en: 'SNAP-IV (child)'
+    }
+  });
+
+  initScreeningForm({
+    formId: 'raads14-adult-form',
+    totalQuestions: 14,
+    scoreBoxId: 'raads14-score',
+    scoreValueId: 'raads14-score-value',
+    interpretationId: 'raads14-score-interpretation',
+    defaultInterpretation: {
+      en: 'Answer all questions to see your RAADS-14 score.'
+    },
+    ranges: [
+      { max: 13, text: '0–13: low level (assumed guide only).' },
+      { max: 27, text: '14–27: moderate level (assumed guide only).', className: 'is-amber' },
+      { max: Infinity, text: '28–42: elevated level (assumed guide only).', className: 'is-red' }
+    ],
+    gateWithLeadForm: () => isPiiAllowed(),
+    onLeadRequired: openLeadModal,
+    testName: {
+      en: 'RAADS-14 Screen (adult)'
+    }
+  });
+
+  initScreeningForm({
+    formId: 'raads14-vuxna-form',
+    totalQuestions: 14,
+    scoreBoxId: 'raads14-vuxna-score',
+    scoreValueId: 'raads14-vuxna-score-value',
+    interpretationId: 'raads14-vuxna-score-interpretation',
+    defaultInterpretation: {
+      sv: 'Besvara alla frågor för att se din RAADS-14-poäng.'
+    },
+    ranges: [
+      { max: 13, text: '0–13: låg nivå (vägledande).' },
+      { max: 27, text: '14–27: måttlig nivå (vägledande).', className: 'is-amber' },
+      { max: Infinity, text: '28–42: förhöjd nivå (vägledande).', className: 'is-red' }
+    ],
+    transformValue(value, questionNumber) {
+      const numeric = Number(value);
+      if (questionNumber === 6) {
+        return 3 - numeric;
+      }
+      return numeric;
+    },
+    gateWithLeadForm: () => isPiiAllowed(),
+    onLeadRequired: openLeadModal,
+    testName: {
+      sv: 'RAADS-14 Screen (vuxna)',
+      en: 'RAADS-14 Screen (adult)'
     }
   });
 
