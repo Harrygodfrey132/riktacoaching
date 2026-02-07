@@ -72,6 +72,39 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
       </article>
 
       <article class="clinician-card">
+        <img src="/img/untitled-design-4.png" alt="Karin Vincze" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Karin Vincze</h3>
+          <p class="clinician-card__role">Licensed Psychologist</p>
+          <ul class="team-feature__bullets">
+            <li>Licensed Psychologist, STP-psychologist (Specialist Training), and Licensed Nurse.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design-3.png" alt="Emma Krantz" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Emma Krantz</h3>
+          <p class="clinician-card__role">Licensed Psychologist</p>
+          <ul class="team-feature__bullets">
+            <li>Psychodynamic foundation, incorporating ACT (Acceptance and Commitment Therapy) and existential psychology.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design.png" alt="Maria Fridlund" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Maria Fridlund</h3>
+          <p class="clinician-card__role">Licensed Psychologist</p>
+          <ul class="team-feature__bullets">
+            <li>CBT-based (Cognitive Behavioral Therapy) with advanced training in IBCT (Integrative Behavioral Couple Therapy).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
         <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Jonny Baker</h3>

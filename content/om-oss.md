@@ -73,6 +73,42 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       </article>
 
       <article class="clinician-card">
+        <img src="/img/untitled-design-4.png" alt="Karin Vincze" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Karin Vincze</h3>
+          <p class="clinician-card__role">Leg. psykolog</p>
+          <ul class="team-feature__bullets">
+            <li>Leg. psykolog, STP-psykolog (specialistutbildning) och leg. sjuksköterska.</li>
+            <li>Konsult på Underfundarna Psykologi</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design-3.png" alt="Emma Krantz" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Emma Krantz</h3>
+          <p class="clinician-card__role">Leg. psykolog</p>
+          <ul class="team-feature__bullets">
+            <li>Psykodynamisk grund med inslag av ACT (Acceptance and Commitment Therapy) och existentiell psykologi.</li>
+            <li>Konsult på Underfundarna Psykologi</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design.png" alt="Maria Fridlund" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Maria Fridlund</h3>
+          <p class="clinician-card__role">Leg. psykolog</p>
+          <ul class="team-feature__bullets">
+            <li>KBT-inriktad med vidareutbildning i IBCT (Integrative Behavioral Couple Therapy).</li>
+            <li>Konsult på Underfundarna Psykologi</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
         <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Jonny Baker</h3>
