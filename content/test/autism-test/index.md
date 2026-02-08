@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /autism-test/
-meta_title: "AQ-10 | Självtest för autism"
+meta_title: "Autismtest AQ-10 | Självskattning online | Rikta Psykiatri"
 meta_keywords: "autismtest, AQ-10, självtest autism, autistiska drag, Rikta Psykiatri"
-meta_description: "Gör AQ-10 – ett kort autism-självtest – och få vägledning kring nästa steg tillsammans med Rikta Psykiatri."
+meta_description: "Gör AQ-10 autismtest online. Kort självskattning med vägledning om nästa steg (ej diagnos)."
 og_title: "AQ-10 från Rikta Psykiatri"
 og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autism och få rekommendationer om fortsatt stöd."
 ---

@@ -5,8 +5,8 @@ draft: false
 layout: "none"
 type: "none"
 url: "/en/test/child-adhd-test/"
-meta_title: "SNAP-IV 26-Item Parent Rating Scale | Rikta Psychiatry"
-meta_description: "SNAP-IV 26-Item Parent Rating Scale — parent report screening for child ADHD symptoms and oppositional defiant disorder traits."
+meta_title: "Child ADHD Test (SNAP-IV) | Parent Rating Scale"
+meta_description: "SNAP-IV 26-item parent rating scale for child ADHD symptoms and oppositional traits. Indicative screening."
 og_title: "SNAP-IV 26-Item Parent Rating Scale"
 og_description: "Parent rating scale for ADHD symptoms and oppositional defiant disorder traits."
 ---

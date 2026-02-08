@@ -4,9 +4,9 @@ translationKey: "gad7-anxiety"
 draft: false
 layout: "none"
 type: "none"
-meta_title: "GAD-7 Anxiety | Rikta Psychiatry"
+meta_title: "Anxiety Test (GAD-7) | Online Screening"
 meta_keywords: "GAD-7, anxiety test, anxiety screening, generalized anxiety disorder"
-meta_description: "Complete the GAD-7 anxiety screening questionnaire and see your score and severity level."
+meta_description: "Take the GAD-7 anxiety self-assessment and see your score and severity level. Screening only."
 og_title: "GAD-7 Anxiety"
 og_description: "A validated 7-item anxiety screening questionnaire."
 ---

@@ -5,9 +5,9 @@ draft: false
 layout: "none"
 type: "none"
 url: "/test/adhd-test-barn/"
-meta_title: "SNAP-IV barn | ADHD-självskattning"
+meta_title: "ADHD-test barn SNAP-IV | Föräldra- och lärarskattning"
 meta_keywords: "SNAP-IV, ADHD-test barn, förälder, lärare, självskattning"
-meta_description: "SNAP-IV Teacher and Parent Rating Scale – svensk version för barn."
+meta_description: "SNAP-IV barn – svensk föräldra-/lärarskattning för ADHD-symtom och ODD-drag."
 og_title: "SNAP-IV barn"
 og_description: "SNAP-IV Teacher and Parent Rating Scale – svensk version för barn."
 ---

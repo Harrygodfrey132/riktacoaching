@@ -8,9 +8,9 @@ url: "/test/adhd-test-vuxna/"
 aliases:
   - /test/adhd-test/vuxna/
   - /test/ADHD-test/Voxna/
-meta_title: "ASRS-v1.1 vuxna | ADHD-självskattning"
+meta_title: "ADHD-test vuxna ASRS v1.1 | Självskattning"
 meta_keywords: "ASRS v1.1, ADHD-test vuxna, ADHD självskattning, vuxen ADHD"
-meta_description: "Självskattningsskala för ADHD hos vuxna (ASRS-v1.1) – symtomchecklista."
+meta_description: "ASRS v1.1 för vuxna. Kort självskattning av ADHD-symtom som kan vägleda nästa steg."
 og_title: "ASRS-v1.1 vuxna"
 og_description: "Självskattningsskala för ADHD hos vuxna (ASRS-v1.1) – symtomchecklista."
 ---

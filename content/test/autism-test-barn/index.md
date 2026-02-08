@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /test/autism-test-barn/
-meta_title: "AQ-10 (barnversionen) | Rikta Psykiatri"
+meta_title: "Autismtest barn AQ-10 | Föräldraenkät"
 meta_keywords: "AQ-10 barn, autismtest barn, självtest autism barn, föräldraenkät"
-meta_description: "AQ-10 (barnversionen) – kort föräldraenkät för barn 4–11 år."
+meta_description: "AQ-10 barn (4–11 år). Kort föräldraenkät som ger indikation om fortsatt utredning kan vara hjälpsam."
 og_title: "AQ-10 (barnversionen)"
 og_description: "Kort föräldraenkät för barn 4–11 år."
 ---

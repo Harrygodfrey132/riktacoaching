@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /adhd-test/
-meta_title: "R-ARS-12 | Självskattning för uppmärksamhet och reglering"
+meta_title: "ADHD-test R-ARS-12 | Självskattning online"
 meta_keywords: "ADHD-test, självskattning, uppmärksamhet, reglering, fokus, R-ARS-12, Rikta Psykiatri"
-meta_description: "Besvara R-ARS-12 – ett 12-frågors självskattningsformulär för barn (7–12 år) och vuxna."
+meta_description: "Besvara R-ARS-12 ADHD-testet för barn (7–12 år) och vuxna. Indikativ screening, ej diagnos."
 og_title: "R-ARS-12 från Rikta Psykiatri"
 og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation på uppmärksamhets- och regleringssvårigheter."
 ---

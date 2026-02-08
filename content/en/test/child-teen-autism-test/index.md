@@ -7,9 +7,9 @@ type: "none"
 aliases:
   - /en/child-teen-adhd-test/
 url: "/en/test/child-teen-autism-test/"
-meta_title: "AQ-10 (Child Version) | Rikta Psychiatry"
+meta_title: "Child Autism Test (AQ-10) | Parent Screening"
 meta_keywords: "AQ-10 child version, autism screening child, AQ-10 child questionnaire"
-meta_description: "AQ-10 (Child Version) Autism Spectrum Quotient (AQ) quick referral guide for parents."
+meta_description: "AQ-10 Child Version autism screening for ages 4–11. Parent report to see if further assessment may help."
 og_title: "AQ-10 (Child Version)"
 og_description: "Autism Spectrum Quotient (AQ) child version screening checklist."
 ---

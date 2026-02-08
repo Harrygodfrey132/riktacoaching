@@ -5,9 +5,9 @@ draft: false
 layout: "none"
 type: "none"
 url: "/en/test/autism-test-adult/"
-meta_title: "RAADS-14 Adult | Autism Self-Assessment"
+meta_title: "Adult Autism Test (RAADS-14) | Online Screening"
 meta_keywords: "RAADS-14, adult autism test, autism self-assessment, adult autism"
-meta_description: "RAADS-14 Screen – brief adult autism self-assessment."
+meta_description: "Take the RAADS-14 adult autism self-assessment. Indicative screening to see if further assessment may help."
 og_title: "RAADS-14 Adult"
 og_description: "RAADS-14 Screen – brief adult autism self-assessment."
 ---

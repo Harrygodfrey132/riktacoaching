@@ -4,9 +4,9 @@ translationKey: "mdq-bipolar"
 draft: false
 layout: "none"
 type: "none"
-meta_title: "Bipolar screening (MDQ) | Rikta Psychiatry"
+meta_title: "Bipolar Test (MDQ) | Mood Screening"
 meta_keywords: "MDQ, bipolar screening, mood disorder questionnaire"
-meta_description: "Additional screening to rule out mood patterns that can overlap with ADHD or ASD traits."
+meta_description: "Take the MDQ bipolar screening questionnaire to check mood patterns that can overlap with ADHD or autism."
 og_title: "Bipolar screening (MDQ)"
 og_description: "Additional screening to rule out mood patterns that can overlap with ADHD or ASD traits."
 ---

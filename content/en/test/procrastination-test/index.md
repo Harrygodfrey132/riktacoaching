@@ -6,8 +6,8 @@ type: "none"
 aliases:
   - /en/coaching/procrastination-test/
 url: "/en/test/procrastination-test/"
-meta_title: "Procrastination test online | GPS screening"
-meta_description: "Take the General Procrastination Scale (GPS, 15 statements) to see how much procrastination affects your daily life."
+meta_title: "Procrastination Test (GPS) | Online Screening"
+meta_description: "Take the GPS procrastination questionnaire to see how much procrastination affects daily life."
 og_title: "Procrastination test (GPS)"
 og_description: "Answer 15 statements and see if your procrastination patterns are low, moderate, or high."
 summary: "Short self-check to understand your procrastination patterns."

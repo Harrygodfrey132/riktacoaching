@@ -4,9 +4,9 @@ translationKey: "gad7-anxiety"
 draft: false
 layout: "none"
 type: "none"
-meta_title: "GAD-7 självskattningsfrågor | Rikta Psykiatri"
+meta_title: "Ångesttest GAD-7 | Självskattning"
 meta_keywords: "GAD-7, ångesttest, självskattning, generaliserat ångestsyndrom"
-meta_description: "Gör GAD-7 självskattningsformuläret och se din poäng och nivå."
+meta_description: "Gör GAD-7 ångesttest och se din poäng och nivå. Självskattning, ej diagnos."
 og_title: "GAD-7 självskattningsfrågor"
 og_description: "Ett validerat 7-frågors självskattningsformulär för ångest."
 ---

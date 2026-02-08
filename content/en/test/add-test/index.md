@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /en/add-test/
-meta_title: "ADD Test | Inattentive Symptoms"
+meta_title: "ADD Test | Inattentive ADHD Screening"
 meta_keywords: "ADD test, inattentive ADHD, ASRS inattentive, attention deficit"
-meta_description: "Inattentive symptoms (ADD) screening items."
+meta_description: "Short ADD inattentive symptom screening to indicate whether further ADHD assessment could be helpful."
 og_title: "ADD Test"
 og_description: "Inattentive symptoms (ADD) screening items."
 ---

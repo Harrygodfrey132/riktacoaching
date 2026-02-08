@@ -5,9 +5,9 @@ draft: false
 layout: "none"
 type: "none"
 url: "/test/autism-test-vuxna/"
-meta_title: "RAADS-14 vuxna | Autism-självskattning"
+meta_title: "Autismtest vuxna RAADS-14 | Självskattning"
 meta_keywords: "RAADS-14, autismtest vuxna, självskattning autism, vuxen autism"
-meta_description: "RAADS-14 Screen – förkortad självskattning för autism hos vuxna."
+meta_description: "RAADS-14 för vuxna. Kort autism-självskattning som indikerar om vidare utredning kan vara relevant."
 og_title: "RAADS-14 vuxna"
 og_description: "RAADS-14 Screen – förkortad självskattning för autism hos vuxna."
 ---

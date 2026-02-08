@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /en/adhd-test/
-meta_title: "R-ARS-12 | Attention & Regulation Self-Check"
+meta_title: "ADHD Test (R-ARS-12) | Attention & Regulation Screening"
 meta_keywords: "ADHD test online, attention test, self-assessment focus, R-ARS-12, Rikta Psychiatry"
-meta_description: "Take the Rikta Psychiatry Attention & Regulation Scale (R-ARS-12) – a 12-item screening tool for children and adults."
+meta_description: "Take the R-ARS-12 ADHD self-assessment for children and adults. Indicative screening to guide next steps."
 og_title: "R-ARS-12 by Rikta Psychiatry"
 og_description: "Complete our R-ARS-12 to get an indication of attention and regulation difficulties."
 ---

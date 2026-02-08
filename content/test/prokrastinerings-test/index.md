@@ -6,8 +6,8 @@ type: "none"
 aliases:
   - /coachning/prokrastinerings-test/
 url: "/test/prokrastinerings-test/"
-meta_title: "Prokrastineringstest | GPS-självtest"
-meta_description: "Gör General Procrastination Scale (GPS, 15 påståenden) och få en indikation på hur mycket prokrastinering påverkar din vardag."
+meta_title: "Prokrastineringstest GPS | Självskattning"
+meta_description: "GPS prokrastineringstest (15 påståenden) som visar hur prokrastinering påverkar vardagen."
 og_title: "Prokrastineringstest (GPS)"
 og_description: "Svara på 15 påståenden och se om dina uppskjutandemönster ligger på låg, måttlig eller hög nivå."
 summary: "Kort självskattning för att förstå dina uppskjutandemönster."

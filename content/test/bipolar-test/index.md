@@ -4,9 +4,9 @@ translationKey: "mdq-bipolar"
 draft: false
 layout: "none"
 type: "none"
-meta_title: "Självskattning vid misstanke om bipolär sjukdom – MDQ | Rikta Psykiatri"
+meta_title: "Bipolärtest MDQ | Självskattning"
 meta_keywords: "MDQ, bipolär sjukdom, självskattning, Mood Disorder Questionnaire"
-meta_description: "Kompletterande självskattning för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
+meta_description: "MDQ självskattning för bipolära symtom och stämningsmönster. Indikativ screening."
 og_title: "Självskattning vid misstanke om bipolär sjukdom – MDQ"
 og_description: "Kompletterande självskattning för att identifiera stämningsmönster som ibland kan överlappa med ADHD eller AST."
 aliases:

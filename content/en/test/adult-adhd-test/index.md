@@ -6,9 +6,9 @@ layout: "none"
 type: "none"
 aliases:
   - /en/adult-adhd-test/
-meta_title: "ASRS v1.1 Adult ADHD | Rikta Psychiatry"
+meta_title: "Adult ADHD Test (ASRS v1.1) | Online Screening"
 meta_keywords: "adult ADHD test, ASRS v1.1, ADHD screening, adult attention deficit"
-meta_description: "Adult ADHD Self-Report Scale (ASRS v1.1) Symptom Checklist."
+meta_description: "Complete the ASRS v1.1 adult ADHD checklist. Indicative screening to see if further assessment is useful."
 og_title: "ASRS v1.1 Adult ADHD"
 og_description: "Adult ADHD Self-Report Scale (ASRS v1.1) Symptom Checklist."
 ---
