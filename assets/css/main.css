@@ -6398,6 +6398,33 @@ nav a.cta:active{
   }
 }
 
+@media (max-width: 640px) {
+  .adhd-hero .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .adhd-hero .hero-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .adhd-hero .lead {
+    max-width: none;
+  }
+
+  .adhd-hero .hero-image img {
+    aspect-ratio: 4 / 3;
+    height: auto;
+  }
+
+  .adhd-pricing-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
 .adhd-page--adult .adhd-definition,
 .adhd-page--youth .adhd-definition,
 .adhd-page--women .adhd-definition,
@@ -6770,6 +6797,16 @@ nav a.cta:active{
   display: grid;
   gap: 16px;
   box-shadow: 0 10px 28px rgba(29, 44, 59, 0.12);
+}
+
+@media (max-width: 720px) {
+  .adhd-process-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .adhd-process-card {
+    padding: 24px;
+  }
 }
 
 .adhd-process--timeline .timeline {
