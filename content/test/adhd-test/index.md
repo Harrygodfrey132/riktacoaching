@@ -38,11 +38,7 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
               <dt class="adhd-meta__label">Skala</dt>
               <dd class="adhd-meta__value">1 = Stämmer inte · 2 = Stämmer lite · 3 = Stämmer något · 4 = Stämmer ganska mycket · 5 = Stämmer helt.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Tolkning</dt>
-              <dd class="adhd-meta__value">12–27 låg · 28–41 måttlig · 42–60 hög (vägledande, ej diagnostik).</dd>
-            </div>
-          </dl>
+</dl>
         </div>
         <p class="adhd-screening__intro">Besvara varje fråga. Resultatet är vägledande och ersätter inte en klinisk bedömning.</p>
         <fieldset class="adhd-section">
@@ -180,64 +176,15 @@ og_description: "Gör vårt egenutvecklade R-ARS-12 för att få en indikation p
             <span class="adhd-score__value" id="adhd-score-value">0</span>
           </div>
 	          <p class="adhd-score__interpretation" id="adhd-score-interpretation">Besvara alla frågor för att se din R-ARS-12 poäng.</p>
-	          <p class="adhd-score__note">Självskattningen ersätter inte en klinisk bedömning. Kontakta Rikta Psykiatri för professionell utredning eller coachning om poängen är förhöjd.</p>
+	          <p class="adhd-score__note">Resultatet beräknas lokalt i din webbläsare och sparas inte. Självskattningen ersätter inte en klinisk bedömning.</p>
 	        </div>
 	      </form>
       <aside class="adhd-screening__note">
         <h3>Juridik och etik</h3>
         <p><strong>R-ARS-12 är egenutvecklad av Rikta Psykiatri (2025).</strong> Frågorna är originalformuleringar och baseras inte på något skyddat formulär.</p>
-        <p><strong>Syfte:</strong> Ge en indikativ bild av uppmärksamhets- och självregleringssvårigheter hos barn och vuxna. Detta är inte ett diagnostiskt test. Vid höga poäng rekommenderas professionell neuropsykiatrisk utredning.</p>
+        <p><strong>Syfte:</strong> Ge en indikativ bild av uppmärksamhets- och självregleringssvårigheter hos barn och vuxna. Detta är inte ett diagnostiskt test.</p>
         <p><strong>Citering:</strong> R-ARS-12 (Rikta Psykiatri). © 2025 Rikta Psykiatri – Fritt att använda med källhänvisning.</p>
       </aside>
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Visa resultat</p>
-      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
-      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
-      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="adhd-screening"
-      data-success-message="Tack! Resultatet visas nu."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="ADHD-självtest">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>Förnamn <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Efternamn <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>E-post <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en kort plan för nästa steg. Tack, Rikta Psykiatri-teamet.</p>
-  </div>
-</div>

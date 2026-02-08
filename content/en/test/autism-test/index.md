@@ -8,9 +8,9 @@ aliases:
   - /en/autism-test/
 meta_title: "Autism Test (AQ-10) | Online Self-Assessment | Rikta Psychiatry"
 meta_keywords: "autism test online, AQ-10, autism screening, self-test autism, Rikta Psychiatry"
-meta_description: "Take the AQ-10 autism screening test for adults. Indicative results and guidance on possible next steps."
+meta_description: "Take the AQ-10 autism screening test for adults and see your total score. Screening only."
 og_title: "AQ-10 from Rikta Psychiatry"
-og_description: "Answer AQ-10 to spot patterns related to autism and get recommendations for further support."
+og_description: "Answer AQ-10 to see your total score and reflect on autistic traits (screening only)."
 ---
 
 <section class="adhd-screening">
@@ -38,11 +38,7 @@ og_description: "Answer AQ-10 to spot patterns related to autism and get recomme
               <dt class="adhd-meta__label">Scale</dt>
               <dd class="adhd-meta__value">Agree / Slightly agree = 1 point on straight statements. Questions 4 &amp; 7 are reversed: disagreement gives 1 point.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Interpretation</dt>
-              <dd class="adhd-meta__value">0–5 low · 6–10 elevated (screening guidance only, not diagnostic).</dd>
-            </div>
-          </dl>
+</dl>
         </div>
         <p class="adhd-screening__intro">Answer every question. The result is indicative and does not replace a clinical assessment.</p>
         <fieldset class="adhd-section">
@@ -150,12 +146,12 @@ og_description: "Answer AQ-10 to spot patterns related to autism and get recomme
             <span class="adhd-score__value" id="autism-score-value">0</span>
           </div>
           <p class="adhd-score__interpretation" id="autism-score-interpretation">Answer all questions to see your AQ-10 score.</p>
-          <p class="adhd-score__note">This self-test does not replace a clinical autism assessment. Contact Rikta Psychiatry for professional evaluation, treatment, or coaching.</p>
+          <p class="adhd-score__note">The result is calculated locally in your browser and is not stored. This self-test does not replace a clinical autism assessment.</p>
         </div>
       </form>
       <aside class="adhd-screening__note">
         <h3>Legal and ethics</h3>
-        <p><strong>AQ-10 is a screening tool.</strong> It does not provide a diagnosis. If your score is elevated, we recommend a professional autism assessment.</p>
+        <p><strong>AQ-10 is a screening tool.</strong> It does not provide a diagnosis.</p>
         <p><strong>Scoring:</strong> Agree / slightly agree gives 1 point on straight statements. Questions 4 and 7 are reversed.</p>
         <p><strong>Sources:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
@@ -164,52 +160,3 @@ og_description: "Answer AQ-10 to spot patterns related to autism and get recomme
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Show results</p>
-      <h3>Get your result instantly — we’ll email it to you</h3>
-      <p>We unlock the result on the page and send it to your email so you can keep it.</p>
-      <p class="lead-modal__hint">We need your email so you can revisit your result and so we can send a brief plan for next steps.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="autism-screening"
-      data-success-message="Thank you! Your result is now visible."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Autism Investigation">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>First name <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Last name <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Email <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Coaching processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy &amp; Data Protection Policy</a>, which explains how my data is handled in accordance with UK GDPR.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">We email your answers so you can save and review them later. We’ll follow up with a brief plan if needed. Thank you, Rikta Psychiatry team.</p>
-  </div>
-</div>

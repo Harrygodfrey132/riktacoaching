@@ -9,7 +9,7 @@ url: "/en/test/procrastination-test/"
 meta_title: "Procrastination Test (GPS) | Online Screening"
 meta_description: "Take the GPS procrastination questionnaire to see how much procrastination affects daily life."
 og_title: "Procrastination test (GPS)"
-og_description: "Answer 15 statements and see if your procrastination patterns are low, moderate, or high."
+og_description: "Answer 15 statements and see your total score (no interpretation)."
 summary: "Short self-check to understand your procrastination patterns."
 ---
 
@@ -36,13 +36,9 @@ summary: "Short self-check to understand your procrastination patterns."
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Scale</dt>
-              <dd class="adhd-meta__value">1 = Does not fit at all · 5 = Fits completely. Total 15–75 (higher = more procrastination).</dd>
+              <dd class="adhd-meta__value">1 = Does not fit at all · 5 = Fits completely. Total 15–75.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Interpretation</dt>
-              <dd class="adhd-meta__value">Low: 15–35 · Moderate: 36–50 · High: 51–75.</dd>
-            </div>
-          </dl>
+</dl>
         </div>
         <p class="adhd-screening__intro">How well do these statements fit you?</p>
         <fieldset class="adhd-section">
@@ -210,68 +206,18 @@ summary: "Short self-check to understand your procrastination patterns."
             <span class="adhd-score__value" id="procrastination-score-value">0</span>
           </div>
           <p class="adhd-score__interpretation" id="procrastination-score-interpretation">Answer all questions to see your GPS score.</p>
-          <p class="adhd-score__note">The score is indicative and not a diagnosis. If procrastination impacts you a lot, coaching or further assessment can help.</p>
+          <p class="adhd-score__note">The result is calculated locally in your browser and is not stored. This is not a diagnostic test.</p>
         </div>
       </form>
       <aside class="adhd-screening__note">
         <h3>How the scale is calculated</h3>
         <ul>
-          <li>1 = Does not fit at all · … · 5 = Fits completely. Higher score = more procrastination.</li>
+          <li>1 = Does not fit at all · … · 5 = Fits completely.</li>
           <li>Statement 12 is reversed: stronger agreement gives a lower score (handled automatically).</li>
-          <li>Interpretation (guide): 15–35 low · 36–50 moderate · 51–75 high.</li>
         </ul>
         <p><strong>Reference:</strong><br>Lay, C. H. (1986). At last, my research article on procrastination. Journal of Research in Personality, 20(4), 474–495.<br><em>English adaptation by Rikta Psychiatry (2025).</em></p>
-        <p><strong>Important:</strong><br>This is not a diagnostic test. The result is indicative. If you struggle significantly, we recommend coaching or professional evaluation.</p>
+        <p><strong>Important:</strong><br>This is not a diagnostic test. If you struggle significantly, seek professional support.</p>
       </aside>
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Show results</p>
-      <h3>Get your result instantly — we’ll email it to you</h3>
-      <p>We unlock the result on the page and send it to your email so you can keep it.</p>
-      <p class="lead-modal__hint">We need your email so you can revisit your result and so we can send a brief plan for next steps.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="procrastination-test"
-      data-success-message="Thank you! Your result is now visible."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Procrastination Test">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>First name <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Last name <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Email <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Coaching processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy &amp; Data Protection Policy</a>, which explains how my data is handled in accordance with UK GDPR.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">We email your answers so you can save and review them later. We’ll follow up with a brief plan if needed. Thank you, Rikta Psychiatry team.</p>
-  </div>
-</div>

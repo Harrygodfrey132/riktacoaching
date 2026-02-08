@@ -102,7 +102,7 @@ url: "/en/test/"
         <p>15 statements about postponing, getting started, and self-regulation.</p>
         <ul class="tests-card__list">
           <li>General Procrastination Scale (Lay, 1986)</li>
-          <li>Shows low, moderate, or high levels</li>
+          <li>Shows your total score (no interpretation)</li>
         </ul>
         <a class="text-cta" href="/en/test/procrastination-test/">Take the procrastination test <span aria-hidden="true">&rarr;</span></a>
       </article>

@@ -25,7 +25,7 @@ aliases:
       <div aria-hidden="true" class="adhd-screening__glow"></div>
       <form class="adhd-screening__card" id="mdq-screening-form" data-locale="sv">
         <div class="adhd-screening__summary">
-          <p>Detta formulär är avsett som ett första steg och ersätter inte en fullständig medicinsk bedömning. Bipolär sjukdom är ett komplext tillstånd och en korrekt diagnos kan endast ställas efter en personlig bedömning av läkare. Ett förhöjt resultat kan dock tala för att du kan ha nytta av vidare utredning. Vid oro för psykisk hälsa bör du kontakta hälso- och sjukvård.</p>
+          <p>Detta formulär är avsett som ett första steg och ersätter inte en fullständig medicinsk bedömning. Bipolär sjukdom är ett komplext tillstånd och en korrekt diagnos kan endast ställas efter en personlig bedömning av läkare. Vid oro för psykisk hälsa bör du kontakta hälso- och sjukvård. Svar och resultat beräknas lokalt i din webbläsare och sparas inte.</p>
           <p><strong>Instruktion: Besvara frågorna så gott du kan.</strong></p>
         </div>
 
@@ -165,52 +165,4 @@ aliases:
   </div>
 </section>
 
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Visa resultat</p>
-      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
-      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
-      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="mdq-screening"
-      data-success-message="Tack! Resultatet visas nu."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="MDQ-självskattning">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>Förnamn <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Efternamn <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>E-post <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en kort plan för nästa steg. Tack, Rikta Psykiatri-teamet.</p>
-  </div>
-</div>
 {{< /rawhtml >}}

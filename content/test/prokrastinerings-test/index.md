@@ -9,7 +9,7 @@ url: "/test/prokrastinerings-test/"
 meta_title: "Prokrastineringstest GPS | Självskattning"
 meta_description: "GPS prokrastineringstest (15 påståenden) som visar hur prokrastinering påverkar vardagen."
 og_title: "Prokrastineringstest (GPS)"
-og_description: "Svara på 15 påståenden och se om dina uppskjutandemönster ligger på låg, måttlig eller hög nivå."
+og_description: "Svara på 15 påståenden och se din totalpoäng (utan tolkning)."
 summary: "Kort självskattning för att förstå dina uppskjutandemönster."
 ---
 
@@ -36,13 +36,9 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Skala</dt>
-              <dd class="adhd-meta__value">1 = Stämmer inte alls · 5 = Stämmer helt. Totalpoäng 15–75 (högre = mer prokrastinering).</dd>
+              <dd class="adhd-meta__value">1 = Stämmer inte alls · 5 = Stämmer helt. Totalpoäng 15–75.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Tolkning</dt>
-              <dd class="adhd-meta__value">Låg: 15–35 · Måttlig: 36–50 · Hög: 51–75.</dd>
-            </div>
-          </dl>
+</dl>
         </div>
         <p class="adhd-screening__intro">Hur väl stämmer följande påståenden in på dig?</p>
         <fieldset class="adhd-section">
@@ -210,68 +206,18 @@ summary: "Kort självskattning för att förstå dina uppskjutandemönster."
             <span class="adhd-score__value" id="procrastination-score-value">0</span>
           </div>
 	          <p class="adhd-score__interpretation" id="procrastination-score-interpretation">Besvara alla frågor för att se din GPS-poäng.</p>
-	          <p class="adhd-score__note">Poängen ger en indikation på uppskjutandemönster men ersätter inte professionell bedömning. Coachning eller vidare utredning kan hjälpa om du upplever att uppskjutandet påverkar dig mycket.</p>
+	          <p class="adhd-score__note">Resultatet beräknas lokalt i din webbläsare och sparas inte. Detta är inte ett diagnostiskt test.</p>
 	        </div>
 	      </form>
       <aside class="adhd-screening__note">
         <h3>Hur skalan räknas</h3>
         <ul>
-          <li>1 = Stämmer inte alls · … · 5 = Stämmer helt. Högre poäng = mer prokrastinering.</li>
+          <li>1 = Stämmer inte alls · … · 5 = Stämmer helt.</li>
           <li>Påstående 12 är omvänt: här ger högre enighet lägre poäng (justeras automatiskt).</li>
-          <li>Tolkning (vägledande): 15–35 låg · 36–50 måttlig · 51–75 hög.</li>
         </ul>
         <p><strong>Källhänvisning:</strong><br>Lay, C. H. (1986). At last, my research article on procrastination. Journal of Research in Personality, 20(4), 474–495.<br><em>Svensk översättning av Riktapsykiatri.se (2025).</em></p>
-	        <p><strong>Viktigt:</strong><br>Detta är inte ett diagnostiskt test. Resultatet är vägledande. Om du upplever betydande svårigheter rekommenderar vi coachning eller professionell bedömning.</p>
+	        <p><strong>Viktigt:</strong><br>Detta är inte ett diagnostiskt test. Om du upplever betydande svårigheter rekommenderar vi att du kontaktar hälso- och sjukvård eller söker professionellt stöd.</p>
 	      </aside>
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Visa resultat</p>
-      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
-      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
-      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="procrastination-test"
-      data-success-message="Tack! Resultatet visas nu."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Prokrastineringstest">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>Förnamn <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Efternamn <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>E-post <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en kort plan för nästa steg. Tack, Rikta Psykiatri-teamet.</p>
-  </div>
-</div>

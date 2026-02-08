@@ -38,11 +38,7 @@ og_description: "Complete our R-ARS-12 to get an indication of attention and reg
               <dt class="adhd-meta__label">Scale</dt>
               <dd class="adhd-meta__value">1 = Does not fit · 2 = Fits a little · 3 = Fits somewhat · 4 = Fits quite well · 5 = Fits completely.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Interpretation</dt>
-              <dd class="adhd-meta__value">12–27 low · 28–41 moderate · 42–60 high (guidance only, not diagnostic).</dd>
-            </div>
-          </dl>
+</dl>
         </div>
         <p class="adhd-screening__intro">Answer every question. The result is indicative and does not replace a clinical assessment.</p>
         <fieldset class="adhd-section">
@@ -180,64 +176,15 @@ og_description: "Complete our R-ARS-12 to get an indication of attention and reg
             <span class="adhd-score__value" id="adhd-score-value">0</span>
           </div>
           <p class="adhd-score__interpretation" id="adhd-score-interpretation">Answer all questions to see your R-ARS-12 score.</p>
-          <p class="adhd-score__note">This self-check doesn’t replace a clinical assessment. Contact Rikta Psychiatry for professional evaluation or coaching if your score is elevated.</p>
+          <p class="adhd-score__note">The result is calculated locally in your browser and is not stored. This self-check doesn’t replace a clinical assessment.</p>
         </div>
       </form>
       <aside class="adhd-screening__note">
         <h3>Legal and ethics</h3>
         <p><strong>R-ARS-12 is self-developed by RiktaPsychiatry.se (2025).</strong> The questions are original and not based on any protected form.</p>
-        <p><strong>Purpose:</strong> Provide an indicative view of attention and self-regulation difficulties in children and adults. This is not a diagnostic test. For high scores we recommend professional neuropsychiatric assessment.</p>
+        <p><strong>Purpose:</strong> Provide an indicative view of attention and self-regulation difficulties in children and adults. This is not a diagnostic test.</p>
         <p><strong>Citation:</strong> Rikta Psychiatry Attention &amp; Regulation Scale (R-ARS-12). © 2025 RiktaPsychiatry.se – Free to use with attribution.</p>
       </aside>
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Show results</p>
-      <h3>Get your result instantly — we’ll email it to you</h3>
-      <p>We unlock the result on the page and send it to your email so you can keep it.</p>
-      <p class="lead-modal__hint">We need your email so you can revisit your result and so we can send a brief plan for next steps.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="adhd-screening"
-      data-success-message="Thank you! Your result is now visible."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="ADHD Screening">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>First name <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Last name <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Email <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Coaching processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy &amp; Data Protection Policy</a>, which explains how my data is handled in accordance with UK GDPR.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">We email your answers so you can save and review them later. We’ll follow up with a brief plan if needed. Thank you, Rikta Psychiatry team.</p>
-  </div>
-</div>

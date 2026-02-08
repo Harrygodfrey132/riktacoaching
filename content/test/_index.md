@@ -120,7 +120,7 @@ url: "/test/"
 	        <p>15 påståenden om uppskjutande och att komma igång i vardagen.</p>
 	        <ul class="tests-card__list">
 	          <li>General Procrastination Scale (Lay, 1986)</li>
-	          <li>Visar låg, måttlig eller hög nivå</li>
+	          <li>Visar din totalpoäng (utan tolkning)</li>
 	        </ul>
 	        <a class="text-cta" href="/test/prokrastinerings-test/">Gör prokrastineringstestet <span aria-hidden="true">&rarr;</span></a>
 	      </article>

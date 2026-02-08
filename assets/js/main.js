@@ -206,7 +206,7 @@
   interpretationId,
   ranges,
   defaultInterpretation,
-  gateWithLeadForm = true,
+  gateWithLeadForm = false,
   onLeadRequired,
   scoreCalculator,
   buildInterpretation,
@@ -220,7 +220,7 @@
 
     const scoreBox = document.getElementById(scoreBoxId);
     const scoreValue = document.getElementById(scoreValueId);
-    const interpretationEl = document.getElementById(interpretationId);
+    const interpretationEl = interpretationId ? document.getElementById(interpretationId) : null;
     const resetButton = form.querySelector('.adhd-screening__reset');
     const getFormLocale = () => resolveLocale(form);
     let hideTimeout = null;
@@ -277,10 +277,11 @@
     }
 
     function updateScoreDisplay(score, interpretationObj, locale) {
-      if (!scoreBox || !scoreValue || !interpretationEl) return;
+      if (!scoreBox || !scoreValue) return;
       const activeLocale = locale || getFormLocale();
-      const activeRanges = getRanges(activeLocale);
       scoreValue.textContent = String(score);
+      if (!interpretationEl) return;
+      const activeRanges = getRanges(activeLocale);
       removeInterpretationClasses();
       const match = interpretationObj || activeRanges.find(range => score <= range.max) || activeRanges[activeRanges.length - 1];
       interpretationEl.textContent = (match && match.text) ? match.text : getDefaultInterpretation(activeLocale);
@@ -390,10 +391,12 @@
     if (resetButton) {
       resetButton.addEventListener('click', () => {
         form.reset();
-        if (scoreBox && interpretationEl) {
+        if (scoreBox) {
           scoreValue.textContent = '0';
-          interpretationEl.textContent = getDefaultInterpretation(getFormLocale());
-          removeInterpretationClasses();
+          if (interpretationEl) {
+            interpretationEl.textContent = getDefaultInterpretation(getFormLocale());
+            removeInterpretationClasses();
+          }
           hideScoreBox();
         }
         if (typeof metaUpdater === 'function') {
@@ -769,227 +772,8 @@
     }
   }
 
-  async function sendScreeningToKaddio({ form, payload, formContext, leadSourceOverride, statusTarget }){
-    if (!form) return;
-    const firstNameInput = form.querySelector('input[name="firstName"]');
-    const lastNameInput = form.querySelector('input[name="lastName"]');
-    const emailInput = form.querySelector('input[name="email"]');
-    const firstName = ((firstNameInput && firstNameInput.value) || '').trim();
-    const lastName = ((lastNameInput && lastNameInput.value) || '').trim();
-    const email = ((emailInput && emailInput.value) || '').trim();
-    const statusEl = statusTarget || form.querySelector('[data-form-status]');
-    const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
-    const isEn = lang.startsWith('en');
-
-    const setStatus = (msg, type = 'info') => {
-      if (!statusEl) return;
-      statusEl.textContent = msg || '';
-      statusEl.dataset.statusType = type;
-      statusEl.hidden = !msg;
-    };
-
-    if (!email) {
-      setStatus(isEn ? 'Please add your email.' : 'Lägg till din e-post.', 'error');
-      return;
-    }
-    const fullName = [firstName, lastName].filter(Boolean).join(' ').trim() || firstName || lastName || '';
-    if (!fullName) {
-      setStatus(isEn ? 'Please add your name.' : 'Lägg till ditt namn.', 'error');
-      return;
-    }
-
-    const lines = [];
-    if (payload && payload.testName) lines.push(`Test: ${payload.testName}`);
-    lines.push(`Total: ${payload.total || 0}`);
-    if (payload && payload.interpretation) lines.push(`Tolkning: ${payload.interpretation}`);
-    lines.push('Svar:');
-    ((payload && payload.answers) || []).forEach(item => {
-      lines.push(`${item.number}. ${item.prompt} — ${item.answer || 'Ej angivet'}`);
-    });
-    const description = lines.join('\n');
-
-    const body = {
-      fullName,
-      email,
-      description,
-      leadSource: leadSourceOverride || 'Procrastination Test',
-      metadata: {
-        path: window.location.pathname,
-        formContext: formContext || 'procrastination-test',
-        locale: resolveLocale(form)
-      }
-    };
-
-    try {
-      setStatus(isEn ? 'Sending your results…' : 'Skickar dina resultat…', 'info');
-      await postToBackend(body);
-      setStatus(isEn ? 'Thank you! We’ll contact you with your results.' : 'Tack! Vi kontaktar dig med dina resultat.', 'success');
-    } catch (err) {
-      const status = err && err.status;
-      const message = err && err.message;
-      const msg = status === 429
-        ? (isEn ? 'We are handling many requests right now. Please try again shortly.' : 'Vi hanterar många förfrågningar just nu. Försök igen om en stund.')
-        : (message || (isEn ? 'Could not submit right now.' : 'Det gick inte att skicka just nu.'));
-      setStatus(msg, 'error');
-    }
-  }
-
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
   contactForms.forEach(form => bindKaddioForm(form));
-
-  // ----- Lead capture modal (Kaddio) -----
-  const leadModal = document.getElementById('adhd-lead-modal');
-  const leadForm = document.getElementById('kaddio-lead-form');
-  const leadDescription = document.getElementById('adhd-lead-description');
-  const leadSource = document.getElementById('adhd-lead-source');
-  const leadRating = document.getElementById('adhd-lead-rating');
-  const leadSubmitButton = document.getElementById('adhd-lead-submit');
-  const leadCloseTriggers = document.querySelectorAll('[data-close-lead]');
-  let leadResultPayload = null;
-
-  function buildLeadDescription(result) {
-    if (!result) return '';
-    const locale = (((result && result.locale) || (IS_EN ? 'en' : 'sv'))).toLowerCase();
-    const isEn = locale.startsWith('en');
-    const lines = [
-      result.testName || (isEn ? 'Screening results' : 'Självtestresultat'),
-      `${isEn ? 'Total score' : 'Totalpoäng'}: ${result.total}`,
-      `${isEn ? 'Interpretation' : 'Tolkning'}: ${result.interpretation}`,
-      isEn ? 'Answers:' : 'Svar:'
-    ];
-    (result.answers || []).forEach(item => {
-      const prompt = item.prompt || '';
-      const answer = item.answer || (isEn ? 'Not provided' : 'Ej angivet');
-      lines.push(`${item.number}. ${prompt} — ${answer}`);
-    });
-    if (result.meta && result.meta.screenResult) {
-      lines.push(`${isEn ? 'MDQ screen result' : 'MDQ-screenresultat'}: ${result.meta.screenResult}`);
-    }
-    if (result.meta && typeof result.meta.q1YesCount !== 'undefined') {
-      lines.push(`${isEn ? 'Question 1 YES count' : 'Antal JA i fråga 1'}: ${result.meta.q1YesCount}`);
-    }
-    if (result.meta && result.meta.functionalDifficulty) {
-      lines.push(`${isEn ? 'Functional difficulty' : 'Funktionell svårighet'}: ${result.meta.functionalDifficulty}`);
-    }
-    return lines.join('\n');
-  }
-
-  function openLeadModal(result) {
-    // Outside EU/UK we do not collect or submit screening (health) data. Still show the local score.
-    if (!isPiiAllowed()) {
-      if (result && typeof result.renderResult === 'function') {
-        result.renderResult();
-        if (typeof result.onCompleted === 'function') {
-          result.onCompleted(result, result.form);
-        }
-      }
-      return;
-    }
-    if (!leadModal || !leadForm) return;
-    setFormStatus(leadForm, '', 'info');
-    leadResultPayload = result;
-    if (leadSource) {
-      const derivedSource = (((result && result.testName) || '').toLowerCase().includes('autism'))
-        ? 'Autism Investigation'
-        : 'ADHD Investigation';
-      if (!leadSource.value || leadSource.value === 'ADHD Investigation') {
-        leadSource.value = derivedSource;
-      }
-    }
-    if (leadRating) {
-      const ratingValue = Math.min(result.total || 0, 50);
-      leadRating.value = ratingValue;
-    }
-    if (leadDescription) {
-      leadDescription.value = buildLeadDescription(result);
-    }
-    leadModal.removeAttribute('hidden');
-    document.body.classList.add('lead-modal-open');
-    const emailInput = leadForm.querySelector('#Email, #lead-email');
-    if (emailInput && typeof emailInput.focus === 'function') {
-      emailInput.focus({ preventScroll: true });
-    }
-  }
-
-  function closeLeadModal() {
-    if (!leadModal) return;
-    leadModal.setAttribute('hidden', true);
-    document.body.classList.remove('lead-modal-open');
-    if (leadSubmitButton) {
-      leadSubmitButton.removeAttribute('disabled');
-    }
-  }
-
-  function handleLeadSuccess() {
-    closeLeadModal();
-    if (leadResultPayload && typeof leadResultPayload.renderResult === 'function') {
-      leadResultPayload.renderResult();
-      if (typeof leadResultPayload.onCompleted === 'function') {
-        leadResultPayload.onCompleted(leadResultPayload, leadResultPayload.form);
-      }
-      const scoreBox = document.getElementById('adhd-score');
-      if (scoreBox) {
-        const targetY = scoreBox.getBoundingClientRect().top + window.pageYOffset - OFFSET;
-        smoothScrollTo(targetY);
-      }
-      leadResultPayload = null;
-    }
-  }
-
-  leadCloseTriggers.forEach(trigger => {
-    trigger.addEventListener('click', () => {
-      closeLeadModal();
-    });
-  });
-
-  if (leadForm) {
-    geoGateReady.then(() => {
-      if (!isPiiAllowed()) return;
-      bindKaddioForm(leadForm, {
-        augmentPayload(basePayload){
-          if (!leadResultPayload) {
-            const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
-            const message = lang.startsWith('en')
-              ? 'Please complete the screening before sending.'
-              : 'Slutför självtestet innan du skickar.';
-            throw new Error(message);
-          }
-          const lang = ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
-          const screeningMeta = {
-            testName: leadResultPayload.testName,
-            total: leadResultPayload.total,
-            interpretation: leadResultPayload.interpretation,
-            answers: leadResultPayload.answers
-          };
-          const consentMeta = buildConsentMetadata({
-            // Consent checkbox lives in the lead modal (same place as personal details).
-            screeningForm: leadForm,
-            testName: leadResultPayload.testName,
-            formContext: basePayload && basePayload.metadata ? basePayload.metadata.formContext : '',
-            locale: leadResultPayload.locale
-          });
-          if (!consentMeta || consentMeta.status !== true) {
-            const msg = lang.startsWith('en')
-              ? 'Please confirm the consent checkbox before sending your results.'
-              : 'Bekräfta samtycke-rutan innan du skickar dina resultat.';
-            throw new Error(msg);
-          }
-          const derivedDescription = (leadDescription && leadDescription.value)
-            || buildLeadDescription(leadResultPayload)
-            || basePayload.description;
-          return {
-            description: derivedDescription,
-            leadSource: (((leadSource && leadSource.value) || basePayload.leadSource || 'Screening form')).trim(),
-            metadata: mergeMetadata(basePayload.metadata, {
-              screening: screeningMeta,
-              consent: consentMeta
-            })
-          };
-        },
-        onSuccess: handleLeadSuccess
-      });
-    });
-  }
 
   initScreeningForm({
     formId: 'adhd-screening-form',
@@ -997,23 +781,8 @@
     scoreBoxId: 'adhd-score',
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your R-ARS-12 score.',
-      sv: 'Besvara alla frågor för att se din R-ARS-12 poäng.'
-    },
-    ranges: (locale) => (locale === 'en'
-      ? [
-          { max: 27, text: '12–27: low level of attention/self-regulation difficulties.' },
-          { max: 41, text: '28–41: moderate level — can affect daily life. Planning support or coaching may help.', className: 'is-amber' },
-          { max: Infinity, text: '42–60: high level. We recommend further evaluation or a neuropsychiatric assessment.', className: 'is-red' }
-        ]
-      : [
-          { max: 27, text: '12–27: låg grad av uppmärksamhets-/regleringssvårigheter.' },
-          { max: 41, text: '28–41: måttlig nivå – kan påverka vardagen. Planeringsstöd eller coachning kan hjälpa.', className: 'is-amber' },
-          { max: Infinity, text: '42–60: hög nivå. Rekommenderar vidare bedömning eller neuropsykiatrisk utredning.', className: 'is-red' }
-        ]),
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
+    defaultInterpretation: '',
+    ranges: [],
     testName: {
       en: 'Attention & Regulation Scale (R-ARS-12)',
       sv: 'R-ARS-12 (självskattning)'
@@ -1026,21 +795,8 @@
     scoreBoxId: 'autism-score',
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your AQ-10 score.',
-      sv: 'Besvara alla frågor för att se din AQ-10 poäng.'
-    },
-    ranges: (locale) => (locale === 'en'
-      ? [
-          { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still experience difficulties.' },
-          { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional autism assessment for a clear evaluation.', className: 'is-amber' }
-        ]
-      : [
-          { max: 5, text: '0–5 poäng: inget tydligt utslag i detta självtest. Sök vård om du ändå upplever svårigheter.' },
-          { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell autismutredning för säker bedömning.', className: 'is-amber' }
-        ]),
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
+    defaultInterpretation: '',
+    ranges: [],
     testName: {
       en: 'Autism Screening (AQ-10)',
       sv: 'AQ-10 – självtest för autism'
@@ -1053,21 +809,8 @@
     scoreBoxId: 'autism-child-score',
     scoreValueId: 'autism-child-score-value',
     interpretationId: 'autism-child-score-interpretation',
-    defaultInterpretation: {
-      sv: 'Besvara alla frågor för att se din AQ-10 (barn) poäng.',
-      en: 'Answer all questions to see your AQ-10 (child) score.'
-    },
-    ranges: (locale) => (locale === 'sv'
-      ? [
-          { max: 5, text: '0–5 poäng: inget tydligt utslag i detta självtest. Sök vård om du ändå upplever svårigheter.' },
-          { max: Infinity, text: '6–10 poäng: förhöjd sannolikhet. Rekommenderar professionell bedömning.', className: 'is-amber' }
-        ]
-      : [
-          { max: 5, text: '0–5 points: no clear indication in this screening. Seek care if you still have concerns.' },
-          { max: Infinity, text: '6–10 points: elevated likelihood. We recommend a professional assessment.', className: 'is-amber' }
-        ]),
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
+    defaultInterpretation: '',
+    ranges: [],
     testName: {
       en: 'AQ-10 (Child version)',
       sv: 'AQ-10 (barnversionen)'
@@ -1080,13 +823,9 @@
     scoreBoxId: 'snap-score',
     scoreValueId: 'snap-total-score',
     interpretationId: 'snap-score-interpretation',
-    defaultInterpretation: {
-      en: 'If the total score is 13 or above in either of the inattention or hyperactivity/impulsivity sections, it may suggest a presentation of ADHD and you may consider a referral for a comprehensive ADHD assessment.'
-    },
+    defaultInterpretation: '',
     buildInterpretation() {
-      return {
-        text: 'If the total score is 13 or above in either of the inattention or hyperactivity/impulsivity sections, it may suggest a presentation of ADHD and you may consider a referral for a comprehensive ADHD assessment.'
-      };
+      return { text: '' };
     },
     scoreCalculator(formData) {
       let total = 0;
@@ -1130,8 +869,6 @@
       if (hyperEl) hyperEl.textContent = String(hyperactivity);
       if (oppositionEl) oppositionEl.textContent = String(opposition);
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       en: 'SNAP-IV 26-Item Parent Rating Scale',
       sv: 'SNAP-IV 26-Item Parent Rating Scale'
@@ -1144,23 +881,8 @@
     scoreBoxId: 'add-score',
     scoreValueId: 'add-score-value',
     interpretationId: 'add-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your inattentive symptoms score.',
-      sv: 'Besvara alla frågor för att se din ouppmärksamhetspoäng.'
-    },
-    ranges: (locale) => (locale === 'en'
-      ? [
-          { max: 20, text: '9–20: lower frequency of inattentive symptoms in this checklist.' },
-          { max: 32, text: '21–32: moderate frequency. If this impacts daily life, consider a professional assessment.', className: 'is-amber' },
-          { max: Infinity, text: '33–45: higher frequency. We recommend discussing these symptoms with a clinician.', className: 'is-red' }
-        ]
-      : [
-          { max: 20, text: '9–20: lägre frekvens av ouppmärksamhetssymtom i denna checklista.' },
-          { max: 32, text: '21–32: måttlig frekvens. Om det påverkar vardagen, överväg professionell bedömning.', className: 'is-amber' },
-          { max: Infinity, text: '33–45: högre frekvens. Rekommenderar att diskutera symtomen med vårdpersonal.', className: 'is-red' }
-        ]),
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
+    defaultInterpretation: '',
+    ranges: [],
     testName: {
       en: 'ADD Inattentive Symptoms',
       sv: 'ADD – ouppmärksamhetssymtom'
@@ -1173,14 +895,10 @@
     scoreBoxId: 'asrs-vuxna-score',
     scoreValueId: 'asrs-vuxna-score-value',
     interpretationId: 'asrs-vuxna-score-interpretation',
-    defaultInterpretation: {
-      sv: 'Detta är ett självskattningsformulär och ersätter inte en klinisk bedömning.'
-    },
+    defaultInterpretation: '',
     buildInterpretation() {
-      return { text: 'Detta är ett självskattningsformulär och ersätter inte en klinisk bedömning.' };
+      return { text: '' };
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       sv: 'ASRS v1.1 (vuxna)',
       en: 'ASRS v1.1 (adults)'
@@ -1193,14 +911,10 @@
     scoreBoxId: 'snap-barn-score',
     scoreValueId: 'snap-barn-score-value',
     interpretationId: 'snap-barn-score-interpretation',
-    defaultInterpretation: {
-      sv: 'Detta är ett screeninginstrument och ersätter inte en klinisk bedömning.'
-    },
+    defaultInterpretation: '',
     buildInterpretation() {
-      return { text: 'Detta är ett screeninginstrument och ersätter inte en klinisk bedömning.' };
+      return { text: '' };
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       sv: 'SNAP-IV (barn)',
       en: 'SNAP-IV (child)'
@@ -1213,16 +927,8 @@
     scoreBoxId: 'raads14-score',
     scoreValueId: 'raads14-score-value',
     interpretationId: 'raads14-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your RAADS-14 score.'
-    },
-    ranges: [
-      { max: 13, text: '0–13: low level (assumed guide only).' },
-      { max: 27, text: '14–27: moderate level (assumed guide only).', className: 'is-amber' },
-      { max: Infinity, text: '28–42: elevated level (assumed guide only).', className: 'is-red' }
-    ],
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
+    defaultInterpretation: '',
+    ranges: [],
     testName: {
       en: 'RAADS-14 Screen (adult)'
     }
@@ -1234,14 +940,8 @@
     scoreBoxId: 'raads14-vuxna-score',
     scoreValueId: 'raads14-vuxna-score-value',
     interpretationId: 'raads14-vuxna-score-interpretation',
-    defaultInterpretation: {
-      sv: 'Besvara alla frågor för att se din RAADS-14-poäng.'
-    },
-    ranges: [
-      { max: 13, text: '0–13: låg nivå (vägledande).' },
-      { max: 27, text: '14–27: måttlig nivå (vägledande).', className: 'is-amber' },
-      { max: Infinity, text: '28–42: förhöjd nivå (vägledande).', className: 'is-red' }
-    ],
+    defaultInterpretation: '',
+    ranges: [],
     transformValue(value, questionNumber) {
       const numeric = Number(value);
       if (questionNumber === 6) {
@@ -1249,8 +949,6 @@
       }
       return numeric;
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       sv: 'RAADS-14 Screen (vuxna)',
       en: 'RAADS-14 Screen (adult)'
@@ -1263,21 +961,8 @@
     scoreBoxId: 'procrastination-score',
     scoreValueId: 'procrastination-score-value',
     interpretationId: 'procrastination-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your GPS score.',
-      sv: 'Besvara alla frågor för att se din GPS-poäng.'
-    },
-    ranges: (locale) => (locale === 'en'
-      ? [
-          { max: 35, text: '15–35: low level of procrastination. Keep the routines that work.' },
-          { max: 50, text: '36–50: moderate level. Planning support, time blocking, or coaching may help.', className: 'is-amber' },
-          { max: Infinity, text: '51–75: high level. We recommend targeted strategies and possibly NPF-focused coaching.', className: 'is-red' }
-        ]
-      : [
-          { max: 35, text: '15–35: låg nivå av prokrastinering. Fortsätt med de rutiner som fungerar.' },
-          { max: 50, text: '36–50: måttlig nivå. Du kan ha nytta av planeringsstöd, tidsblockering eller coachning.', className: 'is-amber' },
-          { max: Infinity, text: '51–75: hög nivå. Rekommenderar riktade strategier och eventuell NPF-inriktad coachning.', className: 'is-red' }
-        ]),
+    defaultInterpretation: '',
+    ranges: [],
     transformValue(value, questionNumber){
       // Question 12 is reverse-scored (agreeing reduces procrastination score)
       if(questionNumber === 12){
@@ -1286,8 +971,6 @@
       }
       return Number(value);
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       en: 'Procrastination Test (GPS)',
       sv: 'Prokrastineringstest (GPS)'
@@ -1300,16 +983,9 @@
     scoreBoxId: 'gad7-score',
     scoreValueId: 'gad7-score-value',
     interpretationId: 'gad7-score-interpretation',
-    defaultInterpretation: {
-      en: 'Answer all questions to see your GAD-7 score.',
-      sv: 'Räkna samman poängen. Summa poäng:'
-    },
-    buildInterpretation(score, locale){
-      const isSv = (locale || '').toLowerCase().startsWith('sv');
-      if (score <= 4) return { text: isSv ? 'Minimal ångest' : 'Minimal anxiety' };
-      if (score <= 9) return { text: isSv ? 'Lindrig ångest' : 'Mild anxiety' };
-      if (score <= 14) return { text: isSv ? 'Måttlig ångest' : 'Moderate anxiety' };
-      return { text: isSv ? 'Svår ångest' : 'Severe anxiety' };
+    defaultInterpretation: '',
+    buildInterpretation() {
+      return { text: '' };
     },
     scoreCalculator(formData){
       let total = 0;
@@ -1329,8 +1005,6 @@
         }
       };
     },
-    gateWithLeadForm: () => isPiiAllowed(),
-    onLeadRequired: openLeadModal,
     testName: {
       en: 'GAD-7 Anxiety',
       sv: 'GAD-7 – ångest'
@@ -1361,7 +1035,6 @@
       const severity = payload && payload.interpretation ? payload.interpretation : '';
       const resultsLabel = isSv ? 'Resultat' : 'Results';
       const responseLabel = isSv ? 'Svar' : 'Response';
-      const severityLabel = isSv ? 'Ångestnivå' : 'Severity';
       const functionalLabel = isSv ? 'Funktionspåverkan' : 'Functional difficulty';
 
       const listItems = rows.map(row => (
@@ -1372,7 +1045,6 @@
       resultsEl.innerHTML =
         `<h3>${resultsLabel}</h3>` +
         `<ul>${listItems}</ul>` +
-        `<p><strong>${severityLabel}:</strong> ${severity}</p>` +
         `<p><strong>${functionalLabel}:</strong> ${functionalAnswer}</p>`;
     }
   });
@@ -1388,9 +1060,6 @@
     const locale = ((form.dataset.locale || document.documentElement.lang || 'sv') || '').toLowerCase();
     const isSv = locale.startsWith('sv');
     const yesValue = isSv ? 'Ja' : 'Yes';
-    const positiveImpactValues = isSv ? ['Problem', 'Allvarliga problem'] : ['Moderate problem', 'Serious problem'];
-    const positiveLabel = isSv ? 'Förhöjt utslag i MDQ' : 'Positive screen';
-    const negativeLabel = isSv ? 'Ej förhöjt utslag i MDQ' : 'Negative screen';
 
     function collectQ1Responses() {
       const items = [];
@@ -1409,7 +1078,7 @@
       if (!scoreBox || !scoreValue || !interpretationEl || !resultsEl) return;
       scoreBox.hidden = false;
       scoreBox.dataset.state = 'visible';
-      scoreValue.textContent = result.screenResult;
+      scoreValue.textContent = String(result.q1YesCount);
       interpretationEl.textContent = isSv
         ? 'Detta är ett resultat från en självskattning och inte en diagnos.'
         : 'This is a screening result, not a diagnosis.';
@@ -1442,40 +1111,14 @@
       const q2 = (form.querySelector('input[name="q2"]:checked') || {}).value || '';
       const q3 = (form.querySelector('input[name="q3"]:checked') || {}).value || '';
 
-      const positive = q1YesCount >= 7 && q2 === yesValue && positiveImpactValues.includes(q3);
-      const screenResult = positive ? positiveLabel : negativeLabel;
-
       const resultPayload = {
         q1Items,
         q1YesCount,
         q2,
-        q3,
-        screenResult
+        q3
       };
 
-      const answers = [
-        ...q1Items.map(item => ({ number: item.number, prompt: item.prompt, answer: item.answer })),
-        { number: 14, prompt: isSv ? 'Fråga 2' : 'Question 2', answer: q2 },
-        { number: 15, prompt: isSv ? 'Fråga 3' : 'Question 3', answer: q3 }
-      ];
-
-      const payload = {
-        testName: isSv ? 'MDQ – självskattning vid misstanke om bipolär sjukdom' : 'MDQ Bipolar Screening',
-        total: 0,
-        answered: 2 + q1Items.length,
-        meta: {
-          q1YesCount,
-          q2,
-          q3,
-          screenResult
-        },
-        interpretation: screenResult,
-        answers,
-        locale,
-        renderResult: () => renderResults(resultPayload)
-      };
-
-      openLeadModal(payload);
+      renderResults(resultPayload);
     });
 
     if (resetButton) {

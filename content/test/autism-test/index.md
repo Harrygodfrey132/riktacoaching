@@ -8,9 +8,9 @@ aliases:
   - /autism-test/
 meta_title: "Autismtest AQ-10 | Självskattning online | Rikta Psykiatri"
 meta_keywords: "autismtest, AQ-10, självtest autism, autistiska drag, Rikta Psykiatri"
-meta_description: "Gör AQ-10 autismtest online. Kort självskattning med vägledning om nästa steg (ej diagnos)."
+meta_description: "Gör AQ-10 autismtest online och se din totalpoäng. Självskattning, ej diagnos."
 og_title: "AQ-10 från Rikta Psykiatri"
-og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autism och få rekommendationer om fortsatt stöd."
+og_description: "Besvara AQ-10 för att se din totalpoäng och reflektera över autistiska drag (ej diagnos)."
 ---
 
 <section class="adhd-screening">
@@ -40,7 +40,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Syfte</dt>
-              <dd class="adhd-meta__value">Tidig vägledning om en diagnostisk autismutredning bör bokas.</dd>
+              <dd class="adhd-meta__value">Självskattning av autistiska drag (screening, ej diagnos).</dd>
             </div>
             <div class="adhd-meta__row">
               <dt class="adhd-meta__label">Skala</dt>
@@ -48,7 +48,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
             </div>
           </dl>
         </div>
-        <p class="adhd-screening__intro">Svara på varje fråga. Totalt 0–10 poäng. Ett resultat på 6 eller mer talar för förhöjd sannolikhet och vidare utredning.</p>
+        <p class="adhd-screening__intro">Svara på varje fråga. Totalt 0–10 poäng. Resultatet är en totalpoäng utan tolkning.</p>
         <fieldset class="adhd-section">
           <legend>AQ-10 – Svensk översättning</legend>
           <ol class="adhd-question-list">
@@ -154,7 +154,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
             <span class="adhd-score__value" id="autism-score-value">0</span>
           </div>
 	          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din AQ-10 poäng.</p>
-	          <p class="adhd-score__note">Självtestet ersätter inte en klinisk autismutredning. Kontakta Rikta Psykiatri för professionell bedömning och vägledning kring vidare utredning och stöd.</p>
+	          <p class="adhd-score__note">Resultatet beräknas lokalt i din webbläsare och sparas inte. Självtestet ersätter inte en klinisk autismutredning.</p>
 	        </div>
 	      </form>
       <aside class="adhd-screening__note">
@@ -162,7 +162,7 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
 	        <ul>
 	          <li>Varje fråga ger 1 poäng när du håller med (delvis eller helt) om ett autistiskt drag.</li>
 	          <li>Fråga 4 och 7 är omvända: här ger oenighet 1 poäng.</li>
-	          <li>Totalpoäng 0–10. Resultat ≥ 6 → förhöjt utslag, vidare utredning kan vara aktuell.</li>
+	          <li>Totalpoäng 0–10.</li>
 	        </ul>
         <p><strong>Källor:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
@@ -171,57 +171,8 @@ og_description: "Besvara AQ-10 för att identifiera mönster kopplade till autis
         Svensk översättning av Riktapsykiatri.se (2025), baserad på AQ-10.</p>
 	        <p><strong>Viktigt:</strong><br>
 	        Detta är ett självskattningsformulär, inte ett diagnostiskt test.<br>
-	        Resultatet ger en indikation på om du kan ha nytta av en vidare utredning för autism, men kan inte användas för att fastställa diagnos. Om du får ett förhöjt resultat rekommenderar vi att du kontaktar vårdpersonal eller bokar en professionell neuropsykiatrisk bedömning.</p>
+	        Resultatet kan inte användas för att fastställa diagnos. Vid oro för din hälsa bör du kontakta hälso- och sjukvård.</p>
 	      </aside>
     </div>
   </div>
 </section>
-
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Visa resultat</p>
-      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
-      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
-      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="autism-screening"
-      data-success-message="Tack! Resultatet visas nu."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="Autism-självtest">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>Förnamn <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Efternamn <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>E-post <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en mer detaljerad sammanställning om det behövs. Tack, Rikta Psykiatri-teamet.</p>
-  </div>
-</div>

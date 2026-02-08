@@ -200,29 +200,12 @@ og_description: "RAADS-14 Screen – förkortad självskattning för autism hos 
       </form>
 
       <aside class="adhd-screening__note">
-        <h3>Rättning</h3>
+        <h3>Poäng</h3>
         <ul>
           <li>Alla items (utom fråga 6 som är reverserad och därför märkt *) skattas mellan 3 och 0.</li>
-          <li>Den sammanlagda poängen kan variera mellan 0 och 42.</li>
+          <li>Totalpoängen kan variera mellan 0 och 42.</li>
         </ul>
-        <h3>RAADS-14 Screen innehåller tre subskalor</h3>
-        <ul>
-          <li>Mentiliseringssvårigheter: fråga 1, 4, 9, 11, 12, 13, 14 (förklarar 32,5% av variansen)</li>
-          <li>Social ångest: fråga 3, 5, 6, 8 (förklarar 8,5% av variansen)</li>
-          <li>Sensorisk reaktivitet: fråga 2, 7, 10 (förklarar 6,4% av variansen)</li>
-        </ul>
-        <h3>Medianpoäng i olika populationer</h3>
-        <ul>
-          <li>32 poäng hos 135 vuxna med normal begåvning och diagnostiserade med autismspektrumstörning.</li>
-          <li>15 poäng hos 344 vuxna med normal begåvning och diagnostiserade med ADHD.</li>
-          <li>11 poäng i en sammanslagen grupp bestående av 164 vuxna med andra psykiatriska diagnoser: psykosjukdom (n=30), affektiv sjukdom (n=59), ångestsyndrom eller OCD (n=67) och borderline personlighetsstörning (n=39). Eftersom vissa uppgivit flera olika diagnoser överstiger summan av diagnoser antalet deltagare.</li>
-          <li>3 poäng bland 590 vuxna icke-psykiatriska kontroller.</li>
-        </ul>
-        <h3>Cut-off</h3>
-        <ul>
-          <li>En cut-off på 14 poäng eller över, resulterade i 97% sensitivitet och en specificitet på: 46% för ADHD-gruppen, 64% för den sammanslagna gruppen med psykiatriska patienter som inte hade en känd autismspektrumstörning eller ADHD, och 95% för gruppen av vuxna icke-psykiatriska kontroller.</li>
-          <li>Beräkning av den diskriminerande förmågan hos de första fem frågorna i RAADS-14 Screen gav följande resultat: En cut-off på 4 poäng eller fler (av maximalt 15 poäng) gav 93% sensitivitet och en specificitet på 45% i ADHD-gruppen, 49% hos gruppen med andra psykiatriska diagnoser än autismspektrumstörning eller ADHD, och 90% bland icke-psykiatriska kontroller.</li>
-        </ul>
+        <p><strong>Viktigt:</strong> Detta är ett screeninginstrument och ersätter inte en klinisk bedömning.</p>
         <h3>Referens</h3>
         <p>Eriksson JM, Andersen LM, Bejerot S. RAADS-14 Screen: Validity of a screening tool for Autism Spectrum Disorder in an adult psychiatric population. <em>Molecular Autism</em> 2013;4:49.</p>
       </aside>
@@ -230,52 +213,4 @@ og_description: "RAADS-14 Screen – förkortad självskattning för autism hos 
   </div>
 </section>
 
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Stäng formulär" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Visa resultat</p>
-      <h3>Få resultatet direkt – vi mejlar det till dig</h3>
-      <p>Vi låser upp resultatet på sidan och skickar det samtidigt till din e-post så du har det sparat.</p>
-      <p class="lead-modal__hint">Vi behöver din e-post för att du ska kunna gå tillbaka till resultatet och för att skicka en kort plan för nästa steg.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="raads14-vuxna"
-      data-success-message="Tack! Resultatet visas nu."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="RAADS-14 (vuxna)">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>Förnamn <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Efternamn <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>E-post <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Samtycke och integritetsbekräftelse: Jag samtycker uttryckligen till att Rikta Psykiatri behandlar mina person- och hälsouppgifter i syfte att ge en preliminär bedömning. Jag förstår att uppgifterna lagras säkert i klinikens journalsystem (Kaddio). Jag bekräftar även att jag har läst och godkänt <a href="/integritetspolicy/" class="privacy-link">Integritetspolicyn</a>, som förklarar hur mina uppgifter hanteras enligt GDPR och Patientdatalagen.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Skicka &amp; visa resultat</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Avbryt</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">Vi mejlar dina svar så du kan spara dem och följa upp dem senare. Efteråt återkommer vi med en kort plan för nästa steg. Tack, Rikta Psykiatri-teamet.</p>
-  </div>
-</div>
 {{< /rawhtml >}}

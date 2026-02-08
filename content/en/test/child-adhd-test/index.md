@@ -285,8 +285,8 @@ og_description: "Parent rating scale for ADHD symptoms and oppositional defiant 
               <span id="snap-opposition-score">0</span>
             </div>
           </div>
-          <p class="adhd-score__interpretation" id="snap-score-interpretation">If the total score is 13 or above in either of the inattention or hyperactivity/impulsivity sections, it may suggest a presentation of ADHD and you may consider a referral for a comprehensive ADHD assessment.</p>
-          <p class="adhd-score__note">Please note: the SNAP-IV is a screening tool only. It is not designed to provide a diagnosis but may indicate whether further assessment is recommended.</p>
+          <p class="adhd-score__interpretation" id="snap-score-interpretation">Answer all questions to see your scores.</p>
+          <p class="adhd-score__note">The result is calculated locally in your browser and is not stored. SNAP-IV is a screening tool and does not provide a diagnosis.</p>
         </div>
       </form>
 
@@ -298,52 +298,4 @@ og_description: "Parent rating scale for ADHD symptoms and oppositional defiant 
   </div>
 </section>
 
-<div class="lead-modal" id="adhd-lead-modal" hidden>
-  <div class="lead-modal__overlay" data-close-lead></div>
-  <div class="lead-modal__dialog">
-    <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
-    <div class="lead-modal__intro">
-      <p class="lead-modal__eyebrow">Show results</p>
-      <h3>Get your result instantly — we’ll email it to you</h3>
-      <p>We unlock the result on the page and send it to your email so you can keep it.</p>
-      <p class="lead-modal__hint">We need your email so you can revisit your result and so we can send a brief plan for next steps.</p>
-    </div>
-    <form id="kaddio-lead-form"
-      class="lead-modal__form"
-      data-kaddio-form="lead"
-      data-form-context="snap-child-adhd"
-      data-success-message="Thank you! Your result is now visible."
-      action="/api/kaddio/contact"
-      method="POST"
-      accept-charset="UTF-8">
-      <input type="hidden" name="leadSource" id="adhd-lead-source" value="SNAP-IV Parent Rating Scale">
-      <input type="hidden" name="rating" id="adhd-lead-rating" value="">
-      <textarea id="adhd-lead-description" name="description" hidden></textarea>
-      <div class="lead-modal__fields">
-        <label class="lead-modal__field">
-          <span>First name <span class="lead-required">*</span></span>
-          <input type="text" id="First_Name" name="firstName" maxlength="40" autocomplete="given-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Last name <span class="lead-required">*</span></span>
-          <input type="text" id="Last_Name" name="lastName" maxlength="80" autocomplete="family-name" required>
-        </label>
-        <label class="lead-modal__field">
-          <span>Email <span class="lead-required">*</span></span>
-          <input type="email" id="Email" name="email" maxlength="100" autocomplete="email" required>
-        </label>
-      </div>
-      <label class="lead-modal__consent">
-        <input type="checkbox" name="consentAcknowledgement" required>
-        <span>Consent and Privacy Acknowledgement: I explicitly consent to Rikta Coaching processing my personal and health data for the purpose of providing a preliminary assessment. I understand that this data will be stored securely in the clinic's medical record system (Kaddio). I also confirm that I have read and accepted the <a href="/en/privacy-policy/" class="privacy-link">Privacy &amp; Data Protection Policy</a>, which explains how my data is handled in accordance with UK GDPR.</span>
-      </label>
-      <div class="lead-modal__actions">
-        <button class="btn primary" id="adhd-lead-submit" type="submit">Send &amp; show result</button>
-        <button class="btn secondary lead-modal__cancel" type="button" data-close-lead>Cancel</button>
-      </div>
-      <p class="lead-modal__status" data-form-status aria-live="polite" hidden></p>
-    </form>
-    <p class="lead-modal__privacy">We email your answers so you can save and review them later. We’ll follow up with a brief plan if needed. Thank you, Rikta Psychiatry team.</p>
-  </div>
-</div>
 {{< /rawhtml >}}
