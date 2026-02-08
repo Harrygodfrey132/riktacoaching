@@ -5,6 +5,9 @@
  * - KADDIO_GRAPHQL_URL: https://<org>.kaddio.com/graphql
  * - KADDIO_API_TOKEN: Personal API token generated in Kaddio (/my-profile)
  * - KADDIO_IMPERSONATION_ID: (optional) host id to impersonate when creating contacts
+ * - KADDIO_GRAPHQL_URL_SWEDEN: (optional) Sweden org endpoint for sv locale
+ * - KADDIO_API_TOKEN_SWEDEN: (optional) Sweden org token for sv locale
+ * - KADDIO_IMPERSONATION_ID_SWEDEN: (optional) Sweden impersonation id
  */
 
 const CREATE_CLIENT_MUTATION = `
@@ -72,6 +75,8 @@ export default {
       return buildCorsResponse(json({ error: 'Missing required fields' }, 400));
     }
 
+    const kaddioEnv = selectKaddioEnv(normalized, env);
+
     const notification = normalized.description || 'Website enquiry';
     const clientInput = {
       firstname: normalized.firstname,
@@ -89,7 +94,7 @@ export default {
       const createResponse = await callKaddio({
         query: CREATE_CLIENT_MUTATION,
         variables: clientInput,
-        env
+        env: kaddioEnv
       });
 
       if (createResponse.errors?.length) {
@@ -113,7 +118,7 @@ export default {
             userId: clientId,
             customProperties: customProps
           },
-          env
+          env: kaddioEnv
         });
 
         if (updateUserResponse.errors?.length) {
@@ -176,7 +181,11 @@ function normalizeInput(body) {
     email,
     description,
     leadSource,
-    note: metaNote
+    note: metaNote,
+    meta: {
+      path: metadata.path || undefined,
+      locale: metadata.locale || undefined
+    }
   };
 }
 
@@ -186,6 +195,30 @@ function safeStringify(value) {
   } catch (err) {
     return '[unserializable metadata]';
   }
+}
+
+function resolveSubmissionLocale(normalized) {
+  const metaLocale = normalized && normalized.meta && normalized.meta.locale ? String(normalized.meta.locale) : '';
+  const path = normalized && normalized.meta && normalized.meta.path ? String(normalized.meta.path) : '';
+  const locale = metaLocale.trim().toLowerCase();
+
+  if (locale) return locale;
+  if (path && path.toLowerCase().startsWith('/en')) return 'en';
+  if (path) return 'sv';
+  return '';
+}
+
+function selectKaddioEnv(normalized, env) {
+  const locale = resolveSubmissionLocale(normalized);
+  const useSweden = locale ? !locale.startsWith('en') : true;
+  if (!useSweden) return env;
+
+  return {
+    ...env,
+    KADDIO_GRAPHQL_URL: env.KADDIO_GRAPHQL_URL_SWEDEN || env.KADDIO_GRAPHQL_URL,
+    KADDIO_API_TOKEN: env.KADDIO_API_TOKEN_SWEDEN || env.KADDIO_API_TOKEN,
+    KADDIO_IMPERSONATION_ID: env.KADDIO_IMPERSONATION_ID_SWEDEN || env.KADDIO_IMPERSONATION_ID
+  };
 }
 
 async function callKaddio({ query, variables, env }) {

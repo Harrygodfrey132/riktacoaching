@@ -210,6 +210,7 @@
             const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
             const email = (data.get('email') || data.get('Email') || '').trim();
             const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
+            const locale = squashText((document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
             const payload = {
               fullName,
               email,
@@ -217,7 +218,8 @@
               leadSource: (data.get('leadSource') || '').trim(),
               metadata: {
                 path: window.location.pathname,
-                formContext
+                formContext,
+                locale
               }
             };
             const consentMeta = buildPolicyConsent({ formContext });

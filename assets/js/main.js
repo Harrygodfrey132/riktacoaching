@@ -529,7 +529,8 @@
     const ratingRaw = formData.get('rating');
     const baseMetadata = {
       path: window.location.pathname,
-      formContext: form.dataset.formContext || form.dataset.kaddioForm || null
+      formContext: form.dataset.formContext || form.dataset.kaddioForm || null,
+      locale: resolveLocale(form)
     };
     const policyAck = form.querySelector('input[name="policyAcknowledgement"]');
     if (policyAck) {
@@ -814,7 +815,8 @@
       leadSource: leadSourceOverride || 'Procrastination Test',
       metadata: {
         path: window.location.pathname,
-        formContext: formContext || 'procrastination-test'
+        formContext: formContext || 'procrastination-test',
+        locale: resolveLocale(form)
       }
     };
 

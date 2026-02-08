@@ -6,6 +6,9 @@
  * - KADDIO_GRAPHQL_URL  e.g. https://<org>.kaddio.com/graphql
  * - KADDIO_API_TOKEN    personal API token from /my-profile
  * - KADDIO_IMPERSONATION_ID (optional) host id to impersonate
+ * - KADDIO_GRAPHQL_URL_SWEDEN (optional) Sweden org endpoint for sv locale
+ * - KADDIO_API_TOKEN_SWEDEN (optional) Sweden org token for sv locale
+ * - KADDIO_IMPERSONATION_ID_SWEDEN (optional) Sweden impersonation id
  *
  * Optional consent field mapping (CustomFieldValueInput.field identifiers in Kaddio):
  * - KADDIO_CONSENT_STATUS_FIELD
@@ -117,7 +120,8 @@ export async function onRequest(context) {
       return withCors(json({ error: errorMessage }, 400));
     }
 
-    const kaddioResult = await sendKaddioLead(normalized, env, { receivedAt });
+    const kaddioEnv = selectKaddioEnv(normalized, env);
+    const kaddioResult = await sendKaddioLead(normalized, kaddioEnv, { receivedAt });
     const zohoResult = await sendZohoLeadSafe(normalized);
 
     const warnings = [kaddioResult.warning, zohoResult.warning].filter(Boolean);
@@ -140,6 +144,31 @@ export async function onRequest(context) {
   } catch (_err) {
     return withCors(json({ error: 'Could not submit the form just now.' }, 502));
   }
+}
+
+function resolveSubmissionLocale(normalized) {
+  const consentLocale = normalized && normalized.consent && normalized.consent.locale ? String(normalized.consent.locale) : '';
+  const metaLocale = normalized && normalized.meta && normalized.meta.locale ? String(normalized.meta.locale) : '';
+  const path = normalized && normalized.meta && normalized.meta.path ? String(normalized.meta.path) : '';
+  const locale = (consentLocale || metaLocale).trim().toLowerCase();
+
+  if (locale) return locale;
+  if (path && path.toLowerCase().startsWith('/en')) return 'en';
+  if (path) return 'sv';
+  return '';
+}
+
+function selectKaddioEnv(normalized, env) {
+  const locale = resolveSubmissionLocale(normalized);
+  const useSweden = locale ? !locale.startsWith('en') : true;
+  if (!useSweden) return env;
+
+  return {
+    ...env,
+    KADDIO_GRAPHQL_URL: env.KADDIO_GRAPHQL_URL_SWEDEN || env.KADDIO_GRAPHQL_URL,
+    KADDIO_API_TOKEN: env.KADDIO_API_TOKEN_SWEDEN || env.KADDIO_API_TOKEN,
+    KADDIO_IMPERSONATION_ID: env.KADDIO_IMPERSONATION_ID_SWEDEN || env.KADDIO_IMPERSONATION_ID
+  };
 }
 
 function json(body, status = 200) {
@@ -337,6 +366,7 @@ function normalizeInput(body) {
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
   const path = coerceString(metadata.path);
   const formContext = coerceString(metadata.formContext);
+  const locale = coerceString(metadata.locale);
   const consentRequired = coerceBoolean(metadata.consentRequired) === true;
   const screening = metadata.screening && typeof metadata.screening === 'object' ? metadata.screening : null;
   const screeningLabel = screening ? coerceString(screening.testName || screening.name || screening.title) : '';
@@ -360,6 +390,7 @@ function normalizeInput(body) {
       path: path || undefined,
       formContext: formContext || undefined,
       screeningLabel: screeningLabel || undefined,
+      locale: locale || undefined,
       consentRequired: consentRequired || undefined
     },
     consent
