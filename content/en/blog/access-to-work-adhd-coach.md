@@ -181,7 +181,18 @@ We’ve created a simple, clear Access to Work guide to help you:
         autocomplete="email"
         placeholder="name@example.com"
       >
+      <label class="form-consent" for="atw-guide-policy-ack">
+        <input type="checkbox" id="atw-guide-policy-ack" name="policyAcknowledgement" required>
+        <span>
+          I consent to my data being processed according to the <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information (ADHD/Autism) to send me the guide.
+        </span>
+      </label>
+      <label class="form-consent" for="atw-guide-newsletter-opt-in">
+        <input type="checkbox" id="atw-guide-newsletter-opt-in" name="newsletterOptIn">
+        <span>I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)</span>
+      </label>
       <button type="submit" class="btn primary btn-block">Email me the guide</button>
+      <p class="contact-form__legal">Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.</p>
       <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
     </form>
   </div>

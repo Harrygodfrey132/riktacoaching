@@ -32,10 +32,10 @@ buildFuture = true
   logo = "/img/logo.png"
   hero = "/img/psychologist-picture.jpg"
   # Update these whenever the consent copy or policy text changes.
-  consent_statement_version_sv = "2026-02-05"
-  consent_statement_version_en = "2026-02-05"
-  privacy_policy_version_sv = "2026-02-05"
-  privacy_policy_version_en = "2026-02-05"
+  consent_statement_version_sv = "2026-02-09"
+  consent_statement_version_en = "2026-02-09"
+  privacy_policy_version_sv = "2026-02-09"
+  privacy_policy_version_en = "2026-02-09"
 
 [markup]
   [markup.goldmark.renderer]

@@ -531,13 +531,21 @@
     const fullName = appendSuffix(fullNameSeed, nameSuffix);
     // Accept both "email" and legacy "Email" field names to avoid missed submissions.
     const email = (formData.get('email') || formData.get('Email') || '').trim();
-    const description = (formData.get('description') || formData.get('message') || '').trim();
+    let description = (formData.get('description') || formData.get('message') || '').trim();
     const leadSource = (formData.get('leadSource') || '').trim();
     const ratingRaw = formData.get('rating');
+    const locale = resolveLocale(form);
+    const hasNewsletterOptIn = formData.get('newsletterOptIn') !== null;
+    if (hasNewsletterOptIn) {
+      const optInCopy = locale.startsWith('en')
+        ? 'Marketing opt-in: YES.'
+        : 'Samtycke nyhetsbrev: JA.';
+      description = description ? `${description}\n\n${optInCopy}` : optInCopy;
+    }
     const baseMetadata = {
       path: window.location.pathname,
       formContext: form.dataset.formContext || form.dataset.kaddioForm || null,
-      locale: resolveLocale(form)
+      locale
     };
     const policyAck = form.querySelector('input[name="policyAcknowledgement"]');
     if (policyAck) {
@@ -545,7 +553,7 @@
       baseMetadata.consent = buildConsentMetadata({
         screeningForm: form,
         formContext: baseMetadata.formContext,
-        locale: resolveLocale(form),
+        locale,
         checkboxName: 'policyAcknowledgement',
         purpose: CONSENT_PURPOSE_CONTACT
       });
@@ -872,23 +880,12 @@
 
   const guideForms = document.querySelectorAll('[data-kaddio-form="guides"]');
   guideForms.forEach(form => bindKaddioForm(form, {
-    augmentPayload: (basePayload) => {
-      const locale = resolveLocale(form);
-      const isEnLocale = locale.startsWith('en');
-      const optIn = !!(form.querySelector('input[name="newsletterOptIn"]') && form.querySelector('input[name="newsletterOptIn"]').checked);
-      const optInCopy = optIn
-        ? (isEnLocale ? 'Marketing opt-in: YES.' : 'Samtycke nyhetsbrev: JA.')
-        : (isEnLocale ? 'Marketing opt-in: NO.' : 'Samtycke nyhetsbrev: NEJ.');
-      const baseCopy = basePayload.description
-        || (isEnLocale ? 'NPF guides request.' : 'Beställning av NPF-guider.');
-      return {
-        description: [baseCopy, optInCopy].filter(Boolean).join(' '),
-        metadata: {
-          // Do not store which test page the user was on.
-          path: undefined
-        }
-      };
-    }
+    augmentPayload: () => ({
+      metadata: {
+        // Do not store which test page the user was on.
+        path: undefined
+      }
+    })
   }));
 
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');

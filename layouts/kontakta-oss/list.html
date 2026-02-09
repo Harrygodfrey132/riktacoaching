@@ -131,7 +131,16 @@
             <div class='zcwf_col_fld'>
               <label class="form-consent" for="contact-policy-ack">
                 <input type="checkbox" id="contact-policy-ack" name="policyAcknowledgement" required>
-                <span>Jag godkänner att mina uppgifter hanteras i enlighet med Rikta Psykiatris <a class="privacy-link" href="/integritetspolicy/">Integritetspolicy</a> och <a class="privacy-link" href="/allmanna-villkor/">Allmänna villkor</a>.</span>
+                <span>Jag samtycker till att mina uppgifter behandlas enligt Rikta Psykiatris <a class="privacy-link" href="/integritetspolicy/">integritetspolicy</a> och <a class="privacy-link" href="/allmanna-villkor/">allmänna villkor</a>, inklusive behandlingen av hälsorelaterad information (t.ex. NPF) som jag väljer att dela, för att vi ska kunna hantera min förfrågan.</span>
+              </label>
+            </div>
+          </div>
+          <div class='zcwf_row form-row form-row--consent'>
+            <div class='zcwf_col_lab'></div>
+            <div class='zcwf_col_fld'>
+              <label class="form-consent" for="contact-newsletter-opt-in">
+                <input type="checkbox" id="contact-newsletter-opt-in" name="newsletterOptIn">
+                <span>Jag vill få tips, guider och nyheter via e-post. Jag kan när som helst avregistrera mig. (Valfritt)</span>
               </label>
             </div>
           </div>
@@ -142,6 +151,7 @@
               <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button btn primary' value='Skicka' aria-label='Submit' title='Submit'>
               </div>
           </div>
+          <p class="contact-form__legal">Personuppgiftsansvarig: Riktningskliniken AB. Du kan när som helst återkalla ditt samtycke via länk i våra utskick.</p>
           <p class='contact-form__note form-thank-you' data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
           <p class='contact-form__note form-status' data-form-status aria-live='polite' hidden></p>
         </form>
@@ -222,6 +232,9 @@
                 locale
               }
             };
+            if (data.get('newsletterOptIn') !== null) {
+              payload.description = [payload.description, 'Samtycke nyhetsbrev: JA.'].filter(Boolean).join(' ');
+            }
             const consentMeta = buildPolicyConsent({ formContext });
             if (consentMeta) {
               payload.metadata.consentRequired = true;

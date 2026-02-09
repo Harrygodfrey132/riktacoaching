@@ -343,7 +343,16 @@ hide_template_hero: true
             <div class='zcwf_col_fld'>
               <label class="form-consent" for="contact-policy-ack">
                 <input type="checkbox" id="contact-policy-ack" name="policyAcknowledgement" required>
-                <span>I agree that my data is handled in accordance with Rikta Coaching's <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>.</span>
+                <span>I consent to my data being processed in accordance with Rikta Coaching's <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information (e.g., neurodevelopmental conditions) that I choose to share, to handle my request.</span>
+              </label>
+            </div>
+          </div>
+          <div class='zcwf_row form-row form-row--consent'>
+            <div class='zcwf_col_lab'></div>
+            <div class='zcwf_col_fld'>
+              <label class="form-consent" for="contact-newsletter-opt-in">
+                <input type="checkbox" id="contact-newsletter-opt-in" name="newsletterOptIn">
+                <span>I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)</span>
               </label>
             </div>
           </div>
@@ -354,6 +363,7 @@ hide_template_hero: true
               <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button btn primary' value='Send' aria-label='Submit' title='Submit'>
               </div>
           </div>
+          <p class="contact-form__legal">Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.</p>
           <p class='contact-form__note form-thank-you' data-thank-you hidden>Thank you! We'll get back to you as soon as possible.</p>
           <p class='contact-form__note form-status' data-form-status aria-live='polite' hidden></p>
         </form>
@@ -434,6 +444,9 @@ hide_template_hero: true
                 locale
               }
             };
+            if (data.get('newsletterOptIn') !== null) {
+              payload.description = [payload.description, 'Marketing opt-in: YES.'].filter(Boolean).join(' ');
+            }
             const consentMeta = buildPolicyConsent({ formContext });
             if (consentMeta) {
               payload.metadata.consentRequired = true;

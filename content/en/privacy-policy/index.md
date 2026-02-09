@@ -19,8 +19,8 @@ og_description: "How we collect, use, and protect your data and how to exercise 
           <p class="legal-eyebrow">PRIVACY &amp; DATA PROTECTION</p>
           <h1>Privacy Policy – Rikta Coaching</h1>
           <p class="lead">
-            We collect your information to provide medical assessments via our self-test. Your data is protected by UK GDPR.
-            We never sell your data, and we do not send sensitive results via standard unencrypted email.
+            Self-test results on our website are calculated locally in your browser and are not sent to us. If you choose to contact us (for example, to request a consultation or guides), we process your personal data under UK GDPR.
+            We never sell your data, and we do not send sensitive health results via standard unencrypted email.
           </p>
           <div class="legal-badges">
             <span>UK GDPR Compliant</span>
@@ -31,9 +31,9 @@ og_description: "How we collect, use, and protect your data and how to exercise 
         <div class="legal-hero__card">
           <h3>Summary</h3>
           <ul class="legal-checklist">
-            <li>We use your data strictly for assessment and follow-up.</li>
-            <li>Health data is stored with end-to-end encryption in the Kaddio clinical system.</li>
-            <li>Notifications never contain your specific test results or health details.</li>
+            <li>Self-test results are calculated locally and are not stored by us.</li>
+            <li>If you contact us, your information is stored securely for follow-up.</li>
+            <li>You can unsubscribe from email updates at any time.</li>
           </ul>
           <div class="legal-meta">
             <strong>Contact</strong><br>
@@ -55,8 +55,8 @@ og_description: "How we collect, use, and protect your data and how to exercise 
         <div class="legal-eyebrow subtle">2. DATA WE COLLECT</div>
         <h2>What we process</h2>
         <ul class="legal-list">
-          <li><strong>Contact details:</strong> Name and email address for communication and results.</li>
-          <li><strong>Health data (special category data):</strong> Your responses to screening tests regarding ADHD and Autism symptoms.</li>
+          <li><strong>Contact details:</strong> Name and email address for communication and follow-up.</li>
+          <li><strong>Health data (special category data):</strong> Health-related information you choose to share via a form or during a clinical interaction (e.g., neurodevelopmental information).</li>
           <li><strong>Technical data:</strong> IP address and device information to ensure website functionality.</li>
         </ul>
       </article>
@@ -65,8 +65,9 @@ og_description: "How we collect, use, and protect your data and how to exercise 
         <div class="legal-eyebrow subtle">3. THIRD-PARTY PROVIDERS</div>
         <h2>Systems we use</h2>
         <ul class="legal-list">
-          <li><strong>Kaddio:</strong> Our primary clinical record system. All health data is stored encrypted in accordance with healthcare data standards.</li>
-          <li><strong>Notifications:</strong> Used to alert you that results are ready for viewing—no health information is included in these alerts.</li>
+          <li><strong>Kaddio:</strong> Used to handle contact enquiries and, where relevant, clinical documentation. Health data is stored encrypted in accordance with healthcare data standards.</li>
+          <li><strong>Zoho CRM (backup):</strong> May be used as a backup channel to receive an enquiry during technical disruptions.</li>
+          <li><strong>Email:</strong> Used for follow-up and sending requested information. We do not send sensitive health results via standard unencrypted email.</li>
         </ul>
       </article>
 
@@ -89,7 +90,8 @@ og_description: "How we collect, use, and protect your data and how to exercise 
         <div class="legal-eyebrow subtle">6. DATA RETENTION</div>
         <h2>How long we keep data</h2>
         <ul class="legal-list">
-          <li><strong>Screening responses:</strong> Deleted after 12 months if you do not proceed with an assessment.</li>
+          <li><strong>Self-tests:</strong> Self-test results are calculated locally and are not stored by us.</li>
+          <li><strong>Contact enquiries:</strong> Kept for up to 12 months for follow-up if you do not proceed.</li>
           <li><strong>Clinical records:</strong> If you begin a clinical relationship, records are kept for a minimum of 8–10 years in accordance with UK private healthcare guidelines.</li>
           <li><strong>Marketing:</strong> Email subscriptions are kept until you choose to unsubscribe.</li>
         </ul>

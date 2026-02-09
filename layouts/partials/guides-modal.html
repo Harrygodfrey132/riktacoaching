@@ -42,6 +42,7 @@
         accept-charset="UTF-8"
       >
         <input type="hidden" name="leadSource" value="Guides">
+        <input type="hidden" name="description" value="{{ if $isEn }}Requested NPF guides.{{ else }}Beställning av NPF-guider.{{ end }}">
 
         <div class="guides-modal__field">
           <label for="guides-full-name">{{ if $isEn }}Full name{{ else }}Namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
@@ -74,9 +75,9 @@
           <input type="checkbox" name="policyAcknowledgement" required>
           <span>
             {{ if $isEn }}
-              I agree that my information is handled according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>.
+              I consent to my data being processed according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>, including the processing of health-related information (neurodevelopmental conditions) so I can receive the guides.
             {{ else }}
-              Jag godkänner att mina uppgifter hanteras enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>.
+              Jag samtycker till att mina uppgifter behandlas enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>, inklusive behandlingen av hälsorelaterad information (NPF) för att kunna motta guiderna.
             {{ end }}
           </span>
         </label>
@@ -85,9 +86,9 @@
           <input type="checkbox" name="newsletterOptIn">
           <span>
             {{ if $isEn }}
-              I want to receive tips, guides, and news by email. (Optional)
+              I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)
             {{ else }}
-              Jag vill få tips, guider och nyheter via e-post. (Valfritt)
+              Jag vill få tips, guider och nyheter via e-post. Jag kan när som helst avregistrera mig. (Valfritt)
             {{ end }}
           </span>
         </label>
@@ -95,6 +96,14 @@
         <button type="submit" class="btn primary guides-modal__submit">
           {{ if $isEn }}Send the guides{{ else }}Skicka guiderna{{ end }}
         </button>
+
+        <p class="guides-modal__legal">
+          {{ if $isEn }}
+            Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.
+          {{ else }}
+            Personuppgiftsansvarig: Riktningskliniken AB. Du kan när som helst återkalla ditt samtycke via länk i våra utskick.
+          {{ end }}
+        </p>
 
         <p class="guides-modal__status form-status" data-form-status aria-live="polite" hidden></p>
       </form>

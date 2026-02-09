@@ -64,9 +64,22 @@
             placeholder="Describe your situation or ask your question"
           ></textarea>
         </div>
+        <label class="form-consent" for="popup-policy-ack">
+          <input type="checkbox" id="popup-policy-ack" name="policyAcknowledgement" required>
+          <span>
+            I consent to my data being processed according to the <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information (e.g., neurodevelopmental conditions) that I choose to share, to handle my request.
+          </span>
+        </label>
+        <label class="form-consent" for="popup-newsletter-opt-in">
+          <input type="checkbox" id="popup-newsletter-opt-in" name="newsletterOptIn">
+          <span>I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)</span>
+        </label>
         <button type="submit" class="newsletter-popup__submit">
           Send request
         </button>
+        <p class="newsletter-popup__privacy">
+          Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.
+        </p>
         <p class="newsletter-popup__status form-thank-you" data-thank-you hidden>
           Thank you! We’ll get back to you as soon as possible.
         </p>

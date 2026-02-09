@@ -1658,6 +1658,14 @@ nav a.active {
   color: rgba(29, 44, 59, 0.6);
 }
 
+.contact-form__legal {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: rgba(29, 44, 59, 0.6);
+  font-weight: 600;
+}
+
 @media (max-width: 720px) {
   .contact-header,
   .contact-form {
@@ -9264,6 +9272,14 @@ html.rk-pii-blocked #adhd-lead-modal {
 
 .guides-modal__status {
   margin: 0;
+}
+
+.guides-modal__legal {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: rgba(15, 23, 42, 0.62);
+  font-weight: 600;
 }
 
 body.guides-modal--locked {
