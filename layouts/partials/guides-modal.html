@@ -1,0 +1,103 @@
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+{{ $policyHref := cond $isEn "/en/privacy-policy/" "/integritetspolicy/" }}
+
+<div id="guides-modal" class="guides-modal" data-modal-state="hidden" aria-hidden="true">
+  <div class="guides-modal__overlay" data-guides-close tabindex="-1"></div>
+  <div class="guides-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="guides-modal-title">
+    <button type="button" class="guides-modal__close" aria-label="{{ if $isEn }}Close{{ else }}Stäng{{ end }}" data-guides-close>&times;</button>
+
+    <div class="guides-modal__score">
+      <p class="guides-modal__score-label">{{ if $isEn }}Your score{{ else }}Din poäng{{ end }}</p>
+      <p class="guides-modal__score-value" data-guides-score>0</p>
+    </div>
+
+    <div class="guides-modal__content">
+      <h2 id="guides-modal-title">
+        {{ if $isEn }}
+          Get strategies that actually work for neurodivergent brains
+        {{ else }}
+          Få strategier som faktiskt funkar för NPF-hjärnor
+        {{ end }}
+      </h2>
+      <p class="guides-modal__lead">
+        {{ if $isEn }}
+          Get our practical guides designed to reduce cognitive load and simplify everyday life.
+        {{ else }}
+          Ladda ner våra praktiska guider designade för att minska kognitiv belastning och förenkla din vardag.
+        {{ end }}
+      </p>
+
+      <form
+        id="guides-modal-form"
+        class="guides-modal__form"
+        data-kaddio-form="guides"
+        data-form-context="guides-modal"
+        data-success-message="{{ if $isEn }}Thanks! The guides are on their way to your inbox.{{ else }}Tack! Guiderna är på väg till din inkorg.{{ end }}"
+        data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
+        data-error-message="{{ if $isEn }}We could not send your request. Please try again.{{ else }}Vi kunde inte skicka din förfrågan. Försök igen.{{ end }}"
+        data-rate-limit-message="{{ if $isEn }}We are handling many requests right now. Please try again in a moment.{{ else }}Vi hanterar många förfrågningar just nu. Försök igen om en stund.{{ end }}"
+        data-sending-message="{{ if $isEn }}Sending...{{ else }}Skickar...{{ end }}"
+        action="/api/kaddio/contact"
+        method="POST"
+        accept-charset="UTF-8"
+      >
+        <input type="hidden" name="leadSource" value="Guides">
+
+        <div class="guides-modal__field">
+          <label for="guides-full-name">{{ if $isEn }}Full name{{ else }}Namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+          <input
+            type="text"
+            id="guides-full-name"
+            name="fullName"
+            maxlength="120"
+            autocomplete="name"
+            placeholder="{{ if $isEn }}Enter your full name{{ else }}Skriv ditt namn{{ end }}"
+            required
+            data-guides-focus
+          >
+        </div>
+
+        <div class="guides-modal__field">
+          <label for="guides-email">{{ if $isEn }}Email address{{ else }}E-postadress{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+          <input
+            type="email"
+            id="guides-email"
+            name="email"
+            maxlength="100"
+            autocomplete="email"
+            placeholder="name@example.com"
+            required
+          >
+        </div>
+
+        <label class="guides-modal__consent">
+          <input type="checkbox" name="policyAcknowledgement" required>
+          <span>
+            {{ if $isEn }}
+              I agree that my information is handled according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>.
+            {{ else }}
+              Jag godkänner att mina uppgifter hanteras enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>.
+            {{ end }}
+          </span>
+        </label>
+
+        <label class="guides-modal__consent guides-modal__consent--optional">
+          <input type="checkbox" name="newsletterOptIn">
+          <span>
+            {{ if $isEn }}
+              I want to receive tips, guides, and news by email. (Optional)
+            {{ else }}
+              Jag vill få tips, guider och nyheter via e-post. (Valfritt)
+            {{ end }}
+          </span>
+        </label>
+
+        <button type="submit" class="btn primary guides-modal__submit">
+          {{ if $isEn }}Send the guides{{ else }}Skicka guiderna{{ end }}
+        </button>
+
+        <p class="guides-modal__status form-status" data-form-status aria-live="polite" hidden></p>
+      </form>
+    </div>
+  </div>
+</div>

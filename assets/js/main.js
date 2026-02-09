@@ -5,6 +5,7 @@
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
   const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
   const IS_EN = DOC_LANG.startsWith('en') || window.location.pathname.startsWith('/en/');
+  let guidesModal = null;
 
   function resolveLocale(form){
     const formLocale = ((form && form.dataset && form.dataset.locale) || '').toLowerCase();
@@ -383,6 +384,9 @@
           renderResult();
           if (typeof onCompleted === 'function') {
             onCompleted(payload, form);
+          }
+          if (guidesModal && typeof guidesModal.open === 'function') {
+            guidesModal.open({ score: total });
           }
         }
       }
@@ -772,6 +776,121 @@
     }
   }
 
+  // ----- Guides Modal (show score + collect email for guides) -----
+  function initGuidesModal(){
+    const modal = document.getElementById('guides-modal');
+    if (!modal) return null;
+    const scoreEl = modal.querySelector('[data-guides-score]');
+    const closeTriggers = modal.querySelectorAll('[data-guides-close]');
+    const focusTarget = modal.querySelector('[data-guides-focus]');
+    const statusEl = modal.querySelector('[data-form-status]');
+    let isOpen = false;
+    let lastFocused = null;
+
+    function focusables(){
+      return Array.from(modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'))
+        .filter(el => !el.hasAttribute('disabled') && el.getAttribute('aria-hidden') !== 'true');
+    }
+
+    function setScore(score){
+      if (!scoreEl) return;
+      const numeric = Number(score);
+      scoreEl.textContent = Number.isFinite(numeric) ? String(numeric) : String(score || '');
+    }
+
+    function show(){
+      modal.dataset.modalState = 'visible';
+      modal.removeAttribute('aria-hidden');
+      document.body.classList.add('guides-modal--locked');
+    }
+
+    function hide(){
+      modal.dataset.modalState = 'hidden';
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('guides-modal--locked');
+    }
+
+    function open({ score } = {}){
+      if (typeof score !== 'undefined') {
+        setScore(score);
+      }
+      if (statusEl) {
+        statusEl.textContent = '';
+        statusEl.hidden = true;
+        statusEl.classList.remove('form-status--success', 'form-status--error', 'form-status--info', 'is-visible');
+      }
+      if (isOpen) return;
+      isOpen = true;
+      lastFocused = document.activeElement;
+      show();
+      const target = focusTarget || focusables()[0];
+      if (target && typeof target.focus === 'function') {
+        target.focus();
+      }
+    }
+
+    function close(){
+      if (!isOpen) return;
+      isOpen = false;
+      hide();
+      if (lastFocused && typeof lastFocused.focus === 'function') {
+        lastFocused.focus();
+      }
+    }
+
+    closeTriggers.forEach(trigger => trigger.addEventListener('click', close));
+
+    document.addEventListener('keydown', (event) => {
+      if (!isOpen) return;
+      if (event.key === 'Escape') {
+        event.preventDefault();
+        close();
+      }
+    });
+
+    modal.addEventListener('keydown', (event) => {
+      if (!isOpen) return;
+      if (event.key !== 'Tab') return;
+      const els = focusables();
+      if (!els.length) return;
+      const first = els[0];
+      const last = els[els.length - 1];
+      const active = document.activeElement;
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    return { open, close };
+  }
+
+  guidesModal = initGuidesModal();
+
+  const guideForms = document.querySelectorAll('[data-kaddio-form="guides"]');
+  guideForms.forEach(form => bindKaddioForm(form, {
+    augmentPayload: (basePayload) => {
+      const locale = resolveLocale(form);
+      const isEnLocale = locale.startsWith('en');
+      const optIn = !!(form.querySelector('input[name="newsletterOptIn"]') && form.querySelector('input[name="newsletterOptIn"]').checked);
+      const optInCopy = optIn
+        ? (isEnLocale ? 'Marketing opt-in: YES.' : 'Samtycke nyhetsbrev: JA.')
+        : (isEnLocale ? 'Marketing opt-in: NO.' : 'Samtycke nyhetsbrev: NEJ.');
+      const baseCopy = basePayload.description
+        || (isEnLocale ? 'NPF guides request.' : 'Beställning av NPF-guider.');
+      return {
+        description: [baseCopy, optInCopy].filter(Boolean).join(' '),
+        metadata: {
+          // Do not store which test page the user was on.
+          path: undefined
+        }
+      };
+    }
+  }));
+
   const contactForms = document.querySelectorAll('[data-kaddio-form="contact"]');
   contactForms.forEach(form => bindKaddioForm(form));
 
@@ -1119,6 +1238,9 @@
       };
 
       renderResults(resultPayload);
+      if (guidesModal && typeof guidesModal.open === 'function') {
+        guidesModal.open({ score: q1YesCount });
+      }
     });
 
     if (resetButton) {
