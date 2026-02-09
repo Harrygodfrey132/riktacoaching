@@ -2548,6 +2548,40 @@ nav a.active {
   color: var(--secondary);
 }
 
+/* ===== Fixed CTA ===== */
+.fixed-cta{
+  position: fixed;
+  right: max(16px, env(safe-area-inset-right));
+  bottom: max(16px, env(safe-area-inset-bottom));
+  z-index: 1100;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn.primary.fixed-cta{
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.18);
+}
+
+.fixed-cta__icon{
+  font-size: 18px;
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+@media (min-width: 768px) {
+  .fixed-cta{
+    right: max(24px, env(safe-area-inset-right));
+    bottom: max(24px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fixed-cta{
+    transition: none;
+  }
+}
+
 /* ===== Section Layouts, Cards, & Pricing ===== */
 section {
   scroll-margin-top: var(--sticky);

@@ -1,0 +1,11 @@
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+{{ $href := cond $isEn "/en/contact/#contact-form" "/kontakta-oss/#kontaktformular" }}
+{{ $label := cond $isEn "Book a call" "Boka samtal" }}
+
+<a class="btn primary fixed-cta"
+   href="{{ $href }}"
+   aria-label="{{ $label }}">
+  <span class="fixed-cta__label">{{ $label }}</span>
+  <span class="fixed-cta__icon" aria-hidden="true">→</span>
+</a>
+

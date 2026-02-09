@@ -1,0 +1,55 @@
+{{ define "main" }}
+  {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+  {{ $sectionKey := cond $isEn "blog" "blogg" }}
+  {{ $sectionPage := .Site.GetPage "section" $sectionKey }}
+  {{ $posts := slice }}
+
+  {{ with .Params.post_slugs }}
+    {{ range . }}
+      {{ $path := printf "/%s/%s/" $sectionKey . }}
+      {{ with $.Site.GetPage $path }}
+        {{ $posts = $posts | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if and $sectionPage (eq (len $posts) 0) }}
+    {{ $posts = $sectionPage.RegularPages | sort "Date" "desc" }}
+  {{ end }}
+
+  <main class="blog-archive" id="top">
+    <div class="container">
+      <header class="blog-archive__header">
+        <p class="blog-archive__eyebrow">
+          {{ if $isEn }}Guides · Rikta Psychiatry{{ else }}Kunskap · Rikta Psykiatri{{ end }}
+        </p>
+        <h1>{{ .Title }}</h1>
+        {{ with (or .Params.summary .Params.description) }}
+          <div class="blog-archive__intro">
+            <p>{{ . }}</p>
+          </div>
+        {{ end }}
+      </header>
+
+      <div class="blog-archive__grid">
+        {{ range $posts }}
+          <article class="blog-card">
+            <a class="blog-card__link" href="{{ .RelPermalink }}">
+              <div class="blog-card__media">
+                <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
+              </div>
+              <div class="blog-card__body">
+                <h2>{{ .Title }}</h2>
+                <p>{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 150 }}{{ end }}</p>
+                <div class="blog-card__meta">
+                  {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
+                </div>
+              </div>
+            </a>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </main>
+{{ end }}
+

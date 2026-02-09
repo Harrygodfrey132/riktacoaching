@@ -28,7 +28,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
             <input type="search" placeholder="Sök på t.ex. Elvanse, skolan eller utmattning..." aria-label="Sök i kunskapsartiklar">
           </div>
           <div class="knowledge-paths">
-            <a class="knowledge-pill" href="/test/adhd-test/">
+            <a class="knowledge-pill" href="/test/">
               <div class="pill-icon" aria-hidden="true">
                 <img src="/img/icon-search.svg" alt="" loading="lazy">
               </div>
@@ -38,7 +38,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <span class="pill-cta">Starta självtester</span>
               </div>
             </a>
-            <a class="knowledge-pill" href="/adhd-utredning/">
+            <a class="knowledge-pill" href="/kunskap/nasta-steg/">
               <div class="pill-icon" aria-hidden="true">
                 <img src="/img/icon-person-raise.svg" alt="" loading="lazy">
               </div>
@@ -48,7 +48,7 @@ summary: "Guider, artiklar och verktyg som hjälper dig att förstå neuropsykia
                 <span class="pill-cta">Se nästa steg</span>
               </div>
             </a>
-            <a class="knowledge-pill" href="/blogg/guiden-till-dig-som-foralder-till-barn-med-adhd/">
+            <a class="knowledge-pill" href="/kunskap/anhorigstod/">
               <div class="pill-icon" aria-hidden="true">
                 <img src="/img/icon-heart-outline.svg" alt="" loading="lazy">
               </div>
