@@ -8206,6 +8206,14 @@ nav a.cta:active{
   color: #e64e4e;
 }
 
+.adhd-score__cutoff {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  color: #334155;
+  line-height: 1.6;
+}
+
 .adhd-score__note {
   font-size: 14px;
   color: #6b7280;

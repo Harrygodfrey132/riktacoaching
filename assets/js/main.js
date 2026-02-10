@@ -207,6 +207,8 @@
   interpretationId,
   ranges,
   defaultInterpretation,
+  clinicalCutoff,
+  buildCutoffLine,
   gateWithLeadForm = false,
   onLeadRequired,
   scoreCalculator,
@@ -225,6 +227,75 @@
     const resetButton = form.querySelector('.adhd-screening__reset');
     const getFormLocale = () => resolveLocale(form);
     let hideTimeout = null;
+
+    function resolveClinicalCutoff(locale) {
+      const activeLocale = (locale || getFormLocale() || 'sv').toLowerCase();
+      if (typeof clinicalCutoff === 'function') {
+        return clinicalCutoff(activeLocale, form);
+      }
+      if (clinicalCutoff && typeof clinicalCutoff === 'object') {
+        return clinicalCutoff[activeLocale]
+          || clinicalCutoff[activeLocale.startsWith('en') ? 'en' : 'sv']
+          || clinicalCutoff.en
+          || clinicalCutoff.sv
+          || null;
+      }
+      return clinicalCutoff;
+    }
+
+    function ensureCutoffElement() {
+      if (!scoreBox) return null;
+      const existing = scoreBox.querySelector('.adhd-score__cutoff');
+      if (existing) return existing;
+      const el = document.createElement('p');
+      el.className = 'adhd-score__cutoff';
+      el.hidden = true;
+      if (interpretationEl && interpretationEl.parentNode === scoreBox) {
+        scoreBox.insertBefore(el, interpretationEl);
+      } else {
+        scoreBox.appendChild(el);
+      }
+      return el;
+    }
+
+    function formatCutoffLine({ score, cutoff, locale } = {}) {
+      const activeLocale = (locale || getFormLocale() || 'sv').toLowerCase();
+      const isEn = activeLocale.startsWith('en');
+      if (cutoff === null || typeof cutoff === 'undefined' || cutoff === '') {
+        return isEn
+          ? `You scored ${score}. There is no single established clinical cutoff for this questionnaire.`
+          : `Du fick ${score}. Det finns ingen enskild etablerad klinisk gräns för det här formuläret.`;
+      }
+      return isEn
+        ? `You scored ${score}. The clinical threshold for further investigation is ${cutoff} or higher.`
+        : `Du fick ${score}. Den kliniska gränsen för vidare utredning är ${cutoff} eller högre.`;
+    }
+
+    function updateCutoffLine(scoreData, locale) {
+      if (!scoreBox) return;
+      const el = ensureCutoffElement();
+      if (!el) return;
+      const numericScore = scoreData && typeof scoreData.total !== 'undefined'
+        ? Number(scoreData.total)
+        : Number(scoreData);
+      const safeScore = Number.isFinite(numericScore) ? numericScore : 0;
+      const activeLocale = (locale || getFormLocale() || 'sv').toLowerCase();
+      let message = '';
+      if (typeof buildCutoffLine === 'function') {
+        message = buildCutoffLine({
+          score: safeScore,
+          scoreData,
+          locale: activeLocale,
+          form
+        }) || '';
+      }
+      if (!message) {
+        const cutoff = resolveClinicalCutoff(activeLocale);
+        message = formatCutoffLine({ score: safeScore, cutoff, locale: activeLocale });
+      }
+      el.textContent = message;
+      el.hidden = !message;
+    }
 
     function getDefaultInterpretation(locale) {
       if (typeof defaultInterpretation === 'function') {
@@ -285,7 +356,9 @@
       const activeRanges = getRanges(activeLocale);
       removeInterpretationClasses();
       const match = interpretationObj || activeRanges.find(range => score <= range.max) || activeRanges[activeRanges.length - 1];
-      interpretationEl.textContent = (match && match.text) ? match.text : getDefaultInterpretation(activeLocale);
+      const nextText = (match && match.text) ? match.text : getDefaultInterpretation(activeLocale);
+      interpretationEl.textContent = nextText;
+      interpretationEl.hidden = !nextText;
       if (match && match.className) {
         interpretationEl.classList.add(match.className);
       }
@@ -356,6 +429,7 @@
 	        const interpretation = getInterpretation(total, locale);
 	        const renderResult = () => {
 	          updateScoreDisplay(total, interpretation, locale);
+            updateCutoffLine(scoreData, locale);
 	          if (typeof metaUpdater === 'function') {
             metaUpdater({ ...scoreData, interpretation });
           }
@@ -392,7 +466,7 @@
       }
     });
 
-    if (resetButton) {
+      if (resetButton) {
       resetButton.addEventListener('click', () => {
         form.reset();
         if (scoreBox) {
@@ -400,6 +474,12 @@
           if (interpretationEl) {
             interpretationEl.textContent = getDefaultInterpretation(getFormLocale());
             removeInterpretationClasses();
+            interpretationEl.hidden = !interpretationEl.textContent;
+          }
+          const cutoffEl = scoreBox.querySelector('.adhd-score__cutoff');
+          if (cutoffEl) {
+            cutoffEl.hidden = true;
+            cutoffEl.textContent = '';
           }
           hideScoreBox();
         }
@@ -417,6 +497,7 @@
         const locale = getFormLocale();
         const interpretation = getInterpretation(total, locale);
         updateScoreDisplay(total, interpretation, locale);
+        updateCutoffLine(scoreData, locale);
         if (typeof metaUpdater === 'function') {
           metaUpdater({ ...scoreData, interpretation });
         }
@@ -898,6 +979,7 @@
     scoreValueId: 'adhd-score-value',
     interpretationId: 'adhd-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: null,
     ranges: [],
     testName: {
       en: 'Attention & Regulation Scale (R-ARS-12)',
@@ -912,6 +994,7 @@
     scoreValueId: 'autism-score-value',
     interpretationId: 'autism-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 6,
     ranges: [],
     testName: {
       en: 'Autism Screening (AQ-10)',
@@ -926,6 +1009,7 @@
     scoreValueId: 'autism-child-score-value',
     interpretationId: 'autism-child-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 6,
     ranges: [],
     testName: {
       en: 'AQ-10 (Child version)',
@@ -940,6 +1024,7 @@
     scoreValueId: 'snap-total-score',
     interpretationId: 'snap-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: null,
     buildInterpretation() {
       return { text: '' };
     },
@@ -998,6 +1083,7 @@
     scoreValueId: 'add-score-value',
     interpretationId: 'add-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: null,
     ranges: [],
     testName: {
       en: 'ADD Inattentive Symptoms',
@@ -1012,8 +1098,49 @@
     scoreValueId: 'asrs-vuxna-score-value',
     interpretationId: 'asrs-vuxna-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 4,
     buildInterpretation() {
       return { text: '' };
+    },
+    scoreCalculator(formData) {
+      let total = 0;
+      let answered = 0;
+      let partAPositive = 0;
+      const thresholdForPartA = (questionNumber) => {
+        // ASRS v1.1 Part A (Q1–Q6): a positive item depends on response category.
+        // Values: 0=Never, 1=Rarely, 2=Sometimes, 3=Often, 4=Very Often.
+        // Q1, Q3: Sometimes+ (>=2). Q2, Q4–Q6: Often+ (>=3).
+        if (questionNumber === 1 || questionNumber === 3) return 2;
+        return 3;
+      };
+      for (let i = 1; i <= totalQuestions; i += 1) {
+        const value = formData.get(`q${i}`);
+        if (value !== null) {
+          const numeric = Number(value);
+          total += numeric;
+          answered += 1;
+          if (i <= 6 && numeric >= thresholdForPartA(i)) {
+            partAPositive += 1;
+          }
+        }
+      }
+      return {
+        total,
+        answered,
+        meta: {
+          partAPositive
+        }
+      };
+    },
+    buildCutoffLine({ scoreData, locale } = {}) {
+      const activeLocale = (locale || '').toLowerCase();
+      const isEn = activeLocale.startsWith('en');
+      const partAPositive = scoreData && scoreData.meta && typeof scoreData.meta.partAPositive === 'number'
+        ? scoreData.meta.partAPositive
+        : 0;
+      return isEn
+        ? `ASRS Part A: ${partAPositive}/6 items meet the screening threshold. The clinical screening threshold for further investigation is ≥4/6.`
+        : `ASRS del A: ${partAPositive}/6 items uppfyller screeningtröskeln. Klinisk screeninggräns för vidare utredning är ≥4/6.`;
     },
     testName: {
       sv: 'ASRS v1.1 (vuxna)',
@@ -1028,6 +1155,7 @@
     scoreValueId: 'snap-barn-score-value',
     interpretationId: 'snap-barn-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: null,
     buildInterpretation() {
       return { text: '' };
     },
@@ -1044,6 +1172,7 @@
     scoreValueId: 'raads14-score-value',
     interpretationId: 'raads14-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 14,
     ranges: [],
     testName: {
       en: 'RAADS-14 Screen (adult)'
@@ -1057,6 +1186,7 @@
     scoreValueId: 'raads14-vuxna-score-value',
     interpretationId: 'raads14-vuxna-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 14,
     ranges: [],
     transformValue(value, questionNumber) {
       const numeric = Number(value);
@@ -1078,6 +1208,7 @@
     scoreValueId: 'procrastination-score-value',
     interpretationId: 'procrastination-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: null,
     ranges: [],
     transformValue(value, questionNumber){
       // Question 12 is reverse-scored (agreeing reduces procrastination score)
@@ -1100,6 +1231,7 @@
     scoreValueId: 'gad7-score-value',
     interpretationId: 'gad7-score-interpretation',
     defaultInterpretation: '',
+    clinicalCutoff: 10,
     buildInterpretation() {
       return { text: '' };
     },
@@ -1176,6 +1308,22 @@
     const locale = ((form.dataset.locale || document.documentElement.lang || 'sv') || '').toLowerCase();
     const isSv = locale.startsWith('sv');
     const yesValue = isSv ? 'Ja' : 'Yes';
+    const q3ThresholdValue = isSv ? 'Problem' : 'Moderate problem';
+
+    function ensureCutoffElement() {
+      if (!scoreBox) return null;
+      const existing = scoreBox.querySelector('.adhd-score__cutoff');
+      if (existing) return existing;
+      const el = document.createElement('p');
+      el.className = 'adhd-score__cutoff';
+      el.hidden = true;
+      if (interpretationEl && interpretationEl.parentNode === scoreBox) {
+        scoreBox.insertBefore(el, interpretationEl);
+      } else {
+        scoreBox.appendChild(el);
+      }
+      return el;
+    }
 
     function collectQ1Responses() {
       const items = [];
@@ -1198,6 +1346,19 @@
       interpretationEl.textContent = isSv
         ? 'Detta är ett resultat från en självskattning och inte en diagnos.'
         : 'This is a screening result, not a diagnosis.';
+
+      const cutoffEl = ensureCutoffElement();
+      if (cutoffEl) {
+        const criteriaQ1 = result.q1YesCount >= 7;
+        const criteriaQ2 = String(result.q2 || '') === yesValue;
+        const criteriaQ3 = String(result.q3 || '') === q3ThresholdValue || String(result.q3 || '') === (isSv ? 'Allvarliga problem' : 'Serious problem');
+        const copy = isSv
+          ? `Du svarade Ja på ${result.q1YesCount} av 13. Klinisk screeninggräns (positiv MDQ) är vanligtvis ≥7 Ja-svar, samt “Ja” på fråga 2 och minst “Problem” på fråga 3.`
+          : `You answered YES to ${result.q1YesCount} of 13. A positive MDQ screen is typically ≥7 YES answers, plus “Yes” on question 2 and at least “Moderate problem” on question 3.`;
+        cutoffEl.textContent = copy;
+        cutoffEl.hidden = false;
+        cutoffEl.dataset.mdqPositive = (criteriaQ1 && criteriaQ2 && criteriaQ3) ? 'true' : 'false';
+      }
 
       const q1Items = result.q1Items.map(item => (
         `<li><strong>${item.number}. ${item.prompt}</strong><br>` +
@@ -1252,6 +1413,13 @@
           interpretationEl.textContent = isSv
             ? 'Detta är ett resultat från en självskattning och inte en diagnos.'
             : 'This is a screening result, not a diagnosis.';
+        }
+        if (scoreBox) {
+          const cutoffEl = scoreBox.querySelector('.adhd-score__cutoff');
+          if (cutoffEl) {
+            cutoffEl.hidden = true;
+            cutoffEl.textContent = '';
+          }
         }
         if (resultsEl) resultsEl.innerHTML = '';
       });
