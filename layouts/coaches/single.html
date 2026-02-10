@@ -1,0 +1,107 @@
+{{ define "main" }}
+{{ $page := . }}
+<main class="coach-profile-page" id="coach-profile">
+  <section class="coach-profile-layout">
+    <div class="container coach-profile-layout__grid">
+      <div class="coach-profile-main">
+        <article class="coach-profile-card">
+          <div class="coach-profile-card__media">
+            {{ with $page.Params.image }}
+              <img src="{{ . }}" alt="{{ $page.Title }}">
+            {{ end }}
+          </div>
+          <div class="coach-profile-card__content">
+            <div class="coach-profile-card__header">
+              <h1>{{ $page.Title }}</h1>
+              {{ with $page.Params.flag }}
+                <span class="coach-profile-card__flag" aria-hidden="true">{{ . }}</span>
+              {{ end }}
+            </div>
+            {{ with $page.Params.location }}
+              <p class="coach-profile-card__location">
+                <span class="coach-profile-card__location-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="presentation">
+                    <path d="M12 3.5c-3.6 0-6.5 2.9-6.5 6.5 0 4.6 5.2 9.9 6.2 10.9a.5.5 0 0 0 .7 0c1-1 6.1-6.3 6.1-10.9 0-3.6-2.9-6.5-6.5-6.5zm0 8.8a2.3 2.3 0 1 1 0-4.6 2.3 2.3 0 0 1 0 4.6z"/>
+                  </svg>
+                </span>
+                {{ . }}
+              </p>
+            {{ end }}
+            {{ with $page.Params.pricing_range }}
+              <p class="coach-profile-card__pricing"><strong>Pricing</strong> {{ . }}</p>
+            {{ end }}
+            {{ with $page.Params.teaches }}
+              <p class="coach-profile-card__teaches"><span>Teaches:</span> {{ delimit . ", " }}</p>
+            {{ end }}
+            <div class="coach-profile-card__actions">
+              <button class="coach-profile-action" type="button">
+                <span class="coach-profile-action__icon" aria-hidden="true">♡</span>
+                Favorite
+              </button>
+              <button class="coach-profile-action" type="button">
+                <span class="coach-profile-action__icon" aria-hidden="true">↗</span>
+                Share
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <section class="coach-profile-section">
+          <h2>What You Can Expect From {{ $page.Title }}</h2>
+          <div class="content">
+            {{ $page.Content }}
+          </div>
+        </section>
+
+        <section class="coach-profile-section coach-profile-section--pricing" id="pricing">
+          <h2>Pricing</h2>
+          <div class="coach-profile-pricing">
+            <div class="coach-profile-pricing__header">
+              <span>Coaching Focus</span>
+              <span>Per Hour</span>
+            </div>
+            {{ range $page.Params.pricing }}
+              <div class="coach-profile-pricing__row">
+                <span>{{ .title }}</span>
+                <span>{{ .price }}</span>
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      </div>
+
+      <aside class="coach-profile-sidebar">
+        <div class="coach-profile-video">
+          {{ with $page.Params.video_image }}
+            <img src="{{ . }}" alt="Instructions on booking your first call">
+          {{ end }}
+          <div class="coach-profile-video__label">
+            <span class="coach-profile-video__label-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M12 3.5a8.5 8.5 0 1 1 0 17 8.5 8.5 0 0 1 0-17zm0 1.8a6.7 6.7 0 1 0 0 13.4 6.7 6.7 0 0 0 0-13.4zm-1.2 3.2 6 3.5-6 3.5V8.5z"/>
+              </svg>
+            </span>
+            Instructions on booking your first call
+          </div>
+          <div class="coach-profile-video__play" aria-hidden="true">▶</div>
+        </div>
+
+        <div class="coach-profile-booking">
+          <a class="btn primary" href="{{ $page.Params.book_now_url | default "/en/contact/" }}">Book Now</a>
+          <a class="btn secondary coach-profile-contact" href="{{ $page.Params.contact_url | default "/en/contact/" }}">
+            <span class="coach-profile-contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm0 1.7 8 5.4 8-5.4V16H4V8.2zm.9-.7h14.2L12 12.2 4.9 7.5z"/>
+              </svg>
+            </span>
+            Contact
+          </a>
+          <a class="coach-profile-booking__link" href="{{ $page.Params.availability_url | default "/en/contact/" }}">View Full Availability</a>
+          <a class="btn primary" href="{{ $page.Params.free_trial_url | default "/en/contact/" }}">Book Free Trial</a>
+          <p class="coach-profile-booking__note">Please allow at least 4 days’ notice when booking a free trial call, as coaches require time to review your profile and prepare accordingly.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+{{ end }}
