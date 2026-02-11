@@ -68,6 +68,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
             <li>CEO &amp; Co-Founder</li>
             <li>Clinical Psychologist Candidate: Expert in data-driven psychiatric care.</li>
           </ul>
+          <div class="clinician-card__links">
+            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
+            <a class="clinician-card__link" href="/en/about-us/philip-lindersten/">Learn more</a>
+          </div>
         </div>
       </article>
 
@@ -113,6 +117,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
             <li>Integrative Practitioner: 19 years supporting neurodivergent adults.</li>
             <li>Expert Coach: Specialist in executive functioning and routines.</li>
           </ul>
+          <div class="clinician-card__links">
+            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
+            <a class="clinician-card__link" href="/en/about-us/jonny-baker/">Learn more</a>
+          </div>
         </div>
       </article>
 
@@ -125,6 +133,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
             <li>Accredited ADHD Coach: MSc in Child Development.</li>
             <li>Specialist Coach: Research-driven support for neurodivergent individuals.</li>
           </ul>
+          <div class="clinician-card__links">
+            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
+            <a class="clinician-card__link" href="/en/about-us/alice-stern/">Learn more</a>
+          </div>
         </div>
       </article>
     </div>

@@ -1,10 +1,9 @@
 ---
-title: "Philip Lindersten"
+title: "Jonny Baker"
 type: "coaches"
-meta_title: "Philip Lindersten | ADHD and ASD coach"
-meta_description: "Meet Philip Lindersten, an ADHD and ASD coach at Rikta Coaching. Book a call or free trial and explore coaching options."
-image: "/img/Philip.png"
-flag: "🇸🇪"
+meta_title: "Jonny Baker | ADHD and ASD coach"
+meta_description: "Meet Jonny Baker, an ADHD and ASD coach at Rikta Coaching. Book a call or free trial and explore coaching options."
+image: "/img/Jonny.png"
 location: "United Kingdom"
 pricing_range: "£70.00 - £100.00"
 teaches:
@@ -26,8 +25,8 @@ pricing:
   - title: "Adult coaching"
     price: "£100.00"
 ---
-Philip supports clients who want practical, structured coaching for ADHD and autism. Sessions focus on clarifying goals, building routines that stick, and reducing day-to-day overwhelm without judgment.
+Jonny supports clients who want structured, practical coaching for ADHD and autism. Sessions focus on clarifying goals, building routines that stick, and reducing day-to-day overwhelm in a supportive, collaborative way.
 
-You can expect a collaborative, evidence-informed approach that adapts to your pace and priorities. Philip works with students, professionals, and parents who want tools for planning, emotional regulation, and sustainable follow-through.
+You can expect a clear plan, consistent follow-through, and tools that fit your real schedule. Jonny works with adults, families, and students who want coaching that translates into daily life.
 
 If you are unsure where to start, book a call and we will match you to the best next step. Free trials are available for new clients who want to test fit before committing.

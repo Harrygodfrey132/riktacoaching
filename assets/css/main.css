@@ -3592,6 +3592,9 @@ main#content > .location-page:first-child {
   background: #fff;
   box-shadow: 0 10px 20px rgba(29, 44, 59, 0.08);
   height: 240px;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .coach-profile-video img {
@@ -3778,8 +3781,33 @@ main#content > .location-page:first-child {
     padding: 24px 0 32px;
   }
 
+  .coach-profile-layout__grid {
+    gap: 28px;
+  }
+
   .coach-profile-card {
-    padding: 0;
+    padding: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background: #f8f7f4;
+  }
+
+  .coach-profile-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .coach-profile-card__header h1 {
+    font-size: 26px;
+  }
+
+  .coach-profile-card__location {
+    margin-bottom: 10px;
+  }
+
+  .coach-profile-card__actions {
+    display: none;
   }
 
   .coach-profile-booking {
@@ -3788,6 +3816,10 @@ main#content > .location-page:first-child {
 
   .coach-profile-video {
     height: 200px;
+  }
+
+  .coach-profile-video__label {
+    font-size: 13px;
   }
 }
 
@@ -7594,6 +7626,51 @@ nav a.cta:active{
   padding: clamp(64px, 10vw, 96px) 0;
 }
 
+.team-feature#explore-coaches {
+  background: #ffffff;
+  padding: clamp(48px, 9vw, 80px) 0;
+}
+
+.team-feature#explore-coaches .clinician-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 4vw, 28px);
+}
+
+.team-feature#explore-coaches .clinician-card {
+  border-radius: 20px;
+  box-shadow: 0 16px 30px rgba(34, 34, 34, 0.08);
+}
+
+.team-feature#explore-coaches .clinician-card__photo {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 12%;
+}
+
+.team-feature#explore-coaches .clinician-card__body {
+  padding: clamp(18px, 3vw, 22px);
+}
+
+.team-feature#explore-coaches .clinician-card__body h3 {
+  font-size: 20px;
+}
+
+.team-feature#explore-coaches .clinician-card__role {
+  font-size: 14px;
+  color: #2b2b2b;
+}
+
+.team-feature#explore-coaches .clinician-card__focus {
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.team-feature#explore-coaches .clinician-card__links {
+  margin-top: 8px;
+}
+
 .team-feature__header {
   max-width: 100%;
   margin: 0 0 clamp(28px, 5vw, 36px);
@@ -7630,34 +7707,20 @@ nav a.cta:active{
   margin: 4px 0;
 }
 
-.clinician-grid--feature {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: clamp(16px, 3vw, 24px);
-  margin-top: clamp(24px, 5vw, 32px);
-}
-
 .clinician-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(28px, 4vw, 40px);
 }
 
-/* Horizontal scroll for team cards so all fit one row */
-.team-feature .clinician-grid--feature {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  overflow-x: auto;
+.clinician-grid--feature {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: clamp(16px, 3vw, 24px);
-  padding-bottom: 10px;
   margin-top: clamp(24px, 5vw, 32px);
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .team-feature .clinician-grid--feature .clinician-card {
-  flex: 0 0 260px;
-  scroll-snap-align: start;
   display: grid;
   grid-template-rows: auto 1fr;
   min-height: 520px;
@@ -7742,6 +7805,12 @@ nav a.cta:active{
   text-decoration: underline;
 }
 
+.clinician-card__links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 .team-empty {
   text-align: center;
   color: #555;
@@ -7757,11 +7826,36 @@ nav a.cta:active{
   .team-feature .clinician-grid--feature {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .team-feature#explore-coaches .clinician-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .team-feature#explore-coaches .clinician-card__photo {
+    object-position: center 12%;
+  }
 }
 
 @media (max-width: 640px) {
   .team-feature .clinician-grid--feature {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .team-feature#explore-coaches .clinician-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-feature#explore-coaches .clinician-card {
+    margin: 0;
+  }
+
+  .team-feature#explore-coaches .clinician-card__photo {
+    aspect-ratio: 1 / 1;
+    object-position: center 12%;
+  }
+
+  .team-feature#explore-coaches .clinician-card__body h3 {
+    font-size: 19px;
   }
 }
 

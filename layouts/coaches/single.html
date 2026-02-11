@@ -1,5 +1,7 @@
 {{ define "main" }}
 {{ $page := . }}
+{{ $bookingUrl := "https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType" }}
+{{ $videoUrl := $page.Params.video_url | default "https://www.youtube.com/watch?v=8eMAts7zAF0" }}
 <main class="coach-profile-page" id="coach-profile">
   <section class="coach-profile-layout">
     <div class="container coach-profile-layout__grid">
@@ -33,16 +35,6 @@
             {{ with $page.Params.teaches }}
               <p class="coach-profile-card__teaches"><span>Teaches:</span> {{ delimit . ", " }}</p>
             {{ end }}
-            <div class="coach-profile-card__actions">
-              <button class="coach-profile-action" type="button">
-                <span class="coach-profile-action__icon" aria-hidden="true">♡</span>
-                Favorite
-              </button>
-              <button class="coach-profile-action" type="button">
-                <span class="coach-profile-action__icon" aria-hidden="true">↗</span>
-                Share
-              </button>
-            </div>
           </div>
         </article>
 
@@ -71,7 +63,7 @@
       </div>
 
       <aside class="coach-profile-sidebar">
-        <div class="coach-profile-video">
+        <a class="coach-profile-video" href="{{ $videoUrl }}" aria-label="Watch instructions on booking your first call">
           {{ with $page.Params.video_image }}
             <img src="{{ . }}" alt="Instructions on booking your first call">
           {{ end }}
@@ -84,21 +76,13 @@
             Instructions on booking your first call
           </div>
           <div class="coach-profile-video__play" aria-hidden="true">▶</div>
-        </div>
+        </a>
 
         <div class="coach-profile-booking">
-          <a class="btn primary" href="{{ $page.Params.book_now_url | default "/en/contact/" }}">Book Now</a>
-          <a class="btn secondary coach-profile-contact" href="{{ $page.Params.contact_url | default "/en/contact/" }}">
-            <span class="coach-profile-contact__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="presentation">
-                <path d="M4 6.5h16a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1zm0 1.7 8 5.4 8-5.4V16H4V8.2zm.9-.7h14.2L12 12.2 4.9 7.5z"/>
-              </svg>
-            </span>
-            Contact
-          </a>
-          <a class="coach-profile-booking__link" href="{{ $page.Params.availability_url | default "/en/contact/" }}">View Full Availability</a>
-          <a class="btn primary" href="{{ $page.Params.free_trial_url | default "/en/contact/" }}">Book Free Trial</a>
+          <a class="btn primary" href="{{ $page.Params.book_now_url | default $bookingUrl }}">Book Now</a>
+          <a class="btn primary" href="{{ $page.Params.free_trial_url | default $bookingUrl }}">Book Free Trial</a>
           <p class="coach-profile-booking__note">Please allow at least 4 days’ notice when booking a free trial call, as coaches require time to review your profile and prepare accordingly.</p>
+          <p class="coach-profile-booking__note">If you experience any issues, please contact us at <a href="mailto:info@riktacoaching.com">info@riktacoaching.com</a>.</p>
         </div>
       </aside>
     </div>
