@@ -109,28 +109,17 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Jonny.png" alt="Jonny Baker" class="clinician-card__photo">
+        <img src="/img/1-2.jpg" alt="Jessica Stigsdotter Axberg" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Jonny Baker</h3>
-          <p class="clinician-card__role">ADHD- och autismcoach</p>
+          <h3>Jessica Stigsdotter Axberg</h3>
+          <p class="clinician-card__role">Föräldracoach</p>
           <ul class="team-feature__bullets">
-            <li>Integrativ behandlare: 19 års erfarenhet inom neuropsykiatri/NPF.</li>
-            <li>Expertcoach: Specialist på exekutiva funktioner och vardagsstruktur.</li>
+            <li>Utbildad psykosyntesterapeut som coachar familjer vid adhd, autism, dyslexi, BDD och ångest.</li>
+            <li>Föreläsare sedan 2010 med fokus på praktiska strategier utifrån yrkesroll och egen erfarenhet.</li>
           </ul>
         </div>
       </article>
 
-      <article class="clinician-card">
-        <img src="/img/Alice.png" alt="Alice Stern" class="clinician-card__photo">
-        <div class="clinician-card__body">
-          <h3>Alice Stern</h3>
-          <p class="clinician-card__role">ADHD- och autismcoach</p>
-          <ul class="team-feature__bullets">
-            <li>Diplomerad ADHD-coach: Masterexamen i barns utveckling.</li>
-            <li>Specialistcoach: Forskningsbaserat stöd för personer med NPF.</li>
-          </ul>
-        </div>
-      </article>
     </div>
   </div>
 </section>
