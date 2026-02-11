@@ -1,0 +1,92 @@
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+<div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true">
+  <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
+  <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
+    <button type="button" class="newsletter-popup__close" aria-label="{{ if $isEn }}Close offer{{ else }}Stäng erbjudandet{{ end }}" data-popup-close>&times;</button>
+    <h2 id="newsletter-popup-title">
+      {{ if $isEn }}Book an assessment call today.{{ else }}Boka ett bedömningssamtal redan idag.{{ end }}
+    </h2>
+    <div class="newsletter-popup__cta">
+      <button
+        type="button"
+        class="newsletter-popup__submit"
+        data-popup-focus
+        data-cal-link="riktapsykiatri/15min"
+        data-cal-namespace="15min"
+        data-cal-config='{"layout":"month_view"}'
+      >{{ if $isEn }}Book an assessment call{{ else }}Boka ett bedömningssamtal{{ end }}
+      </button>
+    </div>
+    <p class="newsletter-popup__compliance" id="newsletter-popup-compliance">
+      {{ if $isEn }}
+        We follow the National Board of Health and Welfare’s requirements for clinical quality, evidence, and documentation.
+      {{ else }}
+        Vi följer Socialstyrelsens krav på klinisk kvalitet, evidens och dokumentation.
+      {{ end }}
+    </p>
+  </div>
+</div>
+
+<script>
+  (function preloadCal(){
+    const preconnects = ["https://app.cal.com", "https://cdn.cal.com"];
+    preconnects.forEach(url => {
+      if (document.querySelector(`link[rel="preconnect"][href="${url}"]`)) return;
+      const link = document.createElement('link');
+      link.rel = 'preconnect';
+      link.href = url;
+      link.crossOrigin = 'anonymous';
+      document.head.appendChild(link);
+    });
+    const scriptHref = "https://app.cal.com/embed/embed.js";
+    if (!document.querySelector(`link[rel="preload"][href="${scriptHref}"]`)) {
+      const preload = document.createElement('link');
+      preload.rel = 'preload';
+      preload.as = 'script';
+      preload.href = scriptHref;
+      preload.crossOrigin = 'anonymous';
+      document.head.appendChild(preload);
+    }
+  })();
+</script>
+
+<!-- Cal element-click embed code -->
+<script type="text/javascript">
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement("script")).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const namespace = ar[1];
+        api.q = api.q || [];
+        if (typeof namespace === "string") {
+          cal.ns[namespace] = cal.ns[namespace] || api;
+          p(cal.ns[namespace], ar);
+          p(cal, ["initNamespace", namespace]);
+        } else p(cal, ar);
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, "https://app.cal.com/embed/embed.js", "init");
+
+  Cal("init", "15min", { origin: "https://app.cal.com" });
+  Cal.ns["15min"]("ui", {
+    cssVarsPerTheme: {
+      light: { "cal-brand": "#f1ebe6" },
+      dark: { "cal-brand": "#3774ab" }
+    },
+    hideEventTypeDetails: false,
+    layout: "month_view",
+    theme: "light"
+  });
+</script>

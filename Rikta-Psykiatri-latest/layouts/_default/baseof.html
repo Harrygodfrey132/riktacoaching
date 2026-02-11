@@ -1,0 +1,7 @@
+{{ partial "head.html" . }}
+  {{ partial "header.html" . }}
+  <main id="content" role="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "newsletter-popup.html" . }}
+  {{ partial "footer.html" . }}

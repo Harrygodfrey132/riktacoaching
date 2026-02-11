@@ -1,0 +1,203 @@
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="{{ .Site.Title }}">
+      <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }} logotyp">
+    </a>
+    <nav aria-label="Huvudmeny" class="desktop-nav">
+      <ul>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/coachning/">Coachning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="coachningSubmenu"
+                    aria-label="Visa undersidor för Coachning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="coachningSubmenu">
+            <li><a href="/coachning/adhd/">ADHD-coachning</a></li>
+            <li><a href="/coachning/autism/">Autism-coachning</a></li>
+          </ul>
+        </li>
+        <li><a href="/kunskap/">Kunskap</a></li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/adhd-utredning/">ADHD-utredning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="adhdSubmenu"
+                    aria-label="Visa undersidor för ADHD-utredning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="adhdSubmenu">
+            <li><a href="/adhd-utredning/vuxna/">Vuxna</a></li>
+            <li><a href="/adhd-utredning/kvinnor/">Kvinnor</a></li>
+            <li><a href="/adhd-utredning/barn-och-ungdomar/">Barn och ungdomar</a></li>
+            <li><a href="/adhd-utredning/medicinering/">Medicinering</a></li>
+            <li><a href="/adhd-test/">ADHD-test</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/autism-utredning/">Autism-utredning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="autismSubmenu"
+                    aria-label="Visa undersidor för Autism-utredning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="autismSubmenu">
+            <li><a href="/autism-utredning/vuxna/">Vuxna</a></li>
+            <li><a href="/autism-utredning/kvinnor/">Kvinnor</a></li>
+            <li><a href="/autism-utredning/barn-och-ungdomar/">Barn och ungdomar</a></li>
+            <li><a href="/autism-test/">Autism-test</a></li>
+          </ul>
+        </li>
+        <!-- Temporarily hidden: <li><a href="/vart-team/">Vårt team</a></li> -->
+        <li><a href="/priser/">Priser</a></li>
+        <li><a href="/om-oss/">Om oss</a></li>
+        <li><a class="cta" href="#kontakt">Kontakta oss</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Öppna meny">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobilmeny">
+      <ul>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/coachning/" onclick="closeMobileMenu()">Coachning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="mobileCoachningSubmenu"
+                    aria-label="Visa undersidor för Coachning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="mobileCoachningSubmenu">
+            <li><a href="/coachning/adhd/" onclick="closeMobileMenu()">ADHD-coachning</a></li>
+            <li><a href="/coachning/autism/" onclick="closeMobileMenu()">Autism-coachning</a></li>
+          </ul>
+        </li>
+        <li><a href="/kunskap/" onclick="closeMobileMenu()">Kunskap</a></li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/adhd-utredning/" onclick="closeMobileMenu()">ADHD-utredning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="mobileAdhdSubmenu"
+                    aria-label="Visa undersidor för ADHD-utredning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="mobileAdhdSubmenu">
+            <li><a href="/adhd-utredning/vuxna/" onclick="closeMobileMenu()">Vuxna</a></li>
+            <li><a href="/adhd-utredning/kvinnor/" onclick="closeMobileMenu()">Kvinnor</a></li>
+            <li><a href="/adhd-utredning/barn-och-ungdomar/" onclick="closeMobileMenu()">Barn och ungdomar</a></li>
+            <li><a href="/adhd-utredning/medicinering/" onclick="closeMobileMenu()">Medicinering</a></li>
+            <li><a href="/adhd-test/" onclick="closeMobileMenu()">ADHD-test</a></li>
+          </ul>
+        </li>
+        <li class="has-submenu">
+          <div class="submenu-trigger">
+            <a href="/autism-utredning/" onclick="closeMobileMenu()">Autism-utredning</a>
+            <button type="button"
+                    class="submenu-toggle"
+                    aria-expanded="false"
+                    aria-controls="mobileAutismSubmenu"
+                    aria-label="Visa undersidor för Autism-utredning">
+              <span aria-hidden="true">&#9662;</span>
+            </button>
+          </div>
+          <ul class="submenu" id="mobileAutismSubmenu">
+            <li><a href="/autism-utredning/vuxna/" onclick="closeMobileMenu()">Vuxna</a></li>
+            <li><a href="/autism-utredning/kvinnor/" onclick="closeMobileMenu()">Kvinnor</a></li>
+            <li><a href="/autism-utredning/barn-och-ungdomar/" onclick="closeMobileMenu()">Barn och ungdomar</a></li>
+            <li><a href="/autism-test/" onclick="closeMobileMenu()">Autism-test</a></li>
+          </ul>
+        </li>
+        <!-- Temporarily hidden: <li><a href="/vart-team/" onclick="closeMobileMenu()">Vårt team</a></li> -->
+        <li><a href="/priser/" onclick="closeMobileMenu()">Priser</a></li>
+        <li><a href="/om-oss/" onclick="closeMobileMenu()">Om oss</a></li>
+        <li><a class="cta" href="#kontakt" onclick="closeMobileMenu()">Kontakta oss</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+function toggleMobileMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const spans = toggle.querySelectorAll('span');
+  const isOpen = mobileNav.style.display === 'block';
+
+  if (isOpen) {
+    closeMobileMenu();
+  } else {
+    mobileNav.style.display = 'block';
+    mobileNav.classList.add('open');
+    spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+  }
+}
+
+function closeMobileMenu() {
+  const mobileNav = document.getElementById('mobileNav');
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const spans = toggle.querySelectorAll('span');
+
+  mobileNav.style.display = 'none';
+  mobileNav.classList.remove('open');
+  resetSubmenus(mobileNav);
+  spans[0].style.transform = 'none';
+  spans[1].style.opacity = '1';
+  spans[2].style.transform = 'none';
+}
+
+function resetSubmenus(nav) {
+  const openItems = nav.querySelectorAll('.has-submenu');
+  openItems.forEach((item) => {
+    item.classList.remove('open');
+    const toggle = item.querySelector('.submenu-toggle');
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+function setupSubmenuToggles() {
+  const toggles = document.querySelectorAll('.submenu-toggle');
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener('click', (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+
+      const parentItem = toggle.closest('.has-submenu');
+      const isOpen = parentItem.classList.contains('open');
+
+      if (isOpen) {
+        parentItem.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      } else {
+        parentItem.classList.add('open');
+        toggle.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', setupSubmenuToggles);
+</script>

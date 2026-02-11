@@ -1,0 +1,47 @@
+{{- $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint -}}
+<!doctype html>
+<html lang="sv">
+<head>
+  {{- $site := .Site -}}
+  {{- $page := . -}}
+  {{- $pageTitle := or $page.Params.meta_title $page.Title $site.Title -}}
+  {{- $metaDescription := or $page.Params.meta_description $page.Params.description $site.Params.meta_description "Psykiatrisk vård med personcentrerat fokus." -}}
+  {{- $metaKeywords := $page.Params.meta_keywords -}}
+  {{- $ogTitle := or $page.Params.og_title $pageTitle -}}
+  {{- $ogDescription := or $page.Params.og_description $metaDescription -}}
+  {{- $ogType := cond .IsHome "website" "article" -}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ $pageTitle }}</title>
+  <meta name="description" content="{{ $metaDescription }}">
+  {{- with $metaKeywords }}
+  <meta name="keywords" content="{{ . }}">
+  {{- end }}
+  <meta property="og:title" content="{{ $ogTitle }}">
+  <meta property="og:description" content="{{ $ogDescription }}">
+  <meta property="og:type" content="{{ $ogType }}">
+  <meta property="og:url" content="{{ $page.Permalink }}">
+  <meta property="og:site_name" content="{{ $site.Title }}">
+  <meta property="og:locale" content="sv_SE">
+  <link rel="canonical" href="{{ $page.Permalink }}">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DBD3TNFENE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DBD3TNFENE');
+  </script>
+  <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+  {{- if .IsHome }}
+  <link rel="preload" as="image" href="/img/psychologist-picture.jpg" imagesrcset="/img/psychologist-picture.jpg 2121w" imagesizes="(max-width: 900px) 90vw, 640px">
+  {{- end }}
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+<a id="top"></a>

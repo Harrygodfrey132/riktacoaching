@@ -1,0 +1,214 @@
+---
+title: "Autism test"
+draft: false
+meta_title: "Autism test online | AQ-10 screening"
+meta_keywords: "autism test online, AQ-10, autism screening, self-test autism, Rikta Psychiatry"
+meta_description: "Take AQ-10 – a short autism self-test – and get guidance on next steps with Rikta Psychiatry."
+og_title: "AQ-10 from Rikta Psychiatry"
+og_description: "Answer AQ-10 to spot patterns related to autism and get recommendations for further support."
+layout: "autism-test/list"
+---
+
+<section class="adhd-screening">
+  <div class="adhd-screening__container">
+    <header class="adhd-screening__header">
+      <span class="adhd-screening__eyebrow">Self-assessment</span>
+      <h1>AQ-10 (quick autism screening)</h1>
+      <p>The form is based on AQ-10 – a short, validated screening tool for adults. Answer according to how you usually feel or behave.</p>
+    </header>
+    <div class="adhd-screening__shell">
+      <div aria-hidden="true" class="adhd-screening__glow"></div>
+      <form class="adhd-screening__card" id="autism-screening-form">
+        <div class="adhd-screening__summary">
+          <p class="adhd-screening__lead">Choose the response that best describes how you usually feel or behave. AQ-10 helps identify autistic traits to see if further assessment might be relevant.</p>
+          <dl class="adhd-meta">
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Source</dt>
+              <dd class="adhd-meta__value">Autism-Spectrum Quotient-10 (Baron-Cohen et al., 2001) – short version.</dd>
+            </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Audience</dt>
+              <dd class="adhd-meta__value">Adults screening for autistic traits.</dd>
+            </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Respondent</dt>
+              <dd class="adhd-meta__value">You.</dd>
+            </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Purpose</dt>
+              <dd class="adhd-meta__value">Early guidance on whether to book a diagnostic autism assessment.</dd>
+            </div>
+            <div class="adhd-meta__row">
+              <dt class="adhd-meta__label">Scale</dt>
+              <dd class="adhd-meta__value">Agree / Slightly agree = 1 point on straight statements. Questions 4 &amp; 7 are reversed: disagreement gives 1 point.</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="adhd-screening__intro">Answer every question. Total 0–10 points. A result of 6 or more suggests higher likelihood and further assessment.</p>
+        <fieldset class="adhd-section">
+          <legend>AQ-10 – English version</legend>
+          <ol class="adhd-question-list">
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I find it hard to start a conversation.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q1" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I often notice small details that others miss.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q2" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I find it hard to flow naturally in social interactions.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q3" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I find it easy to read other people’s feelings. <span class="muted">(reversed)</span></div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q4" value="0" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="0"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I focus easily on details rather than the big picture.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q5" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I notice small changes in a situation immediately.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q6" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I understand other people’s intentions even when they don’t say them directly. <span class="muted">(reversed)</span></div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q7" value="0" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="0"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">People often think I speak in an unusual way.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q8" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I prefer to do things the same way every time.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q9" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+            <li class="adhd-question">
+              <div class="adhd-question__prompt">I find it hard to understand social rules.</div>
+              <div class="adhd-response-group">
+                <label class="adhd-response"><input type="radio" name="q10" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Disagree</span></label>
+              </div>
+            </li>
+          </ol>
+        </fieldset>
+        <div class="adhd-screening__actions">
+          <button class="btn primary adhd-screening__submit" type="submit">Calculate score</button>
+          <button class="btn secondary adhd-screening__reset" type="button">Clear form</button>
+        </div>
+        <div aria-live="polite" class="adhd-score" id="autism-score" hidden>
+          <div class="adhd-score__summary">
+            <span class="adhd-score__label">Total score</span>
+            <span class="adhd-score__value" id="autism-score-value">0</span>
+          </div>
+          <p class="adhd-score__interpretation" id="autism-score-interpretation">Answer all questions to see your AQ-10 score.</p>
+          <p class="adhd-score__note">This self-test does not replace a clinical autism assessment. Contact Rikta Psychiatry for professional evaluation, treatment, or coaching.</p>
+        </div>
+      </form>
+      <aside class="adhd-screening__note">
+        <h3>How scoring works</h3>
+        <ul>
+          <li>Each question gives 1 point when you agree (fully or slightly) with an autistic trait.</li>
+          <li>Questions 4 and 7 are reversed: disagreement gives 1 point.</li>
+          <li>Total 0–10. Score ≥ 6 → positive screening, recommend further assessment.</li>
+        </ul>
+        <p><strong>Sources:</strong><br>
+        Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
+        National Institute for Health and Care Excellence (NICE). Autism spectrum disorder in adults: diagnosis and management. Clinical guideline CG142, 2012.</p>
+        <p><strong>Translation note:</strong><br>
+        English adaptation by RiktaPsychiatry.se (2025), based on AQ-10.</p>
+        <p><strong>Important:</strong><br>
+        This is a screening form, not a diagnostic test.<br>
+        The result indicates whether you might benefit from further autism assessment, but cannot establish a diagnosis. If your score is elevated, we recommend contacting a clinician or booking a professional neuropsychiatric evaluation.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="lead-modal" id="adhd-lead-modal" hidden>
+  <div class="lead-modal__overlay" data-close-lead></div>
+  <div class="lead-modal__dialog">
+    <button class="lead-modal__close" type="button" aria-label="Close form" data-close-lead>&times;</button>
+    <div class="lead-modal__intro">
+      <p class="lead-modal__eyebrow">Show results</p>
+      <h3>Get the result instantly – we’ll email it to you</h3>
+      <p>We unlock the result on the page and send it to your email so you have it saved.</p>
+      <p class="lead-modal__hint">We need your email so you can return to the result and so we can send a short plan for next steps.</p>
+    </div>
+    <iframe id="adhd-lead-target" name="adhd-lead-target" title="Lead form" src="about:blank" hidden></iframe>
+    <form id="webform896517000000571075"
+      class="lead-modal__form"
+      action="https://crm.zoho.eu/crm/WebToLeadForm"
+      name="WebToLeads896517000000571075"
+      method="POST"
+      target="adhd-lead-target"
+      accept-charset="UTF-8"
+      onsubmit='javascript:document.charset="UTF-8"; return checkMandatory896517000000571075()'>
+      <input type="hidden" name="xnQsjsdp" value="fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3">
+      <input type="hidden" name="xmIwtLD" value="fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5">
+      <input type="hidden" name="actionType" value="TGVhZHM=">
+      <input type="hidden" name="returnURL" value="https://riktapsykiatri.se/">
+      <input type="hidden" name="zc_gad" id="zc_gad" value="">
+      <input type="hidden" name="Lead Source" id="adhd-lead-source" value="Autism Investigation">
+      <input type="hidden" name="Rating" id="adhd-lead-rating" value="">
+      <div class="lead-modal__fields">
+        <label class="lead-modal__label" for="Last Name">Name</label>
+        <input class="lead-modal__input" type="text" id="Last Name" name="Last Name" maxlength="80" required>
+        <label class="lead-modal__label" for="Email">Email</label>
+        <input class="lead-modal__input" type="email" id="Email" name="Email" maxlength="100" required>
+      </div>
+      <div class="lead-modal__actions">
+        <button class="btn primary" type="submit">Show my result</button>
+        <button class="btn secondary" type="button" data-close-lead>Close</button>
+      </div>
+    </form>
+  </div>
+</div>

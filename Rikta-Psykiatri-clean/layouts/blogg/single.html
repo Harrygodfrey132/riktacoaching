@@ -1,0 +1,62 @@
+{{ define "main" }}
+<main class="blog-simple" id="top">
+  <div class="container blog-simple__shell">
+    <div class="blog-simple__content">
+      {{ $body := .Content | replaceRE `(?s)^<h1[^>]*>.*?</h1>` "" }}
+      {{ with .Params.hero }}
+        <figure class="blog-simple__hero">
+          <img src="{{ . | absURL }}" alt="{{ $.Params.hero_alt | default $.Title }}">
+        </figure>
+      {{ end }}
+      <header class="blog-simple__header">
+        <div>
+          <p class="blog-simple__eyebrow">Blogg · Rikta Psykiatri</p>
+          <h1>{{ .Title }}</h1>
+          {{ with .Params.description }}
+            <p class="blog-simple__lead">{{ . }}</p>
+          {{ end }}
+        </div>
+        <ul class="blog-simple__meta">
+          <li><span>Publicerad</span><strong>{{ .Date.Format "2006-01-02" }}</strong></li>
+          <li><span>Lästid</span><strong>{{ .ReadingTime }} min</strong></li>
+        </ul>
+      </header>
+      <div class="blog-simple__divider"></div>
+      <div class="blog-simple__body">
+        {{ $body | safeHTML }}
+      </div>
+      <section class="blog-simple__cta">
+        <div class="blog-simple__cta-grid">
+          <div>
+            <p class="blog-simple__eyebrow">Sverige</p>
+            <h2>Coachning och bedömning i hela landet</h2>
+            <p>Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. Hör av dig så hittar vi upplägget som passar dig.</p>
+            <a class="btn primary" href="/kontakta-oss/">Boka samtal</a>
+          </div>
+          <div class="blog-simple__map">
+            <img src="{{ "/img/scenic-background-picture.jpg" | absURL }}" alt="Sverige, vi stöttar patienter i hela landet">
+          </div>
+        </div>
+      </section>
+      {{- /* Article structured data for SEO */ -}}
+      {{- $img := cond (isset .Params "hero") (.Params.hero | absURL) "" -}}
+      {{- $schema := dict
+        "@context" "https://schema.org"
+        "@type" "Article"
+        "headline" .Title
+        "description" (or .Params.meta_description .Params.description)
+        "image" (cond (ne $img "") $img nil)
+        "author" (dict "@type" "Organization" "name" .Site.Title)
+        "publisher" (dict "@type" "Organization" "name" .Site.Title)
+        "datePublished" (.Date.Format "2006-01-02")
+        "dateModified" (.Lastmod.Format "2006-01-02")
+        "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+        "keywords" .Params.meta_keywords
+      -}}
+      <script type="application/ld+json">
+        {{- $schema | jsonify -}}
+      </script>
+    </div>
+  </div>
+</main>
+{{ end }}

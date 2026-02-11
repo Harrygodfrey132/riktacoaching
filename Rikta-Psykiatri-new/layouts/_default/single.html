@@ -1,0 +1,25 @@
+{{ define "main" }}
+  {{/* Use custom shell for assessment pages to preserve their native structure */}}
+  {{ $path := .RelPermalink }}
+  {{ $baseClass := "" }}
+  {{ if or (hasPrefix $path "/adhd-utredning/") (hasPrefix $path "/en/adhd-assessment/") }}
+    {{ $baseClass = "adhd-page" }}
+  {{ else if or (hasPrefix $path "/autism-utredning/") (hasPrefix $path "/en/autism-assessment/") }}
+    {{ $baseClass = "autism-page" }}
+  {{ end }}
+
+  {{ if ne $baseClass "" }}
+    <article class="{{ $baseClass }}{{ with .Params.page_class }} {{ . }}{{ end }}">
+      {{ .Content }}
+    </article>
+  {{ else }}
+    <main class="screen" id="top">
+      <div class="container">
+        <h1>{{ .Title }}</h1>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+    </main>
+  {{ end }}
+{{ end }}

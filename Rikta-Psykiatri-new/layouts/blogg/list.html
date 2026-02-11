@@ -1,0 +1,44 @@
+{{ define "main" }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+<main class="blog-archive" id="top">
+  <div class="container">
+    <header class="blog-archive__header">
+      <p class="blog-archive__eyebrow">
+        {{ if $isEn }}Blog · Rikta Psychiatry{{ else }}Blogg · Rikta Psykiatri{{ end }}
+      </p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Content }}
+        <div class="blog-archive__intro">
+          {{ . }}
+        </div>
+      {{ end }}
+    </header>
+
+    <div class="blog-archive__grid">
+      {{ range .Pages.ByDate.Reverse }}
+        <article class="blog-card">
+          <a class="blog-card__link" href="{{ .RelPermalink }}">
+            <div class="blog-card__media">
+              <div class="blog-card__image" style="background-image: url('{{ with .Params.hero }}{{ . | absURL }}{{ else }}{{ "/img/hero.jpg" | absURL }}{{ end }}');"></div>
+              <div class="blog-card__badge">
+                <span>{{ .Date.Format "2006-01-02" }}</span>
+                <span aria-hidden="true">·</span>
+                <span>{{ .ReadingTime }} min</span>
+              </div>
+            </div>
+            <div class="blog-card__body">
+              <h2>{{ .Title }}</h2>
+              {{ with .Params.description }}
+                <p>{{ . }}</p>
+              {{ end }}
+              <div class="blog-card__meta">
+                {{ if $isEn }}Read more{{ else }}Läs mer{{ end }}
+              </div>
+            </div>
+          </a>
+        </article>
+      {{ end }}
+    </div>
+  </div>
+</main>
+{{ end }}

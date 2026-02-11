@@ -1,0 +1,11 @@
+/public/
+/resources/
+/node_modules/
+*.log
+.DS_Store
+/public/
+/public/
+Rikta-Psykiatri/
+Rikta-Psykiatri.backup/
+Rikta-Psykiatri.old/
+Rikta-Psykiatri.prev/
