@@ -25,8 +25,8 @@ pricing:
   - title: "Adult coaching"
     price: "£100.00"
 ---
-Alice supports clients who want structured, practical coaching for ADHD and autism. Sessions focus on clarifying goals, building routines that stick, and reducing day-to-day overwhelm in a supportive, collaborative way.
+Alice is an accredited ADHD coach with an MSc in Child Development. As a specialist coach, she provides research‑driven support for neurodivergent individuals—blending evidence‑based strategy with warm, structured guidance that makes change feel achievable.
 
-You can expect a clear plan, consistent follow-through, and tools that fit your real schedule. Alice works with adults, families, and students who want coaching that translates into daily life.
+Sessions focus on understanding your profile, translating insights into daily routines, and building skills that support focus, regulation, and confidence over time. Alice works with adults, parents, and young people who want clear, informed coaching they can trust.
 
 If you are unsure where to start, book a call and we will match you to the best next step. Free trials are available for new clients who want to test fit before committing.

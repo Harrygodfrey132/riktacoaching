@@ -25,8 +25,8 @@ pricing:
   - title: "Adult coaching"
     price: "£100.00"
 ---
-Jonny supports clients who want structured, practical coaching for ADHD and autism. Sessions focus on clarifying goals, building routines that stick, and reducing day-to-day overwhelm in a supportive, collaborative way.
+Jonny is an integrative practitioner with 19 years supporting neurodivergent adults. As an expert coach in executive functioning and routines, he helps you translate intention into action—building structure, planning realistically, and following through without burnout.
 
-You can expect a clear plan, consistent follow-through, and tools that fit your real schedule. Jonny works with adults, families, and students who want coaching that translates into daily life.
+Sessions are practical and grounded: you identify the real friction points, design routines that fit your life, and practise tools that make daily demands easier to manage. Jonny works with adults and families who want steady, sustainable progress they can keep using long after the call.
 
 If you are unsure where to start, book a call and we will match you to the best next step. Free trials are available for new clients who want to test fit before committing.
