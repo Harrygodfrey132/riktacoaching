@@ -1,6 +1,6 @@
 <footer class="site-footer">
   {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-  {{ $aboutPath := cond $isEn "en/about-us/" "/om-oss/" }}
+  {{ $aboutPath := cond $isEn "en/about-us/" "/for-foretag/" }}
   {{ $joinPath := cond $isEn "en/join-our-team/" "/bli-en-del-av-teamet/" }}
   {{ $locationsPath := cond $isEn "en/locations/" "/platser/" }}
   {{ $pricingPath := cond $isEn  "en/pricing/" "/priser/" }}
@@ -50,7 +50,7 @@
       <div class="footer-column">
         <h4>{{ if $isEn }}Quick links{{ else }}Snabblänkar{{ end }}</h4>
         <ul>
-          <li><a href="{{ $aboutPath | relLangURL }}">{{ if $isEn }}Our Team{{ else }}Vårt team{{ end }}</a></li>
+          <li><a href="{{ $aboutPath | relLangURL }}">{{ if $isEn }}Our Team{{ else }}För företag{{ end }}</a></li>
           <li><a href="{{ $joinPath | relLangURL }}">{{ if $isEn }}Join our team{{ else }}Bli en del av teamet{{ end }}</a></li>
           <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
           <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
