@@ -616,6 +616,11 @@ function buildZohoParams(normalized) {
   if (normalized.leadSource) {
     params.set('Lead Source', normalized.leadSource);
   }
+  const locale = resolveSubmissionLocale(normalized);
+  if (locale) {
+    const leadInput = locale.startsWith('en') ? 'Website - English Side' : 'Website - Swedish Side';
+    params.set('Lead Input', leadInput);
+  }
   return params;
 }
 

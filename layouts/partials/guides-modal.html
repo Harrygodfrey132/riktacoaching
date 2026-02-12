@@ -14,25 +14,25 @@
     <div class="guides-modal__content">
       <h2 id="guides-modal-title">
         {{ if $isEn }}
-          Get strategies that actually work for neurodivergent brains
+          Would you like more information or to explore our options?
         {{ else }}
-          Få strategier som faktiskt funkar för NPF-hjärnor
+          Vill du ha mer information eller utforska våra alternativ?
         {{ end }}
       </h2>
       <p class="guides-modal__lead">
         {{ if $isEn }}
-          Get our practical guides designed to reduce cognitive load and simplify everyday life.
+          Fill in the form here.
         {{ else }}
-          Ladda ner våra praktiska guider designade för att minska kognitiv belastning och förenkla din vardag.
+          Fyll i formuläret här.
         {{ end }}
       </p>
 
       <form
         id="guides-modal-form"
         class="guides-modal__form"
-        data-kaddio-form="guides"
-        data-form-context="guides-modal"
-        data-success-message="{{ if $isEn }}Thanks! The guides are on their way to your inbox.{{ else }}Tack! Guiderna är på väg till din inkorg.{{ end }}"
+        data-kaddio-form="contact"
+        data-form-context="quiz-popup"
+        data-success-message="{{ if $isEn }}Thanks! We will be in touch soon.{{ else }}Tack! Vi hör av oss snart.{{ end }}"
         data-missing-email-message="{{ if $isEn }}Please add your email before submitting.{{ else }}Lägg till din e-post innan du skickar.{{ end }}"
         data-error-message="{{ if $isEn }}We could not send your request. Please try again.{{ else }}Vi kunde inte skicka din förfrågan. Försök igen.{{ end }}"
         data-rate-limit-message="{{ if $isEn }}We are handling many requests right now. Please try again in a moment.{{ else }}Vi hanterar många förfrågningar just nu. Försök igen om en stund.{{ end }}"
@@ -41,25 +41,22 @@
         method="POST"
         accept-charset="UTF-8"
       >
-        <input type="hidden" name="leadSource" value="Guides">
-        <input type="hidden" name="description" value="{{ if $isEn }}Requested NPF guides.{{ else }}Beställning av NPF-guider.{{ end }}">
-
         <div class="guides-modal__field">
-          <label for="guides-full-name">{{ if $isEn }}Full name{{ else }}Namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+          <label for="guides-full-name">{{ if $isEn }}Name{{ else }}Namn{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
           <input
             type="text"
             id="guides-full-name"
             name="fullName"
             maxlength="120"
             autocomplete="name"
-            placeholder="{{ if $isEn }}Enter your full name{{ else }}Skriv ditt namn{{ end }}"
+            placeholder="{{ if $isEn }}Enter your name{{ else }}Skriv ditt namn{{ end }}"
             required
             data-guides-focus
           >
         </div>
 
         <div class="guides-modal__field">
-          <label for="guides-email">{{ if $isEn }}Email address{{ else }}E-postadress{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
+          <label for="guides-email">{{ if $isEn }}Email{{ else }}E-post{{ end }} <span aria-hidden="true" style="color:red;">*</span></label>
           <input
             type="email"
             id="guides-email"
@@ -71,39 +68,31 @@
           >
         </div>
 
+        <div class="guides-modal__field">
+          <label for="guides-reason">{{ if $isEn }}Reason{{ else }}Anledning{{ end }}</label>
+          <textarea
+            id="guides-reason"
+            name="description"
+            maxlength="800"
+            rows="4"
+            placeholder="{{ if $isEn }}Tell us briefly how we can help{{ else }}Beskriv kort hur vi kan hjälpa{{ end }}"
+          ></textarea>
+        </div>
+
         <label class="guides-modal__consent">
           <input type="checkbox" name="policyAcknowledgement" required>
           <span>
             {{ if $isEn }}
-              I consent to my data being processed according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>, including the processing of health-related information (neurodevelopmental conditions) so I can receive the guides.
+              I consent to my data being processed according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>, including the processing of health-related information (neurodevelopmental conditions) so we can respond to your request.
             {{ else }}
-              Jag samtycker till att mina uppgifter behandlas enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>, inklusive behandlingen av hälsorelaterad information (NPF) för att kunna motta guiderna.
-            {{ end }}
-          </span>
-        </label>
-
-        <label class="guides-modal__consent guides-modal__consent--optional">
-          <input type="checkbox" name="newsletterOptIn">
-          <span>
-            {{ if $isEn }}
-              I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)
-            {{ else }}
-              Jag vill få tips, guider och nyheter via e-post. Jag kan när som helst avregistrera mig. (Valfritt)
+              Jag samtycker till att mina uppgifter behandlas enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>, inklusive behandlingen av hälsorelaterad information (NPF) för att vi ska kunna återkomma till dig.
             {{ end }}
           </span>
         </label>
 
         <button type="submit" class="btn primary guides-modal__submit">
-          {{ if $isEn }}Send the guides{{ else }}Skicka guiderna{{ end }}
+          {{ if $isEn }}Send{{ else }}Skicka{{ end }}
         </button>
-
-        <p class="guides-modal__legal">
-          {{ if $isEn }}
-            Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.
-          {{ else }}
-            Personuppgiftsansvarig: Riktningskliniken AB. Du kan när som helst återkalla ditt samtycke via länk i våra utskick.
-          {{ end }}
-        </p>
 
         <p class="guides-modal__status form-status" data-form-status aria-live="polite" hidden></p>
       </form>
