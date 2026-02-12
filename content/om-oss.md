@@ -109,7 +109,7 @@ description: "Lär känna specialistteamet bakom Rikta Psykiatri och hur vi bygg
       </article>
 
       <article class="clinician-card">
-        <img src="/img/image.jpg" alt="Jessica Stigsdotter Axberg" class="clinician-card__photo">
+        <img src="/img/jessica-stigsdotter-axberg.jpg" alt="Jessica Stigsdotter Axberg" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Jessica Stigsdotter Axberg</h3>
           <p class="clinician-card__role">Föräldracoach</p>
