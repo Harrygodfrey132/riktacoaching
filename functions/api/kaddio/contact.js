@@ -96,8 +96,32 @@ export async function onRequest(context) {
     }
 
     const receivedAt = new Date().toISOString();
+    const incoming = parsed.data || {};
+    if (!incoming.metadata || typeof incoming.metadata !== 'object') {
+      incoming.metadata = {};
+    }
+    if (!incoming.metadata.path || !incoming.metadata.locale) {
+      const referer = request.headers.get('referer') || '';
+      if (referer) {
+        try {
+          const url = new URL(referer);
+          if (!incoming.metadata.path) incoming.metadata.path = url.pathname || undefined;
+          if (!incoming.metadata.locale && url.pathname) {
+            incoming.metadata.locale = url.pathname.toLowerCase().startsWith('/en') ? 'en' : 'sv';
+          }
+        } catch (_err) {}
+      }
+    }
+    if (!incoming.metadata.locale) {
+      const acceptLanguage = (request.headers.get('accept-language') || '').toLowerCase();
+      if (acceptLanguage.startsWith('en')) {
+        incoming.metadata.locale = 'en';
+      } else if (acceptLanguage) {
+        incoming.metadata.locale = 'sv';
+      }
+    }
 
-    const normalized = normalizeInput(parsed.data);
+    const normalized = normalizeInput(incoming);
     if (!normalized) {
       return withCors(json({ error: 'Missing required fields' }, 400));
     }

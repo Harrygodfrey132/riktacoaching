@@ -814,6 +814,9 @@
     const payloadFullName = ((payload && payload.fullName) || '').trim();
     const payloadEmail = ((payload && payload.email) || '').trim();
     const payloadLeadSource = ((payload && payload.leadSource) || '').trim();
+    const payloadLocale = (payload && payload.metadata && payload.metadata.locale) ? String(payload.metadata.locale) : '';
+    const resolvedLocale = (payloadLocale || resolveLocale(form) || '').toLowerCase();
+    const leadInput = resolvedLocale.startsWith('en') ? 'Website - English Side' : 'Website - Swedish Side';
 
     let firstName = readFormValue(form, [
       'input[name="firstName"]',
@@ -847,7 +850,7 @@
     const email = payloadEmail || formEmail || ZOHO_FALLBACK_EMAIL;
     const leadSource = payloadLeadSource;
 
-    return { firstName, lastName, email, leadSource };
+    return { firstName, lastName, email, leadSource, leadInput };
   }
 
   function sendZohoLead({ form, payload } = {}){
@@ -855,10 +858,18 @@
       ensureZohoForm();
       if (!zohoForm || !zohoFields) return;
       const data = buildZohoLeadData(form, payload);
+      if (!zohoFields['Lead Input']) {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = 'Lead Input';
+        zohoForm.appendChild(input);
+        zohoFields['Lead Input'] = input;
+      }
       zohoFields['First Name'].value = data.firstName;
       zohoFields['Last Name'].value = data.lastName;
       zohoFields['Email'].value = data.email;
       zohoFields['Lead Source'].value = data.leadSource || '';
+      zohoFields['Lead Input'].value = data.leadInput || '';
       zohoForm.submit();
     } catch (_err) {
       // Best-effort only: avoid interfering with primary form submission.

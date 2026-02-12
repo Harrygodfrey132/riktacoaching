@@ -9670,7 +9670,25 @@ html.rk-pii-blocked #adhd-lead-modal {
   background: #ffffff;
 }
 
+.guides-modal__field textarea {
+  min-height: 120px;
+  border-radius: 14px;
+  border: 1px solid rgba(15, 23, 42, 0.18);
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #ffffff;
+  resize: vertical;
+}
+
 .guides-modal__field input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(236, 78, 91, 0.2);
+  outline: none;
+}
+
+.guides-modal__field textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(236, 78, 91, 0.2);
   outline: none;
