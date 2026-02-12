@@ -25,8 +25,17 @@ pricing:
   - title: "Adult coaching"
     price: "£100.00"
 ---
-Alice is an accredited ADHD coach with an MSc in Child Development. As a specialist coach, she provides research‑driven support for neurodivergent individuals—blending evidence‑based strategy with warm, structured guidance that makes change feel achievable.
+Alice is a CPD-accredited ADHD and neurodivergent coach with an MSc in Child Development from UCL. She provides compassionate, strength-based support for children, adults, and families, drawing on nearly two years of coaching experience and a decade-long background in wellness and mindfulness.
 
-Sessions focus on understanding your profile, translating insights into daily routines, and building skills that support focus, regulation, and confidence over time. Alice works with adults, parents, and young people who want clear, informed coaching they can trust.
+Her approach focuses on translating complex psychological research into accessible, practical insights. Alice works collaboratively with clients to reframe neurodivergent experiences positively and build sustainable self-awareness.
 
-If you are unsure where to start, book a call and we will match you to the best next step. Free trials are available for new clients who want to test fit before committing.
+### Coaching Focus
+
+Sessions are holistic and tailored to individual profiles, focusing on:
+
+- **Actionable Planning:** Co-creating bespoke strategies to enhance confidence, accountability, and daily focus.
+- **Executive Functioning:** Developing tools for self-advocacy and navigating the specific demands of the workplace or educational environments.
+- **Family Support:** Helping parents and families identify a child's unique profile of strengths and challenges to implement effective home strategies.
+- **Mindfulness and Flow:** Incorporating evidence-based mindful practices to help clients manage stress and move forward with clarity.
+
+Alice is a Graduate Member of the British Psychological Society (BPS). Her work is grounded in the latest neurodiversity research, ensuring an ethical, reflective, and non-clinical coaching environment.

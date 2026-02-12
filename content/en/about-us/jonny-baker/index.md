@@ -25,8 +25,12 @@ pricing:
   - title: "Adult coaching"
     price: "£100.00"
 ---
-Jonny is an integrative practitioner with 19 years supporting neurodivergent adults. As an expert coach in executive functioning and routines, he helps you translate intention into action—building structure, planning realistically, and following through without burnout.
+Jonny is an integrative practitioner with 19 years of experience supporting neurodivergent adults. His work focuses on executive functioning and emotional regulation, helping you translate intention into action through realistic planning and sustainable routines.
 
-Sessions are practical and grounded: you identify the real friction points, design routines that fit your life, and practise tools that make daily demands easier to manage. Jonny works with adults and families who want steady, sustainable progress they can keep using long after the call.
+Sessions are practical and grounded in evidence-informed psychological models, including cognitive-behavioural and mindfulness-based approaches. You will work together to:
 
-If you are unsure where to start, book a call and we will match you to the best next step. Free trials are available for new clients who want to test fit before committing.
+- Identify friction points in your daily life and productivity.
+- Design routines that fit your specific environment and responsibilities.
+- Practise tools to manage focus, motivation, and stress without burnout.
+
+Jonny holds an MA in the Psychology of Education from UCL and is a Graduate Member of the British Psychological Society (BPS). He is currently training toward UKCP registration as a psychotherapist, ensuring his coaching is underpinned by clinical evidence and high ethical standards. He has extensive experience in remote delivery, providing consistent support for clients across the UK.
