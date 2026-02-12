@@ -1,8 +1,8 @@
 ---
-title: "För företag"
+title: "Företagshälsa"
 layout: "about"
 draft: false
-meta_title: "För företag | Neurokompetens för arbetslivet | Rikta Psykiatri"
+meta_title: "Företagshälsa | Neurokompetens för arbetslivet | Rikta Psykiatri"
 meta_keywords: "neurodiversitet arbetsplats, ADHD arbetsanpassning, autism arbetsmiljö, kognitiv ergonomi, OSA SAM, neuroperformance program, HR neurokompetens"
 meta_description: "Rikta hjälper företag att förstå och anpassa arbetsmiljön för medarbetare med ADHD och autism – med klinisk expertis och praktiska strategier för hållbar prestation."
 og_title: "Neurokompetens för arbetslivet"
@@ -18,10 +18,10 @@ aliases:
         <nav class="hero-breadcrumb" aria-label="Navigering">
           <ol>
             <li><a href="/">Hem</a></li>
-            <li>För företag</li>
+            <li>Företagshälsa</li>
           </ol>
         </nav>
-        <span class="eyebrow">För företag</span>
+        <span class="eyebrow">Företagshälsa</span>
         <h1>Neurokompetens för arbetslivet</h1>
         <p class="lead">
           Rikta ger företag verktygen att förstå och anpassa arbetsmiljön för medarbetare med ADHD och autism.
