@@ -47,34 +47,34 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
     <div class="pricing-group">
       <h3>Coachning vid ADHD och autism</h3>
       <div class="pricing">
-        <article class="card">
-          <h3>ADHD-coachning</h3>
-          <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">850 kr</p>
-          <ul class="details">
-            <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
-            <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
-          </ul>
+	        <article class="card">
+	          <h3>ADHD-coachning</h3>
+	          <p class="meta">Digitalt eller på plats • 45 min</p>
+	          <p class="price">1050 kr</p>
+	          <ul class="details">
+	            <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
+	            <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
+	          </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
-        <article class="card">
-          <h3>Autismcoachning</h3>
-          <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">850 kr</p>
-          <ul class="details">
-            <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
-            <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
-          </ul>
+	        <article class="card">
+	          <h3>Autismcoachning</h3>
+	          <p class="meta">Digitalt eller på plats • 45 min</p>
+	          <p class="price">1050 kr</p>
+	          <ul class="details">
+	            <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
+	            <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
+	          </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
-        <article class="card">
-          <h3>Fokus- och strukturcoachning</h3>
-          <p class="meta">Digitalt eller på plats • 45 min</p>
-          <p class="price">850 kr</p>
-          <ul class="details">
-            <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
-            <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>
-            <li>Energi och självreglering: Strategier för att hantera mentalt brus, minska stress och stärka ditt fokus.</li>
+	        <article class="card">
+	          <h3>Fokus- och strukturcoachning</h3>
+	          <p class="meta">Digitalt eller på plats • 45 min</p>
+	          <p class="price">1050 kr</p>
+	          <ul class="details">
+	            <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
+	            <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>
+	            <li>Energi och självreglering: Strategier för att hantera mentalt brus, minska stress och stärka ditt fokus.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
@@ -89,19 +89,19 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
-        <article class="card">
-          <h3>Stresshantering (NPF-fokus)</h3>
-          <p class="meta">Friskvård för en hållbar vardag • 45 min</p>
-          <p class="price">850 kr / 2 400 kr</p>
-          <ul class="details">
-            <li>Stressfysiologi vid NPF: Förstå hur din hjärna reagerar på belastning, sensoriska intryck och exekutiva krav.</li>
-            <li>Verktyg för återhämtning: Strategier som fungerar för hjärnan vid NPF, bortom standardsvaren.</li>
-            <li>Friskvårdsberättigat: Vi utfärdar giltiga kvitton för ditt friskvårdsbidrag (Epassi m.fl.).</li>
-            <li><strong>Välj paket:</strong> 1 tillfälle (850 kr): Kartläggning och omedelbara verktyg.</li>
-            <li><strong>Välj paket:</strong> 3 tillfällen (2 400 kr): Fullständig plan: Fysiologi, Balans &amp; Framtidsplan.</li>
-          </ul>
-          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
-        </article>
+	        <article class="card">
+	          <h3>Stresshantering (NPF-fokus)</h3>
+	          <p class="meta">Friskvård för en hållbar vardag • 45 min</p>
+	          <p class="price">1050 kr / 3 000 kr</p>
+	          <ul class="details">
+	            <li>Stressfysiologi vid NPF: Förstå hur din hjärna reagerar på belastning, sensoriska intryck och exekutiva krav.</li>
+	            <li>Verktyg för återhämtning: Strategier som fungerar för hjärnan vid NPF, bortom standardsvaren.</li>
+	            <li>Friskvårdsberättigat: Vi utfärdar giltiga kvitton för ditt friskvårdsbidrag (Epassi m.fl.).</li>
+	            <li><strong>Välj paket:</strong> 1 tillfälle (1050 kr): Kartläggning och omedelbara verktyg.</li>
+	            <li><strong>Välj paket:</strong> 3 tillfällen (3 000 kr): Fullständig plan: Fysiologi, Balans &amp; Framtidsplan.</li>
+	          </ul>
+	          <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
+	        </article>
       </div>
     </div>
     <div class="pricing-group">
