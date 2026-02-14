@@ -48,14 +48,17 @@
     </div>
     <div class="footer-columns">
       <div class="footer-column">
-        <h4>{{ if $isEn }}Quick links{{ else }}Snabblänkar{{ end }}</h4>
-        <ul>
-          <li><a href="{{ $aboutPath | relLangURL }}">{{ if $isEn }}Our Team{{ else }}Företagshälsa{{ end }}</a></li>
-          <li><a href="{{ $joinPath | relLangURL }}">{{ if $isEn }}Join our team{{ else }}Bli en del av teamet{{ end }}</a></li>
-          <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
-          <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
-          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
-          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
+	        <h4>{{ if $isEn }}Quick links{{ else }}Snabblänkar{{ end }}</h4>
+	        <ul>
+	          <li><a href="{{ $aboutPath | relLangURL }}">{{ if $isEn }}Our Team{{ else }}Företagshälsa{{ end }}</a></li>
+	          {{ if not $isEn }}
+	            <li><a href="{{ "/vart-team/" | relLangURL }}">Vårt team</a></li>
+	          {{ end }}
+	          <li><a href="{{ $joinPath | relLangURL }}">{{ if $isEn }}Join our team{{ else }}Bli en del av teamet{{ end }}</a></li>
+	          <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
+	          <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
+	          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
+	          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
           {{ if $isEn }}
             <li><a href="{{ "en/privacy-policy/" | relLangURL }}">Privacy &amp; data protection</a></li>
             <li><a href="{{ "en/terms-and-conditions/" | relLangURL }}">Terms and conditions</a></li>

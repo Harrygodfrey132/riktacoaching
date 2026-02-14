@@ -7747,6 +7747,10 @@ nav a.cta:active{
   object-fit: cover;
 }
 
+.clinician-card__photo--philip {
+  object-position: 50% 15%;
+}
+
 .team-feature .clinician-card__photo {
   aspect-ratio: 1 / 1;
 }
@@ -10346,6 +10350,10 @@ body.newsletter-popup--locked {
   border-radius: 50%;
   object-fit: cover;
   background: #f1f5f9;
+}
+
+.author-avatar--philip{
+  object-position: 50% 15%;
 }
 
 .author-kicker{

@@ -60,7 +60,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
       </article>
 
       <article class="clinician-card">
-        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo">
+        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo clinician-card__photo--philip">
         <div class="clinician-card__body">
           <h3>Philip Lindersten</h3>
           <p class="clinician-card__role">ADHD and Autism Coach</p>
