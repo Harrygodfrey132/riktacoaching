@@ -98,7 +98,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
       </article>
 
       <article class="clinician-card">
-        <img src="/img/untitled-design.png" alt="Maria Fridlund" class="clinician-card__photo">
+        <img src="/img/maria-fridlund.png" alt="Maria Fridlund" class="clinician-card__photo">
         <div class="clinician-card__body">
           <h3>Maria Fridlund</h3>
           <p class="clinician-card__role">Licensed Psychologist</p>
