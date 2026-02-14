@@ -24,7 +24,7 @@ pricing:
   - title: "Parent coaching"
     price: "£70.00"
   - title: "Adult coaching"
-    price: "£100.00"
+    price: "£90.00"
 ---
 Philip supports clients who want practical, structured coaching for ADHD and autism. Sessions focus on clarifying goals, building routines that stick, and reducing day-to-day overwhelm without judgment.
 

@@ -38,6 +38,13 @@
           </div>
         </article>
 
+        <div class="coach-profile-booking coach-profile-booking--mobile">
+          <a class="btn primary" href="{{ $page.Params.book_now_url | default $bookingUrl }}">Book Now</a>
+          <a class="btn primary" href="{{ $page.Params.free_trial_url | default $bookingUrl }}">Book Free Trial</a>
+          <p class="coach-profile-booking__note">Please allow at least 4 days’ notice when booking a free trial call, as coaches require time to review your profile and prepare accordingly.</p>
+          <p class="coach-profile-booking__note">If you experience any issues, please contact us at <a href="mailto:info@riktacoaching.com">info@riktacoaching.com</a>.</p>
+        </div>
+
         <section class="coach-profile-section">
           <h2>What You Can Expect From {{ $page.Title }}</h2>
           <div class="content">
@@ -78,7 +85,7 @@
           <div class="coach-profile-video__play" aria-hidden="true">▶</div>
         </a>
 
-        <div class="coach-profile-booking">
+        <div class="coach-profile-booking coach-profile-booking--desktop">
           <a class="btn primary" href="{{ $page.Params.book_now_url | default $bookingUrl }}">Book Now</a>
           <a class="btn primary" href="{{ $page.Params.free_trial_url | default $bookingUrl }}">Book Free Trial</a>
           <p class="coach-profile-booking__note">Please allow at least 4 days’ notice when booking a free trial call, as coaches require time to review your profile and prepare accordingly.</p>

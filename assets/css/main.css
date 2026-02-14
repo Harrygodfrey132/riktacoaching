@@ -3665,6 +3665,10 @@ main#content > .location-page:first-child {
   text-align: center;
 }
 
+.coach-profile-booking--mobile {
+  display: none;
+}
+
 .coach-profile-booking .btn {
   justify-content: center;
   width: 100%;
@@ -3765,6 +3769,14 @@ main#content > .location-page:first-child {
 @media (max-width: 960px) {
   .coach-profile-layout__grid {
     grid-template-columns: 1fr;
+  }
+
+  .coach-profile-booking--mobile {
+    display: grid;
+  }
+
+  .coach-profile-booking--desktop {
+    display: none;
   }
 
   .coach-profile-card {

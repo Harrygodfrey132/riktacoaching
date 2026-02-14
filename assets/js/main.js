@@ -1445,7 +1445,7 @@
     const popup = document.getElementById('newsletter-popup');
     if (!popup) return;
 
-    const SHOW_DELAY_MS = 10000;
+    const SHOW_DELAY_MS = 13000;
     const langKey = IS_EN ? 'en' : 'sv';
     const STORAGE_KEY = `rk_newsletter_popup_${langKey}`;
     const COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000;

@@ -23,7 +23,7 @@ pricing:
   - title: "Parent coaching"
     price: "£70.00"
   - title: "Adult coaching"
-    price: "£100.00"
+    price: "£90.00"
 ---
 Alice is a CPD-accredited ADHD and neurodivergent coach with an MSc in Child Development from UCL. She provides compassionate, strength-based support for children, adults, and families, drawing on nearly two years of coaching experience and a decade-long background in wellness and mindfulness.
 

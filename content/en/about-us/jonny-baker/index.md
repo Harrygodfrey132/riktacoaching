@@ -23,7 +23,7 @@ pricing:
   - title: "Parent coaching"
     price: "£70.00"
   - title: "Adult coaching"
-    price: "£100.00"
+    price: "£90.00"
 ---
 Jonny is an integrative practitioner with 19 years of experience supporting neurodivergent adults. His work focuses on executive functioning and emotional regulation, helping you translate intention into action through realistic planning and sustainable routines.
 
