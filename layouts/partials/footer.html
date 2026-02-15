@@ -59,12 +59,13 @@
 	          <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
 	          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
 	          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
-          {{ if $isEn }}
-            <li><a href="{{ "en/privacy-policy/" | relLangURL }}">Privacy &amp; data protection</a></li>
-            <li><a href="{{ "en/terms-and-conditions/" | relLangURL }}">Terms and conditions</a></li>
-            <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
-            <li><a href="{{ $partnersPath | relLangURL }}">Partners</a></li>
-          {{ end }}
+	          {{ if $isEn }}
+	            <li><a href="{{ "en/privacy-policy/" | relLangURL }}">Privacy &amp; data protection</a></li>
+	            <li><a href="{{ "en/terms-and-conditions/" | relLangURL }}">Terms and conditions</a></li>
+	            <li><a href="{{ "en/statutory-complaints-process/" | relLangURL }}">Statutory Complaints Process</a></li>
+	            <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
+	            <li><a href="{{ $partnersPath | relLangURL }}">Partners</a></li>
+	          {{ end }}
           {{ if not $isEn }}
             <li><a href="{{ "/webbinarier/" | relLangURL }}">Webbinarier</a></li>
             <li><a href="{{ "/integritetspolicy/" | relLangURL }}">Integritetspolicy</a></li>
