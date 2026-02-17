@@ -147,11 +147,9 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
       <div class="pricing">
         <article class="card">
           <h3>Abonnemang</h3>
-          <p class="meta">Videosamtal • 75 min</p>
           <p class="price">400 kr/mån</p>
           <ul class="details">
             <li>Startkostnad på 3 000 kr, därefter endast 400 kr/mån (12 mån bindningstid).</li>
-            <li>Snabb uppstart inom 1 vecka.</li>
             <li>Löpande läkarkontakt, material, utbildning och webbinarier.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
