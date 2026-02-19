@@ -139,6 +139,22 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </div>
         </div>
       </article>
+
+      <article class="clinician-card">
+        <img src="/img/harley-murray.png" alt="Harley Murray" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Harley Murray</h3>
+          <p class="clinician-card__role">Coaching Practitioner</p>
+          <ul class="team-feature__bullets">
+            <li>Clinically skilled practitioner with a background in psychology.</li>
+            <li>Practical, strengths-based support for executive functioning and emotional regulation.</li>
+          </ul>
+          <div class="clinician-card__links">
+            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
+            <a class="clinician-card__link" href="/en/about-us/harley-murray/">Learn more</a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
