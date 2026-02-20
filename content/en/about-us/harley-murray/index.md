@@ -26,7 +26,7 @@ pricing:
     price: "£90.00"
 ---
 
-Harley is a clinically skilled practitioner with a background in psychology and extensive experience supporting individuals with complex cognitive and emotional needs. Harley’s approach is grounded in evidence-based practice, focusing on practical, strengths-based support to help you translate understanding into sustainable day-to-day change.
+Harley is a clinically skilled practitioner with a background in NHS psychological services, including experience within NHS Memory Services and IAPT (Improving Access to Psychological Therapies) settings. Harley’s approach is grounded in evidence-based practice, focusing on practical, strengths-based support to help you translate understanding into sustainable day-to-day change.
 
 Harley is particularly adept at working with individuals facing executive functioning difficulties, reduced attention, and emotional dysregulation. By working collaboratively, Harley helps introduce structure and compensatory strategies that support independence and overall quality of life.
 
@@ -35,8 +35,8 @@ Harley is particularly adept at working with individuals facing executive functi
 Harley utilizes a non-clinical scaffolding approach to support productivity and everyday functioning:
 
 - **Executive Functioning & Routines:** Introducing realistic goal-setting and structure to manage daily tasks and independence.
-- **Behaviour Change:** Breaking down overwhelming goals into manageable steps using clear psychoeducation and motivational techniques.
+- **Behaviour Change & Group Facilitation:** Breaking down overwhelming goals into manageable steps, drawing on experience facilitating group-based interventions and psychoeducational courses.
 - **Adaptive Strategies:** Developing compensatory tools tailored to your specific cognitive profile, especially when complicated by anxiety or low mood.
 - **Emotional Regulation:** Supporting adjustment and wellbeing through evidence-informed approaches.
 
-Harley holds a BSc (Hons) in Psychology and a PGDip in Low Intensity Cognitive Behavioural Therapy. With a strong background in NHS services, Harley is committed to maintaining high professional boundaries, ethical documentation, and inclusive care.
+Harley holds a BSc (Hons) in Psychology and a PGDip in Low Intensity Cognitive Behavioural Therapy. With a strong background in high-volume NHS environments, Harley is committed to maintaining high professional boundaries, ethical documentation, and inclusive care.
