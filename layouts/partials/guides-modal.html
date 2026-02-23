@@ -79,16 +79,13 @@
           ></textarea>
         </div>
 
-        <label class="guides-modal__consent">
-          <input type="checkbox" name="policyAcknowledgement" required>
-          <span>
-            {{ if $isEn }}
-              I consent to my data being processed according to the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>, including the processing of health-related information (neurodevelopmental conditions) so we can respond to your request.
-            {{ else }}
-              Jag samtycker till att mina uppgifter behandlas enligt <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>, inklusive behandlingen av hälsorelaterad information (NPF) för att vi ska kunna återkomma till dig.
-            {{ end }}
-          </span>
-        </label>
+        <p class="guides-modal__legal">
+          {{ if $isEn }}
+            By submitting, you acknowledge the <a class="privacy-link" href="{{ $policyHref }}">privacy policy</a>.
+          {{ else }}
+            Genom att skicka bekräftar du att du tagit del av <a class="privacy-link" href="{{ $policyHref }}">integritetspolicyn</a>.
+          {{ end }}
+        </p>
 
         <button type="submit" class="btn primary guides-modal__submit">
           {{ if $isEn }}Send{{ else }}Skicka{{ end }}
