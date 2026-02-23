@@ -1547,6 +1547,55 @@ nav a.active {
   flex-wrap: wrap;
 }
 
+.contact-booking {
+  background: linear-gradient(140deg, #f5f8fc 0%, #ffffff 48%, #fcf4f3 100%);
+  border-radius: 28px;
+  border: 1px solid rgba(29, 44, 59, 0.09);
+  box-shadow: 0 22px 46px rgba(29, 44, 59, 0.12);
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.contact-booking__copy {
+  margin-bottom: 20px;
+}
+
+.contact-booking__eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(71, 115, 166, 0.1);
+  color: rgba(29, 44, 59, 0.74);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact-booking h2 {
+  margin: 0 0 10px;
+  font-size: clamp(28px, 4.4vw, 36px);
+}
+
+.contact-booking p {
+  margin: 0;
+  max-width: 64ch;
+  color: rgba(29, 44, 59, 0.74);
+}
+
+.contact-booking__widget {
+  border-radius: 20px;
+  border: 1px solid rgba(29, 44, 59, 0.11);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.contact-booking .calendly-inline-widget {
+  min-width: 320px;
+  height: 700px;
+}
+
 .contact-form {
   background: #fff;
   border-radius: 28px;
@@ -1668,6 +1717,7 @@ nav a.active {
 
 @media (max-width: 720px) {
   .contact-header,
+  .contact-booking,
   .contact-form {
     padding: 28px;
   }
@@ -1675,6 +1725,10 @@ nav a.active {
   .contact-header__actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .contact-booking .calendly-inline-widget {
+    height: 620px;
   }
 }
 
