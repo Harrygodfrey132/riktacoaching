@@ -379,7 +379,13 @@ function normalizeInput(body) {
   const fullNameSeed = fullNameInput || [firstNameInput, lastNameWithSuffix].filter(Boolean).join(' ');
   const fullName = appendSuffix(fullNameSeed, nameSuffix);
   const email = coerceString(body.email || body.Email);
-  const description = coerceString(body.description || body.Description || body.message);
+  const description = coerceString(
+    body.reason
+    || body.Reason
+    || body.description
+    || body.Description
+    || body.message
+  );
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
@@ -637,6 +643,13 @@ function buildZohoParams(normalized) {
   params.set('First Name', normalized.firstname || '');
   params.set('Last Name', normalized.lastname || '');
   params.set('Email', normalized.email || '');
+  const reason = coerceString(normalized.description);
+  if (reason) {
+    // Map user message to both standard and custom lead fields.
+    params.set('Description', reason);
+    params.set('Reason', reason);
+    params.set('Reason_Field', reason);
+  }
   if (normalized.leadSource) {
     params.set('Lead Source', normalized.leadSource);
   }

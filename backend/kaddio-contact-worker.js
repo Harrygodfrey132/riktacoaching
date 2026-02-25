@@ -158,7 +158,7 @@ function normalizeInput(body) {
 
   const fullName = (body.fullName || [body.firstName, body.lastName].filter(Boolean).join(' ') || '').trim();
   const email = (body.email || '').trim();
-  const description = (body.description || '').trim();
+  const description = (body.reason || body.description || body.Description || body.message || '').trim();
   if (!fullName || !email) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);

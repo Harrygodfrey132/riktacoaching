@@ -612,7 +612,13 @@
     const fullName = appendSuffix(fullNameSeed, nameSuffix);
     // Accept both "email" and legacy "Email" field names to avoid missed submissions.
     const email = (formData.get('email') || formData.get('Email') || '').trim();
-    let description = (formData.get('description') || formData.get('message') || '').trim();
+    let description = (
+      formData.get('reason')
+      || formData.get('description')
+      || formData.get('Description')
+      || formData.get('message')
+      || ''
+    ).trim();
     const leadSource = (formData.get('leadSource') || '').trim();
     const ratingRaw = formData.get('rating');
     const locale = resolveLocale(form);
