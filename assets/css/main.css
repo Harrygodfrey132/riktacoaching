@@ -881,6 +881,153 @@ nav a.active {
   font-size: 15px;
 }
 
+.coach-vs-tutor {
+  padding: 96px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f3ef 100%);
+  border-top: none;
+}
+
+.coach-vs-tutor__header {
+  max-width: 860px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.coach-vs-tutor__header h2 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.coach-vs-tutor__header p {
+  margin: 0;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.coach-vs-tutor__table-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 28px;
+  border: 1px solid rgba(29, 44, 59, 0.08);
+  box-shadow: 0 20px 40px rgba(29, 44, 59, 0.12);
+  overflow: hidden;
+  background: #fff;
+}
+
+.coach-vs-tutor__table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.coach-vs-tutor__table thead th {
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+  border-bottom: 1px solid rgba(29, 44, 59, 0.1);
+  background: #f7f5f2;
+}
+
+.coach-vs-tutor__table thead th:first-child {
+  width: 22%;
+}
+
+.coach-vs-tutor__table thead th:nth-child(2) {
+  width: 39%;
+}
+
+.coach-vs-tutor__table thead th:nth-child(3) {
+  width: 39%;
+  background: #ebf5ef;
+}
+
+.coach-vs-tutor__table tbody th,
+.coach-vs-tutor__table tbody td {
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(29, 44, 59, 0.08);
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.coach-vs-tutor__table tbody th {
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgba(29, 44, 59, 0.82);
+  background: #fcfaf8;
+}
+
+.coach-vs-tutor__table tbody td {
+  color: rgba(29, 44, 59, 0.78);
+}
+
+.coach-vs-tutor__table tbody td:nth-child(3) {
+  background: rgba(64, 156, 95, 0.08);
+}
+
+.coach-vs-tutor__table tbody tr:last-child th,
+.coach-vs-tutor__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.coach-vs-tutor__note {
+  max-width: 900px;
+  margin: 22px auto 0;
+  font-size: 16px;
+  color: rgba(29, 44, 59, 0.76);
+  text-align: center;
+}
+
+.comparison-accordion {
+  display: none;
+}
+
+.problem-solution {
+  padding: 96px 0;
+  background: #fff;
+  border-top: none;
+}
+
+.problem-solution__header {
+  max-width: 860px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+.problem-solution__header h2 {
+  margin: 0 0 12px;
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.problem-solution__header p {
+  margin: 0;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.problem-solution__table thead th:first-child {
+  width: 42%;
+  background: #f7f5f2;
+}
+
+.problem-solution__table thead th:nth-child(2) {
+  width: 58%;
+  background: #ebf5ef;
+}
+
+.problem-solution__table tbody th {
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-weight: 600;
+  background: #fcfaf8;
+}
+
+.problem-solution__table tbody td {
+  background: rgba(64, 156, 95, 0.08);
+}
+
 .coaching-definition {
   padding: 96px 0;
   background: #fff;
@@ -1009,6 +1156,86 @@ nav a.active {
 
   .externalised-thinking__grid {
     grid-template-columns: 1fr;
+  }
+
+  .coach-vs-tutor {
+    padding: 88px 0;
+  }
+
+  .problem-solution {
+    padding: 88px 0;
+  }
+
+  .coach-vs-tutor__table-wrap {
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(29, 44, 59, 0.08);
+    box-shadow: 0 10px 24px rgba(29, 44, 59, 0.08);
+    background: #fff;
+  }
+
+  .coach-vs-tutor__table {
+    display: none;
+  }
+
+  .comparison-accordion {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .comparison-accordion details {
+    border-radius: 14px;
+    border: 1px solid rgba(29, 44, 59, 0.08);
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .comparison-accordion summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 42px 14px 14px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: rgba(29, 44, 59, 0.9);
+    position: relative;
+    background: #f7f5f2;
+  }
+
+  .comparison-accordion summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .comparison-accordion summary::after {
+    content: "+";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px;
+    line-height: 1;
+    color: rgba(29, 44, 59, 0.55);
+  }
+
+  .comparison-accordion details[open] summary::after {
+    content: "−";
+  }
+
+  .comparison-accordion__body {
+    padding: 12px 14px 14px;
+    border-top: 1px solid rgba(29, 44, 59, 0.08);
+  }
+
+  .comparison-accordion__body p {
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: rgba(29, 44, 59, 0.78);
+    line-height: 1.5;
+  }
+
+  .comparison-accordion__body p:last-child {
+    margin-bottom: 0;
   }
 
   .coaching-definition {

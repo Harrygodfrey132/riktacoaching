@@ -15,7 +15,7 @@ teaches:
 video_image: "https://img.youtube.com/vi/H5v5O_jmSGA/hqdefault.jpg"
 video_url: "https://www.youtube.com/watch?v=H5v5O_jmSGA"
 book_now_url: "https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType"
-free_trial_url: "https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType"
+free_trial_url: "https://riktacoaching.kaddio.com/booking/cal/free-consultation"
 pricing:
   - title: "ADHD coaching"
     price: "£70.00"
