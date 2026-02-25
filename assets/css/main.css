@@ -1963,6 +1963,14 @@ nav a.active {
   margin-bottom: clamp(56px, 8vw, 96px);
 }
 
+.coachning-hero--adhd .coachning-hero__inner {
+  background: linear-gradient(135deg, rgba(236, 78, 91, 0.14), rgba(55, 116, 171, 0.12));
+}
+
+.coachning-hero--autism .coachning-hero__inner {
+  background: linear-gradient(135deg, rgba(55, 116, 171, 0.14), rgba(64, 156, 95, 0.12));
+}
+
 .coachning-page {
   padding: clamp(12px, 3vw, 36px) 0 clamp(72px, 10vw, 120px);
 }
@@ -2105,6 +2113,87 @@ nav a.active {
   padding-left: 20px;
   margin: 0;
   color: rgba(29, 44, 59, 0.78);
+}
+
+.coachning-quickwins {
+  margin-bottom: clamp(56px, 7vw, 88px);
+}
+
+.coachning-quickwins__head {
+  margin-bottom: 18px;
+}
+
+.coachning-quickwins__head h2 {
+  margin: 8px 0 0;
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.coachning-quickwins__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.coachning-quickwins__card {
+  background: #fff;
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(17, 32, 56, 0.08);
+}
+
+.coachning-quickwins__card h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.coachning-quickwins__card p {
+  margin: 0;
+  color: rgba(29, 44, 59, 0.75);
+  line-height: 1.6;
+}
+
+.coachning-quickwins__card--middle {
+  transform: translateY(-4px);
+}
+
+.coachning-quickwins--adhd .coachning-quickwins__card--accent {
+  background: linear-gradient(135deg, rgba(236, 78, 91, 0.12), rgba(255, 255, 255, 0.98));
+}
+
+.coachning-quickwins--autism .coachning-quickwins__card--accent {
+  background: linear-gradient(135deg, rgba(64, 156, 95, 0.12), rgba(255, 255, 255, 0.98));
+}
+
+.coachning-fit {
+  margin-bottom: clamp(56px, 7vw, 88px);
+}
+
+.coachning-fit__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.coachning-fit__panel {
+  background: #fff;
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  border-radius: 24px;
+  padding: 26px 28px;
+  box-shadow: 0 16px 34px rgba(17, 32, 56, 0.08);
+}
+
+.coachning-fit__panel h3 {
+  margin: 0 0 14px;
+  font-size: 22px;
+}
+
+.coachning-fit__panel--alt {
+  background: linear-gradient(135deg, rgba(55, 116, 171, 0.08), rgba(255, 255, 255, 0.98));
+}
+
+.coachning-fit--autism .coachning-fit__panel--alt {
+  background: linear-gradient(135deg, rgba(64, 156, 95, 0.1), rgba(255, 255, 255, 0.98));
 }
 
 .coachning-step-grid {
@@ -2374,6 +2463,14 @@ nav a.active {
   box-shadow: 0 30px 60px rgba(17, 32, 56, 0.22);
 }
 
+.coachning-cta-band--adhd {
+  background: linear-gradient(135deg, rgba(236, 78, 91, 0.92), rgba(55, 116, 171, 0.86));
+}
+
+.coachning-cta-band--autism {
+  background: linear-gradient(135deg, rgba(55, 116, 171, 0.9), rgba(64, 156, 95, 0.84));
+}
+
 .coachning-cta-band h3 {
   margin: 0 0 12px;
   font-size: clamp(24px, 4vw, 32px);
@@ -2408,6 +2505,18 @@ nav a.active {
 }
 
 @media (max-width: 960px) {
+  .coachning-quickwins__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coachning-quickwins__card--middle {
+    transform: none;
+  }
+
+  .coachning-fit__grid {
+    grid-template-columns: 1fr;
+  }
+
   .coachning-hero__inner {
     grid-template-columns: 1fr;
   }
