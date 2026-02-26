@@ -733,6 +733,202 @@ nav a.active {
   color: rgba(0, 0, 0, 0.7);
 }
 
+.home-pillars {
+  padding: 88px 0;
+  background: linear-gradient(180deg, #ffffff 0%, #f7f3ef 100%);
+  border-top: none;
+}
+
+.home-pillars__header {
+  max-width: 760px;
+  margin: 0 auto 24px;
+  text-align: center;
+}
+
+.home-pillars__header h2 {
+  margin: 8px 0 10px;
+  font-size: clamp(30px, 4vw, 42px);
+}
+
+.home-pillars__header p {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.home-pillars__list {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+.home-pillars__list details {
+  background: #fff;
+  border-radius: 18px;
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  box-shadow: 0 10px 22px rgba(29, 44, 59, 0.08);
+  overflow: hidden;
+}
+
+.home-pillars__list summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 16px 50px 16px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-pillars__list summary::-webkit-details-marker {
+  display: none;
+}
+
+.home-pillars__list summary::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: rgba(29, 44, 59, 0.6);
+}
+
+.home-pillars__list details[open] summary::after {
+  content: "−";
+}
+
+.home-pillars__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(71, 115, 166, 0.12);
+  font-size: 17px;
+}
+
+.home-pillars__body {
+  border-top: 1px solid rgba(29, 44, 59, 0.08);
+  padding: 14px 16px 16px;
+}
+
+.home-pillars__body p {
+  margin: 0 0 8px;
+  color: rgba(29, 44, 59, 0.76);
+  line-height: 1.55;
+}
+
+.home-pillars__body p:last-child {
+  margin-bottom: 0;
+}
+
+.home-pillars__body ul {
+  margin: 0 0 10px;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+  color: rgba(29, 44, 59, 0.76);
+}
+
+.home-contrast {
+  padding: 88px 0;
+  background: #fff;
+  border-top: none;
+}
+
+.home-contrast__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-contrast__header h2 {
+  margin: 8px 0 0;
+  font-size: clamp(30px, 4vw, 40px);
+}
+
+.home-contrast__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.home-contrast__card {
+  background: #fff;
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 14px 28px rgba(29, 44, 59, 0.08);
+}
+
+.home-contrast__card--accent {
+  background: linear-gradient(135deg, rgba(64, 156, 95, 0.12), rgba(255, 255, 255, 0.96));
+}
+
+.home-contrast__card h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.home-contrast__card ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+  color: rgba(29, 44, 59, 0.76);
+}
+
+
+.home-bridge {
+  padding: 64px 0 24px;
+  background: #fff;
+  border-top: none;
+}
+
+.home-bridge__card {
+  background: linear-gradient(135deg, rgba(71, 115, 166, 0.1), rgba(255, 255, 255, 0.96));
+  border: 1px solid rgba(29, 44, 59, 0.1);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 12px 26px rgba(29, 44, 59, 0.08);
+}
+
+.home-bridge__card h2 {
+  margin: 0 0 10px;
+  font-size: clamp(28px, 3.6vw, 36px);
+}
+
+.home-bridge__card > p {
+  margin: 0 0 16px;
+  color: rgba(29, 44, 59, 0.74);
+}
+
+.home-bridge__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.home-bridge__grid div {
+  background: #fff;
+  border: 1px solid rgba(29, 44, 59, 0.08);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.home-bridge__grid h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.home-bridge__grid p {
+  margin: 0;
+  color: rgba(29, 44, 59, 0.74);
+}
+
 .cofounder-spotlight {
   padding: 96px 0;
   background: linear-gradient(180deg, #ffffff 0%, #f7f3ef 100%);
@@ -1113,6 +1309,35 @@ nav a.active {
 }
 
 @media (max-width: 720px) {
+  .home-pillars,
+  .home-contrast {
+    padding: 72px 0;
+  }
+
+  .home-bridge {
+    padding: 56px 0 12px;
+  }
+
+  .home-bridge__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-pillars__list summary {
+    font-size: 18px;
+    padding: 14px 44px 14px 14px;
+  }
+
+  .home-pillars__icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 16px;
+  }
+
+  .home-contrast__grid {
+    grid-template-columns: 1fr;
+  }
+
   .coaching-intro {
     padding: 96px 0;
   }
