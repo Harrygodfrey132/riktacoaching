@@ -366,7 +366,7 @@ hide_template_hero: true
               <label for='contact-description'>Tell us briefly how we can help</label>
             </div>
             <div class='zcwf_col_fld'>
-              <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='contact-description' aria-required='false' aria-label='Description' name='description' placeholder="Describe your situation or ask your question"></textarea>
+              <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='contact-description' aria-required='true' aria-label='Description' name='description' required placeholder="Describe your situation or ask your question"></textarea>
             </div>
           </div>
           <div class='zcwf_row form-row form-row--consent'>
@@ -462,12 +462,13 @@ hide_template_hero: true
             const data = new FormData(form);
             const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
             const email = (data.get('email') || data.get('Email') || '').trim();
+            const rawDescription = (data.get('description') || data.get('message') || '').trim();
             const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
             const locale = squashText((document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
             const payload = {
               fullName,
               email,
-              description: (data.get('description') || data.get('message') || '').trim(),
+              description: rawDescription,
               leadSource: (data.get('leadSource') || '').trim(),
               metadata: {
                 path: window.location.pathname,
@@ -475,9 +476,6 @@ hide_template_hero: true
                 locale
               }
             };
-            if (data.get('newsletterOptIn') !== null) {
-              payload.description = [payload.description, 'Marketing opt-in: YES.'].filter(Boolean).join(' ');
-            }
             const consentMeta = buildPolicyConsent({ formContext });
             if (consentMeta) {
               payload.metadata.consentRequired = true;
@@ -486,6 +484,13 @@ hide_template_hero: true
             if (!payload.email) {
               setStatus('Please add your email before submitting.', 'error');
               return;
+            }
+            if (!rawDescription) {
+              setStatus('Please add a short message before submitting.', 'error');
+              return;
+            }
+            if (data.get('newsletterOptIn') !== null) {
+              payload.description = [payload.description, 'Marketing opt-in: YES.'].filter(Boolean).join(' ');
             }
 
             try {

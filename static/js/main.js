@@ -402,6 +402,12 @@ function initScreeningForm({
     if (!form) return;
     // Some pages include an inline fallback handler; avoid double-submitting to Kaddio.
     if (form.dataset.kaddioInlineBound === 'true') return;
+    const descriptionField = form.querySelector(
+      'textarea[name="description"], textarea[name="message"], input[name="description"]:not([type="hidden"]), input[name="message"]:not([type="hidden"])'
+    );
+    if (descriptionField) {
+      descriptionField.setAttribute('required', 'true');
+    }
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const thankYou = form.querySelector('[data-thank-you]');
@@ -416,6 +422,12 @@ function initScreeningForm({
           const missingEmailCopy = form.dataset.missingEmailMessage
             || (IS_EN ? 'Please add your email before submitting.' : 'Lägg till din e-post innan du skickar.');
           setFormStatus(form, missingEmailCopy, 'error');
+          return;
+        }
+        if (!basePayload.description) {
+          const missingDescriptionCopy = form.dataset.missingDescriptionMessage
+            || (IS_EN ? 'Please add a short message before submitting.' : 'Skriv ett kort meddelande innan du skickar.');
+          setFormStatus(form, missingDescriptionCopy, 'error');
           return;
         }
         toggleFormDisabled(form, true);

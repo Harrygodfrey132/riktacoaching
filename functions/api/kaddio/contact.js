@@ -123,7 +123,7 @@ export async function onRequest(context) {
 
     const normalized = normalizeInput(incoming);
     if (!normalized) {
-      return withCors(json({ error: 'Missing required fields' }, 400));
+      return withCors(json({ error: 'Missing required fields (name, email, description)' }, 400));
     }
 
     const geo = getGeofenceDecision(request);
@@ -386,7 +386,7 @@ function normalizeInput(body) {
     || body.Description
     || body.message
   );
-  if (!fullName || !email) return null;
+  if (!fullName || !email || !description) return null;
 
   const [first, ...rest] = fullName.split(/\s+/);
   const lastFallback = lastNameInput || nameSuffix || 'N/A';

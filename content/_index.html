@@ -356,7 +356,7 @@ hide_template_hero: true
           </div>
           <div class="form-row">
             <label for="home-contact-description">Berätta kort hur vi kan hjälpa dig</label>
-            <textarea id="home-contact-description" name="description" placeholder="Beskriv din situation eller ställ din fråga"></textarea>
+            <textarea id="home-contact-description" name="description" required placeholder="Beskriv din situation eller ställ din fråga"></textarea>
           </div>
           <div class="form-row form-row--consent">
             <label class="form-consent" for="home-contact-policy-ack">
@@ -439,12 +439,13 @@ hide_template_hero: true
               const data = new FormData(form);
               const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
               const email = (data.get('email') || data.get('Email') || '').trim();
+              const rawDescription = (data.get('description') || data.get('message') || '').trim();
               const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
               const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
               const payload = {
                 fullName,
                 email,
-                description: (data.get('description') || data.get('message') || '').trim(),
+                description: rawDescription,
                 leadSource: (data.get('leadSource') || '').trim(),
                 metadata: {
                   path: window.location.pathname,
@@ -452,9 +453,6 @@ hide_template_hero: true
                   locale
                 }
               };
-              if (data.get('newsletterOptIn') !== null) {
-                payload.description = [payload.description, 'Samtycke nyhetsbrev: JA.'].filter(Boolean).join(' ');
-              }
               const consentMeta = buildPolicyConsent({ formContext });
               if (consentMeta) {
                 payload.metadata.consentRequired = true;
@@ -463,6 +461,13 @@ hide_template_hero: true
               if (!payload.email) {
                 setStatus('Lägg till din e-post innan du skickar.', 'error');
                 return;
+              }
+              if (!rawDescription) {
+                setStatus('Skriv ett kort meddelande innan du skickar.', 'error');
+                return;
+              }
+              if (data.get('newsletterOptIn') !== null) {
+                payload.description = [payload.description, 'Samtycke nyhetsbrev: JA.'].filter(Boolean).join(' ');
               }
 
               try {
