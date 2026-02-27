@@ -150,7 +150,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <p class="price">400 kr/mån</p>
           <ul class="details">
             <li>Startkostnad på 3 000 kr, därefter endast 400 kr/mån (12 mån bindningstid).</li>
-            <li>Löpande läkarkontakt, material, utbildning och webbinarier.</li>
+            <li>Löpande läkarkontakt.</li>
           </ul>
           <a class="text-cta" href="/kontakta-oss/">Boka <span aria-hidden="true">→</span></a>
         </article>
