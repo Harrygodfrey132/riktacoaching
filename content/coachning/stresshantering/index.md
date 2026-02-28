@@ -55,12 +55,6 @@ summary: "Stresshantering med NPF-expertis – konkreta strategier för återhä
 	        <p>Ett 45-minuters samtal som ger dig en grundläggande förståelse för din stressrespons och konkreta tips för återhämtning.</p>
 	        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka 1 tillfälle</a>
 	      </article>
-	      <article class="coachning-option">
-	        <h4>Stresshantering, 3 tillfällen</h4>
-	        <p class="price">3 000 kr</p>
-	        <p>Tre samtal (45 minuter per gång) där vi fördjupar oss i din situation och bygger en långsiktig plan.</p>
-	        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka 3 tillfällen</a>
-	      </article>
 	    </div>
 	    <p>
 	      Samtalen sker digitalt via vår säkra plattform, vilket gör det enkelt att få stöd oavsett var du befinner dig.
@@ -72,7 +66,7 @@ summary: "Stresshantering med NPF-expertis – konkreta strategier för återhä
   <div class="coachning-panel">
     <h2>Hur går det till?</h2>
     <p>
-      Du väljer det upplägg som passar ditt behov bäst. Vid bokning av paketet om tre tillfällen arbetar vi strukturerat:
+      Samtalet är strukturerat i tre delar:
     </p>
     <div class="coachning-format-grid">
       <article class="coachning-format">
