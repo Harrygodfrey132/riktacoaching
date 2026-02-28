@@ -5413,6 +5413,33 @@ main.hero.screen, section.screen {
   }
 }
 
+/* ===== Priser: pyramid layout (coaching cards) ===== */
+#priser .pricing--pyramid{
+  display: flex;
+  flex-direction: column;
+}
+
+#priser .pricing--pyramid .pricing__row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+#priser .pricing--pyramid .pricing__row--top{
+  max-width: 792px;
+  margin-inline: auto;
+}
+
+@media (max-width: 700px){
+  #priser .pricing--pyramid .pricing__row{
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  #priser .pricing--pyramid .pricing__row--top{
+    max-width: none;
+  }
+}
+
 #priser h2{
   margin-bottom: 8px;
 }
@@ -5439,7 +5466,7 @@ main.hero.screen, section.screen {
   border: 1px solid rgba(0,0,0,0.06);
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
   padding: 18px;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 #priser .card-label{
