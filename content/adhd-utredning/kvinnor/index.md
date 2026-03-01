@@ -28,7 +28,7 @@ page_class: "adhd-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/woman-smiling-picture.jpg" alt="Kvinna som känner sig förstådd under ett professionellt möte">
+          <img src="/img/confident-professional-woman.jpg" alt="Kvinna som känner sig förstådd under ett professionellt möte">
         </figure>
       </div>
     </div>

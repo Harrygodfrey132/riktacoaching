@@ -70,7 +70,7 @@ summary: "A single entry point to our specialised ADHD and ASD coaching."
       </article>
       <article class="coachning-step">
         <figure class="coachning-step__media">
-          <img src="/img/autism-coachning.jpg" alt="Person receiving autism coaching support">
+          <img src="/img/coach-and-coachee.jpg" alt="Person receiving autism coaching support">
         </figure>
         <div class="coachning-step__body">
           <span class="coachning-step__number">ASD</span>

@@ -29,7 +29,7 @@ page_class: "adhd-page--youth"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/teenager-worried.jpg" alt="Teenager supported by a parent and psychologist">
+          <img src="/img/family-explaining-problem-to-clinician.jpg" alt="Teenager supported by a parent and psychologist">
         </figure>
       </div>
     </div>

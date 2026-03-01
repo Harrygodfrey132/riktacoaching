@@ -69,7 +69,7 @@ summary: "En gemensam ingång till våra specialiserade upplägg för ADHD- och 
       </article>
       <article class="coachning-step">
         <figure class="coachning-step__media">
-          <img src="/img/autism-coachning.jpg" alt="Person som får stöd i autism-coachning">
+          <img src="/img/coach-and-coachee.jpg" alt="Person som får stöd i autism-coachning">
         </figure>
         <div class="coachning-step__body">
           <span class="coachning-step__number">Autism</span>

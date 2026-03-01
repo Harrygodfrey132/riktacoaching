@@ -3,6 +3,10 @@
     {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
     {{ $coachingPath := cond $isEn "en/coaching/" "/coachning/" }}
     {{ $coachingAdhd := cond $isEn "en/coaching/adhd/" "/coachning/adhd/" }}
+    {{ $coachingAdhdStudents := cond $isEn "en/coaching/adhd/students/" "/coachning/adhd/students/" }}
+    {{ $coachingAdhdAdults := cond $isEn "en/coaching/adhd/adults/" "/coachning/adhd/vuxna/" }}
+    {{ $coachingAdhdProfessionals := cond $isEn "en/coaching/adhd/professionals/" "/coachning/adhd/professionella/" }}
+    {{ $coachingAdhdEntrepreneurs := cond $isEn "en/coaching/adhd/entrepreneurs/" "/coachning/adhd/entreprenorer/" }}
     {{ $coachingAutism := cond $isEn "en/coaching/autism/" "/coachning/autism/" }}
     {{ $coachingProcrastination := cond $isEn "en/test/procrastination-test/" "/test/prokrastinerings-test/" }}
     {{ $knowledgePath := cond $isEn "en/knowledge/" "/kunskap/" }}
@@ -38,22 +42,26 @@
       </picture>
     </a>
     <nav aria-label="{{ if $isEn }}Main navigation{{ else }}Huvudmeny{{ end }}" class="desktop-nav">
-      <ul>
+        <ul>
         {{ if $isEn }}
+          <li><a href="{{ $coachingAutism | relLangURL }}">Autism coaching</a></li>
           <li class="has-submenu">
             <div class="submenu-trigger">
-              <a href="{{ $coachingPath | relLangURL }}">Coaching</a>
+              <a href="{{ $coachingAdhd | relLangURL }}">ADHD coaching</a>
               <button type="button"
                       class="submenu-toggle"
                       aria-expanded="false"
-                      aria-controls="coachningSubmenu"
-                      aria-label="Show subpages for Coaching">
+                      aria-controls="adhdCoachingSubmenu"
+                      aria-label="Show subpages for ADHD coaching">
                 <span aria-hidden="true">&#9662;</span>
               </button>
             </div>
-            <ul class="submenu" id="coachningSubmenu">
-              <li><a href="{{ $coachingAdhd | relLangURL }}">ADHD coaching</a></li>
-              <li><a href="{{ $coachingAutism | relLangURL }}">ASD coaching</a></li>
+            <ul class="submenu" id="adhdCoachingSubmenu">
+              <li><a href="{{ $coachingAdhd | relLangURL }}">Overview</a></li>
+              <li><a href="{{ $coachingAdhdStudents | relLangURL }}">Students</a></li>
+              <li><a href="{{ $coachingAdhdAdults | relLangURL }}">Adults</a></li>
+              <li><a href="{{ $coachingAdhdProfessionals | relLangURL }}">Professionals</a></li>
+              <li><a href="{{ $coachingAdhdEntrepreneurs | relLangURL }}">Entrepreneurs</a></li>
             </ul>
           </li>
           {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}">Workplace Funding</a></li>{{ end }}
@@ -157,20 +165,24 @@
     <nav class="mobile-nav" id="mobileNav" aria-label="{{ if $isEn }}Mobile navigation{{ else }}Mobilmeny{{ end }}">
       <ul>
         {{ if $isEn }}
+          <li><a href="{{ $coachingAutism | relLangURL }}" onclick="closeMobileMenu()">Autism coaching</a></li>
           <li class="has-submenu">
             <div class="submenu-trigger">
-              <a href="{{ $coachingPath | relLangURL }}" onclick="closeMobileMenu()">Coaching</a>
+              <a href="{{ $coachingAdhd | relLangURL }}" onclick="closeMobileMenu()">ADHD coaching</a>
               <button type="button"
                       class="submenu-toggle"
                       aria-expanded="false"
-                      aria-controls="mobileCoachningSubmenu"
-                      aria-label="Show subpages for Coaching">
+                      aria-controls="mobileAdhdCoachingSubmenu"
+                      aria-label="Show subpages for ADHD coaching">
                 <span aria-hidden="true">&#9662;</span>
               </button>
             </div>
-            <ul class="submenu" id="mobileCoachningSubmenu">
-              <li><a href="{{ $coachingAdhd | relLangURL }}" onclick="closeMobileMenu()">ADHD coaching</a></li>
-              <li><a href="{{ $coachingAutism | relLangURL }}" onclick="closeMobileMenu()">ASD coaching</a></li>
+            <ul class="submenu" id="mobileAdhdCoachingSubmenu">
+              <li><a href="{{ $coachingAdhd | relLangURL }}" onclick="closeMobileMenu()">Overview</a></li>
+              <li><a href="{{ $coachingAdhdStudents | relLangURL }}" onclick="closeMobileMenu()">Students</a></li>
+              <li><a href="{{ $coachingAdhdAdults | relLangURL }}" onclick="closeMobileMenu()">Adults</a></li>
+              <li><a href="{{ $coachingAdhdProfessionals | relLangURL }}" onclick="closeMobileMenu()">Professionals</a></li>
+              <li><a href="{{ $coachingAdhdEntrepreneurs | relLangURL }}" onclick="closeMobileMenu()">Entrepreneurs</a></li>
             </ul>
           </li>
           {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}" onclick="closeMobileMenu()">Workplace Funding</a></li>{{ end }}

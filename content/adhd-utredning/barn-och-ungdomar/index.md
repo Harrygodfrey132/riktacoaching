@@ -28,7 +28,7 @@ page_class: "adhd-page--youth"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/teenager-worried.jpg" alt="Tonåring som får stöd av förälder och psykolog">
+          <img src="/img/family-explaining-problem-to-clinician.jpg" alt="Tonåring som får stöd av förälder och psykolog">
         </figure>
       </div>
     </div>

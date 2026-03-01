@@ -1,7 +1,29 @@
 {{ define "main" }}
   <main class="coachning-page" id="top">
     <div class="container coachning-container">
+      {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
       {{ .Content }}
+      <section class="contact-form-section">
+        {{ if $isEn }}
+          {{ partial "contact-form-en.html" (dict
+            "sectionID" "contact-form"
+            "formContext" "coaching-page-en"
+            "successMessage" "Thank you! We’ll get back to you as soon as possible."
+            "title" "Contact us"
+            "intro" "Fill out the form and our coordinators will suggest times and a format that suit you."
+            "followup" "We typically respond within 1-2 business days."
+          ) }}
+        {{ else }}
+          {{ partial "contact-form-sv.html" (dict
+            "sectionID" "kontaktformular"
+            "formContext" "coaching-page-sv"
+            "successMessage" "Tack! Vi återkommer så snart vi kan."
+            "redirectURL" "/tack/"
+            "title" "Kontakta oss"
+            "intro" "Fyll i formuläret så kontaktar vi dig inom kort, oftast samma eller nästkommande vardag."
+          ) }}
+        {{ end }}
+      </section>
     </div>
   </main>
 {{ end }}

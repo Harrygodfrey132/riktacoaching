@@ -8,7 +8,7 @@ meta_keywords: "ADHD emotional impulsivity, emotion dysregulation ADHD, ADHD cop
 url: "/en/blog/adhd-emotional-impulsivity/"
 translationKey: "adhd-emotional-impulsivity"
 description: "Why ADHD can make emotions go from 0 to 100, what weakens your brakes, and practical ways to build a pause before reacting."
-hero: "/img/teenager-worried.jpg"
+hero: "/img/family-explaining-problem-to-clinician.jpg"
 hero_alt: "Person sitting and reflecting with a thoughtful expression"
 ---
 

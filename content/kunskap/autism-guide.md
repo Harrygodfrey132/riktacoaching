@@ -7,7 +7,7 @@ layout: "guide"
 meta_title: "Om autism – guide till symtom, utredning och stöd | Rikta Psykiatri"
 meta_description: "En klar guide om autism: vad diagnosen innebär, hur utredning går till och vilka stödstrategier som underlättar vardagen."
 meta_keywords: "autismguide, symtom, utredning, stöd, strategier"
-hero: "/img/autism-coachning.jpg"
+hero: "/img/coach-and-coachee.jpg"
 hero_alt: "Samtal om autismstöd"
 aliases:
   - "/blogg/autism-guide/"

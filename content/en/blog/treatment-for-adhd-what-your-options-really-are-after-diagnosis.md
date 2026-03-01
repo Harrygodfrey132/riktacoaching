@@ -7,7 +7,7 @@ description: "A clear, human guide to ADHD treatment options after diagnosis, in
 meta_title: "Treatment for ADHD | Your options after diagnosis"
 meta_description: "Understand ADHD treatment options after diagnosis: medication, therapy, and coaching, where each works well, where each has limits, and how they can fit together."
 meta_keywords: "ADHD treatment, ADHD medication, ADHD therapy, ADHD coaching, ADHD support after diagnosis"
-hero: "/img/adhd-medicinering.jpg"
+hero: "/img/optimized/adhd-medicinering-768.jpg"
 hero_alt: "Medication and assessment materials on a desk"
 draft: false
 ---

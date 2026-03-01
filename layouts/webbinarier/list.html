@@ -77,7 +77,7 @@
               {{ else if .Resources.GetMatch "hero*" }}
                 {{ $image = (.Resources.GetMatch "hero*").RelPermalink }}
               {{ else }}
-                {{ $image = "/img/psychologist-picture.jpg" }}
+                {{ $image = "/img/optimized/psychologist-picture-1008.jpg" }}
               {{ end }}
             {{ end }}
             {{ $imageAlt := .Params.webinar.image_alt | default .Title }}

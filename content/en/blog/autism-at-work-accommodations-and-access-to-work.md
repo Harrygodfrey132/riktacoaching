@@ -6,7 +6,7 @@ description: "Learn how workplace accommodations reduce sensory load and burnout
 meta_title: "Autism at Work: Accommodations & Access to Work | Rikta Psychiatry"
 meta_description: "Practical autism workplace accommodations that reduce sensory overload and burnout, plus how Access to Work can support equipment and coaching."
 meta_keywords: "autism at work, workplace accommodations autism, access to work autism, autistic burnout at work, sensory overload workplace, autism coaching"
-hero: "/img/frustrated-woman-by-computer.jpg"
+hero: "/img/woman-concentrated-by-computer.jpg"
 hero_alt: "Person working at a computer"
 draft: false
 ---

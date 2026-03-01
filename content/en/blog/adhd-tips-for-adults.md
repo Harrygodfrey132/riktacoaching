@@ -6,7 +6,7 @@ description: "Practical ADHD tips for adults: time visibility, low-friction star
 meta_title: "ADHD tips for adults | Practical supports for busy lives"
 meta_description: "ADHD tips for adults: make time visible, reduce decisions, build start lines, use one capture system, structure focus, reshape tasks, regulate emotions, and design workable routines."
 meta_keywords: "ADHD tips for adults, ADHD time management, ADHD focus strategies, ADHD routines adults, ADHD procrastination help, ADHD emotional regulation"
-hero: "/img/adult-woman-weight-training.jpg"
+hero: "/img/young-adult-woman-on-walk.jpg"
 hero_alt: "Adult speaking with a professional while working on a laptop"
 draft: false
 ---

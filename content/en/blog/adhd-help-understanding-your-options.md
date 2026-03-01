@@ -6,7 +6,7 @@ description: "A clear guide to ADHD help: how therapy, coaching, medication, and
 meta_title: "ADHD Help | Therapy vs Coaching, Medication, and Real Support Options"
 meta_description: "See how therapy, coaching, medication, and practical supports each help with ADHD. Learn when to use each approach and how Rikta Psychiatry can guide you."
 meta_keywords: "ADHD help, ADHD therapy, ADHD coaching, ADHD medication, executive function, ADHD support"
-hero: "/img/psychologist-picture.jpg"
+hero: "/img/optimized/psychologist-picture-1008.jpg"
 hero_alt: "Therapist speaking with a client in a calm office"
 draft: false
 ---

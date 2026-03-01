@@ -28,7 +28,7 @@ page_class: "autism-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/woman-smiling-picture.jpg" alt="Kvinna som känner igen sig under ett professionellt samtal">
+          <img src="/img/happy-woman-employee.jpg" alt="Kvinna som känner igen sig under ett professionellt samtal">
         </figure>
       </div>
     </div>

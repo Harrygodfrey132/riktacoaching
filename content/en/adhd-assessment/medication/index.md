@@ -29,7 +29,7 @@ page_class: "adhd-page--medication"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/psychologist-computer.jpg" alt="Specialist doctor reviewing a medication plan online or at the clinic">
+          <img src="/img/psychiatrist-by-computer.jpg" alt="Specialist doctor reviewing a medication plan online or at the clinic">
         </figure>
       </div>
     </div>

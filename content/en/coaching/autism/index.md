@@ -26,7 +26,7 @@ type: coachning
       </ul>
     </div>
     <div class="coachning-hero__image">
-      <img src="/img/autism-coachning.jpg" alt="Person receiving autism coaching support">
+      <img src="/img/coach-and-coachee.jpg" alt="Person receiving autism coaching support">
     </div>
   </div>
 </section>

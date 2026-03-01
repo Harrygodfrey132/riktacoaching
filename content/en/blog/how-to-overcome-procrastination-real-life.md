@@ -6,7 +6,7 @@ description: "A practical, compassionate guide to why you procrastinate, the com
 meta_title: "How to Overcome Procrastination | Real-Life Guide"
 meta_description: "Understand why you procrastinate, spot your pattern, and use practical tools, coaching, and a free procrastination test to start changing today."
 meta_keywords: "procrastination, overcome procrastination, ADHD, anxiety, executive function, coaching"
-hero: "/img/psychologist-computer.jpg"
+hero: "/img/psychiatrist-by-computer.jpg"
 hero_alt: "Person focusing at a desk with a laptop and notebook"
 draft: false
 ---

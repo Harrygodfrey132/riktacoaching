@@ -29,7 +29,7 @@ page_class: "adhd-page--women"
       </div>
       <div class="hero-media">
         <figure class="hero-image adhd-hero-media">
-          <img src="/img/woman-smiling-picture.jpg" alt="Woman feeling understood during a professional meeting">
+          <img src="/img/confident-professional-woman.jpg" alt="Woman feeling understood during a professional meeting">
         </figure>
       </div>
     </div>

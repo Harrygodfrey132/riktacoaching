@@ -7,7 +7,7 @@ layout: "guide"
 meta_title: "Autism guide: symptoms, assessment, support | Rikta Psychiatry"
 meta_description: "A concise guide to autism: what the diagnosis means, how assessments work, and the support strategies that ease daily life."
 meta_keywords: "autism guide, symptoms, assessment, support, strategies"
-hero: "/img/autism-coachning.jpg"
+hero: "/img/coach-and-coachee.jpg"
 hero_alt: "Conversation about autism support"
 ---
 <div class="guide-page guide-page--autism">
