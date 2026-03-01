@@ -81,17 +81,14 @@ https://www.habilitering.se/kunskap-och-stod/temasidor/smarta-och-sinnesintryck/
 [4] Smärta vanligare hos barn med NPF – Habilitering.se  
 https://www.habilitering.se/kunskap-och-stod/temasidor/smarta-och-sinnesintryck/smarta-vanligare-hos-barn-med-npf/
 
-[5] [6] [7] [13] [17] [18] [19] [20] [21] [22] Överstimulering vid ADHD & autism – så kan du hjälpa – Psykiatrispecialisterna Shop  
-https://www.psykiatrispecialisternashop.se/blogs/nyheter/hantera-overstimulering-vid-adhd-och-autism
-
-[9] [10] Sensorisk överkänslighet kan orsaka ångest hos en autist – Paula Tilli  
-https://paulatilli.se/blogg/sensorisk-overkanslighet-kan-orsaka-angest-hos-en-autist/
+[5] [6] [7] [9] [10] [17] [18] [19] [20] [21] [22] Autism – 1177  
+https://www.1177.se/sjukdomar--besvar/hjarna-och-nerver/neuropsykiatriska-funktionsnedsattningar/autism/
 
 [11] Sensorisk överkänslighet vid autism – Special Nest  
 https://www.specialnest.se/forskning/sensorisk-overkanslighet-vid-autism
 
-[12] Likheter ADHD och autism – Nova Psykiatri  
-https://www.novapsykiatri.se/likheter-adhd-autism
+[12] [13] ADHD – 1177  
+https://www.1177.se/sjukdomar--besvar/hjarna-och-nerver/neuropsykiatriska-funktionsnedsattningar/adhd/
 
 [14] ADHD och autism – Läkemedelsboken  
 https://lakemedelsboken.se/terapiomraden/psykiatri/adhd-och-autism/

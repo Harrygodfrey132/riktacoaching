@@ -77,12 +77,7 @@ Att ha autism/Asperger som vuxen innebär att förstå sig själv på djupet. De
 https://www.autism.se/om-autism/autism/aspergers-syndrom/
 ```
 
-[2] [5] [14] [20] [21] [22] Neuropsykiatriska utredningar Autism / Asperger — Psykonline - neuropsykiatrisk utredning och behandling från 15900 kr
-```
-https://www.psykonline.se/neuropsykiatriska-utredningar-autism
-```
-
-[4] [7] [9] [16] [17] [18] [38] Autism - 1177
+[4] [7] [8] [9] [16] [17] [18] [38] Autism - 1177
 ```
 https://www.1177.se/sjukdomar--besvar/hjarna-och-nerver/neuropsykiatriska-funktionsnedsattningar/autism/
 ```
@@ -90,11 +85,6 @@ https://www.1177.se/sjukdomar--besvar/hjarna-och-nerver/neuropsykiatriska-funkti
 [6] [15] [30] [37] [41] Autism - Riksförbundet Attention
 ```
 https://attention.se/npf/ast/
-```
-
-[8] Aspergers syndrom (autismspektrum) hos vuxna | mindeed
-```
-https://mindeed.se/aspergers-syndrom-autism-hos-vuxna/
 ```
 
 [10] [23] Det här är autism
@@ -107,17 +97,12 @@ https://www.autismforum.se/om-autism/det-har-ar-autism/
 https://www.hjarnfonden.se/om-hjarnan/diagnos/autism/vad-ar-autism/
 ```
 
-[25] [26] [33] [34] [36] Autism utredning - 12 vanliga frågor & svar - Vägen till en diagnos
-```
-https://lavendla.se/terapi/diagnoser/autism/autism-utredning/
-```
-
-[27] [28] Neuropsykiatrisk utredning - 1177
+[2] [5] [14] [20] [21] [22] [25] [26] [27] [28] [33] [34] [36] Neuropsykiatrisk utredning - 1177
 ```
 https://www.1177.se/undersokning-behandling/undersokningar-och-provtagning/psykiatriska-utredningar/neuropsykiatrisk-utredning/
 ```
 
-[29] [31] [32] [35] Autism hos vuxna — Evidentia psykologi
+[29] [31] [32] [35] Autism hos vuxna — KIND (Karolinska Institutet)
 ```
-https://www.evidentiapsykologi.se/neuropsykiatriska-utredningar/autism-hos-vuxna/
+https://ki.se/kind/autism-hos-vuxna
 ```

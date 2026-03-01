@@ -105,8 +105,8 @@ Sammanfattningsvis är ADD hos kvinnor är ett dolt men betydelsefullt tillstån
 [1] [2] [3] [6] [7] [8] [10] [11] [13] [14] [18] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41] [42] Vad är ADD hos vuxna - Hjärnfonden  
 https://www.hjarnfonden.se/om-hjarnan/diagnos/add/vad-ar-add-hos-vuxna/
 
-[4] [5] [12] [15] [16] [17] [19] [20] [21] [22] [23] [24] [25] [27] ADD Symptoms in Women: Common Signs and Why ADHD is Often Misdiagnosed  
-https://www.adhdcentre.co.uk/common-symptoms-of-add-and-adhd-in-women/
+[4] [5] [12] [15] [16] [17] [19] [20] [21] [22] [23] [24] [25] [27] ADHD – 1177  
+https://www.1177.se/sjukdomar--besvar/hjarna-och-nerver/neuropsykiatriska-funktionsnedsattningar/adhd/
 
 [9] [26] Adhd och add i vuxen ålder  
 https://regionuppsala.se/infoteket/hamta-kunskap/fakta-om-funktionsnedsattningar/adhd/adhd-och-add-i-vuxen-alder/
