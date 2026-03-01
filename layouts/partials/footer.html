@@ -4,6 +4,7 @@
   {{ $joinPath := cond $isEn "en/join-our-team/" "/bli-en-del-av-teamet/" }}
   {{ $locationsPath := cond $isEn "en/locations/" "/platser/" }}
   {{ $pricingPath := cond $isEn  "en/pricing/" "/priser/" }}
+  {{ $executiveFunctionPath := cond $isEn  "/en/executive-function-coaching/" "" }}
   {{ $blogPath := cond $isEn "en/blog/" "/blogg/" }}
   {{ $testsPath := cond $isEn "en/test/" "/test/" }}
   {{ $partnersPath := cond $isEn "en/partners/" "" }}
@@ -61,6 +62,9 @@
 	            <li><a href="{{ $combinedAssessmentPath | relLangURL }}">ADHD- och autismutredning</a></li>
 	          {{ end }}
 	          <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
+	          {{ if $isEn }}
+	            <li><a href="{{ $executiveFunctionPath | relLangURL }}">Executive function coaching</a></li>
+	          {{ end }}
 	          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
 	          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
 	          {{ if $isEn }}
@@ -84,6 +88,7 @@
             <li><a href="{{ "en/coaching/" | relLangURL }}">Overview</a></li>
             <li><a href="{{ "en/coaching/adhd/" | relLangURL }}">ADHD coaching</a></li>
             <li><a href="{{ "en/coaching/autism/" | relLangURL }}">ASD coaching</a></li>
+            <li><a href="{{ $executiveFunctionPath | relLangURL }}">Executive function coaching</a></li>
           </ul>
         </div>
       {{ else }}
