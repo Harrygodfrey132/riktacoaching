@@ -1,5 +1,17 @@
 {{ define "main" }}
   <div class="location-page">
     {{ .Content }}
+    <section class="contact-form-section">
+      <div class="container">
+        {{ partial "contact-form-en.html" (dict
+          "sectionID" "contact-form"
+          "formContext" "location-page-en"
+          "successMessage" "Thank you! We’ll get back to you as soon as possible."
+          "title" "Contact us"
+          "intro" "Fill out the form and our coordinators will suggest times and a format that suit you."
+          "followup" "We typically respond within 1-2 business days."
+        ) }}
+      </div>
+    </section>
   </div>
 {{ end }}

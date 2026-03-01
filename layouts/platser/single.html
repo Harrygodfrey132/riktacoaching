@@ -1,5 +1,17 @@
 {{ define "main" }}
   <div class="location-page">
     {{ .Content }}
+    <section class="contact-form-section">
+      <div class="container">
+        {{ partial "contact-form-sv.html" (dict
+          "sectionID" "kontaktformular"
+          "formContext" "location-page-sv"
+          "successMessage" "Tack! Vi återkommer så snart vi kan."
+          "redirectURL" "/tack/"
+          "title" "Kontakta oss"
+          "intro" "Fyll i formuläret så kontaktar vi dig inom kort, oftast samma eller nästkommande vardag."
+        ) }}
+      </div>
+    </section>
   </div>
 {{ end }}
