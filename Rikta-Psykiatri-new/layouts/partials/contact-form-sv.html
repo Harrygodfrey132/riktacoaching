@@ -1,0 +1,271 @@
+{{- $sectionID := default "kontaktformular" .sectionID -}}
+{{- $formContext := default "contact-page-sv" .formContext -}}
+{{- $successMessage := default "Tack! Vi återkommer så snart vi kan." .successMessage -}}
+{{- $redirectURL := default "/tack/" .redirectURL -}}
+{{- $title := default "Kontakta oss" .title -}}
+{{- $intro := default "Fyll i formuläret så kontaktar vi dig inom kort, oftast samma eller nästkommande vardag." .intro -}}
+<section id="{{ $sectionID }}" class="contact-form">
+  <h2>{{ $title }}</h2>
+  <p>{{ $intro }}</p>
+  <style>
+    #crmWebToEntityForm {
+      padding: 0;
+    }
+    #crmWebToEntityForm .zcwf_row {
+      margin: 0;
+    }
+    #crmWebToEntityForm .zcwf_col_lab,
+    #crmWebToEntityForm .zcwf_col_fld {
+      width: 100%;
+      float: none;
+      padding: 0;
+      margin: 0;
+    }
+    #crmWebToEntityForm label {
+      font-weight: 600;
+      color: rgba(29, 44, 59, 0.85);
+    }
+    #crmWebToEntityForm input,
+    #crmWebToEntityForm select,
+    #crmWebToEntityForm textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(29, 44, 59, 0.16);
+      font-size: 16px;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    #crmWebToEntityForm input:focus,
+    #crmWebToEntityForm select:focus,
+    #crmWebToEntityForm textarea:focus {
+      border-color: var(--secondary);
+      box-shadow: 0 0 0 3px rgba(71, 115, 166, 0.15);
+      outline: none;
+    }
+    #crmWebToEntityForm textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+    #crmWebToEntityForm .formsubmit {
+      background: var(--accent);
+      color: #fff !important;
+      border: none;
+      border-radius: 999px;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+    #crmWebToEntityForm .formsubmit:hover {
+      opacity: 0.9;
+    }
+    #crmWebToEntityForm .formsubmit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+    #crmWebToEntityForm .form-thank-you {
+      display: none;
+      margin-top: 12px;
+      font-size: 14px;
+      color: rgba(29, 44, 59, 0.8);
+    }
+  </style>
+  <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+    <form id='kaddio-contact-form'
+      class="contact-form__body"
+      data-kaddio-form="contact"
+      data-redirect-url='{{ $redirectURL }}'
+      data-form-context='{{ $formContext }}'
+      data-success-message='{{ $successMessage }}'
+      action='/api/kaddio/contact'
+      method='POST'
+      accept-charset='UTF-8'>
+      <div class='zcwf_row form-row'>
+        <div class='zcwf_col_lab'>
+          <label for='contact-first-name'>Förnamn <span style='color:red;'>*</span></label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <input type='text' id='contact-first-name' aria-required='true' aria-label='First Name' name='firstName' aria-valuemax='40' maxlength='40' autocomplete="given-name" required placeholder="Ange ditt förnamn">
+        </div>
+      </div>
+      <div class='zcwf_row form-row'>
+        <div class='zcwf_col_lab'>
+          <label for='contact-last-name'>Efternamn <span style='color:red;'>*</span></label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <input type='text' id='contact-last-name' aria-required='true' aria-label='Last Name' name='lastName' aria-valuemax='80' maxlength='80' autocomplete="family-name" required placeholder="Ange ditt efternamn">
+        </div>
+      </div>
+      <div class='zcwf_row form-row'>
+        <div class='zcwf_col_lab'>
+          <label for='contact-email'>E-postadress <span style='color:red;'>*</span></label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <input type='email' ftype='email' autocomplete='email' id='contact-email' aria-required='true' aria-label='Email' name='email' aria-valuemax='100' maxlength='100' required placeholder="namn@example.se">
+        </div>
+      </div>
+      <div class='zcwf_row form-row'>
+        <div class='zcwf_col_lab'>
+          <label for='contact-description'>Berätta kort hur vi kan hjälpa dig</label>
+        </div>
+        <div class='zcwf_col_fld'>
+          <textarea style='font-family: Arial, sans-serif;' aria-multiline='true' id='contact-description' aria-required='true' aria-label='Description' name='description' required placeholder="Beskriv din situation eller ställ din fråga"></textarea>
+        </div>
+      </div>
+      <div class='zcwf_row form-row form-row--consent'>
+        <div class='zcwf_col_lab'></div>
+        <div class='zcwf_col_fld'>
+          <label class="form-consent" for="contact-policy-ack">
+            <input type="checkbox" id="contact-policy-ack" name="policyAcknowledgement" required>
+            <span>Jag samtycker till att mina uppgifter behandlas enligt Rikta Psykiatris <a class="privacy-link" href="/integritetspolicy/">integritetspolicy</a> och <a class="privacy-link" href="/allmanna-villkor/">allmänna villkor</a>, inklusive behandlingen av hälsorelaterad information (t.ex. NPF) som jag väljer att dela, för att vi ska kunna hantera min förfrågan.</span>
+          </label>
+        </div>
+      </div>
+      <div class='zcwf_row form-row form-row--consent'>
+        <div class='zcwf_col_lab'></div>
+        <div class='zcwf_col_fld'>
+          <label class="form-consent" for="contact-newsletter-opt-in">
+            <input type="checkbox" id="contact-newsletter-opt-in" name="newsletterOptIn">
+            <span>Jag vill få tips, guider och nyheter via e-post. Jag kan när som helst avregistrera mig. (Valfritt)</span>
+          </label>
+        </div>
+      </div>
+      <div class='zcwf_row form-row form-row--actions'>
+        <div class='zcwf_col_lab'></div>
+        <div class='zcwf_col_fld'>
+          <input type='submit' id='formsubmit' role='button' class='formsubmit zcwf_button btn primary' value='Skicka' aria-label='Submit' title='Submit'>
+        </div>
+      </div>
+      <p class="contact-form__legal">Personuppgiftsansvarig: Riktningskliniken AB. Du kan när som helst återkalla ditt samtycke via länk i våra utskick.</p>
+      <p class='contact-form__note form-thank-you' data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
+      <p class='contact-form__note form-status' data-form-status aria-live='polite' hidden></p>
+    </form>
+  </div>
+  <p class="contact-form__note">Vi återkommer oftast samma eller nästkommande vardag.</p>
+  <script>
+    // Inline fallback to ensure the kontaktformulär always posts and shows feedback.
+    (function(){
+      const form = document.getElementById('kaddio-contact-form');
+      if (!form || form.dataset.kaddioInlineBound) return;
+      form.dataset.kaddioInlineBound = 'true';
+      const statusEl = form.querySelector('[data-form-status]');
+      const thankYou = form.querySelector('[data-thank-you]');
+
+      function setStatus(message, type){
+        if (!statusEl) return;
+        statusEl.textContent = message || '';
+        statusEl.dataset.statusType = type || 'info';
+        statusEl.hidden = !message;
+      }
+
+      function getMetaContent(name){
+        const el = document.querySelector(`meta[name="${name}"]`);
+        return el ? String(el.getAttribute('content') || '').trim() : '';
+      }
+
+      function squashText(value){
+        return String(value || '').replace(/\s+/g, ' ').trim();
+      }
+
+      function buildPolicyConsent({ formContext } = {}){
+        const checkbox = form.querySelector('input[name="policyAcknowledgement"]');
+        if (!checkbox) return null;
+        const label = checkbox.closest('label');
+        const statement = label ? squashText(label.textContent) : '';
+        const links = label ? Array.from(label.querySelectorAll('a.privacy-link')) : [];
+        const policyUrl = links[0] ? squashText(links[0].getAttribute('href')) : '';
+        const termsUrl = links[1] ? squashText(links[1].getAttribute('href')) : '';
+        const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+        const source = formContext ? `Web Form: ${formContext}` : 'Web Form: contact';
+
+        return {
+          status: checkbox.checked === true,
+          purpose: 'contact_request',
+          source,
+          locale,
+          policyUrl: policyUrl || undefined,
+          termsUrl: termsUrl || undefined,
+          policyVersion: getMetaContent('rk-privacy-policy-version') || undefined,
+          statementVersion: getMetaContent('rk-consent-statement-version') || undefined,
+          statement: statement ? statement.slice(0, 800) : undefined
+        };
+      }
+
+      form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+        if (typeof form.reportValidity === 'function') {
+          if (!form.reportValidity()) return;
+        } else if (typeof form.checkValidity === 'function') {
+          if (!form.checkValidity()) return;
+        }
+        if (thankYou) thankYou.hidden = true;
+        setStatus(form.dataset.sendingMessage || 'Skickar...', 'info');
+
+        const data = new FormData(form);
+        const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
+        const email = (data.get('email') || data.get('Email') || '').trim();
+        const rawDescription = (data.get('description') || data.get('message') || '').trim();
+        const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
+        const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+        const payload = {
+          fullName,
+          email,
+          description: rawDescription,
+          leadSource: (data.get('leadSource') || '').trim(),
+          metadata: {
+            path: window.location.pathname,
+            formContext,
+            locale
+          }
+        };
+        const consentMeta = buildPolicyConsent({ formContext });
+        if (consentMeta) {
+          payload.metadata.consentRequired = true;
+          payload.metadata.consent = consentMeta;
+        }
+        if (!payload.email) {
+          setStatus('Lägg till din e-post innan du skickar.', 'error');
+          return;
+        }
+        if (!rawDescription) {
+          setStatus('Skriv ett kort meddelande innan du skickar.', 'error');
+          return;
+        }
+        if (data.get('newsletterOptIn') !== null) {
+          payload.description = [payload.description, 'Samtycke nyhetsbrev: JA.'].filter(Boolean).join(' ');
+        }
+
+        try {
+          const res = await fetch('/api/kaddio/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const body = await res.json().catch(() => ({}));
+          if (!res.ok) {
+            const message = (body && (body.error || body.message)) || 'Det gick inte att skicka just nu.';
+            setStatus(message, 'error');
+            return;
+          }
+          if (thankYou) thankYou.hidden = false;
+          setStatus(form.dataset.successMessage || 'Tack! Vi återkommer så snart vi kan.', 'success');
+          form.dispatchEvent(new CustomEvent('kaddio:success', {
+            detail: { payload },
+            bubbles: true
+          }));
+          form.reset();
+          const redirectUrl = form.dataset.redirectUrl;
+          if (redirectUrl) {
+            window.setTimeout(() => {
+              window.location.assign(redirectUrl);
+            }, 400);
+          }
+        } catch (_err) {
+          setStatus('Det gick inte att skicka just nu.', 'error');
+        }
+      });
+    })();
+  </script>
+</section>
