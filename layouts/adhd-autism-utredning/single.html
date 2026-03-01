@@ -1,0 +1,48 @@
+{{ define "main" }}
+  <article class="combined-assessment-page">
+    {{ .Content }}
+    <section class="contact-form-section">
+      <div class="container">
+        {{ partial "contact-form-sv.html" (dict
+          "sectionID" "kontaktformular"
+          "formContext" "combined-assessment-page-sv"
+          "successMessage" "Tack! Vi återkommer så snart vi kan."
+          "redirectURL" "/tack/"
+          "title" "Kontakta oss om ADHD- och autismutredning"
+          "intro" "Fyll i formuläret så hjälper vi dig välja rätt upplägg för ADHD-utredning, autismutredning eller en bredare NPF-utredning."
+        ) }}
+      </div>
+    </section>
+    {{- $serviceSchema := dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" .Title
+      "description" (or .Params.meta_description .Params.description)
+      "serviceType" "NPF-utredning"
+      "areaServed" "SE"
+      "provider" (dict "@type" "MedicalBusiness" "name" .Site.Title "url" .Site.BaseURL)
+      "url" .Permalink
+    -}}
+    {{- $faqSchema := dict
+      "@context" "https://schema.org"
+      "@type" "FAQPage"
+      "mainEntity" (slice
+        (dict "@type" "Question" "name" "Kan jag utredas för både ADHD och autism samtidigt?" "acceptedAnswer" (dict "@type" "Answer" "text" "Ja. Om din bild inte tydligt pekar åt bara ett håll kan vi lägga upp en bredare NPF-utredning där båda frågeställningarna finns med."))
+        (dict "@type" "Question" "name" "Är detta en privat NPF-utredning?" "acceptedAnswer" (dict "@type" "Answer" "text" "Ja. Rikta Psykiatri erbjuder privat utredning med specialistteam, tydlig process och snabbare väg till bedömning och återkoppling."))
+        (dict "@type" "Question" "name" "Måste jag veta i förväg om det handlar om ADHD eller autism?" "acceptedAnswer" (dict "@type" "Answer" "text" "Nej. Kontakta oss så hjälper vi dig avgöra om du bör börja med ADHD-utredning, autismutredning eller en samlad ADHD- och autismutredning."))
+        (dict "@type" "Question" "name" "Vad blir nästa steg efter en utredning?" "acceptedAnswer" (dict "@type" "Answer" "text" "Det beror på utfallet, men vi kan hjälpa vidare med planering, coachning, medicinsk uppföljning och rekommendationer om anpassningar."))
+      )
+    -}}
+    {{- $breadcrumbSchema := dict
+      "@context" "https://schema.org"
+      "@type" "BreadcrumbList"
+      "itemListElement" (slice
+        (dict "@type" "ListItem" "position" 1 "name" "Hem" "item" .Site.BaseURL)
+        (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink)
+      )
+    -}}
+    <script type="application/ld+json">{{ $serviceSchema | jsonify | safeJS }}</script>
+    <script type="application/ld+json">{{ $faqSchema | jsonify | safeJS }}</script>
+    <script type="application/ld+json">{{ $breadcrumbSchema | jsonify | safeJS }}</script>
+  </article>
+{{ end }}

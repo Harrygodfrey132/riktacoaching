@@ -13,6 +13,7 @@
   {{ $adhdYouth := cond $isEn "en/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
   {{ $adhdCoaching := cond $isEn "en/coaching/adhd/" "/coachning/adhd/" }}
   {{ $adhdMedication := cond $isEn "en/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
+  {{ $combinedAssessmentPath := cond $isEn "en/adhd-and-autism-assessment/" "/adhd-autism-utredning/" }}
   {{ $autismPath := cond $isEn "en/autism-assessment/" "/autism-utredning/" }}
   {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
   {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
@@ -56,6 +57,9 @@
 	          {{ end }}
 	          <li><a href="{{ $joinPath | relLangURL }}">{{ if $isEn }}Join our team{{ else }}Bli en del av teamet{{ end }}</a></li>
 	          <li><a href="{{ $locationsPath | relLangURL }}">{{ if $isEn }}Locations{{ else }}Platser{{ end }}</a></li>
+	          {{ if not $isEn }}
+	            <li><a href="{{ $combinedAssessmentPath | relLangURL }}">ADHD- och autismutredning</a></li>
+	          {{ end }}
 	          <li><a href="{{ $pricingPath | relLangURL }}">{{ if $isEn }}Pricing{{ else }}Priser{{ end }}</a></li>
 	          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
 	          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>

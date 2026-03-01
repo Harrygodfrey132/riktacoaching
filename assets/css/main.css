@@ -3707,6 +3707,310 @@ main#content > .location-page:first-child {
   background: linear-gradient(140deg, #eef4f3 0%, #ffffff 40%, #f6f7fb 100%);
 }
 
+.combined-assessment-page {
+  background: #fff;
+  color: #14202b;
+}
+
+.combined-assessment-page section {
+  border-top: none;
+}
+
+.combined-assessment-page .container {
+  max-width: 1180px;
+}
+
+.combined-hero {
+  padding: 120px 0 88px;
+  background: linear-gradient(145deg, #f5f1ea 0%, #ffffff 42%, #eef3f9 100%);
+}
+
+.combined-hero__grid,
+.combined-comparison__grid,
+.combined-proof__grid,
+.combined-benefits__grid {
+  display: grid;
+  gap: 28px;
+}
+
+.combined-hero__grid,
+.combined-comparison__grid {
+  grid-template-columns: minmax(0, 1.4fr) minmax(320px, 0.9fr);
+  align-items: start;
+}
+
+.combined-hero__copy .lead,
+.combined-section__header p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.combined-hero__copy {
+  max-width: 760px;
+}
+
+.combined-assessment-page h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.05;
+  margin: 0 0 18px;
+}
+
+.combined-assessment-page h2 {
+  font-size: clamp(30px, 3.7vw, 44px);
+  line-height: 1.1;
+  margin: 0 0 14px;
+}
+
+.combined-assessment-page h3 {
+  font-size: 24px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.combined-assessment-page p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.combined-hero__highlights,
+.combined-hero__facts {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 14px;
+}
+
+.combined-hero__highlights li,
+.combined-hero__facts li {
+  position: relative;
+  padding-left: 28px;
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.combined-link-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-top: 24px;
+}
+
+.combined-link-cluster a {
+  color: var(--secondary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.combined-link-cluster a:hover {
+  text-decoration: underline;
+}
+
+.combined-hero__highlights li::before,
+.combined-hero__facts li::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--secondary);
+}
+
+.combined-hero__card,
+.combined-proof__card,
+.combined-panel,
+.combined-benefit,
+.combined-cta__card {
+  background: #fff;
+  border-radius: 28px;
+  padding: 32px;
+  box-shadow: 0 22px 44px rgba(29, 44, 59, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.combined-proof__card,
+.combined-panel,
+.combined-benefit {
+  height: 100%;
+}
+
+.combined-proof,
+.combined-journey,
+.combined-comparison,
+.combined-benefits,
+.combined-faq,
+.combined-cta {
+  padding: 84px 0;
+}
+
+.combined-proof {
+  background: #fff;
+}
+
+.combined-comparison {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.combined-benefits {
+  background: #fff;
+}
+
+.combined-section__header {
+  max-width: 840px;
+  margin-bottom: 36px;
+}
+
+.combined-proof__grid,
+.combined-benefits__grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.combined-benefits__grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.combined-journey {
+  background: linear-gradient(180deg, #f9fafc 0%, #ffffff 100%);
+}
+
+.combined-journey__steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.combined-step {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 28px;
+  border: 1px solid rgba(71, 115, 166, 0.12);
+}
+
+.combined-step__number {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: var(--secondary);
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.combined-inline-cta {
+  margin-top: 28px;
+  border-radius: 24px;
+  padding: 24px 28px;
+  background: rgba(218, 91, 95, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.combined-inline-cta p {
+  margin: 0;
+  font-size: 18px;
+}
+
+.combined-panel h2,
+.combined-cta__card h2 {
+  margin-top: 0;
+}
+
+.combined-proof__card p,
+.combined-panel p,
+.combined-benefit p,
+.combined-step p,
+.combined-cta__card p {
+  margin: 0;
+}
+
+.combined-cta__microcopy {
+  margin-top: 16px !important;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.combined-cta__microcopy a {
+  color: var(--secondary);
+  font-weight: 600;
+}
+
+.combined-faq .faq-list {
+  display: grid;
+  gap: 16px;
+}
+
+.combined-faq details {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px 24px;
+  border: 1px solid rgba(29, 44, 59, 0.08);
+  box-shadow: 0 12px 28px rgba(29, 44, 59, 0.06);
+}
+
+.combined-faq summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.combined-faq details p {
+  margin: 14px 0 0;
+}
+
+.combined-cta {
+  padding-top: 0;
+}
+
+.combined-cta__card {
+  background: linear-gradient(145deg, rgba(71, 115, 166, 0.1), rgba(255, 255, 255, 0.96));
+}
+
+@media (max-width: 960px) {
+  .combined-hero__grid,
+  .combined-comparison__grid,
+  .combined-proof__grid,
+  .combined-benefits__grid,
+  .combined-journey__steps {
+    grid-template-columns: 1fr;
+  }
+
+  .combined-inline-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .combined-hero,
+  .combined-proof,
+  .combined-journey,
+  .combined-comparison,
+  .combined-benefits,
+  .combined-faq,
+  .combined-cta {
+    padding: 56px 0;
+  }
+
+  .combined-hero__card,
+  .combined-proof__card,
+  .combined-panel,
+  .combined-benefit,
+  .combined-cta__card,
+  .combined-step {
+    padding: 24px;
+  }
+
+  .combined-assessment-page h1 {
+    font-size: 36px;
+  }
+}
+
 .location-hero--london {
   background: linear-gradient(140deg, #eef4f3 0%, #ffffff 40%, #f2f5f9 100%);
 }
