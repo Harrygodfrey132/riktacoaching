@@ -1,6 +1,7 @@
 ---
 title: "ADHD coaching for adults"
 layout: coachning
+url: "/en/coaching/adhd/adults/"
 meta_title: "ADHD coaching for adults | Rikta Psychiatry"
 meta_description: "ADHD coaching for adults who need better structure at work, at home, and in daily life. Practical support for planning, follow-through, overwhelm, and burnout."
 summary: "Adult ADHD coaching focused on work, home life, organisation, and steady follow-through."

@@ -1,6 +1,7 @@
 ---
 title: "ADHD coaching for entrepreneurs"
 layout: coachning
+url: "/en/coaching/adhd/entrepreneurs/"
 meta_title: "ADHD coaching for entrepreneurs | Rikta Psychiatry"
 meta_description: "ADHD coaching for entrepreneurs and self-employed people who need better focus, execution, prioritisation, and follow-through. Practical support for planning, admin, consistency, and sustainable growth."
 summary: "ADHD coaching for entrepreneurs focused on execution, structure, and sustainable business growth."

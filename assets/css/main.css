@@ -3033,6 +3033,7 @@ nav a.active {
   left: 0;
   min-width: 220px;
   border: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1000;
 }
 
 .desktop-nav .has-submenu:hover > .submenu,

@@ -1,6 +1,7 @@
 ---
 title: "ADHD coaching for professionals"
 layout: coachning
+url: "/en/coaching/adhd/professionals/"
 meta_title: "ADHD coaching for professionals | Rikta Psychiatry"
 meta_description: "ADHD coaching for professionals who want better focus, prioritisation, workload control, and follow-through at work. Practical support for meetings, deadlines, admin, and burnout prevention."
 summary: "ADHD coaching for professionals focused on work performance, organisation, and sustainable follow-through."

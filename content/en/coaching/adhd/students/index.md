@@ -1,6 +1,7 @@
 ---
 title: "ADHD coaching for students"
 layout: coachning
+url: "/en/coaching/adhd/students/"
 meta_title: "ADHD coaching for students | Rikta Psychiatry"
 meta_description: "Practical ADHD coaching for students in school, college, and university. Build study systems, reduce deadline stress, and improve follow-through with structured support."
 summary: "Structured ADHD coaching for students who need better study systems, steadier focus, and less overwhelm."
