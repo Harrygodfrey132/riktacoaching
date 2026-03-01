@@ -1,0 +1,37 @@
+{{ define "main" }}
+  <article class="pricing-service-page">
+    {{ .Content }}
+    <section class="contact-form-section">
+      <div class="container">
+        {{ partial "contact-form-sv.html" (dict
+          "sectionID" "kontaktformular"
+          "formContext" "pricing-service-page-sv"
+          "successMessage" "Tack! Vi återkommer så snart vi kan."
+          "redirectURL" "/tack/"
+          "title" "Kontakta oss"
+          "intro" "Fyll i formuläret så hjälper vi dig att förstå vilket upplägg som passar bäst och vilka kostnader som blir aktuella."
+        ) }}
+      </div>
+    </section>
+    {{- $breadcrumbSchema := dict
+      "@context" "https://schema.org"
+      "@type" "BreadcrumbList"
+      "itemListElement" (slice
+        (dict "@type" "ListItem" "position" 1 "name" "Hem" "item" .Site.BaseURL)
+        (dict "@type" "ListItem" "position" 2 "name" "Priser" "item" (printf "%spriser/" .Site.BaseURL))
+        (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+      )
+    -}}
+    {{- $serviceSchema := dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "name" .Title
+      "description" (or .Params.meta_description .Params.description)
+      "provider" (dict "@type" "MedicalBusiness" "name" .Site.Title "url" .Site.BaseURL)
+      "areaServed" "SE"
+      "url" .Permalink
+    -}}
+    <script type="application/ld+json">{{ $breadcrumbSchema | jsonify | safeJS }}</script>
+    <script type="application/ld+json">{{ $serviceSchema | jsonify | safeJS }}</script>
+  </article>
+{{ end }}

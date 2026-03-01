@@ -19,6 +19,9 @@
     {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
     {{ $autismTest := cond $isEn "en/test/autism-test/" "/test/autism-test/" }}
     {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
+    {{ $pricingAdhd := cond $isEn "en/pricing/adhd-assessment-and-coaching/" "/priser/adhd-utredning-coachning/" }}
+    {{ $pricingAutism := cond $isEn "en/pricing/autism-assessment-and-coaching/" "/priser/autism-utredning-coachning/" }}
+    {{ $pricingMedication := cond $isEn "en/pricing/adhd-medication/" "/priser/adhd-medicinering/" }}
     {{ $blogPath := cond $isEn "en/blog/" "/blogg/" }}
     {{ $aboutPath := cond $isEn "en/about-us/" "/for-foretag/" }}
     {{ $workplaceFunding := cond $isEn "https://riktapsykiatri.se/en/access-to-work-adhd-coach/" "" }}
@@ -117,7 +120,24 @@
             </ul>
           </li>
           <!-- Temporarily hidden: <li><a href="/vart-team/">Vårt team</a></li> -->
-          <li><a href="{{ $pricingPath | relLangURL }}">Priser</a></li>
+          <li class="has-submenu">
+            <div class="submenu-trigger">
+              <a href="{{ $pricingPath | relLangURL }}">Priser</a>
+              <button type="button"
+                      class="submenu-toggle"
+                      aria-expanded="false"
+                      aria-controls="pricingSubmenu"
+                      aria-label="Visa undersidor för Priser">
+                <span aria-hidden="true">&#9662;</span>
+              </button>
+            </div>
+            <ul class="submenu" id="pricingSubmenu">
+              <li><a href="{{ $pricingPath | relLangURL }}">Alla priser</a></li>
+              <li><a href="{{ $pricingAdhd | relLangURL }}">ADHD-utredning &amp; coachning</a></li>
+              <li><a href="{{ $pricingAutism | relLangURL }}">Autismutredning &amp; coachning</a></li>
+              <li><a href="{{ $pricingMedication | relLangURL }}">ADHD-medicinering</a></li>
+            </ul>
+          </li>
           <li><a href="{{ $aboutPath | relLangURL }}">Företagshälsa</a></li>
           <li><a class="cta" href="{{ $contactLink }}">Kontakta oss</a></li>
           <li class="language-switch"><a href="{{ $languageSwitch }}">English</a></li>
@@ -217,7 +237,24 @@
             </ul>
           </li>
           <!-- Temporarily hidden: <li><a href="/vart-team/" onclick="closeMobileMenu()">Vårt team</a></li> -->
-          <li><a href="{{ $pricingPath | relLangURL }}" onclick="closeMobileMenu()">Priser</a></li>
+          <li class="has-submenu">
+            <div class="submenu-trigger">
+              <a href="{{ $pricingPath | relLangURL }}" onclick="closeMobileMenu()">Priser</a>
+              <button type="button"
+                      class="submenu-toggle"
+                      aria-expanded="false"
+                      aria-controls="mobilePricingSubmenu"
+                      aria-label="Visa undersidor för Priser">
+                <span aria-hidden="true">&#9662;</span>
+              </button>
+            </div>
+            <ul class="submenu" id="mobilePricingSubmenu">
+              <li><a href="{{ $pricingPath | relLangURL }}" onclick="closeMobileMenu()">Alla priser</a></li>
+              <li><a href="{{ $pricingAdhd | relLangURL }}" onclick="closeMobileMenu()">ADHD-utredning &amp; coachning</a></li>
+              <li><a href="{{ $pricingAutism | relLangURL }}" onclick="closeMobileMenu()">Autismutredning &amp; coachning</a></li>
+              <li><a href="{{ $pricingMedication | relLangURL }}" onclick="closeMobileMenu()">ADHD-medicinering</a></li>
+            </ul>
+          </li>
           <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">Företagshälsa</a></li>
           <li><a class="cta" href="{{ $contactLink }}" onclick="closeMobileMenu()">Kontakta oss</a></li>
           <li class="language-switch"><a href="{{ $languageSwitch }}">English</a></li>
