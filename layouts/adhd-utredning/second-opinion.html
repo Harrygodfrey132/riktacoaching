@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="adhd-page{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{ .Content }}
+  <section class="contact-form-section">
+    <div class="container">
+      {{ partial "contact-form-sv.html" (dict
+        "sectionID" "kontaktformular"
+        "formContext" "adhd-second-opinion-page-sv"
+        "successMessage" "Tack! Vi återkommer så snart vi kan."
+        "redirectURL" "/tack/"
+        "title" "Kontakta oss"
+        "intro" "Fyll i formuläret så hjälper vi dig vidare med second opinion, omprövning av tidigare ADHD-diagnos eller frågor om vilket upplägg som passar bäst."
+      ) }}
+    </div>
+  </section>
+  {{- $breadcrumbSchema := dict
+    "@context" "https://schema.org"
+    "@type" "BreadcrumbList"
+    "itemListElement" (slice
+      (dict "@type" "ListItem" "position" 1 "name" "Hem" "item" .Site.BaseURL)
+      (dict "@type" "ListItem" "position" 2 "name" "ADHD-utredning" "item" (printf "%sadhd-utredning/" .Site.BaseURL))
+      (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+    )
+  -}}
+  {{- $serviceSchema := dict
+    "@context" "https://schema.org"
+    "@type" "Service"
+    "name" .Title
+    "description" (or .Params.meta_description .Params.description)
+    "serviceType" "Second opinion vid ADHD-diagnos"
+    "provider" (dict "@type" "MedicalBusiness" "name" .Site.Title "url" .Site.BaseURL)
+    "areaServed" "SE"
+    "url" .Permalink
+    "offers" (dict "@type" "Offer" "price" "20000" "priceCurrency" "SEK")
+  -}}
+  {{- $faqSchema := dict
+    "@context" "https://schema.org"
+    "@type" "FAQPage"
+    "mainEntity" (slice
+      (dict "@type" "Question" "name" "Måste jag redan ha en ADHD-diagnos för att boka?" "acceptedAnswer" (dict "@type" "Answer" "text" "Du behöver ha ett tidigare underlag att ompröva, till exempel en genomförd utredning, ett utlåtande eller en tidigare diagnosbedömning."))
+      (dict "@type" "Question" "name" "Kan en second opinion leda till att diagnosen skrivs av?" "acceptedAnswer" (dict "@type" "Answer" "text" "Ja, en ny bedömning kan i vissa fall landa i att tidigare diagnos inte framstår som rätt eller att annan förklaring är mer sannolik."))
+      (dict "@type" "Question" "name" "Är detta samma sak som en helt ny ADHD-utredning?" "acceptedAnswer" (dict "@type" "Answer" "text" "Nej. En second opinion utgår från tidigare bedömningsmaterial och syftar till en ny värdering av det underlaget och din nuvarande situation."))
+    )
+  -}}
+  <script type="application/ld+json">{{ $breadcrumbSchema | jsonify | safeJS }}</script>
+  <script type="application/ld+json">{{ $serviceSchema | jsonify | safeJS }}</script>
+  <script type="application/ld+json">{{ $faqSchema | jsonify | safeJS }}</script>
+</article>
+{{ end }}

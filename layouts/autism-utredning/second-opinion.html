@@ -1,0 +1,49 @@
+{{ define "main" }}
+<article class="adhd-page autism-page{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{ .Content }}
+  <section class="contact-form-section">
+    <div class="container">
+      {{ partial "contact-form-sv.html" (dict
+        "sectionID" "kontaktformular"
+        "formContext" "autism-second-opinion-page-sv"
+        "successMessage" "Tack! Vi återkommer så snart vi kan."
+        "redirectURL" "/tack/"
+        "title" "Kontakta oss"
+        "intro" "Fyll i formuläret så hjälper vi dig vidare med second opinion, omprövning av tidigare autismdiagnos eller frågor om vilket upplägg som passar bäst."
+      ) }}
+    </div>
+  </section>
+  {{- $breadcrumbSchema := dict
+    "@context" "https://schema.org"
+    "@type" "BreadcrumbList"
+    "itemListElement" (slice
+      (dict "@type" "ListItem" "position" 1 "name" "Hem" "item" .Site.BaseURL)
+      (dict "@type" "ListItem" "position" 2 "name" "Autism-utredning" "item" (printf "%sautism-utredning/" .Site.BaseURL))
+      (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink)
+    )
+  -}}
+  {{- $serviceSchema := dict
+    "@context" "https://schema.org"
+    "@type" "Service"
+    "name" .Title
+    "description" (or .Params.meta_description .Params.description)
+    "serviceType" "Second opinion vid autismdiagnos"
+    "provider" (dict "@type" "MedicalBusiness" "name" .Site.Title "url" .Site.BaseURL)
+    "areaServed" "SE"
+    "url" .Permalink
+    "offers" (dict "@type" "Offer" "price" "20000" "priceCurrency" "SEK")
+  -}}
+  {{- $faqSchema := dict
+    "@context" "https://schema.org"
+    "@type" "FAQPage"
+    "mainEntity" (slice
+      (dict "@type" "Question" "name" "Är detta samma sak som en ny full autismutredning?" "acceptedAnswer" (dict "@type" "Answer" "text" "Nej. En second opinion bygger på att det redan finns ett tidigare underlag att bedöma."))
+      (dict "@type" "Question" "name" "Kan ni bedöma att tidigare autismdiagnos inte verkar stämma?" "acceptedAnswer" (dict "@type" "Answer" "text" "Ja. Om den samlade genomgången pekar i en annan riktning än den tidigare bedömningen framgår det tydligt i utlåtandet."))
+      (dict "@type" "Question" "name" "Passar detta även om jag misstänker att autism missades första gången?" "acceptedAnswer" (dict "@type" "Answer" "text" "Ja, det kan vara en relevant väg om det finns tidigare utredningsmaterial som inte fångade den autistiska profilen tillräckligt väl."))
+    )
+  -}}
+  <script type="application/ld+json">{{ $breadcrumbSchema | jsonify | safeJS }}</script>
+  <script type="application/ld+json">{{ $serviceSchema | jsonify | safeJS }}</script>
+  <script type="application/ld+json">{{ $faqSchema | jsonify | safeJS }}</script>
+</article>
+{{ end }}

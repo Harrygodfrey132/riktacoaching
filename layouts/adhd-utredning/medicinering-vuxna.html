@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="adhd-page{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{ .Content }}
+  <section class="contact-form-section">
+    <div class="container contact-page">
+      {{ partial "contact-form-sv.html" (dict
+        "sectionID" "kontaktformular"
+        "formContext" "adhd-medication-adults-page-sv"
+        "successMessage" "Tack! Vi återkommer så snart vi kan."
+        "redirectURL" "/tack/"
+        "title" "Kontakta oss"
+        "intro" "Fyll i formuläret så hjälper vi dig förstå vilket medicineringsupplägg för vuxna som kan vara relevant och vilka kostnader som gäller enligt prislistan."
+      ) }}
+    </div>
+  </section>
+</article>
+{{ end }}

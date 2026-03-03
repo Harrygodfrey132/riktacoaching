@@ -164,6 +164,35 @@ page_class: "adhd-page--medication"
   </div>
 </section>
 
+<section class="who-section adhd-pathways" id="medication-options">
+  <div class="container">
+    <div class="section-intro">
+      <span class="eyebrow">Fördjupning</span>
+      <h2>Utforska medicinering i olika sammanhang</h2>
+      <p class="muted">
+        Här kan du gå vidare till mer riktad information om våra medicinska tjänster.
+      </p>
+    </div>
+    <div class="adhd-pathways-grid">
+      <a class="adhd-pathways-card" href="/adhd-utredning/medicinering/vuxna/">
+        <h3>Vuxna</h3>
+        <p>Mer information om ADHD-medicinering för vuxna och vilka kostnader som anges i prislistan.</p>
+        <span class="adhd-pathways-link">Läs mer</span>
+      </a>
+      <a class="adhd-pathways-card" href="/adhd-utredning/medicinering/kvinnor/">
+        <h3>Kvinnor</h3>
+        <p>En mer riktad sida om ADHD-medicinering för kvinnor, med fokus på maskering, hormoner och vardagsbelastning.</p>
+        <span class="adhd-pathways-link">Läs mer</span>
+      </a>
+      <a class="adhd-pathways-card" href="/adhd-utredning/medicinering/barn-och-ungdomar/">
+        <h3>Barn och ungdomar</h3>
+        <p>En riktad sida om ADHD-medicinering för barn och ungdomar, med fokus på skola, familj och vardagsbelastning.</p>
+        <span class="adhd-pathways-link">Läs mer</span>
+      </a>
+    </div>
+  </div>
+</section>
+
 <section class="who-section adhd-faq" id="faq">
   <div class="container">
     <div class="section-intro">

@@ -15,6 +15,7 @@
     {{ $adhdWomen := cond $isEn "en/adhd-assessment/women/" "/adhd-utredning/kvinnor/" }}
     {{ $adhdYouth := cond $isEn "en/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
     {{ $adhdMedication := cond $isEn "en/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
+    {{ $adhdSecondOpinion := cond $isEn "" "/adhd-utredning/second-opinion/" }}
     {{ $adhdCoaching := cond $isEn "en/coaching/adhd/" "/coachning/adhd/" }}
     {{ $adhdTest := cond $isEn "en/test/adhd-test/" "/test/adhd-test/" }}
     {{ $autismPath := cond $isEn "en/autism-assessment/" "/autism-utredning/" }}
@@ -106,6 +107,7 @@
               <li><a href="{{ $adhdWomen | relLangURL }}">Kvinnor</a></li>
               <li><a href="{{ $adhdYouth | relLangURL }}">Barn och ungdomar</a></li>
               <li><a href="{{ $adhdMedication | relLangURL }}">Medicinering</a></li>
+              <li><a href="{{ $adhdSecondOpinion | relLangURL }}">Second opinion</a></li>
               <li><a href="{{ $adhdTest | relLangURL }}">ADHD-test</a></li>
             </ul>
           </li>
@@ -227,6 +229,7 @@
               <li><a href="{{ $adhdWomen | relLangURL }}" onclick="closeMobileMenu()">Kvinnor</a></li>
               <li><a href="{{ $adhdYouth | relLangURL }}" onclick="closeMobileMenu()">Barn och ungdomar</a></li>
               <li><a href="{{ $adhdMedication | relLangURL }}" onclick="closeMobileMenu()">Medicinering</a></li>
+              <li><a href="{{ $adhdSecondOpinion | relLangURL }}" onclick="closeMobileMenu()">Second opinion</a></li>
               <li><a href="{{ $adhdTest | relLangURL }}" onclick="closeMobileMenu()">ADHD-test</a></li>
             </ul>
           </li>
