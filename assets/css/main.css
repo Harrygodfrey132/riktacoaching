@@ -8278,6 +8278,47 @@ nav a.cta:active{
   padding: clamp(40px, 8vw, 80px) 0 clamp(70px, 10vw, 110px);
 }
 
+.adhd-subnav-section {
+  background: #fff;
+  border-bottom: 1px solid rgba(55, 116, 171, 0.12);
+}
+
+.adhd-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 0;
+}
+
+.adhd-subnav__link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(55, 116, 171, 0.12);
+  background: rgba(55, 116, 171, 0.06);
+  color: var(--adhd-ink);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.adhd-subnav__link:hover,
+.adhd-subnav__link:focus-visible {
+  background: rgba(55, 116, 171, 0.12);
+  border-color: rgba(55, 116, 171, 0.2);
+  color: var(--adhd-blue);
+}
+
+.adhd-subnav__link.is-active {
+  background: var(--adhd-blue);
+  border-color: var(--adhd-blue);
+  color: #fff;
+}
+
 .adhd-pathways-grid {
   display: grid;
   gap: 20px;

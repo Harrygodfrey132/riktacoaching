@@ -1,0 +1,19 @@
+{{ $items := slice
+  (dict "label" "Översikt" "path" "/adhd-utredning/medicinering")
+  (dict "label" "Vuxna" "path" "/adhd-utredning/medicinering/vuxna")
+  (dict "label" "Kvinnor" "path" "/adhd-utredning/medicinering/kvinnor")
+  (dict "label" "Barn och ungdomar" "path" "/adhd-utredning/medicinering/barn-och-ungdomar")
+}}
+<section class="adhd-subnav-section">
+  <div class="container">
+    <nav class="adhd-subnav" aria-label="Undersidor om ADHD-medicinering">
+      {{ range $item := $items }}
+        {{ with site.GetPage $item.path }}
+          <a class="adhd-subnav__link{{ if eq $.RelPermalink .RelPermalink }} is-active{{ end }}" href="{{ .RelPermalink }}">
+            {{ $item.label }}
+          </a>
+        {{ end }}
+      {{ end }}
+    </nav>
+  </div>
+</section>

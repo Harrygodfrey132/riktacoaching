@@ -1,0 +1,6 @@
+{{ define "main" }}
+<article class="adhd-page{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{ partial "adhd-medication-nav.html" . }}
+  {{ .Content }}
+</article>
+{{ end }}
