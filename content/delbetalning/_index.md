@@ -1,6 +1,5 @@
 ---
 title: "Delbetalning"
-layout: "priser"
 draft: false
 meta_title: "Delbetalning med Medical Finance | Rikta Psykiatri"
 meta_keywords: "delbetalning psykiatri, Medical Finance, ADHD utredning delbetalning, autism utredning delbetalning, betalningsplan vård"
