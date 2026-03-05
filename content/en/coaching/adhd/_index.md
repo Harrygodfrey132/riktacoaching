@@ -1,8 +1,8 @@
 ---
 title: "ADHD coaching"
 layout: coachning
-meta_title: "ADHD coaching | Rikta Psychiatry"
-meta_description: "Practical ADHD coaching for teens and adults. Improve focus, follow-through, planning, and emotional regulation with weekly structured support." 
+meta_title: "ADHD Coach for Adults & Teens | Rikta Psychiatry"
+meta_description: "Get matched with an ADHD coach for teens or adults. Practical weekly support for focus, planning, procrastination, and emotional regulation."
 summary: "Structured ADHD coaching that turns overwhelm into clear, repeatable systems."
 type: coachning
 ---

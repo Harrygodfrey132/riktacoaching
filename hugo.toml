@@ -24,6 +24,7 @@ buildFuture = true
       logo = "/img/EnglishLogo.png"
 
 [params]
+  canonical_base_url = "https://riktapsykiatri.se"
   primary = "#000000"
   background = "#FFFFFF"
   secondary = "#4773A6"

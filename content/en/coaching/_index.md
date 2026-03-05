@@ -3,8 +3,8 @@ title: "ADHD & ASD coaching"
 translationKey: "coaching"
 layout: coachning
 type: coachning
-meta_title: "ADHD & ASD coaching | Rikta Psychiatry"
-meta_description: "Specialised coaching for ADHD and autism. Compare focus areas and choose the right support."
+meta_title: "ADHD Coach & Autism Coaching | Rikta Psychiatry"
+meta_description: "Work with a specialist ADHD coach or autism coach. Compare programmes and choose practical support for focus, routines, and follow-through."
 summary: "A single entry point to our specialised ADHD and ASD coaching."
 ---
 

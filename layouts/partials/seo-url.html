@@ -1,0 +1,22 @@
+{{- $page := . -}}
+{{- $path := "" -}}
+
+{{- if reflect.IsMap . -}}
+  {{- with index . "page" -}}
+    {{- $page = . -}}
+  {{- end -}}
+  {{- with index . "path" -}}
+    {{- $path = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $path "" -}}
+  {{- $path = $page.RelPermalink -}}
+{{- end -}}
+{{- if not (hasPrefix $path "/") -}}
+  {{- $path = printf "/%s" $path -}}
+{{- end -}}
+
+{{- $base := or $page.Site.Params.canonical_base_url $page.Site.BaseURL -}}
+{{- $base = strings.TrimSuffix "/" $base -}}
+{{- return printf "%s%s" $base $path -}}

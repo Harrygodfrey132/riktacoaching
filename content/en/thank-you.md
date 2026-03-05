@@ -4,6 +4,9 @@ translationKey: "thank-you"
 url: "/en/thank-you"
 layout: "adhd-landing"
 draft: false
+noindex: true
+sitemap:
+  disable: true
 meta_title: "Thank you for booking | Rikta Psychiatry"
 meta_description: "Thanks for booking a call with Rikta Psychiatry. Reach us by email and learn how referrals work."
 ---

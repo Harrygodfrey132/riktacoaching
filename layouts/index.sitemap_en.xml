@@ -1,16 +1,20 @@
 {{- $seen := newScratch -}}
-{{- $svPages := union (slice .Site.Home) (union .Site.RegularPages .Site.Sections) -}}
+{{- $allPages := .Site.AllPages -}}
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{- range $svPages }}
-    {{- range .AllTranslations }}
-      {{- if in .Permalink "/en/" }}
-        {{- $key := .Permalink -}}
-        {{- if not ($seen.Get $key) -}}
-          {{- $seen.Set $key true -}}
+  {{- $enHomeURL := partial "seo-url.html" (dict "page" .Site.Home "path" "/en/") -}}
+  {{- $seen.Set $enHomeURL true -}}
   <url>
-    <loc>{{ .Permalink }}</loc>
+    <loc>{{ $enHomeURL }}</loc>
+  </url>
+  {{- range $allPages }}
+    {{- if and (hasPrefix .RelPermalink "/en/") (not .Sitemap.Disable) (not .Params.noindex) }}
+      {{- $url := partial "seo-url.html" (dict "page" .) -}}
+      {{- if not ($seen.Get $url) -}}
+        {{- $seen.Set $url true -}}
+  <url>
+    <loc>{{ $url }}</loc>
     {{- with .Lastmod }}
     <lastmod>{{ .Format "2006-01-02T15:04:05-07:00" }}</lastmod>
     {{- end }}
@@ -18,19 +22,16 @@
       {{- $alts := append .AllTranslations (slice .) -}}
       {{- $altSeen := newScratch -}}
       {{- range $alts }}
-        {{- $hreflang := "sv" -}}
-        {{- if in .Permalink "/en/" -}}
-          {{- $hreflang = "en" -}}
-        {{- end -}}
-        {{- $key := printf "%s|%s" $hreflang .Permalink -}}
+        {{- $hreflang := cond (hasPrefix .RelPermalink "/en/") "en" "sv" -}}
+        {{- $href := partial "seo-url.html" (dict "page" .) -}}
+        {{- $key := printf "%s|%s" $hreflang $href -}}
         {{- if not ($altSeen.Get $key) -}}
           {{- $altSeen.Set $key true -}}
-    <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}" />
+    <xhtml:link rel="alternate" hreflang="{{ $hreflang }}" href="{{ $href }}" />
         {{- end -}}
       {{- end }}
     {{- end }}
   </url>
-        {{- end -}}
       {{- end -}}
     {{- end -}}
   {{- end }}

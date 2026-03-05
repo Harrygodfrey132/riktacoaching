@@ -11,6 +11,7 @@
   {{- $ogTitle := or $page.Params.og_title $pageTitle -}}
   {{- $ogDescription := or $page.Params.og_description $metaDescription -}}
   {{- $ogType := cond .IsHome "website" "article" -}}
+  {{- $canonicalURL := partial "seo-url.html" (dict "page" $page) -}}
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
@@ -25,10 +26,13 @@
   <meta property="og:title" content="{{ $ogTitle }}">
   <meta property="og:description" content="{{ $ogDescription }}">
   <meta property="og:type" content="{{ $ogType }}">
-  <meta property="og:url" content="{{ $page.Permalink }}">
+  <meta property="og:url" content="{{ $canonicalURL }}">
   <meta property="og:site_name" content="{{ $site.Title }}">
   <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
-  <link rel="canonical" href="{{ $page.Permalink }}">
+  <link rel="canonical" href="{{ $canonicalURL }}">
+  {{- if $page.Params.noindex }}
+  <meta name="robots" content="noindex,follow">
+  {{- end }}
   {{- /* Consent/policy versioning for clinical consent logs */ -}}
   {{- $policyVersion := cond $isEn (or $site.Params.privacy_policy_version_en $site.Params.privacy_policy_version) (or $site.Params.privacy_policy_version_sv $site.Params.privacy_policy_version) -}}
   {{- $consentVersion := cond $isEn (or $site.Params.consent_statement_version_en $site.Params.consent_statement_version) (or $site.Params.consent_statement_version_sv $site.Params.consent_statement_version) -}}
@@ -41,21 +45,22 @@
   {{- /* Hreflang alternates (deduped, including self-reference) */ -}}
   {{- $selfLang := cond $isEn "en" "sv" -}}
   {{- $seen := dict $selfLang true -}}
-  <link rel="alternate" hreflang="{{ $selfLang }}" href="{{ $page.Permalink }}">
+  <link rel="alternate" hreflang="{{ $selfLang }}" href="{{ $canonicalURL }}">
   {{- $translations := $page.AllTranslations -}}
   {{- if gt (len $translations) 0 -}}
     {{- $defaultPage := $page -}}
     {{- range $translations -}}
       {{- $lang := cond (or (eq .Lang "en") (hasPrefix .RelPermalink "/en/")) "en" "sv" -}}
       {{- if and $lang (not (isset $seen $lang)) -}}
-  <link rel="alternate" hreflang="{{ $lang }}" href="{{ .Permalink }}">
+        {{- $altURL := partial "seo-url.html" (dict "page" .) -}}
+  <link rel="alternate" hreflang="{{ $lang }}" href="{{ $altURL }}">
         {{- $seen = merge $seen (dict $lang true) -}}
       {{- end -}}
       {{- if eq $lang "sv" -}}
         {{- $defaultPage = . -}}
       {{- end -}}
     {{- end -}}
-  <link rel="alternate" hreflang="x-default" href="{{ $defaultPage.Permalink }}">
+  <link rel="alternate" hreflang="x-default" href="{{ partial "seo-url.html" (dict "page" $defaultPage) }}">
   {{- end }}
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">

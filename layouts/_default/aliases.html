@@ -1,15 +1,17 @@
 <!doctype html>
+{{ $canonicalBase := strings.TrimSuffix "/" (or site.Params.canonical_base_url site.BaseURL) }}
+{{ $targetURL := replaceRE "^https?://[^/]+" $canonicalBase .Permalink }}
 <html lang="{{ .Lang }}">
 <head>
   <meta charset="utf-8">
-  <title>{{ .Permalink }}</title>
-  <link rel="canonical" href="{{ .Permalink }}">
+  <title>{{ $targetURL }}</title>
+  <link rel="canonical" href="{{ $targetURL }}">
   <link rel="preconnect" href="https://connect.facebook.net" crossorigin>
   <link rel="dns-prefetch" href="https://connect.facebook.net">
   <link rel="preconnect" href="https://www.facebook.com" crossorigin>
   <link rel="dns-prefetch" href="https://www.facebook.com">
   <meta name="robots" content="noindex,follow">
-  <meta http-equiv="refresh" content="0; url={{ .Permalink }}">
+  <meta http-equiv="refresh" content="0; url={{ $targetURL }}">
   <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
@@ -57,9 +59,9 @@
     <h1>{{ if $isEn }}Redirecting…{{ else }}Du omdirigeras…{{ end }}</h1>
     <p>
       {{ if $isEn }}
-        If you are not redirected automatically, <a href="{{ .Permalink }}">click here to continue</a>.
+        If you are not redirected automatically, <a href="{{ $targetURL }}">click here to continue</a>.
       {{ else }}
-        Om du inte omdirigeras automatiskt, <a href="{{ .Permalink }}">klicka här för att fortsätta</a>.
+        Om du inte omdirigeras automatiskt, <a href="{{ $targetURL }}">klicka här för att fortsätta</a>.
       {{ end }}
     </p>
   </main>

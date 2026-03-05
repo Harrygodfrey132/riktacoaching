@@ -3,7 +3,7 @@ title: "Executive function coaching"
 layout: coachning
 url: "/en/executive-function-coaching/"
 meta_title: "Executive function coaching | Rikta Psychiatry"
-meta_description: "Executive function coaching for people who struggle with planning, prioritising, starting tasks, organisation, and follow-through. Practical support for work, study, and everyday life."
+meta_description: "Executive function coaching from an ADHD coach perspective. Practical support for planning, prioritising, task initiation, organisation, and follow-through."
 summary: "Practical executive function coaching for planning, organisation, prioritisation, and follow-through."
 type: coachning
 ---

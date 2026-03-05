@@ -1,6 +1,9 @@
 ---
 title: "Tack"
 url: "/tack"
+noindex: true
+sitemap:
+  disable: true
 meta_title: "Tack för din intresseanmälan | Rikta Psykiatri"
 meta_keywords: "tack sida, intresseanmälan, Rikta Psykiatri, webbinarium, kontakt"
 meta_description: "Tack för din intresseanmälan. Vi skickar webbinarieinformation inom kort och återkommer inom 24 timmar."
