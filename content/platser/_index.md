@@ -11,7 +11,12 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
 
 <section class="locations-section" id="platser">
   <div class="container">
-    <div class="locations-grid">
+    <div class="locations-group" id="adhd-autism-utredning">
+      <div class="locations-intro">
+        <h2>ADHD och autism utredning</h2>
+        <p>Välj ort för utredning. Vi kombinerar digital process med lokala moment där det behövs.</p>
+      </div>
+      <div class="locations-grid locations-grid--compact">
       <article class="location-card location-card--stockholm">
         <div class="location-card__header">
           <span class="location-tag">Flaggskeppsmottagning</span>
@@ -565,6 +570,16 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
           </div>
         </div>
       </article>
+      </div>
+    </div>
+    <div class="locations-group locations-group--medication" id="medicinering">
+      <div class="locations-intro">
+        <h2>Medicinering</h2>
+        <p>Orter för medicinering publiceras här när de är skapade.</p>
+      </div>
+      <div class="locations-empty">
+        <p>Inga orter publicerade ännu.</p>
+      </div>
     </div>
     <div class="locations-note">
       <p>
