@@ -27,6 +27,25 @@ og_description: "Compare coaching pricing and service availability before you bo
   </div>
 </section>
 
+<section class="pricing-spotlight" aria-label="Detailed coaching pricing guides">
+  <div class="container">
+    <div class="pricing-spotlight__grid">
+      <div class="pricing-spotlight__card">
+        <p class="pricing-spotlight__kicker">Detailed page</p>
+        <h2>Need a full ADHD coaching breakdown before booking?</h2>
+        <p>See exactly how coaching works, what we focus on in sessions, and a clear youth vs adult pricing structure.</p>
+        <a class="btn primary" href="/en/pricing/adhd-coaching/">Open the ADHD coaching guide</a>
+      </div>
+      <div class="pricing-spotlight__card pricing-spotlight__card--autism">
+        <p class="pricing-spotlight__kicker">Detailed page</p>
+        <h2>Need a full autism coaching breakdown before booking?</h2>
+        <p>Review the full autism coaching process, core support areas, and youth vs adult pricing on one page.</p>
+        <a class="btn primary" href="/en/pricing/autism-coaching/">Open the autism coaching guide</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="priser">
   <div class="container">
     <h2>Prices</h2>

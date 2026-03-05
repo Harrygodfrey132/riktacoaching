@@ -77,6 +77,7 @@
       class="contact-form__body"
       data-kaddio-form="contact"
       data-form-context='{{ $formContext }}'
+      data-form-locale='{{ default "en" .locale }}'
       data-success-message='{{ $successMessage }}'
       action='/api/kaddio/contact'
       method='POST'
@@ -176,7 +177,7 @@
         const links = label ? Array.from(label.querySelectorAll('a.privacy-link')) : [];
         const policyUrl = links[0] ? squashText(links[0].getAttribute('href')) : '';
         const termsUrl = links[1] ? squashText(links[1].getAttribute('href')) : '';
-        const locale = squashText((document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
+        const locale = squashText(form.dataset.formLocale || (document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
         const source = formContext ? `Web Form: ${formContext}` : 'Web Form: contact';
 
         return {
@@ -207,7 +208,7 @@
         const email = (data.get('email') || data.get('Email') || '').trim();
         const rawDescription = (data.get('description') || data.get('message') || '').trim();
         const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
-        const locale = squashText((document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
+        const locale = squashText(form.dataset.formLocale || (document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
         const payload = {
           fullName,
           email,

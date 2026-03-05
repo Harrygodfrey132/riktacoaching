@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <article class="autism-coaching-pricing-page">
+    {{ .RawContent | safeHTML }}
+    <section class="contact-form-section autism-coaching-pricing-page__contact">
+      <div class="container">
+        {{ partial "contact-form-en.html" (dict
+          "sectionID" "contact-form"
+          "formContext" "pricing-autism-coaching-page-en"
+          "successMessage" "Thanks. We received your message and will be in touch shortly."
+          "title" "Speak to our autism coaching team"
+          "intro" "Tell us whether support is for a young person or an adult, and what areas are currently hardest. We will recommend the most suitable coaching format and pricing track."
+          "followup" "We typically reply within 1-2 business days."
+        ) }}
+      </div>
+    </section>
+  </article>
+{{ end }}
