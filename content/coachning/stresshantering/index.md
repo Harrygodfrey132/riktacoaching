@@ -51,7 +51,7 @@ summary: "Stresshantering med NPF-expertis – konkreta strategier för återhä
 	    <div class="coachning-option-grid">
 	      <article class="coachning-option">
 	        <h4>Stresshantering, 1 tillfälle</h4>
-	        <p class="price">950 kr</p>
+	        <p class="price">1250 kr</p>
 	        <p>Ett 45-minuters samtal som ger dig en grundläggande förståelse för din stressrespons och konkreta tips för återhämtning.</p>
 	        <a class="btn secondary" href="/kontakta-oss/#kontaktformular">Boka 1 tillfälle</a>
 	      </article>

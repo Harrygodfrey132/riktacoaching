@@ -36,7 +36,7 @@ page_class: "pricing-service-page pricing-service-page--autism"
         <ul class="pricing-service-list">
           <li>Inledande bedömningssamtal: <strong>0 kr</strong></li>
           <li>Neuropsykiatrisk utredning för ADHD och autism: <strong>29 000 kr</strong></li>
-          <li>Autismcoachning 45 min: <strong>950 kr</strong></li>
+          <li>Autismcoachning 45 min: <strong>1250 kr</strong></li>
           <li>1 coachningssamtal ingår utan extra kostnad i utredningen enligt prislistan</li>
         </ul>
       </div>
@@ -77,7 +77,7 @@ page_class: "pricing-service-page pricing-service-page--autism"
       <article class="pricing-service-card">
         <h3>Autismcoachning</h3>
         <p class="meta">Digitalt eller på plats • 45 min</p>
-        <p class="price">950 kr</p>
+        <p class="price">1250 kr</p>
         <ul class="details">
           <li>Stöd för att förstå sociala situationer och kommunikation</li>
           <li>Strategier för sensoriska intryck, förändringar och vardagsstruktur</li>
@@ -163,7 +163,7 @@ page_class: "pricing-service-page pricing-service-page--autism"
       </details>
       <details>
         <summary>Vad kostar autismcoachning efter utredningen?</summary>
-        <p>Autismcoachning kostar 950 kr för 45 minuter. Ett coachningssamtal ingår också utan extra kostnad i utredningen.</p>
+        <p>Autismcoachning kostar 1250 kr för 45 minuter. Ett coachningssamtal ingår också utan extra kostnad i utredningen.</p>
       </details>
       <details>
         <summary>Kan jag börja med ett bedömningssamtal även om jag är osäker?</summary>

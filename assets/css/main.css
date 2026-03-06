@@ -13,10 +13,18 @@
   --adhd-rose: #ec4e5b;
   --adhd-sand: #f1ebe6;
   --adhd-ink: #1d2c3b;
+  /* Site scale (approx. "75% browser zoom" on desktop). */
+  --rk-site-zoom: 1;
 }
 
 * {
   box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+  :root {
+    --rk-site-zoom: 0.75;
+  }
 }
 
 html, body {
@@ -29,10 +37,20 @@ html, body {
   line-height: 1.6;
 }
 
+body {
+  zoom: var(--rk-site-zoom);
+}
+
 /* Site-wide heading typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Inter", "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 500;
+}
+
+@media print {
+  body {
+    zoom: 1 !important;
+  }
 }
 
 img {

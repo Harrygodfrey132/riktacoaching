@@ -36,7 +36,7 @@ page_class: "pricing-service-page pricing-service-page--adhd"
         <ul class="pricing-service-list">
           <li>Inledande bedömningssamtal: <strong>0 kr</strong></li>
           <li>Neuropsykiatrisk utredning för ADHD och autism: <strong>29 000 kr</strong></li>
-          <li>ADHD-coachning 45 min: <strong>950 kr</strong></li>
+          <li>ADHD-coachning 45 min: <strong>1250 kr</strong></li>
           <li>1 coachningssamtal ingår utan extra kostnad i utredningen enligt prislistan</li>
         </ul>
       </div>
@@ -77,7 +77,7 @@ page_class: "pricing-service-page pricing-service-page--adhd"
       <article class="pricing-service-card">
         <h3>ADHD-coachning</h3>
         <p class="meta">Digitalt eller på plats • 45 min</p>
-        <p class="price">950 kr</p>
+        <p class="price">1250 kr</p>
         <ul class="details">
           <li>Stöd för struktur, rutiner och prioritering i vardagen</li>
           <li>Hjälp med impulskontroll och tidshantering för att minska stress och öka genomförande</li>
@@ -163,7 +163,7 @@ page_class: "pricing-service-page pricing-service-page--adhd"
       </details>
       <details>
         <summary>Vad kostar ADHD-coachning efter utredningen?</summary>
-        <p>ADHD-coachning kostar 950 kr för 45 minuter. Ett coachningssamtal ingår också utan extra kostnad i utredningen.</p>
+        <p>ADHD-coachning kostar 1250 kr för 45 minuter. Ett coachningssamtal ingår också utan extra kostnad i utredningen.</p>
       </details>
       <details>
         <summary>Kan jag börja med samtal innan jag bestämmer mig?</summary>

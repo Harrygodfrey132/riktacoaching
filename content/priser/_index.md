@@ -51,7 +51,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <article class="card">
             <h3>ADHD-coachning</h3>
             <p class="meta">Digitalt eller på plats • 45 min</p>
-            <p class="price">950 kr</p>
+            <p class="price">1250 kr</p>
             <ul class="details">
               <li>Stöd för att skapa struktur och rutiner som förbättrar fokus och produktivitet.</li>
               <li>Hjälp att hantera impulskontroll och tidshantering för att minska stress och uppnå mål.</li>
@@ -61,7 +61,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <article class="card">
             <h3>Autismcoachning</h3>
             <p class="meta">Digitalt eller på plats • 45 min</p>
-            <p class="price">950 kr</p>
+            <p class="price">1250 kr</p>
             <ul class="details">
               <li>Stöd för att förstå och hantera sociala situationer och kommunikation.</li>
               <li>Hjälp att skapa strategier för att hantera sensoriska intryck och förändringar i vardagen.</li>
@@ -73,7 +73,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <article class="card">
             <h3>Fokus- och strukturcoachning</h3>
             <p class="meta">Digitalt eller på plats • 45 min</p>
-            <p class="price">950 kr</p>
+            <p class="price">1250 kr</p>
             <ul class="details">
               <li>För dig som vill få ordning på vardagen – med eller utan diagnos.</li>
               <li>Från plan till handling: Bryt prokrastinering och bygg hållbara system för planering som faktiskt håller över tid.</li>
@@ -84,7 +84,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <article class="card">
             <h3>Föräldracoachning</h3>
             <p class="meta">Digitalt eller på plats • 45 min</p>
-            <p class="price">950 kr</p>
+            <p class="price">1250 kr</p>
             <ul class="details">
               <li>Stöd i föräldrarollen för att navigera vardagen och förstå ditt barns specifika behov vid ADHD och/eller autism.</li>
               <li>Verktyg för lågaffektivt bemötande och praktiska strategier för att minska konflikter och skapa lugn i hemmet.</li>
@@ -95,7 +95,7 @@ og_description: "Jämför paket för utredningar, medicinska besök och uppfölj
           <article class="card">
             <h3>Stresshantering (NPF-fokus)</h3>
             <p class="meta">Friskvård för en hållbar vardag • 45 min</p>
-            <p class="price">950 kr</p>
+            <p class="price">1250 kr</p>
             <ul class="details">
               <li>Stressfysiologi vid NPF: Förstå hur din hjärna reagerar på belastning, sensoriska intryck och exekutiva krav.</li>
               <li>Verktyg för återhämtning: Strategier som fungerar för hjärnan vid NPF, bortom standardsvaren.</li>
