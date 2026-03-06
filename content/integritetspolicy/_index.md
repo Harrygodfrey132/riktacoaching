@@ -62,7 +62,6 @@ summary: "Integritet, journalföring och dina rättigheter när du använder Rik
         <h2>System vi använder</h2>
         <ul class="legal-list">
           <li><strong>Kaddio:</strong> System för att hantera kontaktförfrågningar och journaldokumentation. Hälsodata lagras krypterat enligt Patientdatalagen.</li>
-          <li><strong>Zoho CRM (reserv):</strong> Kan användas som reserv vid tekniska störningar för att ta emot en kontaktförfrågan.</li>
           <li><strong>E-post:</strong> Används för uppföljning och utskick. Vi skickar inte känsliga hälsoresultat via vanlig e-post.</li>
         </ul>
       </article>

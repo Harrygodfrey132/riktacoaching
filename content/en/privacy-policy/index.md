@@ -66,7 +66,6 @@ og_description: "How we collect, use, and protect your data and how to exercise 
         <h2>Systems we use</h2>
         <ul class="legal-list">
           <li><strong>Kaddio:</strong> Used to handle contact enquiries and, where relevant, clinical documentation. Health data is stored encrypted in accordance with healthcare data standards.</li>
-          <li><strong>Zoho CRM (backup):</strong> May be used as a backup channel to receive an enquiry during technical disruptions.</li>
           <li><strong>Email:</strong> Used for follow-up and sending requested information. We do not send sensitive health results via standard unencrypted email.</li>
         </ul>
       </article>

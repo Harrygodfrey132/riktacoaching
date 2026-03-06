@@ -49,147 +49,27 @@ draft: false
         <p>Få klarhet och praktisk vägledning kring ADHD-tecken hos barn och ungdomar.</p>
       </div>
 
-      <!-- Zoho CRM form (webbinariet) -->
-      <div id="crmWebToEntityForm" class="zcwf_lblLeft crmWebToEntityForm">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-        <form id="webform896517000000571075_sv" action="https://crm.zoho.eu/crm/WebToLeadForm" name="WebToLeads896517000000571075_sv" method="POST" onsubmit='javascript:document.charset="UTF-8"; return checkMandatory896517000000571075_sv()' accept-charset="UTF-8">
-          <input type="text" style="display:none;" name="xnQsjsdp" value="fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3">
-          <input type="hidden" name="zc_gad" id="zc_gad_sv" value="">
-          <input type="text" style="display:none;" name="xmIwtLD" value="fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5">
-          <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
-          <input type="text" style="display:none;" name="returnURL" value="https&#x3a;&#x2f;&#x2f;riktapsykiatri.se/tack/">
-
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="First_Name_sv">Namn</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="First_Name_sv" name="First Name" maxlength="40" autocomplete="name" required>
-            </div>
-          </div>
-
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab">
-              <label for="Email_sv">E-post</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" ftype="email" id="Email_sv" name="Email" maxlength="100" autocomplete="email" required>
-            </div>
-          </div>
-
-          <div class="zcwf_row wfrm_fld_dpNn">
-            <div class="zcwf_col_lab">
-              <label for="Last_Name_sv">Last Name <span style="color:red;">*</span></label>
-            </div>
-            <div class="zcwf_col_fld">
-              <input type="text" id="Last_Name_sv" name="Last Name" maxlength="80" value="Webbinarium">
-            </div>
-          </div>
-
-          <div class="zcwf_row wfrm_fld_dpNn">
-            <div class="zcwf_col_lab">
-              <label for="Rating_sv">Rating</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <select class="zcwf_col_fld_slt" id="Rating_sv" name="Rating">
-                <option value="-None-">-None-</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="zcwf_row wfrm_fld_dpNn">
-            <div class="zcwf_col_lab">
-              <label for="Lead_Source_sv">Lead Source</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <select class="zcwf_col_fld_slt" id="Lead_Source_sv" name="Lead Source">
-                <option value="-None-">-None-</option>
-                <option value="Coaching" selected>Coaching</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="zcwf_row wfrm_fld_dpNn">
-            <div class="zcwf_col_lab">
-              <label for="Description_sv">Description</label>
-            </div>
-            <div class="zcwf_col_fld">
-              <textarea id="Description_sv" name="Description"></textarea>
-            </div>
-          </div>
-
-          <p class="small">Du får länken till webbinariet och relevanta resurser.</p>
-
-          <div class="zcwf_row">
-            <div class="zcwf_col_lab"></div>
-            <div class="zcwf_col_fld">
-              <input type="submit" id="formsubmit_sv" class="formsubmit zcwf_button" value="Spara min plats">
-            </div>
-          </div>
-
-          <script>
-            function validateEmail896517000000571075_sv(){
-              var form = document.forms['WebToLeads896517000000571075_sv'];
-              var emailFld = form.querySelectorAll('[ftype=email]');
-              for (var i = 0; i < emailFld.length; i++ ){
-                var emailVal = emailFld[i].value.trim();
-                if (emailVal.length !== 0){
-                  var atpos = emailVal.indexOf('@');
-                  var dotpos = emailVal.lastIndexOf('.');
-                  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length){
-                    alert('Ange en giltig e-postadress.');
-                    emailFld[i].focus();
-                    return false;
-                  }
-                }
-              }
-              return true;
-            }
-            function checkMandatory896517000000571075_sv(){
-              var mndFileds = ['Last Name'];
-              var fldLangVal = ['Last Name'];
-              for (var i = 0; i < mndFileds.length; i++ ){
-                var fieldObj = document.forms['WebToLeads896517000000571075_sv'][mndFileds[i]];
-                if (fieldObj){
-                  if ((fieldObj.value).trim().length === 0){
-                    alert(fldLangVal[i] + ' cannot be empty.');
-                    fieldObj.focus();
-                    return false;
-                  } else if (fieldObj.nodeName === 'SELECT'){
-                    if (fieldObj.options[fieldObj.selectedIndex].value === '-None-'){
-                      alert(fldLangVal[i] + ' cannot be none.');
-                      fieldObj.focus();
-                      return false;
-                    }
-                  }
-                }
-              }
-              if (!validateEmail896517000000571075_sv()){
-                return false;
-              }
-              document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
-              var leadFired = false;
-              if (typeof fbq === 'function') {
-                fbq('track', 'Lead');
-                leadFired = true;
-              }
-              if (!leadFired) {
-                try {
-                  sessionStorage.setItem('rk_lead_pending', '1');
-                  sessionStorage.setItem('rk_lead_pending_ts', String(Date.now()));
-                } catch (err) {}
-              } else {
-                try {
-                  sessionStorage.removeItem('rk_lead_pending');
-                  sessionStorage.removeItem('rk_lead_pending_ts');
-                } catch (err) {}
-              }
-            }
-          </script>
-        </form>
-      </div>
-      <!-- End Zoho CRM form -->
+      <form
+        class="contact-form__body"
+        data-kaddio-form="contact"
+        data-form-context="webinar-registration-sv"
+        data-success-message="Tack! Du är anmäld och vi skickar länken via e-post."
+        data-redirect-url="/tack/"
+        action="/api/kaddio/contact"
+        method="POST"
+        accept-charset="UTF-8"
+      >
+        <input type="hidden" name="description" value="Webbinarieanmälan: ADHD-tecken hos barn och ungdomar">
+        <input type="hidden" name="leadSource" value="Webbinarium SV">
+        <input type="hidden" name="nameSuffix" value="Webbinarium">
+        <label for="webinar-sv-first-name">Förnamn</label>
+        <input id="webinar-sv-first-name" name="firstName" type="text" maxlength="40" autocomplete="given-name" required>
+        <label for="webinar-sv-email">E-post</label>
+        <input id="webinar-sv-email" name="email" type="email" maxlength="100" autocomplete="email" required>
+        <p class="small">Du får länken till webbinariet och relevanta resurser.</p>
+        <button type="submit" class="btn primary">Spara min plats</button>
+        <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
+      </form>
     </div>
 
     <div class="simple-footer-cta">

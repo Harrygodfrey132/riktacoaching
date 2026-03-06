@@ -640,24 +640,12 @@ function buildZohoParams(normalized) {
   Object.entries(ZOHO_WEBTOLEAD_FIELDS).forEach(([key, value]) => {
     params.set(key, value || '');
   });
+
+  // Privacy boundary:
+  // Zoho receives identity only (name + email), while detailed context stays in Kaddio.
   params.set('First Name', normalized.firstname || '');
   params.set('Last Name', normalized.lastname || '');
   params.set('Email', normalized.email || '');
-  const reason = coerceString(normalized.description);
-  if (reason) {
-    // Map user message to both standard and custom lead fields.
-    params.set('Description', reason);
-    params.set('Reason', reason);
-    params.set('Reason_Field', reason);
-  }
-  if (normalized.leadSource) {
-    params.set('Lead Source', normalized.leadSource);
-  }
-  const locale = resolveSubmissionLocale(normalized);
-  if (locale) {
-    const leadInput = locale.startsWith('en') ? 'Website - English Side' : 'Website - Swedish Side';
-    params.set('Lead Input', leadInput);
-  }
   return params;
 }
 
