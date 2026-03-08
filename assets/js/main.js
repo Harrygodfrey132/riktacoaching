@@ -226,7 +226,113 @@
     const interpretationEl = interpretationId ? document.getElementById(interpretationId) : null;
     const resetButton = form.querySelector('.adhd-screening__reset');
     const getFormLocale = () => resolveLocale(form);
+    const getLocaleCopy = () => (getFormLocale() || 'sv').toLowerCase().startsWith('en') ? 'en' : 'sv';
     let hideTimeout = null;
+
+    function getProgressCopy(locale) {
+      const isEn = locale === 'en';
+      return {
+        answered: isEn ? 'Answered' : 'Besvarade',
+        incomplete: isEn ? 'Please answer all questions to calculate your score.' : 'Besvara alla frågor för att räkna ut din poäng.',
+        inProgress: isEn ? 'Complete all questions to see your result.' : 'Besvara alla frågor för att se ditt resultat.'
+      };
+    }
+
+    function ensureProgressUI() {
+      let box = form.querySelector('[data-test-progress]');
+      if (box) return box;
+      box = document.createElement('div');
+      box.className = 'adhd-progress';
+      box.setAttribute('data-test-progress', 'true');
+      box.innerHTML = `
+        <div class="adhd-progress__head">
+          <span class="adhd-progress__label" data-progress-label></span>
+          <span class="adhd-progress__percent" data-progress-percent>0%</span>
+        </div>
+        <div class="adhd-progress__bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span data-progress-fill></span>
+        </div>
+        <p class="adhd-progress__hint" data-progress-hint></p>
+      `;
+      const summaryBlock = form.querySelector('.adhd-section, .adhd-question-list');
+      if (summaryBlock && summaryBlock.parentNode) {
+        summaryBlock.parentNode.insertBefore(box, summaryBlock);
+      } else {
+        form.insertBefore(box, form.firstChild);
+      }
+      return box;
+    }
+
+    function setProgressHint(message) {
+      const progressBox = ensureProgressUI();
+      const hint = progressBox.querySelector('[data-progress-hint]');
+      if (!hint) return;
+      hint.textContent = message || '';
+    }
+
+    function updateProgressUI({ hint } = {}) {
+      const progressBox = ensureProgressUI();
+      const label = progressBox.querySelector('[data-progress-label]');
+      const percentEl = progressBox.querySelector('[data-progress-percent]');
+      const fill = progressBox.querySelector('[data-progress-fill]');
+      const bar = progressBox.querySelector('.adhd-progress__bar');
+      const { answered } = calculateScore();
+      const locale = getLocaleCopy();
+      const copy = getProgressCopy(locale);
+      const percent = Math.round((answered / totalQuestions) * 100);
+      if (label) label.textContent = `${copy.answered}: ${answered}/${totalQuestions}`;
+      if (percentEl) percentEl.textContent = `${percent}%`;
+      if (fill) fill.style.width = `${percent}%`;
+      if (bar) bar.setAttribute('aria-valuenow', String(percent));
+      if (typeof hint === 'string') {
+        setProgressHint(hint);
+      } else if (answered > 0 && answered < totalQuestions) {
+        setProgressHint(copy.inProgress);
+      } else {
+        setProgressHint('');
+      }
+    }
+
+    function firstMissingQuestion() {
+      for (let i = 1; i <= totalQuestions; i += 1) {
+        const selected = form.querySelector(`input[name="q${i}"]:checked`);
+        if (!selected) return i;
+      }
+      return null;
+    }
+
+    function ensureResultActions(scoreData, locale) {
+      if (!scoreBox) return;
+      let actions = scoreBox.querySelector('.adhd-score__actions');
+      if (!actions) {
+        actions = document.createElement('div');
+        actions.className = 'adhd-score__actions';
+        scoreBox.appendChild(actions);
+      }
+      const isEn = locale === 'en';
+      const isAutismForm = /autism|aq|raads/i.test(formId);
+      const assessmentHref = isEn
+        ? (isAutismForm ? '/en/autism-assessment/' : '/en/adhd-assessment/')
+        : (isAutismForm ? '/autism-utredning/' : '/adhd-utredning/');
+      const contactHref = isEn ? '/en/contact/' : '/kontakta-oss/';
+      const pricingHref = isEn ? '/en/pricing/' : '/priser/';
+      const heading = isEn ? 'Recommended next step' : 'Rekommenderat nästa steg';
+      const description = isEn
+        ? 'Use your result as a guide and book a specialist conversation for a full clinical assessment.'
+        : 'Använd resultatet som vägledning och boka ett specialistsamtal för en full klinisk bedömning.';
+      const ctaPrimary = isEn ? 'Book consultation' : 'Boka rådgivning';
+      const ctaSecondary = isEn ? 'Assessment details' : 'Se utredning';
+      const ctaTertiary = isEn ? 'See pricing' : 'Se priser';
+      actions.innerHTML = `
+        <h3>${heading}</h3>
+        <p>${description}</p>
+        <div class="adhd-score__action-buttons">
+          <a class="btn primary" href="${contactHref}">${ctaPrimary}</a>
+          <a class="btn secondary" href="${assessmentHref}">${ctaSecondary}</a>
+          <a class="btn link" href="${pricingHref}">${ctaTertiary}</a>
+        </div>
+      `;
+    }
 
     function resolveClinicalCutoff(locale) {
       const activeLocale = (locale || getFormLocale() || 'sv').toLowerCase();
@@ -421,6 +527,7 @@
 	      const { total, answered } = scoreData;
 	      if (answered === totalQuestions) {
 	        const locale = getFormLocale();
+          const localeKey = (locale || 'sv').toLowerCase().startsWith('en') ? 'en' : 'sv';
 	        const resolvedTestName = typeof testName === 'function'
 	          ? testName(locale, form)
 	          : (testName && typeof testName === 'object')
@@ -430,9 +537,11 @@
 	        const renderResult = () => {
 	          updateScoreDisplay(total, interpretation, locale);
             updateCutoffLine(scoreData, locale);
-	          if (typeof metaUpdater === 'function') {
+            ensureResultActions(scoreData, localeKey);
+          if (typeof metaUpdater === 'function') {
             metaUpdater({ ...scoreData, interpretation });
           }
+          updateProgressUI({ hint: '' });
           showScoreBox();
 	        };
 	        const payload = {
@@ -463,6 +572,18 @@
             guidesModal.open({ score: total });
           }
         }
+      } else {
+        const localeKey = getLocaleCopy();
+        const copy = getProgressCopy(localeKey);
+        const missing = firstMissingQuestion();
+        updateProgressUI({ hint: copy.incomplete });
+        if (missing !== null) {
+          const firstMissingInput = form.querySelector(`input[name="q${missing}"]`);
+          const missingQuestion = firstMissingInput ? firstMissingInput.closest('.adhd-question') : null;
+          if (missingQuestion) {
+            missingQuestion.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
       }
     });
 
@@ -486,10 +607,12 @@
         if (typeof metaUpdater === 'function') {
           metaUpdater({ total: 0, answered: 0, meta: {} });
         }
+        updateProgressUI({ hint: '' });
       });
     }
 
     form.addEventListener('change', () => {
+      updateProgressUI();
       if (!scoreBox || scoreBox.hasAttribute('hidden')) return;
       const scoreData = calculateScore();
       const { total, answered } = scoreData;
@@ -503,6 +626,8 @@
         }
       }
     });
+
+    updateProgressUI({ hint: '' });
   }
 
   // ----- Kaddio form helpers -----
