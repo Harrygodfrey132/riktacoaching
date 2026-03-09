@@ -13,18 +13,12 @@
   --adhd-rose: #ec4e5b;
   --adhd-sand: #f1ebe6;
   --adhd-ink: #1d2c3b;
-  /* Global scale multiplier (desktop "75%" feel without CSS zoom). */
+  /* Global scale multiplier. */
   --rk-scale: 1;
 }
 
 * {
   box-sizing: border-box;
-}
-
-@media (min-width: 900px) {
-  :root {
-    --rk-scale: 0.75;
-  }
 }
 
 html, body {
