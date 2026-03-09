@@ -7,7 +7,7 @@ summary: "Practical autism coaching that improves day-to-day stability and confi
 type: coachning
 ---
 
-<section class="coachning-hero coachning-hero--autism">
+<section class="coachning-hero">
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
       <span class="coachning-hero__eyebrow">Coaching for autism</span>
@@ -25,13 +25,13 @@ type: coachning
         <li>Online or in person in Stockholm</li>
       </ul>
     </div>
-    <div class="coachning-hero__image">
-      <img src="/img/coach-and-coachee.jpg" alt="Person receiving autism coaching support">
+    <div class="coachning-hero__image coachning-hero__image--square">
+      <img src="/img/girl-talking-to-coach.jpg" alt="Autism coaching conversation between a client and coach">
     </div>
   </div>
 </section>
 
-<section class="coachning-quickwins coachning-quickwins--autism" id="results">
+<section class="coachning-quickwins" id="results">
   <div class="coachning-quickwins__head">
     <span class="coachning-program__eyebrow">What changes with coaching</span>
     <h2>From overwhelm to predictable daily rhythms</h2>
@@ -70,7 +70,7 @@ type: coachning
   </div>
 </section>
 
-<section class="coachning-fit coachning-fit--autism" id="is-this-for-you">
+<section class="coachning-fit" id="is-this-for-you">
   <div class="coachning-fit__grid">
     <article class="coachning-fit__panel">
       <h3>This is ideal if you...</h3>
@@ -282,7 +282,7 @@ type: coachning
   </section>
 </div>
 
-<section class="coachning-cta-band coachning-cta-band--autism">
+<section class="coachning-cta-band">
   <div class="coachning-cta-band__content">
     <h3>Want support that actually fits your daily life?</h3>
     <p>Tell us what you are struggling with, and we will match you with the right coach and format.</p>
