@@ -8,6 +8,16 @@ meta_description: "Se pris för ADHD-medicinering, läkemedelsinsättning och up
 og_title: "Priser för ADHD-medicinering"
 og_description: "Prisöversikt för läkemedelsinsättning, abonnemang och uppföljning vid ADHD-medicinering hos Rikta Psykiatri."
 page_class: "pricing-service-page pricing-service-page--medication"
+location_pricing:
+  insertion_price: "7 600 kr"
+  insertion_period: "gäller för 6 månader"
+  insertion_followup_price: "2 400 kr/halvår"
+  insertion_includes: "Inkluderar behandling samt två remisser till psykiatrin."
+  summary_sla: "Skriftlig sammanfattning inom 48 timmar."
+  subscription_start_price: "3 000 kr"
+  subscription_monthly_price: "400 kr/mån"
+  subscription_commitment: "12 månaders bindningstid"
+  subscription_includes: "Löpande läkarkontakt."
 ---
 
 <section class="pricing-service-hero">

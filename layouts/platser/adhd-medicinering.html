@@ -3,21 +3,62 @@
   {{- $citySlug := .Params.city_slug | default ($city | urlize) -}}
   {{- $landmarks := .Params.local_landmarks | default (slice) -}}
   {{- $mapQuery := .Params.map_query | default (printf "%s, Sverige" $city) -}}
+  {{- $pricingPage := site.GetPage "/priser/adhd-medicinering" -}}
+  {{- $pricing := dict
+    "insertion_price" "7 600 kr"
+    "insertion_period" "gäller för 6 månader"
+    "insertion_followup_price" "2 400 kr/halvår"
+    "insertion_includes" "Inkluderar behandling samt två remisser till psykiatrin."
+    "summary_sla" "Skriftlig sammanfattning inom 48 timmar."
+    "subscription_start_price" "3 000 kr"
+    "subscription_monthly_price" "400 kr/mån"
+    "subscription_commitment" "12 månaders bindningstid"
+    "subscription_includes" "Löpande läkarkontakt."
+  -}}
+  {{- with $pricingPage }}
+    {{- with .Params.location_pricing }}
+      {{- $pricing = merge $pricing . -}}
+    {{- end }}
+  {{- end }}
+  {{- $landmarksText := printf "%s centrum" $city -}}
+  {{- if gt (len $landmarks) 0 -}}
+    {{- $landmarksText = delimit $landmarks ", " -}}
+  {{- end }}
+  {{- $faqItems := slice
+    (dict
+      "q" (printf "Vad kostar ADHD-medicinering i %s?" $city)
+      "a" (printf "Läkemedelsinsättning kostar %s (%s). Därefter är kostnaden %s. Alternativt finns abonnemang med startavgift %s och sedan %s." (index $pricing "insertion_price") (index $pricing "insertion_period") (index $pricing "insertion_followup_price") (index $pricing "subscription_start_price") (index $pricing "subscription_monthly_price"))
+    )
+    (dict
+      "q" (printf "Behöver jag bo centralt i %s för att få hjälp?" $city)
+      "a" (printf "Nej. Upplägget är digitalt och vi täcker hela %s med omnejd. Vi anpassar uppföljningen efter arbete, studier och familjeliv." $city)
+    )
+    (dict
+      "q" (printf "Hur snabbt får jag en plan i %s?" $city)
+      "a" "Efter första bedömningen får du en tydlig behandlingsplan med mål, uppföljningsintervall och nästa steg. Du får även skriftlig sammanfattning enligt vår prislista."
+    )
+    (dict
+      "q" (printf "Vad ingår i uppföljningen för patienter i %s?" $city)
+      "a" "Uppföljningen inkluderar utvärdering av effekt, biverkningar, sömn, aptit och funktion i vardagen. Vid behov justerar vi dos och plan för att nå stabil effekt."
+    )
+    (dict
+      "q" (printf "Kan jag kombinera medicinering med utredning i %s?" $city)
+      "a" (printf "Ja. Om du behöver utredning eller kompletterande intyg kan vi samordna det i samma team. Se även ADHD- och autismutredning i %s via relaterad sida." $city)
+    )
+    (dict
+      "q" (printf "Finns delbetalning för patienter i %s?" $city)
+      "a" "Ja, vi erbjuder delbetalningslösningar via extern finansieringspartner. Slutliga villkor fastställs efter kreditprövning."
+    )
+  -}}
+  {{- $faqSchema := slice -}}
+  {{- range $faqItems -}}
+    {{- $faqSchema = $faqSchema | append (dict
+      "@type" "Question"
+      "name" .q
+      "acceptedAnswer" (dict "@type" "Answer" "text" .a)
+    ) -}}
+  {{- end -}}
   <article class="location-page adhd-medication-location-page">
-    <section class="contact-form-section contact-form-section--top">
-      <div class="container">
-        {{ partial "contact-form-sv-lite.html" (dict
-          "sectionID" (printf "kontaktformular-topp-%s" $citySlug)
-          "formContext" "location-medication-lite-top-sv"
-          "successMessage" "Tack! Vi återkommer så snart vi kan."
-          "redirectURL" "/tack/"
-          "title" "Kontakta oss"
-          "intro" (printf "Lämna en rad så återkommer vi om ADHD-medicinering i %s. Alla fält är frivilliga." $city)
-          "city" $city
-        ) }}
-      </div>
-    </section>
-
     <section class="location-hero">
       <div class="container">
         <div class="location-hero__grid">
@@ -31,7 +72,7 @@
               <li>Samordning med utredning, intyg och fortsatt behandlingsplan när det behövs.</li>
             </ul>
             <div class="hero-actions">
-              <a class="btn primary" href="#kontaktformular-topp-{{ $citySlug }}">Kontakta oss</a>
+              <a class="btn primary" href="#kontaktformular-botten-{{ $citySlug }}">Kontakta oss</a>
               <a class="btn secondary" href="#karta-{{ $citySlug }}">Se karta</a>
             </div>
           </div>
@@ -72,13 +113,178 @@
               <li>Tydliga råd kring sömn, struktur och livsstilsfaktorer som påverkar behandlingen.</li>
             </ul>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-details">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Lokal översikt för {{ $city }}</h2>
+          <p>{{ .Params.local_paragraph }}</p>
+        </header>
+        <div class="location-details__grid">
           <article class="location-info">
-            <h2>Lokalt i {{ $city }}</h2>
-            <p>{{ .Params.local_paragraph }}</p>
-            {{- if .Content }}
-              {{ .Content }}
-            {{- end }}
+            <h3>Områden vi ofta hjälper i {{ $city }}</h3>
+            <ul class="location-info__list">
+              {{- if gt (len $landmarks) 0 -}}
+                {{- range first 2 $landmarks }}
+                  <li>{{ . }} och närliggande områden.</li>
+                {{- end }}
+              {{- else -}}
+                <li>{{ $city }} centrum och närliggande områden.</li>
+              {{- end }}
+              <li>Digital uppföljning för patienter i hela kommunen och pendlingsnära delar av regionen.</li>
+            </ul>
           </article>
+          <article class="location-info">
+            <h3>Praktiskt för dig i {{ $city }}</h3>
+            <ul class="location-info__list">
+              <li>Behandlingsplanen anpassas efter din vardag, oavsett var i området du bor.</li>
+              <li>Tider och uppföljning planeras för att fungera med arbete, studier och familjeliv.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-details location-pricing">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Priser för ADHD-medicinering i {{ $city }}</h2>
+          <p>För dig i {{ $city }} gäller samma transparenta prisupplägg som i vår centrala prislista, med digital uppföljning och tydlig kostnadsbild.</p>
+        </header>
+        <div class="location-details__grid">
+          <article class="location-info">
+            <h3>Läkemedelsinsättning</h3>
+            <p><strong>{{ index $pricing "insertion_price" }}</strong> ({{ index $pricing "insertion_period" }}).</p>
+            <ul class="location-info__list">
+              <li>Därefter {{ index $pricing "insertion_followup_price" }}.</li>
+              <li>{{ index $pricing "insertion_includes" }}</li>
+              <li>{{ index $pricing "summary_sla" }}</li>
+            </ul>
+          </article>
+          <article class="location-info">
+            <h3>Abonnemang</h3>
+            <p><strong>{{ index $pricing "subscription_monthly_price" }}</strong> efter startavgift på <strong>{{ index $pricing "subscription_start_price" }}</strong>.</p>
+            <ul class="location-info__list">
+              <li>{{ index $pricing "subscription_commitment" }}.</li>
+              <li>{{ index $pricing "subscription_includes" }}</li>
+              <li>Jämför uppläggen på <a href="/priser/adhd-medicinering/">prissidan för ADHD-medicinering</a>.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-journey">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Steg för steg i {{ $city }}</h2>
+          <p>Processen är upplagd för att vara tydlig, säker och möjlig att kombinera med vardagen i {{ $city }}.</p>
+        </header>
+        <div class="location-journey__steps">
+          <article class="location-step">
+            <span class="location-step__number">1</span>
+            <h3>Medicinsk startbedömning</h3>
+            <ul class="location-step__list">
+              <li>Genomgång av historik, aktuella symtom, mål och riskfaktorer.</li>
+              <li>Plan för uppstart, dosering och uppföljningsfrekvens.</li>
+              <li>Tydlig information om förväntad effekt och vanliga biverkningar.</li>
+            </ul>
+          </article>
+          <article class="location-step">
+            <span class="location-step__number">2</span>
+            <h3>Titrering och justering</h3>
+            <ul class="location-step__list">
+              <li>Stegvis dosjustering utifrån effekt i arbete, studier och hem.</li>
+              <li>Uppföljning av sömn, aptit, puls/blodtryck och allmänt mående.</li>
+              <li>Snabb återkoppling vid behov av ändring i planen.</li>
+            </ul>
+          </article>
+          <article class="location-step">
+            <span class="location-step__number">3</span>
+            <h3>Stabilisering och långsiktig plan</h3>
+            <ul class="location-step__list">
+              <li>När rätt nivå hittats fokuserar vi på hållbarhet över tid.</li>
+              <li>Fortsatta kontroller och tydliga intervall för medicinsk uppföljning.</li>
+              <li>Samordning med utredning, intyg eller coachning när det behövs.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-details">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Vem upplägget passar i {{ $city }}</h2>
+          <p>ADHD-medicinering behöver fungera i verkligheten. Därför planerar vi utifrån din vardag i {{ $city }} och närliggande områden.</p>
+        </header>
+        <div class="location-details__grid">
+          <article class="location-info">
+            <h3>För dig som arbetar eller studerar</h3>
+            <p>Vi lägger upp dosering och uppföljning så att behandlingen fungerar tillsammans med möten, skift, föreläsningar och pendling i {{ $city }}.</p>
+            <ul class="location-info__list">
+              <li>Konkreta mål för fokus, ork och genomförandeförmåga.</li>
+              <li>Justeringar med hänsyn till dygnsrytm och arbetsbelastning.</li>
+              <li>Plan för perioder med hög stress eller förändrad struktur.</li>
+            </ul>
+          </article>
+          <article class="location-info">
+            <h3>För dig med familjeansvar</h3>
+            <p>Vi prioriterar ett upplägg som är hållbart över tid och fungerar ihop med familjeliv, återhämtning och vardagslogistik i {{ $city }}.</p>
+            <ul class="location-info__list">
+              <li>Tydlig uppföljning av effekt under olika veckorytmer.</li>
+              <li>Råd för sömn, energi och vardagsstruktur.</li>
+              <li>Praktiskt fokus på funktion, inte bara symtomskattning.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-details">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Lokal information för {{ $city }}</h2>
+          <p>Vi hjälper patienter i hela området kring {{ $city }}, inklusive {{ $landmarksText }}.</p>
+        </header>
+        <div class="location-details__grid">
+          <article class="location-info">
+            <h3>Så jobbar vi lokalt</h3>
+            <ul class="location-info__list">
+              <li>Digital vård med planerade uppföljningar och kontinuitet i teamet.</li>
+              <li>Tydlig kontaktväg för frågor om effekt, biverkningar och nästa steg.</li>
+              <li>Samordning med närliggande vårdkontakter när det är medicinskt relevant.</li>
+            </ul>
+          </article>
+          <article class="location-info">
+            <h3>Relaterade tjänster</h3>
+            <ul class="location-info__list">
+              <li><a href="/priser/adhd-medicinering/">Full prisöversikt för ADHD-medicinering</a></li>
+              <li><a href="/adhd-utredning/medicinering/">Så fungerar medicinering i praktiken</a></li>
+              <li><a href="/delbetalning/">Information om delbetalning</a></li>
+              <li><a href="/kontakta-oss/">Kontakta oss för individuell bedömning</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-faq">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Vanliga frågor om ADHD-medicinering i {{ $city }}</h2>
+          <p>Här är frågor vi ofta får från personer som söker medicinsk behandling i {{ $city }}.</p>
+        </header>
+        <div class="location-faq__list">
+          {{- range $faqItems }}
+            <details class="location-faq__item">
+              <summary>{{ .q }}</summary>
+              <p>{{ .a }}</p>
+            </details>
+          {{- end }}
         </div>
       </div>
     </section>
@@ -129,5 +335,12 @@
         ) }}
       </div>
     </section>
+    <script type="application/ld+json">
+      {{ dict
+        "@context" "https://schema.org"
+        "@type" "FAQPage"
+        "mainEntity" $faqSchema
+        | jsonify | safeJS }}
+    </script>
   </article>
 {{ end }}

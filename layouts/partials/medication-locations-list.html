@@ -1,0 +1,21 @@
+{{- $pages := where site.RegularPages "Section" "platser" -}}
+{{- $pages = where $pages "Params.layout" "adhd-medicinering" -}}
+{{- $pages = sort $pages "Params.city" "asc" -}}
+
+{{- if gt (len $pages) 0 -}}
+  <div class="locations-medication-list">
+    <p class="locations-medication-list__count">{{ len $pages }} orter publicerade</p>
+    <ul class="locations-medication-list__grid">
+      {{- range $pages -}}
+        {{- $city := .Params.city | default .Title -}}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ $city }}</a>
+        </li>
+      {{- end -}}
+    </ul>
+  </div>
+{{- else -}}
+  <div class="locations-empty">
+    <p>Inga orter publicerade ännu.</p>
+  </div>
+{{- end -}}

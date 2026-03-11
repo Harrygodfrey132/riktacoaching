@@ -1,5 +1,8 @@
 {{ define "main" }}
+  {{- $placeholder := "<div data-medication-locations-list></div>" -}}
+  {{- $dynamicMedicationList := partial "medication-locations-list.html" . -}}
+  {{- $content := replace .Content $placeholder $dynamicMedicationList -}}
   <main class="platser-page" id="top">
-    {{ .Content }}
+    {{ $content | safeHTML }}
   </main>
 {{ end }}

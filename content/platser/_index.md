@@ -575,11 +575,9 @@ og_description: "Se våra mottagningsorter och hur vi kombinerar videobesök med
     <div class="locations-group locations-group--medication" id="medicinering">
       <div class="locations-intro">
         <h2>Medicinering</h2>
-        <p>Orter för medicinering publiceras här när de är skapade.</p>
+        <p>Välj ort för ADHD-medicinering. Listan uppdateras automatiskt när nya orter publiceras.</p>
       </div>
-      <div class="locations-empty">
-        <p>Inga orter publicerade ännu.</p>
-      </div>
+      <div data-medication-locations-list></div>
     </div>
     <div class="locations-note">
       <p>

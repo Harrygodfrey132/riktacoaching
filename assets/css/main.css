@@ -3636,6 +3636,40 @@ main#content > .location-page:first-child {
   font-size: 16px;
 }
 
+.locations-medication-list {
+  border: 1px solid rgba(55, 116, 171, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 22px 24px;
+}
+
+.locations-medication-list__count {
+  margin: 0 0 14px;
+  color: rgba(0, 0, 0, 0.64);
+  font-size: 14px;
+}
+
+.locations-medication-list__grid {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px 20px;
+}
+
+.locations-medication-list__grid a {
+  display: inline-block;
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.locations-medication-list__grid a:hover,
+.locations-medication-list__grid a:focus-visible {
+  text-decoration: underline;
+}
+
 .location-card {
   background: #fff;
   border-radius: calc(32px * var(--rk-scale));
@@ -3788,11 +3822,24 @@ main#content > .location-page:first-child {
   .locations-grid--compact {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .locations-medication-list__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
   .locations-grid--compact {
     grid-template-columns: 1fr;
+  }
+
+  .locations-medication-list {
+    padding: 18px;
+  }
+
+  .locations-medication-list__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px;
   }
 }
 
@@ -4508,6 +4555,37 @@ main#content > .location-page:first-child {
   color: rgba(0, 0, 0, 0.75);
 }
 
+.location-local-guide {
+  padding: calc(80px * var(--rk-scale)) 0;
+  background: #ffffff;
+  border-top: none;
+}
+
+.location-local-guide__content {
+  max-width: calc(980px * var(--rk-scale));
+  margin: 0 auto;
+  background: #fff;
+  border: calc(1px * var(--rk-scale)) solid rgba(29, 44, 59, 0.08);
+  border-radius: calc(24px * var(--rk-scale));
+  padding: calc(28px * var(--rk-scale));
+  box-shadow: 0 calc(12px * var(--rk-scale)) calc(28px * var(--rk-scale)) rgba(29, 44, 59, 0.06);
+}
+
+.location-local-guide__content h2,
+.location-local-guide__content h3 {
+  margin-top: calc(18px * var(--rk-scale));
+}
+
+.location-local-guide__content h2:first-child,
+.location-local-guide__content h3:first-child {
+  margin-top: 0;
+}
+
+.location-local-guide__content ul {
+  margin: calc(10px * var(--rk-scale)) 0 calc(14px * var(--rk-scale));
+  padding-left: calc(20px * var(--rk-scale));
+}
+
 .location-map {
   padding: calc(80px * var(--rk-scale)) 0;
   background: #ffffff;
@@ -4550,6 +4628,38 @@ main#content > .location-page:first-child {
   height: 100%;
   border: 0;
   display: block;
+}
+
+.location-faq {
+  padding: calc(80px * var(--rk-scale)) 0;
+  background: #ffffff;
+  border-top: none;
+}
+
+.location-faq__list {
+  max-width: calc(920px * var(--rk-scale));
+  margin: 0 auto;
+  display: grid;
+  gap: calc(14px * var(--rk-scale));
+}
+
+.location-faq__item {
+  background: #fff;
+  border: calc(1px * var(--rk-scale)) solid rgba(29, 44, 59, 0.12);
+  border-radius: calc(18px * var(--rk-scale));
+  padding: calc(16px * var(--rk-scale)) calc(20px * var(--rk-scale));
+  box-shadow: 0 calc(8px * var(--rk-scale)) calc(18px * var(--rk-scale)) rgba(29, 44, 59, 0.06);
+}
+
+.location-faq__item summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.86);
+}
+
+.location-faq__item p {
+  margin: calc(12px * var(--rk-scale)) 0 0;
+  color: rgba(0, 0, 0, 0.76);
 }
 
 .location-cta {
@@ -13923,5 +14033,19 @@ body.newsletter-popup--locked {
 
   .contact-form textarea {
     min-height: calc(118px * var(--rk-scale));
+  }
+
+  /* Keep location medication contact sections full-bleed on desktop. */
+  .adhd-medication-location-page .contact-form-section > .container {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .adhd-medication-location-page .contact-form {
+    border-radius: 0;
+    box-shadow: none;
+    padding-left: clamp(24px, 5vw, 72px);
+    padding-right: clamp(24px, 5vw, 72px);
   }
 }
