@@ -13862,3 +13862,66 @@ body.newsletter-popup--locked {
     font-size: 16px;
   }
 }
+
+/* ===== Minimal desktop tuning (Apple-like calm density) ===== */
+@media (min-width: 1024px) {
+  :root {
+    --rk-scale: 0.92;
+    --container: calc(1120px * var(--rk-scale));
+    --pad: calc(20px * var(--rk-scale));
+  }
+
+  body {
+    letter-spacing: -0.004em;
+  }
+
+  .hero-copy h1,
+  .location-hero__copy h1 {
+    letter-spacing: -0.018em;
+    line-height: 1.06;
+  }
+
+  .hero-copy .lead,
+  .location-hero__copy .lead,
+  .contact-form p {
+    line-height: 1.5;
+  }
+
+  section {
+    padding: calc(56px * var(--rk-scale)) 0;
+  }
+
+  .location-hero {
+    padding: calc(100px * var(--rk-scale)) 0 calc(72px * var(--rk-scale));
+  }
+
+  .contact-form-section {
+    padding: calc(72px * var(--rk-scale)) 0 calc(88px * var(--rk-scale));
+  }
+
+  .btn {
+    padding: calc(10px * var(--rk-scale)) calc(16px * var(--rk-scale));
+    font-size: calc(15px * var(--rk-scale));
+  }
+
+  .contact-form {
+    border-radius: calc(22px * var(--rk-scale));
+    padding: calc(32px * var(--rk-scale));
+  }
+
+  .contact-form h2 {
+    font-size: calc(24px * var(--rk-scale));
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    font-size: calc(15px * var(--rk-scale));
+    padding: calc(12px * var(--rk-scale)) calc(14px * var(--rk-scale));
+    border-radius: calc(12px * var(--rk-scale));
+  }
+
+  .contact-form textarea {
+    min-height: calc(118px * var(--rk-scale));
+  }
+}
