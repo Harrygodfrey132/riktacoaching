@@ -13975,12 +13975,6 @@ body.newsletter-popup--locked {
 
 /* ===== Minimal desktop tuning (Apple-like calm density) ===== */
 @media (min-width: 1024px) {
-  :root {
-    --rk-scale: 0.92;
-    --container: calc(1120px * var(--rk-scale));
-    --pad: calc(20px * var(--rk-scale));
-  }
-
   body {
     letter-spacing: -0.004em;
   }
