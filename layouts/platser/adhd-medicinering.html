@@ -1,0 +1,133 @@
+{{ define "main" }}
+  {{- $city := .Params.city | default .Title -}}
+  {{- $citySlug := .Params.city_slug | default ($city | urlize) -}}
+  {{- $landmarks := .Params.local_landmarks | default (slice) -}}
+  {{- $mapQuery := .Params.map_query | default (printf "%s, Sverige" $city) -}}
+  <article class="location-page adhd-medication-location-page">
+    <section class="contact-form-section contact-form-section--top">
+      <div class="container">
+        {{ partial "contact-form-sv-lite.html" (dict
+          "sectionID" (printf "kontaktformular-topp-%s" $citySlug)
+          "formContext" "location-medication-lite-top-sv"
+          "successMessage" "Tack! Vi återkommer så snart vi kan."
+          "redirectURL" "/tack/"
+          "title" "Kontakta oss"
+          "intro" (printf "Lämna en rad så återkommer vi om ADHD-medicinering i %s. Alla fält är frivilliga." $city)
+          "city" $city
+        ) }}
+      </div>
+    </section>
+
+    <section class="location-hero">
+      <div class="container">
+        <div class="location-hero__grid">
+          <div class="location-hero__copy">
+            <span class="eyebrow">{{ $city }} • ADHD-medicinering</span>
+            <h1>Specialistläkare för ADHD-medicinering i {{ $city }}.</h1>
+            <p class="lead">{{ .Params.local_paragraph }}</p>
+            <ul class="location-hero__highlights">
+              <li>Digital bedömning, insättning och uppföljning av legitimerade specialister.</li>
+              <li>Tydlig dosplan, tät återkoppling och justering utifrån effekt och biverkningar.</li>
+              <li>Samordning med utredning, intyg och fortsatt behandlingsplan när det behövs.</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn primary" href="#kontaktformular-topp-{{ $citySlug }}">Kontakta oss</a>
+              <a class="btn secondary" href="#karta-{{ $citySlug }}">Se karta</a>
+            </div>
+          </div>
+          <div class="location-hero__card">
+            <h2>För dig i {{ $city }}</h2>
+            <dl class="location-hero__facts">
+              <div>
+                <dt>Verksamhet</dt>
+                <dd>Digital specialistvård med planerade uppföljningar.</dd>
+              </div>
+              <div>
+                <dt>Område</dt>
+                <dd>Vi täcker hela {{ $city }} med omnejd.</dd>
+              </div>
+              <div>
+                <dt>Lokalkännedom</dt>
+                <dd>{{ delimit $landmarks ", " }}</dd>
+              </div>
+              <div>
+                <dt>Kontaktväg</dt>
+                <dd>Videobesök och säker digital kommunikation.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-details">
+      <div class="container">
+        <div class="location-details__grid">
+          <article class="location-info">
+            <h2>Så fungerar medicineringen</h2>
+            <p>Behandlingen startar med en medicinsk genomgång och tydliga mål. Vi följer upp regelbundet för att säkerställa rätt effekt i vardag, studier och arbete.</p>
+            <ul class="location-info__list">
+              <li>Individuell uppstart med dosering enligt medicinsk bedömning.</li>
+              <li>Planerade uppföljningar för effekt, biverkningar och funktion.</li>
+              <li>Tydliga råd kring sömn, struktur och livsstilsfaktorer som påverkar behandlingen.</li>
+            </ul>
+          </article>
+          <article class="location-info">
+            <h2>Lokalt i {{ $city }}</h2>
+            <p>{{ .Params.local_paragraph }}</p>
+            {{- if .Content }}
+              {{ .Content }}
+            {{- end }}
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-map" id="karta-{{ $citySlug }}">
+      <div class="container">
+        <header class="location-section__header">
+          <h2>Karta över {{ $city }}</h2>
+          <p>Kartan är centrerad på {{ $city }} och visar området vi täcker med digitala tjänster.</p>
+        </header>
+        <div class="location-map__embed">
+          <iframe
+            title="Google Maps för {{ $city }}"
+            src="https://www.google.com/maps?q={{ $mapQuery | urlquery }}&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            style="width:100%;min-height:360px;border:0;border-radius:16px;"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="location-cta">
+      <div class="container">
+        <div class="location-cta__content">
+          <h2>Relaterade sidor</h2>
+          <p>Du hittar fler orter och upplägg via vår platsöversikt.</p>
+          <div class="hero-actions">
+            <a class="btn secondary" href="/platser/">Alla platser</a>
+            {{- with .Params.autism_link }}
+              <a class="btn link" href="{{ . }}">ADHD- och autismutredning i {{ $city }}</a>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <div class="container">
+        {{ partial "contact-form-sv-lite.html" (dict
+          "sectionID" (printf "kontaktformular-botten-%s" $citySlug)
+          "formContext" "location-medication-lite-bottom-sv"
+          "successMessage" "Tack! Vi återkommer så snart vi kan."
+          "redirectURL" "/tack/"
+          "title" "Kontakta oss"
+          "intro" (printf "Skicka din förfrågan om ADHD-medicinering i %s. Alla fält är frivilliga." $city)
+          "city" $city
+        ) }}
+      </div>
+    </section>
+  </article>
+{{ end }}

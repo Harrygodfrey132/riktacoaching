@@ -1,0 +1,129 @@
+{{- $sectionID := default "kontaktformular" .sectionID -}}
+{{- $formContext := default "location-medication-lite-sv" .formContext -}}
+{{- $successMessage := default "Tack! Vi återkommer så snart vi kan." .successMessage -}}
+{{- $redirectURL := default "/tack/" .redirectURL -}}
+{{- $title := default "Kontakta oss" .title -}}
+{{- $intro := default "Lämna dina uppgifter så återkommer vi med nästa steg. Alla fält är frivilliga." .intro -}}
+{{- $city := default "" .city -}}
+{{- $formID := printf "lite-contact-form-%s" $sectionID -}}
+{{- $fieldPrefix := printf "lite-contact-%s" $sectionID -}}
+<section id="{{ $sectionID }}" class="contact-form">
+  <h2>{{ $title }}</h2>
+  <p>{{ $intro }}</p>
+  <div class="crmWebToEntityForm zcwf_lblLeft">
+    <form
+      id="{{ $formID }}"
+      class="contact-form__body"
+      data-kaddio-form="contact-lite"
+      data-redirect-url="{{ $redirectURL }}"
+      data-form-context="{{ $formContext }}"
+      data-success-message="{{ $successMessage }}"
+      data-city="{{ $city }}"
+      action="/api/kaddio/contact"
+      method="POST"
+      accept-charset="UTF-8"
+    >
+      <div class="zcwf_row form-row">
+        <div class="zcwf_col_lab">
+          <label for="{{ $fieldPrefix }}-full-name">Namn</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="text" id="{{ $fieldPrefix }}-full-name" name="fullName" maxlength="120" autocomplete="name" placeholder="Ditt namn (frivilligt)">
+        </div>
+      </div>
+      <div class="zcwf_row form-row">
+        <div class="zcwf_col_lab">
+          <label for="{{ $fieldPrefix }}-email">E-postadress</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <input type="email" id="{{ $fieldPrefix }}-email" name="email" maxlength="120" autocomplete="email" placeholder="namn@example.se (frivilligt)">
+        </div>
+      </div>
+      <div class="zcwf_row form-row">
+        <div class="zcwf_col_lab">
+          <label for="{{ $fieldPrefix }}-description">Meddelande</label>
+        </div>
+        <div class="zcwf_col_fld">
+          <textarea id="{{ $fieldPrefix }}-description" name="description" placeholder="Berätta kort vad du behöver hjälp med (frivilligt)"></textarea>
+        </div>
+      </div>
+      <div class="zcwf_row form-row form-row--actions">
+        <div class="zcwf_col_lab"></div>
+        <div class="zcwf_col_fld">
+          <input type="submit" class="formsubmit zcwf_button btn primary" value="Skicka" aria-label="Skicka">
+        </div>
+      </div>
+      <p class="contact-form__note form-thank-you" data-thank-you hidden>Tack! Vi tar kontakt med dig så snart som möjligt.</p>
+      <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
+    </form>
+  </div>
+  <p class="contact-form__note">Vi återkommer oftast samma eller nästkommande vardag.</p>
+  <script>
+    (function () {
+      const form = document.getElementById('{{ $formID }}');
+      if (!form || form.dataset.kaddioInlineBound) return;
+      form.dataset.kaddioInlineBound = 'true';
+      const statusEl = form.querySelector('[data-form-status]');
+      const thankYou = form.querySelector('[data-thank-you]');
+
+      function setStatus(message, type) {
+        if (!statusEl) return;
+        statusEl.textContent = message || '';
+        statusEl.dataset.statusType = type || 'info';
+        statusEl.hidden = !message;
+      }
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        if (thankYou) thankYou.hidden = true;
+        setStatus('Skickar...', 'info');
+
+        const formData = new FormData(form);
+        const fullName = String(formData.get('fullName') || '').trim();
+        const email = String(formData.get('email') || '').trim();
+        const description = String(formData.get('description') || '').trim();
+        const city = String(form.dataset.city || '').trim();
+        const fallbackDescription = city
+          ? `Kontaktförfrågan om ADHD-medicinering i ${city}.`
+          : 'Kontaktförfrågan om ADHD-medicinering.';
+        const fallbackEmail = `saknas+${Date.now()}@riktapsykiatri.se`;
+
+        const payload = {
+          fullName: fullName || 'Ej angivet',
+          email: email || fallbackEmail,
+          description: description || fallbackDescription,
+          metadata: {
+            path: window.location.pathname,
+            formContext: form.dataset.formContext || 'location-medication-lite-sv',
+            locale: ((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase()
+          }
+        };
+
+        try {
+          const response = await fetch('/api/kaddio/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const body = await response.json().catch(function () { return {}; });
+          if (!response.ok) {
+            const message = (body && (body.error || body.message)) || 'Det gick inte att skicka just nu.';
+            setStatus(message, 'error');
+            return;
+          }
+          if (thankYou) thankYou.hidden = false;
+          setStatus(form.dataset.successMessage || 'Tack! Vi återkommer så snart vi kan.', 'success');
+          form.reset();
+          const redirectUrl = form.dataset.redirectUrl;
+          if (redirectUrl) {
+            window.setTimeout(function () {
+              window.location.assign(redirectUrl);
+            }, 400);
+          }
+        } catch (_err) {
+          setStatus('Det gick inte att skicka just nu.', 'error');
+        }
+      });
+    })();
+  </script>
+</section>
