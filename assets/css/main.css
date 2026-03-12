@@ -99,7 +99,11 @@ header.site-header .nav {
 }
 
 .brand img {
-  height: calc(32px * var(--rk-scale));
+  width: auto;
+  height: auto;
+  max-height: calc(68px * var(--rk-scale));
+  display: block;
+  object-fit: contain;
 }
 
 /* Mobile/Desktop logo switching */
@@ -6556,10 +6560,10 @@ section.screen{  min-height: 60vh; }      /* gives structure without huge whites
 
 /* === Bigger logo in the header === */
 .brand img{
-  height: calc(48px * var(--rk-scale));                /* was calc(36px * var(--rk-scale)) */
+  max-height: calc(68px * var(--rk-scale));
 }
 @media (max-width: 640px){
-  .brand img{ height: calc(38px * var(--rk-scale)); }  /* keep it sensible on small screens */
+  .brand img{ max-height: calc(52px * var(--rk-scale)); }  /* keep it sensible on small screens */
 }
 
 @media (max-width: 430px){
@@ -6569,9 +6573,10 @@ section.screen{  min-height: 60vh; }      /* gives structure without huge whites
   }
 
   .brand img{
-    height: calc(24px * var(--rk-scale));
+    height: auto;
     width: auto;
-    max-width: calc(120px * var(--rk-scale));
+    max-width: calc(190px * var(--rk-scale));
+    max-height: calc(40px * var(--rk-scale));
     object-fit: contain;
   }
 

@@ -33,13 +33,8 @@
     {{ $contactLink := cond $isEn "/contact/" "/kontakta-oss/" }}
     {{ $loginLink := "https://riktacoaching.kaddio.com" }}
     {{ $homeLink := cond $isEn "/" "/" }}
-    {{ $logoBase := cond $isEn "EnglishLogo" "logo" }}
     <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
-      <picture>
-        <source type="image/webp" srcset="/img/optimized/{{ $logoBase }}-220.webp 220w, /img/optimized/{{ $logoBase }}-440.webp 440w" sizes="(max-width: 640px) 150px, 190px">
-        <source type="image/png" srcset="/img/optimized/{{ $logoBase }}-220.png 220w, /img/optimized/{{ $logoBase }}-440.png 440w" sizes="(max-width: 640px) 150px, 190px">
-        <img src="/img/optimized/{{ $logoBase }}-220.png" alt="{{ if $isEn }}{{ .Site.Title }} logo{{ else }}{{ .Site.Title }} logotyp{{ end }}" width="220" height="56" decoding="async">
-      </picture>
+      <img class="site-logo" src="/img/Rikta-Coaching-Logo.png" alt="{{ if $isEn }}{{ .Site.Title }} logo{{ else }}{{ .Site.Title }} logotyp{{ end }}" decoding="async">
     </a>
     <nav aria-label="{{ if $isEn }}Main navigation{{ else }}Huvudmeny{{ end }}" class="desktop-nav">
         <ul>
