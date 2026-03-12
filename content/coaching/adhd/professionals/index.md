@@ -12,16 +12,17 @@ type: coachning
   <div class="coachning-hero__inner">
     <div class="coachning-hero__content">
       <span class="coachning-hero__eyebrow">ADHD coaching for professionals</span>
-      <h1>ADHD coaching for professionals who can do the job, but struggle with everything around the job</h1>
+      <h1>ADHD coaching for professionals who are capable but overloaded</h1>
       <p>
-        Many professionals with ADHD are sharp, capable, and still under more strain than anyone around them realises. The difficulty is often not talent. It is the constant effort required to prioritise, start, switch, prepare, follow up, and stay organised under pressure. ADHD coaching for professionals helps reduce that hidden workload so performance becomes more consistent and less exhausting.
+        You can perform well and still feel one step behind all day.
+        We help you build a work system for focus, prioritisation, follow-through, and lower stress.
       </p>
       <div class="coachning-hero__actions">
         <a class="btn primary" href="/contact/#contactform">Book a free consultation</a>
       </div>
       <ul class="coachning-hero__signals">
         <li>Support for employees, managers, founders, and self-employed professionals</li>
-        <li>Practical tools for prioritisation, deadlines, meetings, and workload management</li>
+        <li>Practical tools for prioritisation, deadlines, meetings, and workload control</li>
         <li>Online coaching designed around busy work schedules</li>
       </ul>
     </div>
@@ -35,14 +36,13 @@ type: coachning
   <div class="coachning-panel">
     <h2>Why ADHD often becomes more visible at work</h2>
     <p>
-      Professional life rewards reliability, planning, communication, and calm prioritisation. ADHD can make those demands far more effortful than they appear on the surface. You might be excellent in high-stakes moments and still lose hours to email avoidance, task switching, deadline drift, or mental overload from having too many open loops at once.
+      Work environments reward consistency and fast switching. ADHD can make this far more effortful than it looks.
     </p>
     <ul class="coachning-list">
-      <li><strong>Priority confusion:</strong> Everything feels important, so deciding what comes first takes too much energy.</li>
-      <li><strong>Meeting drag:</strong> Preparation, note-taking, follow-up, and switching back into focused work can all become friction points.</li>
-      <li><strong>Inbox and admin backlog:</strong> Small tasks accumulate until they start consuming attention all day.</li>
-      <li><strong>Deadline compression:</strong> Work gets done, but often in stressful late bursts that are hard to sustain.</li>
-      <li><strong>Invisible overcompensation:</strong> You keep standards high by working longer, masking harder, and recovering poorly.</li>
+      <li><strong>Priority overload:</strong> Everything feels urgent, so decisions drain energy.</li>
+      <li><strong>Meeting friction:</strong> Prep, follow-up, and context switching eat into focused time.</li>
+      <li><strong>Admin backlog:</strong> Email and small tasks pile up and fragment the day.</li>
+      <li><strong>Deadline compression:</strong> Work gets done, but too often in stressful last-minute bursts.</li>
     </ul>
   </div>
 </section>
@@ -71,17 +71,12 @@ type: coachning
 <section class="coachning-section" id="professional-coaching-focus">
   <div class="coachning-panel">
     <h2>What ADHD coaching for professionals actually helps with</h2>
-    <p>
-      This is not generic career coaching. The focus is on the specific executive-function problems that can quietly undermine strong people at work, especially when the role involves autonomy, multiple deadlines, communication demands, or constant switching.
-    </p>
     <ul class="coachning-list">
-      <li><strong>Prioritisation:</strong> Build a clearer method for deciding what matters now, what can wait, and what should be dropped.</li>
-      <li><strong>Starting deep work:</strong> Reduce friction around getting into important tasks before the day disappears into smaller demands.</li>
-      <li><strong>Meetings and follow-up:</strong> Create better systems for prep, notes, actions, and closing loops afterward.</li>
-      <li><strong>Email and admin control:</strong> Stop low-value tasks from hijacking the entire day.</li>
-      <li><strong>Deadline management:</strong> Break large projects into visible milestones so delivery does not depend on a final sprint.</li>
-      <li><strong>Communication and reputation:</strong> Reduce missed replies, lateness, dropped threads, and the impression of inconsistency.</li>
-      <li><strong>Burnout prevention:</strong> Work on pacing, boundaries, and realistic capacity so output stays sustainable.</li>
+      <li><strong>Prioritisation:</strong> Decide what matters now, what waits, and what gets dropped.</li>
+      <li><strong>Deep-work starts:</strong> Reduce friction around getting into important tasks earlier.</li>
+      <li><strong>Meetings and follow-up:</strong> Keep prep, notes, and next actions clear.</li>
+      <li><strong>Email and admin control:</strong> Stop low-value work from hijacking the day.</li>
+      <li><strong>Sustainable output:</strong> Improve consistency without relying on overwork.</li>
     </ul>
   </div>
 </section>
@@ -94,7 +89,6 @@ type: coachning
         <li>perform well in parts of your role but struggle with the surrounding organisation</li>
         <li>look capable from the outside while feeling one step from dropping something important</li>
         <li>rely on pressure to produce work that could be less stressful to complete</li>
-        <li>have a demanding role with too many parallel tasks, conversations, and deadlines</li>
         <li>want practical help that improves how you function at work week to week</li>
       </ul>
     </article>
@@ -104,8 +98,7 @@ type: coachning
         <li>manage workload without carrying unfinished work mentally all evening</li>
         <li>improve reliability around meetings, follow-up, and communication</li>
         <li>protect time for focused work instead of constant reactive switching</li>
-        <li>reduce the need to overwork to appear consistent</li>
-        <li>stay effective without sliding into burnout or panic cycles</li>
+        <li>reduce overwork and burnout risk</li>
       </ul>
     </article>
   </div>
@@ -117,18 +110,16 @@ type: coachning
     <div class="coachning-option-grid">
       <article class="coachning-option">
         <h4>Employees and managers</h4>
-        <p>Useful when your role depends on planning, communication, meetings, delegation, and staying on top of multiple moving parts.</p>
+        <p>Useful when your role depends on planning, communication, meetings, and follow-through.</p>
         <ul>
-          <li>Helps when you are respected for ideas or leadership but struggle with execution drag.</li>
-          <li>Can support workload control, team communication, and better follow-up habits.</li>
+          <li>Support for execution, workload control, and clearer follow-up habits.</li>
         </ul>
       </article>
       <article class="coachning-option">
         <h4>Founders, freelancers, and self-employed professionals</h4>
-        <p>Useful when structure is largely self-created and the lack of external accountability makes planning, admin, or completion harder.</p>
+        <p>Useful when you need to self-create structure and accountability.</p>
         <ul>
-          <li>Helps with prioritising revenue-critical work over low-value busywork.</li>
-          <li>Useful when autonomy is high but consistency is expensive to maintain.</li>
+          <li>Support for prioritising revenue-critical work over low-value busywork.</li>
         </ul>
       </article>
     </div>
@@ -139,7 +130,7 @@ type: coachning
   <div class="coachning-panel">
     <h2>How we work on ADHD in a professional context</h2>
     <p>
-      Coaching starts by identifying where the workday actually breaks down. That might be priority-setting, finishing tasks, controlling communication flow, recovering after meetings, or stopping the day from being swallowed by admin. From there, we build a system around your actual role rather than trying to force a one-size-fits-all productivity method.
+      We identify where your workday breaks down, then build a system around your real role and workload.
     </p>
     <div class="program-modules">
       <h4>Typical focus in coaching</h4>
@@ -148,28 +139,21 @@ type: coachning
           <span class="module-number">1</span>
           <div>
             <h5>Audit the workday</h5>
-            <p>See where time, attention, and follow-through are being lost in real life.</p>
+            <p>Find where time, attention, and follow-through are being lost.</p>
           </div>
         </li>
         <li>
           <span class="module-number">2</span>
           <div>
             <h5>Build a priority and execution system</h5>
-            <p>Create clearer rules for planning, deep work, communication, and task tracking.</p>
+            <p>Create clear rules for planning, deep work, communication, and task tracking.</p>
           </div>
         </li>
         <li>
           <span class="module-number">3</span>
           <div>
-            <h5>Reduce workplace friction</h5>
-            <p>Fix the recurring bottlenecks around meetings, email, deadlines, and switching.</p>
-          </div>
-        </li>
-        <li>
-          <span class="module-number">4</span>
-          <div>
-            <h5>Protect sustainability</h5>
-            <p>Build habits that improve output without relying on overwork, masking, or last-minute rescue mode.</p>
+            <h5>Protect sustainable performance</h5>
+            <p>Reduce recurring bottlenecks and improve output without constant overwork.</p>
           </div>
         </li>
       </ol>
@@ -177,25 +161,10 @@ type: coachning
   </div>
 </section>
 
-<section class="coachning-section" id="career-and-confidence">
-  <div class="coachning-panel">
-    <h2>ADHD at work can affect confidence as much as output</h2>
-    <p>
-      Many professionals already know they are capable. The problem is the inconsistency. You may alternate between high performance and avoidable friction, then start doubting yourself because the effort behind ordinary tasks feels out of proportion. Coaching helps reduce that pattern so confidence is built on something more stable than short bursts of excellence.
-    </p>
-    <ul class="coachning-list">
-      <li>Reduce self-doubt caused by repeated near-misses and last-minute recoveries</li>
-      <li>Build ways of working that match how your role actually operates</li>
-      <li>Improve consistency without flattening the strengths that often come with ADHD</li>
-      <li>Create a more sustainable basis for progression, leadership, or self-employment</li>
-    </ul>
-  </div>
-</section>
-
 <section class="coachning-cta-band" id="professional-cta">
   <div class="coachning-cta-band__content">
     <h3>Need ADHD coaching that fits professional life?</h3>
-    <p>Tell us whether the biggest issue is meetings, deadlines, workload, follow-up, admin, or burnout, and we will help you find the right starting point.</p>
+    <p>Tell us what is hardest at work right now and we will help you choose the right starting point.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/contact/#contactform">Book a free consultation</a>
       <a class="btn secondary on-dark" href="/coaching/adhd/">See ADHD coaching overview</a>
