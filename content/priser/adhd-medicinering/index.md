@@ -96,7 +96,7 @@ location_pricing:
 
 <section class="pricing-service-section pricing-service-section--tinted">
   <div class="container">
-    <div class="pricing-service-two-col">
+    <div class="pricing-service-two-col pricing-service-two-col--single">
       <article>
         <span class="eyebrow">Hur vi arbetar</span>
         <h2>Vad som händer mellan start och stabil dos</h2>
@@ -110,18 +110,6 @@ location_pricing:
           <li>Långsiktig uppföljning med utvärdering av effekt, sömn, aptit och mående</li>
         </ul>
         <p class="pricing-service-note">Läs mer om upplägget på <a href="/adhd-utredning/medicinering/">ADHD-medicinering</a>.</p>
-      </article>
-      <article>
-        <span class="eyebrow">Vad som gör den här sidan unik</span>
-        <h2>Det här är inte samma beslut som att boka utredning</h2>
-        <p>
-          Den som söker medicinering är ofta längre fram i processen. Frågorna brukar handla om trygg läkemedelsstart, biverkningar, uppföljningsintervall och vad som händer om första alternativet inte fungerar. Därför är den här sidan separerad från priset för utredning och coachning.
-        </p>
-        <ul class="pricing-service-list">
-          <li>Fokus ligger på medicinsk behandling och uppföljning</li>
-          <li>Vanliga frågor gäller dos, tolerabilitet, kontroller och fortsatt plan</li>
-          <li>Det här passar bättre än utredningssidorna när diagnosen eller behandlingsfrågan redan är aktuell</li>
-        </ul>
       </article>
     </div>
   </div>

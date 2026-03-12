@@ -58,7 +58,7 @@ summary: "En gemensam ingång till våra specialiserade upplägg för ADHD- och 
     <div class="coachning-step-grid">
       <article class="coachning-step">
         <figure class="coachning-step__media">
-          <img src="/img/adhd-coachning.jpg" alt="Person som får stöd i ADHD-coachning">
+          <img src="/img/coach-planning-with-coachee.jpg" alt="Coach och klient som planerar strategier för ADHD-coachning">
         </figure>
         <div class="coachning-step__body">
           <span class="coachning-step__number">ADHD</span>

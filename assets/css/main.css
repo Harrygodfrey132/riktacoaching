@@ -3954,6 +3954,10 @@ main#content > .location-page:first-child {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.pricing-service-two-col--single {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .pricing-service-card,
 .pricing-service-hero__card,
 .pricing-service-cta__card {
