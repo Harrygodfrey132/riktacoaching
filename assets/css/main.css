@@ -846,6 +846,15 @@ nav a.active {
   color: rgba(29, 44, 59, 0.76);
 }
 
+.home-mid-cta {
+  padding: calc(24px * var(--rk-scale)) 0 calc(40px * var(--rk-scale));
+}
+
+.home-mid-cta .hero-actions {
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 .home-contrast {
   padding: calc(88px * var(--rk-scale)) 0;
   background: #fff;
@@ -939,6 +948,10 @@ nav a.active {
 .home-bridge__grid p {
   margin: 0;
   color: rgba(29, 44, 59, 0.74);
+}
+
+.home-bridge__card .hero-actions {
+  margin-top: calc(20px * var(--rk-scale));
 }
 
 .cofounder-spotlight {
