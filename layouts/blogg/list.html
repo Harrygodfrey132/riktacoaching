@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
 <main class="blog-archive" id="top">
   <div class="container">
     <header class="blog-archive__header">

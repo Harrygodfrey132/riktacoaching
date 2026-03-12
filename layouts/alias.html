@@ -1,6 +1,6 @@
 <!doctype html>
 {{ $lang := "sv" }}
-{{ if in .Permalink "/en/" }}{{ $lang = "en" }}{{ end }}
+{{ if in .Permalink "/" }}{{ $lang = "en" }}{{ end }}
 {{ $canonicalBase := strings.TrimSuffix "/" (or site.Params.canonical_base_url site.BaseURL) }}
 {{ $targetURL := replaceRE "^https?://[^/]+" $canonicalBase .Permalink }}
 <html lang="{{ $lang }}">

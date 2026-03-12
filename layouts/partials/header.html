@@ -1,39 +1,38 @@
 <header class="site-header">
   <div class="container nav">
-    {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-    {{ $coachingPath := cond $isEn "/en/coaching/" "/coachning/" }}
-    {{ $coachingAdhd := cond $isEn "/en/coaching/adhd/" "/coachning/adhd/" }}
-    {{ $coachingAdhdStudents := cond $isEn "/en/coaching/adhd/students/" "/coachning/adhd/students/" }}
-    {{ $coachingAdhdAdults := cond $isEn "/en/coaching/adhd/adults/" "/coachning/adhd/vuxna/" }}
-    {{ $coachingAdhdProfessionals := cond $isEn "/en/coaching/adhd/professionals/" "/coachning/adhd/professionella/" }}
-    {{ $coachingAdhdEntrepreneurs := cond $isEn "/en/coaching/adhd/entrepreneurs/" "/coachning/adhd/entreprenorer/" }}
-    {{ $coachingAutism := cond $isEn "/en/coaching/autism/" "/coachning/autism/" }}
-    {{ $coachingProcrastination := cond $isEn "en/test/procrastination-test/" "/test/prokrastinerings-test/" }}
-    {{ $knowledgePath := cond $isEn "en/knowledge/" "/kunskap/" }}
-    {{ $adhdPath := cond $isEn "en/adhd-assessment/" "/adhd-utredning/" }}
-    {{ $adhdAdults := cond $isEn "en/adhd-assessment/adults/" "/adhd-utredning/vuxna/" }}
-    {{ $adhdWomen := cond $isEn "en/adhd-assessment/women/" "/adhd-utredning/kvinnor/" }}
-    {{ $adhdYouth := cond $isEn "en/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
-    {{ $adhdMedication := cond $isEn "en/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
+    {{ $isEn := true }}
+    {{ $coachingPath := cond $isEn "/coaching/" "/coachning/" }}
+    {{ $coachingAdhd := cond $isEn "/coaching/adhd/" "/coachning/adhd/" }}
+    {{ $coachingAdhdStudents := cond $isEn "/coaching/adhd/students/" "/coachning/adhd/students/" }}
+    {{ $coachingAdhdAdults := cond $isEn "/coaching/adhd/adults/" "/coachning/adhd/vuxna/" }}
+    {{ $coachingAdhdProfessionals := cond $isEn "/coaching/adhd/professionals/" "/coachning/adhd/professionella/" }}
+    {{ $coachingAdhdEntrepreneurs := cond $isEn "/coaching/adhd/entrepreneurs/" "/coachning/adhd/entreprenorer/" }}
+    {{ $coachingAutism := cond $isEn "/coaching/autism/" "/coachning/autism/" }}
+    {{ $coachingProcrastination := cond $isEn "/test/procrastination-test/" "/test/prokrastinerings-test/" }}
+    {{ $knowledgePath := cond $isEn "/knowledge/" "/kunskap/" }}
+    {{ $adhdPath := cond $isEn "/adhd-assessment/" "/adhd-utredning/" }}
+    {{ $adhdAdults := cond $isEn "/adhd-assessment/adults/" "/adhd-utredning/vuxna/" }}
+    {{ $adhdWomen := cond $isEn "/adhd-assessment/women/" "/adhd-utredning/kvinnor/" }}
+    {{ $adhdYouth := cond $isEn "/adhd-assessment/children-and-teens/" "/adhd-utredning/barn-och-ungdomar/" }}
+    {{ $adhdMedication := cond $isEn "/adhd-assessment/medication/" "/adhd-utredning/medicinering/" }}
     {{ $adhdSecondOpinion := cond $isEn "" "/adhd-utredning/second-opinion/" }}
-    {{ $adhdCoaching := cond $isEn "en/coaching/adhd/" "/coachning/adhd/" }}
-    {{ $adhdTest := cond $isEn "en/test/adhd-test/" "/test/adhd-test/" }}
-    {{ $autismPath := cond $isEn "en/autism-assessment/" "/autism-utredning/" }}
-    {{ $autismAdults := cond $isEn "en/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
-    {{ $autismWomen := cond $isEn "en/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
-    {{ $autismYouth := cond $isEn "en/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
-    {{ $autismTest := cond $isEn "en/test/autism-test/" "/test/autism-test/" }}
-    {{ $pricingPath := cond $isEn "en/pricing/" "/priser/" }}
-    {{ $pricingAdhd := cond $isEn "en/pricing/adhd-assessment-and-coaching/" "/priser/adhd-utredning-coachning/" }}
-    {{ $pricingAutism := cond $isEn "en/pricing/autism-assessment-and-coaching/" "/priser/autism-utredning-coachning/" }}
-    {{ $pricingMedication := cond $isEn "en/pricing/adhd-medication/" "/priser/adhd-medicinering/" }}
-    {{ $blogPath := cond $isEn "en/blog/" "/blogg/" }}
-    {{ $aboutPath := cond $isEn "en/about-us/" "/for-foretag/" }}
-    {{ $workplaceFunding := cond $isEn "https://riktapsykiatri.se/en/access-to-work-adhd-coach/" "" }}
-    {{ $contactLink := cond $isEn "/en/contact/" "/kontakta-oss/" }}
+    {{ $adhdCoaching := cond $isEn "/coaching/adhd/" "/coachning/adhd/" }}
+    {{ $adhdTest := cond $isEn "/test/adhd-test/" "/test/adhd-test/" }}
+    {{ $autismPath := cond $isEn "/autism-assessment/" "/autism-utredning/" }}
+    {{ $autismAdults := cond $isEn "/autism-assessment/adults/" "/autism-utredning/vuxna/" }}
+    {{ $autismWomen := cond $isEn "/autism-assessment/women/" "/autism-utredning/kvinnor/" }}
+    {{ $autismYouth := cond $isEn "/autism-assessment/children-and-teens/" "/autism-utredning/barn-och-ungdomar/" }}
+    {{ $autismTest := cond $isEn "/test/autism-test/" "/test/autism-test/" }}
+    {{ $pricingPath := cond $isEn "/pricing/" "/priser/" }}
+    {{ $pricingAdhd := cond $isEn "/pricing/adhd-assessment-and-coaching/" "/priser/adhd-utredning-coachning/" }}
+    {{ $pricingAutism := cond $isEn "/pricing/autism-assessment-and-coaching/" "/priser/autism-utredning-coachning/" }}
+    {{ $pricingMedication := cond $isEn "/pricing/adhd-medication/" "/priser/adhd-medicinering/" }}
+    {{ $blogPath := cond $isEn "/blog/" "/blogg/" }}
+    {{ $aboutPath := cond $isEn "/about-us/" "/for-foretag/" }}
+    {{ $workplaceFunding := cond $isEn "/access-to-work-adhd-coach/" "" }}
+    {{ $contactLink := cond $isEn "/contact/" "/kontakta-oss/" }}
     {{ $loginLink := "https://riktacoaching.kaddio.com" }}
-    {{ $languageSwitch := cond $isEn "/" "/en/" }}
-    {{ $homeLink := cond $isEn "/en/" "/" }}
+    {{ $homeLink := cond $isEn "/" "/" }}
     {{ $logoBase := cond $isEn "EnglishLogo" "logo" }}
     <a class="brand" href="{{ $homeLink | relLangURL }}" aria-label="{{ .Site.Title }}">
       <picture>
@@ -66,10 +65,10 @@
             </ul>
           </li>
           {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}">Workplace Funding</a></li>{{ end }}
+          <li><a href="https://riktapsykiatri.se">Rikta Psykiatri</a></li>
           <li><a href="{{ $knowledgePath | relLangURL }}">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}">Our Team</a></li>
           <li><a class="cta" href="{{ $loginLink }}">Log in</a></li>
-          <li class="language-switch"><a href="{{ $languageSwitch }}">Svenska</a></li>
         {{ else }}
           <li class="has-submenu">
             <div class="submenu-trigger">
@@ -150,7 +149,6 @@
           </li>
           <li><a href="{{ $aboutPath | relLangURL }}">Företagshälsa</a></li>
           <li><a class="cta" href="{{ $contactLink }}">Kontakta oss</a></li>
-          <li class="language-switch"><a href="{{ $languageSwitch }}">English</a></li>
         {{ end }}
       </ul>
     </nav>
@@ -188,10 +186,10 @@
             </ul>
           </li>
           {{ if $workplaceFunding }}<li><a href="{{ $workplaceFunding }}" onclick="closeMobileMenu()">Workplace Funding</a></li>{{ end }}
+          <li><a href="https://riktapsykiatri.se" onclick="closeMobileMenu()">Rikta Psykiatri</a></li>
           <li><a href="{{ $knowledgePath | relLangURL }}" onclick="closeMobileMenu()">Guides</a></li>
           <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">Our Team</a></li>
           <li><a class="cta" href="{{ $loginLink }}" onclick="closeMobileMenu()">Log in</a></li>
-          <li class="language-switch"><a href="{{ $languageSwitch }}">Svenska</a></li>
         {{ else }}
           <li class="has-submenu">
             <div class="submenu-trigger">
@@ -272,7 +270,6 @@
           </li>
           <li><a href="{{ $aboutPath | relLangURL }}" onclick="closeMobileMenu()">Företagshälsa</a></li>
           <li><a class="cta" href="{{ $contactLink }}" onclick="closeMobileMenu()">Kontakta oss</a></li>
-          <li class="language-switch"><a href="{{ $languageSwitch }}">English</a></li>
         {{ end }}
       </ul>
     </nav>

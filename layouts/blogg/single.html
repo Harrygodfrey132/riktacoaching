@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
 <main class="blog-simple" id="top">
   <div class="container blog-simple__shell">
     <div class="blog-simple__content">
@@ -67,7 +67,7 @@
                 Rikta Psykiatri erbjuder digital coachning och bedömning över hela Sverige samt fysiska besök i Stockholm. Hör av dig så hittar vi upplägget som passar dig.
               {{ end }}
             </p>
-            <a class="btn primary" href="{{ if $isEn }}/en/contact/{{ else }}/kontakta-oss/{{ end }}">{{ if $isEn }}Book a call{{ else }}Boka samtal{{ end }}</a>
+            <a class="btn primary" href="{{ if $isEn }}/contact/{{ else }}/kontakta-oss/{{ end }}">{{ if $isEn }}Book a call{{ else }}Boka samtal{{ end }}</a>
           </div>
           <div class="blog-simple__map">
             <img src="{{ "/img/scenic-background-picture.jpg" | absURL }}" alt="Sverige, vi stöttar patienter i hela landet">

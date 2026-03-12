@@ -4,7 +4,7 @@
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
   const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
-  const IS_EN = DOC_LANG.startsWith('en') || window.location.pathname.startsWith('/en/');
+  const IS_EN = true;
   let guidesModal = null;
 
   function resolveLocale(form){
@@ -312,10 +312,10 @@
       const isEn = locale === 'en';
       const isAutismForm = /autism|aq|raads/i.test(formId);
       const assessmentHref = isEn
-        ? (isAutismForm ? '/en/autism-assessment/' : '/en/adhd-assessment/')
+        ? (isAutismForm ? '/autism-assessment/' : '/adhd-assessment/')
         : (isAutismForm ? '/autism-utredning/' : '/adhd-utredning/');
-      const contactHref = isEn ? '/en/contact/' : '/kontakta-oss/';
-      const pricingHref = isEn ? '/en/pricing/' : '/priser/';
+      const contactHref = isEn ? '/contact/' : '/kontakta-oss/';
+      const pricingHref = isEn ? '/pricing/' : '/priser/';
       const heading = isEn ? 'Recommended next step' : 'Rekommenderat nästa steg';
       const description = isEn
         ? 'Use your result as a guide and book a specialist conversation for a full clinical assessment.'

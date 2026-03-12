@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ if or (eq .Section "locations") (hasPrefix .RelPermalink "/en/locations/") }}
+  {{ if or (eq .Section "locations") (hasPrefix .RelPermalink "/locations/") }}
     <div class="location-page" id="top">
       {{ .Content }}
     </div>

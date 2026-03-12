@@ -1,178 +1,162 @@
 ---
-title: "Autismtest (AQ-10)"
+title: "Autism Test Online"
 translationKey: "autism-test"
 draft: false
 layout: "none"
 type: "none"
 aliases:
   - /autism-test/
-meta_title: "Autismtest AQ-10 | Självskattning online | Rikta Psykiatri"
-meta_keywords: "autismtest, AQ-10, självtest autism, autistiska drag, Rikta Psykiatri"
-meta_description: "Gör AQ-10 autismtest online och se din totalpoäng. Självskattning, ej diagnos."
-og_title: "AQ-10 från Rikta Psykiatri"
-og_description: "Besvara AQ-10 för att se din totalpoäng och reflektera över autistiska drag (ej diagnos)."
+meta_title: "Autism Test (AQ-10) | Online Self-Assessment | Rikta Psychiatry"
+meta_keywords: "autism test online, AQ-10, autism screening, self-test autism, Rikta Psychiatry"
+meta_description: "Take the AQ-10 autism screening test for adults and see your total score. Screening only."
+og_title: "AQ-10 from Rikta Psychiatry"
+og_description: "Answer AQ-10 to see your total score and reflect on autistic traits (screening only)."
 ---
 
 <section class="adhd-screening">
   <div class="adhd-screening__container">
     <header class="adhd-screening__header">
-      <span class="adhd-screening__eyebrow">Självskattning</span>
-      <h1>AQ-10 (kort självtest för autism)</h1>
-      <p>Formuläret bygger på AQ-10 – ett kort, validerat självskattningsformulär för vuxna. Besvara frågorna utifrån hur du vanligtvis känner eller beter dig.</p>
+      <span class="adhd-screening__eyebrow">Self-assessment</span>
+      <h1>AQ-10 (quick autism screening)</h1>
+      <p>The form is based on AQ-10 – a short, validated screening tool for adults. Answer according to how you usually feel or behave.</p>
     </header>
     <div class="adhd-screening__shell">
       <div aria-hidden="true" class="adhd-screening__glow"></div>
-      <form class="adhd-screening__card" id="autism-screening-form" data-locale="sv">
+      <form class="adhd-screening__card" id="autism-screening-form" data-locale="en">
         <div class="adhd-screening__summary">
-          <p class="adhd-screening__lead">Välj det svar som bäst beskriver hur du vanligtvis känner eller beter dig. AQ-10 hjälper till att identifiera autistiska drag för att se om en vidare utredning kan vara relevant.</p>
+          <p class="adhd-screening__lead">Choose the response that best describes how you usually feel or behave. AQ-10 helps identify autistic traits to see if further assessment might be relevant.</p>
           <dl class="adhd-meta">
             <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Källa</dt>
-              <dd class="adhd-meta__value">Autism-Spectrum Quotient-10 (Baron-Cohen m.fl., 2001) – kortversion.</dd>
+              <dt class="adhd-meta__label">Source</dt>
+              <dd class="adhd-meta__value">Autism-Spectrum Quotient-10 (Baron-Cohen et al., 2001) – short version.</dd>
             </div>
             <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Målgrupp</dt>
-              <dd class="adhd-meta__value">Vuxna som vill göra ett självtest för autistiska drag.</dd>
+              <dt class="adhd-meta__label">Audience</dt>
+              <dd class="adhd-meta__value">Adults screening for autistic traits.</dd>
             </div>
             <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Respondent</dt>
-              <dd class="adhd-meta__value">Du själv.</dd>
+              <dt class="adhd-meta__label">Scale</dt>
+              <dd class="adhd-meta__value">Agree / Slightly agree = 1 point on straight statements. Questions 4 &amp; 7 are reversed: disagreement gives 1 point.</dd>
             </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Syfte</dt>
-              <dd class="adhd-meta__value">Självskattning av autistiska drag (screening, ej diagnos).</dd>
-            </div>
-            <div class="adhd-meta__row">
-              <dt class="adhd-meta__label">Skala</dt>
-              <dd class="adhd-meta__value">Håller helt med / Håller delvis med = 1 poäng på raka påståenden. Fråga 4 &amp; 7 är omvända: oenighet ger 1 poäng.</dd>
-            </div>
-          </dl>
+</dl>
         </div>
-        <p class="adhd-screening__intro">Svara på varje fråga. Totalt 0–10 poäng. Resultatet är en totalpoäng utan tolkning.</p>
+        <p class="adhd-screening__intro">Answer every question. The result is indicative and does not replace a clinical assessment.</p>
         <fieldset class="adhd-section">
-          <legend>AQ-10 – Svensk översättning</legend>
+          <legend>AQ-10 – English version</legend>
           <ol class="adhd-question-list">
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag tycker det är svårt att delta i en konversation.</div>
+              <div class="adhd-question__prompt">I find it hard to start a conversation.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q1" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q1" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag märker ofta små detaljer som andra missar.</div>
+              <div class="adhd-question__prompt">I often notice small details that others miss.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q2" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q2" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag har svårt att få samtalet att flyta naturligt i sociala situationer.</div>
+              <div class="adhd-question__prompt">I find it hard to flow naturally in social interactions.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q3" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q3" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag tycker det är lätt att läsa av andra människors känslor. <span class="muted">(omvänd)</span></div>
+              <div class="adhd-question__prompt">I find it easy to read other people’s feelings. <span class="muted">(reversed)</span></div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q4" value="0" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="0"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="0" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="0"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q4" value="1"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag fokuserar lätt på detaljer snarare än helheten.</div>
+              <div class="adhd-question__prompt">I focus easily on details rather than the big picture.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q5" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q5" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag märker omedelbart små förändringar i en situation.</div>
+              <div class="adhd-question__prompt">I notice small changes in a situation immediately.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q6" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q6" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag förstår andras avsikter även när de inte säger det rakt ut. <span class="muted">(omvänd)</span></div>
+              <div class="adhd-question__prompt">I understand other people’s intentions even when they don’t say them directly. <span class="muted">(reversed)</span></div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q7" value="0" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="0"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="0" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="0"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q7" value="1"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Människor tycker ofta att jag pratar på ett ovanligt sätt.</div>
+              <div class="adhd-question__prompt">People often think I speak in an unusual way.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q8" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q8" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag föredrar att göra saker på samma sätt varje gång.</div>
+              <div class="adhd-question__prompt">I prefer to do things the same way every time.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q9" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q9" value="0"><span>Disagree</span></label>
               </div>
             </li>
             <li class="adhd-question">
-              <div class="adhd-question__prompt">Jag finner det svårt att förstå sociala regler.</div>
+              <div class="adhd-question__prompt">I find it hard to understand social rules.</div>
               <div class="adhd-response-group">
-                <label class="adhd-response"><input type="radio" name="q10" value="1" required><span>Håller helt med</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="1"><span>Håller delvis med</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Håller delvis inte med</span></label>
-                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Håller inte alls med</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="1" required><span>Agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="1"><span>Slightly agree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Slightly disagree</span></label>
+                <label class="adhd-response"><input type="radio" name="q10" value="0"><span>Disagree</span></label>
               </div>
             </li>
           </ol>
         </fieldset>
         <div class="adhd-screening__actions">
-          <button class="btn primary adhd-screening__submit" type="submit">Beräkna poäng</button>
-          <button class="btn secondary adhd-screening__reset" type="button">Rensa formuläret</button>
+          <button class="btn primary adhd-screening__submit" type="submit">Calculate score</button>
+          <button class="btn secondary adhd-screening__reset" type="button">Clear form</button>
         </div>
         <div aria-live="polite" class="adhd-score" id="autism-score" hidden>
           <div class="adhd-score__summary">
-            <span class="adhd-score__label">Totalpoäng</span>
+            <span class="adhd-score__label">Total score</span>
             <span class="adhd-score__value" id="autism-score-value">0</span>
           </div>
-	          <p class="adhd-score__interpretation" id="autism-score-interpretation">Besvara alla frågor för att se din AQ-10 poäng.</p>
-	          <p class="adhd-score__note">Resultatet beräknas lokalt i din webbläsare och sparas inte. Självtestet ersätter inte en klinisk autismutredning.</p>
-	        </div>
-	      </form>
+          <p class="adhd-score__interpretation" id="autism-score-interpretation">Answer all questions to see your AQ-10 score.</p>
+          <p class="adhd-score__note">The result is calculated locally in your browser and is not stored. This self-test does not replace a clinical autism assessment.</p>
+        </div>
+      </form>
       <aside class="adhd-screening__note">
-        <h3>Hur poängen räknas</h3>
-	        <ul>
-	          <li>Varje fråga ger 1 poäng när du håller med (delvis eller helt) om ett autistiskt drag.</li>
-	          <li>Fråga 4 och 7 är omvända: här ger oenighet 1 poäng.</li>
-	          <li>Totalpoäng 0–10.</li>
-	        </ul>
-        <p><strong>Källor:</strong><br>
+        <h3>Legal and ethics</h3>
+        <p><strong>AQ-10 is a screening tool.</strong> It does not provide a diagnosis.</p>
+        <p><strong>Scoring:</strong> Agree / slightly agree gives 1 point on straight statements. Questions 4 and 7 are reversed.</p>
+        <p><strong>Sources:</strong><br>
         Baron-Cohen S, Wheelwright S, Skinner R, Martin J, Clubley E. The Autism-Spectrum Quotient (AQ). Journal of Autism and Developmental Disorders. 2001;31(1):5–17.<br>
-        Socialstyrelsen. Nationella riktlinjer för vård vid autism och ADHD.</p>
-        <p><strong>Svensk översättning:</strong><br>
-        Svensk översättning av Riktapsykiatri.se (2025), baserad på AQ-10.</p>
-	        <p><strong>Viktigt:</strong><br>
-	        Detta är ett självskattningsformulär, inte ett diagnostiskt test.<br>
-	        Resultatet kan inte användas för att fastställa diagnos. Vid oro för din hälsa bör du kontakta hälso- och sjukvård.</p>
-	      </aside>
+        Swedish National Board of Health and Welfare (Socialstyrelsen). National guidelines for ADHD and autism care.</p>
+      </aside>
     </div>
   </div>
 </section>

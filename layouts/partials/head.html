@@ -1,12 +1,12 @@
 {{- $css := resources.Get "css/main.css" | resources.Minify | resources.Fingerprint -}}
-{{- $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") -}}
+{{- $isEn := true -}}
 <!doctype html>
-<html lang="{{ cond $isEn "en" "sv" }}">
+<html lang="en">
 <head>
   {{- $site := .Site -}}
   {{- $page := . -}}
   {{- $pageTitle := or $page.Params.meta_title $page.Title $site.Title -}}
-  {{- $metaDescription := or $page.Params.meta_description $page.Params.description $site.Params.meta_description "Psykiatrisk vård med personcentrerat fokus." -}}
+  {{- $metaDescription := or $page.Params.meta_description $page.Params.description $site.Params.meta_description "Practical ADHD and autism coaching for everyday life." -}}
   {{- $metaKeywords := $page.Params.meta_keywords -}}
   {{- $ogTitle := or $page.Params.og_title $pageTitle -}}
   {{- $ogDescription := or $page.Params.og_description $metaDescription -}}
@@ -28,14 +28,14 @@
   <meta property="og:type" content="{{ $ogType }}">
   <meta property="og:url" content="{{ $canonicalURL }}">
   <meta property="og:site_name" content="{{ $site.Title }}">
-  <meta property="og:locale" content="{{ cond $isEn "en_US" "sv_SE" }}">
+  <meta property="og:locale" content="en_US">
   <link rel="canonical" href="{{ $canonicalURL }}">
   {{- if $page.Params.noindex }}
   <meta name="robots" content="noindex,follow">
   {{- end }}
   {{- /* Consent/policy versioning for clinical consent logs */ -}}
-  {{- $policyVersion := cond $isEn (or $site.Params.privacy_policy_version_en $site.Params.privacy_policy_version) (or $site.Params.privacy_policy_version_sv $site.Params.privacy_policy_version) -}}
-  {{- $consentVersion := cond $isEn (or $site.Params.consent_statement_version_en $site.Params.consent_statement_version) (or $site.Params.consent_statement_version_sv $site.Params.consent_statement_version) -}}
+  {{- $policyVersion := or $site.Params.privacy_policy_version_en $site.Params.privacy_policy_version -}}
+  {{- $consentVersion := or $site.Params.consent_statement_version_en $site.Params.consent_statement_version -}}
   {{- with $policyVersion }}
   <meta name="rk-privacy-policy-version" content="{{ . }}">
   {{- end }}
@@ -43,25 +43,8 @@
   <meta name="rk-consent-statement-version" content="{{ . }}">
   {{- end }}
   {{- /* Hreflang alternates (deduped, including self-reference) */ -}}
-  {{- $selfLang := cond $isEn "en" "sv" -}}
-  {{- $seen := dict $selfLang true -}}
-  <link rel="alternate" hreflang="{{ $selfLang }}" href="{{ $canonicalURL }}">
-  {{- $translations := $page.AllTranslations -}}
-  {{- if gt (len $translations) 0 -}}
-    {{- $defaultPage := $page -}}
-    {{- range $translations -}}
-      {{- $lang := cond (or (eq .Lang "en") (hasPrefix .RelPermalink "/en/")) "en" "sv" -}}
-      {{- if and $lang (not (isset $seen $lang)) -}}
-        {{- $altURL := partial "seo-url.html" (dict "page" .) -}}
-  <link rel="alternate" hreflang="{{ $lang }}" href="{{ $altURL }}">
-        {{- $seen = merge $seen (dict $lang true) -}}
-      {{- end -}}
-      {{- if eq $lang "sv" -}}
-        {{- $defaultPage = . -}}
-      {{- end -}}
-    {{- end -}}
-  <link rel="alternate" hreflang="x-default" href="{{ partial "seo-url.html" (dict "page" $defaultPage) }}">
-  {{- end }}
+  <link rel="alternate" hreflang="en" href="{{ $canonicalURL }}">
+  <link rel="alternate" hreflang="x-default" href="{{ $canonicalURL }}">
   <link rel="preconnect" href="https://www.googletagmanager.com">
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">

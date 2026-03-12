@@ -1,4 +1,4 @@
-{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
 <div id="newsletter-popup" class="newsletter-popup" data-popup-state="hidden" aria-hidden="true" data-popup-multistep="{{ if $isEn }}false{{ else }}true{{ end }}">
   <div class="newsletter-popup__overlay" data-popup-close tabindex="-1"></div>
   <div class="newsletter-popup__dialog" role="dialog" aria-modal="true" aria-labelledby="newsletter-popup-title" aria-describedby="newsletter-popup-compliance">
@@ -67,7 +67,7 @@
         <label class="form-consent" for="popup-policy-ack">
           <input type="checkbox" id="popup-policy-ack" name="policyAcknowledgement" required>
           <span>
-            I consent to my data being processed according to the <a class="privacy-link" href="/en/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/en/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information (e.g., neurodevelopmental conditions) that I choose to share, to handle my request.
+            I consent to my data being processed according to the <a class="privacy-link" href="/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information (e.g., neurodevelopmental conditions) that I choose to share, to handle my request.
           </span>
         </label>
         <label class="form-consent" for="popup-newsletter-opt-in">

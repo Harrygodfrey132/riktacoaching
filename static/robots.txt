@@ -1,5 +1,2 @@
 User-agent: *
 Disallow:
-
-Sitemap: https://riktapsykiatri.se/sitemap-sv.xml
-Sitemap: https://riktapsykiatri.se/sitemap-en.xml

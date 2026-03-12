@@ -4,7 +4,7 @@
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
   const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
-  const IS_EN = DOC_LANG.startsWith('en') || window.location.pathname.startsWith('/en/');
+  const IS_EN = true;
 
   function resolveLocale(form){
     const formLocale = ((form && form.dataset && form.dataset.locale) || '').toLowerCase();

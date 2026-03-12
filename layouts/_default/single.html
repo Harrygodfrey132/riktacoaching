@@ -3,16 +3,16 @@
   {{ $path := .RelPermalink }}
   {{ $baseClass := "" }}
   {{ $needsHeader := false }}
-  {{ if or (hasPrefix $path "/adhd-utredning/") (hasPrefix $path "/en/adhd-assessment/") }}
+  {{ if or (hasPrefix $path "/adhd-utredning/") (hasPrefix $path "/adhd-assessment/") }}
     {{ $baseClass = "adhd-page" }}
-  {{ else if or (hasPrefix $path "/autism-utredning/") (hasPrefix $path "/en/autism-assessment/") }}
+  {{ else if or (hasPrefix $path "/autism-utredning/") (hasPrefix $path "/autism-assessment/") }}
     {{ $baseClass = "autism-page" }}
   {{ end }}
   {{ if and (ne $baseClass "") (not (in (lower .Content) "<h1")) }}
     {{ $needsHeader = true }}
   {{ end }}
 
-  {{ if or (eq .Section "locations") (hasPrefix $path "/en/locations/") }}
+  {{ if or (eq .Section "locations") (hasPrefix $path "/locations/") }}
     <div class="location-page">
       {{ .Content }}
     </div>

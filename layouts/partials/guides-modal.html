@@ -1,5 +1,5 @@
-{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-{{ $policyHref := cond $isEn "/en/privacy-policy/" "/integritetspolicy/" }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
+{{ $policyHref := cond $isEn "/privacy-policy/" "/integritetspolicy/" }}
 
 <div id="guides-modal" class="guides-modal" data-modal-state="hidden" aria-hidden="true">
   <div class="guides-modal__overlay" data-guides-close tabindex="-1"></div>

@@ -1,7 +1,7 @@
 {{ define "main" }}
   <main class="coachning-page" id="top">
     <div class="container coachning-container">
-      {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+      {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
       {{ .Content }}
       <section class="contact-form-section">
         {{ if $isEn }}

@@ -6,7 +6,7 @@
   {{ $allWebinars = where $allWebinars "Kind" "page" }}
   {{ $webinars := slice }}
   {{ range $allWebinars }}
-    {{ $isEnglish := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") (hasPrefix .File.Path "content/en/") }}
+    {{ $isEnglish := or (eq .Lang "en") (hasPrefix .RelPermalink "/") (hasPrefix .File.Path "content/") }}
     {{ if eq $lang "sv" }}
       {{ if and (not $isEnglish) (or (eq .Lang "sv") (eq .Lang "")) }}
         {{ $webinars = $webinars | append . }}

@@ -1,5 +1,5 @@
 {{ define "main" }}
-  {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
+  {{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
   {{ $sectionKey := cond $isEn "blog" "blogg" }}
   {{ $sectionPage := .Site.GetPage "section" $sectionKey }}
   {{ $posts := slice }}

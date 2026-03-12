@@ -1,30 +1,14 @@
-baseURL = "https://riktapsykiatri.se/"
-languageCode = "sv"
-title = "Rikta Psykiatri"
-defaultContentLanguage = "sv"
+baseURL = "https://riktacoaching.com/"
+languageCode = "en"
+title = "Rikta Coaching"
+defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 disableKinds = ["taxonomy","term","sitemap"]   # no taxonomies and custom sitemap handling
 buildFuture = true
 
-[languages]
-  [languages.sv]
-    languageName = "Svenska"
-    weight = 1
-    [languages.sv.outputs]
-      home = ["HTML","RSS","JSON","SITEMAP_SV","SITEMAP_EN"]
-  [languages.en]
-    languageName = "English"
-    languageCode = "en"
-    title = "Rikta Psychiatry"
-    weight = 2
-    [languages.en.outputs]
-      home = ["HTML","RSS","JSON","SITEMAP_EN"]
-    [languages.en.params]
-      logo = "/img/EnglishLogo.png"
-
 [params]
-  canonical_base_url = "https://riktapsykiatri.se"
+  canonical_base_url = "https://riktacoaching.com"
   primary = "#000000"
   background = "#FFFFFF"
   secondary = "#4773A6"
@@ -33,9 +17,7 @@ buildFuture = true
   logo = "/img/logo.png"
   hero = "/img/psychologist-picture.jpg"
   # Update these whenever the consent copy or policy text changes.
-  consent_statement_version_sv = "2026-02-09"
   consent_statement_version_en = "2026-02-09"
-  privacy_policy_version_sv = "2026-02-09"
   privacy_policy_version_en = "2026-02-09"
 
 [markup]
@@ -44,13 +26,6 @@ buildFuture = true
 
 [outputs]
   home = ["HTML","RSS","JSON"]
-
-[outputFormats.SITEMAP_SV]
-  mediaType = "application/xml"
-  baseName = "sitemap-sv"
-  isPlainText = true
-  notAlternative = true
-  rel = "sitemap"
 
 [outputFormats.SITEMAP_EN]
   mediaType = "application/xml"

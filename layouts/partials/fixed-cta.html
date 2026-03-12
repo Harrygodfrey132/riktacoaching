@@ -1,5 +1,5 @@
-{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/en/") }}
-{{ $href := cond $isEn "/en/contact/#contact-form" "/kontakta-oss/#kontaktformular" }}
+{{ $isEn := or (eq .Lang "en") (hasPrefix .RelPermalink "/") }}
+{{ $href := cond $isEn "/contact/#contact-form" "/kontakta-oss/#kontaktformular" }}
 {{ $label := cond $isEn "Free consultation" "Gratis rådgivningssamtal" }}
 
 <a class="btn primary fixed-cta"
