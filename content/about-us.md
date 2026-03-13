@@ -21,10 +21,15 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </ol>
         </nav>
         <span class="eyebrow">MEET THE TEAM</span>
-        <h1>Specialist support tailored to your life</h1>
+        <h1>Meet the specialists behind Rikta Psychiatry</h1>
         <p class="lead">
-          A collaborative team of clinicians and coaches combining rigorous medical standards with a bespoke approach to ADHD and autism management.
+          Our team combines consultant psychiatry, licensed psychology, and practical neurodivergence expertise so you can move forward with clarity and confidence.
         </p>
+        <ul class="hero-highlights">
+          <li>Licensed specialists in psychiatry and psychology.</li>
+          <li>Experience across ADHD, autism, treatment planning, and follow-up.</li>
+          <li>Credible, evidence-based support built around real life.</li>
+        </ul>
         <div class="hero-actions">
           <a class="btn primary coral" href="/contact/">Book a consultation</a>
         </div>
@@ -42,57 +47,23 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 <section class="team-feature who-section" id="team">
   <div class="container">
     <header class="team-feature__header">
-      <h2>Professionals</h2>
-      <p class="eyebrow">Our Team</p>
+      <p class="eyebrow">OUR SPECIALISTS</p>
+      <h2>Experienced specialists who strengthen every assessment</h2>
+      <p>
+        Antonio, Maria, Karen, and Emma give our clinical work the depth and credibility families, adults, and referrers expect. Their combined expertise helps us deliver careful assessments, clear recommendations, and support that holds up clinically.
+      </p>
     </header>
 
     <div class="clinician-grid clinician-grid--feature">
       <article class="clinician-card">
-        <img src="/img/Antonia.png" alt="Dr Antonia Risberg" class="clinician-card__photo">
+        <img src="/img/Antonia.png" alt="Dr Antonio Risberg" class="clinician-card__photo">
         <div class="clinician-card__body">
-          <h3>Dr Antonia Risberg</h3>
+          <h3>Dr Antonio Risberg</h3>
           <p class="clinician-card__role">Consultant Psychiatrist</p>
           <ul class="team-feature__bullets">
-            <li>Specialist Physician: 30 years in neurodivergence and psychiatry.</li>
-            <li>Medical Expert: Specialist in ADHD/Autism diagnosis and treatment.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="clinician-card">
-        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo clinician-card__photo--philip">
-        <div class="clinician-card__body">
-          <h3>Philip Lindersten</h3>
-          <p class="clinician-card__role">ADHD and Autism Coach</p>
-          <ul class="team-feature__bullets">
-            <li>CEO &amp; Co-Founder</li>
-            <li>Clinical Psychologist Candidate: Expert in data-driven psychiatric care.</li>
-          </ul>
-          <div class="clinician-card__links">
-            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
-            <a class="clinician-card__link" href="/about-us/philip-lindersten/">Learn more</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="clinician-card">
-        <img src="/img/untitled-design-4.png" alt="Karin Vincze" class="clinician-card__photo">
-        <div class="clinician-card__body">
-          <h3>Karin Vincze</h3>
-          <p class="clinician-card__role">Licensed Psychologist</p>
-          <ul class="team-feature__bullets">
-            <li>Licensed Psychologist, STP-psychologist (Specialist Training), and Licensed Nurse.</li>
-          </ul>
-        </div>
-      </article>
-
-      <article class="clinician-card">
-        <img src="/img/untitled-design-3.png" alt="Emma Krantz" class="clinician-card__photo">
-        <div class="clinician-card__body">
-          <h3>Emma Krantz</h3>
-          <p class="clinician-card__role">Licensed Psychologist</p>
-          <ul class="team-feature__bullets">
-            <li>Psychodynamic foundation, incorporating ACT (Acceptance and Commitment Therapy) and existential psychology.</li>
+            <li>30 years of experience across psychiatry and neuropsychiatry.</li>
+            <li>Specialist in ADHD and autism assessment, diagnosis, and treatment.</li>
+            <li>Brings medical oversight and diagnostic confidence to complex cases.</li>
           </ul>
         </div>
       </article>
@@ -103,8 +74,66 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           <h3>Maria Fridlund</h3>
           <p class="clinician-card__role">Licensed Psychologist</p>
           <ul class="team-feature__bullets">
-            <li>CBT-based (Cognitive Behavioral Therapy) with advanced training in IBCT (Integrative Behavioral Couple Therapy).</li>
+            <li>CBT-based psychologist with advanced training in IBCT.</li>
+            <li>Helps clients translate assessment outcomes into practical change.</li>
+            <li>Adds therapeutic depth, structure, and relational expertise to the team.</li>
           </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design-4.png" alt="Karen Vincze" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Karen Vincze</h3>
+          <p class="clinician-card__role">Licensed Psychologist</p>
+          <ul class="team-feature__bullets">
+            <li>Licensed psychologist with specialist training and a nursing background.</li>
+            <li>Strong multidisciplinary perspective across assessment and support planning.</li>
+            <li>Helps connect psychological formulation with practical clinical follow-through.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="clinician-card">
+        <img src="/img/untitled-design-3.png" alt="Emma Krantz" class="clinician-card__photo">
+        <div class="clinician-card__body">
+          <h3>Emma Krantz</h3>
+          <p class="clinician-card__role">Licensed Psychologist</p>
+          <ul class="team-feature__bullets">
+            <li>Psychodynamic foundation with ACT and existential psychology.</li>
+            <li>Skilled at understanding the person behind the symptoms.</li>
+            <li>Strengthens the team with thoughtful, grounded clinical insight.</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="team-feature who-section" id="team-extended">
+  <div class="container">
+    <header class="team-feature__header">
+      <p class="eyebrow">BROADER TEAM</p>
+      <h2>Specialist-led care, supported by experienced coaches and operators</h2>
+      <p>
+        Alongside our core specialists, the wider Rikta team helps clients turn clinical clarity into sustainable day-to-day progress.
+      </p>
+    </header>
+
+    <div class="clinician-grid clinician-grid--feature">
+      <article class="clinician-card">
+        <img src="/img/Philip.png" alt="Philip Lindersten" class="clinician-card__photo clinician-card__photo--philip">
+        <div class="clinician-card__body">
+          <h3>Philip Lindersten</h3>
+          <p class="clinician-card__role">ADHD and Autism Coach</p>
+          <ul class="team-feature__bullets">
+            <li>CEO &amp; Co-Founder</li>
+            <li>Clinical Psychologist Candidate focused on data-driven psychiatric care.</li>
+          </ul>
+          <div class="clinician-card__links">
+            <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
+            <a class="clinician-card__link" href="/about-us/philip-lindersten/">Learn more</a>
+          </div>
         </div>
       </article>
 
