@@ -1,4 +1,7 @@
 {{ define "main" }}
+  {{ if eq .Params.layout "none" }}
+    {{ .Content }}
+  {{ else }}
   {{/* Use custom shell for assessment pages to preserve their native structure */}}
   {{ $path := .RelPermalink }}
   {{ $baseClass := "" }}
@@ -45,5 +48,6 @@
         </div>
       </div>
     </main>
+  {{ end }}
   {{ end }}
 {{ end }}

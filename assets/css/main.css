@@ -8902,6 +8902,22 @@ nav a.cta:active{
   padding: clamp(calc(80px * var(--rk-scale)), 12vw, calc(120px * var(--rk-scale))) 0;
 }
 
+.adhd-section-heading {
+  max-width: calc(760px * var(--rk-scale));
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adhd-section-heading h2 {
+  margin: 0 0 calc(14px * var(--rk-scale));
+}
+
+.adhd-section-heading p {
+  margin: 0;
+  color: rgba(29, 44, 59, 0.75);
+  line-height: 1.6;
+}
+
 .adhd-faq-accordion {
   margin-top: calc(36px * var(--rk-scale));
   display: grid;
