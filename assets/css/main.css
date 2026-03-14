@@ -13105,7 +13105,24 @@ body.newsletter-popup--locked {
   width: 100%;
 }
 
+.simple-form-card textarea {
+  min-height: calc(120px * var(--rk-scale));
+  padding: calc(12px * var(--rk-scale)) calc(14px * var(--rk-scale));
+  border: calc(1px * var(--rk-scale)) solid #cbd5e1;
+  border-radius: calc(12px * var(--rk-scale));
+  background: #fff;
+  width: 100%;
+  resize: vertical;
+  font: inherit;
+}
+
 .simple-form-card input:focus {
+  outline: none;
+  border-color: #4f83be;
+  box-shadow: 0 0 0 calc(3px * var(--rk-scale)) rgba(79, 131, 190, 0.2);
+}
+
+.simple-form-card textarea:focus {
   outline: none;
   border-color: #4f83be;
   box-shadow: 0 0 0 calc(3px * var(--rk-scale)) rgba(79, 131, 190, 0.2);

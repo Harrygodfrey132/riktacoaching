@@ -37,6 +37,80 @@ og_description: "Government funded ADHD coaching through Access to Work. See eli
     </div>
   </section>
 
+  <section class="contact-form-section" id="access-to-work-contact">
+    <div class="container">
+      <div class="contact-form">
+        <div class="contact-form__intro">
+          <span class="eyebrow">Start here</span>
+          <h2>Ask about Access to Work ADHD coaching</h2>
+          <p>
+            If you want help with Access to Work ADHD coaching, fill this in and we will get back to you. You can tell us whether you are applying, already approved, self-employed, or just trying to understand what support makes sense.
+          </p>
+        </div>
+        <form
+          class="contact-form__body"
+          data-kaddio-form="contact"
+          data-form-context="atw-contact-en"
+          data-form-locale="en"
+          data-success-message="Thank you. We’ll get back to you as soon as possible."
+          action="/api/kaddio/contact"
+          method="POST"
+          accept-charset="UTF-8"
+        >
+          <input type="hidden" name="leadSource" value="Access to Work ADHD coaching enquiry">
+          <label for="atw-contact-first-name">First name</label>
+          <input
+            id="atw-contact-first-name"
+            name="firstName"
+            type="text"
+            required
+            autocomplete="given-name"
+            placeholder="Your first name"
+          >
+          <label for="atw-contact-last-name">Last name</label>
+          <input
+            id="atw-contact-last-name"
+            name="lastName"
+            type="text"
+            required
+            autocomplete="family-name"
+            placeholder="Your last name"
+          >
+          <label for="atw-contact-email">Email address</label>
+          <input
+            id="atw-contact-email"
+            name="email"
+            type="email"
+            required
+            autocomplete="email"
+            placeholder="name@example.com"
+          >
+          <label for="atw-contact-description">Tell us briefly how we can help</label>
+          <textarea
+            id="atw-contact-description"
+            name="description"
+            required
+            placeholder="For example: I am applying for Access to Work and want ADHD coaching, or I already have funding approved and want to get started."
+          ></textarea>
+          <label class="form-consent" for="atw-contact-policy-ack">
+            <input type="checkbox" id="atw-contact-policy-ack" name="policyAcknowledgement" required>
+            <span>
+              I consent to my data being processed according to the <a class="privacy-link" href="/privacy-policy/">Privacy &amp; Data Protection Policy</a> and <a class="privacy-link" href="/terms-and-conditions/">Terms and Conditions</a>, including the processing of health-related information that I choose to share, to handle my request.
+            </span>
+          </label>
+          <label class="form-consent" for="atw-contact-newsletter-opt-in">
+            <input type="checkbox" id="atw-contact-newsletter-opt-in" name="newsletterOptIn">
+            <span>I want to receive tips, guides, and news by email. I can unsubscribe at any time. (Optional)</span>
+          </label>
+          <button type="submit" class="btn primary btn-block">Send enquiry</button>
+          <p class="contact-form__legal">Data controller: Riktningskliniken AB. You can withdraw your consent at any time via the link in our emails.</p>
+          <p class="contact-form__note form-status" data-form-status aria-live="polite" hidden></p>
+        </form>
+        <p class="contact-form__note">We usually reply within 1 to 2 business days.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="access-to-work-details" id="what-is-access-to-work-adhd-coaching">
     <div class="container">
       <header class="access-to-work-details__header">
