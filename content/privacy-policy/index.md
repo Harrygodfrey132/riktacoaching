@@ -1,113 +1,194 @@
 ---
-title: "Privacy & data protection"
+title: "Privacy policy"
 translationKey: "privacy-policy"
 draft: false
-layout: "guide"
-meta_title: "Privacy Policy | Rikta Coaching (UK)"
-meta_keywords: "privacy policy, UK GDPR, data protection, Rikta Coaching, personal data, special category data"
-meta_description: "How Rikta Coaching (UK) handles personal data, special category health data, and your rights under UK GDPR."
-og_title: "Privacy Policy – Rikta Coaching (UK)"
-og_description: "How we collect, use, and protect your data and how to exercise your rights under UK GDPR."
+meta_title: "Privacy Policy | Rikta Coaching"
+meta_keywords: "privacy policy, UK GDPR, EU GDPR, data protection, special category data, Rikta Coaching"
+meta_description: "How Rikta Coaching collects, uses, stores, and protects personal data, including health-related information submitted through forms or during service delivery."
+og_title: "Privacy Policy | Rikta Coaching"
+og_description: "How Rikta Coaching handles personal data, special category data, tracking tools, and data protection rights."
 ---
 
-{{< rawhtml >}}
-<section class="legal-page" id="top">
-  <div class="container">
-    <div class="legal-hero">
-      <div class="legal-hero__inner">
-        <div class="legal-hero__copy">
-          <p class="legal-eyebrow">PRIVACY &amp; DATA PROTECTION</p>
-          <h1>Privacy Policy – Rikta Coaching</h1>
-          <p class="lead">
-            Self-test results on our website are calculated locally in your browser and are not sent to us. If you choose to contact us (for example, to request a consultation or guides), we process your personal data under UK GDPR.
-            We never sell your data, and we do not send sensitive health results via standard unencrypted email.
-          </p>
-          <div class="legal-badges">
-            <span>UK GDPR Compliant</span>
-            <span>Encrypted Health Data (Kaddio)</span>
-            <span>No Data Selling</span>
-          </div>
-        </div>
-        <div class="legal-hero__card">
-          <h3>Summary</h3>
-          <ul class="legal-checklist">
-            <li>Self-test results are calculated locally and are not stored by us.</li>
-            <li>If you contact us, your information is stored securely for follow-up.</li>
-            <li>You can unsubscribe from email updates at any time.</li>
-          </ul>
-          <div class="legal-meta">
-            <strong>Contact</strong><br>
-            Practice Manager: Philip Lindersten<br>
-            Email: <a href="mailto:info@riktacoaching.co.uk">info@riktacoaching.co.uk</a>
-          </div>
-        </div>
-      </div>
-    </div>
+Effective date: 14 March 2026
 
-    <div class="legal-grid">
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">1. WHO WE ARE</div>
-        <h2>Data Controller</h2>
-        <p>Rikta Coaching provides neurodiversity support and clinical assessments. The person responsible for your data (Data Controller) is our Practice Manager, Philip Lindersten.</p>
-      </article>
+This Privacy Policy explains how Riktningskliniken AB, trading as Rikta Coaching, collects, uses, stores, and protects personal data.
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">2. DATA WE COLLECT</div>
-        <h2>What we process</h2>
-        <ul class="legal-list">
-          <li><strong>Contact details:</strong> Name and email address for communication and follow-up.</li>
-          <li><strong>Health data (special category data):</strong> Health-related information you choose to share via a form or during a clinical interaction (e.g., neurodevelopmental information).</li>
-          <li><strong>Technical data:</strong> IP address and device information to ensure website functionality.</li>
-        </ul>
-      </article>
+This policy applies to our website, forms, enquiries, coaching services, and related communications.
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">3. THIRD-PARTY PROVIDERS</div>
-        <h2>Systems we use</h2>
-        <ul class="legal-list">
-          <li><strong>Kaddio:</strong> Used to handle contact enquiries and, where relevant, clinical documentation. Health data is stored encrypted in accordance with healthcare data standards.</li>
-          <li><strong>Email:</strong> Used for follow-up and sending requested information. We do not send sensitive health results via standard unencrypted email.</li>
-        </ul>
-      </article>
+## 1. Who we are
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">4. COOKIES &amp; TRACKING</div>
-        <h2>Website operation &amp; analytics</h2>
-        <ul class="legal-list">
-          <li><strong>Necessary cookies:</strong> Required for the self-test and secure login to function.</li>
-          <li><strong>Analytical cookies:</strong> Used to understand site traffic and improve our services. You can opt out of these via your browser settings.</li>
-        </ul>
-      </article>
+Data controller: Riktningskliniken AB trading as Rikta Coaching  
+Contact email: `info@riktacoaching.com`
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">5. INTERNATIONAL DATA TRANSFERS</div>
-        <h2>Transfers outside the UK/EEA</h2>
-        <p>We aim to process all data within the UK or the EEA. If a service provider stores data outside these zones, we ensure legal safeguards (such as Standard Contractual Clauses or UK Addendums) are in place to maintain your level of protection.</p>
-      </article>
+Rikta Coaching is registered with the Information Commissioner's Office (ICO).
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">6. DATA RETENTION</div>
-        <h2>How long we keep data</h2>
-        <ul class="legal-list">
-          <li><strong>Self-tests:</strong> Self-test results are calculated locally and are not stored by us.</li>
-          <li><strong>Contact enquiries:</strong> Kept for up to 12 months for follow-up if you do not proceed.</li>
-          <li><strong>Clinical records:</strong> If you begin a clinical relationship, records are kept for a minimum of 8–10 years in accordance with UK private healthcare guidelines.</li>
-          <li><strong>Marketing:</strong> Email subscriptions are kept until you choose to unsubscribe.</li>
-        </ul>
-      </article>
+## 2. What personal data we collect
 
-      <article class="legal-card">
-        <div class="legal-eyebrow subtle">7. YOUR RIGHTS UNDER UK GDPR</div>
-        <h2>Your rights</h2>
-        <ul class="legal-list">
-          <li><strong>Right of access:</strong> Request a copy of the personal data we hold about you.</li>
-          <li><strong>Right to rectification:</strong> Have incorrect data corrected.</li>
-          <li><strong>Right to erasure:</strong> Request deletion of data (note: clinical records are subject to statutory retention periods and may not be erasable immediately).</li>
-          <li><strong>Data portability:</strong> Receive your data in a machine-readable format.</li>
-          <li><strong>Right to complain:</strong> If you have concerns, you have the right to contact the Information Commissioner’s Office (ICO), the UK’s data protection authority.</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-{{< /rawhtml >}}
+We may collect and use:
+
+- identity and contact data, such as your name, email address, telephone number, and booking details;
+- enquiry data, such as the information you put into contact forms, booking requests, or emails;
+- service data, such as notes needed to deliver coaching, organise sessions, handle payments, or respond to complaints;
+- health-related or neurodevelopmental information that you choose to share with us;
+- data relating to a child or young person where a parent, guardian, or other authorised person contacts us or books services on their behalf;
+- technical and usage data, such as IP address, browser type, device information, referring page, pages viewed, and timestamps;
+- marketing and communications data, such as whether you opted in to receive emails from us.
+
+Some self-tests on the site are designed to run locally in the browser. Where results are calculated locally and not submitted, we do not receive or store those results unless you actively send us information through a form.
+
+## 3. Special category data
+
+Some information you share with us may be special category personal data, including health-related information.
+
+When you submit health-related information through our forms or share it with us so that we can assess whether coaching is suitable or deliver a coaching service, we process that information only where we have a valid legal basis and, where required, an additional condition for processing.
+
+For health-related information submitted through website forms, we generally rely on your explicit consent and on the fact that the processing is necessary to respond to your request and, where relevant, to take steps towards or perform a service agreement with you.
+
+If you withdraw consent for processing health-related information that is necessary for us to handle your enquiry or provide the service safely, we may not be able to continue with the enquiry or service.
+
+## 4. How we use personal data
+
+We use personal data to:
+
+- respond to enquiries and booking requests;
+- decide whether coaching is appropriate and, if so, deliver coaching services;
+- schedule sessions, send reminders, and manage client communications;
+- take payment, issue invoices, and keep financial records;
+- verify attendance, no-shows, cancellations, and package usage;
+- keep internal records, handle complaints, and protect our legal position;
+- manage safeguarding concerns, suitability issues, and service boundaries;
+- operate, improve, and secure the website;
+- understand how people use the site and measure advertising and referral performance;
+- send marketing emails where you have opted in or where we are otherwise permitted to do so.
+
+## 5. Legal bases
+
+Depending on the circumstances, we rely on one or more of the following legal bases:
+
+- contract, or steps requested before entering into a contract;
+- consent;
+- legitimate interests, including running the business, securing the site, managing enquiries, handling complaints, and understanding website performance;
+- legal obligations.
+
+## 6. Cookies, analytics, advertising, and referral tracking
+
+The site uses website and marketing technologies, including:
+
+- Google Analytics;
+- Meta Pixel;
+- Microsoft Clarity;
+- Rewardful;
+- standard hosting, security, and performance technologies.
+
+These tools may collect technical and usage data such as IP address, browser or device data, pages viewed, and referral information. We use them for analytics, ad measurement, referral tracking, fraud prevention, site performance, and service improvement.
+
+## 7. Where personal data comes from
+
+We collect personal data:
+
+- directly from you when you complete a form, book a service, email us, or otherwise contact us;
+- automatically through website logs, cookies, analytics, and similar technologies;
+- from service and booking systems used to manage enquiries and sessions;
+- in some cases, from a parent, guardian, employer, or funding body where they are arranging services on your behalf.
+
+## 8. Children and young people
+
+Where services relate to a person under 18, we may receive personal data from a parent or legal guardian and may process information needed to arrange, deliver, safeguard, and administer the service.
+
+We expect the adult arranging the service to have authority to do so and to provide information lawfully.
+
+## 9. Who we share data with
+
+We share data only where necessary.
+
+This may include:
+
+- Kaddio, which we use for contact handling, lead management, and service administration;
+- Zoho, which receives limited lead information from some website forms;
+- Google, Meta, Microsoft, and Rewardful for analytics, advertising, and referral tracking;
+- payment processors, accountants, and finance providers where needed for billing and payment administration;
+- hosting, infrastructure, and security providers that help us run the website and forms;
+- employers, Access to Work, schools, universities, parents, guardians, or other third-party payers where they fund or administer services and we need to share limited administrative information;
+- professional advisers, regulators, insurers, payment providers, or public authorities where required.
+
+We do not sell your personal data.
+
+Where a third party funds your coaching, we may share limited administrative data that is necessary for that arrangement, such as attendance, booking status, invoice details, or number of sessions used. We do not share full coaching discussions simply because a third party is paying.
+
+## 10. International transfers
+
+Some of our providers may process personal data outside the UK or EEA.
+
+Where that happens, we rely on lawful transfer mechanisms and appropriate safeguards, such as adequacy regulations, standard contractual clauses, or equivalent protections required by data protection law.
+
+## 11. How long we keep personal data
+
+We keep personal data only for as long as we need it for the purpose for which it was collected, and for as long as we need it for legal, regulatory, accounting, complaint-handling, and business record-keeping reasons.
+
+As a general guide:
+
+- enquiry and lead data may be kept for up to 24 months after the last meaningful contact;
+- marketing data is kept until you unsubscribe or ask us to stop, and may then be kept in suppression form so we do not contact you again by mistake;
+- contract, payment, and invoice records may be kept for at least 6 years;
+- coaching service records and related notes may be kept for up to 7 years after the service ends, or longer where necessary for legal claims or safeguarding reasons;
+- technical logs and analytics data are kept in line with the settings and retention periods of the relevant provider.
+
+## 12. Security
+
+We use reasonable technical and organisational measures to protect personal data against unauthorised access, misuse, loss, or disclosure.
+
+No online system is completely risk-free, but we limit access to data and use service providers and systems intended to support secure handling of information.
+
+## 13. Your rights
+
+Depending on the law that applies to you, you may have the right to:
+
+- ask for access to your personal data;
+- ask us to correct inaccurate data;
+- ask us to delete data in some cases;
+- ask us to restrict processing in some cases;
+- object to processing based on legitimate interests;
+- withdraw consent where processing is based on consent;
+- ask for a copy of certain data in a portable format;
+- complain to a supervisory authority.
+
+To exercise your rights, email `info@riktacoaching.com`.
+
+## 14. Legal claims, safeguarding, and compliance
+
+We may keep, review, and disclose personal data where reasonably necessary to:
+
+- establish, exercise, or defend legal claims;
+- investigate complaints or payment disputes;
+- respond to safeguarding or serious safety concerns;
+- comply with legal obligations, court orders, law enforcement requests, or regulatory requirements.
+
+## 15. Complaints
+
+If you are unhappy with how we handle your personal data, contact us first at `info@riktacoaching.com`.
+
+If you are in the UK, you can also complain to the Information Commissioner's Office at `ico.org.uk`.
+
+If you are in the EU or EEA, you may also have the right to complain to your local supervisory authority.
+
+## 16. Marketing
+
+If you opt in to receive marketing emails, we may send you updates, guides, offers, and other information about our services.
+
+You can unsubscribe at any time using the unsubscribe link in the email or by contacting us.
+
+## 17. Automated decision-making
+
+We do not use automated decision-making that produces legal or similarly significant effects about you through the website forms covered by this policy.
+
+## 18. Contacting us through the website
+
+Please do not send more sensitive information than is necessary in a website form.
+
+Website forms are intended for enquiries and service administration. They are not intended for emergency disclosures or urgent crisis communications.
+
+## 19. Changes to this policy
+
+We may update this Privacy Policy from time to time.
+
+The latest version will always be published on this page.

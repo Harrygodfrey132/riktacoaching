@@ -63,9 +63,6 @@
 	          <li><a href="{{ $blogPath | relLangURL }}">{{ if $isEn }}Blog{{ else }}Blogg{{ end }}</a></li>
 	          <li><a href="{{ $testsPath | relLangURL }}">{{ if $isEn }}Tests{{ else }}Tester{{ end }}</a></li>
 		          {{ if $isEn }}
-		            <li><a href="{{ "/privacy-policy/" | relLangURL }}">Privacy &amp; data protection</a></li>
-		            <li><a href="{{ "/terms-and-conditions/" | relLangURL }}">Terms and conditions</a></li>
-		            <li><a href="{{ "/statutory-complaints-process/" | relLangURL }}">Statutory Complaints Process</a></li>
 		            <li><a href="{{ $atwPath | relLangURL }}">Access to Work (ADHD &amp; Autism)</a></li>
 		            <li><a href="https://riktapsykiatri.se">Clinical ADHD &amp; Autism Assessments (Rikta Psykiatri)</a></li>
 		            <li><a href="{{ $partnersPath | relLangURL }}">Partners</a></li>
@@ -85,6 +82,14 @@
             <li><a href="{{ "/coaching/adhd/" | relLangURL }}">ADHD coaching</a></li>
             <li><a href="{{ "/coaching/autism/" | relLangURL }}">ASD coaching</a></li>
             <li><a href="{{ $executiveFunctionPath | relLangURL }}">Executive function coaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Policies</h4>
+          <ul>
+            <li><a href="{{ "/privacy-policy/" | relLangURL }}">Privacy policy</a></li>
+            <li><a href="{{ "/terms-and-conditions/" | relLangURL }}">Terms and conditions</a></li>
+            <li><a href="{{ "/statutory-complaints-process/" | relLangURL }}">Statutory complaints process</a></li>
           </ul>
         </div>
       {{ else }}

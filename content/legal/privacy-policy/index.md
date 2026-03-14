@@ -1,7 +1,7 @@
 ---
 title: "Privacy policy"
 translationKey: "privacy-policy"
-draft: false
+draft: true
 meta_title: "Privacy policy | Rikta Psychiatry"
 meta_keywords: "privacy policy, GDPR, patient data, Rikta Psychiatry, personal data"
 meta_description: "How Rikta Psychiatry handles personal data, confidentiality, and your rights under GDPR and Swedish healthcare regulations."
