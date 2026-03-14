@@ -1,13 +1,13 @@
 ---
-title: "About Rikta Psychiatry"
+title: "About Rikta Coaching"
 translationKey: "about-us"
 layout: "about"
-meta_title: "About Rikta Psychiatry | Our specialist team"
-meta_keywords: "Rikta Psychiatry team, specialist psychiatry, ADHD experts, neuropsychiatry team, private psychiatry Sweden"
-meta_description: "Meet the physicians, psychologists, and coordinators behind Rikta Psychiatry and how we deliver warm, evidence-based neuropsychiatric care."
-og_title: "The team behind Rikta Psychiatry"
-og_description: "Meet our specialist psychiatrists, psychologists, and operations leads and see how we combine medical precision with compassion."
-description: "Get to know the specialist team behind Rikta Psychiatry and how we build safe, evidence-based care."
+meta_title: "About Rikta Coaching | Our team"
+meta_keywords: "Rikta Coaching team, ADHD coach, autism coach, executive function coach, neurodiversity coaching team"
+meta_description: "Meet the coaching team behind Rikta Coaching, plus the wider clinical specialists we work alongside when clients need assessment or medical input."
+og_title: "The team behind Rikta Coaching"
+og_description: "Meet the coaches and specialist partners behind Rikta Coaching."
+description: "Get to know the team behind Rikta Coaching and the specialist support network around it."
 ---
 
 <section class="who-hero who-section">
@@ -21,14 +21,14 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </ol>
         </nav>
         <span class="eyebrow">MEET THE TEAM</span>
-        <h1>Meet the specialists behind Rikta Psychiatry</h1>
+        <h1>Meet the team behind Rikta Coaching</h1>
         <p class="lead">
-          Our team combines consultant psychiatry, licensed psychology, and practical neurodivergence expertise so you can move forward with clarity and confidence.
+          Our team combines practical ADHD and autism coaching with access to trusted clinical specialists, so clients get thoughtful day-to-day support and clear next steps when more formal assessment is needed.
         </p>
         <ul class="hero-highlights">
-          <li>Licensed specialists in psychiatry and psychology.</li>
-          <li>Experience across ADHD, autism, treatment planning, and follow-up.</li>
-          <li>Credible, evidence-based support built around real life.</li>
+          <li>Experienced ADHD and autism coaches.</li>
+          <li>Support for work, study, family life, and executive functioning.</li>
+          <li>Trusted specialist partners for assessment and follow-up when needed.</li>
         </ul>
         <div class="hero-actions">
           <a class="btn primary coral" href="/contact/">Book a consultation</a>
@@ -47,10 +47,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 <section class="team-feature who-section" id="team">
   <div class="container">
     <header class="team-feature__header">
-      <p class="eyebrow">OUR SPECIALISTS</p>
-      <h2>Experienced specialists who strengthen every assessment</h2>
+      <p class="eyebrow">CLINICAL SPECIALISTS</p>
+      <h2>Clinical expertise around the coaching team</h2>
       <p>
-        Antonio, Maria, Karen, and Emma give our clinical work the depth and credibility families, adults, and referrers expect. Their combined expertise helps us deliver careful assessments, clear recommendations, and support that holds up clinically.
+        When clients need formal assessment, psychological input, or medical clarity, we work alongside experienced clinical specialists. That wider network helps keep our support thoughtful, well-grounded, and clinically informed.
       </p>
     </header>
 
@@ -113,10 +113,10 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
 <section class="team-feature who-section" id="team-extended">
   <div class="container">
     <header class="team-feature__header">
-      <p class="eyebrow">BROADER TEAM</p>
-      <h2>Specialist-led care, supported by experienced coaches and operators</h2>
+      <p class="eyebrow">COACHING TEAM</p>
+      <h2>The people you are most likely to work with directly</h2>
       <p>
-        Alongside our core specialists, the wider Rikta team helps clients turn clinical clarity into sustainable day-to-day progress.
+        This is the core Rikta Coaching team: experienced practitioners focused on practical support, steady progress, and making work, study, and everyday life feel more manageable.
       </p>
     </header>
 
@@ -128,7 +128,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
             <li>CEO &amp; Co-Founder</li>
-            <li>Clinical Psychologist Candidate focused on data-driven psychiatric care.</li>
+            <li>Focused on practical, structured support for neurodivergent clients.</li>
           </ul>
           <div class="clinician-card__links">
             <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
@@ -143,8 +143,8 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           <h3>Jonny Baker</h3>
           <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Integrative Practitioner: 19 years supporting neurodivergent adults.</li>
-            <li>Expert Coach: Specialist in executive functioning and routines.</li>
+            <li>More than 19 years supporting neurodivergent adults.</li>
+            <li>Specialist in executive functioning, routines, and sustainable day-to-day structure.</li>
           </ul>
           <div class="clinician-card__links">
             <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
@@ -159,8 +159,8 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           <h3>Alice Stern</h3>
           <p class="clinician-card__role">ADHD and Autism Coach</p>
           <ul class="team-feature__bullets">
-            <li>Accredited ADHD Coach: MSc in Child Development.</li>
-            <li>Specialist Coach: Research-driven support for neurodivergent individuals.</li>
+            <li>Accredited ADHD coach with an MSc in Child Development.</li>
+            <li>Offers thoughtful, research-informed support for neurodivergent clients.</li>
           </ul>
           <div class="clinician-card__links">
             <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
@@ -202,7 +202,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </svg>
         </span>
         <h3>Clarity</h3>
-        <p>Evidence-based psychiatry with clear processes and follow-up.</p>
+        <p>Clear guidance, practical structure, and support that makes sense in real life.</p>
       </article>
       <article class="value-card animate-up">
         <span class="value-icon" aria-hidden="true">
@@ -220,7 +220,7 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
           </svg>
         </span>
         <h3>Safety</h3>
-        <p>Licensed specialists, structured documentation, and informed decisions.</p>
+        <p>Careful boundaries, thoughtful support, and the right specialist routes when needed.</p>
       </article>
     </div>
   </div>
@@ -230,8 +230,8 @@ description: "Get to know the specialist team behind Rikta Psychiatry and how we
   <div class="container">
     <div class="cta-content animate-up">
       <h2>Ready to take the next step?</h2>
-      <p>We guide you through every step of the process. Book an assessment call or contact us for more information.</p>
-      <a class="btn primary coral" href="/contact/">Contact Rikta Psychiatry</a>
+      <p>Tell us what support you are looking for and we will help you find the right coach or next step.</p>
+      <a class="btn primary coral" href="/contact/">Contact Rikta Coaching</a>
     </div>
   </div>
 </section>
