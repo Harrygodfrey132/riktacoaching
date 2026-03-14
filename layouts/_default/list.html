@@ -1,5 +1,11 @@
 {{ define "main" }}
-  {{ if or (eq .Section "locations") (hasPrefix .RelPermalink "/locations/") }}
+  {{ if or (eq .Params.layout "none") (eq .Layout "none") }}
+    {{ .Content }}
+  {{ else if or (eq .Params.layout "about") (eq .Layout "about") }}
+    <article class="about-page">
+      {{ .Content }}
+    </article>
+  {{ else if or (eq .Section "locations") (hasPrefix .RelPermalink "/locations/") }}
     <div class="location-page" id="top">
       {{ .Content }}
     </div>

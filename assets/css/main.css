@@ -7104,6 +7104,63 @@ nav a.cta:active{
   font-size: calc(18px * var(--rk-scale));
   color: rgba(255,255,255,.85);
 }
+
+.about-page .who-section{
+  padding: clamp(calc(56px * var(--rk-scale)), 8vw, calc(96px * var(--rk-scale))) 0;
+}
+
+.about-page .who-hero{
+  background: transparent;
+  padding-top: clamp(calc(56px * var(--rk-scale)), 8vw, calc(88px * var(--rk-scale)));
+}
+
+.about-page .hero-image{
+  box-shadow: none;
+  border: calc(1px * var(--rk-scale)) solid rgba(55,116,171,0.12);
+}
+
+.about-page .hero-image::after{
+  display: none;
+}
+
+.about-page .team-feature,
+.about-page .who-values,
+.about-page .who-cta{
+  background: #fff;
+}
+
+.about-page .team-feature{
+  padding-top: 0;
+}
+
+.about-page .value-card,
+.about-page .clinician-card,
+.about-page .timeline-card,
+.about-page .trust-card{
+  box-shadow: none;
+  border: calc(1px * var(--rk-scale)) solid rgba(55,116,171,0.12);
+}
+
+.about-page .value-card:hover,
+.about-page .clinician-card:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+.about-page .who-cta{
+  color: #111;
+  text-align: left;
+  border-top: calc(1px * var(--rk-scale)) solid rgba(55,116,171,0.12);
+}
+
+.about-page .who-cta h2{
+  color: #111;
+}
+
+.about-page .who-cta p{
+  color: rgba(0,0,0,.7);
+  max-width: calc(680px * var(--rk-scale));
+}
 .who-cta .btn{
   color: #fff;
   box-shadow: 0 calc(10px * var(--rk-scale)) calc(24px * var(--rk-scale)) rgba(0,0,0,0.25);

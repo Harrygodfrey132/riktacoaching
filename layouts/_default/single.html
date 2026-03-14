@@ -1,6 +1,10 @@
 {{ define "main" }}
   {{ if eq .Params.layout "none" }}
     {{ .Content }}
+  {{ else if eq .Params.layout "about" }}
+    <article class="about-page">
+      {{ .Content }}
+    </article>
   {{ else }}
   {{/* Use custom shell for assessment pages to preserve their native structure */}}
   {{ $path := .RelPermalink }}
