@@ -76,7 +76,7 @@ description: "Get to know the team behind Rikta Coaching and the specialist supp
           <ul class="team-feature__bullets">
             <li>CBT-based psychologist with advanced training in IBCT.</li>
             <li>Helps clients translate assessment outcomes into practical change.</li>
-            <li>Adds therapeutic depth, structure, and relational expertise to the team.</li>
+            <li>Brings warmth, structure, and strong relational insight to the wider team.</li>
           </ul>
         </div>
       </article>
@@ -89,7 +89,7 @@ description: "Get to know the team behind Rikta Coaching and the specialist supp
           <ul class="team-feature__bullets">
             <li>Licensed psychologist with specialist training and a nursing background.</li>
             <li>Strong multidisciplinary perspective across assessment and support planning.</li>
-            <li>Helps connect psychological formulation with practical clinical follow-through.</li>
+            <li>Connects careful clinical thinking with clear, practical next steps.</li>
           </ul>
         </div>
       </article>
@@ -102,7 +102,7 @@ description: "Get to know the team behind Rikta Coaching and the specialist supp
           <ul class="team-feature__bullets">
             <li>Psychodynamic foundation with ACT and existential psychology.</li>
             <li>Skilled at understanding the person behind the symptoms.</li>
-            <li>Strengthens the team with thoughtful, grounded clinical insight.</li>
+            <li>Brings thoughtful, grounded insight to complex presentations.</li>
           </ul>
         </div>
       </article>
@@ -176,7 +176,7 @@ description: "Get to know the team behind Rikta Coaching and the specialist supp
           <p class="clinician-card__role">Coaching Practitioner</p>
           <ul class="team-feature__bullets">
             <li>Clinically skilled practitioner with a background in psychology.</li>
-            <li>Practical, strengths-based support for executive functioning and emotional regulation.</li>
+            <li>Offers practical, strengths-based support for executive functioning and emotional regulation.</li>
           </ul>
           <div class="clinician-card__links">
             <a class="clinician-card__link" href="https://riktacoaching.kaddio.com/booking/cal?step=pickBookingType">Book Now</a>
