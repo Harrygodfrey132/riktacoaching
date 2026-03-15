@@ -25,7 +25,7 @@ buildFuture = true
     unsafe = true                    # allow HTML in Markdown (sections/forms)
 
 [outputs]
-  home = ["HTML","RSS","JSON"]
+  home = ["HTML","RSS","JSON","SITEMAP_EN"]
 
 [outputFormats.SITEMAP_EN]
   mediaType = "application/xml"
