@@ -182,6 +182,15 @@ function resolveSubmissionLocale(normalized) {
   return '';
 }
 
+function resolveZohoLeadInput(normalized) {
+  const explicitLeadSource = normalized && normalized.leadSource ? coerceString(normalized.leadSource) : '';
+  if (explicitLeadSource) return explicitLeadSource;
+
+  const locale = resolveSubmissionLocale(normalized);
+  if (locale.startsWith('en')) return 'Website - English Side';
+  return 'Website - Swedish Side';
+}
+
 function selectKaddioEnv(normalized, env) {
   const locale = resolveSubmissionLocale(normalized);
   const useSweden = locale ? !locale.startsWith('en') : true;
@@ -392,7 +401,7 @@ function normalizeInput(body) {
   const lastFallback = lastNameInput || nameSuffix || 'N/A';
   const firstname = first || firstNameInput || 'N/A';
   const lastname = rest.join(' ') || lastFallback;
-  const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Lead input Website - English side');
+  const leadSource = coerceString(body.leadSource || body['Lead Source']);
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
   const path = coerceString(metadata.path);
   const formContext = coerceString(metadata.formContext);
@@ -646,6 +655,8 @@ function buildZohoParams(normalized) {
   params.set('First Name', normalized.firstname || '');
   params.set('Last Name', normalized.lastname || '');
   params.set('Email', normalized.email || '');
+  params.set('Lead Source', 'Website');
+  params.set('LEADCF2', resolveZohoLeadInput(normalized));
   return params;
 }
 
