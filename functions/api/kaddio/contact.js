@@ -57,11 +57,11 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 
 const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
 const ZOHO_WEBTOLEAD_FIELDS = {
-  xnQsjsdp: 'fd28655d146975d2aa0afe4be1e837490b74bd86670e415c1fbd1db2ca1ee9c3',
+  xnQsjsdp: '7c7a4f5a7fdccb066ec268787d3b152ba068794e945ce8df98bbf0750ce38ec8',
   zc_gad: '',
-  xmIwtLD: 'fdc584738800610bea5facb3757dea684c5df902d73ceb78d6df3492192a2d6839c8a59ba489c3762746fdcd6bd54aa5',
+  xmIwtLD: '98d67763b4ce593d7745acea2ba713fe107bb862a9c8a419edf14aa2c23119cebc83e6ebab7f11cd7813c1a8e0f8c970',
   actionType: 'TGVhZHM=',
-  returnURL: 'https://riktapsykiatri.se/tack/',
+  returnURL: 'https://riktacoaching.com/thank-you/',
   aG9uZXlwb3Q: ''
 };
 
