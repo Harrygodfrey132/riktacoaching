@@ -392,7 +392,7 @@ function normalizeInput(body) {
   const lastFallback = lastNameInput || nameSuffix || 'N/A';
   const firstname = first || firstNameInput || 'N/A';
   const lastname = rest.join(' ') || lastFallback;
-  const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Website form');
+  const leadSource = coerceString(body.leadSource || body['Lead Source'] || 'Lead input Website - English side');
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
   const path = coerceString(metadata.path);
   const formContext = coerceString(metadata.formContext);
