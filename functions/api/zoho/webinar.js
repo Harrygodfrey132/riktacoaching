@@ -1,4 +1,5 @@
 const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
+const ZOHO_WEBSITE_LEAD_INPUT = 'Website - English Side';
 const THANK_YOU_PATH = '/tack/';
 const THANK_YOU_URL = 'https://riktapsykiatri.se/tack/';
 const RETRYABLE_STATUS = new Set([408, 429, 500, 502, 503, 504]);
@@ -30,6 +31,9 @@ export async function onRequest({ request }) {
   if (!params.get('returnURL')) {
     params.set('returnURL', THANK_YOU_URL);
   }
+
+  // Keep Zoho Lead Input consistent for website-origin webinar submissions too.
+  params.set('LEADCF2', ZOHO_WEBSITE_LEAD_INPUT);
 
   if (!params.get('Last Name')) {
     params.set('Last Name', 'Webbinarium');

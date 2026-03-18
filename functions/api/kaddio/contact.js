@@ -56,6 +56,7 @@ mutation UpdateUser($userId: ID!, $customProperties: [CustomFieldValueInput]) {
 `;
 
 const ZOHO_WEBTOLEAD_ENDPOINT = 'https://crm.zoho.eu/crm/WebToLeadForm';
+const ZOHO_WEBSITE_LEAD_INPUT = 'Website - English Side';
 const ZOHO_WEBTOLEAD_FIELDS = {
   xnQsjsdp: '7c7a4f5a7fdccb066ec268787d3b152ba068794e945ce8df98bbf0750ce38ec8',
   zc_gad: '',
@@ -183,12 +184,8 @@ function resolveSubmissionLocale(normalized) {
 }
 
 function resolveZohoLeadInput(normalized) {
-  const explicitLeadSource = normalized && normalized.leadSource ? coerceString(normalized.leadSource) : '';
-  if (explicitLeadSource) return explicitLeadSource;
-
-  const locale = resolveSubmissionLocale(normalized);
-  if (locale.startsWith('en')) return 'Website - English Side';
-  return 'Website - Swedish Side';
+  // Business rule: all website-origin forms must land in Zoho as "Website - English Side".
+  return ZOHO_WEBSITE_LEAD_INPUT;
 }
 
 function selectKaddioEnv(normalized, env) {
