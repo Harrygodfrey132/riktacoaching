@@ -62,6 +62,7 @@
   <p class="contact-form__note">Vi återkommer oftast samma eller nästkommande vardag.</p>
   <script>
     (function () {
+      const WEBSITE_LEAD_INPUT = 'Website - English Side';
       const form = document.getElementById('{{ $formID }}');
       if (!form || form.dataset.kaddioInlineBound) return;
       form.dataset.kaddioInlineBound = 'true';
@@ -75,11 +76,26 @@
         statusEl.hidden = !message;
       }
 
+      function forceWebsiteLeadInput() {
+        ['leadSource', 'LEADCF2'].forEach(function (name) {
+          let input = form.querySelector('input[name="' + name + '"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = name;
+            form.prepend(input);
+          }
+          input.value = WEBSITE_LEAD_INPUT;
+        });
+        return WEBSITE_LEAD_INPUT;
+      }
+
       form.addEventListener('submit', async function (event) {
         event.preventDefault();
         if (thankYou) thankYou.hidden = true;
         setStatus('Skickar...', 'info');
 
+        const websiteLeadInput = forceWebsiteLeadInput();
         const formData = new FormData(form);
         const fullName = String(formData.get('fullName') || '').trim();
         const email = String(formData.get('email') || '').trim();
@@ -94,7 +110,8 @@
           fullName: fullName || 'Ej angivet',
           email: email || fallbackEmail,
           description: description || fallbackDescription,
-          LEADCF2: String(formData.get('LEADCF2') || '').trim() || undefined,
+          leadSource: websiteLeadInput,
+          LEADCF2: websiteLeadInput,
           metadata: {
             path: window.location.pathname,
             formContext: form.dataset.formContext || 'location-medication-lite-sv',

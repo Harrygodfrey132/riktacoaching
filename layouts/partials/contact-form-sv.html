@@ -86,6 +86,7 @@
   <script>
     // Inline fallback to ensure the kontaktformulär always posts and shows feedback.
     (function(){
+      const WEBSITE_LEAD_INPUT = 'Website - English Side';
       const form = document.getElementById('kaddio-contact-form');
       if (!form || form.dataset.kaddioInlineBound) return;
       form.dataset.kaddioInlineBound = 'true';
@@ -106,6 +107,20 @@
 
       function squashText(value){
         return String(value || '').replace(/\s+/g, ' ').trim();
+      }
+
+      function forceWebsiteLeadInput(){
+        ['leadSource', 'LEADCF2'].forEach(function(name){
+          let input = form.querySelector('input[name="' + name + '"]');
+          if (!input) {
+            input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = name;
+            form.prepend(input);
+          }
+          input.value = WEBSITE_LEAD_INPUT;
+        });
+        return WEBSITE_LEAD_INPUT;
       }
 
       function buildPolicyConsent({ formContext } = {}){
@@ -142,6 +157,7 @@
         if (thankYou) thankYou.hidden = true;
         setStatus(form.dataset.sendingMessage || 'Skickar...', 'info');
 
+        const websiteLeadInput = forceWebsiteLeadInput();
         const data = new FormData(form);
         const fullName = (data.get('fullName') || [data.get('firstName'), data.get('lastName')].filter(Boolean).join(' ') || '').trim();
         const email = (data.get('email') || data.get('Email') || '').trim();
@@ -152,8 +168,8 @@
           fullName,
           email,
           description: rawDescription,
-          leadSource: (data.get('leadSource') || '').trim(),
-          LEADCF2: (data.get('LEADCF2') || '').trim(),
+          leadSource: websiteLeadInput,
+          LEADCF2: websiteLeadInput,
           metadata: {
             path: window.location.pathname,
             formContext,

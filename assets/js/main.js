@@ -5,6 +5,7 @@
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
   const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
   const IS_EN = true;
+  const WEBSITE_LEAD_INPUT = 'Website - English Side';
   let guidesModal = null;
 
   function resolveLocale(form){
@@ -716,6 +717,16 @@
   }
 
   function buildContactPayload(form){
+    ['leadSource', 'LEADCF2'].forEach((name) => {
+      let input = form.querySelector(`input[name="${name}"]`);
+      if (!input) {
+        input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        form.prepend(input);
+      }
+      input.value = WEBSITE_LEAD_INPUT;
+    });
     const formData = new FormData(form);
     const firstName = (formData.get('firstName') || '').trim();
     const lastName = (formData.get('lastName') || '').trim();
@@ -744,8 +755,6 @@
       || formData.get('message')
       || ''
     ).trim();
-    const leadSource = (formData.get('leadSource') || '').trim();
-    const leadInput = (formData.get('LEADCF2') || '').trim();
     const ratingRaw = formData.get('rating');
     const locale = resolveLocale(form);
     const hasNewsletterOptIn = formData.get('newsletterOptIn') !== null;
@@ -775,8 +784,8 @@
       fullName,
       email,
       description,
-      leadSource: leadSource || undefined,
-      LEADCF2: leadInput || undefined,
+      leadSource: WEBSITE_LEAD_INPUT,
+      LEADCF2: WEBSITE_LEAD_INPUT,
       metadata: baseMetadata
     };
     if (ratingRaw !== null && ratingRaw !== '') {

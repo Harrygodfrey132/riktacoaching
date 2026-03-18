@@ -3,6 +3,7 @@
   const DURATION_MS = 1200;           // << make this bigger for slower scroll
   const HEADER = document.querySelector('header.site-header');
   const OFFSET = HEADER ? HEADER.offsetHeight : 72;
+  const WEBSITE_LEAD_INPUT = 'Website - English Side';
   const DOC_LANG = ((document.documentElement && document.documentElement.lang) || '').toLowerCase();
   const IS_EN = true;
 
@@ -349,6 +350,16 @@ function initScreeningForm({
   }
 
   function buildContactPayload(form){
+    ['leadSource', 'LEADCF2'].forEach((name) => {
+      let input = form.querySelector(`input[name="${name}"]`);
+      if (!input) {
+        input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = name;
+        form.prepend(input);
+      }
+      input.value = WEBSITE_LEAD_INPUT;
+    });
     const formData = new FormData(form);
     const firstName = (formData.get('firstName') || '').trim();
     const lastName = (formData.get('lastName') || '').trim();
@@ -357,8 +368,6 @@ function initScreeningForm({
     // Accept both "email" and legacy "Email" field names to avoid missed submissions.
     const email = (formData.get('email') || formData.get('Email') || '').trim();
     const description = (formData.get('description') || formData.get('message') || '').trim();
-    const leadSource = (formData.get('leadSource') || '').trim();
-    const leadInput = (formData.get('LEADCF2') || '').trim();
     const ratingRaw = formData.get('rating');
     const baseMetadata = {
       path: window.location.pathname,
@@ -369,8 +378,8 @@ function initScreeningForm({
       fullName,
       email,
       description,
-      leadSource: leadSource || undefined,
-      LEADCF2: leadInput || undefined,
+      leadSource: WEBSITE_LEAD_INPUT,
+      LEADCF2: WEBSITE_LEAD_INPUT,
       metadata: baseMetadata
     };
     if (ratingRaw !== null && ratingRaw !== '') {
