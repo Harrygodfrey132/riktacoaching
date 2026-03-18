@@ -94,6 +94,7 @@
           fullName: fullName || 'Ej angivet',
           email: email || fallbackEmail,
           description: description || fallbackDescription,
+          LEADCF2: String(formData.get('LEADCF2') || '').trim() || undefined,
           metadata: {
             path: window.location.pathname,
             formContext: form.dataset.formContext || 'location-medication-lite-sv',

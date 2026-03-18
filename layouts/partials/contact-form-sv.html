@@ -153,6 +153,7 @@
           email,
           description: rawDescription,
           leadSource: (data.get('leadSource') || '').trim(),
+          LEADCF2: (data.get('LEADCF2') || '').trim(),
           metadata: {
             path: window.location.pathname,
             formContext,

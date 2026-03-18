@@ -184,6 +184,9 @@ function resolveSubmissionLocale(normalized) {
 }
 
 function resolveZohoLeadInput(normalized) {
+  const explicitLeadInput = normalized && normalized.leadInput ? coerceString(normalized.leadInput) : '';
+  if (explicitLeadInput) return explicitLeadInput;
+
   // Business rule: all website-origin forms must land in Zoho as "Website - English Side".
   return ZOHO_WEBSITE_LEAD_INPUT;
 }
@@ -399,6 +402,7 @@ function normalizeInput(body) {
   const firstname = first || firstNameInput || 'N/A';
   const lastname = rest.join(' ') || lastFallback;
   const leadSource = coerceString(body.leadSource || body['Lead Source']);
+  const leadInput = coerceString(body.LEADCF2 || body.leadInput || body['Lead Input']);
   const metadata = body.metadata && typeof body.metadata === 'object' ? body.metadata : {};
   const path = coerceString(metadata.path);
   const formContext = coerceString(metadata.formContext);
@@ -420,6 +424,7 @@ function normalizeInput(body) {
     email,
     description,
     leadSource,
+    leadInput,
     note: metaNote,
     hasScreening: Boolean(screening),
     meta: {

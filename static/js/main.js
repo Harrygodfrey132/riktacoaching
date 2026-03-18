@@ -358,6 +358,7 @@ function initScreeningForm({
     const email = (formData.get('email') || formData.get('Email') || '').trim();
     const description = (formData.get('description') || formData.get('message') || '').trim();
     const leadSource = (formData.get('leadSource') || '').trim();
+    const leadInput = (formData.get('LEADCF2') || '').trim();
     const ratingRaw = formData.get('rating');
     const baseMetadata = {
       path: window.location.pathname,
@@ -369,6 +370,7 @@ function initScreeningForm({
       email,
       description,
       leadSource: leadSource || undefined,
+      LEADCF2: leadInput || undefined,
       metadata: baseMetadata
     };
     if (ratingRaw !== null && ratingRaw !== '') {

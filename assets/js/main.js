@@ -745,6 +745,7 @@
       || ''
     ).trim();
     const leadSource = (formData.get('leadSource') || '').trim();
+    const leadInput = (formData.get('LEADCF2') || '').trim();
     const ratingRaw = formData.get('rating');
     const locale = resolveLocale(form);
     const hasNewsletterOptIn = formData.get('newsletterOptIn') !== null;
@@ -775,6 +776,7 @@
       email,
       description,
       leadSource: leadSource || undefined,
+      LEADCF2: leadInput || undefined,
       metadata: baseMetadata
     };
     if (ratingRaw !== null && ratingRaw !== '') {
