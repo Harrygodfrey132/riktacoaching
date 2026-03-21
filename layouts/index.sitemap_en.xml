@@ -8,11 +8,7 @@
     <loc>{{ $enHomeURL }}</loc>
   </url>
   {{- range $allPages }}
-    {{- $sitemapDisabled := false -}}
-    {{- with .Params.sitemap -}}
-      {{- $sitemapDisabled = (index . "disable") | default false -}}
-    {{- end -}}
-    {{- if and (hasPrefix .RelPermalink "/") (not $sitemapDisabled) (not .Params.noindex) }}
+    {{- if and (hasPrefix .RelPermalink "/") (not .Params.noindex) }}
       {{- $url := partial "seo-url.html" (dict "page" .) -}}
       {{- if not ($seen.Get $url) -}}
         {{- $seen.Set $url true -}}
