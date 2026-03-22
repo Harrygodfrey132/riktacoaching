@@ -1,12 +1,22 @@
-{{- $sectionID := default "contact-form" .sectionID -}}
-{{- $formContext := default "contact-page-en" .formContext -}}
-{{- $successMessage := default "Thank you! We’ll get back to you as soon as possible." .successMessage -}}
-{{- $title := default "Contact us" .title -}}
-{{- $intro := default "Fill out the form and our coordinators will suggest times and a format that suit you." .intro -}}
-{{- $followup := default "We typically respond within 1-2 business days." .followup -}}
+{{- $sectionID := "contact-form" -}}
+{{- if isset . "sectionID" }}{{ $sectionID = .sectionID }}{{ end -}}
+{{- $formContext := "contact-page-en" -}}
+{{- if isset . "formContext" }}{{ $formContext = .formContext }}{{ end -}}
+{{- $successMessage := "Thank you! We’ll get back to you as soon as possible." -}}
+{{- if isset . "successMessage" }}{{ $successMessage = .successMessage }}{{ end -}}
+{{- $title := "Contact us" -}}
+{{- if isset . "title" }}{{ $title = .title }}{{ end -}}
+{{- $intro := "Fill out the form and our coordinators will suggest times and a format that suit you." -}}
+{{- if isset . "intro" }}{{ $intro = .intro }}{{ end -}}
+{{- $followup := "We typically respond within 1-2 business days." -}}
+{{- if isset . "followup" }}{{ $followup = .followup }}{{ end -}}
 <section id="{{ $sectionID }}" class="contact-form">
-  <h2>{{ $title }}</h2>
-  <p>{{ $intro }}</p>
+  {{- with $title }}
+    <h2>{{ . }}</h2>
+  {{- end }}
+  {{- with $intro }}
+    <p>{{ . }}</p>
+  {{- end }}
   <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta http-equiv='content-type' content='text/html;charset=UTF-8'>
@@ -82,7 +92,9 @@
       <p class='contact-form__note form-status' data-form-status aria-live='polite' hidden></p>
     </form>
   </div>
-  <p class="contact-form__note">{{ $followup }}</p>
+  {{- with $followup }}
+    <p class="contact-form__note">{{ . }}</p>
+  {{- end }}
   <script>
     // Inline fallback to ensure the contact form submits and shows a thank-you.
     (function(){
