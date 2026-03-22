@@ -14,21 +14,24 @@ description: "We collaborate with organisations that share our commitment to evi
 <section aria-label="Partners">
   <div class="cards partners-cards">
     <article class="card">
+      <h3>Rikta Psykiatri</h3>
+      <p class="muted"><a href="https://riktapsykiatri.se" target="_blank" rel="noopener">riktapsykiatri.se</a></p>
+      <p>Clinical ADHD and autism assessments in Sweden, with digital support nationwide and in-person visits in Stockholm.</p>
+    </article>
+    <article class="card">
+      <h3>Swedish ADHD Assessment Support</h3>
+      <p class="muted"><a href="/adhd-assessment/">riktacoaching.com/adhd-assessment/</a></p>
+      <p>Specialist-led ADHD assessment pathways for adults, women, children, and teenagers who need structured next steps.</p>
+    </article>
+    <article class="card">
+      <h3>Swedish ADHD Coaching Support</h3>
+      <p class="muted"><a href="/coaching/adhd/">riktacoaching.com/coaching/adhd/</a></p>
+      <p>Practical ADHD coaching with structured support for everyday life, study, work, and emotional regulation.</p>
+    </article>
+    <article class="card">
       <h3>The Degree Gap</h3>
       <p class="muted"><a href="https://thedegreegap.com" target="_blank" rel="noopener">thedegreegap.com</a></p>
       <p>Providing professional tutoring support from Year 7 to 13.</p>
-    </article>
-    <article class="card">
-      <h3>Partner slot available</h3>
-      <p class="muted">Coming soon</p>
-      <p>We are building a trusted network of organisations that support neurodivergent people.</p>
-      <a class="text-cta" href="/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
-    </article>
-    <article class="card">
-      <h3>Partner slot available</h3>
-      <p class="muted">Coming soon</p>
-      <p>Share your mission with us and explore a collaboration.</p>
-      <a class="text-cta" href="/contact/">Contact us <span aria-hidden="true">&rarr;</span></a>
     </article>
   </div>
 </section>
