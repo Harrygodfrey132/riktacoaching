@@ -288,7 +288,7 @@ type: coachning
     <p>Tell us what you are struggling with, and we will match you with the right coach and format.</p>
     <div class="coachning-cta-band__actions">
       <a class="btn primary" href="/contact/#contactform">Book a free consultation</a>
-      <a class="btn secondary on-dark" data-email-user="info" data-email-domain="riktacoaching.com" data-email-preserve-text="true">Contact us</a>
+      <span class="btn secondary on-dark">info@riktacoaching.com</span>
     </div>
   </div>
 </section>

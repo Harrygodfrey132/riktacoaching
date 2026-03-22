@@ -30,7 +30,7 @@ summary: "How to lodge a statutory data complaint and the internal steps we foll
           <h3>To lodge a formal complaint</h3>
           <ul class="legal-checklist">
             <li>
-              Email: <a href="mailto:info@riktacoaching.com">info@riktacoaching.com</a>
+              Email: info@riktacoaching.com
             </li>
             <li>
               Subject line: <strong>Statutory Data Complaint - Rikta Coaching</strong>
@@ -60,7 +60,7 @@ summary: "How to lodge a statutory data complaint and the internal steps we foll
         <div class="legal-eyebrow subtle">2. HOW TO LODGE</div>
         <h2>How to Lodge a Complaint</h2>
         <p>
-          All data-related complaints must be submitted via email to: <a href="mailto:info@riktacoaching.com">info@riktacoaching.com</a>
+          All data-related complaints must be submitted via email to: info@riktacoaching.com
         </p>
         <p>To help us investigate, your email should include:</p>
         <ul class="legal-list">

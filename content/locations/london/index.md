@@ -143,7 +143,7 @@ url: "/locations/london-adhd-asd-coaching/"
       <p>Tell us a bit about your London routine and we will match you with the right coach.</p>
       <div class="hero-actions">
         <a class="btn primary" href="/contact/">Book an intro call</a>
-        <a class="btn link" data-email-user="info" data-email-domain="riktapsykiatri.se">info [at] riktapsykiatri.se</a>
+        <span class="btn link">info@riktacoaching.com</span>
       </div>
     </div>
   </div>

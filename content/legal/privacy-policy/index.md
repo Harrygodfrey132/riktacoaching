@@ -16,7 +16,7 @@ Rikta Psychiatry (Riktningskliniken AB) respects your privacy and handles person
 ## Who is responsible for your data
 Riktningskliniken AB is the data controller for personal data processed through our website and services.
 
-If you have questions about privacy, contact us at `info@riktapsykiatri.se`.
+If you have questions about privacy, contact us at `info@riktacoaching.com`.
 
 ## What data we collect
 We may collect and process:
@@ -58,7 +58,7 @@ Under GDPR, you may have the right to:
 - Object to certain processing or request restriction.
 - Request data portability where applicable.
 
-You can exercise these rights by contacting us at `info@riktapsykiatri.se`.
+You can exercise these rights by contacting us at `info@riktacoaching.com`.
 
 ## Complaints
 If you have concerns about how we handle personal data, you can contact us first. You may also file a complaint with the Swedish Authority for Privacy Protection (IMY).

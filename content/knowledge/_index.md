@@ -9,6 +9,27 @@ meta_description: "Collected knowledge on ADHD, autism, and neurodiversity suppo
 summary: "Guides, articles, and tools to help you understand neurodivergent conditions."
 ---
 
+<section class="knowledge-intro">
+  <div class="container">
+    <h1>Knowledge and guides for real life</h1>
+    <p>
+      This section brings together practical, plain-English information on ADHD, autism, and neurodivergent daily life. It is designed for adults,
+      teenagers, parents, partners, and professionals who want something more useful than vague awareness content. The aim is not just to define terms,
+      but to help you understand how these patterns show up in work, study, relationships, routines, overwhelm, and recovery.
+    </p>
+    <p>
+      Some people arrive here because they are exploring whether ADHD or autism might explain what they have been experiencing for years. Others already
+      have a diagnosis and want better tools, clearer language, and more realistic next steps. Many are supporting someone they care about and want to
+      understand what actually helps. This library is built for all of those situations.
+    </p>
+    <p>
+      You will find long-form guides, shorter articles, strategy-focused pieces, and coaching-informed explanations that connect clinical ideas with
+      everyday functioning. We focus on material that is useful in practice: what to look for, how to think about it, what tends to make things worse,
+      and what often helps people move forward.
+    </p>
+  </div>
+</section>
+
 <section class="news-section">
   <div class="container">
     <div class="news-heading">
@@ -44,5 +65,26 @@ summary: "Guides, articles, and tools to help you understand neurodivergent cond
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="knowledge-intro">
+  <div class="container">
+    <h2>How to use this page</h2>
+    <p>
+      If you want a broad starting point, begin with one of the main guides above. They are designed to give you an overview before you dive into more
+      specific topics. If you already know the area you care about, browse the article archive below for focused pieces on procrastination, burnout,
+      masking, emotional regulation, executive functioning, work adjustments, school stress, and relationships.
+    </p>
+    <p>
+      Our perspective is practical and coaching-informed. That means we are interested in what helps people function better over time, not only in listing
+      symptoms. You will see repeated themes throughout the library: structure, pacing, self-understanding, communication, energy management, and building
+      systems that suit the person rather than forcing the person to fit a system that keeps failing them.
+    </p>
+    <p>
+      If you are looking for individual support after reading, the guides can also help you identify what kind of help to ask for. Some people need
+      diagnostic clarification. Others need coaching, workplace support, or a way to rebuild after burnout. Understanding the pattern is often the first
+      step toward choosing the right support.
+    </p>
   </div>
 </section>

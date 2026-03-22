@@ -20,11 +20,11 @@ meta_description: "Thanks for booking a call with Rikta Psychiatry. Reach us by 
         <p class="lead">We're looking forward to meeting you and supporting you on your journey.</p>
         <p>
           If you have any issues or need to make changes, please email us at
-          <a href="mailto:info@riktapsykiatri.se">info@riktapsykiatri.se</a>.
+          info@riktacoaching.com.
           We'll respond as soon as we can.
         </p>
         <div class="actions">
-          <a class="btn secondary" href="mailto:info@riktapsykiatri.se">Email us</a>
+          <span class="btn secondary">info@riktacoaching.com</span>
           <a class="btn link" href="/">Back to home</a>
         </div>
       </div>
