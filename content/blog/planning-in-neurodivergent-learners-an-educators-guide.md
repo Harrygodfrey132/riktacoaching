@@ -13,11 +13,6 @@ hero_alt: "Students working in a classroom with books and notebooks"
 draft: false
 ---
 
-You are correct to question that term; the accurate terminology used in the sources is a **"spiky profile"**. This refers to the uneven distribution of significant strengths alongside significant difficulties, which is a hallmark of the neurodivergent experience. While the word "sticky" appears in the sources, it is used to describe the goal of making coping strategies "stick" so that they are reliably implemented at the "point of performance".
-
-The following report is a formal, comprehensive guide for educators designed to provide a deep understanding of these planning challenges and a technical toolkit for classroom intervention.
-
-## The Architecture of Performance: A Formal Educator’s Guide to Supporting Planning in Neurodivergent Learners
 
 ### I. The Foundational Paradigm: Performance vs. Knowledge Deficits
 
