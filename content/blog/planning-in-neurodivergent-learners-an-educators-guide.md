@@ -16,9 +16,9 @@ draft: false
 
 ### I. The Foundational Paradigm: Performance vs. Knowledge Deficits
 
-In the context of the classroom, planning is often viewed through a moral lens, where a student’s failure to organize is attributed to a lack of effort or discipline. However, modern neurobiological research clarifies that Attention-Deficit/Hyperactivity Disorder (ADHD) and related neurodivergent traits represent a **performance deficit**, not a knowledge deficit. These students frequently possess a comprehensive understanding of *what* needs to be done; the biological impairment lies in the mechanism of **self-regulation**, which prevents them from turning those intentions into reliable action.
+In the context of the classroom, planning can sometimes be interpreted through a behavioural lens, where a student’s difficulties with organization are attributed to a lack of effort or discipline. However, modern neurobiological research clarifies that Attention-Deficit/Hyperactivity Disorder (ADHD) and related neurodivergent traits represent a **performance deficit**, not a knowledge deficit. These students frequently possess a comprehensive understanding of *what* needs to be done; the biological impairment lies in the mechanism of **self-regulation**, which prevents them from turning those intentions into reliable action.
 
-For the neurodivergent learner, the "internal management system" known as **Executive Function (EF)** is often overloaded or develops at a different rate than their neurotypical peers. This results in a **"spiky profile"** where a student may demonstrate "post-high school" levels of reading comprehension while simultaneously struggling to meet the most basic expectations of time management and organizational follow-through.
+For the neurodivergent learner, the "internal management system" known as **Executive Function (EF)** is often overloaded or develops at a different rate than their neurotypical peers. This results in a **"spiky profile"** where a student may demonstrate "post-high school" levels of reading comprehension while simultaneously struggling to meet everyday expectations of time management and organizational follow-through.
 
 ### II. The Biological Mechanics of Planning Failure
 
@@ -60,13 +60,13 @@ Because these learners struggle with "free recall" (spontaneously remembering wh
 
 The classroom environment should act as a "stabilizer" for thinking and behavior.
 
-- **Low-Fear, High-Trust Atmospheres:** Fear and shame are significant learning disabilities. Shaming a student for lack of organization only reinforces "maladaptive schema": core beliefs that they are "failures" or "defective".
+- **Low-Fear, High-Trust Atmospheres:** High levels of fear or shame can significantly interfere with learning. Shaming a student for difficulties with organization can reinforce "maladaptive schema": core beliefs that they are "failures" or "defective".
 - **Body Doubling:** This technique involves a student working while another person (an "active body double") is simply present in the room. The low-key social pressure helps the neurodivergent brain stay anchored to the task without the need for direct intervention.
 - **Stimulus Control:** Assist students in identifying "allergies": distractions like phones or open windows and removing them from the work station.
 
 ### VI. The Educator as "Coach B"
 
-When a student fails to follow a plan, the traditional response is often "Coach A" feedback: berating them for missing "obvious" steps. Instead, educators should adopt the **"Coach B"** model:
+When a student fails to follow a plan, the traditional response is often "Coach A" feedback: focusing on missed "obvious" steps without addressing underlying barriers. Instead, educators should adopt the **"Coach B"** model:
 
 - Acknowledge the effort, even if the outcome was flawed.
 - Provide rational, behavioral feedback to problem-solve the specific barrier.
