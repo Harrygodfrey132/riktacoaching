@@ -25,6 +25,16 @@
     >
       <input type="hidden" name="leadSource" value="Website - English Side">
       <input type="hidden" name="LEADCF2" value="Website - English Side">
+      {{- /* Honeypot: dold för riktiga användare, botar fyller i den */}}
+      <div class="zcwf_row" aria-hidden="true" style="display:none!important;position:absolute;left:-9999px;">
+        <input type="text" name="website" tabindex="-1" autocomplete="off" value="">
+      </div>
+      {{- /* Cloudflare Turnstile widget */}}
+      {{- with site.Params.cf_turnstile_site_key }}
+      <div class="zcwf_row form-row form-row--turnstile">
+        <div class="cf-turnstile" data-sitekey="{{ . }}"></div>
+      </div>
+      {{- end }}
       <div class="zcwf_row form-row">
         <div class="zcwf_col_lab">
           <label for="{{ $fieldPrefix }}-full-name">Namn</label>
@@ -60,6 +70,9 @@
     </form>
   </div>
   <p class="contact-form__note">Vi återkommer oftast samma eller nästkommande vardag.</p>
+  {{- with site.Params.cf_turnstile_site_key }}
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  {{- end }}
   <script>
     (function () {
       const WEBSITE_LEAD_INPUT = 'Website - English Side';
@@ -106,12 +119,14 @@
           : 'Kontaktförfrågan om ADHD-medicinering.';
         const fallbackEmail = `saknas+${Date.now()}@riktapsykiatri.se`;
 
+        const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
         const payload = {
           fullName: fullName || 'Ej angivet',
           email: email || fallbackEmail,
           description: description || fallbackDescription,
           leadSource: websiteLeadInput,
           LEADCF2: websiteLeadInput,
+          cfTurnstileToken: turnstileInput ? turnstileInput.value : undefined,
           metadata: {
             path: window.location.pathname,
             formContext: form.dataset.formContext || 'location-medication-lite-sv',

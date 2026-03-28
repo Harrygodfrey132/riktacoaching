@@ -96,6 +96,24 @@ export async function onRequest(context) {
       return withCors(json({ error: parsed.error }, 400));
     }
 
+    // Honeypot: bots fill hidden fields that real users never see
+    const honeypot = (parsed.data || {}).website;
+    if (honeypot) {
+      // Silently accept so bots don't know they were blocked
+      return withCors(json({ ok: true }));
+    }
+
+    // Cloudflare Turnstile verification (skip if secret not configured)
+    const turnstileSecret = env.CF_TURNSTILE_SECRET;
+    if (turnstileSecret) {
+      const turnstileToken = (parsed.data || {}).cfTurnstileToken;
+      const ip = request.headers.get('CF-Connecting-IP') || undefined;
+      const valid = await verifyTurnstile(turnstileToken, turnstileSecret, ip);
+      if (!valid) {
+        return withCors(json({ error: 'Security check failed. Please refresh and try again.' }, 400));
+      }
+    }
+
     const receivedAt = new Date().toISOString();
     const incoming = parsed.data || {};
     if (!incoming.metadata || typeof incoming.metadata !== 'object') {
@@ -202,6 +220,22 @@ function selectKaddioEnv(normalized, env) {
     KADDIO_API_TOKEN: env.KADDIO_API_TOKEN_SWEDEN || env.KADDIO_API_TOKEN,
     KADDIO_IMPERSONATION_ID: env.KADDIO_IMPERSONATION_ID_SWEDEN || env.KADDIO_IMPERSONATION_ID
   };
+}
+
+async function verifyTurnstile(token, secret, ip) {
+  if (!token) return false;
+  try {
+    const body = new URLSearchParams({ secret, response: token });
+    if (ip) body.set('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      body
+    });
+    const data = await res.json();
+    return data.success === true;
+  } catch (_err) {
+    return false;
+  }
 }
 
 function json(body, status = 200) {

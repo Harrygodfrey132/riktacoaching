@@ -21,6 +21,16 @@
       accept-charset='UTF-8'>
       <input type='hidden' name='leadSource' value='Website - English Side'>
       <input type='hidden' name='LEADCF2' value='Website - English Side'>
+      {{- /* Honeypot: dold för riktiga användare, botar fyller i den */}}
+      <div class='zcwf_row' aria-hidden='true' style='display:none!important;position:absolute;left:-9999px;'>
+        <input type='text' name='website' tabindex='-1' autocomplete='off' value=''>
+      </div>
+      {{- /* Cloudflare Turnstile widget */}}
+      {{- with site.Params.cf_turnstile_site_key }}
+      <div class='zcwf_row form-row form-row--turnstile'>
+        <div class='cf-turnstile' data-sitekey='{{ . }}'></div>
+      </div>
+      {{- end }}
       <div class='zcwf_row form-row'>
         <div class='zcwf_col_lab'>
           <label for='contact-first-name'>Förnamn <span style='color:red;'>*</span></label>
@@ -83,6 +93,9 @@
     </form>
   </div>
   <p class="contact-form__note">Vi återkommer oftast samma eller nästkommande vardag.</p>
+  {{- with site.Params.cf_turnstile_site_key }}
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+  {{- end }}
   <script>
     // Inline fallback to ensure the kontaktformulär always posts and shows feedback.
     (function(){
@@ -164,12 +177,14 @@
         const rawDescription = (data.get('description') || data.get('message') || '').trim();
         const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
         const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+        const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
         const payload = {
           fullName,
           email,
           description: rawDescription,
           leadSource: websiteLeadInput,
           LEADCF2: websiteLeadInput,
+          cfTurnstileToken: turnstileInput ? turnstileInput.value : undefined,
           metadata: {
             path: window.location.pathname,
             formContext,
