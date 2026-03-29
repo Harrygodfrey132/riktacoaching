@@ -177,7 +177,12 @@
         const rawDescription = (data.get('description') || data.get('message') || '').trim();
         const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
         const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+        const turnstileWidget = form.querySelector('.cf-turnstile');
         const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
+        if (turnstileWidget && (!turnstileInput || !turnstileInput.value)) {
+          setStatus('Säkerhetskontrollen är inte klar ännu — vänta en stund och försök igen.', 'error');
+          return;
+        }
         const payload = {
           fullName,
           email,

@@ -119,7 +119,12 @@
           : 'Kontaktförfrågan om ADHD-medicinering.';
         const fallbackEmail = `saknas+${Date.now()}@riktapsykiatri.se`;
 
+        const turnstileWidget = form.querySelector('.cf-turnstile');
         const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
+        if (turnstileWidget && (!turnstileInput || !turnstileInput.value)) {
+          setStatus('Säkerhetskontrollen är inte klar ännu — vänta en stund och försök igen.', 'error');
+          return;
+        }
         const payload = {
           fullName: fullName || 'Ej angivet',
           email: email || fallbackEmail,

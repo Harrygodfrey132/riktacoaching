@@ -767,12 +767,14 @@
         purpose: CONSENT_PURPOSE_CONTACT
       });
     }
+    const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
     const payload = {
       fullName,
       email,
       description,
       leadSource: WEBSITE_LEAD_INPUT,
       LEADCF2: WEBSITE_LEAD_INPUT,
+      cfTurnstileToken: (turnstileInput && turnstileInput.value) ? turnstileInput.value : undefined,
       metadata: baseMetadata
     };
     if (ratingRaw !== null && ratingRaw !== '') {
@@ -806,8 +808,10 @@
     if (!form) return;
     // Some pages include an inline fallback handler; avoid double-submitting to Kaddio.
     if (form.dataset.kaddioInlineBound === 'true') return;
+    if (form.dataset.kaddioInlineBound) return;
     if (form.dataset.kaddioBound === 'true') return;
     form.dataset.kaddioBound = 'true';
+    form.dataset.kaddioInlineBound = 'true';
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
       if (typeof form.reportValidity === 'function') {

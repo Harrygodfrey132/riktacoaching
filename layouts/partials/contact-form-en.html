@@ -189,7 +189,12 @@
         const rawDescription = (data.get('description') || data.get('message') || '').trim();
         const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
         const locale = squashText(form.dataset.formLocale || (document.documentElement && document.documentElement.lang) || 'en').toLowerCase();
+        const turnstileWidget = form.querySelector('.cf-turnstile');
         const turnstileInput = form.querySelector('input[name="cf-turnstile-response"]');
+        if (turnstileWidget && (!turnstileInput || !turnstileInput.value)) {
+          setStatus('Security check not yet complete — please wait a moment and try again.', 'error');
+          return;
+        }
         const payload = {
           fullName,
           email,
