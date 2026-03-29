@@ -104,7 +104,7 @@ export async function onRequest(context) {
     }
 
     // Cloudflare Turnstile verification (skip if secret not configured)
-    const turnstileSecret = env.CF_TURNSTILE_SECRET;
+    const turnstileSecret = env.CF_TURNSTILE_SEC;
     if (turnstileSecret) {
       const turnstileToken = (parsed.data || {}).cfTurnstileToken;
       const ip = request.headers.get('CF-Connecting-IP') || undefined;
