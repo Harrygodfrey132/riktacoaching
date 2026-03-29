@@ -20,7 +20,7 @@ buildFuture = true
   consent_statement_version_en = "2026-03-14"
   privacy_policy_version_en = "2026-03-14"
   # Cloudflare Turnstile public site key (safe to commit — only the secret stays in env vars)
-  cf_turnstile_site_key = "0x4AAAAAACxsKLcmaJ5E2dkr"
+  cf_turnstile_site_key = "0x4AAAAAACxMMnOV3SaFRnz2"
 
 [markup]
   [markup.goldmark.renderer]
