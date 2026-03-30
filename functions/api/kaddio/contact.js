@@ -82,6 +82,9 @@ const EU_UK_COUNTRIES = new Set([
 export async function onRequest(context) {
   const { request, env } = context;
 
+  // TEMPORARY: form submissions disabled
+  return withCors(json({ error: 'Form submissions are temporarily unavailable.' }, 503));
+
   try {
     if (request.method === 'OPTIONS') {
       return withCors(new Response(null, { status: 204 }));
