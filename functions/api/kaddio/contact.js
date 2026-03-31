@@ -82,9 +82,6 @@ const EU_UK_COUNTRIES = new Set([
 export async function onRequest(context) {
   const { request, env } = context;
 
-  // TEMPORARY: form submissions disabled
-  return withCors(json({ error: 'Form submissions are temporarily unavailable.' }, 503));
-
   try {
     if (request.method === 'OPTIONS') {
       return withCors(new Response(null, { status: 204 }));
@@ -104,6 +101,16 @@ export async function onRequest(context) {
     if (honeypot) {
       // Silently accept so bots don't know they were blocked
       return withCors(json({ ok: true }));
+    }
+
+    // Google reCAPTCHA v3 verification
+    const recaptchaSecret = env.RECAPTCHA_SECRET;
+    if (recaptchaSecret) {
+      const recaptchaToken = (parsed.data || {}).recaptchaToken;
+      const score = await verifyRecaptcha(recaptchaToken, recaptchaSecret);
+      if (score === null || score < 0.5) {
+        return withCors(json({ error: 'Security check failed. Please refresh and try again.' }, 400));
+      }
     }
 
     const receivedAt = new Date().toISOString();
@@ -212,6 +219,22 @@ function selectKaddioEnv(normalized, env) {
     KADDIO_API_TOKEN: env.KADDIO_API_TOKEN_SWEDEN || env.KADDIO_API_TOKEN,
     KADDIO_IMPERSONATION_ID: env.KADDIO_IMPERSONATION_ID_SWEDEN || env.KADDIO_IMPERSONATION_ID
   };
+}
+
+async function verifyRecaptcha(token, secret) {
+  if (!token) return null;
+  try {
+    const body = new URLSearchParams({ secret, response: token });
+    const res = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+      method: 'POST',
+      body
+    });
+    const data = await res.json();
+    if (!data.success) return null;
+    return typeof data.score === 'number' ? data.score : null;
+  } catch (_err) {
+    return null;
+  }
 }
 
 function json(body, status = 200) {

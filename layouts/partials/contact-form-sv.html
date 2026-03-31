@@ -168,12 +168,23 @@
         const rawDescription = (data.get('description') || data.get('message') || '').trim();
         const formContext = form.dataset.formContext || form.dataset.kaddioForm || null;
         const locale = squashText((document.documentElement && document.documentElement.lang) || 'sv').toLowerCase();
+        let recaptchaToken = '';
+        if (window.grecaptcha) {
+          try {
+            recaptchaToken = await new Promise((resolve, reject) => {
+              grecaptcha.ready(() => {
+                grecaptcha.execute('{{ site.Params.recaptcha_site_key }}', { action: 'contact' }).then(resolve).catch(reject);
+              });
+            });
+          } catch (_e) {}
+        }
         const payload = {
           fullName,
           email,
           description: rawDescription,
           leadSource: websiteLeadInput,
           LEADCF2: websiteLeadInput,
+          recaptchaToken,
           metadata: {
             path: window.location.pathname,
             formContext,

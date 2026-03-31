@@ -120,6 +120,9 @@
     })(window, document, "clarity", "script", "vboc5xb2dh");
   </script>
   <!-- End Meta Pixel Code -->
+  {{- with site.Params.recaptcha_site_key }}
+  <script src="https://www.google.com/recaptcha/api.js?render={{ . }}" async defer></script>
+  {{- end }}
   <link rel="preload" href="{{ $css.RelPermalink }}" as="style">
   <link rel="stylesheet" href="{{ $css.RelPermalink }}">
   {{- if .IsHome }}

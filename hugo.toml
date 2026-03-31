@@ -19,6 +19,8 @@ buildFuture = true
   # Update these whenever the consent copy or policy text changes.
   consent_statement_version_en = "2026-03-14"
   privacy_policy_version_en = "2026-03-14"
+  # Google reCAPTCHA v3 public site key (safe to commit — only the secret stays in env vars)
+  recaptcha_site_key = "6LdvW58sAAAAAJtpn8c6ZeJ7zvfQCqN4xrbBDlCQ"
 
 [markup]
   [markup.goldmark.renderer]
